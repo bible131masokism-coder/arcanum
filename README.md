@@ -142,9 +142,3 @@ The project supports importing and exporting both character saves and Wizard Hal
 - Vite
 - JavaScript
 - JSON-driven content architecture
-
-## Thai summary
-
-Theory of Magic เป็นเกมแฟนตาซีแนว browser-based idle / incremental RPG ที่ผู้เล่นจะสร้างเวทมนตร์ พัฒนาตัวละคร สำรวจโลกแฟนตาซี ต่อสู้กับมอนสเตอร์ รวบรวมทรัพยากร และปลดล็อกความก้าวหน้าผ่านภารกิจและการปรับปรุงอุปกรณ์ต่าง ๆ
-
-เกมนี้ใช้ Vue 3 + Vite และจัดเก็บข้อมูลเกมหลักในไฟล์ JSON เพื่อให้การเพิ่มเนื้อหาและปรับสมดุลเกมทำได้ยืดหยุ่นและรวดเร็ว
