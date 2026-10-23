@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="สรุปโครงสร้างและสถาปัตยกรรมโปรเจกต์ Theory of Magic">
+  <title>โครงสร้างโปรเจกต์ | Theory of Magic</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0d1118;
+      --panel: #141b25;
+      --panel-raised: #192331;
+      --border: #283447;
+      --text: #edf2fb;
+      --muted: #a0aec1;
+      --accent: #b59aff;
+      --accent-soft: #261e3c;
+      --cyan: #82d9e8;
+      --green: #8bd6ac;
+      --orange: #efbd83;
+      --shadow: 0 16px 42px #00000024;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 24px; }
+    body {
+      margin: 0;
+      background:
+        radial-gradient(ellipse at 15% 0%, #39265c42, transparent 40rem),
+        radial-gradient(ellipse at 92% 18%, #16445a2a, transparent 34rem),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    a { color: var(--cyan); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    button, input { font: inherit; }
+    button {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: var(--panel-raised);
+      color: var(--text);
+      padding: 8px 12px;
+      cursor: pointer;
+      transition: border-color .18s, transform .18s, background .18s;
+    }
+    button:hover { border-color: var(--accent); transform: translateY(-1px); }
+    button:focus-visible, input:focus-visible, a:focus-visible, summary:focus-visible {
+      outline: 2px solid var(--cyan);
+      outline-offset: 3px;
+    }
+    .layout { width: min(1420px, 100%); margin: 0 auto; padding: 26px clamp(16px, 4vw, 52px) 56px; }
+    .topline { display: flex; align-items: center; gap: 10px; color: var(--muted); font-size: .86rem; }
+    .orb { width: 9px; height: 9px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 18px var(--accent); }
+    .hero { padding: 46px 0 28px; max-width: 920px; }
+    .eyebrow { color: var(--accent); font-size: .78rem; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; }
+    h1 { margin: 10px 0 12px; font-size: clamp(2.2rem, 6vw, 4.7rem); line-height: 1.08; letter-spacing: -.055em; }
+    .hero p { max-width: 770px; margin: 0; color: var(--muted); font-size: clamp(1rem, 2vw, 1.16rem); }
+    .hero strong { color: var(--text); }
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
+    .chip { padding: 5px 10px; border: 1px solid var(--border); border-radius: 999px; color: var(--muted); background: #121925b8; font-size: .82rem; }
+    .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 16px 0 42px; }
+    .stat { padding: 17px 18px; border: 1px solid var(--border); border-radius: 15px; background: linear-gradient(145deg, #192331, #121821); box-shadow: var(--shadow); }
+    .stat b { display: block; font-size: 1.45rem; letter-spacing: -.04em; }
+    .stat span { color: var(--muted); font-size: .85rem; }
+    .section { margin: 42px 0; }
+    .section-head { display: flex; justify-content: space-between; align-items: end; gap: 18px; margin-bottom: 17px; }
+    h2 { margin: 0; font-size: clamp(1.4rem, 3vw, 2rem); letter-spacing: -.035em; }
+    .section-head p { margin: 4px 0 0; color: var(--muted); }
+    .overview-grid { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 12px; }
+    .overview-card, .panel { border: 1px solid var(--border); border-radius: 16px; background: #141b25e8; box-shadow: var(--shadow); }
+    .overview-card { display: block; padding: 17px; min-height: 150px; color: var(--text); }
+    .overview-card:hover { border-color: var(--accent); text-decoration: none; }
+    .card-icon { display: grid; place-items: center; width: 36px; height: 36px; margin-bottom: 12px; border-radius: 11px; background: var(--accent-soft); color: var(--accent); font-weight: 800; }
+    .overview-card h3 { margin: 0 0 5px; font-size: 1rem; }
+    .overview-card p { margin: 0; color: var(--muted); font-size: .88rem; }
+    .architecture { display: grid; grid-template-columns: 1fr 1fr 1fr; align-items: stretch; gap: 12px; }
+    .arch-card { position: relative; padding: 19px; border: 1px solid var(--border); border-radius: 15px; background: var(--panel); }
+    .arch-card h3 { margin: 0 0 5px; font-size: 1.03rem; }
+    .arch-card p { margin: 0; color: var(--muted); font-size: .9rem; }
+    .arch-card .tag { display: inline-block; margin-bottom: 12px; padding: 3px 8px; border-radius: 999px; color: var(--cyan); background: #18303a; font-size: .73rem; font-weight: 700; }
+    .flow { display: grid; place-items: center; color: var(--accent); font-size: 1.4rem; }
+    .flow-row { display: grid; grid-template-columns: 1fr auto 1fr auto 1fr; align-items: center; gap: 10px; }
+    .flow-label { color: var(--muted); text-align: center; font-size: .76rem; }
+    .tree-toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; margin: 0 0 14px; }
+    .search-wrap { position: relative; flex: 1 1 280px; }
+    .search-wrap span { position: absolute; top: 8px; left: 12px; color: var(--muted); }
+    #search { width: 100%; border: 1px solid var(--border); border-radius: 10px; padding: 9px 12px 9px 37px; background: var(--panel); color: var(--text); }
+    .filters { display: flex; flex-wrap: wrap; gap: 6px; }
+    .filter[aria-pressed="true"] { border-color: var(--accent); background: var(--accent-soft); color: #d5c6ff; }
+    .tree-panel { padding: clamp(14px, 3vw, 26px); }
+    .tree-meta { display: flex; justify-content: space-between; gap: 12px; padding-bottom: 14px; border-bottom: 1px solid var(--border); color: var(--muted); font-size: .83rem; }
+    .tree { padding: 13px 0 0; font-family: Consolas, "Cascadia Code", monospace; font-size: .9rem; }
+    .tree ul { list-style: none; margin: 0 0 0 14px; padding: 0 0 0 17px; border-left: 1px solid #344156; }
+    .tree > ul { margin-left: 0; padding-left: 0; border: 0; }
+    .tree li { position: relative; margin: 5px 0; }
+    .tree ul > li::before { position: absolute; top: 15px; left: -17px; width: 12px; border-top: 1px solid #344156; content: ""; }
+    .tree-item { padding: 2px 0; }
+    .tree-label { display: inline-flex; align-items: baseline; flex-wrap: wrap; gap: 7px; }
+    .tree-name { color: #dce5f3; }
+    .tree-dir > .tree-label .tree-name { color: var(--accent); font-weight: 700; }
+    .tree-desc { color: #8290a5; font-family: "Segoe UI", Tahoma, sans-serif; font-size: .82rem; }
+    .tree-leaf > .tree-label .tree-name { color: #bddde3; }
+    .tree-icon { color: #78879b; font-size: .78rem; }
+    .tree li[hidden] { display: none; }
+    .tree details > summary { display: inline; cursor: pointer; list-style: none; }
+    .tree details > summary::-webkit-details-marker { display: none; }
+    .tree details > summary::before { display: inline-block; width: 16px; color: var(--accent); content: "▸"; }
+    .tree details[open] > summary::before { content: "▾"; }
+    .tree details:not([open]) > ul { display: none; }
+    .file-row { display: flex; align-items: baseline; gap: 8px; }
+    .copy { padding: 1px 6px; border-radius: 6px; color: var(--muted); font-size: .72rem; opacity: 0; }
+    .tree li:hover > .tree-label .copy, .copy:focus-visible { opacity: 1; }
+    .tree-empty { display: none; padding: 18px 0; color: var(--muted); text-align: center; }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .panel { padding: 20px; }
+    .panel h3 { margin: 0 0 9px; }
+    .panel p { margin: 0 0 10px; color: var(--muted); }
+    .panel ul { margin: 8px 0 0; padding-left: 20px; color: var(--muted); }
+    .panel li { margin: 5px 0; }
+    code { color: #d6c7ff; font-family: Consolas, monospace; font-size: .9em; }
+    .callout { padding: 13px 15px; border-left: 3px solid var(--orange); border-radius: 0 10px 10px 0; background: #2b2117; color: #dfc7a9; font-size: .88rem; }
+    .footer { margin-top: 50px; padding-top: 18px; border-top: 1px solid var(--border); color: var(--muted); font-size: .84rem; }
+    .toast { position: fixed; right: 18px; bottom: 18px; z-index: 4; padding: 10px 14px; border: 1px solid var(--border); border-radius: 10px; background: var(--panel-raised); color: var(--text); opacity: 0; transform: translateY(8px); transition: .2s; pointer-events: none; }
+    .toast.show { opacity: 1; transform: translateY(0); }
+    .light {
+      color-scheme: light;
+      --bg: #f4f6fa; --panel: #fff; --panel-raised: #fff; --border: #dce2ec;
+      --text: #202637; --muted: #596579; --accent: #7045c6; --accent-soft: #f0eaff;
+      --cyan: #087b91; --green: #257446; --orange: #ae641e; --shadow: 0 12px 28px #28304410;
+      background: radial-gradient(ellipse at 15% 0%, #e7ddff, transparent 40rem), var(--bg);
+    }
+    .light .stat { background: linear-gradient(145deg, #fff, #f4f6fa); }
+    .light .overview-card, .light .panel { background: #ffffffeb; }
+    .light .tree-name { color: #364155; }
+    .light .tree-dir > .tree-label .tree-name { color: #7045c6; }
+    .light .tree-leaf > .tree-label .tree-name { color: #176d7c; }
+    .light .tree-desc { color: #657186; }
+    .light .callout { background: #fff5e8; }
+    @media (max-width: 900px) {
+      .overview-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+      .stats { grid-template-columns: repeat(2, 1fr); }
+      .architecture { grid-template-columns: 1fr; }
+      .flow { transform: rotate(90deg); }
+    }
+    @media (max-width: 620px) {
+      .layout { padding-top: 18px; }
+      .hero { padding-top: 34px; }
+      .section-head { align-items: start; flex-direction: column; }
+      .overview-grid, .two-col { grid-template-columns: 1fr; }
+      .tree { font-size: .8rem; }
+      .tree-desc { font-size: .76rem; }
+      .copy { opacity: 1; }
+    }
+    @media print {
+      :root, .light { color-scheme: light; --bg: white; --panel: white; --text: #111; --muted: #444; --border: #ccc; background: white; }
+      body { background: white; }
+      .tree-toolbar, .copy, .toast, #themeButton { display: none !important; }
+      .tree details:not([open]) > ul { display: block; }
+      .tree details > summary::before { display: none; }
+      .panel, .overview-card, .stat, .arch-card { break-inside: avoid; box-shadow: none; }
+      a { color: inherit; }
+    }
+  </style>
+</head>
+<body>
+  <main class="layout">
+    <div class="topline"><span class="orb"></span><span>PROJECT MAP <span aria-hidden="true">/</span> Theory of Magic</span></div>
+    <header class="hero">
+      <div class="eyebrow">คู่มือสำรวจโค้ด</div>
+      <h1>โครงสร้าง<br>โปรเจกต์</h1>
+      <p><strong>Theory of Magic</strong> คือเกมแฟนตาซีแนว idle / incremental RPG บนเว็บ สร้างด้วย Vue 3 และ Vite แยกโค้ดระบบเกมออกจากข้อมูลเกม JSON เพื่อให้ขยายเนื้อหาได้เป็นโมดูล</p>
+      <div class="chips">
+        <span class="chip">Vue 3</span><span class="chip">Vite 5</span><span class="chip">JavaScript + TypeScript</span>
+        <span class="chip">เกมบนเบราว์เซอร์</span><span class="chip">ข้อมูลเกม JSON</span>
+      </div>
+    </header>
+
+    <section class="stats" aria-label="ภาพรวม">
+      <div class="stat"><b>src/</b><span>โค้ดเกมและ UI หลัก</span></div>
+      <div class="stat"><b>data/</b><span>ข้อมูลเกมและโมดูลเสริม</span></div>
+      <div class="stat"><b>Vue SFC</b><span>หน้าจอและคอมโพเนนต์ .vue</span></div>
+      <div class="stat"><b>JSON-first</b><span>กำหนดเนื้อหาเกมด้วยข้อมูล</span></div>
+    </section>
+
+    <section class="section" id="overview">
+      <div class="section-head">
+        <div><h2>แผนที่ส่วนประกอบ</h2><p>เริ่มจากส่วนที่สนใจเพื่อกระโดดไปยังแผนผังด้านล่าง</p></div>
+      </div>
+      <div class="overview-grid">
+        <a class="overview-card" href="#tree-src"><span class="card-icon">01</span><h3>แอปและระบบเกม</h3><p>จุดเริ่มแอป สถานะเกม ลูปการเล่น อีเวนต์ และระบบข้อมูล</p></a>
+        <a class="overview-card" href="#tree-ui"><span class="card-icon">02</span><h3>ส่วนติดต่อผู้เล่น</h3><p>หน้าจอ Vue แบ่งเป็นส่วน หน้าต่างย่อย และคอมโพเนนต์</p></a>
+        <a class="overview-card" href="#tree-data"><span class="card-icon">03</span><h3>เนื้อหาเกม</h3><p>ข้อมูลหลักและโมดูลแยกกลุ่ม เช่น เวทมนตร์ เควสต์ และฤดูกาล</p></a>
+        <a class="overview-card" href="#tree-root"><span class="card-icon">04</span><h3>เครื่องมือและเอกสาร</h3><p>Vite, npm scripts, CSS, บันทึกการออกแบบ และเอกสารประกอบ</p></a>
+      </div>
+    </section>
+
+    <section class="section" id="flow">
+      <div class="section-head"><div><h2>ข้อมูลไหลอย่างไร</h2><p>ภาพรวมเส้นทางจากไฟล์ข้อมูลไปจนถึงเกมที่ผู้เล่นใช้งาน</p></div></div>
+      <div class="panel">
+        <div class="flow-row">
+          <div class="arch-card"><span class="tag">CONTENT</span><h3>data/*.json</h3><p>รายการข้อมูล core และ modules ระบุไว้ใน <code>data/modules.json</code></p></div>
+          <div class="flow" aria-label="ไปยัง">→</div>
+          <div class="arch-card"><span class="tag">BOOTSTRAP</span><h3>DataLoader → Game</h3><p>โหลดไฟล์, รวมโมดูล, สร้าง instance ของไอเท็มและข้อมูลสถานะ</p></div>
+          <div class="flow" aria-label="ไปยัง">→</div>
+          <div class="arch-card"><span class="tag">EXPERIENCE</span><h3>Vue UI + game loop</h3><p>แสดงตัวละคร งาน สำรวจ ต่อสู้ และความก้าวหน้าของเกม</p></div>
+        </div>
+        <div class="flow-label" style="margin-top:12px">โปรไฟล์และระบบบันทึกจัดเก็บ/กู้คืนเซฟของตัวละครและ Wizard Hall</div>
+      </div>
+    </section>
+
+    <section class="section" id="tree">
+      <div class="section-head">
+        <div><h2>แผนผังไฟล์และโฟลเดอร์</h2><p>ค้นหาชื่อไฟล์หรือระบบ กรองตามหมวด และกดชื่อโฟลเดอร์เพื่อเปิดดู</p></div>
+        <button id="themeButton" type="button" aria-label="สลับธีม">☼ สลับธีม</button>
+      </div>
+      <div class="tree-toolbar">
+        <label class="search-wrap"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="ค้นหา เช่น spell, player, modules…" autocomplete="off" aria-label="ค้นหาไฟล์และระบบ"></label>
+        <div class="filters" aria-label="กรองประเภท">
+          <button class="filter" type="button" data-filter="all" aria-pressed="true">ทั้งหมด</button>
+          <button class="filter" type="button" data-filter="code" aria-pressed="false">โค้ด</button>
+          <button class="filter" type="button" data-filter="data" aria-pressed="false">ข้อมูล</button>
+          <button class="filter" type="button" data-filter="docs" aria-pressed="false">เอกสาร</button>
+        </div>
+        <button id="expandButton" type="button">ขยายทั้งหมด</button>
+        <button id="collapseButton" type="button">ยุบทั้งหมด</button>
+      </div>
+      <div class="panel tree-panel">
+        <div class="tree-meta"><span>โครงสร้างที่พบใน repository</span><span id="resultCount" aria-live="polite">แสดงทั้งหมด</span></div>
+        <div class="tree" id="projectTree">
+          <ul>
+            <li class="tree-item tree-dir" data-kind="structure" id="tree-root">
+              <details open><summary class="tree-label"><span class="tree-name">arcanum/</span><span class="tree-desc">root ของ repository · เกม Theory of Magic</span></summary>
+                <ul>
+                  <li class="tree-item tree-leaf" data-kind="code"><span class="tree-label"><span class="tree-icon">◇</span><span class="tree-name">index.html</span><span class="tree-desc">HTML host ของแอป โหลด stylesheet และ src/index.js</span><button class="copy" type="button" title="คัดลอกพาธ" aria-label="คัดลอกพาธ index.html">คัดลอก</button></span></li>
+                  <li class="tree-item tree-leaf" data-kind="code"><span class="tree-label"><span class="tree-icon">◇</span><span class="tree-name">package.json</span><span class="tree-desc">ข้อมูลแพ็กเกจ, dependencies และคำสั่ง dev/build</span><button class="copy" type="button" title="คัดลอกพาธ" aria-label="คัดลอกพาธ package.json">คัดลอก</button></span></li>
+                  <li class="tree-item tree-leaf" data-kind="code"><span class="tree-label"><span class="tree-icon">◇</span><span class="tree-name">vite.config.ts</span><span class="tree-desc">ตั้งค่า Vue/Vite, alias, คัดลอก data และ output ไป dev/</span><button class="copy" type="button" title="คัดลอกพาธ" aria-label="คัดลอกพาธ vite.config.ts">คัดลอก</button></span></li>
+                  <li class="tree-item tree-leaf" data-kind="code"><span class="tree-label"><span class="tree-icon">◇</span><span class="tree-name">vue.config.js · tsconfig.json · eslint.config.mjs · .prettierrc</span><span class="tree-desc">การตั้งค่า tooling, TypeScript, lint และ format</span><button class="copy" type="button" title="คัดลอกพาธ" aria-label="คัดลอกพาธ .prettierrc">คัดลอก</button></span></li>
+                  <li class="tree-item tree-dir" data-kind="structure" id="tree-src">
+                    <details open><summary class="tree-label"><span class="tree-name">src/</span><span class="tree-desc">โค้ดแอปและระบบเกม</span></summary>
+                      <ul>
+                        <li class="tree-item tree-leaf" data-kind="code"><span class="tree-label"><span class="tree-icon">◇</span><span class="tree-name">index.js</span><span class="tree-desc">สร้าง Vue app, ผูก event handlers และเริ่มโหลดข้อมูล/เซฟ</span><button class="copy" type="button" aria-label="คัดลอกพาธ src/index.js">คัดลอก</button></span></li>
+                        <li class="tree-item tree-leaf" data-kind="code"><span class="tree-label"><span class="tree-icon">◇</span><span class="tree-name">game.js · gameState.js · events.js</span><span class="tree-desc">runtime, สถานะเกม, event bus และวงจรการเล่น</span><button class="copy" type="button" aria-label="คัดลอกพาธ src/game.js">คัดลอก</button></span></li>
+                        <li class="tree-item tree-leaf" data-kind="code"><span class="tree-label"><span class="tree-icon">◇</span><span class="tree-name">dataLoader.js · techTree.js · timer.js · log.js</span><span class="tree-desc">โหลด/สร้างข้อมูลเกม, ความก้าวหน้า, เวลา และบันทึกกิจกรรม</span><button class="copy" type="button" aria-label="คัดลอกพาธ src/dataLoader.js">คัดลอก</button></span></li>
+                        <li class="tree-item tree-dir" data-kind="structure"><details open><summary class="tree-label"><span class="tree-name">chars/</span><span class="tree-desc">ผู้เล่น ตัวละคร อุปกรณ์ และสถานะ</span></summary><ul>
+                          <li class="tree-item tree-leaf" data-kind="code"><span class="tree-label"><span class="tree-name">player.js · char.js · npc.js</span><span class="tree-desc">โมเดลผู้เล่นและตัวละคร</span><button class="copy" type="button" aria-label="คัดลอกพาธ src/chars/player.js">คัดลอก</button></span></li>
+                          <li class="tree-item tree-leaf" data-kind="code"><span class="tree-label"><span class="tree-name">state.js · states.js · context.js</span><span class="tree-desc">สถานะและบริบทตัวละคร</span><button class="copy" type="button" aria-label="คัดลอกพาธ src/chars/state.js">คัดลอก</button></span></li>
+                          <li class="tree-item tree-leaf" data-kind="code"><span class="tree-label"><span class="tree-name">attack.js · equip.js · slot.js · wearable.js</span><span class="tree-desc">การโจมตีและการสวมใส่อุปกรณ์</span><button class="copy" type="button" aria-label="คัดลอกพาธ src/chars/attack.js">คัดลอก</button></span></li>
+                        </ul></details></li>
+                        <li class="tree-item tree-dir" data-kind="structure"><details open><summary class="tree-label"><span class="tree-name">classes/ · composites/</span><span class="tree-desc">การสร้างกลุ่ม spawn และระบบ gameplay ที่ประกอบร่วมกัน</span></summary><ul>
+                          <li class="tree-item tree-leaf" data-kind="code"><span class="tree-label"><span class="tree-name">classes/spawns.js · spawngroup.js · spawnparams.js</span><span class="tree-desc">การกำหนดกลุ่มและพารามิเตอร์การเกิด</span><button class="copy" type="button" aria-label="คัดลอกพาธ src/classes/spawns.js">คัดลอก</button></span></li>
+                          <li class="tree-item tree-leaf" data-kind="code"><span class="tree-label"><span class="tree-name">composites/combat.js · explore.js · runnable.js · quickbar.js</span><span class="tree-desc">การต่อสู้ สำรวจ งานที่กำลังทำ และ quickbar</span><button class="copy" type="button" aria-label="คัดลอกพาธ src/composites/combat.js">คัดลอก</button></span></li>
+                        </ul></details></li>
+                        <li class="tree-item tree-dir" data-kind="structure"><details open><summary class="tree-label"><span class="tree-name">items/ · inventories/ · protos/</span><span class="tree-desc">โมเดลข้อมูลเกม, คลัง/รายการของผู้เล่น และต้นแบบข้อมูล</span></summary><ul>
+                          <li class="tree-item tree-leaf" data-kind="code"><span class="tree-label"><span class="tree-name">items/gdata.js · item.js · spell.js · task.js · monster.js · resource.js</span><span class="tree-desc">คลาสข้อมูลไอเท็ม เวท งาน มอนสเตอร์ และทรัพยากร</span><button class="copy" type="button" aria-label="คัดลอกพาธ src/items/gdata.js">คัดลอก</button></span></li>
+                          <li class="tree-item tree-leaf" data-kind="code"><span class="tree-label"><span class="tree-name">inventories/inventory.js · home.js · minions.js · userSpells.js</span><span class="tree-desc">คอลเลกชันไอเท็ม บ้าน มินเนียน และเวทผู้เล่น</span><button class="copy" type="button" aria-label="คัดลอกพาธ src/inventories/inventory.js">คัดลอก</button></span></li>
+                          <li class="tree-item tree-leaf" data-kind="code"><span class="tree-label"><span class="tree-name">protos/protoItem.js · protoDot.js</span><span class="tree-desc">ต้นแบบข้อมูลสำหรับสร้าง instance ในเกม</span><button class="copy" type="button" aria-label="คัดลอกพาธ src/protos/protoItem.js">คัดลอก</button></span></li>
+                        </ul></details></li>
+                        <li class="tree-item tree-dir" data-kind="structure"><details open><summary class="tree-label"><span class="tree-name">modules/</span><span class="tree-desc">ระบบย่อย เช่น โปรไฟล์ ตั้งค่า โหลดข้อมูล สร้างไอเท็ม และ persistence</span></summary><ul>
+                          <li class="tree-item tree-leaf" data-kind="code"><span class="tree-label"><span class="tree-name">module.js · parsing.js · runner.js · itemgen.js</span><span class="tree-desc">จัดการโมดูล แปลงข้อมูล รันกิจกรรม และสร้างไอเท็ม</span><button class="copy" type="button" aria-label="คัดลอกพาธ src/modules/module.js">คัดลอก</button></span></li>
+                          <li class="tree-item tree-leaf" data-kind="code"><span class="tree-label"><span class="tree-name">profile.js · settings.js · craft.js · hall.js</span><span class="tree-desc">โปรไฟล์ การตั้งค่า การสร้างไอเท็ม และ Wizard Hall</span><button class="copy" type="button" aria-label="คัดลอกพาธ src/modules/profile.js">คัดลอก</button></span></li>
+                          <li class="tree-item tree-dir" data-kind="structure"><details open><summary class="tree-label"><span class="tree-name">modules/persist/</span><span class="tree-desc">ตัวจัดเก็บและตัวเชื่อมต่อ save data</span></summary><ul>
+                            <li class="tree-item tree-leaf" data-kind="code"><span class="tree-label"><span class="tree-name">persist.js · persist-db.js · persistLocal.js · persistRemote.js</span><span class="tree-desc">ตัวกลาง persistence, IndexedDB, local และ remote</span><button class="copy" type="button" aria-label="คัดลอกพาธ src/modules/persist/persist.js">คัดลอก</button></span></li>
+                          </ul></details></li>
+                        </ul></details></li>
+                        <li class="tree-item tree-dir" data-kind="structure" id="tree-ui"><details open><summary class="tree-label"><span class="tree-name">ui/</span><span class="tree-desc">หน้าจอ Vue และคอมโพเนนต์ที่ผู้เล่นโต้ตอบ</span></summary><ul>
+                          <li class="tree-item tree-leaf" data-kind="code"><span class="tree-label"><span class="tree-name">main.vue · top-bar.vue · quickbar.vue · outlog.vue</span><span class="tree-desc">องค์ประกอบหลักของหน้าจอเกม</span><button class="copy" type="button" aria-label="คัดลอกพาธ src/ui/main.vue">คัดลอก</button></span></li>
+                          <li class="tree-item tree-dir" data-kind="structure"><details open><summary class="tree-label"><span class="tree-name">sections/</span><span class="tree-desc">หน้าหลักตามฟีเจอร์เกม</span></summary><ul>
+                            <li class="tree-item tree-leaf" data-kind="code"><span class="tree-label"><span class="tree-name">player.vue · adventure.vue · tasks.vue · inventory.vue · equip.vue</span><span class="tree-desc">ตัวละคร ผจญภัย งาน คลัง และอุปกรณ์</span><button class="copy" type="button" aria-label="คัดลอกพาธ src/ui/sections/player.vue">คัดลอก</button></span></li>
+                            <li class="tree-item tree-leaf" data-kind="code"><span class="tree-label"><span class="tree-name">skills.vue · spells.vue · potions.vue · crafting.vue · enchanting.vue</span><span class="tree-desc">ทักษะ เวทมนตร์ ปรุงยา คราฟต์ และเสริมพลัง</span><button class="copy" type="button" aria-label="คัดลอกพาธ src/ui/sections/skills.vue">คัดลอก</button></span></li>
+                            <li class="tree-item tree-leaf" data-kind="code"><span class="tree-label"><span class="tree-name">home.vue · familiars.vue · minions.vue · bestiary.vue · travelogue.vue</span><span class="tree-desc">บ้าน ผู้ช่วย มินเนียน สารานุกรมมอนสเตอร์ และบันทึกเดินทาง</span><button class="copy" type="button" aria-label="คัดลอกพาธ src/ui/sections/home.vue">คัดลอก</button></span></li>
+                          </ul></details></li>
+                          <li class="tree-item tree-dir" data-kind="structure"><details open><summary class="tree-label"><span class="tree-name">components/ · panes/ · popups/</span><span class="tree-desc">คอมโพเนนต์ทั่วไป แผงข้อมูล และหน้าต่างโต้ตอบ</span></summary><ul>
+                            <li class="tree-item tree-leaf" data-kind="code"><span class="tree-label"><span class="tree-name">components/menu.vue · dropdown.vue · progbar.vue</span><span class="tree-desc">เมนู ตัวเลือก และแถบความคืบหน้า</span><button class="copy" type="button" aria-label="คัดลอกพาธ src/ui/components/menu.vue">คัดลอก</button></span></li>
+                            <li class="tree-item tree-leaf" data-kind="code"><span class="tree-label"><span class="tree-name">panes/resources.vue · vitals.vue · charpane.vue</span><span class="tree-desc">แผงทรัพยากร สถานะตัวละคร และภาพรวมผู้เล่น</span><button class="copy" type="button" aria-label="คัดลอกพาธ src/ui/panes/resources.vue">คัดลอก</button></span></li>
+                            <li class="tree-item tree-leaf" data-kind="code"><span class="tree-label"><span class="tree-name">popups/settings.vue · login.vue · choice.vue · itemPopup.vue</span><span class="tree-desc">ตั้งค่า เข้าสู่ระบบ ตัวเลือก และรายละเอียดไอเท็ม</span><button class="copy" type="button" aria-label="คัดลอกพาธ src/ui/popups/settings.vue">คัดลอก</button></span></li>
+                          </ul></details></li>
+                          <li class="tree-item tree-dir" data-kind="structure"><details open><summary class="tree-label"><span class="tree-name">items/ · equipment/ · hall/</span><span class="tree-desc">การแสดงผลไอเท็ม อุปกรณ์ และ Wizard Hall</span></summary><ul>
+                            <li class="tree-item tree-leaf" data-kind="code"><span class="tree-label"><span class="tree-name">items/combat.vue · skill.vue · weapon.vue · equipment/equipment.vue · hall/hall.vue</span><span class="tree-desc">UI เฉพาะชนิดของไอเท็มและระบบย่อย</span><button class="copy" type="button" aria-label="คัดลอกพาธ src/ui/items/combat.vue">คัดลอก</button></span></li>
+                          </ul></details></li>
+                        </ul></details></li>
+                        <li class="tree-item tree-dir" data-kind="structure"><details open><summary class="tree-label"><span class="tree-name">values/</span><span class="tree-desc">ค่าตัวเลข สถิติ ช่วงค่า ตัวปรับแต่ง และตัวแทนค่าแบบ dynamic</span></summary><ul>
+                          <li class="tree-item tree-leaf" data-kind="code"><span class="tree-label"><span class="tree-name">consts.js · defaults.js · combatVars.js · craftVars.js</span><span class="tree-desc">ค่าคงที่ ค่าเริ่มต้น และตัวแปรระบบ</span><button class="copy" type="button" aria-label="คัดลอกพาธ src/values/consts.js">คัดลอก</button></span></li>
+                          <li class="tree-item tree-leaf" data-kind="code"><span class="tree-label"><span class="tree-name">mods/ · rvals/ · arrayset.js · range.js · percent.js</span><span class="tree-desc">ตัวปรับแต่งค่าและชนิดค่าที่คำนวณตามเงื่อนไข</span><button class="copy" type="button" aria-label="คัดลอกพาธ src/values/mods">คัดลอก</button></span></li>
+                        </ul></details></li>
+                        <li class="tree-item tree-dir" data-kind="structure"><details open><summary class="tree-label"><span class="tree-name">util/ · debug/ · remote/</span><span class="tree-desc">ตัวช่วยทั่วไปและระบบสนับสนุนแอป</span></summary><ul>
+                          <li class="tree-item tree-leaf" data-kind="code"><span class="tree-label"><span class="tree-name">util/format.js · objecty.js · jsonLoader.js · array.ts</span><span class="tree-desc">ตัวช่วยแปลง/จัดรูปข้อมูล โหลด JSON และจัดการ collection</span><button class="copy" type="button" aria-label="คัดลอกพาธ src/util">คัดลอก</button></span></li>
+                          <li class="tree-item tree-leaf" data-kind="code"><span class="tree-label"><span class="tree-name">debug/cheats.js · cmdline.js · devconsole.vue</span><span class="tree-desc">เครื่องมือพัฒนาและ console ในเกม</span><button class="copy" type="button" aria-label="คัดลอกพาธ src/debug">คัดลอก</button></span></li>
+                          <li class="tree-item tree-leaf" data-kind="code"><span class="tree-label"><span class="tree-name">remote/remote.js · sw.js · globalMixin.js</span><span class="tree-desc">การเชื่อมต่อ remote, service worker และ mixin ระดับแอป</span><button class="copy" type="button" aria-label="คัดลอกพาธ src/remote">คัดลอก</button></span></li>
+                        </ul></details></li>
+                        <li class="tree-item tree-dir" data-kind="structure"><details><summary class="tree-label"><span class="tree-name">unused/</span><span class="tree-desc">ไฟล์ที่แยกเก็บไว้ ไม่ใช่เส้นทางใช้งานหลักปัจจุบัน</span></summary><ul>
+                          <li class="tree-item tree-leaf" data-kind="code"><span class="tree-label"><span class="tree-name">halloween.json · lock.js · stub.js</span><span class="tree-desc">เนื้อหาหรือโค้ดที่ยังไม่ได้ใช้งานในระบบหลัก</span><button class="copy" type="button" aria-label="คัดลอกพาธ src/unused">คัดลอก</button></span></li>
+                        </ul></details></li>
+                      </ul>
+                    </details>
+                  </li>
+                  <li class="tree-item tree-dir" data-kind="structure" id="tree-data">
+                    <details open><summary class="tree-label"><span class="tree-name">data/</span><span class="tree-desc">แหล่งข้อมูลเนื้อหาเกมแบบ JSON</span></summary>
+                      <ul>
+                        <li class="tree-item tree-leaf" data-kind="data"><span class="tree-label"><span class="tree-icon">◇</span><span class="tree-name">modules.json</span><span class="tree-desc">ระบุรายการข้อมูล core และโมดูลเสริมที่ DataLoader โหลด</span><button class="copy" type="button" aria-label="คัดลอกพาธ data/modules.json">คัดลอก</button></span></li>
+                        <li class="tree-item tree-dir" data-kind="structure"><details open><summary class="tree-label"><span class="tree-name">ไฟล์ข้อมูล core</span><span class="tree-desc">หมวดหลักที่เกมอ้างอิงร่วมกัน</span></summary><ul>
+                          <li class="tree-item tree-leaf" data-kind="data"><span class="tree-label"><span class="tree-name">player.json · classes.json · states.json · sections.json · tags.json</span><span class="tree-desc">ผู้เล่น คลาส สถานะ ส่วนหน้าจอ และแท็ก</span><button class="copy" type="button" aria-label="คัดลอกพาธ data/player.json">คัดลอก</button></span></li>
+                          <li class="tree-item tree-leaf" data-kind="data"><span class="tree-label"><span class="tree-name">tasks.json · quests.json · events.json · encounters.json</span><span class="tree-desc">งาน เควสต์ เหตุการณ์ และ encounter</span><button class="copy" type="button" aria-label="คัดลอกพาธ data/tasks.json">คัดลอก</button></span></li>
+                          <li class="tree-item tree-leaf" data-kind="data"><span class="tree-label"><span class="tree-name">skills.json · spells.json · potions.json · upgrades.json</span><span class="tree-desc">ทักษะ เวทมนตร์ ยาปรุง และการอัปเกรด</span><button class="copy" type="button" aria-label="คัดลอกพาธ data/spells.json">คัดลอก</button></span></li>
+                          <li class="tree-item tree-leaf" data-kind="data"><span class="tree-label"><span class="tree-name">resources.json · materials.json · reagents.json · properties.json</span><span class="tree-desc">ทรัพยากร วัตถุดิบ รีเอเจนต์ และคุณสมบัติ</span><button class="copy" type="button" aria-label="คัดลอกพาธ data/resources.json">คัดลอก</button></span></li>
+                          <li class="tree-item tree-leaf" data-kind="data"><span class="tree-label"><span class="tree-name">monsters.json · dungeons.json · locales.json · places.json</span><span class="tree-desc">มอนสเตอร์ ดันเจียน สถานที่ และพื้นที่</span><button class="copy" type="button" aria-label="คัดลอกพาธ data/monsters.json">คัดลอก</button></span></li>
+                          <li class="tree-item tree-leaf" data-kind="data"><span class="tree-label"><span class="tree-name">weapons.json · armors.json · enchants.json · equipslots.json</span><span class="tree-desc">อาวุธ เกราะ การเสริมพลัง และช่องอุปกรณ์</span><button class="copy" type="button" aria-label="คัดลอกพาธ data/weapons.json">คัดลอก</button></span></li>
+                          <li class="tree-item tree-leaf" data-kind="data"><span class="tree-label"><span class="tree-name">hall.json · homes.json · furniture.json · glossaryentries.json</span><span class="tree-desc">Wizard Hall บ้าน เครื่องเรือน และอภิธานศัพท์</span><button class="copy" type="button" aria-label="คัดลอกพาธ data/hall.json">คัดลอก</button></span></li>
+                        </ul></details></li>
+                        <li class="tree-item tree-dir" data-kind="structure"><details open><summary class="tree-label"><span class="tree-name">modules/</span><span class="tree-desc">ข้อมูลเสริม แบ่งตามเนื้อหา/คุณสมบัติ</span></summary><ul>
+                          <li class="tree-item tree-leaf" data-kind="data"><span class="tree-label"><span class="tree-name">patrons.json · companions.json · familiars.json · learning.json</span><span class="tree-desc">กลุ่มเนื้อหาเฉพาะและความสามารถเพิ่มเติม</span><button class="copy" type="button" aria-label="คัดลอกพาธ data/modules">คัดลอก</button></span></li>
+                          <li class="tree-item tree-leaf" data-kind="data"><span class="tree-label"><span class="tree-name">pyromancer.json · priest.json · duelist.json · swordplay.json</span><span class="tree-desc">สายอาชีพและระบบการต่อสู้เฉพาะทาง</span><button class="copy" type="button" aria-label="คัดลอกพาธ data/modules">คัดลอก</button></span></li>
+                          <li class="tree-item tree-leaf" data-kind="data"><span class="tree-label"><span class="tree-name">equipment/</span><span class="tree-desc">armors, caster, crafting, jewelry และ martial</span><button class="copy" type="button" aria-label="คัดลอกพาธ data/modules/equipment">คัดลอก</button></span></li>
+                          <li class="tree-item tree-leaf" data-kind="data"><span class="tree-label"><span class="tree-name">seasonal/</span><span class="tree-desc">เนื้อหาตามฤดูกาล เช่น Halloween, Winter, Fool และ Beltane รวม legacy</span><button class="copy" type="button" aria-label="คัดลอกพาธ data/modules/seasonal">คัดลอก</button></span></li>
+                          <li class="tree-item tree-leaf" data-kind="data"><span class="tree-label"><span class="tree-name">classline/ · equipment/</span><span class="tree-desc">โมดูลตามสายคลาสและชุดข้อมูลอุปกรณ์แบบแยกไฟล์</span><button class="copy" type="button" aria-label="คัดลอกพาธ data/modules">คัดลอก</button></span></li>
+                        </ul></details></li>
+                      </ul>
+                    </details>
+                  </li>
+                  <li class="tree-item tree-dir" data-kind="structure"><details open><summary class="tree-label"><span class="tree-name">css/</span><span class="tree-desc">main.css — สไตล์หลักของเกม</span></summary><ul><li class="tree-item tree-leaf" data-kind="code"><span class="tree-label"><span class="tree-name">main.css</span><span class="tree-desc">stylesheet หลักที่ index.html โหลด</span><button class="copy" type="button" aria-label="คัดลอกพาธ css/main.css">คัดลอก</button></span></li></ul></details></li>
+                  <li class="tree-item tree-dir" data-kind="structure"><details open><summary class="tree-label"><span class="tree-name">docs/</span><span class="tree-desc">เอกสารออกแบบและบันทึกสำหรับผู้พัฒนา</span></summary><ul>
+                    <li class="tree-item tree-leaf" data-kind="docs"><span class="tree-label"><span class="tree-name">game design.txt · code notes.txt · todo.txt</span><span class="tree-desc">แนวคิดเกม โน้ตโค้ด และรายการงาน</span><button class="copy" type="button" aria-label="คัดลอกพาธ docs">คัดลอก</button></span></li>
+                    <li class="tree-item tree-leaf" data-kind="docs"><span class="tree-label"><span class="tree-name">data.txt · json lexicon.md · module documentation.md</span><span class="tree-desc">เอกสารข้อมูล JSON และวิธีทำงานของโมดูล</span><button class="copy" type="button" aria-label="คัดลอกพาธ docs">คัดลอก</button></span></li>
+                    <li class="tree-item tree-leaf" data-kind="docs"><span class="tree-label"><span class="tree-name">classes.txt · places.txt · level_standards.txt</span><span class="tree-desc">ข้อมูลอ้างอิงคลาส สถานที่ และมาตรฐานระดับ</span><button class="copy" type="button" aria-label="คัดลอกพาธ docs">คัดลอก</button></span></li>
+                  </ul></details></li>
+                  <li class="tree-item tree-leaf" data-kind="docs"><span class="tree-label"><span class="tree-icon">◇</span><span class="tree-name">README.md</span><span class="tree-desc">ภาพรวมเกม วิธีติดตั้ง คำสั่งพัฒนา โครงสร้าง และข้อมูลเซฟ</span><button class="copy" type="button" aria-label="คัดลอกพาธ README.md">คัดลอก</button></span></li>
+                  <li class="tree-item tree-leaf" data-kind="docs"><span class="tree-label"><span class="tree-icon">◇</span><span class="tree-name">changelog.txt · CONTRIBUTORS · LICENSE</span><span class="tree-desc">ประวัติการเปลี่ยนแปลง ผู้มีส่วนร่วม และสัญญาอนุญาต</span><button class="copy" type="button" aria-label="คัดลอกพาธ changelog.txt">คัดลอก</button></span></li>
+                  <li class="tree-item tree-leaf" data-kind="code"><span class="tree-label"><span class="tree-icon">◇</span><span class="tree-name">manifest.webmanifest · privacy.html · .gitlab-ci.yml</span><span class="tree-desc">ข้อมูลแอป นโยบายความเป็นส่วนตัว และ pipeline</span><button class="copy" type="button" aria-label="คัดลอกพาธ manifest.webmanifest">คัดลอก</button></span></li>
+                  <li class="tree-item tree-leaf" data-kind="code"><span class="tree-label"><span class="tree-icon">◇</span><span class="tree-name">dev/</span><span class="tree-desc">output directory ของ Vite build (สร้างจากการ build; ไม่ใช่ source หลัก)</span><button class="copy" type="button" aria-label="คัดลอกพาธ dev">คัดลอก</button></span></li>
+                </ul>
+              </details>
+            </li>
+          </ul>
+          <div class="tree-empty" id="emptyMessage">ไม่พบรายการที่ตรงกับคำค้นหานี้</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="details">
+      <div class="section-head"><div><h2>แนวทางอ่านโค้ด</h2><p>เส้นทางแนะนำสำหรับทำความเข้าใจโครงการอย่างรวดเร็ว</p></div></div>
+      <div class="two-col">
+        <article class="panel">
+          <h3>เริ่มไล่จากจุดเริ่มแอป</h3>
+          <ul>
+            <li><code>index.html</code> สร้าง host ของแอป แล้วโหลด <code>src/index.js</code></li>
+            <li><code>src/index.js</code> เตรียม Vue app และเรียก <code>DataLoader.requestData()</code></li>
+            <li><code>src/dataLoader.js</code> อ่าน <code>data/modules.json</code> แล้วโหลด core กับโมดูลที่ระบุ</li>
+            <li><code>src/game.js</code> สร้าง/ควบคุมสถานะและ logic ระหว่างเล่น</li>
+            <li><code>src/ui/main.vue</code> ประกอบหน้าจอจาก section และคอมโพเนนต์ย่อย</li>
+          </ul>
+        </article>
+        <article class="panel">
+          <h3>เพิ่มหรือแก้เนื้อหาเกม</h3>
+          <p>เนื้อหาส่วนใหญ่เป็น JSON ใน <code>data/</code> หากแยกเป็นโมดูล ให้ตรวจการลงทะเบียนไฟล์ใน <code>data/modules.json</code> และรูปแบบข้อมูลที่ <code>src/modules/module.js</code> รองรับ</p>
+          <p>ระบบข้อมูลจะรวม template เข้ากับข้อมูลเซฟ แล้วสร้าง instance/list สำหรับ runtime ดังนั้นควรตรวจทั้ง definition และโค้ดที่อ่านชนิดข้อมูลนั้น</p>
+        </article>
+        <article class="panel">
+          <h3>พัฒนาและ build</h3>
+          <ul>
+            <li><code>npm install</code> ติดตั้ง dependencies</li>
+            <li><code>npm run dev</code> เปิด Vite dev server ที่พอร์ต 3000</li>
+            <li><code>npm run build</code> สร้าง production output ใน <code>dev/</code></li>
+            <li><code>npm run ci-dev</code> รัน TypeScript compiler และ build</li>
+          </ul>
+        </article>
+        <article class="panel">
+          <h3>เซฟและการคงอยู่ของข้อมูล</h3>
+          <p>การจัดการโปรไฟล์อยู่ใน <code>src/modules/profile.js</code> ส่วน persistence แยกเป็นตัวกลางและ backend ใน <code>src/modules/persist/</code> README ระบุการใช้ IndexedDB พร้อม localStorage fallback และรองรับนำเข้า/ส่งออก JSON</p>
+          <div class="callout">คำเตือน: Vite ตั้งค่า <code>emptyOutDir: true</code> และ build ลง <code>dev/</code> จึงล้าง output เดิมก่อนสร้างใหม่</div>
+        </article>
+      </div>
+    </section>
+    <footer class="footer">สรุปจากโครงสร้าง repository และไฟล์ตั้งค่าที่มีอยู่ ณ เวลาจัดทำ · ไฟล์นี้เป็นเอกสาร HTML แบบ standalone ไม่มี dependency ภายนอก</footer>
+  </main>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script>
+    (() => {
+      const tree = document.getElementById("projectTree");
+      const input = document.getElementById("search");
+      const counter = document.getElementById("resultCount");
+      const emptyMessage = document.getElementById("emptyMessage");
+      const filters = [...document.querySelectorAll(".filter")];
+      let selectedFilter = "all";
+      let toastTimer;
+
+      function filterTree() {
+        const query = input.value.trim().toLocaleLowerCase();
+        let visibleLeaves = 0;
+        const items = [...tree.querySelectorAll("li.tree-item")].reverse();
+        for (const item of items) {
+          const label = item.querySelector(":scope > .tree-label, :scope > details > summary");
+          const labelText = label ? label.textContent.toLocaleLowerCase() : "";
+          const children = [...item.querySelectorAll(":scope > ul > li.tree-item, :scope > details > ul > li.tree-item")];
+          const childVisible = children.some(child => !child.hidden);
+          const kind = item.dataset.kind;
+          const kindMatches = selectedFilter === "all" || kind === selectedFilter || kind === "structure";
+          const textMatches = !query || labelText.includes(query);
+          const isLeaf = children.length === 0;
+          const matches = kindMatches && textMatches;
+          item.hidden = isLeaf ? !matches : !(matches || childVisible);
+          if (isLeaf && !item.hidden) visibleLeaves++;
+          if (query && childVisible) {
+            const details = item.querySelector(":scope > details");
+            if (details) details.open = true;
+          }
+        }
+        counter.textContent = query || selectedFilter !== "all"
+          ? `พบ ${visibleLeaves} รายการ`
+          : "แสดงทั้งหมด";
+        emptyMessage.style.display = visibleLeaves ? "none" : "block";
+      }
+
+      input.addEventListener("input", filterTree);
+      filters.forEach(button => button.addEventListener("click", () => {
+        selectedFilter = button.dataset.filter;
+        filters.forEach(filter => filter.setAttribute("aria-pressed", String(filter === button)));
+        filterTree();
+      }));
+      document.getElementById("expandButton").addEventListener("click", () => {
+        tree.querySelectorAll("details").forEach(details => { details.open = true; });
+      });
+      document.getElementById("collapseButton").addEventListener("click", () => {
+        tree.querySelectorAll("details").forEach(details => { details.open = false; });
+      });
+      document.getElementById("themeButton").addEventListener("click", () => {
+        document.body.classList.toggle("light");
+      });
+      tree.addEventListener("click", async event => {
+        const button = event.target.closest(".copy");
+        if (!button) return;
+        const path = button.getAttribute("aria-label").replace(/^คัดลอกพาธ\s*/, "");
+        try {
+          await navigator.clipboard.writeText(path);
+          const toast = document.getElementById("toast");
+          toast.textContent = `คัดลอก ${path} แล้ว`;
+          toast.classList.add("show");
+          clearTimeout(toastTimer);
+          toastTimer = setTimeout(() => toast.classList.remove("show"), 1700);
+        } catch (error) {
+          const toast = document.getElementById("toast");
+          toast.textContent = "เบราว์เซอร์ไม่อนุญาตให้คัดลอก กรุณาคัดลอกพาธจากรายการ";
+          toast.classList.add("show");
+          clearTimeout(toastTimer);
+          toastTimer = setTimeout(() => toast.classList.remove("show"), 2400);
+        }
+      });
+      filterTree();
+    })();
+  </script>
+</body>
+</html>
