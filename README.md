@@ -1,5 +1,14 @@
 # Theory of Magic(Editor Version)
 
+<p align="center">
+  <img alt="Vue 3" src="https://img.shields.io/badge/Vue-3-42b883?logo=vuedotjs&logoColor=white" />
+  <img alt="Vite" src="https://img.shields.io/badge/Vite-5-646CFF?logo=vite&logoColor=white" />
+  <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-ES6-F7DF1E?logo=javascript&logoColor=black" />
+</p>
+
+A browser-based fantasy idle / incremental RPG where players build a wizard, complete quests, explore magical lands, battle monsters, learn spells, and grow their power over time.
+
+Theory of Magic is built with Vue 3 and Vite, with most world content driven by JSON data files to make balancing and expansion easier.
 
 **Theory of Magic** เป็นเกมแฟนตาซีแนว idle / incremental RPG ที่เล่นผ่านเว็บ ผู้เล่นจะพัฒนาพ่อมด ทำภารกิจและการผจญภัย ต่อสู้กับมอนสเตอร์ เรียนรู้เวทมนตร์ และสะสมทรัพยากรเพื่อปลดล็อกความก้าวหน้าใหม่ ๆ ตัวเกมสร้างด้วย Vue 3 และ Vite โดยข้อมูลเกมส่วนใหญ่เก็บเป็นไฟล์ JSON
 
@@ -55,60 +64,87 @@ Vite จะแสดง URL ของเซิร์ฟเวอร์พัฒ�
 
 เกมบันทึกข้อมูลในเบราว์เซอร์ผ่าน IndexedDB และมี localStorage เป็น fallback การล้างข้อมูลเว็บไซต์หรือเปลี่ยนเบราว์เซอร์อาจทำให้เซฟในเครื่องหายได้ ควรส่งออกไฟล์เซฟ JSON เก็บไว้เป็นระยะ โดยเกมรองรับทั้งการนำเข้า/ส่งออกเซฟตัวละครและ Wizard Hall
 
+## Highlights
 
----
+- Level up characters through classes, skills, and magical progression
+- Accept quests and tasks to gain resources and unlock new content
+- Explore locations, dungeons, and monster encounters
+- Manage equipment, spellcasting, crafting, and alchemy
+- Maintain a Wizard Hall and multiple characters in one save profile
+- Import/export game saves as JSON for backup and portability
+- Content-driven design using `data/*.json` for monsters, items, spells, and modules
 
+## Gameplay overview
 
-**Theory of Magic** is a browser-based fantasy idle / incremental RPG. Build up a wizard, take on tasks and adventures, fight monsters, learn magic, and gather resources to unlock further progression. The game is built with Vue 3 and Vite, with most game content defined in JSON files.
+- Build a wizard and advance through progression systems
+- Fight enemies, gather loot, and earn resources
+- Unlock new areas, classes, and magical abilities
+- Upgrade your hall and manage a growing roster of characters
+- Save directly in the browser with IndexedDB and fallback storage support
 
-### Features
+## Getting started
 
-- Progress a character through levels, classes, skills, and spells.
-- Perform tasks and quests to earn resources, unlock content, and advance.
-- Explore locations and dungeons, battle monsters, and collect rewards.
-- Manage equipment, cast spells, brew potions, and craft items.
-- Manage a Wizard Hall and multiple characters.
-- Save in the browser and import or export JSON save files.
+Requirements:
 
-### Getting started
+- [Node.js](https://nodejs.org/) 18+
+- npm
 
-Install [Node.js](https://nodejs.org/) 18 or later and npm.
-
-```sh
+```bash
 npm install
 npm run dev
 ```
 
-Vite prints the development server URL when it starts. The default is `http://localhost:3000`.
+After starting, Vite will print the local development URL. By default, this is usually:
 
-Common commands:
+```text
+http://localhost:3000
+```
+
+## Common commands
 
 | Command | Description |
 | --- | --- |
-| `npm run dev` | Start the development server with hot reload. |
-| `npm run build` | Create a production build in `dev/`. |
-| `npm run preview -- --outDir dev` | Preview the build output in `dev/`. |
-| `npm run silent` | Start the development server with hot reload disabled. |
-| `npm run ci-dev` | Run the TypeScript compiler and create a production build. |
+| `npm run dev` | Start the development server with hot reload |
+| `npm run build` | Build the production bundle into `dev/` |
+| `npm run preview -- --outDir dev` | Preview the built app from `dev/` |
+| `npm run silent` | Start Vite without hot reload |
+| `npm run ci-dev` | Run TypeScript and generate a production build |
+| `npm run pretty-src` | Format source files in `src/` with Prettier |
+| `npm run pretty-data` | Format JSON content in `data/` |
 
-> **Warning:** `npm run build` clears the existing contents of `dev/` before writing the new build because Vite also uses this directory as its output directory. Back up files there first, or choose another output directory, for example `npm run build -- --outDir dist`.
+> Warning: `npm run build` clears the existing `dev/` directory before generating the new build, because Vite uses that folder as its output directory. If you want to keep the old assets, back them up first or choose another output folder such as `npm run build -- --outDir dist`.
 
-### Project layout
+## Project structure
 
-| Path | Contents |
+| Path | Purpose |
 | --- | --- |
-| `src/` | Game and web application source code. |
-| `src/chars/` | Characters, player state, and combat-related logic. |
-| `src/composites/` | Combined game systems such as exploration, combat, and running actions. |
-| `src/items/` | Runtime item models and game data types. |
-| `src/modules/` | Game data loading, profiles, item generation, and persistence. |
-| `src/ui/` | Vue user interface. |
-| `src/values/` | Numeric values, stats, and modifiers. |
-| `data/` | JSON game content; `modules.json` selects core data and optional modules to load. |
-| `css/` | Main stylesheet. |
-| `docs/` | Game design notes and data documentation. |
-| `dev/` | Vite output directory for built web assets. |
+| `src/` | Main game and app source code |
+| `src/chars/` | Characters, player state, and combat logic |
+| `src/composites/` | Exploration, combat, and action systems |
+| `src/items/` | Runtime item definitions and gameplay data |
+| `src/modules/` | Persistence, data loading, profiles, and generation |
+| `src/ui/` | Vue-based user interface |
+| `src/values/` | Stats, numeric values, and modifiers |
+| `data/` | Game content such as spells, monsters, quests, and modules |
+| `css/` | Main stylesheet |
+| `docs/` | Design notes and documentation |
+| `dev/` | Vite output directory for built web assets |
 
-### Save data
+## Save system
 
-The game stores browser saves in IndexedDB, with localStorage as a fallback. Clearing site data or switching browsers can remove local saves, so periodically export a JSON backup. Both individual character saves and the Wizard Hall can be imported and exported.
+The game stores browser saves with IndexedDB and uses localStorage as a fallback. If you clear site data or switch browsers, local saves may disappear, so exporting a JSON backup is recommended.
+
+The project supports importing and exporting both character saves and Wizard Hall data.
+
+## Stack
+
+- Vue 3
+- Vite
+- JavaScript
+- JSON-driven content architecture
+
+## Thai summary
+
+Theory of Magic เป็นเกมแฟนตาซีแนว browser-based idle / incremental RPG ที่ผู้เล่นจะสร้างเวทมนตร์ พัฒนาตัวละคร สำรวจโลกแฟนตาซี ต่อสู้กับมอนสเตอร์ รวบรวมทรัพยากร และปลดล็อกความก้าวหน้าผ่านภารกิจและการปรับปรุงอุปกรณ์ต่าง ๆ
+
+เกมนี้ใช้ Vue 3 + Vite และจัดเก็บข้อมูลเกมหลักในไฟล์ JSON เพื่อให้การเพิ่มเนื้อหาและปรับสมดุลเกมทำได้ยืดหยุ่นและรวดเร็ว
