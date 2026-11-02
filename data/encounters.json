@@ -2,7 +2,7 @@
 	{
 		"id": "enc_primer1",
 		"name": "magical primer",
-		"desc": "An introduction to magical theory.",
+		"desc": "บทนำสู่ทฤษฎีเวทมนตร์",
 		"effect": {
 			"bf": "-1~2",
 			"lore.exp": 1
@@ -15,7 +15,7 @@
 	{
 		"id": "enc_workbook1",
 		"name": "workbook",
-		"desc": "A book on the practical applications of magic.",
+		"desc": "หนังสือว่าด้วยการประยุกต์ใช้เวทมนตร์เชิงปฏิบัติ",
 		"effect": {
 			"bf": "-1~2",
 			"rage": "0~2",
@@ -25,7 +25,7 @@
 	{
 		"id": "enc_bookworm",
 		"name": "bookworm",
-		"desc": "A studious annelid to choose a home within a tome's pages.",
+		"desc": "หนอนน้อยขยันที่เลือกอาศัยอยู่ในหน้ากระดาษตำรา",
 		"effect": {
 			"bf": "1~2",
 			"lore.exp": 1
@@ -35,7 +35,7 @@
 		"id": "mysticwater",
 		"name": "mystic waters",
 		"level": 1,
-		"desc": "Water suffused with enchantments.",
+		"desc": "น้ำที่อัดแน่นด้วยเวทมนตร์",
 		"effect": {
 			"bf": "-1~2",
 			"naturelore.exp": 1,
@@ -50,7 +50,7 @@
 		"id": "manatree",
 		"name": "mana tree",
 		"level": 2,
-		"desc": "A tree by a magic spring exhibits surprising qualities.",
+		"desc": "ต้นไม้ข้างน้ำพุเวทแสดงคุณสมบัติอันน่าประหลาดใจ",
 		"effect": {
 			"bf": "-1~2",
 			"naturelore.exp": 1,
@@ -64,7 +64,7 @@
 		"id": "enc_heather",
 		"name": "heathered copse",
 		"level": 2,
-		"desc": "You rest in the shade amid flowers of heather.",
+		"desc": "คุณพักผ่อนในร่มเงาท่ามกลางพุ่มไม้เฮเทอร์",
 		"effect": {
 			"rage": "-2~0",
 			"stamina": 1,
@@ -76,7 +76,7 @@
 		"id": "enc_tapestry",
 		"name": "occult tapestry",
 		"level": 2,
-		"desc": "A tapestry with strange, hidden meanings.",
+		"desc": "ผ้าทอแขวนผนังที่มีความหมายซ่อนเร้นอันแปลกประหลาด",
 		"effect": {
 			"bf": "-1~2",
 			"rage": "0~2"
@@ -89,7 +89,7 @@
 	{
 		"id": "foggydale",
 		"name": "foggy dale",
-		"desc": "The fog here is so thick, you can't see your own hands.",
+		"desc": "หมอกหนาที่นี่ถึงขั้นมองไม่เห็นมือตัวเอง",
 		"effect": {
 			"bf": "1~2",
 			"rage": "0~1",
@@ -101,7 +101,7 @@
 	{
 		"id": "enc_chest1",
 		"name": "dusty chest",
-		"desc": "A battered, wooden chest.",
+		"desc": "หีบไม้เก่าโทรม",
 		"effect": {
 			"bf": "-1~2"
 		},
@@ -113,7 +113,7 @@
 	{
 		"id": "enc_chest2",
 		"name": "iron chest",
-		"desc": "A solid iron chest.",
+		"desc": "หีบเหล็กแข็งแรง",
 		"effect": {
 			"bf": "-1~1",
 			"rage": "0~1"
@@ -127,7 +127,7 @@
 	{
 		"id": "enc_chest3",
 		"name": "dusty chest",
-		"desc": "A small but solid chest.",
+		"desc": "หีบเล็กแต่แข็งแรง",
 		"effect": {
 			"rage": "1~3"
 		},
@@ -141,7 +141,7 @@
 	{
 		"id": "enc_chest4",
 		"name": "oak chest",
-		"desc": "A sturdy, oaken chest.",
+		"desc": "หีบไม้โอ๊กอันแข็งแกร่ง",
 		"effect": {
 			"rage": "2~4",
 			"weary": "1~3"
@@ -158,7 +158,7 @@
 	{
 		"id": "enc_primer2",
 		"name": "advanced primer",
-		"desc": "More advanced magical theory.",
+		"desc": "ทฤษฎีเวทมนตร์ขั้นสูงยิ่งขึ้น",
 		"effect": {
 			"bf": "-1~3",
 			"weary": "0~2",
@@ -177,7 +177,7 @@
 	{
 		"id": "enc_thyffr",
 		"name": "talking to thyffr",
-		"desc": "Within a ramble of mundane details, Thyffr often discloses some genuine history.",
+		"desc": "ท่ามกลางคำเล่าพล่ามรายละเอียดจุกจิก ไทฟ์เฟอร์มักเผยประวัติศาสตร์อันแท้จริงอยู่บ้าง",
 		"effect": {
 			"rage": "0~2",
 			"weary": "1~3",
@@ -194,7 +194,7 @@
 	{
 		"id": "enc_delki",
 		"name": "babbling delki",
-		"desc": "The Delki of the woods know many things, but are seldom coherent.",
+		"desc": "เหล่าเดลกิแห่งป่ารู้สิ่งต่าง ๆ มากมาย แต่แทบไม่เคยเล่าราวเรื่องได้ต่อเนื่อง",
 		"effect": {
 			"rage": "1~2",
 			"weary": "1~3",
@@ -212,7 +212,7 @@
 	{
 		"id": "enc_gnome",
 		"name": "affable gnome",
-		"desc": "A gnome is always more than willing to talk over a pint or a pipe.",
+		"desc": "คนแคระโนมยินดีเป็นอย่างยิ่งที่จะคุยเล่นพร้อมแก้วเบียร์หรือไปป์สักท่อ",
 		"tags": "site_of_learning",
 		"effect": {
 			"weary": "0~2",
@@ -228,7 +228,7 @@
 	{
 		"id": "enc_gibber",
 		"name": "gibbering",
-		"desc": "They hide in small cracks and in return for a wicked deed, will reveal one secret.",
+		"desc": "พวกมันซ่อนตัวตามรอยแตกร้าวเล็ก ๆ และจะเปิดเผยความลับหนึ่งอย่าง ตอบแทนการกระทำอันชั่วช้า",
 		"effect": {
 			"weary": "0~2",
 			"madness": "0~2",
@@ -241,12 +241,12 @@
 		"loot": {
 			"shadowgem": "5%"
 		},
-		"flavor": "Legend tells of a massive gibbering, who will answer any question in return for a murder."
+		"flavor": "ตำนานเล่าถึงพวกพึมพำยักษ์ตนหนึ่ง ที่จะตอบคำถามใด ๆ ตอบแทนการฆาตกรรมหนึ่งครั้ง"
 	},
 	{
 		"id": "enc_mummy",
 		"name": "mummified remains",
-		"desc": "A corpse preserved by the stale air.",
+		"desc": "ศพที่ถูกอากาศนิ่งเฉยรักษาไว้ไม่เน่าเปื่อย",
 		"tags": "site_of_learning",
 		"effect": {
 			"madness": "0~2",
@@ -268,7 +268,7 @@
 	{
 		"id": "eeriemoans",
 		"name": "eerie moans",
-		"desc": "You hear a faint moaning, but are unable to determine its source.",
+		"desc": "คุณได้ยินเสียงครางแผ่วเบา แต่ไม่อาจระบุที่มามันได้",
 		"effect": {
 			"spiritlore.exp": 1,
 			"madness": 1
@@ -277,7 +277,7 @@
 	{
 		"id": "strangebones",
 		"name": "strange bones",
-		"desc": "You've never seen such bones before.",
+		"desc": "คุณไม่เคยเห็นกระดูกแบบนี้มาก่อนเลย",
 		"effect": {
 			"bf": "-1~2",
 			"unease": "0~3",
@@ -290,7 +290,7 @@
 	{
 		"id": "enc_embalm1",
 		"name": "embalming apparatus",
-		"desc": "Fluids and recepticles for the preservation of corpses.",
+		"desc": "ของเหลวและภาชนะสำหรับดองรักษาศพ",
 		"effect": {
 			"bf": "-1~2",
 			"unease": "0~2"
@@ -303,7 +303,7 @@
 	},
 	{
 		"id": "sarcophagus",
-		"desc": "Ancient coffin marked by faded runes.",
+		"desc": "โลงศพโบราณที่มีรูนจางรางกำกับอยู่",
 		"level": 4,
 		"effect": {
 			"unease": "0~2",
@@ -321,7 +321,7 @@
 	{
 		"id": "enc_rats",
 		"name": "plague rats",
-		"desc": "The scurrying vermin are covered in welts.",
+		"desc": "เหล่าสัตว์รังควานที่วิ่งวุ่นปกคลุมไปด้วยตุ่มบวม",
 		"effect": {
 			"bf": "-1~2",
 			"unease": "0~2"
@@ -334,7 +334,7 @@
 	{
 		"id": "hauntedglade",
 		"name": "haunted glade",
-		"desc": "Trees here have an eerie aspect.",
+		"desc": "ต้นไม้ตรงนี้มีท่าทีชวนขนลุก",
 		"tags": "site_of_learning",
 		"effect": {
 			"madness": "1~2",
@@ -349,7 +349,7 @@
 	{
 		"id": "hiddencache",
 		"name": "hidden cache",
-		"desc": "You sense something buried nearby.",
+		"desc": "คุณรู้สึกได้ว่ามีบางสิ่งถูกฝังอยู่ใกล้ ๆ",
 		"effect": {
 			"rage": "1~2",
 			"weary": "0~2",
@@ -366,7 +366,7 @@
 	{
 		"id": "murkywater",
 		"name": "murky waters",
-		"desc": "Ominous shapes drift and flow beneath the murky waters.",
+		"desc": "เงารูปร่างอันเป็นลางร้ายล่องลอยไหวอยู่ใต้ผืนน้ำขุ่นมัว",
 		"tags": "site_of_learning",
 		"effect": {
 			"bf": "0~2",
@@ -382,7 +382,7 @@
 	{
 		"id": "enc_hettie",
 		"name": "hettie",
-		"desc": "An ancient gryffon lives atop the Rithel's solitary turret, and Hettie spends her days grooming and feeding the beast.",
+		"desc": "กริฟฟอนโบราณตัวหนึ่งอาศัยอยู่บนยอดป้อมเล็กโดดเดี่ยวของริเธล และเฮตตี้ใช้เวลาทั้งวันดูแลความสะอาดและให้อาหารมัน",
 		"tags": "site_of_learning",
 		"effect": {
 			"weary": "1~3",
@@ -398,7 +398,7 @@
 	{
 		"id": "enc_pidwig",
 		"name": "Talk To Pidwig",
-		"desc": "Pidwig is sparse with words, but has seen many mysteries in his travels.",
+		"desc": "พิดวิกพูดน้อย แต่ได้เห็นปริศนามากมายระหว่างเดินทาง",
 		"effect": {
 			"bf": "0~2",
 			"weary": "0~2",
@@ -414,7 +414,7 @@
 	{
 		"id": "pidwigtreasure",
 		"name": "pidwig's hoard",
-		"desc": "Over the years Pidwig has amassed a sizeable collection of gems and artifacts.",
+		"desc": "ตลอดหลายปี พิดวิกสั่งสมเพชรพลอยและโบราณวัตถุไว้เป็นจำนวนมาก",
 		"effect": {
 			"crafting.exp": 1,
 			"history.exp": 1,
@@ -425,12 +425,12 @@
 		"loot": {
 			"prismaticgems": "1~3"
 		},
-		"flavor": "Perhaps he could be induced to part with some..."
+		"flavor": "บางทีอาจโน้มน้าวให้เขายอมแบ่งปันบ้าง..."
 	},
 	{
 		"id": "starrysky1",
 		"name": "starry night",
-		"desc": "A clear sky affords an endless view of the firmament.",
+		"desc": "ท้องฟ้าแจ่มใสเปิดมุมมองอันไร้สิ้นสุดสู่หมู่ดาว",
 		"effect": {
 			"bf": "1~2",
 			"unease": "-1~2",
@@ -443,7 +443,7 @@
 	{
 		"id": "pidwigstars",
 		"name": "pidwig's starcharts",
-		"desc": "An old hand at astronomical calculations, Pidwig shares his extensive observations.",
+		"desc": "ผู้ช่ำชองการคำนวณดาราศาสตร์ พิดวิกแบ่งปันข้อสังเกตอันกว้างขวางของเขา",
 		"effect": {
 			"bf": "1~3",
 			"unease": "-1~2",
@@ -459,7 +459,7 @@
 	{
 		"id": "sombersunset",
 		"name": "somber sunset",
-		"desc": "Lapping waves in the dying sun hint at secrets beyond your reach.",
+		"desc": "คลื่นซัดฝั่งท่ามกลางแสงตะวันยามอัสดงส่งนัยถึงความลับที่เกินเอื้อมของคุณ",
 		"effect": {
 			"rage": "-1~-2",
 			"weary": "-1~-2",
@@ -472,7 +472,7 @@
 	{
 		"id": "brightvista",
 		"name": "bright vista",
-		"desc": "A small knoll reveals lands far into the distance.",
+		"desc": "เนินเล็ก ๆ เผยให้เห็นผืนแผ่นดินไกลสุดสายตา",
 		"effect": {
 			"bf": "-1~-2",
 			"weary": "-1~-2",
@@ -484,7 +484,7 @@
 	{
 		"id": "enc_tome",
 		"name": "runic tome",
-		"desc": "Even deciphering the runes is a tedious chore.",
+		"desc": "แม้เพียงถอดรหัสรูนก็เป็นงานที่ชวนระอา",
 		"effect": {
 			"bf": "-1~4",
 			"rage": "0~4",
@@ -501,7 +501,7 @@
 	{
 		"id": "enc_history",
 		"name": "dhrunic manuscript",
-		"desc": "Much that was is lost.",
+		"desc": "สิ่งที่เคยมีอยู่นับไม่ถ้วนได้สูญหายไป",
 		"tags": "site_of_learning",
 		"effect": {
 			"bf": "-1~4",
@@ -517,12 +517,12 @@
 		"mod": {
 			"history.max": "0.1//30/-10"
 		},
-		"flavor": "For none now live, who remember it."
+		"flavor": "เพราะบัดนี้ไม่มีผู้ใดที่ยังมีชีวิตจดจำมันได้อีกแล้ว"
 	},
 	{
 		"id": "enc_workbook2",
 		"name": "master's workbook",
-		"desc": "A book on the practical applications of magic.",
+		"desc": "หนังสือว่าด้วยการประยุกต์ใช้เวทมนตร์เชิงปฏิบัติ",
 		"tags": "site_of_learning",
 		"effect": {
 			"bf": "-1~3",
@@ -537,7 +537,7 @@
 	{
 		"id": "enc_furnace",
 		"name": "fazbit's furnace",
-		"desc": "Its embers still glow after centuries.",
+		"desc": "ถ่านของมันยังเรืองแสงแม้เวลาล่วงเลยมาหลายศตวรรษ",
 		"tags": "site_of_learning",
 		"effect": {
 			"bf": "-1~4",
@@ -555,7 +555,7 @@
 	{
 		"id": "enc_alchemy",
 		"name": "alchemical equipment",
-		"desc": "The uses of these instruments are beyond you.",
+		"desc": "การใช้งานเครื่องมือเหล่านี้เกินความเข้าใจของคุณ",
 		"tags": "site_of_learning",
 		"effect": {
 			"bf": "-1~4",
@@ -570,7 +570,7 @@
 	{
 		"id": "enc_statue2",
 		"name": "crumbled statue",
-		"desc": "The old stonemasons often chiselled spells into their works.",
+		"desc": "ช่างหินโบราณมักสลักคาถาลงบนผลงานของตน",
 		"tags": "site_of_learning",
 		"effect": {
 			"earthlore.exp": 1,
@@ -585,7 +585,7 @@
 	{
 		"id": "enc_statue4",
 		"name": "eldar statue",
-		"desc": "Its weathered face has gazed upon the world since the Wind Age.",
+		"desc": "ใบหน้าที่ผุกร่อนของมันเฝ้ามองโลกมานับแต่ยุคสายลม",
 		"tags": "site_of_learning",
 		"effect": {
 			"madness": 1,
@@ -603,8 +603,8 @@
 	{
 		"id": "enc_battle1",
 		"name": "ancient battlefield",
-		"desc": "Blasted hills and scraps of armor still mark an ancient site of battle.",
-		"flavor": "The only reminder of a war so terrible it quenched the Southern Kings' battlelust forevermore.",
+		"desc": "เนินเขาที่ถูกถล่มและเศษชิ้นส่วนเกราะยังคงแต้มรอยสมรภูมิโบราณ",
+		"flavor": "เพียงสิ่งเดียวที่เตือนใจถึงสงครามอันโหดร้ายที่ทำให้เหล่ากษัตริย์ใต้หล้าสูญสิ้นสัญชาตญาณนักรบไปตลอดกาล",
 		"tags": "site_of_learning",
 		"effect": {
 			"madness": 0.5,
@@ -619,7 +619,7 @@
 	{
 		"id": "enc_mtpass",
 		"name": "thandhrun pass",
-		"desc": "Higher even than Gorborung, the passes of Thandhrun incessantly thunder.",
+		"desc": "สูงยิ่งกว่าโกรโบรุงเสียอีก ช่องเขาทานดรุนคำรามกัมปนาทไม่ขาดสาย",
 		"tags": "site_of_learning",
 		"effect": {
 			"madness": 0.5,
@@ -636,7 +636,7 @@
 	{
 		"id": "enc_oldstone",
 		"name": "the old stone",
-		"desc": "The massive head of stone and moss is said to be as old as the world itself.",
+		"desc": "หัวหินใหญ่โตที่ปกคลุมไปด้วยตะไคร่น้ำนี้ ว่ากันว่าเก่าแก่เท่าโลกใบนี้เอง",
 		"effect": {
 			"unease": "3~4",
 			"bf": "0~-2",
@@ -646,12 +646,12 @@
 		"loot": {
 			"earthrune": "10%"
 		},
-		"flavor": "A voice seems to grumble from the ground."
+		"flavor": "ดูเหมือนเสียงหนึ่งจะบ่นงึมงำขึ้นจากพื้นดิน"
 	},
 	{
 		"id": "enc_sindel",
 		"name": "star shrine",
-		"desc": "A glowing star cinder embedded in a shrine.",
+		"desc": "เถ้าดวงดาวเรืองแสงที่ฝังอยู่ในแท่นบูชา",
 		"tags": "site_of_learning",
 		"effect": {
 			"lightlore.exp": 1,
@@ -663,12 +663,12 @@
 		"mod": {
 			"lightlore.max": "0.1//30/-10"
 		},
-		"flavor": "You can't seem to pry it loose."
+		"flavor": "ดูเหมือนคุณจะงัดมันออกไม่ได้"
 	},
 	{
 		"id": "enc_tenwick",
 		"name": "tenwick",
-		"desc": "Tenwick is often on the trail, but always glad to stop and trade tales.",
+		"desc": "เทนวิคมักออกเดินทางอยู่เสมอ แต่ยินดีหยุดพักและแลกเปลี่ยนเรื่องเล่าเสมอ",
 		"effect": {
 			"s_travel.exp": 1,
 			"weary": "2~3"
@@ -677,7 +677,7 @@
 	{
 		"id": "enc_wyrd",
 		"name": "wyrd sister",
-		"desc": "The Wyrd sister Hecubah waits by the roadside.",
+		"desc": "เฮคูบาน้องสาวแห่งโชคชะตารอคอยอยู่ริมทาง",
 		"effect": {
 			"scrying.exp": 1,
 			"divination.exp": 1,
@@ -685,12 +685,12 @@
 			"bf": "3~7",
 			"unease": "2~4"
 		},
-		"flavor": "Blank verse is hard to interpret."
+		"flavor": "กลอนเปล่าเป็นสิ่งที่ยากจะตีความ"
 	},
 	{
 		"id": "enc_gap",
 		"name": "markhul's gap",
-		"desc": "Gazing over the dizzy edge, you see no sign of a bottom.",
+		"desc": "จ้องมองจากขอบเหวอันเวียนหัว คุณไม่เห็นวี่แววของก้นเหวเลย",
 		"tags": "site_of_learning",
 		"effect": {
 			"bf": "0~3",
@@ -708,7 +708,7 @@
 	{
 		"id": "enc_mirror1",
 		"name": "mirror of introspection",
-		"desc": "It's just you.",
+		"desc": "มีเพียงคุณเท่านั้น",
 		"effect": {
 			"lightlore.exp": 1,
 			"weary": "1~3",
@@ -718,7 +718,7 @@
 	{
 		"id": "enc_mirror2",
 		"name": "mirror of false reflection",
-		"desc": "Something is wrong with the glass.",
+		"desc": "มีบางอย่างผิดปกติกับกระจก",
 		"effect": {
 			"trickery.exp": 1,
 			"rage": "1~3",
@@ -728,7 +728,7 @@
 	{
 		"id": "enc_futuremirror",
 		"name": "mirror of foretelling",
-		"desc": "Visions of the future play in your reflection.",
+		"desc": "ภาพอนาคตฉายเล่นอยู่ในเงาสะท้อนของคุณ",
 		"effect": {
 			"divination.exp": 1,
 			"madness": "1~3",
@@ -738,7 +738,7 @@
 	{
 		"id": "enc_rageemirror",
 		"name": "seething mirror",
-		"desc": "The glass fixes your gaze and stokes your wrath.",
+		"desc": "บานกระจกจับจ้องสายตาคุณและเติมเชื้อโทสะ",
 		"effect": {
 			"rage": "4~5"
 		}
@@ -746,7 +746,7 @@
 	{
 		"id": "enc_mirrorhall",
 		"name": "reflecting hallways",
-		"desc": "You soon become lost in the false cooridors.",
+		"desc": "คุณหลงทางอยู่ในทางเดินลวงตานั้นในไม่ช้า",
 		"effect": {
 			"trickery.exp": 1,
 			"rage": "2~3",
@@ -756,19 +756,19 @@
 	{
 		"id": "enc_voidmirror",
 		"name": "void mirror",
-		"desc": "You see all shapes clearly reflected; but completely black.",
+		"desc": "คุณเห็นเงาทุกอย่างสะท้อนชัดเจน แต่เป็นสีดำสนิท",
 		"effect": {
 			"voidlore.exp": 1,
 			"void": 1,
 			"madness": "3~5",
 			"unease": "3~5"
 		},
-		"flavor": "For now you see in a mirror, darkly."
+		"flavor": "บัดนี้คุณมองเห็นผ่านกระจกอย่างมืดมัวไม่ชัดเจน"
 	},
 	{
 		"id": "enc_watermirror",
 		"name": "water mirror",
-		"desc": "Through the mirror you appear to be drowning.",
+		"desc": "ผ่านบานกระจก ดูเหมือนว่าคุณกำลังจมน้ำ",
 		"effect": {
 			"breath": -3,
 			"water": 1,
@@ -779,7 +779,7 @@
 	{
 		"id": "enc_pastmirror",
 		"name": "mirror of history",
-		"desc": "The mirror shows scenes from long ago.",
+		"desc": "กระจกเผยภาพจากอดีตอันยาวนาน",
 		"effect": {
 			"history.exp": 1,
 			"bf": "1~2",
@@ -789,7 +789,7 @@
 	{
 		"id": "enc_farmirror",
 		"name": "a distant mirror",
-		"desc": "The mirror shows scenes from far away.",
+		"desc": "กระจกเผยภาพจากที่ไกลแสนไกล",
 		"effect": {
 			"scrying.exp": 1,
 			"travel.exp": 1,
@@ -799,7 +799,7 @@
 	{
 		"id": "enc_sandstorm",
 		"name": "sandstorm",
-		"desc": "The blistering sands peel away your skin.",
+		"desc": "เม็ดทรายร้อนผ่าวกร่อนผิวของคุณ",
 		"effect": {
 			"madness": "0~1",
 			"weary": "1~2",
@@ -813,7 +813,7 @@
 	{
 		"id": "enc_oasis",
 		"name": "oasis",
-		"desc": "A cooling spring and frond trees relieve the monotony of the wastes.",
+		"desc": "น้ำพุเย็นฉ่ำกับต้นใบระเรี่ยช่วยบรรเทาความน่าเบื่อของทะเลทราย",
 		"effect": {
 			"weary": -2,
 			"madness": -1,
@@ -823,7 +823,7 @@
 	{
 		"id": "enc_mirage",
 		"name": "mirage",
-		"desc": "Extended travel beneath the hot sun produces visceral visions in the sand.",
+		"desc": "การเดินทางเนิ่นนานใต้แสงตะวันร้อนระอุทำให้เกิดภาพหลอนสมจริงกลางผืนทราย",
 		"tags": "site_of_learning",
 		"effect": {
 			"madness": "1~3",
@@ -838,8 +838,8 @@
 	{
 		"id": "enc_orremtrade",
 		"name": "lost trading post",
-		"desc": "In the midst of a wide desolation, a tall grey-skinned creature with no eyes offers you its wares.",
-		"flavor": "Part of a long forgotten trade circuit to old Sargossa.",
+		"desc": "ท่ามกลางความแห้งแล้งอันกว้างไกล สิ่งมีชีวิตผิวสีเทาสูงใหญ่ไร้ดวงตายื่นสินค้ามาเสนอคุณ",
+		"flavor": "ส่วนหนึ่งของเส้นทางค้าขายที่ถูกลืมเลือนมายังซาร์กอสซาเก่า",
 		"effect": {
 			"unease": "2~3",
 			"madness": "1~3",
@@ -854,7 +854,7 @@
 	{
 		"id": "enc_madwinds",
 		"name": "winds of madness",
-		"desc": "Voices on the wind scream and echo in your mind.",
+		"desc": "เสียงบนสายลมกรีดร้องและสะท้อนก้องในจิตใจของคุณ",
 		"effect": {
 			"madness": "2~5",
 			"mana": 0.5,
@@ -866,7 +866,7 @@
 	{
 		"id": "orrem_rains",
 		"name": "orrem rains",
-		"desc": "Rare but torrential, the Orrem rains are accounted a wonder of the world.",
+		"desc": "ฝนออร์เร็มแม้หายากแต่มาแบบปรอยเทกระหน่ำ ถูกนับเป็นหนึ่งในสิ่งมหัศจรรย์ของโลก",
 		"effect": {
 			"stamina": 1,
 			"waterlore.exp": 1,
@@ -876,7 +876,7 @@
 	{
 		"id": "enc_orrem_cave",
 		"name": "hidden cave",
-		"desc": "The shifting sands reveal a rocky cave. Perhaps some artifacts remain within.",
+		"desc": "ผืนทรายที่เคลื่อนเผยให้เห็นถ้ำหิน บางทีอาจมีโบราณวัตถุเหลืออยู่ภายใน",
 		"effect": {
 			"unease": "1~3",
 			"void": 0.1
@@ -890,7 +890,7 @@
 	{
 		"id": "enc_caravan",
 		"name": "caravan",
-		"desc": "All features of the riders are hidden in robes. They communicate with guttural sounds and gestures.",
+		"desc": "ใบหน้าของเหล่าคนขี่ถูกซ่อนไว้ในเสื้อคลุม พวกเขาสื่อสารด้วยเสียงแหบห้าวและท่าทาง",
 		"tags": "site_of_learning",
 		"effect": {
 			"unease": "1~3"
@@ -902,7 +902,7 @@
 	{
 		"id": "enc_aeonclock",
 		"name": "aeon clock",
-		"desc": "Legend has it that Thurn himself crafted the ten leagues of clockworks in the Orrem Sands. Year by year, it ticks away the endless Aeons.",
+		"desc": "ตำนานเล่าว่าเทิร์นเองเป็นผู้สร้างจักรกลสายยาวนับสิบลีคในผืนทรายออร์เร็ม ครบแต่ละปี มันติ๊กต่อบวกผ่านกาลอันหาที่สิ้นสุดมิได้",
 		"tags": "site_of_learning",
 		"effect": {
 			"madness": "0~3",
@@ -918,12 +918,12 @@
 		"mod": {
 			"history.max": "0.1//30/-10"
 		},
-		"flavor": "Its vast face is nothing to what is reputed to lie buried below."
+		"flavor": "หน้าปัดอันกว้างใหญ่ของมันยังเทียบไม่ได้กับสิ่งที่กล่าวขานว่าถูกฝังอยู่เบื้องล่าง"
 	},
 	{
 		"id": "e_bloodgrass",
 		"name": "blood grass",
-		"desc": "Steel-sharp blades of grass bite into your boots.",
+		"desc": "ใบหญ้าแหลมคมดั่งเหล็กบาดเข้าสู่รองเท้าของคุณ",
 		"effect": {
 			"weary": "1~3",
 			"rage": "1~3",
@@ -933,7 +933,7 @@
 	{
 		"id": "e_spidermass",
 		"name": "spider swarm",
-		"desc": "Piled higher than your head, an eclectic mass of skittering spiders bars the path.",
+		"desc": "แมงมุมวิ่งวนหลากชนิดกองทับสูงเกินหัวของคุณขวางเส้นทางอยู่",
 		"effect": {
 			"unease": "2~3",
 			"madness": "2~4",
@@ -944,7 +944,7 @@
 	{
 		"id": "e_snakemass",
 		"name": "snake swarm",
-		"desc": "Writhing in heaps and drooping from branches, a mass of snakes covers the vicinity.",
+		"desc": "งูนับไม่ถ้วนขดเป็นกองพลิ้วไหวและห้อยย้อยจากกิ่งไม้ปกคลุมบริเวณโดยรอบ",
 		"effect": {
 			"unease": "1~2",
 			"madness": "2~3",
@@ -955,7 +955,7 @@
 	{
 		"id": "e_agolith",
 		"name": "agolith",
-		"desc": "Hidden in a deep pond, it lures its prey with a fruiting branch growing from its head.",
+		"desc": "ซ่อนตัวอยู่ในสระน้ำลึก มันล่อเหยื่อด้วยกิ่งก้านผลไม้ที่งอกจากหัวของมัน",
 		"effect": {
 			"unease": "1~2",
 			"weary": "0~1",
@@ -966,7 +966,7 @@
 	{
 		"id": "e_cockatrice",
 		"name": "cockatrice",
-		"desc": "An unnatural blend of serpent and rooster. As its stare is death, you avert your gaze as you approach.",
+		"desc": "ร่างผสมอันผิดธรรมชาติระหว่างอสรพิษกับไก่ตัวผู้ เพราะสายตามันคือความตาย คุณจึงหลบตาหลบหนีขณะเข้าใกล้",
 		"effect": {
 			"unease": "3~5",
 			"bf": "2~3",
@@ -977,28 +977,28 @@
 	{
 		"id": "e_trumple",
 		"name": "trumple",
-		"desc": "A stout tree with stumpy legs and a face inlaid within its trunk.",
+		"desc": "ต้นไม้เตี้ยอ้วนมีขาสั้นหนาและใบหน้าฝังอยู่ในลำต้น",
 		"effect": {
 			"bf": "1~2",
 			"weary": "2~3",
 			"herbalism.exp": 1
 		},
-		"flavor": "It can't speak but likes it when you feed it oil."
+		"flavor": "มันพูดไม่ได้ แต่พอใจเมื่อคุณเอาอาหารไปป้อนมัน"
 	},
 	{
 		"id": "e_balmuth",
 		"name": "balmuth",
-		"desc": "A gigantic reptile plows its jaw through the earth to eat.",
+		"desc": "สัตว์เลื้อยคลานยักษ์ไถขากรรไกรผ่านผืนดินเพื่อหาอาหาร",
 		"effect": {
 			"bf": "1~2",
 			"earthlore2.exp": 1
 		},
-		"flavor": "It seems to like rocks the best."
+		"flavor": "ดูเหมือนมันจะชอบหินที่สุด"
 	},
 	{
 		"id": "e_moss_portal",
 		"name": "moss-stone portal",
-		"desc": "One of a dozen mossy portals at the edges of the menagerie. Their use is unknown.",
+		"desc": "หนึ่งในประตูมิติปกคลุมด้วยตะไคร่น้ำสิบกว่าบานบริเวณขอบสวนสัตว์ทิพย์ ยังไม่รู้ถึงการใช้งาน",
 		"effect": {
 			"unease": "3~4",
 			"bf": "3~4"
@@ -1010,17 +1010,17 @@
 	{
 		"id": "e_big_scale",
 		"name": "scale of ouroboros",
-		"desc": "At the center of the menagerie a single massive scale merges with the tree.",
+		"desc": "ณ ใจกลางสวนสัตว์ทิพย์ เกล็ดอันใหญ่โตเดี่ยวหนึ่งหลอมรวมเข้ากับต้นไม้",
 		"effect": {
 			"unease": "3~4",
 			"madness": "4~5"
 		},
-		"flavor": "Best not disturb it."
+		"flavor": "อย่ามัวไปรบกวนมันดีกว่า"
 	},
 	{
 		"id": "e_gryffon",
 		"name": "gryffon",
-		"desc": "Generally peaceful creatures, a gryffon is nevertheless deadly when enraged.",
+		"desc": "โดยทั่วไปเป็นสิ่งมีชีวิตที่สงบสุข แต่กริฟฟอนกลับอันตรายถึงตายเมื่อถูกทำให้โกรธ",
 		"effect": {
 			"unease": "1~2"
 		}
@@ -1028,7 +1028,7 @@
 	{
 		"id": "e_wyvern",
 		"name": "wyvern",
-		"desc": "Believed to be a distant cousin of dragons, some are even venomous.",
+		"desc": "เชื่อกันว่าเป็นญาติห่าง ๆ ของมังกร บางตัวถึงขั้นมีพิษร้าย",
 		"effect": {
 			"unease": "2~3",
 			"airlore2.exp": 1
@@ -1037,7 +1037,7 @@
 	{
 		"id": "e_hydra",
 		"name": "hydra",
-		"desc": "A multi-headed beast rears its heads from the water.",
+		"desc": "สัตว์ร้ายหลายหัวผงกหัวขึ้นจากน้ำ",
 		"effect": {
 			"unease": "2~3",
 			"rage": 0.5,
@@ -1047,7 +1047,7 @@
 	{
 		"id": "e_barghest",
 		"name": "barghest",
-		"desc": "The great dog-like beast is a portent of death.",
+		"desc": "สัตว์ร้ายร่างใหญ่คล้ายสุนัขคือลางแห่งความตาย",
 		"effect": {
 			"unease": "3~4",
 			"madness": "1~4"
@@ -1056,7 +1056,7 @@
 	{
 		"id": "e_phoenix",
 		"name": "phoenix",
-		"desc": "One of the rarest of birds, they are not uncommon in this place.",
+		"desc": "หนึ่งในนกที่หายากที่สุด หากแต่ที่นี่กลับพบได้ไม่ยาก",
 		"effect": {
 			"unease": "2~3",
 			"rage": 0.5,
@@ -1066,7 +1066,7 @@
 	{
 		"id": "e_pogler",
 		"name": "pod of poglers",
-		"desc": "The placid poglers angle their backs of bushy leaves to the sun.",
+		"desc": "เหล่าโพเกลอร์ผู้สงบนิ่งหันแผ่นหลังอันปกคลุมด้วยใบดกเข้าหาแสงตะวัน",
 		"effect": {
 			"bf": "2~3",
 			"rage": -0.5,
@@ -1076,7 +1076,7 @@
 	{
 		"id": "e_flithy",
 		"name": "flithy",
-		"desc": "You meet a creeping creature with twenty furry legs and nothing else.",
+		"desc": "คุณพานพบสิ่งมีชีวิตคลานที่มีขาขนฟูยี่สิบขาและไม่มีอย่างอื่นอีกเลย",
 		"effect": {
 			"unease": "1~2",
 			"bf": "1~2",
@@ -1086,7 +1086,7 @@
 	{
 		"id": "e_bestiary1",
 		"name": "menagerie hanging",
-		"desc": "A pristine tapestry nearby displays a partial index of the menagerie.",
+		"desc": "ผ้าทอแขวนผนังอันไร้ที่ติที่อยู่ใกล้ ๆ แสดงบัญชีรายชื่อบางส่วนของสวนสัตว์ทิพย์",
 		"effect": {
 			"unease": "1~2",
 			"madness": "1~2",
@@ -1098,7 +1098,7 @@
 	{
 		"id": "e_bestiary2",
 		"name": "bestiary",
-		"desc": "A manual of beastly lore rests atop an ancient pedestal.",
+		"desc": "คู่มือความรู้เรื่องสัตว์อสูรวางอยู่บนแท่นโบราณ",
 		"tags": "site_of_learning",
 		"effect": {
 			"unease": "1~2",
@@ -1113,7 +1113,7 @@
 	{
 		"id": "enc_scrollpile",
 		"name": "pile of scrolls",
-		"desc": "Someone left a number of scrolls haphazardly strewn about.",
+		"desc": "มีคนทิ้งม้วนคัมภีร์หลายฉบับกระจัดกระจายวุ่นวายอยู่",
 		"effect": {
 			"bf": "-1~2",
 			"lore.exp": 1
@@ -1130,7 +1130,7 @@
 		"id": "enc_magicstream",
 		"name": "burbling stream",
 		"level": 2,
-		"desc": "A lovely stream burbles along here. Magical energy flows along its route.",
+		"desc": "ลำธารงดงามไหลรินผ่านตรงนี้ พลังเวทมนตร์ไหลไปตามเส้นทางของมัน",
 		"effect": {
 			"bf": "-1~2",
 			"naturelore.exp": 1,
@@ -1144,7 +1144,7 @@
 	{
 		"id": "enc_lilitscache",
 		"name": "secret cache",
-		"desc": "You sense something buried nearby.",
+		"desc": "คุณรู้สึกได้ว่ามีบางสิ่งถูกฝังอยู่ใกล้ ๆ",
 		"effect": {
 			"rage": "1~2",
 			"weary": "0~2",
@@ -1162,7 +1162,7 @@
 	{
 		"id": "enc_eyotchest",
 		"name": "forgotten chest",
-		"desc": "A dusty but solid chest. No one seems to have touched it in a long time.",
+		"desc": "หีบฝุ่นหนาแต่แข็งแรง ดูเหมือนจะไม่มีใครแตะต้องมันมานานแล้ว",
 		"effect": {
 			"rage": "1~3"
 		},
@@ -1178,7 +1178,7 @@
 		"id": "enc_mossylogs",
 		"name": "mossy logs",
 		"level": 1,
-		"desc": "Fallen logs covered in moss block the path.",
+		"desc": "ท่อนไม้ล้มที่ปกคลุมด้วยตะไคร่น้ำขวางเส้นทางอยู่",
 		"effect": {
 			"bf": "-1~2",
 			"naturelore.exp": 1,
@@ -1193,7 +1193,7 @@
 		"id": "enc_mudpatch",
 		"name": "mud patch",
 		"level": 2,
-		"desc": "A muddy stretch of the path has to be traversed carefully, or you'll slip.",
+		"desc": "เส้นทางช่วงที่เป็นโคลนต้องเดินอย่างระมัดระวัง ไม่งั้นจะลื่น",
 		"effect": {
 			"bf": "-1~2",
 			"naturelore.exp": 1
@@ -1205,7 +1205,7 @@
 	{
 		"id": "enc_woodlandcritters",
 		"name": "woodland critters",
-		"desc": "Birds flit to and fro and small woodland animals scurry about in all directions, paying you no heed.",
+		"desc": "นกบินว่อนไปมาและสัตว์ป่าเล็ก ๆ วิ่งต้วมเตี้ยมทุกทิศทาง ไม่ยี่หระคุณแม้แต่น้อย",
 		"effect": {
 			"rage": "1~2",
 			"weary": "1~3",
@@ -1223,7 +1223,7 @@
 	{
 		"id": "enc_smallcave",
 		"name": "small cave",
-		"desc": "There's a small cave just off the path ahead. Might be worth investigating, as long as you're not claustrophobic.",
+		"desc": "มีถ้ำเล็ก ๆ อยู่ข้างเส้นทางข้างหน้า น่าลองสำรวจดู ถ้าคุณไม่กลัวที่แคบ",
 		"effect": {
 			"rage": "1~2",
 			"weary": "0~2",
@@ -1242,7 +1242,7 @@
 	{
 		"id": "enc_flowermeadow",
 		"name": "flower meadow",
-		"desc": "A sunny clearing is full of wildflowers.",
+		"desc": "ลานโล่งกลางแดดเต็มไปด้วยดอกไม้ป่า",
 		"effect": {
 			"bf": "-1~-2",
 			"weary": "-1~-2",
@@ -1258,7 +1258,7 @@
 	{
 		"id": "enc_hugetree",
 		"name": "gnarled old tree",
-		"desc": "An ancient, gnarled old tree stands here. You almost feel like it's watching you.",
+		"desc": "ต้นไม้เก่าแก่ผูกปมยืนตระหง่านอยู่ตรงนี้ คุณแทบรู้สึกว่ามันกำลังจ้องมองคุณอยู่",
 		"tags": "site_of_learning",
 		"effect": {
 			"madness": "1~2",
@@ -1276,7 +1276,7 @@
 	{
 		"id": "enc_pidwigchest",
 		"name": "dusty chest",
-		"desc": "A small locked chest sits here gathering dust. No one seems to have opened it in a long time.",
+		"desc": "หีบเล็กที่ถูกล็อกตั้งอยู่ตรงนี้ท่ามกลางฝุ่นหนา ดูเหมือนจะไม่มีใครเปิดมันมานานแล้ว",
 		"effect": {
 			"rage": "1~3"
 		},
@@ -1291,7 +1291,7 @@
 	{
 		"id": "rithel_fortifications",
 		"name": "rithel fortifications",
-		"desc": "You spend some time repairing and reinforcing Rithel's ancient fortifications.",
+		"desc": "คุณใช้เวลาสักพักซ่อมแซมและเสริมความแข็งแกร่งให้ป้อมปราการโบราณของริเธล",
 		"effect": {
 			"rage": "1~2",
 			"weary": "1~3",
@@ -1309,7 +1309,7 @@
 	{
 		"id": "rithel_grizzledveteran",
 		"name": "grizzled veteran",
-		"desc": "A battle-scarred old ranger tells you tales of his past adventures.",
+		"desc": "รานจ์ชราผู้เต็มไปด้วยบาดแผลจากการศึกลำเรื่องการผจญภัยในอดีตของเขาให้คุณฟัง",
 		"effect": {
 			"weary": "0~2",
 			"bf": "1~2",
@@ -1328,7 +1328,7 @@
 	{
 		"id": "rithel_woods",
 		"name": "watching the woods",
-		"desc": "You spend some time monitoring the nearby forest from atop Rithel's walls. Everything seems quiet.",
+		"desc": "คุณใช้เวลาสังเกตการณ์ป่าใกล้เคียงจากบนกำแพงริเธล ทุกอย่างดูเงียบสงบ",
 		"tags": "site_of_learning",
 		"effect": {
 			"weary": "1~3",
@@ -1341,7 +1341,7 @@
 	{
 		"id": "rithel_towerview",
 		"name": "tower view",
-		"desc": "From the top of Rithel's tower, you have a spectacular view of the surrounding area.",
+		"desc": "จากยอดหอคอยริเธล คุณได้เห็นทัศนียภาพอันตระการตาของพื้นที่โดยรอบ",
 		"effect": {
 			"bf": "-1~-2",
 			"weary": "-1~-2",
@@ -1356,7 +1356,7 @@
 	{
 		"id": "rithel_rangerpatrol",
 		"name": "ranger patrol",
-		"desc": "A stern-looking group of rangers passes by. You're not sure if they're coming or going, but they aren't interested in chatting with you.",
+		"desc": "กลุ่มรานจ์หน้าตาจริงจังเดินผ่านไป คุณไม่รู้ว่าพวกเขากำลังมาหรือไป แต่ดูเหมือนไม่สนใจพูดคุยกับคุณ",
 		"effect": {
 			"bf": "-1~3",
 			"weary": "0~2",
@@ -1368,7 +1368,7 @@
 	{
 		"id": "enc_alchemy2",
 		"name": "alchemical transmutation",
-		"desc": "This alchemical apparatus seems to have been intended to transmute lead into gold.",
+		"desc": "อุปกรณ์เล่นแร่แปรธาตุนี้ดูเหมือนถูกสร้างมาเพื่อเปลี่ยนตะกั่วให้เป็นทองคำ",
 		"tags": "site_of_learning",
 		"effect": {
 			"bf": "-1~4",
@@ -1386,7 +1386,7 @@
 	{
 		"id": "enc_blazingheat",
 		"name": "blazing heat",
-		"desc": "The relentless heat of the sun beats down on you.",
+		"desc": "ความร้อนระอุของดวงอาทิตย์สาดกระหน่ำใส่คุณอย่างไม่ปรานี",
 		"effect": {
 			"madness": "0~1",
 			"weary": "2~4",
@@ -1418,7 +1418,7 @@
 	{
 		"id": "enc_crashingwaves",
 		"name": "crashing waves",
-		"desc": "Enormous waves crash against the rocky shore.",
+		"desc": "คลื่นมโหฬารซัดกระแทกเข้ากับชายฝั่งหิน",
 		"effect": {
 			"madness": "0~1",
 			"weary": "2~7",
@@ -1432,8 +1432,8 @@
 	{
 		"id": "enc_dragonhoard",
 		"name": "Dragon Hoard",
-		"desc": "Piles upon piles of gold, jewelry and other valuables.",
-		"extdesc": "You don't have time to gather it all though",
+		"desc": "กองแล้วกองเล่าของทองคำ เครื่องประดับ และของมีค่าอื่น ๆ",
+		"extdesc": "ทว่าคุณไม่มีเวลาพอจะเก็บมันไปทั้งหมด",
 		"effect": {
 			"gold": "100~300",
 			"gems": "3~8",
