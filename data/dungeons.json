@@ -45,7 +45,7 @@
 	{
 		"id": "treffilwoods",
 		"name": "Treffil Woods edges",
-		"desc": "These enchanted woods are not particularly dangerous.",
+		"desc": "ป่าเวทมนตร์เหล่านี้ไม่ได้อันตรายอะไรมากนัก",
 		"difficulty": "🦴",
 		"sortOrder": 3,
 		"require": "t_job",
@@ -63,7 +63,7 @@
 	{
 		"id": "underden",
 		"name": "Under Den",
-		"desc": "Proverbial den of thieves.",
+		"desc": "แหล่งรวมโจรอย่างที่กล่าวขานกัน",
 		"difficulty": "🦴🦴🦴",
 		"sortOrder": 11,
 		"require": "tier0",
@@ -82,7 +82,7 @@
 	{
 		"id": "aragheights",
 		"name": "Arag Heights",
-		"desc": "Barren mountains on the coast of Arazor.",
+		"desc": "ทิวเขาร้างแล้งบนชายฝั่งของอาราซอร์",
 		"difficulty": "🦴🦴🦴",
 		"sortOrder": 12,
 		"require": "stonyhills",
@@ -110,7 +110,7 @@
 	{
 		"id": "goblincamp",
 		"name": "Goblin Camp",
-		"desc": "The pesky creatures are everywhere.",
+		"desc": "เหล่าสิ่งมีชีวิตจอมกวนมีอยู่ทุกหนแห่ง",
 		"start": {
 			"name": "Goblins, Goblins!",
 			"desc": "Rumors hint at a camp of goblins in the vicinity. As an aspiring wizard, convention dictates you test your mettle on their lives."
@@ -134,8 +134,8 @@
 	{
 		"id": "hauntedmanor",
 		"name": "Haunted Manor",
-		"desc": "Unsettling voices can be heard throughout the manor after dark",
-		"flavor": "Hey Vizard, ghost here...",
+		"desc": "ได้ยินเสียงคลุ้มคลั่งไปทั่วคฤหาสน์หลังมืดค่ำ",
+		"flavor": "เฮ้ นักเวท ผีอยู่ตรงนี้นะ...",
 		"difficulty": "🦴🦴🦴",
 		"sortOrder": 14,
 		"require": "g.tier0>0&&g.spiritlore>=9",
@@ -154,7 +154,7 @@
 	{
 		"id": "aragwastes",
 		"name": "Arag Wastes",
-		"desc": "An arid plain stretching across Arazor from the Arag Heights.",
+		"desc": "ที่ราบแห้งแล้งทอดยาวทั่วอาราซอร์จากเทือกเขาอารัก",
 		"difficulty": "💀",
 		"sortOrder": 21,
 		"require": "aragheights",
@@ -187,7 +187,7 @@
 	{
 		"id": "orccamp",
 		"name": "Orc Camp",
-		"desc": "A scourge of towns and cities.",
+		"desc": "หายนะของหมู่บ้านและเมืองทั้งหลาย",
 		"flavor": "Lok'tar!",
 		"difficulty": "💀",
 		"sortOrder": 22,
@@ -207,7 +207,7 @@
 	{
 		"id": "elementalrift",
 		"name": "Elemental Rift",
-		"desc": "A tear in the fabric of reality leads to a land of raw elements.",
+		"desc": "รอยฉีกของผืนความเป็นจริงทอดนำไปสู่ดินแดนแห่งธาตุดิบ",
 		"difficulty": "💀",
 		"sortOrder": 23,
 		"require": "g.planeslore>=7&&g.tier1>0",
@@ -224,7 +224,7 @@
 	{
 		"id": "spidercave",
 		"name": "Skittering Caverns",
-		"desc": "The only treasures here, are those lost by adventurers searching for treasure.",
+		"desc": "สมบัติเพียงเท่าที่มีอยู่ ณ ที่นี้ คือของที่นักผจญภัยผู้ตามหาสมบัติทำหล่นหายไว้",
 		"difficulty": "💀💀",
 		"sortOrder": 31,
 		"require": ["tier2", "goblincamp"],
@@ -242,7 +242,7 @@
 	{
 		"id": "aragogres",
 		"name": "Ogre Cavern",
-		"desc": "A scourge of towns and cities.",
+		"desc": "หายนะของหมู่บ้านและเมืองทั้งหลาย",
 		"start": {
 			"name": "Ogre Cavern",
 			"desc": "While scrying the outlying lands you discover a colossal cave in the arag heights."
@@ -277,7 +277,7 @@
 	{
 		"id": "mtgorborung",
 		"name": "Mount Gorborung",
-		"desc": "One of the most perilous mountains in the world. Many journey over its passes; none venture within.",
+		"desc": "หนึ่งในภูเขาอันตรายที่สุดในโลก หลายคนเดินทางข้ามช่องเขาของมัน แต่ไม่มีใครกล้าบุกเข้าไปข้างใน",
 		"difficulty": "💀💀",
 		"sortOrder": 33,
 		"require": "g.orccamp>0&&g.tier2>0",
@@ -311,8 +311,8 @@
 	{
 		"id": "veldransstorehouse",
 		"name": "Veldran's Storehouse",
-		"desc": "Veldran never did manage to carve a kingdom from the wreck of Bodias' reign. But he did accrue a sizeable hoard.",
-		"extdesc": "Abandoned, overgrown buildings. But security systems are still active in few of them.",
+		"desc": "เวลดรันไม่เคยประสบความสำเร็จในการก่อตั้งอาณาจักรจากซากปรักของรัชสมัยโบเดียส แต่เขาก็สั่งสมทรัพย์สมบัติไว้มิใช่น้อย",
+		"extdesc": "ตึกที่ถูกทิ้งร้างรกครึ้ม ทว่าระบบรักษาความปลอดภัยยังทำงานอยู่ในบางตึก",
 		"difficulty": "💀💀",
 		"sortOrder": 34,
 		"require": "g.underden>0",
@@ -341,8 +341,8 @@
 	{
 		"id": "sereditetemple",
 		"name": "Seredite Temple",
-		"desc": "Who they were or why they built this ruined temple in the seaside cliffs is a mystery lost to time.",
-		"flavor": "Would the ancient seredites appreciate the temple's new inhabitants?",
+		"desc": "พวกเขาเป็นใครหรือเหตุใดจึงสร้างวิหารปรักหักพังแห่งนี้บนหน้าผาชายทะเล ยังคงเป็นปริศนาที่กาลเวลาลืมเลือน",
+		"flavor": "เหล่าเซเรไดต์โบราณจะพึงพอใจกับผู้อยู่อาศัยใหม่ของวิหารหรือไม่?",
 		"difficulty": "💀💀💀",
 		"sortOrder": 41,
 		"require": "tier3",
@@ -367,7 +367,7 @@
 	{
 		"id": "veldranswreck",
 		"name": "Veldran's Wreck",
-		"desc": "Off the stormy cliffs of Arazor a mass of cracked spars marks the resting place of the largest ship ever sailed by man.",
+		"desc": "นอกหน้าผาอันพายุโหมของอาราซอร์ ซากเสากระโดงจำนวนมากบ่งชี้ถึงที่พำนักสุดท้ายของเรือลำใหญ่ที่สุดเท่าที่มนุษย์เคยแล่นได้",
 		"difficulty": "💀💀💀",
 		"tags": "t_underwater",
 		"sortOrder": 42,
@@ -396,8 +396,8 @@
 	{
 		"id": "greatbog",
 		"name": "The Great Bog",
-		"desc": "For hundreds of miles the great bog spreads across the dark center of Dhrune.",
-		"flavor": "Also known as Barden's bog, no one can say exactly just who Barden was.",
+		"desc": "หนองน้ำใหญ่แผ่ขยายหลายร้อยไมล์ข้ามใจกลางอันมืดมิดของดรูน์",
+		"flavor": "อีกทั้งยังรู้จักในชื่อหนองน้ำบาร์เดน ไม่มีใครบอกได้แน่ชัดว่าบาร์เดนคือใคร",
 		"difficulty": "💀💀💀",
 		"sortOrder": 43,
 		"require": "aragwastes",
@@ -424,7 +424,7 @@
 	{
 		"id": "ettinmarchcamp",
 		"name": "Ettinmarch Camp",
-		"desc": "The perilous wilds of the Ettinmarch are a cherished home to bands of merry rangers and virtuous druids.",
+		"desc": "ป่าทุรกันดารอันตรายแห่งเอตตินมาร์ชคือบ้านอันเป็นที่รักของเหล่ารานจ์ผู้ร่าเริงและดรูอิดผู้เปี่ยมคุณธรรม",
 		"difficulty": "💀💀💀",
 		"sortOrder": 44,
 		"require": "evt_rangers",
@@ -453,7 +453,7 @@
 	{
 		"id": "fetidbarrow",
 		"name": "The Fetid Barrows",
-		"desc": "When the fetid barrows were discovered, dark acolytes gathered at the mounds seeking ancient patrons of their art.",
+		"desc": "เมื่อค้นพบสุสานเนินอันเหม็นเฟะนี้ เหล่าสาวกมืดจึงมารวมตัวกันที่เนินดินเพื่อเสาะหาอุปถัมภ์โบราณแห่งศิลปะของตน",
 		"difficulty": "💀💀💀",
 		"sortOrder": 45,
 		"require": "evt_cabal",
@@ -495,7 +495,7 @@
 	{
 		"id": "holyhall",
 		"name": "Hall of the Holy",
-		"desc": "Various divine spirits watch over the world. And the greatest have their halls and kingdoms.",
+		"desc": "เหล่าวิญญาณศักดิ์สิทธิ์มากมายเฝ้าดูแลโลกใบนี้ และผู้ยิ่งใหญ่ที่สุดล้วนมีห้องโถงและอาณาจักรของตน",
 		"difficulty": "💀💀💀",
 		"sortOrder": 46,
 		"tags": "t_extremeevil",
@@ -522,7 +522,7 @@
 	{
 		"id": "elementalplane",
 		"name": "Elemental Plane",
-		"desc": "Deeper in the land of raw elements lies a huge area with much higher density of mana. Something inside it is causing this phenomenon.",
+		"desc": "ลึกเข้าไปในดินแดนแห่งธาตุดิบมีพื้นที่กว้างใหญ่ที่มีความหนาแน่นของมานาสูงกว่ามาก มีบางสิ่งภายในกำลังก่อให้เกิดปรากฏการณ์นี้",
 		"difficulty": "💀💀💀💀",
 		"sortOrder": 51,
 		"require": "g.elementalrift>0&&g.tier4>0",
@@ -551,8 +551,8 @@
 		"id": "desillagrotto",
 		"name": "Desilla's Grotto",
 		"tags": "site_of_learning",
-		"desc": "In all the world, the most enjoyable place to die.",
-		"flavor": "Desilla was known as much for her entertainments as her ruthlessness.",
+		"desc": "สถานที่ที่สนุกสนานที่สุดในโลกที่จะใช้จบชีวิต",
+		"flavor": "เดซิลลาเป็นที่เลื่องชื่อทั้งในเรื่องของมหรสพและการไร้ความปรานี",
 		"difficulty": "💀💀💀💀",
 		"sortOrder": 52,
 		"require": "g.greatbog>0&&g.tier4>0",
@@ -586,8 +586,8 @@
 	{
 		"id": "charredkeep",
 		"name": "Charred Keep",
-		"desc": "Its smouldering ruins once more begin to burn.",
-		"flavor": "Burned black by its own denizens.",
+		"desc": "ซากปรักที่ยังคุกรุ่นเริ่มลุกไหม้ขึ้นอีกครั้ง",
+		"flavor": "ถูกเหล่าผู้สิงสถิตเผาจนดำเป็นจุณ",
 		"difficulty": "💀💀💀💀💀",
 		"sortOrder": 61,
 		"require": "g.mtgorborung>0&&g.tier5>0",
@@ -623,8 +623,8 @@
 	{
 		"id": "temple_of_strativax",
 		"name": "Temple of Strativax",
-		"desc": "His acolytes fed the beast on offerings from a thousand leagues.",
-		"flavor": "Strativax curled up to nap. His temple fell to ruins, and the ages fled like leaves.",
+		"desc": "เหล่าสาวกของเขาป้อนเหยื่อจากพื้นที่กว้างไกลนับพันลีคให้แก่อสูร",
+		"flavor": "สตราทิแวกซ์ขดตัวหลับไป วิหารของเขาร่วงสู่ซากปรัก และกาลเวลาก็ผันผ่านไปดั่งใบไม้ร่วง",
 		"start": "You scry the location of an ancient ruined temple.",
 		"difficulty": "💀💀💀💀💀",
 		"sortOrder": 62,
@@ -640,7 +640,7 @@
 	{
 		"id": "belowgorborung",
 		"name": "Below Mt. Gorborung",
-		"desc": "They say the roots of the mountain extend deeper than its heights.",
+		"desc": "เขาว่ารากของภูเขาลึกยิ่งกว่าความสูงของมันเสียอีก",
 		"difficulty": "💀💀💀💀💀💀",
 		"sortOrder": 71,
 		"require": "g.tier4>0&&g.mtgorborung>0",
@@ -679,12 +679,12 @@
 	{
 		"id": "abyssal_layer1",
 		"name": "Abyssal Depths: First Layer",
-		"desc": "At the bottom of the bottomless, lies an entrance to a plane darker than ink.",
+		"desc": "ณ ก้นบึ้งของที่ซึ่งไร้ก้น มีทางเข้าสู่พิภพที่มืดยิ่งกว่าหมึก",
 		"difficulty": "💀💀💀💀💀💀",
 		"sortOrder": 72,
 		"require": "g.planeslore>=8&&g.space.max>=20&&g.tier4>0",
 		"need": "g.bottomlesspit>0&&g.dist>=2500",
-		"needtext": "Must own a bottomless pit and meet distance requirements",
+		"needtext": "ต้องมีหลุมไร้ก้นและผ่านข้อกำหนดด้านระยะทาง",
 		"dist": 2500,
 		"run": { "stamina": 3 },
 		"once": {
@@ -716,8 +716,8 @@
 	{
 		"id": "catacrypts",
 		"name": "The Catacrypts",
-		"desc": "Old Mirthemgnar dug its dungeons til they joined the hollows beneath the world. In terror they sealed them forever. Or so they tried.",
-		"flavor": "Day and night the dark gates stand open to all... but to return to the open air... that is the task, that is the labor.",
+		"desc": "เมืองมิรเธกนาร์โบราณขุดดันเจี้ยนของตนจนทะลุถึงช่องว่างใต้พิภพ ด้วยความหวาดกลัว พวกเขาจึงผนึกมันไว้ชั่วนิรันดร์ หรืออย่างน้อยก็พยายามเช่นนั้น",
+		"flavor": "กลางวันและกลางคืน ประตูมืดเปิดรอทุกผู้คน... แต่การได้กลับสู่ผืนอากาศภายนอก... นั่นคือภารกิจ นั่นคือความพากเพียร",
 		"difficulty": "💀💀💀💀💀💀",
 		"sortOrder": 73,
 		"require": ["belowgorborung"],
