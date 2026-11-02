@@ -2,7 +2,7 @@
 	{
 		"id": "gold",
 		"group": "basic",
-		"desc": "Gold coins.",
+		"desc": "เหรียญทองคำ",
 		"locked": false,
 		"max": 5,
 		"sortOrder": 5
@@ -10,7 +10,7 @@
 	{
 		"id": "research",
 		"group": "knowledge",
-		"desc": "Research into the Arcane.",
+		"desc": "งานวิจัยในศาสตร์เวทมนตร์",
 		"max": 10,
 		"sortOrder": 105
 	},
@@ -18,14 +18,14 @@
 		"id": "arcana",
 		"group": "knowledge",
 		"school": "arcane",
-		"desc": "Profound mystical knowledge.",
+		"desc": "ความรู้เร้นลับอันลึกซึ้ง",
 		"max": 0,
 		"sortOrder": 110
 	},
 	{
 		"id": "scrolls",
 		"group": "knowledge",
-		"desc": "Scroll of arcane lore.",
+		"desc": "ม้วนคัมภีร์แห่งวิชาเวทมนตร์",
 		"max": 10,
 		"sortOrder": 115,
 		"mod": {
@@ -37,7 +37,7 @@
 		"id": "runestones",
 		"name": "rune stones",
 		"group": "runes",
-		"desc": "Runes carved on pieces of stone.",
+		"desc": "รูนที่สลักบนชิ้นหิน",
 		"tags": "t_runes",
 		"max": 10,
 		"sortOrder": 205,
@@ -52,7 +52,7 @@
 		"name": "fire runes",
 		"tags": "t_runes,elementalrunes,prismaticrunes",
 		"group": "runes",
-		"desc": "Rune etched with lines of fire.",
+		"desc": "รูนที่แกะสลักด้วยเส้นสายไฟ",
 		"max": 10,
 		"sortOrder": 230,
 		"mod": {
@@ -65,7 +65,7 @@
 		"name": "water runes",
 		"tags": "t_runes,elementalrunes,prismaticrunes",
 		"group": "runes",
-		"desc": "Rune lined in flowing water.",
+		"desc": "รูนที่ลากเส้นด้วยสายน้ำไหลริน",
 		"max": 10,
 		"sortOrder": 220,
 		"mod": {
@@ -78,7 +78,7 @@
 		"name": "spirit runes",
 		"tags": "t_runes,prismaticrunes,primalrunes",
 		"group": "runes",
-		"desc": "A Runestone carved in bone; it seems to whisper.",
+		"desc": "หินรูนที่สลักจากกระดูก ดูเหมือนมันจะกระซิบ",
 		"max": 10,
 		"sortOrder": 245,
 		"mod": {
@@ -91,7 +91,7 @@
 		"name": "air runes",
 		"tags": "t_runes,elementalrunes,prismaticrunes",
 		"group": "runes",
-		"desc": "Rune etched with solid air.",
+		"desc": "รูนที่แกะสลักด้วยอากาศอันแข็งทื่อ",
 		"max": 10,
 		"sortOrder": 225,
 		"mod": {
@@ -104,7 +104,7 @@
 		"name": "earth runes",
 		"tags": "t_runes,elementalrunes,prismaticrunes",
 		"group": "runes",
-		"desc": "Rune ingrained with moonstone.",
+		"desc": "รูนที่ฝังด้วยหินแสงจันทร์",
 		"max": 10,
 		"sortOrder": 235,
 		"mod": {
@@ -117,7 +117,7 @@
 		"name": "light runes",
 		"tags": "t_runes,prismaticrunes,primalrunes",
 		"group": "runes",
-		"desc": "Rune ingrained with sparkling diamond.",
+		"desc": "รูนที่ฝังด้วยเพชรระยิบระยับ",
 		"max": 10,
 		"sortOrder": 250,
 		"mod": {
@@ -130,7 +130,7 @@
 		"name": "shadow runes",
 		"tags": "t_runes,prismaticrunes,primalrunes",
 		"group": "runes",
-		"desc": "Black upon black, only a trained eye can distinguish the tiniest difference in the shades of black.",
+		"desc": "ดำทับดำ มีเพียงสายตาที่ฝึกฝนมาเท่านั้นที่จะแยกเฉดดำอันละเอียดอ่อนที่สุดออกได้",
 		"max": 10,
 		"sortOrder": 255,
 		"mod": {
@@ -143,7 +143,7 @@
 		"name": "mana runes",
 		"tags": "t_runes,prismaticrunes",
 		"group": "runes",
-		"desc": "The surging energy of this rune can be felt even by the least talented of mages.",
+		"desc": "พลังอันพลุ่งพล่านของรูนนี้สัมผัสได้แม้แต่จอมเวทที่ไร้พรสวรรค์ที่สุด",
 		"max": 10,
 		"sortOrder": 215,
 		"mod": {
@@ -156,7 +156,7 @@
 		"name": "nature runes",
 		"tags": "t_runes,prismaticrunes,primalrunes",
 		"group": "runes",
-		"desc": "Formed out of a complicated tangle of stems and leaves.",
+		"desc": "ก่อร่างจากเส้นเถาวัลย์และใบไม้ที่พันยุ่งเหยิง",
 		"max": 10,
 		"sortOrder": 240,
 		"mod": {
@@ -169,33 +169,33 @@
 		"name": "chaos runes",
 		"tags": "fundamentalrunes",
 		"group": "runes",
-		"desc": "Unmistakably a rune, even if it's impossible to tell quite what it looks like.",
+		"desc": "เป็นรูนอย่างไม่มีข้อกังขา แม้จะบอกไม่ได้ว่ามันหน้าตาเป็นเช่นไร",
 		"max": 10,
 		"sortOrder": 260,
 		"mod": {
 			"chaos.max": 1
 		},
-		"flavor": "You can do anything!"
+		"flavor": "คุณทำได้ทุกสิ่ง!"
 	},
 	{
 		"id": "timerune",
 		"name": "time runes",
 		"tags": "fundamentalrunes",
 		"group": "runes",
-		"desc": "Time flows along the grooves of the rune.",
+		"desc": "กาลเวลาไหลไปตามร่องของรูน",
 		"mod": {
 			"tempus.rate": 0.05,
 			"bf.rate": 0.01
 		},
 		"max": 6,
 		"sortOrder": 265,
-		"flavor": "It's not easy to look at."
+		"flavor": "ยากที่จะเพ่งมอง"
 	},
 	{
 		"id": "codices",
 		"name": "codices",
 		"group": "knowledge",
-		"desc": "Codex of arcane lore.",
+		"desc": "โคเด็กซ์แห่งวิชาเวทมนตร์",
 		"max": 10,
 		"sortOrder": 120,
 		"mod": {
@@ -207,7 +207,7 @@
 		"id": "tomes",
 		"name": "tomes",
 		"group": "knowledge",
-		"desc": "A hefty tome of knowledge.",
+		"desc": "ตำราความรู้อันหนักอึ้ง",
 		"max": 5,
 		"sortOrder": 125,
 		"mod": {
@@ -221,7 +221,7 @@
 		"id": "gems",
 		"name": "gemstones",
 		"group": "gems",
-		"desc": "Various fine gemstones.",
+		"desc": "เพชรพลอยอันวิจิตรนานาชนิด",
 		"max": 5,
 		"sortOrder": 305
 	},
@@ -230,7 +230,7 @@
 		"tags": "magicgems,prismaticgems",
 		"group": "gems",
 		"name": "arcane gem",
-		"desc": "Gem infused with arcane energy.",
+		"desc": "เพชรพลอยที่อัดแน่นด้วยพลังลี้ลับ",
 		"max": 2,
 		"sortOrder": 315
 	},
@@ -239,7 +239,7 @@
 		"tags": "magicgems,prismaticgems,elementalgems",
 		"group": "gems",
 		"name": "fire gem",
-		"desc": "Gem imbued with the essence of fire.",
+		"desc": "เพชรพลอยที่อาบด้วยแก่นแท้แห่งไฟ",
 		"max": 2,
 		"sortOrder": 330
 	},
@@ -248,7 +248,7 @@
 		"tags": "magicgems,prismaticgems,elementalgems",
 		"group": "gems",
 		"name": "water gem",
-		"desc": "Gem imbued with the essence of water.",
+		"desc": "เพชรพลอยที่อาบด้วยแก่นแท้แห่งน้ำ",
 		"max": 2,
 		"sortOrder": 320
 	},
@@ -257,17 +257,17 @@
 		"tags": "magicgems,prismaticgems,primalgems",
 		"group": "gems",
 		"name": "nature gem",
-		"desc": "Physical essence of life.",
+		"desc": "แก่นแท้ทางกายภาพของชีวิต",
 		"max": 2,
 		"sortOrder": 340,
-		"flavor": "The force from the beginning."
+		"flavor": "พลังจากจุดกำเนิด"
 	},
 	{
 		"id": "earthgem",
 		"tags": "magicgems,prismaticgems,elementalgems",
 		"group": "gems",
 		"name": "earth gem",
-		"desc": "Gem imbued with the essence of earth.",
+		"desc": "เพชรพลอยที่อาบด้วยแก่นแท้แห่งดิน",
 		"max": 2,
 		"sortOrder": 335
 	},
@@ -276,7 +276,7 @@
 		"tags": "magicgems,prismaticgems,elementalgems",
 		"group": "gems",
 		"name": "air gem",
-		"desc": "Gem imbued with the essence of air.",
+		"desc": "เพชรพลอยที่อาบด้วยแก่นแท้แห่งอากาศ",
 		"max": 2,
 		"sortOrder": 325
 	},
@@ -285,7 +285,7 @@
 		"tags": "magicgems,prismaticgems,primalgems",
 		"group": "gems",
 		"name": "shadow gem",
-		"desc": "Gem imbued with the essence of darkness.",
+		"desc": "เพชรพลอยที่อาบด้วยแก่นแท้แห่งความมืด",
 		"max": 2,
 		"sortOrder": 355
 	},
@@ -294,7 +294,7 @@
 		"tags": "magicgems,prismaticgems,primalgems",
 		"group": "gems",
 		"name": "light gem",
-		"desc": "Gem imbued with the essence of light.",
+		"desc": "เพชรพลอยที่อาบด้วยแก่นแท้แห่งแสง",
 		"max": 2,
 		"sortOrder": 350
 	},
@@ -303,7 +303,7 @@
 		"tags": "magicgems,prismaticgems,primalgems",
 		"group": "gems",
 		"name": "spirit gem",
-		"desc": "Gem imbued with raw spirit.",
+		"desc": "เพชรพลอยที่อาบด้วยวิญญาณดิบ",
 		"max": 2,
 		"sortOrder": 345
 	},
@@ -311,7 +311,7 @@
 		"id": "bloodgem",
 		"group": "gems",
 		"name": "blood gem",
-		"desc": "A little magic and a lot of blood.",
+		"desc": "เวทมนตร์นิดหน่อยกับเลือดเป็นจำนวนมาก",
 		"max": 2,
 		"sortOrder": 310
 	},
@@ -320,7 +320,7 @@
 		"name": "time gem",
 		"tags": "magicgems,fundamentalgems",
 		"group": "gems",
-		"desc": "Crafted from gems which do not yet exist.",
+		"desc": "สร้างจากเพชรพลอยที่ยังไม่มีอยู่จริง",
 		"mod": {
 			"tempus.rate": 0.01
 		},
@@ -332,32 +332,32 @@
 		"name": "void gem",
 		"tags": "magicgems,fundamentalgems",
 		"group": "gems",
-		"desc": "The space where a gem once was.",
+		"desc": "ช่องว่างที่ครั้งหนึ่งเคยมีเพชรพลอยอยู่",
 		"mod": {
 			"player.resist.void": 1
 		},
 		"max": 3,
 		"sortOrder": 370,
-		"flavor": "There was a GEM here. It's gone now."
+		"flavor": "เคยมีเพชรพลอยอยู่ตรงนี้ ตอนนี้มันหายไปแล้ว"
 	},
 	{
 		"id": "chaosgem",
 		"name": "chaos gem",
 		"tags": "magicgems,fundamentalgems",
 		"group": "gems",
-		"desc": "Every time you look at it, it looks different.",
+		"desc": "ทุกครั้งที่คุณมองมัน หน้าตาก็เปลี่ยนไป",
 		"mod": {
 			"chaos.rate": 0.01
 		},
 		"max": 3,
 		"sortOrder": 360,
-		"flavor": "Chaos, chaos!"
+		"flavor": "อลหม่าน อลหม่าน!"
 	},
 	{
 		"id": "ichor",
 		"group": "materials",
-		"desc": "The blood of gods.",
-		"flavor": "The secret courtesy that courses like ichor.",
+		"desc": "เลือดของเทพเจ้า",
+		"flavor": "น้ำใจอันเร้นลับที่หลั่งไหลดั่งโลหิตเทพ",
 		"max": 5,
 		"sortOrder": 415
 	},
@@ -365,8 +365,8 @@
 		"id": "sindel",
 		"name": "star shard",
 		"group": "esoteric",
-		"desc": "A glowing cinder of the stars.",
-		"flavor": "The pillars broke; the stars fell screaming from the sky.",
+		"desc": "เถ้าถ่านเรืองแสงแห่งดวงดาว",
+		"flavor": "เสาหินแตกสลาย ดวงดาวร่วงหล่นกรีดร้องจากฟากฟ้า",
 		"max": 3,
 		"sortOrder": 505,
 		"mod": {
@@ -378,8 +378,8 @@
 		"id": "deepsteel",
 		"name": "core steel",
 		"group": "materials",
-		"desc": "Steel forged in the very core of the world.",
-		"flavor": "Forged in the hottest of fires, under the immense pressure, not even the most extraordinary smith could produce metal of such quality.",
+		"desc": "เหล็กที่หลอมขึ้นในแกนกลางของโลกโดยตรง",
+		"flavor": "หลอมในไฟอันร้อนระอุที่สุดภายใต้ความกดดันมหาศาล กระทั่งช่างตีเหล็กผู้โดดเด่นที่สุดก็ยังผลิตโลหะคุณภาพเช่นนี้ไม่ได้",
 		"max": 25,
 		"sortOrder": 475
 	},
@@ -387,26 +387,26 @@
 		"id": "fineparts",
 		"name": "fine-tuned parts",
 		"group": "materials",
-		"desc": "Made to extremely exacting specifications, can be used in production of wondrous machines.",
+		"desc": "สร้างขึ้นตามข้อกำหนดอันเข้มงวดยิ่ง นำไปใช้ผลิตเครื่องจักรอันสุดแสนอัศจรรย์ได้",
 		"max": 10,
 		"sortOrder": 470
 	},
 	{
 		"id": "dreams",
 		"group": "esoteric",
-		"desc": "We are such stuff as dreams are made of. And our little life is rounded with a sleep.",
+		"desc": "เราคือธาตุที่ความฝันหล่อหลอมขึ้น และชีวิตอันน้อยนิดของเราก็จบสิ้นลงด้วยการหลับใหล",
 		"max": 3,
 		"sortOrder": 510,
 		"mod": {
 			"weary.rate": -0.1,
 			"arcana.rate": "1%"
 		},
-		"flavor": "In your wildest..."
+		"flavor": "ในฝันอันสุดเหวี่ยงของคุณ..."
 	},
 	{
 		"id": "herbs",
 		"group": "materials",
-		"desc": "Special plants for potions and alchemy.",
+		"desc": "พืชพิเศษสำหรับยาและการเล่นแร่แปรธาตุ",
 		"max": 10,
 		"sortOrder": 405
 	},
@@ -414,15 +414,15 @@
 		"id": "potionessence",
 		"name": "potion base",
 		"group": "materials",
-		"desc": "Basic essence for creating advanced potions.",
-		"flavor": "Smells faintly of milk.",
+		"desc": "แก่นแท้พื้นฐานสำหรับสร้างยาชั้นสูง",
+		"flavor": "กลิ่นจาง ๆ ของนม",
 		"max": 3,
 		"sortOrder": 410
 	},
 	{
 		"id": "space",
 		"name": "floor space",
-		"desc": "Available space.",
+		"desc": "พื้นที่ใช้สอย",
 		"hide": true,
 		"reverse": true,
 		"reverseDisplay": true,
@@ -431,7 +431,7 @@
 	{
 		"id": "vigor",
 		"tags": "t_endurance",
-		"desc": "Your capacity for short-term exertions.",
+		"desc": "ความสามารถของคุณในการออกแรงระยะสั้น",
 		"unit": false,
 		"locked": false,
 		"name": "vigor",
@@ -441,7 +441,7 @@
 	{
 		"id": "mana",
 		"tags": "manas,prismatic",
-		"desc": "Raw magical energy.",
+		"desc": "พลังงานเวทมนตร์อันดิบ",
 		"unit": false,
 		"require": "lore",
 		"name": "mana",
@@ -453,7 +453,7 @@
 		"require": "firelore",
 		"unit": false,
 		"tags": "manas,element,prismatic",
-		"desc": "Fire mana.",
+		"desc": "มานาแห่งไฟ",
 		"max": 0,
 		"sortOrder": 40
 	},
@@ -462,7 +462,7 @@
 		"require": "airlore",
 		"unit": false,
 		"tags": "manas,element,prismatic",
-		"desc": "Air mana.",
+		"desc": "มานาแห่งอากาศ",
 		"max": 0,
 		"sortOrder": 30
 	},
@@ -471,7 +471,7 @@
 		"unit": false,
 		"tags": "manas,element,prismatic",
 		"require": "earthlore",
-		"desc": "Earth mana.",
+		"desc": "มานาแห่งดิน",
 		"max": 0,
 		"sortOrder": 50
 	},
@@ -479,7 +479,7 @@
 		"id": "water",
 		"unit": false,
 		"tags": "manas,element,prismatic",
-		"desc": "Water mana.",
+		"desc": "มานาแห่งน้ำ",
 		"require": "waterlore",
 		"max": 0,
 		"sortOrder": 20
@@ -489,7 +489,7 @@
 		"tags": "manas,primal,prismatic",
 		"unit": false,
 		"require": "naturelore",
-		"desc": "Nature mana.",
+		"desc": "มานาแห่งธรรมชาติ",
 		"max": 0,
 		"sortOrder": 60
 	},
@@ -499,7 +499,7 @@
 		"tags": "manas,primal,prismatic",
 		"unit": false,
 		"require": "shadowlore",
-		"desc": "Shadow mana.",
+		"desc": "มานาแห่งเงามืด",
 		"max": 0,
 		"sortOrder": 90
 	},
@@ -508,7 +508,7 @@
 		"tags": "manas,primal,prismatic",
 		"unit": false,
 		"require": "lightlore",
-		"desc": "Light mana.",
+		"desc": "มานาแห่งแสง",
 		"max": 0,
 		"sortOrder": 80
 	},
@@ -516,7 +516,7 @@
 		"id": "spirit",
 		"tags": "manas,primal,prismatic",
 		"unit": false,
-		"desc": "Spirit mana.",
+		"desc": "มานาแห่งวิญญาณ",
 		"require": "spiritlore",
 		"max": 0,
 		"sortOrder": 70
@@ -526,7 +526,7 @@
 		"require": "chronomancy",
 		"tags": "manas,fundamental",
 		"unit": false,
-		"desc": "Time incarnate. If only...",
+		"desc": "กาลเวลาที่จุติเป็นกาย หากเพียง...",
 		"max": 0,
 		"sortOrder": 110
 	},
@@ -535,7 +535,7 @@
 		"tags": "manas,fundamental",
 		"require": "g.t_chaosclass>0||g.chaoslore>0",
 		"unit": false,
-		"desc": "Chaos incarnate. You can do anything!",
+		"desc": "Chaos incarnate. คุณทำได้ทุกสิ่ง!",
 		"max": 0,
 		"sortOrder": 100
 	},
@@ -543,7 +543,7 @@
 		"id": "void",
 		"tags": "manas,fundamental",
 		"unit": false,
-		"desc": "Nothingness. No current use.",
+		"desc": "ความว่างเปล่า ยังไม่มีประโยชน์ในขณะนี้",
 		"flavor": "",
 		"max": 0,
 		"sortOrder": 120

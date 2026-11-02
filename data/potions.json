@@ -4,7 +4,7 @@
 		"tags": "t_statuspot",
 		"cd": 5,
 		"name": "remedy",
-		"desc": "Cures most common ailments and renders the imbiber more resistant to them.",
+		"desc": "รักษาโรคภัยทั่วไปส่วนใหญ่ และทำให้ผู้ดื่มต้านทานต่อมันได้ดียิ่งขึ้น",
 		"school": "recovery",
 		"keywords": {
 			"recovery": ["status"],
@@ -43,7 +43,7 @@
 	{
 		"id": "pot_midas",
 		"name": "goldeneye tincture",
-		"desc": "Temporarily grants you an impeccable ability to acquire valuables.",
+		"desc": "มอบความสามารถอันไร้ที่ติในการได้มาซึ่งของมีค่าเป็นการชั่วคราว",
 		"school": "utility",
 		"keywords": {
 			"utility": ["resource", "explore"],
@@ -77,7 +77,7 @@
 	{
 		"id": "pot_metallicizer",
 		"name": "liquid metal",
-		"desc": "A surreptious flask of cold, yet liquid metal. Bonds easily with organic materials, strenghtening them. Caution advised.",
+		"desc": "ขวดลับที่บรรจุโลหะเหลวอันเย็นเฉียบ ยึดเกาะกับวัสดุอินทรีย์ได้ง่าย พร้อมเสริมความแข็งแรงให้มัน ควรใช้ด้วยความระมัดระวัง",
 		"school": "utility",
 		"keywords": {
 			"utility": ["task", "resource"],
@@ -118,7 +118,7 @@
 	{
 		"id": "pot_workhorse",
 		"name": "Workhorse tonic",
-		"desc": "Originally devised as a way to supplement labor shortages, its addictive nature has proven to be more trouble than it's worth.",
+		"desc": "เดิมถูกสร้างขึ้นเพื่อทดแทนแรงงานที่ขาดแคลน ทว่าลักษณะที่ทำให้เสพติดกลับกลายเป็นปัญหามากกว่าคุณค่า",
 		"school": "utility",
 		"keywords": {
 			"utility": ["task", "resource"],
@@ -156,7 +156,7 @@
 	{
 		"id": "pot_invisibility",
 		"name": "vial of invisibility",
-		"desc": "Appears to contain nothing at all.",
+		"desc": "ดูเหมือนข้างในไม่มีอะไรเลย",
 		"school": "battle",
 		"keywords": {
 			"battle": ["buff"],
@@ -197,7 +197,7 @@
 	{
 		"id": "pot_bottled_starlight",
 		"name": "bottled starlight",
-		"desc": "A bizarre concoction that smells like carrots, tastes like raspberries and looks like oil.",
+		"desc": "ส่วนผสมประหลาดที่กลิ่นเหมือนแคร์รอต รสเหมือนราสเบอร์รี และหน้าตาเหมือนน้ำมัน",
 		"school": "utility",
 		"keywords": {
 			"utility": ["task"],
@@ -239,7 +239,7 @@
 	{
 		"id": "pot_weavers_balm",
 		"name": "weaver's balm",
-		"desc": "A cream made of previously woven fibers that helps guide the unwoven fibers.",
+		"desc": "ครีมที่ทำจากเส้นใยที่เคยทอแล้ว ช่วยนำทางเส้นใยที่ยังไม่ถูกทอ",
 		"school": "utility",
 		"keywords": {
 			"utility": ["task"],
@@ -276,7 +276,7 @@
 	{
 		"id": "pot_dream_weaver_fibers",
 		"name": "dream weaver's fibers",
-		"desc": "Enchanted fibers from tapestries infused with herbs and spices before being applied around the eyes to aid in dream weaving.",
+		"desc": "เส้นใยอาคมจากผ้าทอที่หมักสมุนไพรและเครื่องเทศก่อนนำมาปิดรอบดวงตาเพื่อช่วยในการทอความฝัน",
 		"school": "utility",
 		"keywords": {
 			"utility": ["task", "resource"],
@@ -313,7 +313,7 @@
 	{
 		"id": "pot_breath1",
 		"name": "portion of waterbreathing",
-		"desc": "Unusually, prepared by baking special herbs into a brownie.",
+		"desc": "ผิดปกติตรงที่เตรียมโดยการอบสมุนไพรพิเศษลงในบราวนี่",
 		"school": "recovery",
 		"keywords": {
 			"recovery": ["breath"],
@@ -596,7 +596,7 @@
 	{
 		"id": "pot_manadot",
 		"name": "drip of mana",
-		"desc": "Raw mana injected right into the veins of a mage can allow for sustained casting.",
+		"desc": "มานาดิบที่ฉีดเข้าสู่เส้นเลือดของจอมเวทโดยตรงช่วยให้ร่ายเวทได้อย่างต่อเนื่อง",
 		"school": "recovery",
 		"keywords": {
 			"recovery": ["mana"],
@@ -629,7 +629,7 @@
 	{
 		"id": "pot_stamdot",
 		"name": "potion of bull's tenacity",
-		"desc": "This reddish potion causes a surge of energy in the imbiber, at the expense of health.",
+		"desc": "ยาสีแดงนี้อัดพลังให้ผู้ดื่มพลุ่งพล่าน เสียสุขภาพแลกมา",
 		"school": "recovery",
 		"keywords": {
 			"recovery": ["stamina"],
@@ -662,7 +662,7 @@
 	{
 		"id": "pot_manaburn",
 		"name": "potion of mana burn",
-		"desc": "Violently expells all mana from user's body for a time.",
+		"desc": "ปะทุไล่มานาทั้งหมดออกจากร่างผู้ใช้อย่างรุนแรงชั่วขณะ",
 		"require": "g.potions>=999",
 		"buy": {
 			"gold": 250,
@@ -688,7 +688,7 @@
 	{
 		"id": "pot_cparalysis",
 		"name": "tincture of limberness",
-		"desc": "Removes most forms of inisidious motion impairment.",
+		"desc": "ขจัดความพิการด้านการเคลื่อนไหวอันแอบแฝงส่วนใหญ่",
 		"tags": "t_statuspot",
 		"cd": 1,
 		"level": 5,
@@ -712,7 +712,7 @@
 	{
 		"id": "pot_csilence",
 		"name": "echoing flask",
-		"desc": "Amplifies even significantly muffled sounds.",
+		"desc": "ขยายเสียงแม้แต่ที่ถูกอุดอย่างหนาแน่นให้ดังชัด",
 		"tags": "t_statuspot",
 		"cd": 1,
 		"level": 7,
@@ -736,7 +736,7 @@
 	{
 		"id": "pot_csilence2",
 		"name": "amplified echoing flask",
-		"desc": "A refined formula protects your voice for a time after application.",
+		"desc": "สูตรอันละเอียดประณีตช่วยปกป้องเสียงของคุณชั่วระยะเวลาหนึ่งหลังใช้",
 		"tags": "t_statuspot",
 		"cd": 5,
 		"level": 9,
@@ -849,7 +849,7 @@
 		"id": "pot_healdream",
 		"name": "oneirodistillation of wholeness",
 		"require": "(g.potions+g.t_potionclass*2)>=12&&g.dreamchamber>0",
-		"desc": "Distilled from your dreams of self.",
+		"desc": "กลั่นมาจากความฝันถึงตัวตนของคุณ",
 		"tags": "t_oneiropot",
 		"school": "recovery",
 		"keywords": {
@@ -873,7 +873,7 @@
 		"id": "pot_manadream",
 		"name": "oneirodistillation of energy",
 		"require": "(g.potions+g.t_potionclass*2)>=12&&g.dreamchamber>0",
-		"desc": "Distilled from your dreams of power.",
+		"desc": "กลั่นมาจากความฝันถึงอำนาจ",
 		"tags": "t_oneiropot",
 		"school": "recovery",
 		"keywords": {
@@ -947,12 +947,12 @@
 			"stamina": 50,
 			"vigor": 10
 		},
-		"flavor": "Magnum."
+		"flavor": "แมกนั่ม."
 	},
 	{
 		"id": "pot_sp",
 		"name": "philter of clarity",
-		"desc": "A master's skill in liquid form.",
+		"desc": "ฝีมือของปรมาจารย์ในรูปของเหลว",
 		"school": "utility",
 		"keywords": {
 			"utility": ["resource"],
@@ -978,7 +978,7 @@
 		"id": "pot_explodium",
 		"name": "volatile concoction",
 		"tags": "t_combatpot,t_explodypot",
-		"desc": "Holding it seems dangerous. Not holding it, even more so.",
+		"desc": "ถือมันไว้ก็ดูอันตราย แต่ไม่ถือมันอันตรายยิ่งกว่า",
 		"require": "g.potions>=9&&(g.t_potionclass+g.firelord*2)>=2",
 		"school": "battle",
 		"keywords": {
@@ -1016,7 +1016,7 @@
 		"id": "pot_corrosion",
 		"name": "corrosive mixture",
 		"tags": "t_combatpot",
-		"desc": "Highly acidic and prone to reducing even the toughest materials to sludge.",
+		"desc": "มีฤทธิ์กรดจัด มักย่อยแม้แต่วัสดุที่แข็งแกร่งที่สุดให้กลายเป็นโคลนตม",
 		"require": "g.potions>=7",
 		"school": "battle",
 		"keywords": {
@@ -1058,7 +1058,7 @@
 		"id": "pot_sticky",
 		"name": "engulfing glue",
 		"tags": "t_combatpot",
-		"desc": "Quickly solidifies when in contact with air.",
+		"desc": "แข็งตัวอย่างรวดเร็วเมื่อสัมผัสอากาศ",
 		"require": "g.potions>=6",
 		"level": 5,
 		"school": "battle",
@@ -1098,7 +1098,7 @@
 		"id": "pot_smoke",
 		"name": "smoke bomb",
 		"tags": "t_combatpot",
-		"desc": "Only someone gifted with true sight would be able to see through the thick smoke produced by this alchemical marvel.",
+		"desc": "มีเพียงผู้ที่ได้รับพรสายตาอันแท้จริงเท่านั้นที่จะมองทะลุควันหนาทึบจากสิ่งมหัศจรรย์ทางการเล่นแร่แปรธาตุนี้ได้",
 		"require": "g.potions>=5",
 		"level": 10,
 		"school": "battle",
@@ -1140,7 +1140,7 @@
 		"id": "pot_ignition",
 		"name": "flame potion",
 		"tags": "t_combatpot,t_explodypot",
-		"desc": "Throw at an enemy and watch them ignite into a fireball.",
+		"desc": "โยนใส่ศัตรูแล้วเฝ้าดูพวกมันลุกเป็นก้อนไฟ",
 		"require": "g.potions>=4",
 		"level": 5,
 		"school": "battle",
@@ -1177,7 +1177,7 @@
 		"id": "pot_frost",
 		"name": "Everfreeze potion",
 		"tags": "t_combatpot",
-		"desc": "More accurately a set of potions, designed to induce rapid heat loss in the affected subject.",
+		"desc": "ถ้าจะพูดให้ถูก มันคือชุดยาที่ออกแบบมาเพื่อทำให้เป้าหมายสูญเสียความร้อนอย่างรวดเร็ว",
 		"require": "g.alchemist>0",
 		"level": 5,
 		"school": "battle",
@@ -1400,7 +1400,7 @@
 	{
 		"id": "pot_weaponmeld",
 		"name": "weaponmeld salve",
-		"desc": "Applied to a weapon, lets the wielder utilize his skills to the fullest extent.",
+		"desc": "เมื่อทาที่อาวุธ ช่วยให้ผู้ถือปลดปล่อยทักษะของตนได้อย่างเต็มขีด",
 		"level": 12,
 		"school": "battle",
 		"keywords": {
@@ -1435,7 +1435,7 @@
 	{
 		"id": "pot_perfection",
 		"name": "flask of perfection",
-		"desc": "Reshapes your body to make it ever so slightly more ideal.",
+		"desc": "ปรับรูปร่างของคุณให้ใกล้เคียงอุดมคติมากขึ้นอีกเล็กน้อย",
 		"level": 25,
 		"school": "utility",
 		"keywords": {
@@ -1471,7 +1471,7 @@
 	{
 		"id": "pot_mule",
 		"name": "packmule's formula",
-		"desc": "Allows the user to become more vigorous over time.",
+		"desc": "ช่วยให้ผู้ใช้แข็งแรงกระปรี้กระเปร่าขึ้นตามกาลเวลา",
 		"level": 25,
 		"school": "utility",
 		"keywords": {
@@ -1502,12 +1502,12 @@
 			"element.max": -0.25,
 			"mana.max": -0.1
 		},
-		"flavor": "A potent form of an additive used to grow exceptionally healthy cattle."
+		"flavor": "สารเสริมฤทธิ์ชนิดหนึ่งที่ใช้เลี้ยงวัวให้แข็งแรงเป็นพิเศษ"
 	},
 	{
 		"id": "pot_bigbrain",
 		"name": "bubble of mind expansion",
-		"desc": "Expands your mind's capacity for knowledge.",
+		"desc": "ขยายความจุด้านความรู้ของสมองคุณ",
 		"level": 25,
 		"school": "utility",
 		"keywords": {
@@ -1541,12 +1541,12 @@
 			"research.rate": 1,
 			"mana.max": 0.1
 		},
-		"flavor": "It's big brain time."
+		"flavor": "ถึงเวลาสมองใหญ่"
 	},
 	{
 		"id": "pot_attunement",
 		"name": "vial of attunement",
-		"desc": "Causes you to become more attuned to the world's elements. Harmful to one's physical body.",
+		"desc": "ทำให้คุณประสานเข้ากับธาตุของโลกได้ดียิ่งขึ้น แต่เป็นอันตรายต่อร่างกาย",
 		"level": 25,
 		"school": "utility",
 		"keywords": {
@@ -1587,7 +1587,7 @@
 		"id": "pot_tarandfeathers",
 		"name": "tar-and-feathers potion",
 		"tags": "t_coating",
-		"desc": "Bottled tar, perfect for making someone flammable.",
+		"desc": "ยางมะตอยบรรจุขวด เหมาะอย่างยิ่งสำหรับทำใครสักคนให้ติดไฟง่าย",
 		"school": "battle",
 		"keywords": {
 			"battle": ["attack", "debuff"],
@@ -1628,6 +1628,6 @@
 				}
 			}
 		},
-		"flavor": "Someday you need to actually figure out liquid feathers."
+		"flavor": "สักวันคุณคงต้องหาคำตอบให้ได้ว่าขนนกเหลวนั้นทำอย่างไร"
 	}
 ]
