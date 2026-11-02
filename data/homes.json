@@ -1,8 +1,8 @@
 [
 	{
 		"id": "alcove",
-		"desc": "A small corner beneath the stairs of your Master's domicile.",
-		"flavor": "Goodbye hayloft.",
+		"desc": "มุมเล็ก ๆ ใต้บันไดของบ้านนายท่าน",
+		"flavor": "ลาก่อนคอกม้า",
 		"require": "apprentice",
 		"mod": {
 			"space.max": 5
@@ -11,7 +11,7 @@
 	{
 		"id": "earthspire",
 		"name": "earthen spire",
-		"desc": "An impervious spire of metal and stone.",
+		"desc": "ยอดหอคอยแห่งโลหะและศิลาอันต้านทานทุกภัย",
 		"buy": {
 			"research": 500,
 			"gold": 3000,
@@ -26,13 +26,13 @@
 			"earth.max": 5,
 			"earth.rate": 0.5
 		},
-		"flavor": "A monument to your geosculpting mastery."
+		"flavor": "อนุสรณ์แห่งความชำนาญการปั้นแผ่นดินของคุณ"
 	},
 	{
 		"id": "atticbedroom",
 		"name": "Attic Bedroom",
-		"desc": "Noting your progress, your master begrudgingly offers you some space in the attic.",
-		"flavor": "Don't let it go to your head.",
+		"desc": "เมื่อประจักษ์ถึงความก้าวหน้าของคุณ นายท่านจึงจำใจมอบพื้นที่ในห้องใต้หลังคาให้บ้าง",
+		"flavor": "อย่าให้มันลอยไปถึงหัวเลย",
 		"require": "neophyte",
 		"lock": ["alcove"],
 		"buy": {
@@ -45,7 +45,7 @@
 	{
 		"id": "innroom",
 		"name": "Lodge at Inn",
-		"desc": "Rented room of a local Inn",
+		"desc": "ห้องเช่าของโรงแรมประจำท้องถิ่น",
 		"require": "tier0",
 		"log": {
 			"name": "Rented Room",
@@ -58,7 +58,7 @@
 	},
 	{
 		"id": "hut",
-		"desc": "A small hut on the edge of a village.",
+		"desc": "กระท่อมเล็ก ๆ ริมหมู่บ้าน",
 		"disable": "innroom",
 		"require": "tier0",
 		"buy": {
@@ -70,7 +70,7 @@
 	},
 	{
 		"id": "camp",
-		"desc": "A wild camp and its environs.",
+		"desc": "แคมป์ในป่าและบริเวณโดยรอบ",
 		"require": "g.tier0>0&&g.naturelore>=5",
 		"tags": "outdoors,starsource,t_mobilehome",
 		"disable": "innroom",
@@ -87,7 +87,7 @@
 	{
 		"id": "wagon",
 		"name": "tinker's wagon",
-		"desc": "Wheeled carriage for a nomadic lifestyle. Now with donkey.",
+		"desc": "เกวียนมีล้อสำหรับวิถีชีวิตร่อนเร่ บัดนี้พร้อมลา",
 		"require": "g.tier0>0&&g.naturelore>=5",
 		"disable": "innroom",
 		"tags": "outdoors,t_pets,starsource,t_mobilehome",
@@ -106,7 +106,7 @@
 	},
 	{
 		"id": "cottage",
-		"desc": "Cozy and quaint.",
+		"desc": "อบอุ่นและงดงามน่าหลงใหล",
 		"require": "tier0",
 		"disable": "innroom",
 		"buy": {
@@ -120,7 +120,7 @@
 	},
 	{
 		"id": "house",
-		"desc": "A modest house in a small town.",
+		"desc": "บ้านเรียบง่ายในเมืองเล็ก ๆ",
 		"buy": {
 			"gold": 900,
 			"gems": 10
@@ -134,7 +134,7 @@
 	},
 	{
 		"id": "shop",
-		"desc": "A small shop in a bustling city.",
+		"desc": "ร้านค้าเล็ก ๆ ในเมืองอันคึกคัก",
 		"buy": {
 			"gold": 850,
 			"gems": 9
@@ -152,7 +152,7 @@
 	},
 	{
 		"id": "inn",
-		"desc": "A quiet inn for hosting wayfarers.",
+		"desc": "โรงแรมเงียบสงบสำหรับรองรับนักเดินทาง",
 		"buy": {
 			"gold": 2000,
 			"gems": 15
@@ -169,7 +169,7 @@
 	},
 	{
 		"id": "lodge",
-		"desc": "A rugged lodge in the woods.",
+		"desc": "บ้านพักหยาบกร้านกลางป่า",
 		"buy": {
 			"gold": 950,
 			"gems": 5
@@ -185,7 +185,7 @@
 	{
 		"id": "gabledhouse",
 		"name": "gabled mansion",
-		"desc": "A spacious house with many gabled windows.",
+		"desc": "บ้านกว้างขวางพร้อมหน้าต่างจั่วหลายบาน",
 		"buy": {
 			"gold": 2000,
 			"gems": 10
@@ -199,7 +199,7 @@
 	{
 		"id": "halftimber",
 		"name": "half-timber house",
-		"desc": "A vast home of rustic design.",
+		"desc": "บ้านอันกว้างใหญ่ในแบบชนบท",
 		"buy": {
 			"gold": 3000,
 			"gems": 15
@@ -212,7 +212,7 @@
 	},
 	{
 		"id": "cave",
-		"desc": "A primitive dwelling well-suited to particular areas of study. Others less so.",
+		"desc": "ที่พำนักดึกดำบรรพ์ที่เหมาะแก่การค้นคว้าบางสาขาเป็นอย่างยิ่ง แต่บางสาขาก็ไม่เหมาะเท่าใด",
 		"require": "g.tier0>0&&(g.shadow+g.earth+g.nature)>0",
 		"tags": "outdoors,starsource,t_underground",
 		"buy": {
@@ -231,7 +231,7 @@
 	},
 	{
 		"id": "pavilion",
-		"desc": "An open elegant structure on a wide field.",
+		"desc": "ศาลาโถงอันสง่างามกลางทุ่งกว้าง",
 		"buy": {
 			"gold": 800,
 			"gems": 15
@@ -251,7 +251,7 @@
 	{
 		"id": "hauntedmanse",
 		"name": "haunted manse",
-		"desc": "Legends of this mansion speak of ghosts and horrors.",
+		"desc": "ตำนานของคฤหาสน์หลังนี้กล่าวถึงภูตผีและปีศาจร้าย",
 		"buy": {
 			"gold": 2500
 		},
@@ -267,7 +267,7 @@
 	{
 		"id": "ancientruins",
 		"name": "ancient ruins",
-		"desc": "A rambling fortress of crumbled stone. Ancient patterns can be found in every corner.",
+		"desc": "ป้อมปราการหินปรักที่รกร้างกว้างขวาง พบลายเก่าแก่ได้ตามทุกซอกมุม",
 		"buy": {
 			"gold": 5000
 		},
@@ -283,7 +283,7 @@
 	},
 	{
 		"id": "tower",
-		"desc": "A stone tower in which to conduct your arcane investigations.",
+		"desc": "หอคอยหินสำหรับใช้ดำเนินการสืบสวนอันลี้ลับของคุณ",
 		"buy": {
 			"gold": 2500
 		},
@@ -297,7 +297,7 @@
 	},
 	{
 		"id": "lighthouse",
-		"desc": "A lighted tower on the shore of the ocean.",
+		"desc": "หอคอยมีไฟส่องสว่างบนชายฝั่งมหาสมุทร",
 		"buy": {
 			"gold": 3000
 		},
@@ -311,7 +311,7 @@
 	},
 	{
 		"id": "cataract",
-		"desc": "A deep hollow hidden behind a vast waterfall.",
+		"desc": "โพรงลึกที่ซ่อนอยู่หลังน้ำตกอันกว้างใหญ่",
 		"require": "g.excavatewaterfall>0",
 		"tags": "watersource",
 		"buy": {
@@ -324,11 +324,11 @@
 			"waterlore.mod.water.max": 1
 		},
 		"lock": ["latticewindow"],
-		"flavor": "Even more space, even more waterfall. Bracing!"
+		"flavor": "พื้นที่มากขึ้น น้ำตกมากขึ้น ชื่นใจดี!"
 	},
 	{
 		"id": "citadel",
-		"desc": "A stronghold to defend you from the petty forces of the world.",
+		"desc": "ป้อมปราการเพื่อปกป้องคุณจากกองกำลังเล็ก ๆ น้อย ๆ ของโลก",
 		"buy": {
 			"gold": 1000
 		},
@@ -342,7 +342,7 @@
 	},
 	{
 		"id": "academy",
-		"desc": "Austere house of learning.",
+		"desc": "สถาบันแห่งการเรียนรู้อันเคร่งขรึม",
 		"buy": {
 			"gold": 1000,
 			"research": 500
@@ -357,7 +357,7 @@
 	},
 	{
 		"id": "temple",
-		"desc": "Sanctum of meditation and solitude.",
+		"desc": "สถานศักดิ์สิทธิ์แห่งการฌานและความสันโดษ",
 		"buy": {
 			"gold": 2000
 		},
@@ -376,7 +376,7 @@
 	{
 		"id": "magetower",
 		"name": "mage tower",
-		"desc": "Nothing is more iconic to the craft than the wizard in a tower.",
+		"desc": "ไม่มีสิ่งใดเป็นสัญลักษณ์ของวิชาเวทได้ยิ่งกว่าจอมเวทในหอคอย",
 		"require": "g.tier4>0&&g.t_knowledgeclass>=2",
 		"buy": {
 			"gold": 7000,
@@ -396,7 +396,7 @@
 	{
 		"id": "home_idrasil_sapling",
 		"name": "idrasil sapling",
-		"desc": "The saplings of Yggdrasil become trees to rival mountains.",
+		"desc": "หน่ออ่อนของอิกดราซิลจะเติบโตเป็นต้นไม้เทียบเคียงภูเขา",
 		"tags": "outdoors,starsource",
 		"require": "g.idrasilgrow1>0",
 		"buy": {
@@ -413,7 +413,7 @@
 	},
 	{
 		"id": "palace",
-		"desc": "Luxurious, sprawling estate to advance your studies and host peers in maximum comfort.",
+		"desc": "ที่ดินอันหรูหรากว้างใหญ่ไพศาล ใช้ส่งเสริมการศึกษาและต้อนรับเพื่อนร่วมวิชาได้อย่างสุขสบายที่สุด",
 		"require": "g.palacerestoration>0",
 		"buy": {
 			"gold": 2500
@@ -425,11 +425,11 @@
 			"magicadvice.result.gold": 0.65,
 			"research.rate": -0.5
 		},
-		"flavor": "Whoever said more money brings more problems?"
+		"flavor": "ใครกันที่บอกว่าเงินมากขึ้นก็ปัญหามากขึ้น?"
 	},
 	{
 		"id": "castle",
-		"desc": "A vast and practical fortress, for the magic user with enemies. Or targets.",
+		"desc": "ป้อมปราการอันกว้างใหญ่และใช้งานได้จริง เหมาะกับนักเวทผู้มีศัตรู หรือไม่ก็ผู้ที่ต้องกำจัดเป้าหมาย",
 		"require": "g.castlerestoration>0",
 		"buy": {
 			"gold": 2500
@@ -448,7 +448,7 @@
 	{
 		"id": "cove",
 		"tags": "outdoors,starsource",
-		"desc": "Hidden cove.",
+		"desc": "อ่าวเร้นลับ",
 		"require": "g.tier3>0&&(g.t_elementalclass+g.t_waterclass*2)>=2",
 		"buy": {
 			"gold": 3000
@@ -464,7 +464,7 @@
 	},
 	{
 		"id": "cavern",
-		"desc": "A wide and yawning cavern, deep beneath the earth.",
+		"desc": "ถ้ำกว้างอ้าปากค้าง ลึกใต้พื้นพิภพ",
 		"require": "g.tier2>0&&g.earthlore>=10",
 		"tags": "earthsource,t_underground",
 		"buy": {
@@ -489,7 +489,7 @@
 	{
 		"id": "grove",
 		"name": "Enchanted Grove",
-		"desc": "Enchanted grove.",
+		"desc": "ป่าละเมาะที่ถูกอาคม",
 		"tags": "outdoors,starsource",
 		"require": "g.tier3>0&&(g.t_enchantingclass+g.t_natureclass)>0",
 		"buy": {
@@ -508,7 +508,7 @@
 		"id": "island",
 		"name": "Shrouded Isle",
 		"tags": "outdoors,starsource",
-		"desc": "A lonely isle at sea.",
+		"desc": "เกาะอันเปล่าเปลี่ยวกลางทะเล",
 		"require": "g.tier3>0&&(g.t_enchantingclass+g.t_elementalclass+g.t_spiritclass)>0",
 		"buy": {
 			"gold": 4000,
@@ -527,7 +527,7 @@
 	{
 		"id": "facemuseum",
 		"name": "Museum of Faces",
-		"desc": "A repository of countless disguises to further your research.",
+		"desc": "แหล่งเก็บหน้ากากนับไม่ถ้วนเพื่อต่อยอดงานวิจัยของคุณ",
 		"require": "g.tier3>0&&g.trickery>=13",
 		"buy": {
 			"gold": 6666,
@@ -546,7 +546,7 @@
 		"id": "home_idrasil_sprout",
 		"name": "idrasil sprout",
 		"tags": "outdoors,starsource",
-		"desc": "The sprout of an idrasil seed. It has a long way to go under your care, but even now it towers over much of the forest.",
+		"desc": "หน่อของเมล็ดอิดราซิล มันยังมีทางอีกไกลภายใต้การดูแลของคุณ แต่กระนั้นมันก็สูงตระหง่านเหนือผืนป่าไปมากแล้ว",
 		"require": "g.tier2>0&&g.nature>=8&&g.arcana>=8",
 		"buy": {
 			"gems": 15,
@@ -563,7 +563,7 @@
 	{
 		"id": "home_idrasil_tree",
 		"name": "idrasil tree",
-		"desc": "A tree grown large enough to become a microcosm unto itself.",
+		"desc": "ต้นไม้ที่เติบโตใหญ่หลวงถึงขั้นกลายเป็นจักรวาลย่อม ๆ ในตัวเอง",
 		"tags": "outdoors,starsource",
 		"require": "g.idrasilgrow2>0",
 		"buy": {
@@ -577,12 +577,12 @@
 			"airlore.mod.air.max": 0.2,
 			"fire.rate": "-3%"
 		},
-		"flavor": "A hint of the grandeur of Yggdrasil."
+		"flavor": "ร่องรอยของความยิ่งใหญ่แห่งอิกดราซิล"
 	},
 	{
 		"id": "home_collective",
 		"name": "collective",
-		"desc": "A gathering of like-minded nature appreciators in the wilderness.",
+		"desc": "การรวมตัวของผู้ชื่นชมธรรมชาติแนวเดียวกันกลางป่าทุรกันดาร",
 		"tags": "outdoors,starsource,plantsource,t_pets,t_mobilehome",
 		"require": "g.foundcollective>0",
 		"mod": {
@@ -604,7 +604,7 @@
 	{
 		"id": "home_caravan",
 		"name": "caravan",
-		"desc": "An entire caravan of wagons banded together for safety and convenience.",
+		"desc": "กองเกวียนทั้งกองที่รวมตัวกันเพื่อความปลอดภัยและความสะดวก",
 		"tags": "outdoors,t_pets,starsource,t_mobilehome",
 		"require": "g.establishcaravan>0",
 		"mod": {
@@ -625,7 +625,7 @@
 	{
 		"id": "home_emporium",
 		"name": "emporium",
-		"desc": "A monument to commerce in a bustling metropolis.",
+		"desc": "อนุสรณ์แห่งการค้าในมหานครอันครึกครื้น",
 		"tags": "watersource,plantsource,booksource,t_pets,workspace,firesource,earthsource,airsource,potsource,spiritsource,shadowsource,lightsource,starsource,enchantsource,armssource,legssource",
 		"require": "g.buildemporium>0",
 		"mod": {
@@ -653,12 +653,12 @@
 			},
 			"t_bulk_sale_task.result.gold": "15%"
 		},
-		"flavor": "If you don't sell it, it doesn't exist."
+		"flavor": "ถ้าไม่ขายมัน มันก็ไม่มีอยู่จริง"
 	},
 	{
 		"id": "home_waterfall",
 		"name": "waterfall",
-		"desc": "Just chill underneath a waterfall.",
+		"desc": "แค่นอนปล่อยกายใต้สายน้ำตก",
 		"tags": "watersource",
 		"require": "g.water>=6&&g.naturelore>=6&&g.tier1>0",
 		"buy": {
@@ -672,12 +672,12 @@
 			"lightlore.rate": -0.4
 		},
 		"lock": ["latticewindow"],
-		"flavor": "There's always space behind a waterfall. Your stuff lives there now."
+		"flavor": "หลังน้ำตกมีที่ว่างเสมอ ข้าวของของคุณอยู่ที่นั่นแล้ว"
 	},
 	{
 		"id": "ruinedpalace",
 		"name": "mouldering palace",
-		"desc": "A once luxurious and sprawling estate, with much of the amenities ruined. Still much more comfortable than most homes.",
+		"desc": "ที่ดินอันเคยหรูหรากว้างใหญ่ มนสิงอำนวยความสะดวกส่วนใหญ่พังพินาศ แต่ก็ยังสบายกว่าบ้านส่วนใหญ่",
 		"require": "g.tier2>0",
 		"buy": {
 			"gold": 2500
@@ -691,7 +691,7 @@
 	{
 		"id": "ruinedcastle",
 		"name": "crumbling castle",
-		"desc": "A once vast and practical fortress, laid low by the ravages of time. It still has room for mercenaries.",
+		"desc": "ป้อมปราการอันเคยกว้างใหญ่และใช้งานได้จริง ถูกกาลเวลาบั่นทอนจนล่มจม ยังคงมีที่ว่างสำหรับทหารรับจ้าง",
 		"require": "g.tier2>0",
 		"buy": {
 			"gold": 2500
