@@ -21,6 +21,17 @@ Theory of Magic is built with Vue 3 and Vite, with most world content driven by 
 - ดูแล Wizard Hall และตัวละครหลายตัว
 - บันทึกเกมในเบราว์เซอร์ พร้อมนำเข้าและส่งออกไฟล์เซฟ JSON
 
+### การเร่งเวลา (Fast-forward)
+
+กดปุ่ม **"เร่งเวลา"** บนแถบด้านบนเพื่อให้เกมเดินเร็วขึ้นแบบเรียลไทม์ ตามตัวคูณความเร็วที่ตั้งได้ใน Settings → "ความเร็วเร่งเวลา" (ค่าเริ่มต้น 10 เท่า) แล้วกดปุ่มอีกครั้งเพื่อหยุด
+
+ในเวอร์ชันนี้ระบบการเร่งเวลาทำงานแบบเรียลไทม์และ**ไม่ต้องพึ่ง "เวลาออฟไลน์ที่สะสมไว้" (stored time) อีกต่อไป**:
+- เร่งเวลาได้ทันทีโดยไม่ต้องใช้เวลาที่สะสมไว้จากการปล่อยเกมทิ้งหรือปิดแท็บ
+- โหมดเร่งเวลาจะไม่หยุดเองเมื่อเวลาสะสมหมด ต้องกดปุ่มเพื่อปิดเอง
+- ไม่มีการสะสมเวลาออฟไลน์เข้า "stored time" (`offlinetime`) อีกแล้ว
+
+> หมายเหตุ: ทรัพยากร "stored time" ยังคงมีอยู่และยังถูกใช้โดยระบบเกมอื่น (เช่น ภารกิจ/อีเวนต์) แต่ไม่จำเป็นสำหรับการเร่งเวลาอีกต่อไป
+
 ### เริ่มต้นใช้งาน
 
 ต้องติดตั้ง [Node.js](https://nodejs.org/) 18 ขึ้นไป และ npm ก่อน
@@ -81,6 +92,17 @@ Vite จะแสดง URL ของเซิร์ฟเวอร์พัฒ�
 - Unlock new areas, classes, and magical abilities
 - Upgrade your hall and manage a growing roster of characters
 - Save directly in the browser with IndexedDB and fallback storage support
+
+## Fast-forward (เร่งเวลา)
+
+Click the **Fast-forward** button in the top bar to run the game faster in real time, at a multiplier you can set in Settings → "Fastforward speed" (default 10×). Click it again to stop.
+
+In this build the fast-forward system works in real time and **no longer depends on accumulated "stored time"**:
+- It runs immediately without spending banked offline time.
+- It stays active until you toggle it off (it no longer auto-stops when stored time runs out).
+- Offline overflow is no longer banked into the "stored time" (`offlinetime`) resource.
+
+> Note: the `offlinetime` ("stored time") resource still exists and is still used by other game systems (e.g. tasks/events), but it is no longer required for fast-forwarding.
 
 ## Getting started
 
