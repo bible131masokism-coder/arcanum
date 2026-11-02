@@ -1,15 +1,15 @@
 [
 	{
 		"id": "apprentice",
-		"desc": "Apprentice to a notable wizard.",
-		"actname": "Apprenticeship",
-		"actdesc": "Become an apprentice.",
+		"desc": "ศิษย์ติดตามจอมเวทผู้โด่งดัง",
+		"actname": "การเป็นศิษย์",
+		"actdesc": "เป็นศิษย์รับใช้",
 		"require": "research",
 		"disable": ["cleanstables"],
 		"warn": false,
 		"log": {
-			"name": "Apprentice",
-			"desc": "After paying a small fee, you became apprenticed to a local wizard."
+			"name": "ศิษย์รับใช้",
+			"desc": "หลังจากชำระค่าธรรมเนียมเล็กน้อย คุณก็กลายเป็นศิษย์ของจอมเวทประจำท้องถิ่นคนหนึ่ง"
 		},
 		"cost": {
 			"research": 10,
@@ -25,7 +25,7 @@
 		"id": "job_smith",
 		"name": "Smith",
 		"tags": "t_job",
-		"actdesc": "Smith equipment for your master to enchant.",
+		"actdesc": "ตีเหล็กอุปกรณ์ให้เจ้านายใช้เสริมเวท",
 		"require": "g.crafting>=5",
 		"warn": true,
 		"cost": {
@@ -40,13 +40,13 @@
 			"crafting.max": 1,
 			"weaponlore.max": 1
 		},
-		"flavor": "Is it normal to feel the ringing of the hammer in my arm when I wake up the next day?",
+		"flavor": "การที่ผมยังรู้สึกถึงเสียงค้อนกระทบแขนตัวเองทุกครั้งที่ตื่นนอนในเช้าวันต่อมามันเป็นเรื่องปกติหรือ?",
 		"sortOrder": 2
 	},
 	{
 		"id": "falconer",
 		"tags": "t_job",
-		"actdesc": "Tend your master's owls and falcons.",
+		"actdesc": "ดูแลนกเค้าแมวและเหยี่ยวของเจ้านาย",
 		"require": "animals",
 		"cost": {
 			"gold": 100,
@@ -61,13 +61,13 @@
 			"animals.max": 1,
 			"naturelore.max": 1
 		},
-		"flavor": "On the bright side, the bandages almost make up for the holes in my glove.",
+		"flavor": "พูดในแง่ดี ผ้าพันแผลก็พอชดเชยรูบนถุงมือของฉันได้อยู่",
 		"sortOrder": 3
 	},
 	{
 		"id": "herbalist",
 		"tags": "t_job",
-		"actdesc": "Gather herbs for your master's potions and alchemy.",
+		"actdesc": "เก็บสมุนไพรให้เจ้านายใช้ปรุงยาและเล่นแร่แปรธาตุ",
 		"require": "herbalism",
 		"cost": {
 			"gold": 100,
@@ -82,13 +82,13 @@
 			"herbalism.max": 1,
 			"alchemy.max": 1
 		},
-		"flavor": "Green thumb? My hands are almost entirely green most of the time...",
+		"flavor": "นิ้วเขียวอย่างนั้นหรือ? เอาเข้าจริงมือฉันเขียวเกือบทั้งมือตลอดเวลา...",
 		"sortOrder": 4
 	},
 	{
 		"id": "scribe",
 		"tags": "t_job",
-		"actdesc": "Become your master's personal scribe.",
+		"actdesc": "เป็นผู้จารึกส่วนตัวของเจ้านาย",
 		"require": "scribescroll",
 		"cost": {
 			"gold": 100,
@@ -100,17 +100,17 @@
 			"history.max": 1,
 			"languages.max": 1
 		},
-		"flavor": "When I get a little money I buy books, and if any is left I buy food and clothes.",
+		"flavor": "พอได้เงินมาก็ซื้อหนังสือ และถ้ายังเหลือก็ซื้ออาหารกับเสื้อผ้า",
 		"sortOrder": 5
 	},
 	{
 		"id": "adept",
 		"name": "adept",
-		"actname": "End Apprenticeship",
+		"actname": "End การเป็นศิษย์",
 		"tags": "t_tier0",
 		"require": "g.t0unlocker>0&&g.research.max>=100&&g.lore>=4",
-		"desc": "Your master behind you, you set off into the world alone. You had better find a new place to stay.",
-		"actdesc": "Purchase freedom from your apprenticeship. You will become an independent practitioner of magic.",
+		"desc": "ทิ้งนายไว้เบื้องหลัง คุณออกเดินทางสู่โลกใบนี้เพียงลำพัง ควรหาที่พำนักใหม่ไว้แต่เนิ่น ๆ",
+		"actdesc": "ซื้ออิสรภาพจากการเป็นศิษย์รับใช้ คุณจะกลายเป็นนักเวทที่พึ่งพาตนเองเท่านั้น",
 		"cost": {
 			"research": 225,
 			"gold": 200
@@ -128,18 +128,18 @@
 	{
 		"id": "darkadept",
 		"name": "dark adept",
-		"actname": "Slay Master",
-		"desc": "Your master lies dead.  Now your journey to true power begins.  Best leave before people start asking questions...",
-		"actdesc": "Murder your master in their sleep.",
-		"flavor": "Save heaps of money with the power of evil.",
+		"actname": "สังหารนาย",
+		"desc": "นายของเจ้าไร้ลมหายใจแล้ว บัดนี้การเดินทางสู่พลังที่แท้จริงของเจ้าได้เริ่มต้นขึ้น ควรรีบจากไปก่อนที่ผู้คนจะเริ่มตั้งคำถาม...",
+		"actdesc": "ฆ่านายของคุณยามหลับใหล",
+		"flavor": "ประหยัดเงินเป็นกอบเป็นกำไปกับการใช้พลังแห่งความชั่วร้าย",
 		"tags": "t_tier0",
 		"require": "g.t0unlocker>0&&g.research.max>=100&&g.lore>=4",
 		"cost": {
 			"research": 225
 		},
 		"log": {
-			"name": "Master Slain",
-			"desc": "Your master was a fool. A quick murder in the dark put an end to their petty demands, and frees you to pursue your own grander designs."
+			"name": "นายถูกสังหาร",
+			"desc": "นายของคุณช่างโง่เขลา การฆ่าอย่างรวดเร็วท่ามกลางความมืดยุติข้อเรียกร้องอันจุกจิกของเขาลง และปลดปล่อยคุณให้ไล่ตามแผนการอันยิ่งใหญ่ของตัวเอง"
 		},
 		"mod": {
 			"mysticism.max": 1,
@@ -158,10 +158,10 @@
 	{
 		"id": "redadept",
 		"name": "red adept",
-		"desc": "Go on a journey to further your capabilities in combat.",
+		"desc": "ออกรอนแรมเพื่อเสริมความสามารถทางการต่อสู้ของคุณ",
 		"require": "g.t0unlocker>0&&g.research.max>=100&&g.lore>=4",
 		"need": "g.evt_early_combat>0",
-		"needtext": "Must have reached a commoner's limit by clearing edges of treffil's woods before making a spellbook",
+		"needtext": "ต้องถึงขีดจำกัดของสามัญชน โดยกวาดล้างขอบป่าทเรฟฟิลก่อนสร้างตำราเวท",
 		"tags": "t_tier0",
 		"mod": {
 			"anatomy.max": 1,
@@ -171,16 +171,16 @@
 			"stamina.rate": 0.1,
 			"vigor.rate": 0.01
 		},
-		"flavor": "Danger is just an excuse for the weak.",
+		"flavor": "อันตรายเป็นเพียงข้ออ้างของผู้ที่อ่อนแอ",
 		"sortOrder": 8
 	},
 	{
 		"id": "blueadept",
 		"name": "blue adept",
-		"desc": "Dedicate yourself to putting the world in order.",
+		"desc": "อุทิศตนเพื่อจัดระเบียบโลกให้เป็นระเบียบ",
 		"require": "g.t0unlocker>0&&g.research.max>=100&&g.lore>=4",
 		"need": "g.virtue>=200",
-		"needtext": "Must have at least 200 virtue",
+		"needtext": "ต้องมีคุณธรรมอย่างน้อย 200",
 		"tags": "t_tier0",
 		"mod": {
 			"mysticism.max": 1,
@@ -195,12 +195,12 @@
 	{
 		"id": "savant",
 		"name": "mystic savant",
-		"desc": "You have no need of these dry tomes and musty old books.",
-		"actname": "Forgo Studies",
+		"desc": "คุณไม่จำเป็นต้องใช้ตำราแห้งฝืดและหนังสือเก่าเหม็นอับเหล่านี้",
+		"actname": "ละทิ้งการเล่าเรียน",
 		"tags": "t_tier0",
 		"require": "g.t0unlocker>0&&g.research.max>=100&&g.lore>=4",
 		"need": "g.study<=0",
-		"needtext": "You cannot have used the study action at any point",
+		"needtext": "คุณต้องไม่เคยใช้การกระทำเล่าเรียนเลยตลอดมา",
 		"mod": {
 			"mysticism.max": 2,
 			"conjuration.max": 1,
@@ -212,8 +212,8 @@
 	{
 		"id": "magician",
 		"tags": "t_tier1,t_manaclass,t_knowledgeclass",
-		"desc": "Magic in its purest form.",
-		"actdesc": "Pursue the path of pure magic.",
+		"desc": "เวทมนตร์ในรูปแบบบริสุทธิ์ที่สุด",
+		"actdesc": "เดินตามวิถีแห่งเวทมนตร์บริสุทธิ์",
 		"require": "g.t1unlocker>0&&g.lore>=10",
 		"cost": {
 			"research": 500,
@@ -234,9 +234,9 @@
 	{
 		"id": "trickster",
 		"name": "arcane trickster",
-		"desc": "Use magic for deceit and trickery.",
+		"desc": "ใช้เวทมนตร์เพื่อการหลอกลวงและกลอุบาย",
 		"secret": true,
-		"actname": "Path of Trickery",
+		"actname": "วิถีแห่งกลอุบาย",
 		"tags": "t_tier1,t_chaosclass",
 		"require": "g.trickery>=4&&g.t1unlocker>0&&g.tier1==0",
 		"mod": {
@@ -255,7 +255,7 @@
 	{
 		"id": "madcap",
 		"name": "mystic madcap",
-		"desc": "A penchant for chaos.",
+		"desc": "ความนิยมชมชอบในความอลหม่าน",
 		"secret": true,
 		"tags": "t_tier2,t_chaosclass",
 		"require": "g.trickery>=7&&g.t2unlocker>0&&g.tier2==0",
@@ -278,9 +278,9 @@
 	{
 		"id": "jester",
 		"name": "jester",
-		"desc": "Elevate pranks to a new height of artform and wizardry.",
+		"desc": "ยกระดับการแกล้งขึ้นสู่ความสูงส่งใหม่แห่งศิลปะและเวทมนตร์",
 		"secret": true,
-		"actname": "Infinite Jest",
+		"actname": "มุกอันหาที่สุดมิได้",
 		"tags": "t_tier4,t_chaosclass",
 		"require": "g.trickery>=15&&g.t_chaosclass>0&&g.t4unlocker>0&&g.tier4==0",
 		"cost": {
@@ -304,7 +304,7 @@
 		"id": "battlemage",
 		"name": "battle mage",
 		"tags": "t_tier2,t_swordclass,t_manaclass",
-		"actdesc": "Pursue the path of battle.",
+		"actdesc": "เดินตามวิถีแห่งการรบ",
 		"require": "g.t2unlocker>0&&g.weaponlore>=6&&g.tier2==0",
 		"mod": {
 			"mana.max": 4,
@@ -318,7 +318,7 @@
 		"id": "bloodmage",
 		"name": "blood mage",
 		"tags": "t_tier3,t_bloodclass,t_manaclass",
-		"desc": "The magic in your veins.",
+		"desc": "เวทมนตร์ในเส้นเลือดของคุณ",
 		"require": "g.t3unlocker>0&&(g.battlemage>0||g.hp.max>=150)&&g.tier3==0",
 		"cost": {
 			"bloodgem": 20
@@ -337,7 +337,7 @@
 	{
 		"id": "summoner",
 		"tags": "t_tier3,t_summonclass",
-		"desc": "Alone or with friends, a summoner is never without an army.",
+		"desc": "ไม่ว่าจะอยู่ลำพังหรือพร้อมหน้าสหาย นักอัญเชิญย่อมไม่เคยขาดกองทัพ",
 		"require": "g.summoning>=5&&g.t3unlocker>0&&g.lore>=20",
 		"mod": {
 			"minions.max": 1,
@@ -347,12 +347,12 @@
 			"charms.max": 1,
 			"lore.max": 2
 		},
-		"flavor": "How you do I; hope you've met my...",
+		"flavor": "ว่าไงครับ ผมเอง หวังว่าคุณคงได้รู้จักพรรคพวกของผมบ้างแล้ว...",
 		"sortOrder": 201
 	},
 	{
 		"id": "warden",
-		"desc": "A keeper of the forests, mountains, and hills.",
+		"desc": "ผู้พิทักษ์แห่งป่าเขาและเนินเขา",
 		"tags": "t_tier1,t_natureclass",
 		"require": "g.t1unlocker>0&&g.naturelore>=8",
 		"cost": {
@@ -369,7 +369,7 @@
 	{
 		"id": "alchemist",
 		"tags": "t_tier2,t_bloodclass,t_potionclass,t_craftingclass",
-		"desc": "An alchemist uses magical knowledge to craft wonders.",
+		"desc": "นักเล่นแร่แปรธาตุใช้ความรู้เวทมนตร์สรรสร้างสิ่งมหัศจรรย์",
 		"require": "g.t2unlocker>0&&g.potions>=4&&g.alchemy>=5",
 		"cost": {
 			"managem": 5,
@@ -389,7 +389,7 @@
 	},
 	{
 		"id": "enchanter",
-		"desc": "A master of charms and enchantments.",
+		"desc": "จอมพลังแห่งเครื่องรางและการเสริมเวท",
 		"require": "g.t2unlocker>0&&g.enchanting>=6&&g.charms>=3",
 		"tags": "t_tier2,t_craftingclass,t_enchantingclass",
 		"cost": {
@@ -408,9 +408,9 @@
 	},
 	{
 		"id": "geomancer",
-		"desc": "Lord of rocks.",
+		"desc": "จอมแห่งศิลา",
 		"tags": "t_tier2,t_earthclass,t_hammerclass",
-		"actdesc": "A mage specialising in earth manipulation and endurance.",
+		"actdesc": "จอมเวทผู้เชี่ยวชาญด้านการควบคุมดินและความทรหด",
 		"require": "g.t2unlocker>0&&g.earthlore>=7&&g.tier2==0",
 		"cost": {
 			"earthgem": 10
@@ -422,14 +422,14 @@
 			"mana.max": 2,
 			"earthspire.mod.space.max": 50
 		},
-		"flavor": "Your empire of dirt.",
+		"flavor": "อาณาจักรดินของเจ้า",
 		"sortOrder": 154
 	},
 	{
 		"id": "earthshaker",
-		"desc": "Master of the tectonics.",
+		"desc": "จอมคุมแผ่นเปลือกโลก",
 		"tags": "t_tier4,t_earthclass,t_hammerclass",
-		"actdesc": "A supreme master of earth's destructive magics.",
+		"actdesc": "ยอดจอมเวทแห่งเวทมนตร์ทำลายล้างของผืนดิน",
 		"require": "g.t4unlocker>0&&g.earthlore>=11&&g.tier4==0",
 		"cost": {
 			"earthgem": 50
@@ -441,14 +441,14 @@
 			"earth.rate": 0.3,
 			"earthspire.mod.space.max": 50
 		},
-		"flavor": "Finally, a subduction license!",
+		"flavor": "ในที่สุดก็ได้ใบอนุญาตเคลื่อนแผ่นเปลือกโลกเสียที!",
 		"sortOrder": 251
 	},
 	{
 		"id": "titan",
-		"desc": "A mantle of metal and stone.",
+		"desc": "ผืนเสื้อคลุมแห่งโลหะและศิลา",
 		"tags": "t_tier6,t_earthclass,t_hammerclass",
-		"actdesc": "An unstoppable force of nature, a Titan is Will incarnate.",
+		"actdesc": "พลังธรรมชาติที่ไร้ผู้หยุดยั้ง ไททันคือเจตจำนงที่จุติขึ้น",
 		"require": "g.t6unlocker>0&&g.t_earthclass>0&&g.hammerlore>=10&&g.geosculpting>=10&&g.tier6==0",
 		"cost": {
 			"earthgem": 100,
@@ -461,14 +461,14 @@
 			"hammerlore.max": 3,
 			"earthspire.mod.space.max": 100
 		},
-		"flavor": "When in good moods, Titans sculpted mountains. In bad ones, nations became craters.",
+		"flavor": "ยามอารมณ์ดี เหล่าไททันแกะสลักภูเขา ยามอารมณ์ร้าย ประเทศทั้งประเทศกลายเป็นหลุมอุกกาบาต",
 		"sortOrder": 350
 	},
 	{
 		"id": "hydromancer",
-		"desc": "Master of water.",
+		"desc": "จอมแห่งสายน้ำ",
 		"tags": "t_tier2,t_waterclass",
-		"actdesc": "A mage specialising in water manipulation and adaptability.",
+		"actdesc": "จอมเวทผู้เชี่ยวชาญด้านการควบคุมน้ำและการปรับตัว",
 		"require": "g.t2unlocker>0&&g.waterlore>=10",
 		"cost": {
 			"watergem": 10
@@ -484,9 +484,9 @@
 	{
 		"id": "windmage",
 		"name": "wind mage",
-		"desc": "To walk on the wind.",
+		"desc": "ไต่ไปตามสายลม",
 		"tags": "t_tier2,t_airclass",
-		"actdesc": "A mage specialising in air manipulation and intuition.",
+		"actdesc": "จอมเวทผู้เชี่ยวชาญด้านการควบคุมอากาศและสัญชาตญาณ",
 		"require": "g.t2unlocker>0&&g.airlore>=10",
 		"cost": {
 			"airgem": 10
@@ -496,12 +496,12 @@
 			"dodge": "10%",
 			"mana.max": 2
 		},
-		"flavor": "There's a storm coming.",
+		"flavor": "พายุกำลังจะมา",
 		"sortOrder": 156
 	},
 	{
 		"id": "stormcaller",
-		"desc": "Harness the violence of natural forces.",
+		"desc": "ควบคุมความรุนแรงของพลังธรรมชาติ",
 		"require": "(g.t_waterclass>0||g.t_airclass>0)&&g.t3unlocker>0",
 		"tags": "t_tier3,t_waterclass,t_airclass",
 		"cost": {
@@ -514,12 +514,12 @@
 			"airlore.max": 3,
 			"waterlore.max": 3
 		},
-		"flavor": "I am the storm.",
+		"flavor": "ฉันคือพายุ",
 		"sortOrder": 202
 	},
 	{
 		"id": "elementalist",
-		"desc": "Master of elemental forces.",
+		"desc": "จอมแห่งพลังธาตุ",
 		"require": "g.t1unlocker>0&&g.airlore>=3&&g.firelore>=3&&g.earthlore>=3&&g.waterlore>=3",
 		"tags": "t_tier1,t_elementalclass",
 		"mod": {
@@ -531,7 +531,7 @@
 	},
 	{
 		"id": "sorcerer",
-		"desc": "A wielder of raw magical power.",
+		"desc": "ผู้ปลดปล่อยพลังเวทมนตร์อันดิบเถื่อน",
 		"require": "g.t4unlocker>0&&(g.earthlore>=15||g.waterlore>=15||g.firelore>=15)&&(g.t_elementalclass+g.t_fireclass+g.t_waterclass+g.t_earthclass)>0",
 		"tags": "t_tier4,t_elementalclass",
 		"cost": {
@@ -551,7 +551,7 @@
 	},
 	{
 		"id": "druid",
-		"desc": "A spellcaster dedicated to the natural world.",
+		"desc": "นักร่ายบทผู้ทุ่มเทให้แก่โลกธรรมชาติ",
 		"tags": "t_tier3,t_natureclass",
 		"require": "g.t3unlocker>0&&g.naturelore>=15",
 		"cost": {
@@ -570,7 +570,7 @@
 		"id": "highelemental",
 		"name": "high elementalist",
 		"tags": "t_tier3,t_elementalclass",
-		"desc": "Lord of the elements.",
+		"desc": "จอมปกครองธาตุทั้งปวง",
 		"require": "g.t3unlocker>0&&g.airlore>=8&&g.firelore>=8&&g.waterlore>=8&&g.earthlore>=8",
 		"cost": {
 			"airgem": 20,
@@ -592,7 +592,7 @@
 	{
 		"id": "oracle",
 		"tags": "t_tier1,t_divinationclass",
-		"desc": "Fortune and misfortune are merely expressions of cause and effect.",
+		"desc": "โชคดีและเคราะห์ร้ายล้วนเป็นเพียงการแสดงออกของเหตุและผล",
 		"require": "g.t1unlocker>0&&g.spiritlore>=5&&g.divination>=5",
 		"mod": {
 			"virtue": 1,
@@ -608,7 +608,7 @@
 	},
 	{
 		"id": "seer",
-		"desc": "Read the room, read the person, divine their future.",
+		"desc": "อ่านสถานการณ์ อ่านตัวบุคคล แล้วพยากรณ์อนาคตของพวกเขา",
 		"require": "g.t2unlocker>0&&g.divination>=10",
 		"tags": "t_tier2,t_divinationclass",
 		"mod": {
@@ -623,7 +623,7 @@
 	},
 	{
 		"id": "mage",
-		"desc": "Member of an arcane order.",
+		"desc": "สมาชิกของสมาคมเวทมนตร์ลี้ลับ",
 		"tags": "t_tier2,t_manaclass,t_knowledgeclass",
 		"require": "g.t2unlocker>0&&g.lore>=14",
 		"cost": {
@@ -643,7 +643,7 @@
 	{
 		"id": "highmage",
 		"name": "high mage",
-		"desc": "Elite of an arcane order.",
+		"desc": "ชนชั้นนำของสมาคมเวทมนตร์ลี้ลับ",
 		"tags": "t_tier3,t_manaclass,t_knowledgeclass",
 		"require": "g.t3unlocker>0&&g.lore>=18",
 		"cost": {
@@ -663,7 +663,7 @@
 	},
 	{
 		"id": "doomsayer",
-		"desc": "Harbinger of ruin.",
+		"desc": "ผู้ประกาศลางหายนะ",
 		"require": "g.t3unlocker>0&&g.spirit>=12&&g.divination>=12",
 		"tags": "t_tier3,t_divinationclass",
 		"cost": {
@@ -677,13 +677,13 @@
 			"lore.max": 2,
 			"mana.max": 1
 		},
-		"flavor": "You call it an empire, but in the gloaming I see only heaps of crumbled stone.",
+		"flavor": "เจ้าเรียกมันว่าจักรวรรดิ แต่ในยามพลบค่ำ ข้าพเจ้าเห็นแต่กองซากหินที่แหลกสลาย",
 		"sortOrder": 206
 	},
 	{
 		"id": "fey",
 		"name": "fey (DEPRECATED)",
-		"desc": "A deprecated class.",
+		"desc": "คลาสที่ถูกยกเลิกใช้งาน",
 		"tags": "t_tier4,t_chaosclass,t_natureclass",
 		"require": "g.lore>999",
 		"mod": {
@@ -699,7 +699,7 @@
 		"id": "destined",
 		"alias": "thaumaturge",
 		"name": "destined",
-		"desc": "A maker of miracles",
+		"desc": "ผู้สรรสร้างปาฏิหาริย์",
 		"require": "g.t4unlocker>0&&g.spirit>=15&&g.divination>=15",
 		"tags": "t_tier4,t_enchantingclass,t_divinationclass",
 		"cost": {
@@ -718,7 +718,7 @@
 	},
 	{
 		"id": "wizard",
-		"desc": "Raw magic power.",
+		"desc": "พลังเวทมนตร์อันดิบเถื่อน",
 		"tags": "t_tier4,t_manaclass,t_knowledgeclass",
 		"require": "g.t4unlocker>0&&g.lore>=25",
 		"cost": {
@@ -737,14 +737,14 @@
 			"mysticism.max": 1,
 			"spelllist.max": 5
 		},
-		"flavor": "'Do not take me for some conjurer of cheap tricks.'",
+		"flavor": "'อย่าหาว่าข้าเป็นเพียงนักเล่นกลกลเม็ดราคาถูก'",
 		"sortOrder": 254
 	},
 	{
 		"id": "wizard2",
 		"alias": "dhrunic wizard",
 		"name": "dhrunic wizard",
-		"desc": "Raw magic power.",
+		"desc": "พลังเวทมนตร์อันดิบเถื่อน",
 		"tags": "t_tier5,t_manaclass,t_knowledgeclass",
 		"require": "g.t5unlocker>0&&g.lore>=30",
 		"cost": {
@@ -766,12 +766,12 @@
 			"mysticism.mod.mana.rate": 0.05,
 			"spelllist.max": 5
 		},
-		"flavor": "In the end it was three Thule Wizards and The Necromancer who brought the locks to heel.",
+		"flavor": "ท้ายที่สุด สามจอมเวทแห่งทูเลและจอมมารเนโครแมนเซอร์ต่างหากที่ปราบล็อกลงได้",
 		"sortOrder": 300
 	},
 	{
 		"id": "kell",
-		"desc": "Immortal spirits of nature, even the weakest Kell are beings to rival wizards.",
+		"desc": "วิญญาณอมตะแห่งธรรมชาติ แม้แต่เคลล์ที่อ่อนแอที่สุดก็ยังเป็นสิ่งมีชีวิตที่เทียบเคียงจอมเวทได้",
 		"tags": "t_tier5,t_natureclass",
 		"require": "g.t5unlocker>0&&g.naturelore>=21&&g.t_natureclass>0&&g.t_permanent_transformation>0",
 		"cost": {
@@ -785,12 +785,12 @@
 			"animals.max": 2,
 			"herbalism.max": 1
 		},
-		"flavor": "Kell are not of mortal blood, and only potent magics can imbue a mortal with their essence.",
+		"flavor": "เคลล์มิได้สืบสายเลือดมนุษย์ และมีเพียงเวทมนตร์อันทรงพลังเท่านั้นที่จะหล่อหลอมความเป็นเคลล์สู่มนุษย์ได้",
 		"sortOrder": 301
 	},
 	{
 		"id": "heresiarch",
-		"desc": "A reckoning comes.",
+		"desc": "วันแห่งการชำระบัญชีกำลังมาเยือน",
 		"require": "g.t5unlocker>0&&g.spirit>=15&&g.divination>=17",
 		"tags": "t_tier5,t_divinationclass",
 		"cost": {
@@ -802,13 +802,13 @@
 			"scrying.max": 2,
 			"lore.max": 2
 		},
-		"flavor": "It waits in time.",
+		"flavor": "มันรอคอยอยู่ในกาลเวลา",
 		"sortOrder": 302
 	},
 	{
 		"id": "highkell",
 		"name": "high kell (DEPRECATED)",
-		"desc": "A deprecated class.",
+		"desc": "คลาสที่ถูกยกเลิกใช้งาน",
 		"tags": "t_tier6,t_natureclass",
 		"require": "g.lore>999",
 		"mod": {
@@ -821,7 +821,7 @@
 	{
 		"id": "wizard3",
 		"name": "mythic wizard",
-		"desc": "Their names reappear throughout the ages, and few believe they ever existed.",
+		"desc": "นามของพวกเขาปรากฏขึ้นซ้ำแล้วซ้ำเล่าตลอดยุคสมัย แต่มีน้อยคนนักที่เชื่อว่าพวกเขาเคยมีตัวตน",
 		"tags": "t_tier6,t_manaclass,t_knowledgeclass",
 		"require": "g.t6unlocker>0&&g.lore>=35&&g.spellcraft>=10",
 		"cost": {
@@ -845,13 +845,13 @@
 			"mysticism.max": 2,
 			"spelllist.max": 5
 		},
-		"flavor": "After a mythic ascends, even the Archlocks curb their appetites.",
+		"flavor": "เมื่อตำนานก้าวขึ้นสู่ขั้นสูงสุด แม้แต่เหล่าอาร์คล็อกยังต้องเก็บงำความโลภของตน",
 		"sortOrder": 351
 	},
 	{
 		"id": "astralseer",
 		"name": "astral seer",
-		"desc": "The stars are an open book, to those who can read.",
+		"desc": "ดวงดาวเปรียบดั่งหนังสือที่เปิดกว้าง สำหรับผู้ที่รู้จักอ่าน",
 		"tags": "t_tier6",
 		"require": "g.t6unlocker>0&&g.astronomy>=15&&g.planeslore>=12",
 		"cost": {
@@ -867,13 +867,13 @@
 			"mysticism.max": 2,
 			"crafting.max": 2
 		},
-		"flavor": "Standing in the distant light of celestials, the mortal world seems so... Petty.",
+		"flavor": "เมื่อยืนอยู่ท่ามกลางแสงอันไกลโพ้นของเหล่าเทวะ โลกมนุษย์กลับดูน่า.. เล็กน้อย",
 		"sortOrder": 352
 	},
 	{
 		"id": "c_avatar",
 		"name": "avatar",
-		"desc": "An incarnation of raw, elemental forces.",
+		"desc": "อวตารของพลังธาตุอันดิบเถื่อน",
 		"tags": "t_tier6,t_elementalclass",
 		"require": "g.t6unlocker>0&&(g.t_elementalclass+g.t_natureclass+g.heresiarch+g.destined)>=2",
 		"cost": {
@@ -890,13 +890,13 @@
 			"waterlore.max": 2,
 			"firelore.max": 1
 		},
-		"flavor": "'I am the flood and the tempest, the whisper-wind and the inferno'.",
+		"flavor": "'ข้าคือสายน้ำหลากและพายุโหม เสียงลมกระซิบและเพลิงพิโรธ'",
 		"sortOrder": 353
 	},
 	{
 		"id": "conjurer",
 		"tags": "t_tier1,t_summonclass",
-		"desc": "A master of quickly moving things from one place to another.",
+		"desc": "จอมย้ายสิ่งของจากที่หนึ่งไปอีกที่หนึ่งได้ในพริบตา",
 		"require": "g.conjuration>=5&&g.t1unlocker>0",
 		"mod": {
 			"minions.max": 1,
@@ -906,7 +906,7 @@
 			"mana.max": 2,
 			"conjuration.max": 4
 		},
-		"flavor": "Surely they can't 'just appear'...",
+		"flavor": "แน่นอนว่าพวกมันต้องไม่ใช่ 'โผล่มาเฉย ๆ' แน่...",
 		"sortOrder": 105
 	}
 ]
