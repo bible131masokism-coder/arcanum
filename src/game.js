@@ -357,14 +357,10 @@ export default {
 		//const SecondsPerFastForwardTick = 1.2; Deprecated as unusable by player.
 		const maxUpdatesPerCallInTurboMode = speedupFactor / tickFactor; //if we use doubled ticks, the 10x speedup is achieved with 5 ticks.
 		if (this.isInTurboMode.value) {
-			const offlineTime = this.getData("offlinetime");
-			let catchupcount = Math.min(maxUpdatesPerCallInTurboMode, offlineTime.value / coarseTick);
-			offlineTime.amount(-catchupcount * coarseTick);
-			//automatically stop the turbomode if we couldn't get the maximum updatecalls from the remaining stored time
-			if (catchupcount < maxUpdatesPerCallInTurboMode) {
-				this.isInTurboMode.value = false;
-			}
-			// It is possible for catchupcount to be, say 1.5 in case we want to run 4x speed at 2x coarseness, necessitating 1.5 ticks here.
+			// Fast-forward runs at a real-time multiplier without consuming stored (offline) time.
+			// Turbo mode stays active until toggled off; it no longer auto-stops when stored time runs out.
+			let catchupcount = maxUpdatesPerCallInTurboMode;
+			// It is possible for catchupcount to be, say 4.5 in case we want to run 9x speed at 2x coarseness, necessitating fractional ticks here.
 			while (catchupcount >= 1) {
 				this.updateTechTree();
 				this.updateForDelta(coarseTick * 1000);
@@ -380,10 +376,9 @@ export default {
 		const updateTime = Date.now();
 		this.updateTechTree();
 		let dt = Math.max(updateTime - this.state.lastUpdate, 0);
-		const maxTick = TICK_TIME * 2; //we give a tick's worth of leeway to avoid going into stored time improperly.
+		const maxTick = TICK_TIME * 2; //we give a tick's worth of leeway to avoid a large time jump on the next frame.
 		if (dt > maxTick) {
-			const overflow = (dt - maxTick) / 1000;
-			this.getData("offlinetime").amount(overflow);
+			// Offline overflow is no longer banked as stored time; the step is just capped so the game doesn't leap forward.
 			dt = maxTick;
 		}
 		this.state.lastUpdate = updateTime;

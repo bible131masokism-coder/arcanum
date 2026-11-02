@@ -474,7 +474,7 @@ export default {
 				<button
 					type="button"
 					v-if="state"
-					@mouseenter.capture.stop="itemOver($event, 'Use stored time to speed up the game')"
+					@mouseenter.capture.stop="itemOver($event, 'เร่งเวลาแบบเรียลไทม์ ไม่ต้องใช้เวลาออฟไลน์ที่สะสมไว้ กดอีกครั้งเพื่อหยุด')"
 					@click="handleTurboModeChange"
 					:style="turboButton">
 					เร่งเวลา
