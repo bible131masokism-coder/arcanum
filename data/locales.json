@@ -3,7 +3,7 @@
 		"id": "mustylibrary",
 		"name": "musty library",
 		"sym": "📖",
-		"desc": "A good apprentice spends all their free time in the library. After chores, of course.",
+		"desc": "ศิษย์ที่ดีจะใช้เวลาว่างทั้งหมดในห้องสมุด ก็ต่อเมื่อทำงานบ้านเสร็จแล้วเท่านั้น",
 		"level": 1,
 		"require": "evt_helper",
 		"length": 15,
@@ -20,7 +20,7 @@
 	{
 		"id": "loc_spring",
 		"name": "lillit's spring",
-		"desc": "Tradition tells of a spring with enchanted waters. Investigations might prove revealing.",
+		"desc": "ตำนานเล่าขานถึงน้ำพุที่มีน้ำศักดิ์สิทธิ์ การสืบเสาะอาจเผยให้เห็นอะไรบางอย่าง",
 		"level": 2,
 		"require": "mustylibrary",
 		"length": 20,
@@ -40,7 +40,7 @@
 	{
 		"id": "eryleyot",
 		"name": "eryl eyot",
-		"desc": "The small and tranquil island is inhabited by an old hermit named Thyffr.",
+		"desc": "เกาะเล็กอันสงบเงียบแห่งนี้มีฤาษีชราผู้หนึ่งชื่อไทฟ์เฟอร์อาศัยอยู่",
 		"level": 5,
 		"length": 30,
 		"run": {
@@ -57,7 +57,7 @@
 	{
 		"id": "loc_treffil",
 		"name": "Explore Treffil Wood",
-		"desc": "The deeper woods posses many features of interest to the magical scholar. The spirits of the place make sure to keep the troublemakers out.",
+		"desc": "ส่วนลึกของป่ามีสิ่งน่าสนใจมากมายสำหรับผู้ศึกษาวิชาเวท เหล่าวิญญาณของสถานที่คอยผลักไสผู้ก่อปัญหาให้ออกไป",
 		"require": "g.treffilwoods>0",
 		"level": 7,
 		"length": 40,
@@ -89,7 +89,7 @@
 	{
 		"id": "pidwigcove",
 		"name": "pidwig's cove",
-		"desc": "The half-goblin Pidwig has sailed the waters around his bay for hundreds of years. In that time he has collected a myriad of interesting artifacts.",
+		"desc": "พิดวิกครึ่งก็อบลินแล่นเรือในน่านน้ำรอบอ่าวของเขามานับร้อยปี ในช่วงเวลานั้นเขาสั่งสมโบราณวัตถุอันน่าสนใจไว้มากมาย",
 		"level": 9,
 		"require": "g.history>=5&&g.eryleyot>0",
 		"length": 25,
@@ -114,7 +114,7 @@
 	},
 	{
 		"id": "rithel",
-		"desc": "This tiny outpost in the center of Thangmor outlasted even the pillars.",
+		"desc": "ด่านเล็ก ๆ กลางเมืองแธงมอร์แห่งนี้อยู่รอดมากระทั่งเสาหินอันยิ่งใหญ่ยังล่มสลาย",
 		"level": 14,
 		"require": "g.evil2<=0&&g.history>=7&&g.loc_treffil>0",
 		"run": {
@@ -143,7 +143,7 @@
 	{
 		"id": "ruinedcrypt",
 		"name": "ruined crypt",
-		"desc": "An ancient crypt of crumbling stone.",
+		"desc": "สุสานโบราณแห่งหินที่สะกิดสลาย",
 		"level": 4,
 		"require": "tier0",
 		"length": 30,
@@ -203,7 +203,7 @@
 		"id": "fazbitshop",
 		"name": "fazbit's workshop",
 		"sym": "📖",
-		"desc": "You could spend a century in Fazbit's lost workshop and not exhaust its creations.",
+		"desc": "คุณอาจใช้เวลานับศตวรรษในโรงงานที่สาบสูญของฟาซบิตก็ยังไม่หมดสิ้นสิ่งประดิษฐ์ภายใน",
 		"level": 9,
 		"require": "(g.alchemy+g.scrying)>=17&&g.tier2>0",
 		"length": 50,
@@ -229,8 +229,8 @@
 		"id": "genezereth",
 		"name": "Genezereth",
 		"sym": "📖",
-		"desc": "An ancient library at the bridge spanning Markhul's gap.",
-		"flavor": "Third of the Four Weirs of Dhrune.",
+		"desc": "ห้องสมุดโบราณบนสะพานที่ทอดข้ามหุบเหวของมาร์คูล",
+		"flavor": "หนึ่งในเขื่อนทั้งสี่แห่งดรูน์ อันดับที่สาม",
 		"level": 15,
 		"require": "g.history>=7",
 		"length": 100,
@@ -258,7 +258,7 @@
 	{
 		"id": "loc_orrem",
 		"name": "sands of orrem",
-		"desc": "Only a small trading post marks the boundary of the lost cities of Orrem. Weathered masonry jutting from the sands beyond bespeak monuments of unimaginable proportions.",
+		"desc": "มีเพียงด่านค้าเล็ก ๆ เท่านั้นที่ปักหมุดขอบแดนของนครที่สาบสูญแห่งออร์เร็ม ซากอิฐผุกร่อนโผล่พ้นจากผืนทรายเบื้องหลัง บ่งบอกถึงอนุสาวรีย์อันใหญ่โตเกินจินตนาการ",
 		"tags": "site_of_learning",
 		"level": 19,
 		"require": "g.history>=7&&g.scrying>=5&&g.tier5>0",
@@ -309,7 +309,7 @@
 	{
 		"id": "loc_menagerie",
 		"name": "the lost menagerie",
-		"desc": "Beneath the tallest idrasil a great menagerie thrives beneath a second sky.",
+		"desc": "ใต้ต้นอิดราซิลอันสูงตระหง่าน มีสวนสัตว์ทิพย์อันยิ่งใหญ่เจริญงอกงามอยู่ใต้ท้องฟ้าอีกชั้นหนึ่ง",
 		"tags": "site_of_learning",
 		"level": 23,
 		"require": "g.tier5>0&&g.magicbeasts>=5",
@@ -348,16 +348,16 @@
 			"e_trumple",
 			"e_wyvern"
 		],
-		"flavor": "Its creator and purpose are unknown to history. Perhaps all creatures exist within."
+		"flavor": "ผู้สร้างและจุดประสงค์ของมันเป็นที่ลืมเลือนต่อประวัติศาสตร์ บางทีสิ่งมีชีวิตทั้งมวลอาจสถิตอยู่ภายใน"
 	},
 	{
 		"id": "loc_tenwick",
 		"name": "peregrination",
-		"desc": "Tenwick's trail runs a circuit about the notable areas of Dhrune. On foot it takes the better part of a year to complete.",
+		"desc": "เส้นทางของเทนวิคเป็นวงรอบพาดผ่านพื้นที่สำคัญต่าง ๆ ของดรูน์ การเดินเท้าใช้เวลาเกือบหนึ่งปีจึงจะครบรอบ",
 		"level": 19,
 		"require": "g.s_travel>=5&&g.tier4>0&&g.wander.locked==0",
 		"need": "g.wander>=100",
-		"needtext": "Perform the Wander task 100 times.",
+		"needtext": "ปฏิบัติภารกิจร่อนเร่ให้ครบ 100 ครั้ง",
 		"length": 1000,
 		"run": {
 			"stamina": 2
