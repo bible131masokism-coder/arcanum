@@ -2,7 +2,7 @@
 	{
 		"id": "cleanstables",
 		"name": "clean stables",
-		"desc": "Working from home.",
+		"desc": "ทำงานจากที่บ้าน",
 		"verb": "cleaning",
 		"fill": "gold",
 		"locked": false,
@@ -12,14 +12,14 @@
 		"result": {
 			"gold": 2.5
 		},
-		"flavor": "It's stable employment.",
+		"flavor": "เป็นการจ้างงานที่มั่นคง",
 		"group": "starting out"
 	},
 	{
 		"id": "smith_work",
 		"name": "Smith",
 		"verb": "Smithing",
-		"desc": "Smithing equipment for enchanting.",
+		"desc": "ตีเหล็กอุปกรณ์สำหรับนำไปเสริมเวท",
 		"group": "affluence",
 		"tags": "t_craftwork",
 		"require": "g.job_smith>0||g.crafting>=8",
@@ -42,7 +42,7 @@
 	{
 		"id": "chores",
 		"name": "do chores",
-		"desc": "Standard apprentice work.",
+		"desc": "งานรับใช้มาตรฐานของศิษย์ฝึกหัด",
 		"verb": "working",
 		"require": "apprentice",
 		"at": {
@@ -68,7 +68,7 @@
 	{
 		"id": "study",
 		"verb": "studying scrolls",
-		"desc": "Study arcane scrolls.",
+		"desc": "ศึกษาม้วนคัมภีร์เวทมนตร์",
 		"group": "research",
 		"require": "g.scrolls>=1",
 		"fill": ["research", "arcana"],
@@ -89,7 +89,7 @@
 	{
 		"id": "errands",
 		"name": "run errands",
-		"desc": "Standard apprentice work.",
+		"desc": "งานรับใช้มาตรฐานของศิษย์ฝึกหัด",
 		"verb": "running errands",
 		"require": "apprentice",
 		"length": 10,
@@ -115,8 +115,8 @@
 	},
 	{
 		"id": "prestidigitation",
-		"desc": "Why study when you can perform parlor tricks for coin?",
-		"extdesc": "Such child's play only suits a novice mage. Demeaning yourself to this level as a professional would be embarassing.",
+		"desc": "จะเรียนไปทำไม ในเมื่อแค่แสดงมายากลหากินก็ได้เงินแล้ว?",
+		"extdesc": "ของเล่นแบบนี้เหมาะกับจอมเวทมือใหม่เท่านั้น การลดตัวลงมาแค่นี้ในฐานะมืออาชีพมันช่างน่าอาย",
 		"verb": "performing",
 		"require": "spellbook",
 		"length": 15,
@@ -138,7 +138,7 @@
 	{
 		"id": "thievery",
 		"name": "arcane thievery",
-		"desc": "Use your powers to cajole, coerce, and cudgel gold from the pockets of civilians.",
+		"desc": "ใช้พลังของคุณทั้งง้อ ข่มขู่ และทุบหัวเพื่อรีดทองจากกระเป๋าของชาวบ้าน",
 		"require": "g.trickery>=4",
 		"tags": "t_evilact",
 		"cost": {
@@ -171,7 +171,7 @@
 	{
 		"id": "heist",
 		"name": "magic heist",
-		"desc": "Orchestrate a theft on a guarded vault.",
+		"desc": "วางแผนขโมยจากห้องนิรภัยที่ได้รับการคุ้มกัน",
 		"verb": "thieving",
 		"require": "g.t_chaosclass>0&&g.trickery>=5",
 		"length": 50,
@@ -196,10 +196,10 @@
 	},
 	{
 		"id": "spellbook",
-		"actname": "bind spellbook",
+		"actname": "ผูกตำราเวท",
 		"verb": "binding spells",
 		"require": "g.lore>=2&&g.crafting>=2&&g.languages>=1",
-		"desc": "The portal to true magic.",
+		"desc": "ประตูสู่วิชาเวทที่แท้จริง",
 		"length": 50,
 		"max": 1,
 		"cost": {
@@ -209,8 +209,8 @@
 			"mana": 5
 		},
 		"log": {
-			"name": "Book of Spells",
-			"desc": "Under your master's critical eye, you compile your very own book of spells."
+			"name": "ตำราเวทมนตร์",
+			"desc": "ภายใต้สายตาอันจับผิดของนายท่าน คุณรวบรวมตำราเวทมนตร์ของตัวเองขึ้นมาเล่มหนึ่ง"
 		},
 		"run": {
 			"stamina": 0.2
@@ -230,19 +230,19 @@
 	},
 	{
 		"id": "tools_1",
-		"name": "basic tools",
-		"actname": "basic tools",
+		"name": "เครื่องมือพื้นฐาน",
+		"actname": "เครื่องมือพื้นฐาน",
 		"verb": "Creating Tools",
 		"require": "g.crafting>=(10-5*g.job_smith)",
-		"desc": "Improving your tools",
+		"desc": "พัฒนาเครื่องมือของคุณ",
 		"length": 20,
 		"max": 1,
 		"cost": {
 			"gold": 50
 		},
 		"log": {
-			"name": "Tools Completed",
-			"desc": "Your new and improved tools should make your work a lot more efficient."
+			"name": "เครื่องมือเสร็จสิ้น",
+			"desc": "เครื่องมือใหม่ที่ได้รับการพัฒนาขึ้นควรทำให้งานของคุณมีประสิทธิภาพมากขึ้นอย่างมาก"
 		},
 		"run": {
 			"stamina": 0.4
@@ -254,11 +254,11 @@
 	},
 	{
 		"id": "tools_2",
-		"name": "advanced tools",
-		"actname": "advanced tools",
+		"name": "เครื่องมือขั้นสูง",
+		"actname": "เครื่องมือขั้นสูง",
 		"verb": "Creating Tools",
 		"require": "g.crafting>=(15-5*g.job_smith)&&g.tools_1>0",
-		"desc": "Improving your tools.",
+		"desc": "พัฒนาเครื่องมือของคุณ.",
 		"length": 50,
 		"max": 1,
 		"cost": {
@@ -267,8 +267,8 @@
 			"firegem": 5
 		},
 		"log": {
-			"name": "Tools Completed",
-			"desc": "Your new and improved tools should make your work a lot more efficient."
+			"name": "เครื่องมือเสร็จสิ้น",
+			"desc": "เครื่องมือใหม่ที่ได้รับการพัฒนาขึ้นควรทำให้งานของคุณมีประสิทธิภาพมากขึ้นอย่างมาก"
 		},
 		"run": {
 			"stamina": 0.7
@@ -280,11 +280,11 @@
 	},
 	{
 		"id": "tools_3",
-		"name": "expert tools",
-		"actname": "expert tools",
+		"name": "เครื่องมือระดับเซียน",
+		"actname": "เครื่องมือระดับเซียน",
 		"verb": "Creating Tools",
 		"require": "g.crafting>=(20-5*g.job_smith)&&g.tools_2>0",
-		"desc": "Improving your tools.",
+		"desc": "พัฒนาเครื่องมือของคุณ.",
 		"length": 250,
 		"max": 1,
 		"cost": {
@@ -294,8 +294,8 @@
 			"firerune": 2
 		},
 		"log": {
-			"name": "Tools Completed",
-			"desc": "Your new and improved tools should make your work a lot more efficient."
+			"name": "เครื่องมือเสร็จสิ้น",
+			"desc": "เครื่องมือใหม่ที่ได้รับการพัฒนาขึ้นควรทำให้งานของคุณมีประสิทธิภาพมากขึ้นอย่างมาก"
 		},
 		"run": {
 			"stamina": 0.7
@@ -308,7 +308,7 @@
 	{
 		"id": "service",
 		"name": "offer services",
-		"desc": "Offer your magical services to the nearby townsfolk.",
+		"desc": "เสนอการบริการทางเวทมนตร์แก่ชาวเมืองใกล้เคียง",
 		"verb": "servicing",
 		"require": "(g.adept+g.blueadept)>0",
 		"perpetual": true,
@@ -335,7 +335,7 @@
 	{
 		"id": "tendanimals",
 		"name": "tend animals",
-		"desc": "Tend to sick and wounded animals in the wild.",
+		"desc": "ดูแลสัตว์ที่ป่วยและบาดเจ็บในป่า",
 		"verb": "tending",
 		"require": "tier0",
 		"perpetual": true,
@@ -366,7 +366,7 @@
 		"name": "gardening",
 		"perpetual": true,
 		"verb": "botanicalizing",
-		"desc": "Study plants and herbs.",
+		"desc": "ศึกษาพืชและสมุนไพร",
 		"tags": "t_contemplation",
 		"need": "plantsource",
 		"require": "(g.druid+g.alchemist+g.warden)>0",
@@ -399,7 +399,7 @@
 		"id": "act_scry",
 		"name": "scry",
 		"verb": "peering",
-		"desc": "Knowledge for those who look.",
+		"desc": "ความรู้สำหรับผู้ที่จ้องมอง",
 		"require": "(g.t_divinationclass+g.astralseer)>0&&g.chronomancy>=3&&g.scrying>=5",
 		"perpetual": true,
 		"length": 5,
@@ -435,7 +435,7 @@
 		"name": "concoct potions",
 		"perpetual": true,
 		"verb": "concocting",
-		"desc": "Experiment with potions.",
+		"desc": "ทดลองปรุงยา",
 		"require": "g.t_potionclass>0&&g.tier2>0",
 		"need": ["workspace", "potsource"],
 		"length": 25,
@@ -478,7 +478,7 @@
 		"name": "Attune to elements",
 		"perpetual": true,
 		"verb": "attuning",
-		"desc": "Attune to primal forces of the world.",
+		"desc": "ประสานเข้ากับพลังปฐมภูมิของโลก",
 		"require": "g.t_elementalclass>0",
 		"run": {
 			"stamina": 0.5,
@@ -518,10 +518,10 @@
 	{
 		"id": "act_mine",
 		"name": "mine",
-		"desc": "Delve the depths for gems of mystic potential. Requires a mine or sufficient geosculpting.",
+		"desc": "ดำดิ่งสู่ก้นลึกเพื่อตามหาเพชรพลอยศักยภาพเร้นลับ ต้องมีเหมืองหรือความชำนาญการปั้นแผ่นดินพอเพียง",
 		"verb": "mining",
 		"need": "g.t_mine>0||g.geosculpting>=10",
-		"needtext": "Must own a mineshaft or be a specialized earth mage.",
+		"needtext": "ต้องมีปล่องเหมืองหรือเป็นจอมเวทดินเฉพาะทาง",
 		"length": 40,
 		"perpetual": true,
 		"run": {
@@ -556,7 +556,7 @@
 	},
 	{
 		"id": "dreamweaver",
-		"desc": "Spin your dreams upon a tapestry.",
+		"desc": "ถักทอความฝันของคุณลงบนผืนผ้า",
 		"verb": "dream weaving",
 		"require": "g.dreams>0&&g.weaving>=5",
 		"perpetual": true,
@@ -582,12 +582,12 @@
 		"effect": {
 			"dreams": 0.0005
 		},
-		"flavor": "We are the dream-makers.",
+		"flavor": "เราคือผู้สรรค์สร้างความฝัน",
 		"group": "crafting"
 	},
 	{
 		"id": "starwish",
-		"desc": "Turn star shards into dreams.",
+		"desc": "เปลี่ยนเศษดวงดาวให้กลายเป็นความฝัน",
 		"require": "g.astrallore>=5&&g.divination>=10&&g.dreams>0",
 		"fill": "dreams",
 		"cost": {
@@ -597,13 +597,13 @@
 		"result": {
 			"dreams": 1
 		},
-		"flavor": "Star-light, Star-bright...",
+		"flavor": "ดาวส่องแสง ดาวจ้าแสง...",
 		"group": "crafting"
 	},
 	{
 		"id": "spingold",
 		"name": "spin gold",
-		"desc": "Spin straw into gold.",
+		"desc": "ปั่นฟางให้กลายเป็นทองคำ",
 		"verb": "spinning",
 		"tags": "t_craftwork",
 		"require": "g.weaving>0",
@@ -635,8 +635,8 @@
 	},
 	{
 		"id": "murder",
-		"desc": "An incidental necessity to the advancement of magic.",
-		"flavor": "Why do they come to me to die?",
+		"desc": "ความจำเป็นอันพ่วงพามาเพื่อความก้าวหน้าของเวทมนตร์",
+		"flavor": "ทำไมพวกเขาถึงมาหาข้าพเจ้าเพื่อตายกันนะ?",
 		"group": "materials",
 		"tags": "t_evilact",
 		"require": "g.anatomy>=5&&g.shadowlore>=5",
@@ -655,7 +655,7 @@
 		"id": "paidseance",
 		"name": "hold seance",
 		"verb": "holding seance",
-		"desc": "Channel spirits for a small fee.",
+		"desc": "ติดต่อวิญญาณโดยคิดค่าบริการเล็กน้อย",
 		"require": ["divination", "tier0", "spiritlore"],
 		"perpetual": true,
 		"length": 10,
@@ -689,7 +689,7 @@
 	{
 		"id": "treatailments",
 		"name": "treat ailments",
-		"desc": "Cure customers of magical ailments.",
+		"desc": "รักษาลูกค้าจากโรคภัยที่เกิดจากเวทมนตร์",
 		"require": "g.neophyte>0&&g.anatomy>=3",
 		"tags": "t_goodact",
 		"cost": {
@@ -721,7 +721,7 @@
 		"name": "read palms",
 		"verb": "reading palms",
 		"require": "g.divination>=5||g.trickster>0",
-		"desc": "Read palms for a small fee.",
+		"desc": "ดูลายมือโดยคิดค่าบริการเล็กน้อย",
 		"cost": {
 			"stamina": 2,
 			"mana": 2
@@ -748,8 +748,8 @@
 	{
 		"id": "magicadvice",
 		"name": "advise notables",
-		"desc": "From worried village councils to bumbling barons, they all require your advice.",
-		"flavor": "Whether they know it or not.",
+		"desc": "ตั้งแต่สภาหมู่บ้านที่กังวลไปจนถึงบารอนผู้ซุ่มซ่าม ล้วนต้องการคำปรึกษาจากคุณ",
+		"flavor": "ไม่ว่าพวกเขาจะรู้ตัวหรือไม่ก็ตาม",
 		"group": "affluence",
 		"require": "(g.t_knowledgeclass+g.t_divinationclass)>0",
 		"cost": {
@@ -770,8 +770,8 @@
 	{
 		"id": "hattrick",
 		"name": "hat trick",
-		"desc": "Pull small objects out of thin air.",
-		"flavor": "An ordinary wizard's cap.",
+		"desc": "ดึงสิ่งของเล็ก ๆ ออกมาจากอากาศบาง ๆ",
+		"flavor": "หมวกวิเศษธรรมดา ๆ ของจอมเวท",
 		"group": "materials",
 		"require": "g.trickster>0&&g.conjuration>=2",
 		"cost": {
@@ -796,7 +796,7 @@
 	{
 		"id": "gatherherbs",
 		"name": "gather herbs",
-		"desc": "Gather herbs used in potions and alchemy.",
+		"desc": "เก็บสมุนไพรที่ใช้ในการปรุงยาและการเล่นแร่แปรธาตุ",
 		"require": "g.herbalism>=2",
 		"need": "plantsource",
 		"cost": {
@@ -841,7 +841,7 @@
 	},
 	{
 		"id": "slumber",
-		"desc": "The deepest sleep guards the greatest insights.",
+		"desc": "การหลับใหลลึกที่สุดปกป้องหยั่งรู้ที่ยิ่งใหญ่ที่สุดไว้",
 		"require": "g.up_slumber>0",
 		"tags": "t_rest",
 		"verb": "sleeping",
@@ -864,9 +864,9 @@
 		"name": "wander",
 		"perpetual": true,
 		"verb": "Wandering",
-		"desc": "Wander the wide world.",
+		"desc": "ร่อนเร่ไปทั่วโลกอันกว้างใหญ่",
 		"need": "g.t_mobilehome>0||g.mendicant>0",
-		"needtext": "Must live in a wagon or camp, or must eschew material attachments by becoming a mendicant.",
+		"needtext": "ต้องอาศัยในเกวียนหรือแคมป์ หรือต้องละทิ้งการยึดติดทางวัตถุโดยการเป็นนักบวชจร",
 		"run": {
 			"stamina": 0.4
 		},
@@ -879,14 +879,14 @@
 			"animals.exp": 1,
 			"herbalism.exp": 1
 		},
-		"flavor": "A tramp abroad.",
+		"flavor": "คนจรจัดกลางถิ่นไกล",
 		"group": "knowledge"
 	},
 	{
 		"id": "pace",
 		"perpetual": true,
 		"verb": "pacing",
-		"desc": "Pace your home as you contemplate the arcane.",
+		"desc": "เดินไปมาในบ้านขณะใคร่ครวญถึงศาสตร์ลี้ลับ",
 		"tags": "t_contemplation",
 		"require": "tier0",
 		"run": {
@@ -917,7 +917,7 @@
 	{
 		"id": "buyscroll",
 		"name": "buy scroll",
-		"desc": "A novice can get by with very basic scrolls, hopefully you won't need any of the pricier ones.",
+		"desc": "มือใหม่พอเอาตัวรอดได้ด้วยม้วนคัมภีร์พื้นฐานมาก ๆ หวังว่าคุณคงไม่ต้องใช้อันที่แพงกว่า",
 		"require": "g.gold>=10",
 		"cost": {
 			"gold": 10
@@ -984,12 +984,12 @@
 	{
 		"id": "chaosbag",
 		"name": "bag of mayhem",
-		"actname": "craft bag of mayhem",
+		"actname": "สร้างถุงจลาจล",
 		"require": "g.t_chaosclass>0&&g.crafting>=20&&g.tier3>0&&g.chaosgem>=3",
 		"tags": "t_craftedbag",
 		"max": 1,
 		"length": 200,
-		"desc": "Badger, badger, badger, badger, why are there so many badgers in there???",
+		"desc": "แบดเจอร์ แบดเจอร์ แบดเจอร์ แบดเจอร์ ทำไมในนั้นถึงมีแต่แบดเจอร์เต็มไปหมด???",
 		"cost": {
 			"gold": 1000,
 			"chaosgem": 3,
@@ -1005,14 +1005,14 @@
 			"animals.max": 2,
 			"allies.max": 10
 		},
-		"flavor": "And now there's a snake?",
+		"flavor": "แล้วนี่มีงูโผล่มาอีก?",
 		"group": "storage"
 	},
 	{
 		"id": "timesiphon",
 		"name": "time siphon",
 		"perpetual": true,
-		"desc": "Draw back that which was lost.",
+		"desc": "ดึงกลับคืนสิ่งที่สูญหายไป",
 		"require": "timegem",
 		"fill": "offlinetime",
 		"length": 10,
@@ -1024,16 +1024,16 @@
 			"offlinetime": 1,
 			"tempus": 2
 		},
-		"flavor": "If I could turn back time...",
+		"flavor": "หากฉันย้อนเวลากลับไปได้...",
 		"group": "crafting"
 	},
 	{
 		"id": "bestiary",
-		"actname": "compile bestiary",
+		"actname": "รวบรวมสารานุกรมประชากร",
 		"verb": "researching beasts",
 		"require": "g.animals>=3",
 		"length": 75,
-		"desc": "Compendium of common creatures.",
+		"desc": "สารานุกรมสิ่งมีชีวิตทั่ว ๆ ไป",
 		"max": 1,
 		"cost": {
 			"scrolls": 5
@@ -1053,11 +1053,11 @@
 	},
 	{
 		"id": "travelogue",
-		"actname": "compile travelogue",
+		"actname": "รวบรวมบันทึกการเดินทาง",
 		"verb": "recording travels",
 		"require": "g.s_travel>0",
 		"length": 75,
-		"desc": "Chronicle the myriad strange sights of Dhrune.",
+		"desc": "บันทึกเรื่องราวของความแปลกประหลาดนานัปการแห่งดรูน์",
 		"max": 1,
 		"cost": {
 			"codices": 1
@@ -1079,7 +1079,7 @@
 	{
 		"id": "bestiary2",
 		"name": "arcane bestiary",
-		"desc": "Compendium of magic creatures.",
+		"desc": "สารานุกรมสิ่งมีชีวิตเวทมนตร์",
 		"require": "g.loc_menagerie.locked==0",
 		"need": "loc_menagerie",
 		"max": 1,
@@ -1127,7 +1127,7 @@
 		"id": "codexannih",
 		"name": "codex annihilus",
 		"require": "(g.t_shadowclass*5+g.t_swordclass*3+g.t_hammerclass*3)>=7",
-		"desc": "Karnivex's manual of destruction.",
+		"desc": "คู่มือการทำลายล้างของคาร์นิเวกซ์",
 		"length": 75,
 		"max": 1,
 		"cost": {
@@ -1143,14 +1143,14 @@
 			"physdmg": 5,
 			"player.tohit": 1
 		},
-		"flavor": "What he lacked in depth, Karnivex made up for with sheer destructive force.",
+		"flavor": "ในสิ่งที่คาร์นิเวกซ์ขาดความลึกซึ้ง เขาชดเชยด้วยพลังทำลายล้างอันบริสุทธิ์",
 		"group": "spellcasting"
 	},
 	{
 		"id": "cursedslab",
 		"name": "Cursed Slab",
-		"desc": "A peculiar obsidian slab you found in the Ruined Crypt, bearing blood-red sigils.",
-		"flavor": "A haunting echo asks to return it from off in the distance. You must be imagining things.",
+		"desc": "แผ่นหินออบซิเดียนประหลาดที่คุณพบในสุสานปรักหักพัง จารึกสัญลักษณ์สีแดงดั่งเลือด",
+		"flavor": "เสียงสะท้อนหลอกหลอนขอให้เอามันไปคืนจากที่ไกล ๆ คุณคงกำลังจินตนาการไปเอง",
 		"require": "g.ruinedcrypt.locked==0",
 		"need": "ruinedcrypt",
 		"max": 1,
@@ -1174,7 +1174,7 @@
 	{
 		"id": "markhulcodex",
 		"name": "markhul's codex",
-		"desc": "A dusty codex from the Genezereth library.",
+		"desc": "โคเด็กซ์ฝุ่นหนาจากห้องสมุดเจนเนเซเรธ",
 		"require": "g.genezereth.locked==0",
 		"need": "genezereth",
 		"max": 1,
@@ -1198,7 +1198,7 @@
 	{
 		"id": "sylvansyllabary",
 		"name": "sylvan syllabary",
-		"desc": "A book of elvish symbols.",
+		"desc": "หนังสือว่าด้วยสัญลักษณ์เอลฟ์",
 		"tags": "t_languagework",
 		"require": "g.languages>=5&&g.tier0>0",
 		"max": 1,
@@ -1221,8 +1221,8 @@
 	{
 		"id": "dwarfbook",
 		"name": "dwarven dirges",
-		"desc": "A compilation of gloomy dwarven drinking songs.",
-		"flavor": "Through dungeons deep and caverns old...",
+		"desc": "รวมบทเพลงดื่มกินอันหม่นหมองของคนแคระ",
+		"flavor": "ผ่านดันเจี้ยนลึกล้ำและถ้ำโบราณ...",
 		"tags": "t_languagework",
 		"require": "g.languages>=5&&g.tier0>0",
 		"max": 1,
@@ -1245,7 +1245,7 @@
 	{
 		"id": "lemurlexicon",
 		"name": "lemurian lexicon",
-		"desc": "Interpret the strange whisperings of spirits.",
+		"desc": "ตีความเสียงกระซิบอันประหลาดของวิญญาณ",
 		"tags": "t_languagework",
 		"require": "g.languages>=7&&g.spiritlore>=6&&g.tier0>0",
 		"max": 1,
@@ -1270,7 +1270,7 @@
 		"name": "annals of arazor",
 		"require": "g.aragwastes.locked==0",
 		"need": "aragwastes",
-		"desc": "A history of the eastern region of Arazor.",
+		"desc": "บันทึกประวัติศาสตร์แห่งภูมิภาคตะวันออกของอาราซอร์",
 		"tags": "book",
 		"max": 1,
 		"length": 50,
@@ -1291,7 +1291,7 @@
 		"name": "annals of orrem",
 		"require": "g.loc_orrem.locked==0",
 		"need": "loc_orrem",
-		"desc": "A history of the lost cities of Orrem.",
+		"desc": "บันทึกประวัติศาสตร์ของนครที่สาบสูญแห่งออร์เร็ม",
 		"tags": "book",
 		"max": 1,
 		"length": 100,
@@ -1312,9 +1312,9 @@
 	{
 		"id": "malleus",
 		"name": "malleus maleficarum",
-		"actname": "compile witchhammer",
+		"actname": "รวบรวมคู่มือค้อนแม่มด",
 		"require": "g.crafting>=15&&g.lightlore>=15",
-		"desc": "A manual against the darkness.",
+		"desc": "คู่มือต่อต้านความมืด",
 		"length": 50,
 		"max": 1,
 		"cost": {
@@ -1337,7 +1337,7 @@
 	{
 		"id": "terraform",
 		"name": "warp landscape",
-		"desc": "Improve the conditions of your local countryside.",
+		"desc": "ปรับปรุงสภาพของชนบทท้องถิ่นของคุณ",
 		"verb": "terraforming",
 		"require": "geosculpting",
 		"length": 15,
@@ -1375,9 +1375,9 @@
 	{
 		"id": "remakehammer",
 		"name": "call hammer",
-		"desc": "You forged it once, call forth another.",
+		"desc": "คุณเคยหลอมมันมาแล้วครั้งหนึ่ง จงอัญเชิญอีกอันขึ้นมา",
 		"need": "g.inv.max-g.inv._used>=1",
-		"needtext": "Must have at least 1 inventory space free.",
+		"needtext": "ต้องมีพื้นที่ว่างในคลังอย่างน้อย 1 ช่อง",
 		"verb": "Recalling",
 		"require": "g.maketitanhammer>0",
 		"length": 10,
@@ -1399,9 +1399,9 @@
 	{
 		"id": "maketitanhammer",
 		"name": "titan's hammer",
-		"desc": "The powers of creation and destruction, locked in your grip.",
+		"desc": "พลังแห่งการสร้างสรรค์และการทำลายล้าง ในกำมือของคุณ",
 		"need": "g.inv.max-g.inv._used>=1",
-		"needtext": "Must have at least 1 inventory space free.",
+		"needtext": "ต้องมีพื้นที่ว่างในคลังอย่างน้อย 1 ช่อง",
 		"max": 1,
 		"verb": "Creating Masterpiece",
 		"require": "g.titan>0&&g.mythicanvil>0&&g.deepsteel>=1",
@@ -1425,7 +1425,7 @@
 	{
 		"id": "fazbitfixate",
 		"name": "fazbit's fixations",
-		"desc": "Scribe a copy of the seminal text in practical alchemy.",
+		"desc": "คัดลอกตำราเอกว่าด้วยการเล่นแร่แปรธาตุเชิงปฏิบัติ",
 		"require": "g.fazbitshop.locked==0",
 		"need": "fazbitshop",
 		"length": 50,
@@ -1447,14 +1447,14 @@
 			"arcana.max": 5,
 			"arcana.rate": 0.05
 		},
-		"flavor": "Corivar called Fazbit a mad crank, but tried to steal his manuals anyway.",
+		"flavor": "โคริวาร์เรียกฟาซบิตว่าคนบ้าเพี้ยน แต่ก็ยังพยายามขโมยคู่มือของเขาอยู่ดี",
 		"group": "knowledge"
 	},
 	{
 		"id": "corporisfabrica",
 		"name": "corporis fabrica",
 		"require": "g.anatomy>=5",
-		"desc": "A manual of the human body.",
+		"desc": "คู่มือว่าด้วยร่างกายมนุษย์",
 		"tags": "book",
 		"length": 40,
 		"max": 1,
@@ -1475,7 +1475,7 @@
 		"id": "unendingscroll",
 		"name": "unending scroll",
 		"require": "g.languages>=7",
-		"desc": "Some scrolls feel interminable.",
+		"desc": "ม้วนคัมภีร์บางฉบับดูเหมือนไม่มีที่สิ้นสุด",
 		"length": 50,
 		"max": 1,
 		"cost": {
@@ -1496,7 +1496,7 @@
 		"id": "unendingcodex",
 		"name": "unending codex",
 		"require": "g.unendingscroll>0&&g.tier1>0",
-		"desc": "Some books never seem to end.",
+		"desc": "หนังสือบางเล่มดูเหมือนไม่มีวันจบ",
 		"length": 100,
 		"max": 1,
 		"cost": {
@@ -1518,7 +1518,7 @@
 		"id": "unendingtome",
 		"name": "unending tome",
 		"require": "g.tier2>0&&g.unendingcodex>0",
-		"desc": "Some tomes are never finished.",
+		"desc": "ตำราบางเล่มไม่มีวันเสร็จสมบูรณ์",
 		"length": 200,
 		"max": 1,
 		"cost": {
@@ -1537,8 +1537,8 @@
 		"group": "crafting"
 	},
 	{
-		"id": "almagest",
-		"desc": "Compile a manual of the sun and stars.",
+		"id": "คัมภีร์ดาราศาสตร์",
+		"desc": "รวบรวมคู่มือว่าด้วยดวงอาทิตย์และดวงดาว",
 		"require": "g.astronomy>=7&&g.tier1>0",
 		"max": 1,
 		"length": 50,
@@ -1550,8 +1550,8 @@
 			"scrolls": 0.1
 		},
 		"log": {
-			"name": "almagest",
-			"desc": "Your map of the heavens is complete."
+			"name": "คัมภีร์ดาราศาสตร์",
+			"desc": "แผนผังสรวงสวรรค์ของคุณเสร็จสมบูรณ์แล้ว"
 		},
 		"mod": {
 			"research.max": 50,
@@ -1591,7 +1591,7 @@
 		"id": "craftgem",
 		"name": "craft gem",
 		"tags": "t_craftwork",
-		"desc": "Craft a gem from raw minerals.",
+		"desc": "สร้างเพชรพลอยจากแร่ดิบ",
 		"require": "g.crafting>=7&&g.alchemy>=5",
 		"length": 10,
 		"fill": "gems",
@@ -1932,7 +1932,7 @@
 	},
 	{
 		"id": "focus",
-		"desc": "Quicken your skills with magic energy.",
+		"desc": "เร่งทักษะของคุณด้วยพลังเวทมนตร์",
 		"require": "mana",
 		"need": "g.runner.hasType('skill')",
 		"cost": {
@@ -1945,7 +1945,7 @@
 	{
 		"id": "grind",
 		"require": "g.lore>=6&&g.research.max<5",
-		"desc": "Experiment with magic to expand your research.",
+		"desc": "ทดลองกับเวทมนตร์เพื่อขยายขอบเขตงานวิจัยของคุณ",
 		"cost": {
 			"mana": 0.15
 		},
@@ -1960,7 +1960,7 @@
 		"name": "animal companion",
 		"require": "(g.druid+g.warden)>0",
 		"need": "outdoors",
-		"desc": "Create a magic link with a wild animal.",
+		"desc": "สร้างสายสัมพันธ์เวทมนตร์กับสัตว์ป่า",
 		"max": 1,
 		"length": 50,
 		"cost": {
@@ -1981,7 +1981,7 @@
 	{
 		"id": "summonfamiliar",
 		"name": "summon familiar",
-		"desc": "Prepare a rite for summoning a familiar. The exact shape will be chosen after the fact.",
+		"desc": "เตรียมพิธีสำหรับอัญเชิญภูตผู้รับใช้ รูปแบบที่แน่ชัดจะถูกเลือกภายหลัง",
 		"group": "familliar",
 		"require": "g.animals>=5&&g.planeslore>=2&&g.summoning>=2",
 		"need": "summonsource",
@@ -1997,7 +1997,7 @@
 	{
 		"id": "petfamiliar",
 		"name": "pet familiar",
-		"desc": "Pet your familiar to calm your nerves.",
+		"desc": "ลูบคลำภูตผู้รับใช้ของคุณเพื่อผ่อนคลายประสาท",
 		"require": "g.t_familiar>0",
 		"cd": 120,
 		"result": {}
@@ -2005,8 +2005,8 @@
 	{
 		"id": "planar_exploration",
 		"name": "planar exploration",
-		"desc": "Explore the connections between this plane and the others.",
-		"flavor": "Much like unraveling a spiderweb, it even includes the spider.",
+		"desc": "สำรวจความเชื่อมโยงระหว่างมิตินี้กับมิติอื่น ๆ",
+		"flavor": "เฉกเช่นการคลี่ใยแมงมุม ที่แม้แต่ตัวแมงมุมเองก็ยังเกี่ยวข้อง",
 		"require": "g.gate>0",
 		"need": ["gate"],
 		"max": 3,
@@ -2026,7 +2026,7 @@
 	{
 		"id": "makeamends",
 		"name": "make amends",
-		"desc": "Hard labor and charitable works can help cleanse the stain of prior evil acts.",
+		"desc": "การใช้แรงงานอย่างหนักและงานการกุศลช่วยชำระล้างคราบความชั่วร้ายในอดีตได้",
 		"verb": "making amends",
 		"need": "g.evilamt>0&&g.neophyte",
 		"length": 10,
@@ -2058,7 +2058,7 @@
 	{
 		"id": "securityconsultant",
 		"name": "security consultant",
-		"desc": "Hire out your services to patrons wishing to protect their wealth.",
+		"desc": "ให้เช่าบริการของคุณแก่ผู้อุปถัมภ์ที่ต้องการปกป้องทรัพย์สมบัติของตน",
 		"verb": "consulting",
 		"tags": "t_heist_act",
 		"require": "good3_trickster",
@@ -2084,7 +2084,7 @@
 		"id": "gardenersalmanac",
 		"name": "gardener's almanac",
 		"require": "g.act_garden>=3000",
-		"desc": "Advice on properly tending your garden for maximum yields.",
+		"desc": "คำแนะนำในการดูแลสวนอย่างถูกวิธีเพื่อให้ได้ผลผลิตสูงสุด",
 		"length": 75,
 		"max": 1,
 		"cost": {
@@ -2110,7 +2110,7 @@
 		"sortOrder": 1,
 		"require": "g.decent==1",
 		"hide": true,
-		"desc": "You are turning out to be an upstanding spellcaster.",
+		"desc": "คุณกำลังกลายเป็นนักร่ายเวทผู้ยึดมั่นในความดี",
 		"max": 1,
 		"mod": {
 			"light.rate": 0.1
@@ -2124,7 +2124,7 @@
 		"sortOrder": 3,
 		"require": "g.respectable==1",
 		"hide": true,
-		"desc": "You have become a respected personage in the magical world.",
+		"desc": "คุณได้กลายเป็นบุคคลที่น่านับถือในโลกเวทมนตร์",
 		"max": 1,
 		"mod": {
 			"light.rate": 0.1
@@ -2138,7 +2138,7 @@
 		"sortOrder": 2,
 		"require": "g.immoral==1",
 		"hide": true,
-		"desc": "You have taken your first steps on the path of evil. It's a good thing.",
+		"desc": "คุณได้ก้าวแรกเข้าสู่เส้นทางแห่งความชั่วร้าย เป็นเรื่องดีเสียด้วย",
 		"max": 1,
 		"mod": {
 			"shadow.rate": 0.2
@@ -2151,7 +2151,7 @@
 		"sortOrder": 4,
 		"require": "g.wicked==1",
 		"hide": true,
-		"desc": "Your wicked deeds put you on the sure path of evil. A few more steps, and there will be no turning back.",
+		"desc": "ความชั่วร้ายของคุณพาคุณเข้าสู่เส้นทางแห่งความมืดอย่างแน่นอน อีกไม่กี่ก้าวจะไม่มีทางหวนกลับ",
 		"max": 1,
 		"mod": {
 			"shadowlore.max": 1,
@@ -2161,12 +2161,12 @@
 	},
 	{
 		"id": "benevolent",
-		"actname": "true benevolence",
+		"actname": "เมตตาอันแท้จริง",
 		"morality": true,
 		"sortOrder": 12,
 		"require": "g.good3==1&&g.wicked1==0&&g.tier4==1",
 		"warn": true,
-		"desc": "Benevolent to a fault, the light reveals its final secrets on your path of virtue.",
+		"desc": "เมตตาเกินกว่าจะตำหนิได้ แสงสว่างเผยความลับสุดท้ายบนวิถีแห่งคุณธรรมของคุณ",
 		"max": 1,
 		"length": 100,
 		"run": {
@@ -2191,14 +2191,14 @@
 	{
 		"id": "good3",
 		"name": "incorruptible",
-		"actname": "the incorruptible path",
+		"actname": "วิถีอันไร้มลทิน",
 		"morality": true,
 		"sortOrder": 10,
 		"require": "g.good2==1&&g.evil2==0",
 		"need": ["lightsource", "good1", "good2", "g.virtue>=3000", "g.evilamt<=0", "tier3"],
 		"warn": true,
-		"desc": "Truly, you are incorruptible, and the light recognizes the good in you.",
-		"needtext": "Your evil must be 0 or lower. Your virtue must be 3,000 or higher. You must own a lightsource. You must be tier 3 or higher.",
+		"desc": "อย่างแท้จริงแล้ว คุณไม่อาจถูกกัดกร่อน และแสงสว่างตระหนักถึงความดีในตัวคุณ",
+		"needtext": "ความชั่วของคุณต้องเป็น 0 หรือต่ำกว่า คุณธรรมของคุณต้องเป็น 3,000 ขึ้นไป ต้องมีแหล่งแสงสว่างและมีระดับขั้นอย่างน้อย 3",
 		"max": 1,
 		"length": 100,
 		"run": {
@@ -2229,7 +2229,7 @@
 	{
 		"id": "good2",
 		"name": "scrupulous",
-		"actname": "a scrupulous path",
+		"actname": "วิถีอันแน่วแน่",
 		"morality": true,
 		"sortOrder": 8,
 		"require": "g.good1==1&&(g.evil2==0||g.redemption_path==1)",
@@ -2242,8 +2242,8 @@
 			"tier1"
 		],
 		"warn": true,
-		"desc": "Scrupulous deeds and virtuous thoughts guide you closer to the light.",
-		"needtext": "Your evil must be 0 or lower. Your virtue must be 1,500 or higher. You must own a lightsource. You must be tier 1 or higher.",
+		"desc": "การกระทำอันแน่วแน่และความคิดเปี่ยมคุณธรรมนำพาคุณเข้าใกล้แสงสว่างยิ่งขึ้น",
+		"needtext": "ความชั่วของคุณต้องเป็น 0 หรือต่ำกว่า คุณธรรมของคุณต้องเป็น 1,500 ขึ้นไป ต้องมีแหล่งแสงสว่างและมีระดับขั้นอย่างน้อย 1",
 		"max": 1,
 		"length": 100,
 		"run": {
@@ -2276,13 +2276,13 @@
 	{
 		"id": "good1",
 		"name": "virtuous",
-		"actname": "A Virtuous Path",
+		"actname": "วิถีแห่งคุณธรรม",
 		"morality": true,
 		"sortOrder": 5,
 		"require": "g.neophyte>=1",
 		"need": ["g.virtue>=750", "g.evilamt<=0", "tier0"],
-		"desc": "Your actions have shown you to be a virtuous wizard.",
-		"extdesc": "You will automatically walk this path if you have completed the Neophyte stage of your journey, sufficient Virtue, and are clear of the taint of Evil. Other actions can trigger this as well, but you cannot select this action manually.",
+		"desc": "การกระทำของคุณพิสูจน์ให้เห็นว่าคุณคือจอมเวทผู้เปี่ยมด้วยคุณธรรม",
+		"extdesc": "คุณจะเดินตามวิถีนี้โดยอัตโนมัติหากผ่านช่วงศิษย์สามเณรของการเดินทาง มีคุณธรรมเพียงพอ และไร้ซึ่งมลทินแห่งความชั่ว การกระทำอื่นก็ก่อให้เกิดสิ่งนี้ได้เช่นกัน แต่คุณไม่สามารถเลือกการกระทำนี้ด้วยตนเองได้",
 		"max": 1,
 		"length": 10,
 		"mod": {
@@ -2300,13 +2300,13 @@
 	},
 	{
 		"id": "redeemed",
-		"actname": "a villain, redeemed",
+		"actname": "ผู้ร้ายที่สำนึกผิด",
 		"morality": true,
 		"sortOrder": 23,
 		"require": "g.redemption_path==1",
 		"need": ["lightsource", "good2"],
 		"warn": true,
-		"desc": "Having shed some of the taint of your prior sinister acts, the light welcomes you back.",
+		"desc": "เมื่อสลัดคราบมลทินจากการกระทำชั่วร้ายในอดีตบางส่วนลงได้ แสงสว่างก็ต้อนรับคุณกลับคืน",
 		"max": 1,
 		"length": 100,
 		"run": {
@@ -2342,15 +2342,15 @@
 	},
 	{
 		"id": "redemption_path",
-		"name": "path of redemption",
-		"actname": "path of redemption",
+		"name": "วิถีแห่งการไถ่บาป",
+		"actname": "วิถีแห่งการไถ่บาป",
 		"morality": true,
 		"sortOrder": 22,
 		"require": "g.evil2==1&&g.good1==1&&g.virtue>=0",
 		"need": ["lightsource", "evil2", "good1", "g.virtue>=1250"],
 		"warn": true,
-		"desc": "Begin the path to redeem yourself from your evil ways.",
-		"needtext": "You must own a lightsource. You must have 1,250 or more Virtue to walk this path.",
+		"desc": "เริ่มต้นบนวิถีแห่งการไถ่บาปจากความชั่วร้ายของคุณ",
+		"needtext": "ต้องมีแหล่งแสงสว่างและมีคุณธรรมอย่างน้อย 1,250 จึงจะเดินตามวิถีนี้ได้",
 		"max": 1,
 		"length": 100,
 		"run": {
@@ -2365,13 +2365,13 @@
 	{
 		"id": "nature_balanced",
 		"name": "Naturally Balanced",
-		"actname": "A Natural Balance",
+		"actname": "สมดุลแห่งธรรมชาติ",
 		"morality": true,
 		"sortOrder": 17,
 		"require": "g.balanced2==1",
 		"need": ["plantsource", "tier4"],
 		"warn": true,
-		"desc": "Having balanced yourself between the pulls of good and evil, the natural world reveals greater secrets still.",
+		"desc": "เมื่อวางสมดุลตัวเองระหว่างแรงดึงแห่งความดีและความชั่ว โลกธรรมชาติก็เผยความลับอันยิ่งใหญ่กว่าเดิม",
 		"max": 1,
 		"length": 100,
 		"run": {
@@ -2391,13 +2391,13 @@
 	{
 		"id": "spirit_balanced",
 		"name": "Spiritually Balanced",
-		"actname": "A Spiritual Balance",
+		"actname": "สมดุลแห่งวิญญาณ",
 		"morality": true,
 		"sortOrder": 16,
 		"require": "g.balanced2==1",
 		"need": ["spiritsource", "tier4"],
 		"warn": true,
-		"desc": "Spirit, as the balance point between shadow and light, presents greater insights into itself now that you have reached equilibrium. You must be tier 4 or higher.",
+		"desc": "วิญญาณ ในฐานะจุดสมดุลระหว่างเงามืดและแสงสว่าง มอบหยั่งรู้อันลึกซึ้งแก่ตนเองเมื่อคุณบรรลุสมดุลแล้ว ต้องมีระดับขั้นอย่างน้อย 4",
 		"max": 1,
 		"length": 100,
 		"run": {
@@ -2417,7 +2417,7 @@
 	{
 		"id": "balanced2",
 		"name": "In Equilibrium",
-		"actname": "Path of Equilibirum",
+		"actname": "วิถีแห่งสมดุล",
 		"morality": true,
 		"sortOrder": 15,
 		"require": "g.balanced1==1",
@@ -2432,8 +2432,8 @@
 			"tier3"
 		],
 		"warn": true,
-		"desc": "You find equilibrium between the shadow and the light, leading to further balance between the various forces that drive the world.",
-		"needtext": "You must be both Virtuous and Vile. Your Virtue and Evil must be at least 750 each and at least 2,000 combined. You must have both a spiritsource and a plantsource. You must be tier 3 or higher.",
+		"desc": "คุณพบสมดุลระหว่างเงามืดและแสงสว่าง นำไปสู่ความสมดุลยิ่งขึ้นระหว่างแรงขับเคลื่อนนานัปการของโลก",
+		"needtext": "ต้องทั้งมีคุณธรรมและชั่วช้า ต้องมีคุณธรรมและความชั่วอย่างน้อยอย่างละ 750 และรวมกันอย่างน้อย 2,000 ต้องมีทั้งแหล่งวิญญาณและแหล่งพืช ต้องมีระดับขั้นอย่างน้อย 3",
 		"max": 1,
 		"length": 100,
 		"run": {
@@ -2465,7 +2465,7 @@
 	{
 		"id": "balanced1",
 		"name": "Balanced",
-		"actname": "Path of Balance",
+		"actname": "วิถีแห่งความสมดุล",
 		"morality": true,
 		"sortOrder": 14,
 		"require": "g.neutral==1",
@@ -2480,8 +2480,8 @@
 			"tier1"
 		],
 		"warn": true,
-		"desc": "Balancing respectable and wicked acts, you ensure that both light and shadow can flourish without either becoming too powerful to constrain.",
-		"needtext": "You must be both Wicked and Respectable. Your Virtue and Evil must be at least 350 each and at least 1,000 combined. You must have both a plantsource and a spiritsource. You must be tier 1 or higher.",
+		"desc": "ด้วยสมดุลระหว่างการกระทำที่น่านับถือและชั่วร้าย คุณทำให้ทั้งแสงและเงาสามารถเจริญงอกงามโดยไม่มีฝ่ายใดทรงพลังเกินกว่ารั้งไว้ได้",
+		"needtext": "ต้องทั้งชั่วร้ายและน่านับถือ ต้องมีคุณธรรมและความชั่วอย่างน้อยอย่างละ 350 และรวมกันอย่างน้อย 1,000 ต้องมีทั้งแหล่งพืชและแหล่งวิญญาณ ต้องมีระดับขั้นอย่างน้อย 1",
 		"max": 1,
 		"length": 100,
 		"run": {
@@ -2503,14 +2503,14 @@
 	},
 	{
 		"id": "neutral",
-		"actname": "Vow of Neutrality",
+		"actname": "ปฏิญาณความเป็นกลาง",
 		"morality": true,
 		"sortOrder": 7,
 		"require": "g.neophyte>=1",
 		"need": ["(g.evil1-g.good1)==0", "(g.wicked1-g.respectable1)==0", "(g.immoral1-g.decent1)==0", "tier0"],
 		"warn": true,
-		"desc": "You vow to take a neutral stance in the battle between light and shadow - whether by maintaining active balance between the two, or by abstaining from that which would further either's goals.",
-		"needtext": "If you did any of the tasks named: Decent/Immoral, Respectable/Wicked, or Virtuous/Vile, then you need to also do the one separated by a slash (Immoral if you did Decent, etc). If you have none of them, you qualify already. You must be tier 0 or higher.",
+		"desc": "คุณปฏิญาณจะวางตัวเป็นกลางในศึกระหว่างแสงและเงา ไม่ว่าจะด้วยการรักษาสมดุลอย่างกระตือรือร้นระหว่างทั้งสอง หรือด้วยการงดเว้นจากสิ่งที่จะส่งเสริมเป้าหมายของฝ่ายใดฝ่ายหนึ่ง",
+		"needtext": "หากคุณเคยทำภารกิจในชื่อ เหมาะสม/ไร้ศีลธรรม น่านับถือ/ชั่วร้าย หรือ มีคุณธรรม/ชั่วช้า คุณต้องทำอีกฝั่งที่คั่นด้วยเครื่องหมายทับด้วย (ทำไร้ศีลธรรมหากเคยทำเหมาะสม เป็นต้น) หากไม่เคยทำเลยก็มีคุณสมบัติแล้ว ต้องมีระดับขั้นอย่างน้อย 0",
 		"max": 1,
 		"length": 100,
 		"run": {
@@ -2531,13 +2531,13 @@
 	{
 		"id": "revoke_neutral",
 		"name": "Neutrality Forsaken",
-		"actname": "Forsake the Vow",
+		"actname": "สละคำปฏิญาณ",
 		"morality": true,
 		"sortOrder": 24,
 		"require": "g.neutral>0",
 		"warn": true,
-		"desc": "You renouce your vow of neutrality to focus on other pursuits.",
-		"extdesc": "Pursuing the Path of Balance or Path of Detachment will disable your ability to forsake your vow.",
+		"desc": "คุณสละคำปฏิญาณความเป็นกลางเพื่อมุ่งสู่หนทางอื่น",
+		"extdesc": "Pursuing the วิถีแห่งความสมดุล or วิถีแห่งการปล่อยวาง will disable your ability to forsake your vow.",
 		"max": 1,
 		"length": 100,
 		"run": {
@@ -2553,14 +2553,14 @@
 	{
 		"id": "detached1",
 		"name": "Detached",
-		"actname": "Path of Detachment",
+		"actname": "วิถีแห่งการปล่อยวาง",
 		"morality": true,
 		"sortOrder": 18,
 		"require": "g.neutral==1&&g.evil1==0&&g.good1==0",
 		"need": ["spiritsource", "plantsource", "g.evil1==0", "g.good1==0", "g.evilamt<=200", "g.virtue<=200", "tier1"],
 		"warn": true,
-		"desc": "Abstaining from the extreme acts of good and evil, you choose a path that detaches you from the moral conflicts of the world.",
-		"needtext": "You must not be considered Virtuous or Vile, and your Virtue and Evil must be below 200 each. You must be tier 1 or higher.",
+		"desc": "ด้วยการงดเว้นจากการกระทำสุดขั้วของความดีและความชั่ว คุณเลือกวิถีที่ปลดเปลื้องตนเองจากความขัดแย้งทางศีลธรรมของโลก",
+		"needtext": "ต้องไม่ถูกนับว่ามีคุณธรรมหรือชั่วช้า และคุณธรรมกับความชั่วต้องต่ำกว่า 200 ทั้งคู่ ต้องมีระดับขั้นอย่างน้อย 1",
 		"max": 1,
 		"length": 100,
 		"run": {
@@ -2581,7 +2581,7 @@
 	{
 		"id": "detached2",
 		"name": "Amoral",
-		"actname": "Path of Amorality",
+		"actname": "วิถีแห่งความไร้ศีลธรรม",
 		"morality": true,
 		"sortOrder": 19,
 		"require": "g.detached1==1&&g.respectable1==0&&g.wicked1==0",
@@ -2595,8 +2595,8 @@
 			"tier3"
 		],
 		"warn": true,
-		"desc": "Your journey of abstention has led to further enlightment. An amoral outlook isolates you from most of the world, and you find many doors are closed to you.",
-		"needtext": "You must not be considered Respectable or Wicked, and your Virtue and Evil must be below 200 each. You must be tier 3 or higher.",
+		"desc": "การเดินทางแห่งการงดเว้นของคุณนำไปสู่ความกระจ่างแจ้งยิ่งขึ้น ทัศนะที่ไร้ศีลธรรมแยกคุณออกจากโลกส่วนใหญ่ คุณพบว่าประตูหลายบานปิดกั้นคุณ",
+		"needtext": "ต้องไม่ถูกนับว่าน่านับถือหรือชั่วร้าย และคุณธรรมกับความชั่วต้องต่ำกว่า 200 ทั้งคู่ ต้องมีระดับขั้นอย่างน้อย 3",
 		"max": 1,
 		"length": 100,
 		"run": {
@@ -2622,7 +2622,7 @@
 		"require": "g.detached2==1",
 		"need": ["plantsource", "tier4"],
 		"warn": true,
-		"desc": "Removing yourself from the civilized world's concerns to focus on natural insights, you gain otherwise unattainable knowledge. You must be tier 4 or higher.",
+		"desc": "ด้วยการถอนตัวจากความกังวลของโลกอารยะเพื่อมุ่งจดจ่อกับหยั่งรู้ทางธรรมชาติ คุณได้รับความรู้ที่มิฉะนั้นยากจะไขว่คว้า ต้องมีระดับขั้นอย่างน้อย 4",
 		"max": 1,
 		"length": 100,
 		"run": {
@@ -2647,7 +2647,7 @@
 		"require": "g.detached2==1",
 		"need": ["spiritsource", "tier4"],
 		"warn": true,
-		"desc": "Focusing on otherworldly pursuits rather than worldly concerns, you obtain surprising insights into spiritual matters. You must be tier 4 or higher.",
+		"desc": "ด้วยการมุ่งจดจ่อกับหนทางเหนือโลกแทนความกังวลทางโลก คุณได้หยั่งรู้อันน่าประหลาดใจในเรื่องจิตวิญญาณ ต้องมีระดับขั้นอย่างน้อย 4",
 		"max": 1,
 		"length": 100,
 		"run": {
@@ -2666,15 +2666,15 @@
 	},
 	{
 		"id": "corruption_path",
-		"name": "path of corruption",
-		"actname": "path of corruption",
+		"name": "วิถีแห่งความเสื่อมทราม",
+		"actname": "วิถีแห่งความเสื่อมทราม",
 		"morality": true,
 		"sortOrder": 25,
 		"require": "g.good2==1&&g.evil1==1&&g.evilamt>=0",
 		"need": ["shadowsource", "good2", "evil1", "g.evilamt>=750"],
 		"warn": true,
-		"desc": "The shadow whispers promises of knowledge and power to you, if only you will heed the call.",
-		"needtext": "You must own a shadowsource. You must have 750 or more Evil.",
+		"desc": "เงามืดกระซิบสัญญาแห่งความรู้และอำนาจแก่คุณ หากเพียงคุณจะยอมสนองเสียงเรียก",
+		"needtext": "ต้องมีแหล่งเงามืดและมีความชั่วอย่างน้อย 750",
 		"max": 1,
 		"length": 100,
 		"run": {
@@ -2688,13 +2688,13 @@
 	},
 	{
 		"id": "corrupted",
-		"actname": "a hero, corrupted",
+		"actname": "วีรบุรุษที่เสื่อมทราม",
 		"morality": true,
 		"sortOrder": 26,
 		"require": "g.corruption_path==1",
 		"need": ["evil2"],
 		"warn": true,
-		"desc": "Fallen from grace, once hailed as a hero. Now fully corrupted, the shadow helps you unlock secrets you thought lost to you.",
+		"desc": "ร่วงหล่นจากบารมี อดีตผู้ได้รับการยกย่องเป็นวีรบุรุษ บัดนี้เสื่อมทรามเต็มตัว เงามืดช่วยให้คุณไขความลับที่คุณคิดว่าสูญสิ้นไปแล้ว",
 		"max": 1,
 		"length": 100,
 		"run": {
@@ -2723,13 +2723,13 @@
 	{
 		"id": "evil1",
 		"name": "vile",
-		"actname": "A Vile Path",
+		"actname": "วิถีแห่งความชั่วช้า",
 		"morality": true,
 		"sortOrder": 6,
 		"require": "g.neophyte>=1",
 		"need": ["tier0", "g.evilamt>=500"],
-		"desc": "Freed of pitiful notions of right, and morality, the dark arts lie open before you.",
-		"extdesc": "You will automatically walk this path if you have completed the Neophyte stage of your journey and have sufficient Evil. Other actions can trigger this as well, but you cannot select this action manually.",
+		"desc": "เมื่อหลุดพ้นจากแนวคิดอันน่าสมเพชเรื่องถูกผิดและศีลธรรม ศิลปะมืดทั้งมวลก็เปิดกว้างตรงหน้าคุณ",
+		"extdesc": "คุณจะเดินตามวิถีนี้โดยอัตโนมัติหากผ่านช่วงศิษย์สามเณรของการเดินทางและมีความชั่วเพียงพอ การกระทำอื่นก็ก่อให้เกิดสิ่งนี้ได้เช่นกัน แต่คุณไม่สามารถเลือกการกระทำนี้ด้วยตนเองได้",
 		"max": 1,
 		"length": 10,
 		"run": {
@@ -2761,14 +2761,14 @@
 	{
 		"id": "evil2",
 		"name": "sinister",
-		"actname": "a path most sinister",
+		"actname": "วิถีอันอำมหิตยิ่ง",
 		"morality": true,
 		"sortOrder": 9,
 		"require": "g.evil1>=1&&(g.good2==0||g.corruption_path==1)",
 		"need": ["shadowsource", "(g.good2==0||g.corruption_path==1)", "evil1", "g.evilamt>=1000", "tier1"],
 		"warn": true,
-		"desc": "Sinister deeds unlock further secrets obscured by the shadow.",
-		"needtext": "You must have 1,000 or more Evil. You must own a shadowsource. You must be tier 1 or higher.",
+		"desc": "การกระทำอันอำมหิตปลดล็อกความลับเพิ่มเติมที่เงามืดบดบังไว้",
+		"needtext": "ต้องมีความชั่วอย่างน้อย 1,000 มีแหล่งเงามืด และมีระดับขั้นอย่างน้อย 1",
 		"max": 1,
 		"length": 100,
 		"run": {
@@ -2801,14 +2801,14 @@
 	{
 		"id": "evil3",
 		"name": "irredeemable",
-		"actname": "the irredeemable path",
+		"actname": "วิถีอันไร้ทางไถ่บาป",
 		"morality": true,
 		"sortOrder": 11,
 		"require": "g.evil2>=1&&g.good2==0",
 		"need": ["shadowsource", "evil1", "evil2", "g.evilamt>=2000", "tier3"],
 		"warn": true,
-		"desc": "Prove yourself among the most irredeemable in the world.",
-		"needtext": "You must have 2,000 or more Evil. You must own a shadowsource. You must be tier 3 or higher.",
+		"desc": "พิสูจน์ตนว่าเป็นหนึ่งในผู้ที่ไร้ทางไถ่บาปที่สุดในโลก",
+		"needtext": "ต้องมีความชั่วอย่างน้อย 2,000 มีแหล่งเงามืด และมีระดับขั้นอย่างน้อย 3",
 		"max": 1,
 		"length": 100,
 		"run": {
@@ -2839,12 +2839,12 @@
 	},
 	{
 		"id": "malevolent",
-		"actname": "true malevolence",
+		"actname": "ความอำมหิตอันแท้จริง",
 		"morality": true,
 		"sortOrder": 13,
 		"require": "g.evil3==1&&g.respectable1==0&&g.tier4==1",
 		"warn": true,
-		"desc": "Malevolent from the start, the shadow rewards your unending dedication to evil. You must be tier 4 or higher.",
+		"desc": "อำมหิตตั้งแต่กำเนิด เงามืดตอบแทนการอุทิศตนไม่สิ้นสุดแก่ความชั่วร้ายของคุณ ต้องมีระดับขั้นอย่างน้อย 4",
 		"max": 1,
 		"length": 100,
 		"run": {
@@ -2872,7 +2872,7 @@
 		"name": "critter dissections",
 		"require": "g.anatomy>=3&&g.tier0>0",
 		"need": ["vivarium"],
-		"desc": "While preserving the specimens that passed away, you may as well study their insides.",
+		"desc": "ระหว่างเก็บรักษาศพตัวอย่างที่จากไป คุณก็น่าจะศึกษาภายในของมันไปด้วย",
 		"verb": "dissecting frogs",
 		"length": 10,
 		"max": 1,
@@ -2885,7 +2885,7 @@
 			"anatomy.max": 1,
 			"anatomy.rate": 0.2
 		},
-		"flavor": "Now dear old Ribbert will be immortalized in your research.",
+		"flavor": "ริบเบิร์ตเพื่อนรักคงถูกทำให้เป็นอมตะในงานวิจัยของคุณ",
 		"group": "knowledge"
 	},
 	{
@@ -2893,7 +2893,7 @@
 		"name": "horse medicines",
 		"require": "g.anatomy>=5&&g.tier1>0",
 		"need": "stables",
-		"desc": "Horses show great promise as experimental subjects for new tonics. Try some once they're done.",
+		"desc": "ม้าแสดงศักยภาพอันยิ่งใหญ่ในฐานะหนูทดลองยาใหม่ ๆ พอทำเสร็จแล้วลองสักหน่อยเถิด",
 		"verb": "chugging",
 		"length": 10,
 		"max": 1,
@@ -2908,7 +2908,7 @@
 			"anatomy.max": 2,
 			"anatomy.rate": 0.4
 		},
-		"flavor": "Healthy as a horse? No, more than that.",
+		"flavor": "แข็งแรงดั่งม้า? ไม่ใช่สิ เหนือกว่านั้นอีก",
 		"group": "knowledge"
 	},
 	{
@@ -2916,7 +2916,7 @@
 		"name": "muscle studies",
 		"require": "g.anatomy>=7&&g.tier1>0",
 		"need": "menagerie",
-		"desc": "Study the skeletal structure and musculature of countless beasts.",
+		"desc": "ศึกษาโครงกระดูกและกล้ามเนื้อของสัตว์นับไม่ถ้วน",
 		"verb": "watching animals run",
 		"length": 10,
 		"max": 1,
@@ -2929,7 +2929,7 @@
 			"anatomy.max": 2,
 			"anatomy.rate": 0.4
 		},
-		"flavor": "How does the cheetah run so fast? How can the giraffe support such limbs? Just what exactly is a platypus?",
+		"flavor": "เสือชีตาห์วิ่งเร็วได้อย่างไร? ยีราฟพยุงขาแบบนั้นได้ยังไง? แล้วตุ่นปากเป็ดมันคืออะไรกันแน่?",
 		"group": "knowledge"
 	},
 	{
@@ -2937,7 +2937,7 @@
 		"name": "demonic examinations",
 		"require": "g.summonsource.locked==0",
 		"need": "summonsource",
-		"desc": "They may be reluctant subjects, but there's much to learn of how demons stabilize their bodies.",
+		"desc": "มันอาจไม่เต็มใจเป็นตัวอย่าง แต่ก็มีเรื่องให้เรียนรู้อีกมากว่าปีศาจทำให้ร่างของมันมั่นคงได้อย่างไร",
 		"verb": "labeling demon organs",
 		"length": 15,
 		"max": 1,
@@ -2958,7 +2958,7 @@
 		"name": "spirit examinations",
 		"require": "g.summonsource.locked==0",
 		"need": "summonsource",
-		"desc": "For all the pains, cajoling spirits pays off once you see how such ethereal creatures maintain their existences.",
+		"desc": "แม้จะลำบาก แต่การง้างวิญญาณก็คุ้มค่าเมื่อคุณได้เห็นว่าสิ่งมีชีวิตอันไร้ตัวตนเหล่านี้ดำรงอยู่ได้อย่างไร",
 		"verb": "analyzing plasms",
 		"length": 15,
 		"max": 1,
@@ -2978,7 +2978,7 @@
 		"id": "autovivisect",
 		"name": "auto-vivisection",
 		"require": "g.timesplit>0&&g.chronomancy>=5",
-		"desc": "You've mastered time magic enough to try things beyond lesser mages' wildest dreams. Some care setting up the loop, and finally you can examine yourself.",
+		"desc": "คุณเชี่ยวชาญเวทกาลเวลาพอจะลองสิ่งที่เกินกว่าแม้แต่ฝันถึงของจอมเวทชั้นรอง ใช้ความระมัดระวังในการตั้งวงรอบสักหน่อย แล้วในที่สุดคุณก็สามารถตรวจสอบตัวเองได้",
 		"verb": "autovivisecting",
 		"length": 60,
 		"max": 1,
@@ -2995,7 +2995,7 @@
 			"anatomy.max": 2,
 			"anatomy.rate": 0.4
 		},
-		"flavor": "To think they dared call you heartless.",
+		"flavor": "นึกไม่ถึงเลยว่าใครกล้าเรียกว่าคุณไร้หัวใจ",
 		"group": "knowledge"
 	},
 	{
@@ -3003,7 +3003,7 @@
 		"name": "de humanis",
 		"require": "g.corporisfabrica>0&&g.anatomy>=10&&g.library.locked==0",
 		"need": "library",
-		"desc": "A sequel to one of your greatest hits.",
+		"desc": "ภาคต่อของหนึ่งในผลงานชิ้นเอกของคุณ",
 		"tags": "book",
 		"length": 40,
 		"max": 1,
@@ -3026,7 +3026,7 @@
 		"require": "g.ziggurat.locked==0&&g.tier4>0",
 		"need": "ziggurat",
 		"tags": "t_permanent_transformation",
-		"desc": "The ancients hoped to attain longevity with the power of the cosmos. You can achieve vitality, at least.",
+		"desc": "คนโบราณหวังจะบรรลุอายุยืนยาวด้วยพลังแห่งจักรวาล อย่างน้อยคุณก็ทำได้ถึงความมีชีวิตชีวา",
 		"lock": "t_permanent_transformation",
 		"warn": true,
 		"verb": "seizing heaven",
@@ -3051,7 +3051,7 @@
 			"hp.rate": 2,
 			"hp.max": 25
 		},
-		"flavor": "Best to do it when the gods are preoccupied.",
+		"flavor": "ควรทำตอนที่เหล่าเทพกำลังยุ่งอยู่",
 		"group": "transformation"
 	},
 	{
@@ -3059,7 +3059,7 @@
 		"name": "sanguine apotheosis",
 		"require": "g.potions>=5&&g.tier2>0",
 		"need": "potroom",
-		"desc": "Replace your blood with ichor, such that even the marrow ascends.",
+		"desc": "แทนที่เลือดของคุณด้วยโลหิตเทพ จนกระทั่งแม้แต่ไขกระดูกยังยกระดับขึ้น",
 		"verb": "dialyzing",
 		"length": 20,
 		"max": 1,
@@ -3082,7 +3082,7 @@
 		"name": "skeletal artifice",
 		"require": "g.crafting>=15&&g.tier4>0",
 		"need": "workshop",
-		"desc": "Forge something greater into your skeleton and your skeleton into something greater.",
+		"desc": "หลอมสิ่งอันยิ่งใหญ่เข้าในกระดูกของคุณ และหลอมกระดูกของคุณให้กลายเป็นสิ่งอันยิ่งใหญ่",
 		"verb": "enduring agony",
 		"length": 20,
 		"max": 1,
@@ -3103,7 +3103,7 @@
 		"id": "planarvitality",
 		"name": "planar vitality",
 		"require": "g.gate>0&&g.tier4>0",
-		"desc": "Limitless power wells up from the planes. Harness some for yourself.",
+		"desc": "พลังไร้ขอบเขตผุดขึ้นมาจากเหล่ามิติ จงควบคุมบางส่วนไว้ใช้เอง",
 		"verb": "tapping power",
 		"length": 90,
 		"max": 1,
@@ -3123,7 +3123,7 @@
 		"name": "spy",
 		"perpetual": true,
 		"verb": "spying",
-		"desc": "Time to see what all those other wizards are up to.",
+		"desc": "ถึงเวลาว่าอีกจอมเวทพวกนั้นกำลังทำอะไรกันอยู่",
 		"tags": "t_contemplation",
 		"require": "g.trickster>0&&g.scrying>=1",
 		"run": {
@@ -3152,7 +3152,7 @@
 			"gems": 0.01
 		},
 		"exclude": "t_contemplation",
-		"flavor": "...What do you mean, they're just pacing around?",
+		"flavor": "...หมายความว่าไง พวกมันแค่เดินไปมาเฉย ๆ งั้นหรือ?",
 		"group": "research"
 	},
 	{
@@ -3161,7 +3161,7 @@
 		"tags": "hall",
 		"require": "g.hall_dimensionalexploration>0&&g.planeslore>=5",
 		"need": "gate",
-		"desc": "Prepare your dimensional probe for another trip to the far planes.",
+		"desc": "เตรียมยานสำรวจมิติของคุณสำหรับการเดินทางครั้งใหม่สู่มิติอันไกลโพ้น",
 		"length": 10,
 		"run": {
 			"mana": 3
@@ -3177,7 +3177,7 @@
 		"tags": "hall",
 		"require": "g.hall_dimensionalexploration>0&&g.planeslore>=10",
 		"need": "gate",
-		"desc": "Put additional effort into speeding up the preparations.",
+		"desc": "ทุ่มความพยายามเพิ่มเติมเพื่อเร่งการเตรียมการ",
 		"perpetual": true,
 		"run": {
 			"stamina": 2
@@ -3193,7 +3193,7 @@
 		"tags": "hall",
 		"require": "g.hall_dimensionalexploration>0&&g.planeslore>=15",
 		"need": "gate",
-		"desc": "Attune to the primal manas of the planes for more efficient surveying.",
+		"desc": "ประสานเข้ากับมานาปฐมภูมิของเหล่ามิติเพื่อสำรวจอย่างมีประสิทธิภาพยิ่งขึ้น",
 		"perpetual": true,
 		"run": {
 			"primal": 2
@@ -3209,7 +3209,7 @@
 		"tags": "hall",
 		"require": "g.hall_dimensionalexploration>0&&g.planeslore>=20",
 		"need": "gate",
-		"desc": "Infuse the probe with additional elemental energies for extra resilience and speed.",
+		"desc": "หล่อหลอมพลังธาตุเพิ่มเติมลงในยานสำรวจเพื่อความทนทานและความเร็วที่มากขึ้น",
 		"perpetual": true,
 		"run": {
 			"element": 2
@@ -3223,7 +3223,7 @@
 		"id": "riddlebook",
 		"name": "book of exeter",
 		"require": "g.lore>7&&g.trickery>=4",
-		"desc": "A book full of wordplay and riddles compiled from your efforts to keep yourself amused during your studies.",
+		"desc": "หนังสือที่เต็มไปด้วยปริศนาคำทาย รวบรวมจากความพยายามหาความบันเทิงในระหว่างเล่าเรียนของคุณ",
 		"tags": "book",
 		"length": 10,
 		"max": 1,
@@ -3242,7 +3242,7 @@
 		"id": "riddlecontest",
 		"name": "win riddle competition",
 		"require": "g.riddlebook>0&&g.trickery>=5&&g.dist>=10",
-		"desc": "Newly armed, go and win the riddling competition at the village's yearly fair.",
+		"desc": "เมื่อติดอาวุธครบมือแล้ว ออกไปชนะการแข่งขันแก้ปริศนาที่งานประจำปีของหมู่บ้านเถิด",
 		"length": 40,
 		"max": 1,
 		"cost": {
@@ -3262,8 +3262,8 @@
 		"tags": "t_craftwork",
 		"require": "g.jester>0",
 		"need": "g.inv.max-g.inv._used>=4",
-		"needtext": "Must have at least 4 inventory spaces free.",
-		"desc": "Craft a jester's motley to embody the principles of mayhem.",
+		"needtext": "ต้องมีพื้นที่ว่างในคลังอย่างน้อย 4 ช่อง",
+		"desc": "ตัดเย็บชุดตัวตลกหลากสีเพื่อเป็นตัวแทนหลักการแห่งความอลหม่าน",
 		"length": 120,
 		"max": 1,
 		"cost": {
@@ -3290,8 +3290,8 @@
 		"tags": "t_craftwork",
 		"require": "g.craftmotley>0",
 		"need": "g.inv.max-g.inv._used>=4",
-		"needtext": "Must have at least 4 inventory spaces free, even if you only need to replace part of the set.",
-		"desc": "Remake your motley.",
+		"needtext": "ต้องมีพื้นที่ว่างในคลังอย่างน้อย 4 ช่อง แม้คุณจะต้องเปลี่ยนเพียงบางส่วนของเซตก็ตาม",
+		"desc": "ตัดเย็บชุดหลากสีของคุณใหม่",
 		"length": 30,
 		"cost": {
 			"research": 777,
@@ -3316,7 +3316,7 @@
 		"verb": "sketching",
 		"require": "g.facecollection>0",
 		"max": 999,
-		"desc": "Select and study a suitable target to be immortalized as your newest disguise.",
+		"desc": "เลือกและศึกษาเป้าหมายที่เหมาะสมเพื่อให้กลายเป็นหน้ากากใหม่ล่าสุดของคุณอย่างเป็นอมตะ",
 		"length": 3,
 		"cost": {
 			"research": 25,
@@ -3339,7 +3339,7 @@
 		"id": "rabbittrick",
 		"name": "pull out rabbit",
 		"require": "g.madcap>0&&g.hattrick>0&&g.chronomancy>=7",
-		"desc": "Materialize a helpful rabbit from seemingly thin air!",
+		"desc": "เนรมิตกระต่ายผู้คอยช่วยเหลือออกมาจากอากาศบาง ๆ!",
 		"max": 1,
 		"length": 50,
 		"cost": {
@@ -3356,9 +3356,9 @@
 	{
 		"id": "harvestownface",
 		"name": "complete the collection",
-		"actname": "peeling",
+		"actname": "การลอกหน้ากาก",
 		"require": "g.facecollect>=999",
-		"desc": "You became a master of a thousand disguises, but one face remains to be mastered. Your own.",
+		"desc": "คุณกลายเป็นเซียนแห่งหน้ากากนับพัน แต่ยังเหลือใบหน้าอีกหนึ่งที่ต้องทำให้ชำนาญ นั่นคือใบหน้าของคุณเอง",
 		"max": 1,
 		"length": 10,
 		"cost": {
@@ -3386,8 +3386,8 @@
 		"name": "nourish sprout",
 		"verb": "nourishing",
 		"require": "g.tier3>0&&g.naturelore>=10&&g.arcana>=10",
-		"desc": "Nourish your idrasil sprout so it can grow into something greater.",
-		"extdesc": " This will permanently lock the idrasil sprout and replace it with a better home.",
+		"desc": "หล่อเลี้ยงหน่ออิดราซิลของคุณให้มันเติบโตเป็นสิ่งอันยิ่งใหญ่กว่า",
+		"extdesc": "สิ่งนี้จะล็อกหน่ออิดราซิลถาวรและแทนที่ด้วยที่พำนักที่ดียิ่งกว่า",
 		"lock": "home_idrasil_sprout",
 		"max": 1,
 		"length": 120,
@@ -3412,8 +3412,8 @@
 		"name": "nourish sapling",
 		"verb": "nourishing",
 		"require": "g.tier4>0&&g.naturelore>=14&&g.arcana>=14&&g.idrasilgrow1>0",
-		"desc": "Nourish your idrasil sapling so it can realize its full splendor.",
-		"extdesc": "This will permanently lock the idrasil sapling and replace it with a better home.",
+		"desc": "หล่อเลี้ยงต้นอิดราซิลอ่อนของคุณให้มันแผ่ความงดงามเต็มที่",
+		"extdesc": "สิ่งนี้จะล็อกต้นอิดราซิลอ่อนถาวรและแทนที่ด้วยที่พำนักที่ดียิ่งกว่า",
 		"lock": "home_idrasil_sapling",
 		"max": 1,
 		"length": 180,
@@ -3438,7 +3438,7 @@
 		"name": "restore ruins",
 		"verb": "restoring",
 		"require": "g.tier4>0&&g.spiritlore>=14&&g.runelore>=5",
-		"desc": "You realized the meaning of a crucial rune in the ruins and unlocked further depths. Now they simply need repairing.",
+		"desc": "คุณเข้าใจความหมายของรูนสำคัญในซากปรักและปลดล็อกส่วนลึกลงไปกว่านั้นได้ บัดนี้เพียงแค่ต้องซ่อมแซมเท่านั้น",
 		"max": 1,
 		"length": 180,
 		"cost": {
@@ -3483,7 +3483,7 @@
 				}
 			}
 		},
-		"flavor": "Speak friend and enter",
+		"flavor": "กล่าวคำว่าเพื่อนแล้วจงเข้าไป",
 		"group": "housing"
 	},
 	{
@@ -3491,8 +3491,8 @@
 		"name": "found collective",
 		"verb": "recruiting",
 		"require": "g.tier2>0&&g.naturelore>=10",
-		"desc": "Gather like-minded lovers of nature to establish a permanent collective in the wilderness.",
-		"extdesc": "Unlocks a new home when completed.",
+		"desc": "รวบรวมผู้รักธรรมชาติแนวเดียวกันเพื่อสถาปนากลุ่มถาวรกลางป่าทุรกันดาร",
+		"extdesc": "ปลดล็อกที่พำนักใหม่เมื่อสำเร็จ",
 		"max": 1,
 		"length": 60,
 		"cost": {
@@ -3512,8 +3512,8 @@
 		"name": "establish caravan",
 		"verb": "negotiating",
 		"require": "g.tier2>0&&g.shopkeeping>=5&&g.s_travel>=3",
-		"desc": "Convince various other small merchants of your trustworthiness and band together into a caravan.",
-		"extdesc": "Unlocks a new home when completed.",
+		"desc": "โน้มน้าวพ่อค้ารายย่อยอื่น ๆ ถึงความน่าเชื่อถือของคุณ แล้วรวมตัวกันเป็นกองเกวียน",
+		"extdesc": "ปลดล็อกที่พำนักใหม่เมื่อสำเร็จ",
 		"max": 1,
 		"length": 60,
 		"cost": {
@@ -3533,8 +3533,8 @@
 		"name": "build emporium",
 		"verb": "advertising",
 		"require": "g.tier2>0&&g.shopkeeping>=8&&g.charms>=5",
-		"desc": "Build a magnificient marketplace and make sure everyone knows.",
-		"extdesc": "Unlocks a new home when completed.",
+		"desc": "สร้างตลาดอันวิจิตรตระการตาและทำให้ทุกคนได้รู้",
+		"extdesc": "ปลดล็อกที่พำนักใหม่เมื่อสำเร็จ",
 		"max": 1,
 		"length": 60,
 		"cost": {
@@ -3554,8 +3554,8 @@
 		"name": "excavate waterfall",
 		"verb": "excavating",
 		"require": "g.tier3>0&&g.waterlore>=10&&g.earthlore>0&&g.naturelore>=6",
-		"desc": "Dig out some more space behind the waterfall and raise the cliff it plunges over.",
-		"extdesc": "This will permanently lock the Waterfall and unlock a new home when completed.",
+		"desc": "ขุดพื้นที่เพิ่มหลังน้ำตกและยกหน้าผาที่มันไหลตกลงมาให้สูงขึ้น",
+		"extdesc": "สิ่งนี้จะล็อกน้ำตกถาวรและปลดล็อกที่พำนักใหม่เมื่อสำเร็จ",
 		"lock": "home_waterfall",
 		"max": 1,
 		"length": 120,
@@ -3580,7 +3580,7 @@
 		"name": "headmaster promotion",
 		"verb": "arguing",
 		"require": "g.tier3>0&&(g.magician>0||g.t_knowledgeclass>=2)",
-		"desc": "Overcome your rival professors and win the promotion to headmaster for the sake of prestige and better lodgings.",
+		"desc": "เอาชนะคณะอาจารย์คู่แข่งและคว้าตำแหน่งผู้อำนวยการเพื่อเกียรติยศและที่พำนักที่ดีกว่า",
 		"max": 1,
 		"length": 120,
 		"cost": {
@@ -3612,7 +3612,7 @@
 		"name": "citadel wings",
 		"verb": "building",
 		"require": "(g.t_knowledgeclass+g.t_swordclass+g.t_hammerclass)>0&&g.tier3>0",
-		"desc": "Add a couple of new wings onto your citadel for more room.",
+		"desc": "เพิ่มปีกใหม่สองสามปีกให้ป้อมปราการของคุณเพื่อพื้นที่มากขึ้น",
 		"max": 1,
 		"length": 120,
 		"cost": {
@@ -3640,8 +3640,8 @@
 		"verb": "building",
 		"require": "g.t_divinationclass>0&&g.tier3>0",
 		"need": "(1+g.t_divinationclass)>g.templeexpansion",
-		"needtext": "You need to have taken classes tagged 'Master of Divination' at least as many times as you've done this task. It still maxes at 3.",
-		"desc": "Add a new floor onto the temple to keep up with your needs.",
+		"needtext": "ต้องเคยเรียนคลาสที่ติดแท็ก 'เซียนการหยั่งรู้' อย่างน้อยเท่าจำนวนครั้งที่คุณทำภารกิจนี้ มันยังจำกัดสูงสุดที่ 3",
+		"desc": "เพิ่มชั้นใหม่ให้วิหารเพื่อให้เพียงพอต่อความต้องการของคุณ",
 		"max": 3,
 		"length": 120,
 		"cost": {
@@ -3671,7 +3671,7 @@
 		"name": "temple pinnacle",
 		"verb": "capping",
 		"require": "(g.templeexpansion+g.templerenovation)>=3&&g.templeexpansion>0&&g.tier4>0",
-		"desc": "Make your temple the highest in the land to gaze upon the stars.",
+		"desc": "ทำให้วิหารของคุณสูงที่สุดในแผ่นดินเพื่อเพ่งมองดวงดาว",
 		"max": 1,
 		"lock": "templealtar",
 		"warn": true,
@@ -3706,10 +3706,10 @@
 		"name": "castle restoration",
 		"verb": "restoring",
 		"require": "g.tier4>0",
-		"desc": "You deserve better. It's time to restore your ruined castle to its past splendor.",
+		"desc": "คุณสมควรได้สิ่งที่ดีกว่า ถึงเวลาแล้วที่จะบูรณะปราสาทปรักหักพังของคุณให้กลับมางดงามดังเดิม",
 		"warn": true,
 		"lock": "ruinedcastle",
-		"extdesc": "This will permanently lock the Crumbling Castle and unlock a better home when completed.",
+		"extdesc": "สิ่งนี้จะล็อกปราสาทปรักถาวรและปลดล็อกที่พำนักที่ดีกว่าเมื่อสำเร็จ",
 		"max": 1,
 		"length": 180,
 		"cost": {
@@ -3733,8 +3733,8 @@
 		"name": "palace restoration",
 		"verb": "restoring",
 		"require": "g.tier4>0",
-		"desc": "You deserve better. It's time to restore your ruined palace to its past splendor.",
-		"extdesc": "This will permanently lock the Mouldering Palace and unlock a better home when completed.",
+		"desc": "คุณสมควรได้สิ่งที่ดีกว่า ถึงเวลาแล้วที่จะบูรณะวังปรักหักพังของคุณให้กลับมางดงามดังเดิม",
+		"extdesc": "สิ่งนี้จะล็อกวังร้างถาวรและปลดล็อกที่พำนักที่ดีกว่าเมื่อสำเร็จ",
 		"max": 1,
 		"length": 180,
 		"cost": {
@@ -3759,7 +3759,7 @@
 		"name": "grove trimming",
 		"verb": "trimming",
 		"require": "g.tier4>0&&(g.t_enchantingclass+g.t_natureclass)>0",
-		"desc": "The plants have been carpeting the rest of your home, not just the floors. Time to see to that.",
+		"desc": "ต้นไม้ขึ้นรกคลุมทั่วที่พำนักของคุณ ไม่ใช่แค่พื้นอีกต่อไป ถึงเวลาจัดการเสียที",
 		"max": 1,
 		"length": 180,
 		"cost": {
@@ -3783,7 +3783,7 @@
 		"name": "island management",
 		"verb": "weatherproofing",
 		"require": "g.tier4>0&&(g.t_enchantingclass+g.t_elementalclass+g.t_spiritclass)>0",
-		"desc": "The ravages of nature have been collapsing parts of your structures. Time to see to that.",
+		"desc": "การบั่นทอนของธรรมชาติทำให้บางส่วนของสิ่งก่อสร้างของคุณพังครืน ถึงเวลาจัดการเสียที",
 		"max": 1,
 		"length": 180,
 		"cost": {
@@ -3809,7 +3809,7 @@
 		"name": "museum gallery",
 		"verb": "scrutinizing additions",
 		"require": "g.tier4>0&&g.trickery>=13",
-		"desc": "Add a new gallery to your museum for your enjoyment.",
+		"desc": "เพิ่มห้องจัดแสดงใหม่ให้พิพิธภัณฑ์เพื่อความเพลิดเพลินของคุณ",
 		"max": 1,
 		"length": 180,
 		"cost": {
@@ -3836,8 +3836,8 @@
 		"verb": "smoking",
 		"require": "g.naturelore>=5",
 		"need": "g.outdoors>0",
-		"needtext": "Must live outdoors.",
-		"desc": "Get comfortable in the middle of all the greenery.",
+		"needtext": "ต้องพักอาศัยกลางแจ้ง",
+		"desc": "ทำตัวให้คุ้นชินท่ามกลางแมกไม้อันเขียวขจี",
 		"max": 1,
 		"length": 30,
 		"cost": {
@@ -3861,8 +3861,8 @@
 		"verb": "seeing the terrors",
 		"require": "g.earthlore>=5&&g.shadowlore>=5",
 		"need": "g.t_underground>0",
-		"needtext": "Must live underground.",
-		"desc": "Get comfortable deep beneath the ground.",
+		"needtext": "ต้องพักอาศัยใต้ดิน",
+		"desc": "ทำตัวให้คุ้นชินลึกใต้พื้นดิน",
 		"max": 1,
 		"length": 30,
 		"cost": {
@@ -3880,15 +3880,15 @@
 			"earthlore.max": 1,
 			"shadowlore.max": 1
 		},
-		"flavor": "The blue-gilled mushrooms are very pretty, though they taste awful.",
+		"flavor": "เห็ดเหงือกฟ้านั้นงดงามมาก ทว่ามีรสชาติแย่เหลือเกิน",
 		"group": "knowledge"
 	},
 	{
 		"id": "bookdiving",
 		"name": "lexyrinth browsing",
 		"verb": "making copies",
-		"desc": "Stay hidden as you make copies of the tomes in the endless depths of the infinite library.",
-		"flavor": "Things beyond even your comprehension lair here.",
+		"desc": "ซ่อนตัวอยู่ขณะคัดลอกตำราในส่วนลึกอันไร้ที่สิ้นสุดของห้องสมุดอนันต์",
+		"flavor": "สิ่งต่าง ๆ ที่เกินความเข้าใจของคุณแม้เพียงนิดสิงสถิตอยู่ที่นี่",
 		"tags": "t_languagework",
 		"require": "g.tier6>0&&g.languages>=12",
 		"need": "lexyrinth",
@@ -3912,7 +3912,7 @@
 		"verb": "smoothing contours",
 		"require": "g.tier3>0&&g.geosculpting>=5",
 		"max": 1,
-		"desc": "Your first attempt to raise a spire was rough. Refine its structure.",
+		"desc": "ความพยายามครั้งแรกตั้งหอคอยของคุณหยาบกระด้างนัก จงขัดเกลาโครงสร้างของมัน",
 		"length": 60,
 		"cost": {
 			"earthgem": 10,
@@ -3930,8 +3930,8 @@
 	{
 		"id": "catasterismi",
 		"name": "catasterismi",
-		"require": "g.almagest>0&&g.history>=5",
-		"desc": "Piece together the history of the stars and their followers. Much was lost when the Locks razed the lands in their rise to power.",
+		"require": "g.คัมภีร์ดาราศาสตร์>0&&g.history>=5",
+		"desc": "ประกอบชิ้นส่วนประวัติศาสตร์ของดวงดาวและเหล่าผู้ศรัทธา ความรู้มากมายสูญหายไปเมื่อเหล่าล็อกไฟแผดเผาแผ่นดินในยามขึ้นสู่อำนาจ",
 		"tags": "book",
 		"length": 60,
 		"max": 1,
@@ -3945,14 +3945,14 @@
 			"astronomy.max": 3,
 			"history.max": 2
 		},
-		"flavor": "The rites of nimble Glenmorgue. The trials of armored el-Adke. The shrines of singing Pendra.",
+		"flavor": "พิธีกรรมของเกล็นมอร์กผู้คล่องแคล่ว การทดสอบของเอล-อัดเคผู้เกราะ หอสักการะของเพนดราผู้ขับขาน",
 		"group": "knowledge"
 	},
 	{
 		"id": "picatrix",
 		"name": "picatrix",
-		"require": "g.almagest>0&&g.spellcraft>=3",
-		"desc": "Experimental procedures for the application of astronomy to magic.",
+		"require": "g.คัมภีร์ดาราศาสตร์>0&&g.spellcraft>=3",
+		"desc": "วิธีทดลองการประยุกต์ใช้ดาราศาสตร์กับเวทมนตร์",
 		"tags": "book",
 		"length": 60,
 		"max": 1,
@@ -3970,8 +3970,8 @@
 	{
 		"id": "aryabhatiya",
 		"name": "aryabhatiya",
-		"require": "g.almagest>0&&g.chronomancy>=1",
-		"desc": "The practical applications of astronomy to the measurement of time and distance.",
+		"require": "g.คัมภีร์ดาราศาสตร์>0&&g.chronomancy>=1",
+		"desc": "การประยุกต์ใช้ดาราศาสตร์เชิงปฏิบัติกับการวัดเวลาและระยะทาง",
 		"tags": "book",
 		"length": 60,
 		"max": 1,
@@ -3993,8 +3993,8 @@
 		"name": "record stars",
 		"require": "g.astronomy>=5",
 		"need": "g.starsource>0&&g.workspace>0",
-		"needtext": "You need a starsource and a workspace.",
-		"desc": "Record the constellations and the wanderers.",
+		"needtext": "ต้องมีแหล่งดวงดาวและพื้นที่ทำงาน",
+		"desc": "บันทึกกลุ่มดาวและดาวร่อนเร่",
 		"length": 15,
 		"max": 4,
 		"cost": {
@@ -4014,8 +4014,8 @@
 		"verb": "stargazing",
 		"require": "g.astronomy>=10&&g.tier4>0",
 		"need": "g.ziggurat>0",
-		"needtext": "Own a ziggurat.",
-		"desc": "Gaze through the sky and discover something new in the void amidst stars.",
+		"needtext": "ต้องมีซิกกูรัต",
+		"desc": "เพ่งมองผ่านท้องฟ้าและค้นพบสิ่งใหม่ในห้วงว่างท่ามกลางหมู่ดาว",
 		"length": 100,
 		"max": 1,
 		"cost": {
@@ -4042,8 +4042,8 @@
 		"verb": "beholding",
 		"require": "g.earthlore>=10&&g.tier4>0",
 		"need": "g.ziggurat>0",
-		"needtext": "Own a ziggurat.",
-		"desc": "Project your consciousness higher yet and behold the secret shape of the world. Fix its contours within your mind.",
+		"needtext": "ต้องมีซิกกูรัต",
+		"desc": "ส่งจิตสำนึกของคุณขึ้นสูงยิ่งขึ้นและเฝ้าดูรูปลักษณ์ลับของโลก จดจำรูปทรงของมันไว้ในใจ",
 		"length": 100,
 		"max": 1,
 		"cost": {
@@ -4058,7 +4058,7 @@
 		"mod": {
 			"earthlore.max": 3
 		},
-		"flavor": "A sphere? A disc? A torus? Something else entirely? You long to find out.",
+		"flavor": "ทรงกลม? แผ่นแบน? ทรงโดนัท? หรือเป็นอย่างอื่นไปเลย? คุณปรารถนาจะค้นพบคำตอบ",
 		"group": "knowledge"
 	},
 	{
@@ -4066,8 +4066,8 @@
 		"name": "study star shard",
 		"require": "g.sindel>=0&&g.tier5>0",
 		"need": "g.sindel>=1",
-		"needtext": "You need at least one whole star shard to study, despite how odd asking for a whole shard sounds.",
-		"desc": "Study a star shard to learn more about its origin.",
+		"needtext": "ต้องมีเศษดวงดาวครบหนึ่งดวงจึงจะศึกษาได้ แม้การขอเศษแบบเต็มดวงจะฟังดูแปลกก็ตาม",
+		"desc": "ศึกษาเศษดวงดาวเพื่อเรียนรู้ที่มาของมันให้มากขึ้น",
 		"length": 100,
 		"max": 1,
 		"cost": {
@@ -4090,7 +4090,7 @@
 		"require": "g.neophyte>0&&g.t_pets>0",
 		"need": "treffilwoods",
 		"max": 5,
-		"desc": "Observe the beasts of the Treffil woods.",
+		"desc": "เฝ้าสังเกตเหล่าสัตว์ร้ายแห่งป่าทเรฟฟิล",
 		"length": 10,
 		"cost": {
 			"scrolls": 1
@@ -4110,7 +4110,7 @@
 		"require": "g.tier1>0&&g.animals>=10&&g.magicbeasts>=5",
 		"need": "menagerie",
 		"max": 1,
-		"desc": "Study your menagerie of magical creatures.",
+		"desc": "ศึกษาสวนสัตว์เวทมนตร์ของคุณ",
 		"length": 40,
 		"cost": {
 			"codices": 1
@@ -4122,7 +4122,7 @@
 		"mod": {
 			"magicbeasts.max": 2
 		},
-		"flavor": "Are griffons and gryphons different or just a localization issue from the original texts? What of the hippogryph?",
+		"flavor": "กริฟฟอนกับกริฟฟินต่างกันจริงหรือเป็นเพียงปัญหาการแปลจากตำราเดิม? แล้วฮิปโปกริฟฟ์ล่ะ?",
 		"group": "knowledge"
 	},
 	{
@@ -4131,7 +4131,7 @@
 		"require": "g.herbalism>=4&&(g.naturelore>=3||g.tier0>0||g.treffilwoods>0)",
 		"need": "treffilwoods",
 		"max": 5,
-		"desc": "Make a record of the lifecycles of rare plants in Treffil.",
+		"desc": "บันทึกวงจรชีวิตของพืชหายากในป่าทเรฟฟิล",
 		"length": 20,
 		"cost": {
 			"scrolls": 1,
@@ -4151,7 +4151,7 @@
 		"name": "medical practice",
 		"require": "g.heallore>=5",
 		"max": 1,
-		"desc": "Put your new medical expertise to practice and do some work pro bono publico.",
+		"desc": "นำความเชี่ยวชาญทางการแพทย์ใหม่ของคุณไปใช้ปฏิบัติบ้างโดยไม่คิดค่าตอบแทน",
 		"length": 60,
 		"cost": {
 			"codices": 5
@@ -4164,13 +4164,13 @@
 			"anatomy.max": 1,
 			"heallore.max": 1
 		},
-		"flavor": "Nehton could use the help ever since the arrival of the Great Bog and the fevers in its wake.",
+		"flavor": "เมืองเนห์ตันต้องการความช่วยเหลือนับตั้งแต่หนองน้ำใหญ่มาถึงและไข้ที่ตามมา",
 		"group": "knowledge"
 	},
 	{
 		"id": "ciphertext",
 		"name": "cipher journal",
-		"desc": "Figure out a new cipher for your personal journal to keep your writings secret from your master.",
+		"desc": "คิดค้นรหัสใหม่สำหรับบันทึกส่วนตัวเพื่อซ่อนข้อเขียนของคุณจากนายท่าน",
 		"group": "knowledge",
 		"require": "g.evt_helper>=0",
 		"max": 1,
@@ -4189,7 +4189,7 @@
 	{
 		"id": "summonquizzing",
 		"name": "Question elementals",
-		"desc": "Conjure various Elementals to satisfy your curiousity about their kind.",
+		"desc": "อัญเชิญธาตุระดับต่าง ๆ เพื่อตอบสนองความอยากรู้อยากเห็นเกี่ยวกับเผ่าพันธุ์ของมัน",
 		"group": "knowledge",
 		"require": "g.summoning>=6||g.tier3>0",
 		"need": "summonsource",
@@ -4212,7 +4212,7 @@
 		"require": "(g.alchemy>=5&&g.potions>=1&&g.crafting>=10)",
 		"need": "workspace",
 		"max": 3,
-		"desc": "Start testing every combination of every ingredient you have and take notes. You probably won't die.",
+		"desc": "เริ่มทดสอบส่วนผสมทุกอย่างที่คุณมีในทุกการผสมและจดบันทึก คุณคงไม่ตายหรอก",
 		"length": 40,
 		"cost": {
 			"codices": 1
@@ -4226,14 +4226,14 @@
 			"alchemy.max": 1,
 			"potions.max": 1
 		},
-		"flavor": "Walk it off.",
+		"flavor": "เดินทำใจเสียเถิด",
 		"group": "knowledge"
 	},
 	{
 		"id": "unspingold",
 		"name": "unspin gold",
 		"tags": "t_craftwork",
-		"desc": "Now spin gold back into straw, just to prove you can.",
+		"desc": "บัดนี้ปั่นทองคำกลับเป็นฟาง แค่นี้เพื่อพิสูจน์ว่าคุณทำได้",
 		"verb": "unspinning",
 		"need": "weavesource",
 		"require": "g.spingold>=1",
@@ -4252,9 +4252,9 @@
 	{
 		"id": "shopwork",
 		"tags": "t_craftwork",
-		"desc": "Get a feel for your new workshop.",
+		"desc": "ลองทำความคุ้นเคยกับโรงงานใหม่ของคุณ",
 		"need": "g.workshop>0",
-		"needtext": "Own a workshop.",
+		"needtext": "ต้องมีโรงงาน",
 		"require": "g.space.max>=50&&(g.crafting>=7||g.enchanting>=7)",
 		"max": 1,
 		"length": 50,
@@ -4266,14 +4266,14 @@
 			"crafting.max": 2,
 			"enchanting.max": 1
 		},
-		"flavor": "Crucial to avoid tripping over anything when the real work begins.",
+		"flavor": "สำคัญอย่างยิ่งเพื่อไม่ให้สะดุดอะไรเมื่องานจริงเริ่มต้น",
 		"group": "knowledge"
 	},
 	{
 		"id": "toolwork",
 		"name": "tool practice",
 		"tags": "t_craftwork",
-		"desc": "Break in your new tools.",
+		"desc": "ลองใช้เครื่องมือใหม่ของคุณให้เข้าฝัก",
 		"need": "workspace",
 		"require": "g.crafting>=(6-g.evt_helper)",
 		"max": 3,
@@ -4290,13 +4290,13 @@
 			"crafting.max": 1,
 			"enchanting.max": "?1"
 		},
-		"flavor": "Folklore has it old enough tools come to life and seek blood. You plan to live long enough that taming your tools ahead of time is the best option.",
+		"flavor": "นิทานพื้นบ้านเล่าว่าเครื่องมือเก่าแก่พอกลายเป็นสิ่งมีชีวิตและตามหาเลือด คุณวางแผนจะอยู่จนแก่เฒ่าโดยการฝึกเครื่องมือให้เชื่องไว้ก่อนเป็นทางเลือกที่ดีที่สุด",
 		"group": "knowledge"
 	},
 	{
 		"id": "astrologypractice",
 		"name": "practice astrology",
-		"desc": "Use your orrery to derive future events from the projected movement of celestial bodies.",
+		"desc": "ใช้แบบจำลองจักรวาลของคุณเพื่อคาดคะเนเหตุการณ์ในอนาคตจากการเคลื่อนที่ของเทหวัตถุ",
 		"need": "orrery",
 		"require": "g.astronomy>=8&&g.codices>=80",
 		"max": 1,
@@ -4312,7 +4312,7 @@
 		"mod": {
 			"divination.max": 2
 		},
-		"flavor": "Oh, good, the sun is still in the same place.",
+		"flavor": "โอ้ ดีจัง พระอาทิตย์ยังอยู่ที่เดิม",
 		"group": "knowledge"
 	},
 	{
@@ -4320,7 +4320,7 @@
 		"name": "firegazing",
 		"require": "g.tier0>0&&g.firelore>=1",
 		"need": "firesource",
-		"desc": "Fix your gaze upon a single point in the center of the flame and meditate upon the hunger of fire.",
+		"desc": "จับจ้องสายตาไปยังจุดเดียวกลางเปลวไฟแล้วเพ่งพิจารณาถึงความหิวโหยของไฟ",
 		"max": 5,
 		"length": 10,
 		"cost": {
@@ -4333,7 +4333,7 @@
 		"mod": {
 			"firelore.max": 1
 		},
-		"flavor": "'What do you see in the fire?' 'Ashes.'",
+		"flavor": "'เจ้าเห็นอะไรในไฟ?' 'เถ้าถ่าน'",
 		"group": "knowledge"
 	},
 	{
@@ -4341,8 +4341,8 @@
 		"name": "wildfire observation",
 		"require": "g.tier0>0&&g.firelore>=1&&g.naturelore>=1",
 		"need": "g.firesource>0&&g.outdoors>0",
-		"needtext": "Own a firesource and live outdoors.",
-		"desc": "Come summer, behold the cycle of destruction and renewal in the wake of one of the great Ettinmarch blazes.",
+		"needtext": "ต้องมีแหล่งไฟและพักอาศัยกลางแจ้ง",
+		"desc": "เมื่อฤดูร้อนมาถึง จงเฝ้าดูวัฏจักรแห่งการทำลายและการฟื้นคืนหลังจากเพลิงไหม้ใหญ่แห่งเอตตินมาร์ชครั้งหนึ่ง",
 		"max": 1,
 		"length": 30,
 		"cost": {
@@ -4357,7 +4357,7 @@
 			"firelore.max": 1,
 			"naturelore.max": 1
 		},
-		"flavor": "'What do you see amidst the ashes?' 'Sprouts.'",
+		"flavor": "'เจ้าเห็นอะไรท่ามกลางเถ้าถ่าน?' 'หน่ออ่อน'",
 		"group": "knowledge"
 	},
 	{
@@ -4365,7 +4365,7 @@
 		"name": "sensory deprivation",
 		"require": "g.tier0>0&&g.shadowlore>=1",
 		"need": "shadowsource",
-		"desc": "Surround yourself in pitch darkness and deprive yourself of all your senses. Let the emptiness fill your mind.",
+		"desc": "โอบล้อมตัวเองด้วยความมืดมิดสนิทและตัดขาดประสาทสัมผัสทั้งหมด ปล่อยให้ความว่างเปล่าเติมเต็มจิตใจของคุณ",
 		"max": 4,
 		"length": 10,
 		"cost": {
@@ -4378,7 +4378,7 @@
 		"mod": {
 			"shadowlore.max": 1
 		},
-		"flavor": "'What do you see in the darkness?' 'Myself.'",
+		"flavor": "'เจ้าเห็นอะไรในความมืด?' 'ตัวข้าเอง'",
 		"group": "knowledge"
 	},
 	{
@@ -4386,8 +4386,8 @@
 		"name": "defile spirits",
 		"require": "g.tier0>0&&g.evil1>0&&g.shadowlore>=1&&g.spiritlore>=1",
 		"need": "g.shadowsource>0&&g.spiritsource>0",
-		"needtext": "Need a shadowsource and a spiritsource.",
-		"desc": "Taint the restless dead with shadow and study their changes.",
+		"needtext": "ต้องใช้แหล่งเงามืดและแหล่งวิญญาณ",
+		"desc": "เปื้อนเปรอะเงามืดให้แก่เหล่าคนตายที่กระสับกระส่าย แล้วศึกษาการเปลี่ยนแปลงของพวกมัน",
 		"max": 4,
 		"length": 10,
 		"cost": {
@@ -4402,7 +4402,7 @@
 			"shadowlore.max": 1,
 			"spiritlore.max": 1
 		},
-		"flavor": "'What do you hear in the screams?' 'Truth.'",
+		"flavor": "'เจ้าได้ยินอะไรในเสียงกรีดร้อง?' 'ความจริง'",
 		"group": "knowledge"
 	},
 	{
@@ -4410,7 +4410,7 @@
 		"name": "tree studies",
 		"require": "g.tier0>0&&g.naturelore>=1",
 		"need": "plantsource",
-		"desc": "Get some fresh air and take meticulous notes about the flora of Gorborung.",
+		"desc": "สูดอากาศบริสุทธิ์และจดบันทึกอย่างละเอียดเกี่ยวกับพรรณไม้แห่งโกรโบรุง",
 		"max": 2,
 		"length": 10,
 		"cost": {
@@ -4423,7 +4423,7 @@
 		"mod": {
 			"naturelore.max": 1
 		},
-		"flavor": "Distinguish them by the arils, the striations of the bark, the shapes of the leaves...",
+		"flavor": "แยกแยะพวกมันด้วยเนื้อหุ้มเมล็ด ลายเส้นบนเปลือกไม้ รูปทรงของใบไม้...",
 		"group": "knowledge"
 	},
 	{
@@ -4431,8 +4431,8 @@
 		"name": "study water cycle",
 		"require": "g.tier0>0&&g.waterlore>=1&&g.naturelore>=1",
 		"need": "g.watersource>0&&g.plantsource>0",
-		"needtext": "Needs a watersource and a plantsource.",
-		"desc": "Head to the shores that shattered the fleet of Veldran to observe and record the cycles water goes through in nature.",
+		"needtext": "ต้องใช้แหล่งน้ำและแหล่งพืช",
+		"desc": "มุ่งหน้าไปยังชายฝั่งที่ทำลายกองเรือของเวลดรัน เพื่อเฝ้าสังเกตและบันทึกวัฏจักรของน้ำในธรรมชาติ",
 		"max": 1,
 		"length": 10,
 		"cost": {
@@ -4447,7 +4447,7 @@
 			"waterlore.max": 2,
 			"naturelore.max": 1
 		},
-		"flavor": "Evaporation, condensation, precipitation... mountain peaks and rivers and lakes and clouds.",
+		"flavor": "การระเหย การควบแน่น การตกตะกอน... ยอดเขากับแม่น้ำและทะเลสาบและเมฆหมอก",
 		"group": "knowledge"
 	},
 	{
@@ -4455,8 +4455,8 @@
 		"name": "skygazing",
 		"require": "g.tier0>0&&g.airlore>=1&&g.lightlore>=1",
 		"need": "g.airsource>0&&g.lightsource>0",
-		"needtext": "Needs an airsource and a lightsource.",
-		"desc": "Climb Gorborung, turn your gaze upwards, and admire the vault of the heavens.",
+		"needtext": "ต้องใช้แหล่งอากาศและแหล่งแสงสว่าง",
+		"desc": "ไต่ขึ้นเขากอร์โบรุง เงยหน้าขึ้นมอง และชื่นชมเพดานแห่งสรวงสวรรค์",
 		"max": 3,
 		"length": 10,
 		"cost": {
@@ -4471,7 +4471,7 @@
 			"airlore.max": 1,
 			"lightlore.max": 1
 		},
-		"flavor": "'What do you see in the clouds?' 'Everything.'",
+		"flavor": "'เจ้าเห็นอะไรในหมู่เมฆ?' 'ทุกสรรพสิ่ง'",
 		"group": "knowledge"
 	},
 	{
@@ -4479,7 +4479,7 @@
 		"name": "breathing exercises",
 		"require": "g.tier0>0&&g.airlore>=1",
 		"need": "airsource",
-		"desc": "Close your eyes. Inhale. Count. Exhale. Feel the movement of the air through you, through the world.",
+		"desc": "หลับตา หายใจเข้า นับเวลาหน่อย หายใจออก สัมผัสถึงการเคลื่อนไหวของอากาศผ่านตัวคุณ ผ่านโลก",
 		"max": 4,
 		"length": 10,
 		"cost": {
@@ -4493,7 +4493,7 @@
 			"airlore.max": 1,
 			"composure.max": 0.25
 		},
-		"flavor": "'What do you see in the winds?' 'Memories.'",
+		"flavor": "'เจ้าเห็นอะไรในสายลม?' 'ความทรงจำ'",
 		"group": "knowledge"
 	},
 	{
@@ -4501,7 +4501,7 @@
 		"name": "diving",
 		"require": "g.tier0>0&&g.waterlore>=1",
 		"need": "watersource",
-		"desc": "Leap to the bottom of the village pond. Feel its weight. Hold your breath until you nearly drown. Become water.",
+		"desc": "กระโดดลงสู่ก้นสระน้ำของหมู่บ้าน สัมผัสถึงน้ำหนักของมัน กลั้นหายใจจนเกือบจมน้ำ แล้วกลายเป็นสายน้ำไปเลย",
 		"max": 4,
 		"length": 10,
 		"cost": {
@@ -4514,7 +4514,7 @@
 		"mod": {
 			"waterlore.max": 1
 		},
-		"flavor": "'What do you see in the depths?' 'Potential.'",
+		"flavor": "'เจ้าเห็นอะไรในห้วงลึก?' 'ศักยภาพ'",
 		"group": "knowledge"
 	},
 	{
@@ -4522,7 +4522,7 @@
 		"name": "question spirits",
 		"require": "g.tier0>0&&g.spiritlore>=1",
 		"need": "spiritsource",
-		"desc": "Call up the shades of the departed for answers about the hereafter.",
+		"desc": "เรียกเงาดำแห่งผู้ลาจากขึ้นมาถามไถ่เกี่ยวกับโลกหลังความตาย",
 		"max": 3,
 		"length": 10,
 		"cost": {
@@ -4535,7 +4535,7 @@
 		"mod": {
 			"spiritlore.max": 1
 		},
-		"flavor": "'What do you see in the next world?' '...'",
+		"flavor": "'เจ้าเห็นอะไรในโลกหน้า?' '...'",
 		"group": "knowledge"
 	},
 	{
@@ -4543,7 +4543,7 @@
 		"name": "soil composition study",
 		"require": "g.tier0>0&&g.earthlore>=1",
 		"need": "earthsource",
-		"desc": "Dig up various spots and study the earth. Surely it can't all just be dirt.",
+		"desc": "ขุดดินหลายจุดแล้วศึกษาผืนพื้นดิน มันต้องไม่ใช่แค่ดินทั่ว ๆ ไปแน่นอน",
 		"max": 3,
 		"length": 10,
 		"cost": {
@@ -4556,7 +4556,7 @@
 		"mod": {
 			"earthlore.max": 1
 		},
-		"flavor": "'What did you do to Sandy Loam? Where is she?' 'Gone.'",
+		"flavor": "'เจ้าทำอะไรกับแซนดี้ลอม? หล่อนอยู่ไหน?' 'จากไปแล้ว'",
 		"group": "knowledge"
 	},
 	{
@@ -4564,8 +4564,8 @@
 		"name": "trataka",
 		"require": "g.tier1>=0&&g.firelore>=6&&g.lightlore>=6",
 		"need": "g.firesource>0&&g.lightsource>0",
-		"needtext": "Needs a firesource and a lightsource.",
-		"desc": "Keep gazing into the center of the flame. Embrace the heat and light.",
+		"needtext": "ต้องใช้แหล่งไฟและแหล่งแสงสว่าง",
+		"desc": "จ้องมองใจกลางเปลวไฟต่อไปเรื่อย ๆ โอบกอดความร้อนและแสงสว่าง",
 		"max": 4,
 		"length": 20,
 		"cost": {
@@ -4580,7 +4580,7 @@
 			"firelore.max": 1,
 			"lightlore.max": 1
 		},
-		"flavor": "'What do you see in the fire?' 'The sun.'",
+		"flavor": "'เจ้าเห็นอะไรในไฟ?' 'ดวงอาทิตย์'",
 		"group": "knowledge"
 	},
 	{
@@ -4588,8 +4588,8 @@
 		"name": "abyssal pressure",
 		"require": "g.tier1>=0&&g.waterlore>=6&&g.shadowlore>=6",
 		"need": "g.watersource>0&&g.shadowsource>0",
-		"needtext": "Needs a watersource and a shadowsource.",
-		"desc": "Dive to the bottom of a great lake. Rejoice for what you find there.",
+		"needtext": "ต้องใช้แหล่งน้ำและแหล่งเงามืด",
+		"desc": "ดำลงสู่ก้นทะเลสาบอันยิ่งใหญ่ จงยินดีกับสิ่งที่คุณพบที่นั่น",
 		"max": 4,
 		"length": 20,
 		"cost": {
@@ -4604,7 +4604,7 @@
 			"waterlore.max": 1,
 			"shadowlore.max": 1
 		},
-		"flavor": "'What do you see in the abyss?' 'Perfection.'",
+		"flavor": "'เจ้าเห็นอะไรในห้วงเหว?' 'ความสมบูรณ์แบบ'",
 		"group": "knowledge"
 	},
 	{
@@ -4612,8 +4612,8 @@
 		"name": "cavernous stillness",
 		"require": "g.tier1>=0&&g.earthlore>=6&&g.shadowlore>=6",
 		"need": "g.earthsource>0&&g.shadowsource>0",
-		"needtext": "Needs an earthsource and a shadowsource.",
-		"desc": "Find the bottom of a yawning chasm. Steel yourself for what awaits.",
+		"needtext": "ต้องใช้แหล่งดินและแหล่งเงามืด",
+		"desc": "ตามหาก้นเหวที่อ้าปากค้าง จงเตรียมใจรับมือกับสิ่งที่รออยู่",
 		"max": 4,
 		"length": 20,
 		"cost": {
@@ -4628,7 +4628,7 @@
 			"earthlore.max": 1,
 			"shadowlore.max": 1
 		},
-		"flavor": "'What do you see in the emptiness?' 'Clarity.'",
+		"flavor": "'เจ้าเห็นอะไรในความว่างเปล่า?' 'ความกระจ่างแจ้ง'",
 		"group": "knowledge"
 	},
 	{
@@ -4636,8 +4636,8 @@
 		"name": "sky exploration",
 		"require": "g.tier1>=0&&g.airlore>=6&&g.lightlore>=6",
 		"need": "g.airsource>0&&g.lightsource>0",
-		"needtext": "Needs an airsource and a lightsource.",
-		"desc": "Float above any cloud. Exult in the sunlight.",
+		"needtext": "ต้องใช้แหล่งอากาศและแหล่งแสงสว่าง",
+		"desc": "ลอยเหนือเมฆใดก็ได้ ปิติยินดีท่ามกลางแสงตะวัน",
 		"max": 4,
 		"length": 20,
 		"cost": {
@@ -4652,14 +4652,14 @@
 			"airlore.max": 1,
 			"lightlore.max": 1
 		},
-		"flavor": "'What do you see atop the world?' 'Completion.'",
+		"flavor": "'เจ้าเห็นอะไรบนยอดโลก?' 'ความสมบูรณ์'",
 		"group": "knowledge"
 	},
 	{
 		"id": "onewithnature",
 		"name": "one with nature",
 		"tags": "plantsource",
-		"desc": "You have become as one with nature after communing with it for so long.",
+		"desc": "คุณกลายเป็นหนึ่งเดียวกับธรรมชาติ หลังจากหลอมรวมกับมันมานานแสนนาน",
 		"require": "g.naturelore>=12&&g.naturecamprest.owned",
 		"max": 1,
 		"length": 30,
@@ -4686,11 +4686,11 @@
 	{
 		"id": "act_fey",
 		"name": "fey",
-		"desc": "Become a being of wild and natural magic.",
+		"desc": "กลายเป็นสิ่งมีชีวิตแห่งเวทมนตร์ป่าเถื่อนและเป็นธรรมชาติ",
 		"tags": "t_permanent_transformation",
 		"require": "g.tier3>0&&g.t_natureclass>0",
 		"need": "g.tier4>0&&g.naturelore>=18",
-		"needtext": "You must be at least level 18 in Nature Studies. You must be tier 4.",
+		"needtext": "ต้องมีระดับในวิชาศึกษาธรรมชาติอย่างน้อย 18 และมีระดับขั้น 4",
 		"lock": "t_permanent_transformation",
 		"warn": true,
 		"max": 1,
@@ -4714,13 +4714,13 @@
 			"hp.rate": 2,
 			"hp.max": 25
 		},
-		"flavor": "'Will you drink from the goblet?' she asked. 'The transformation cannot be undone.'",
+		"flavor": "'เจ้าจะดื่มจากถ้วยนี้ไหม?' นางถาม 'การแปรสภาพนี้ไม่อาจย้อนกลับได้'",
 		"group": "transformation"
 	},
 	{
 		"id": "act_highkell",
 		"name": "high kell",
-		"desc": "The ranks of the Kell range from the lesser Fey and forest Delki, to ancient spirits, old and indomitable.",
+		"desc": "ลำดับชั้นของเคลล์ไล่ตั้งแต่เหล่านางไม้ชั้นต่ำและเดลกิแห่งป่า ไปจนถึงวิญญาณโบราณอันเก่าแก่และไม่อาจเอาชนะได้",
 		"require": "g.kell>0",
 		"max": 1,
 		"length": 50,
@@ -4744,7 +4744,7 @@
 			"herbalism.max": 2,
 			"naturedmg": 20
 		},
-		"flavor": "'It's of no consequence to me,' replied Jora. 'I do not die Trill, and there are few things in this world that could do the trick.'",
+		"flavor": "'มันไม่มีความหมายอันใดแก่ข้า' โจราตอบ 'ข้าจะไม่ตายหรอกทริลล์ และในโลกนี้มีเพียงไม่กี่สิ่งเท่านั้นที่จะคร่าข้าได้'",
 		"group": "transformation"
 	},
 	{
