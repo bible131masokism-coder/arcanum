@@ -39,15 +39,15 @@ export default {
 		<div>
 			<table>
 				<tr>
-					<td>name</td>
+					<td>ชื่อ</td>
 					<th class="text-entry"><input class="fld-name" type="text" v-model="char.name" /></th>
 				</tr>
 				<tr>
-					<td>level</td>
+					<td>ระดับ</td>
 					<th>{{ level }}</th>
 				</tr>
 				<tr>
-					<td>exp</td>
+					<td>ค่าประสบการณ์</td>
 					<th>{{ exp }} / {{ next }}</th>
 				</tr>
 			</table>

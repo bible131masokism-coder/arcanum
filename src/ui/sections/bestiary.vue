@@ -67,7 +67,7 @@ export default {
 			return m.canUse(this.game) && this.minions.freeSpace() > 0;
 		},
 		isSummon(m) {
-			if (m.hasTag('t_summon')) return " (Summon)"
+			if (m.hasTag('t_summon')) return " (เรียก)"
 			else return ""
 		}
 	},
@@ -112,7 +112,7 @@ export default {
 		<filterbox v-model="filtered" :prop="searchIt" :items="allItems" />
 		<span class="chkSummons">
 			<input :id="elmId('showSummons')" type="checkbox" v-model="fltSummon" />
-			<label :for="elmId('showSummons')">Only Summons</label>
+			<label :for="elmId('showSummons')">เฉพาะการเรียกเท่านั้น</label>
 		</span>
 	</div>
 	<div class="bestiary">
@@ -120,10 +120,10 @@ export default {
 		<div class="char-list">
 			<table class="bestiary">
 				<tr>
-					<th class="table-head" @click="setSort('name')">Creature</th>
-					<th class="table-head" @click="setSort('level')">Level</th>
-					<th class="table-head" @click="setSort('value')">Slain</th>
-					<th class="table-head" @click="setSort('hp')">Hp</th>
+					<th class="table-head" @click="setSort('name')">สิ่งมีชีวิต</th>
+					<th class="table-head" @click="setSort('level')">ระดับ</th>
+					<th class="table-head" @click="setSort('value')">ถูกฆ่า</th>
+					<th class="table-head" @click="setSort('hp')">พลังชีวิต</th>
 				</tr>
 				<tr v-for="m in sorted" :key="m.id" @mouseenter.capture.stop="itemOver($event, m)">
 					<th class="lg-name">{{ m.name.toTitleCase() + isSummon(m) }}</th>
@@ -132,7 +132,7 @@ export default {
 					<td class="num-align">{{ Math.floor(m.hp) }}</td>
 
 					<td v-if="canShowBuy(m)">
-						<button type="button" @click="tryUse(m)" :disabled="!canBuy(m)">Buy</button>
+						<button type="button" @click="tryUse(m)" :disabled="!canBuy(m)">ซื้อ</button>
 					</td>
 				</tr>
 			</table>

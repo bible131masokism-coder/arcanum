@@ -97,7 +97,7 @@ export default {
 				class="raid-btn"
 				@click="emit(HALT_TASK, explore.locale)"
 				@mouseenter.capture.stop="itemOver($event, explore.locale)">
-				Flee
+				หลบหนี
 			</button>
 		</span>
 

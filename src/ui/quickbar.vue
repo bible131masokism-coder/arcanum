@@ -41,8 +41,8 @@ export default {
 	</div>
 	<div class="quickbar" v-else>
 		<p class="info-text">
-			Roll-over Item and hold {Shift} + {Number} to assign quickslot.<br />
-			Press {Number} again to use quickslot Item.
+			เลื่อนเมาส์ไปที่ไอเทมแล้วกด {Shift} + {Number} ค้างไว้เพื่อกำหนดช่องลัด<br />
+			กด {Number} อีกครั้งเพื่อใช้ไอเทมในช่องลัด
 		</p>
 	</div>
 </template>

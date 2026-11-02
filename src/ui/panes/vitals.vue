@@ -93,7 +93,7 @@ export default {
 			return this.showMana || this.labelManaElemental || this.labelManaPrimal || this.labelManaFundamental;
 		},
 		hideTip() {
-			return "Used to hide and unhide entries. This setting is retained between characters.";
+			return "ใช้เพื่อซ่อนและแสดงรายการ ตัวเลือกนี้จะถูกจำไว้ระหว่างตัวละคร";
 		},
 	},
 };
@@ -111,15 +111,15 @@ export default {
 		</div>
 		<!-- anything not a table is a headache -->
 		<div class="statbars">
-			<div class="category-label">Body</div>
+			<div class="category-label">ร่างกาย</div>
 			<div class="hidable statbar" data-key="hp" v-show="show(hp)">
-				<span class="name">life</span>
+				<span class="name">ชีวิต</span>
 				<span class="barspan">
 					<progbar type="hp" :value="hp.valueOf()" :max="hp.max.value" @mouseenter="itemOver($event, hp)" />
 				</span>
 			</div>
 			<div class="hidable statbar" data-key="barrier" v-show="showBarrier">
-				<span class="name">barrier</span>
+				<span class="name">บาเรีย</span>
 				<span class="barspan">
 					<progbar
 						type="barrier"
@@ -129,7 +129,7 @@ export default {
 				</span>
 			</div>
 			<div class="hidable statbar" data-key="stamina" v-show="show(stamina)">
-				<span class="name">Stamina</span>
+				<span class="name">พลังกาย</span>
 				<span class="barspan">
 					<progbar
 						type="stamina"
@@ -139,7 +139,7 @@ export default {
 				</span>
 			</div>
 			<div class="hidable statbar" data-key="vigor" v-show="show(vigor)">
-				<span class="name">vigor</span>
+				<span class="name">กำลังวังชา</span>
 				<span class="barspan">
 					<progbar
 						type="vigor"
@@ -148,9 +148,9 @@ export default {
 						@mouseenter="itemOver($event, vigor)" />
 				</span>
 			</div>
-			<div class="category-label" v-show="labelManas">Prismatic Energies</div>
+			<div class="category-label" v-show="labelManas">พลังงานปริซึม</div>
 			<div class="hidable statbar" data-key="mana" v-show="showMana">
-				<span class="name">mana</span>
+				<span class="name">มานา</span>
 				<span class="barspan">
 					<progbar
 						type="mana"
@@ -159,7 +159,7 @@ export default {
 						@mouseenter="itemOver($event, mana)" />
 				</span>
 			</div>
-			<div class="subcategory-label" v-show="labelManaElemental">Elemental</div>
+			<div class="subcategory-label" v-show="labelManaElemental">ธาตุ</div>
 			<div class="hidable statbar fade-in" v-for="it in visManaElementList" :key="it.key" :data-key="it.id">
 				<span class="name">{{ it.name }}</span>
 				<span class="barspan">
@@ -171,7 +171,7 @@ export default {
 						@mouseenter="itemOver($event, it)" />
 				</span>
 			</div>
-			<div class="subcategory-label" v-show="labelManaPrimal">Primal</div>
+			<div class="subcategory-label" v-show="labelManaPrimal">ปฐมธาตุ</div>
 			<div class="hidable statbar fade-in" v-for="it in visManaPrimalList" :key="it.key" :data-key="it.id">
 				<span class="name">{{ it.name }}</span>
 				<span class="barspan">
@@ -183,7 +183,7 @@ export default {
 						@mouseenter="itemOver($event, it)" />
 				</span>
 			</div>
-			<div class="category-label" v-show="labelManaFundamental">Fundamental Energies</div>
+			<div class="category-label" v-show="labelManaFundamental">พลังงานพื้นฐาน</div>
 			<div class="hidable statbar fade-in" v-for="it in visManaFundamentalList" :key="it.key" :data-key="it.id">
 				<span class="name">{{ it.name }}</span>
 				<span class="barspan">
@@ -195,7 +195,7 @@ export default {
 						@mouseenter="itemOver($event, it)" />
 				</span>
 			</div>
-			<div class="category-label" v-show="labelSpecialMenace">Specialties & Menaces</div>
+			<div class="category-label" v-show="labelSpecialMenace">ความเชี่ยวชาญและภัยคุกคาม</div>
 			<div class="hidable statbar fade-in" v-for="it in visSpecials" :key="it.key" :data-key="it.id">
 				<span class="name">{{ it.name }}</span>
 				<span class="barspan">

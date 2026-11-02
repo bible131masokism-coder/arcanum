@@ -10,8 +10,8 @@ export default {
 
 	data() {
 		return {
-			btnConfirm: this.confirm || "Confirm",
-			btnCancel: this.cancel || "Cancel",
+			btnConfirm: this.confirm || "ยืนยัน",
+			btnCancel: this.cancel || "ยกเลิก",
 			confirming: false,
 		};
 	},
@@ -47,7 +47,7 @@ export default {
 		<button type="button" @click="cancelClick">{{ btnCancel }}</button>
 	</span>
 	<span v-else class="my-span">
-		<button type="button" @click="mainClick"><slot>Delete</slot></button>
+		<button type="button" @click="mainClick"><slot>ลบ</slot></button>
 	</span>
 </template>
 

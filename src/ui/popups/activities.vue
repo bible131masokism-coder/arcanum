@@ -98,11 +98,11 @@ export default {
 			@mouseenter.capture.stop="
 				itemOver($event, 'Actions will only be performed if their outputs can be fully collected')
 			">
-			<label :for="elmId('ensure-max')">Maximized efficiency mode</label>
+			<label :for="elmId('ensure-max')">โหมดประสิทธิภาพสูงสุด</label>
 			<input type="checkbox" :id="elmId('ensure-max')" v-model="ensureMaxProduction" />
 		</div>
 		<div class="section" :key="'k' + activeKey">
-			<header>Activities ({{ activesLen }}/{{ runner.max }})</header>
+			<header>กิจกรรม ({{ activesLen }}/{{ runner.max }})</header>
 			<div v-for="(t, ind) in actives" :key="'a' + ind" class="task-info">
 				<button type="button" class="stop" @click="removeActive(t)">X</button>
 				<span class="task-name">{{ t.name.toTitleCase() }}</span>
@@ -127,13 +127,13 @@ export default {
 			</div>
 			<div class="relative" v-for="n in Math.max(Math.floor(runner.max - runner.actives.length), 0)">
 				<button type="button" class="stop" disabled>X</button>
-				<span>Idle</span>
+				<span>พัก</span>
 			</div>
 		</div>
 
 		<div class="section">
-			<header>Goals ({{ goals.length }}/{{ runner.goals.max }})</header>
-			<div v-if="goals.length === 0 && runner.goals.max < 1" class="note-text">None</div>
+			<header>เป้าหมาย ({{ goals.length }}/{{ runner.goals.max }})</header>
+			<div v-if="goals.length === 0 && runner.goals.max < 1" class="note-text">ไม่มี</div>
 			<div v-else>
 				<div v-for="(t, ind) in goals" :key="'p' + ind" class="task-info">
 					<button type="button" class="stop" @click="removeGoal(t)">X</button>
@@ -153,12 +153,12 @@ export default {
 			</div>
 			<div class="relative" v-for="n in Math.max(Math.floor(runner.goals.max - goals.length), 0)">
 				<button type="button" class="stop" disabled>X</button>
-				<span>None</span>
+				<span>ไม่มี</span>
 			</div>
 		</div>
 		<div class="section">
-			<header>Hobbies ({{ hobbies.length }}/{{ runner.hobbies.max }})</header>
-			<div v-if="hobbies.length === 0 && runner.hobbies.max < 1" class="note-text">None</div>
+			<header>งานอดิเรก ({{ hobbies.length }}/{{ runner.hobbies.max }})</header>
+			<div v-if="hobbies.length === 0 && runner.hobbies.max < 1" class="note-text">ไม่มี</div>
 			<div v-else>
 				<div v-for="(t, ind) in hobbies" :key="'p' + ind" class="task-info">
 					<button type="button" class="stop" @click="removePursuit(t)">X</button>
@@ -180,13 +180,13 @@ export default {
 			</div>
 			<div class="relative" v-for="n in Math.max(Math.floor(runner.hobbies.max - hobbies.length), 0)">
 				<button type="button" class="stop" disabled>X</button>
-				<span>None</span>
+				<span>ไม่มี</span>
 			</div>
 		</div>
 
 		<div class="section" :key="'w' + waitKey">
-			<header>Waiting/Blocked ({{ waiting.length }}/{{ runner.max + 5 }})</header>
-			<div v-if="waiting.length === 0" class="note-text">None</div>
+			<header>รอ/ถูกบล็อก ({{ waiting.length }}/{{ runner.max + 5 }})</header>
+			<div v-if="waiting.length === 0" class="note-text">ไม่มี</div>
 			<div v-else>
 				<div v-for="(t, ind) in [...waiting].reverse()" :key="'w' + ind" class="task-info">
 					<button type="button" class="stop" @click="removeWait(t)">X</button>

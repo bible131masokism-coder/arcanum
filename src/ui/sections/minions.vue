@@ -77,20 +77,20 @@ export default {
 	<div class="minions">
 		<filterbox v-model="filtered" :items="this.minions.items" :min-items="10" />
 
-		<div v-if="inExplore" class="warn-text">Cannot change active minions while adventuring</div>
+		<div v-if="inExplore" class="warn-text">ไม่สามารถเปลี่ยนมินเนี่ยนที่ใช้งานได้ระหว่างการผจญภัย</div>
 		<div class="minion-title">
-			<span>Owned Minions: {{ minions.count + " / " + Math.floor(minions.max) }}</span>
-			<span>Minions Levels: {{ Math.floor(allies.used) + " / " + Math.floor(allies.max.value) }}</span>
+			<span>มินเนี่ยนที่ครอบครอง: {{ minions.count + " / " + Math.floor(minions.max) }}</span>
+			<span>ระดับมินเนี่ยน: {{ Math.floor(allies.used) + " / " + Math.floor(allies.max.value) }}</span>
 		</div>
 
 		<div class="char-list">
 			<table>
 				<tr>
-					<th>Order</th>
-					<th>Creature</th>
-					<th class="num-align">Level</th>
-					<th class="num-align">Life & Barrier</th>
-					<th>Actions</th>
+					<th>ลำดับ</th>
+					<th>สิ่งมีชีวิต</th>
+					<th class="num-align">ระดับ</th>
+					<th class="num-align">พลังชีวิตและบาเรีย</th>
+					<th>การกระทำ</th>
 				</tr>
 				<tr
 					class="char-row"
@@ -121,18 +121,18 @@ export default {
 					</td>
 
 					<td v-if="!b.alive">
-						<span>Dead</span>
+						<span>ตาย</span>
 					</td>
 					<td v-else>
 						<button type="button" v-if="b.active" @click="toggleActive(b)" :disabled="inExplore">
-							Rest
+							พัก
 						</button>
 						<button
 							v-else
 							type="button"
 							@click="toggleActive(b)"
 							:disabled="inExplore || !allies.canAdd(b)">
-							Activate
+							เปิดใช้งาน
 						</button>
 					</td>
 					<td v-if="!b.alive">
@@ -148,7 +148,7 @@ export default {
 						</button>
 					</td>
 					<td>
-						<confirm @confirm="dismiss(b)">{{ "Dismiss" }}</confirm>
+						<confirm @confirm="dismiss(b)">{{ "ไล่ออก" }}</confirm>
 					</td>
 				</tr>
 			</table>

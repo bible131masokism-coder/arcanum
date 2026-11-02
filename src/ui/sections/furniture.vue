@@ -235,34 +235,34 @@ export default {
 			<span>
 				<span class="opt">
 					<input :id="elmId('showMax')" type="checkbox" v-model="chkShowMax" />
-					<label :for="elmId('showMax')">Maxed</label>
+					<label :for="elmId('showMax')">ถึงสูงสุด</label>
 				</span>
 
 				<span class="opt">
 					<input :id="elmId('showOwn')" type="checkbox" v-model="chkShowOwned" />
-					<label :for="elmId('showOwn')">Owned</label>
+					<label :for="elmId('showOwn')">ครอบครอง</label>
 				</span>
 
 				<span class="opt">
 					<input :id="elmId('showUnowned')" type="checkbox" v-model="chkShowUnowned" />
-					<label :for="elmId('showUnowned')">Unowned</label>
+					<label :for="elmId('showUnowned')">ยังไม่ครอบครอง</label>
 				</span>
 
 				<span class="opt">
 					<input :id="elmId('showBlock')" type="checkbox" v-model="chkShowBlocked" />
-					<label :for="elmId('showBlock')">Blocked</label>
+					<label :for="elmId('showBlock')">ถูกกีดขวาง</label>
 				</span>
 			</span>
 
 			<filterbox class="inline" v-model="filtered" :prop="searchIt" :items="sortedViewable" />
 
-			<span class="space">Space: {{ Math.floor(space.free()) }} / {{ Math.floor(space.max.value) }}</span>
+			<span class="space">พื้นที่: {{ Math.floor(space.free()) }} / {{ Math.floor(space.max.value) }}</span>
 		</div>
 
 		<div class="warn-text" style="text-align: center" v-if="empty()">
-			No space remaining. Sell items or find a new Home.
+			ไม่มีพื้นที่เหลือแล้ว ขายไอเทมหรือหาบ้านใหม่
 			<span v-if="homesAvail.length > 0">
-				If your max gold is not enough to buy a new home, free space for more chests.
+				หากทองสูงสุดของคุณไม่เพียงพอจะซื้อบ้านใหม่ จงเพิ่มพื้นที่ว่างเพื่อหีบเพิ่ม
 			</span>
 		</div>
 
@@ -271,7 +271,7 @@ export default {
 				<thead>
 					<tr>
 						<th class="spaceheader">
-							Space
+							พื้นที่
 							<button
 								type="button"
 								:class="{ stop: sortColumn == 'Space', sortbutton: true }"
@@ -280,7 +280,7 @@ export default {
 						</th>
 
 						<th class="nameheader">
-							Furnishing
+							เฟอร์นิเจอร์
 							<button
 								type="button"
 								:class="{ stop: sortColumn == 'Furnishing', sortbutton: true }"
@@ -288,7 +288,7 @@ export default {
 								:textContent="sortColumn == 'Furnishing' ? (sortDir > 0 ? '↑' : '↓') : '↑↓'"></button>
 						</th>
 
-						<th>Owned</th>
+						<th>ครอบครอง</th>
 						<th />
 						<th />
 					</tr>
@@ -313,20 +313,20 @@ export default {
 						</template>
 
 						<td>
-							<span v-if="it.maxed()" class="sm">Max</span>
+							<span v-if="it.maxed()" class="sm">สูงสุด</span>
 							<button
 								v-else
 								type="button"
 								:disabled="!it.canUse()"
 								class="buy-btn"
 								@click="emit('upgrade', it)">
-								Buy
+								ซื้อ
 							</button>
 						</td>
 
 						<td>
 							<button type="button" :disabled="it.value <= 0" class="sell-btn" @click="emit('sell', it)">
-								Sell
+								ขาย
 							</button>
 						</td>
 					</tr>

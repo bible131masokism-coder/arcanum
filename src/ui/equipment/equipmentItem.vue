@@ -40,16 +40,16 @@ export default {
 		<div class="item-name">{{ title }}</div>
 		<div class="item-actions">
 			<template v-if="craft">
-				<button class="item-action" :disabled="!canCraft()" @click="$emit('action', 'craft')">Craft</button>
-				<span v-if="!canTake()">Full inventory!</span>
+				<button class="item-action" :disabled="!canCraft()" @click="$emit('action', 'craft')">สร้าง</button>
+				<span v-if="!canTake()">คลังเต็ม!</span>
 			</template>
 			<template v-else-if="enchant">
 				<button class="item-action" @click="$emit('action', 'enchant')">X</button>
-				<span v-if="!canEnchant()">Full!</span>
+				<span v-if="!canEnchant()">เต็ม!</span>
 			</template>
 			<template v-else>
 				<button class="item-action" v-if="loot" :disabled="!canTake()" @click="$emit('action', 'take')">
-					Take
+					รับ
 				</button>
 				<template v-else>
 					<button
@@ -57,21 +57,21 @@ export default {
 						v-if="item.equippable"
 						:disabled="!canEquip()"
 						@click="$emit('action', 'equip')">
-						Equip
+						สวมใส่
 					</button>
 					<button
 						class="item-action"
 						v-if="!enchantingLocked && item.enchants && item.enchants.max > 0"
 						@click="$emit('action', 'enchant')">
-						Enchant
+						เสริมเวท
 					</button>
 					<button class="item-action" v-if="item.use" :disabled="!canUse()" @click="$emit('action', 'use')">
-						Use
+						ใช้
 					</button>
 				</template>
-				<button class="item-action" @click="$emit('action', 'sell', 1)">Sell</button>
+				<button class="item-action" @click="$emit('action', 'sell', 1)">ขาย</button>
 				<button class="item-action" v-if="item.count > 1" @click="$emit('action', 'sell', item.count)">
-					Sell All
+					ขายทั้งหมด
 				</button>
 			</template>
 		</div>

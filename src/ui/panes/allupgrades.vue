@@ -119,7 +119,7 @@ export default {
 				.sort(alphasort);
 		},
 		searchTip() {
-			return "Click to enable searching";
+			return "คลิกเพื่อเปิดการค้นหา";
 		},
 	},
 };
@@ -128,20 +128,20 @@ export default {
 <template>
 	<div class="allupgrades">
 		<div class="up-list">
-			<div v-if="classes.length != 0" class="div-hr">Classes</div>
+			<div v-if="classes.length != 0" class="div-hr">คลาส</div>
 			<div v-for="it in classes" :key="it.id" @mouseenter.capture.stop="itemOver($event, it)">
 				{{ it.name.toTitleCase() + count(it) }}
 			</div>
-			<div v-if="tiers.length != 0" class="div-hr">Tiers</div>
+			<div v-if="tiers.length != 0" class="div-hr">ขั้น</div>
 			<div v-for="it in tiers" :key="it.id" @mouseenter.capture.stop="itemOver($event, it)">
 				{{ it.name.toTitleCase() + count(it) }}
 			</div>
-			<div v-if="morals.length != 0" class="div-hr">Morality</div>
+			<div v-if="morals.length != 0" class="div-hr">ศีลธรรม</div>
 			<div v-for="it in morals" :key="it.id" @mouseenter.capture.stop="itemOver($event, it)">
 				{{ it.name.toTitleCase() + count(it) }}
 			</div>
 			<div v-if="possessions.length != 0" class="div-hr">
-				Upgrades
+				อัปเกรด
 				<button
 					@mouseenter.capture.stop="itemOver($event, searchTip)"
 					v-if="!showFilter"
@@ -154,7 +154,7 @@ export default {
 			<div v-for="it in displayList" :key="it.id" @mouseenter.capture.stop="itemOver($event, it)">
 				{{ it.name.toTitleCase() + count(it) }}
 			</div>
-			<div v-if="hallUpgrades.length != 0" class="div-hr">Hall Upgrades</div>
+			<div v-if="hallUpgrades.length != 0" class="div-hr">อัปเกรดห้องโถง</div>
 			<div v-for="it in hallUpgrades" :key="it.id" @mouseenter.capture.stop="itemOver($event, it)">
 				{{ it.name.toTitleCase() + count(it) }}
 			</div>

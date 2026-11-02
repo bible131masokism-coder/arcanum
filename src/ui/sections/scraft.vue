@@ -27,7 +27,7 @@ export default {
 				 * Craft info object.
 				 */
 				craft: {
-					name: "Crafted Spell",
+					name: "เวทที่สร้างขึ้น",
 					level: 0,
 					buy: null,
 				},
@@ -342,7 +342,7 @@ export default {
 <template>
 	<div class="spellcraft">
 		<div class="userspells">
-			<div>Custom Spells: {{ Math.floor(userSpells.used) + " / " + Math.floor(userSpells.max.value) }}</div>
+			<div>เวทที่กำหนดเอง: {{ Math.floor(userSpells.used) + " / " + Math.floor(userSpells.max.value) }}</div>
 			<div class="custSpellList">
 				<div v-for="c in userSpells.items" :key="c.id" @mouseenter.capture.stop="itemOver($event, c)">
 					<span class="text-entry">
@@ -356,7 +356,7 @@ export default {
 			<div class="spellControls">
 				<div class="inputgroup">
 					<filterbox v-model="spellsBySearch" :prop="searchSpell" :items="spellsByLevel" />
-					<label class="level-lbl" :for="elmId('level')">Level</label>
+					<label class="level-lbl" :for="elmId('level')">ระดับ</label>
 					<input class="level" :id="elmId('level')" type="number" v-model="minLevel" min="0" size="5" />
 				</div>
 				<div class="keywordcontainer">
@@ -378,8 +378,8 @@ export default {
 					</div>
 				</div>
 				<div class="buttongroup">
-					<button type="button" @click="toggleKeywords">Keywords</button>
-					<button type="button" @click="toggleAllSchools">Toggle Schools</button>
+					<button type="button" @click="toggleKeywords">คีย์เวิร์ด</button>
+					<button type="button" @click="toggleAllSchools">สลับสำนักเวท</button>
 				</div>
 				<div class="bottom">
 					<div class="spellbook">
@@ -400,10 +400,10 @@ export default {
 						<input class="fld-name" :id="elmId('spName')" type="text" v-model="craft.name" />
 					</div>
 					<span @mouseenter.capture.stop="itemOver($event, this.prelimSpell())">
-						<button type="button" @click="create" :disabled="!canCraft">Craft</button>
+						<button type="button" @click="create" :disabled="!canCraft">สร้าง</button>
 					</span>
 					<span class="warn-text" v-if="scraftlist.used >= scraftlist.max">
-						You are at your power limit.
+						คุณถึงขีดจำกัดพลังแล้ว
 					</span>
 				</div>
 				<spelllist class="spelllist" :list="scraftlist" />

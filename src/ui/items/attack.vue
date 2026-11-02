@@ -33,16 +33,16 @@ export default {
 		precise,
 		calcAffected(condition, strict, all, afflicted, targetstr = "", conditiontext = null) {
 			// Strict Targeting
-			targetstr += ", " + (strict ? "only targeting " : "prioritizing ");
+			targetstr += ", " + (strict ? "กำหนดเป้าหมายเฉพาะ " : "ให้ความสำคัญกับ ");
 
 			// Affected / Non-affected targeting
-			targetstr += "those " + (!afflicted ? "not " : "") + "affected by ";
+			targetstr += "ผู้ที่" + (!afflicted ? "ไม่" : "") + "ได้รับผลจาก ";
 
 			if (condition.length > 1) {
 				// Any / All targeting
-				if (!all !== !afflicted) targetstr += "any of ";
-				else if (all) targetstr += "all of ";
-				else targetstr += "at least one of ";
+				if (!all !== !afflicted) targetstr += "อย่างใดอย่างหนึ่งของ ";
+				else if (all) targetstr += "ทุก ๆ ";
+				else targetstr += "อย่างน้อยหนึ่งใน ";
 			}
 
 			// Targets
@@ -113,7 +113,7 @@ export default {
 			return curestring;
 		},
 		calcTarget() {
-			let targetstring = this.attack.targetstring || this.target || this.attack.targets || "enemy";
+			let targetstring = this.attack.targetstring || this.target || this.attack.targets || "ศัตรู";
 			targetstring = targetstring.toTitleCase();
 			if (this.attack.targetspec) {
 				let targetspec = this.attack.targetspec;
@@ -205,7 +205,7 @@ export default {
 		</div>
 		<div v-else>
 			<div v-if="percent">
-				<div>Chance to perform: {{ percent }}</div>
+				<div>โอกาสในการโจมตี: {{ percent }}</div>
 			</div>
 			<div
 				v-if="
@@ -219,55 +219,55 @@ export default {
 					attack.cure
 				">
 				<div v-if="attack.name && attack.name !== item.name">
-					<span>Name: </span><span>{{ attack.name.toString().toTitleCase() }}</span>
+					<span>ชื่อ: </span><span>{{ attack.name.toString().toTitleCase() }}</span>
 				</div>
 				<div v-if="attack.damagedesc && this.hideDmg">{{ attack.damagedesc }}</div>
 				<div v-if="damage">
 					<div v-if="!this.hideDmg" class="damage">
-						Est. damage: {{ damage }}<span v-if="bonus">{{ bonus }}</span>
+						ความเสียหายโดยประมาณ: {{ damage }}<span v-if="bonus">{{ bonus }}</span>
 					</div>
-					<div v-if="attack.repeathits">Total hits: {{ attack.repeathits }}</div>
-					<div v-if="attack.kind">Damage Type: {{ attack.kind.toString().toTitleCase() }}</div>
-					<div v-if="potencyPrimary.length > 0">Primary Potencies: {{ potencyPrimary }}</div>
-					<div v-if="potencySecondary.length > 0">Secondary Potencies: {{ potencySecondary }}</div>
-					<div v-if="attack.leech">Returns {{ leech }} of damage as healing</div>
-					<div v-if="attack.nodefense">Ignores defense</div>
-					<div v-if="attack.unreflectable">Ignores retaliation effects</div>
-					<div v-if="hitBonus">Hit Bonus: {{ precise(hitBonus) }}</div>
+					<div v-if="attack.repeathits">จำนวนครั้งโจมตีทั้งหมด: {{ attack.repeathits }}</div>
+					<div v-if="attack.kind">ประเภทความเสียหาย: {{ attack.kind.toString().toTitleCase() }}</div>
+					<div v-if="potencyPrimary.length > 0">ศักยภาพหลัก: {{ potencyPrimary }}</div>
+					<div v-if="potencySecondary.length > 0">ศักยภาพรอง: {{ potencySecondary }}</div>
+					<div v-if="attack.leech">เปลี่ยนความเสียหาย {{ leech }} เป็นการรักษา</div>
+					<div v-if="attack.nodefense">ไม่สนใจการป้องกัน</div>
+					<div v-if="attack.unreflectable">ไม่สนใจเอฟเฟกต์โต้กลับ</div>
+					<div v-if="hitBonus">โบนัสโจมตี: {{ precise(hitBonus) }}</div>
 				</div>
 
 				<div v-if="healing">
 					<div v-if="!this.hideDmg" class="damage">
-						Est. healing: {{ healing }}<span v-if="bonus">{{ bonus }}</span>
+						การรักษาโดยประมาณ: {{ healing }}<span v-if="bonus">{{ bonus }}</span>
 					</div>
-					<div v-if="attack.kind">Heal Type: {{ attack.kind.toString().toTitleCase() }}</div>
-					<div v-if="potencyPrimary.length > 0">Primary Potencies: {{ potencyPrimary }}</div>
-					<div v-if="potencySecondary.length > 0">Secondary Potencies: {{ potencySecondary }}</div>
+					<div v-if="attack.kind">ประเภทการรักษา: {{ attack.kind.toString().toTitleCase() }}</div>
+					<div v-if="potencyPrimary.length > 0">ศักยภาพหลัก: {{ potencyPrimary }}</div>
+					<div v-if="potencySecondary.length > 0">ศักยภาพรอง: {{ potencySecondary }}</div>
 				</div>
-				<div v-if="attack.nododge">Cannot be dodged</div>
-				<div v-if="attack.harmless">Cannot be dodged</div>
-				<div v-if="attack.cure">Cures: {{ cureeffects }}</div>
-				<div v-if="attack.targets || attack.targetspec">Targets: {{ calcTarget }}{{ maxTargets }}</div>
-				<div v-if="attack.only">Only Affects: {{ only }}</div>
+				<div v-if="attack.nododge">ไม่สามารถหลบได้</div>
+				<div v-if="attack.harmless">ไม่สามารถหลบได้</div>
+				<div v-if="attack.cure">รักษา: {{ cureeffects }}</div>
+				<div v-if="attack.targets || attack.targetspec">เป้าหมาย: {{ calcTarget }}{{ maxTargets }}</div>
+				<div v-if="attack.only">ส่งผลเฉพาะ: {{ only }}</div>
 				<div v-if="attack.summon">
-					<div class="info-sect">Summons:</div>
+					<div class="info-sect">เรียก:</div>
 					<summon :item="item" :smn="attack.summon" class="info-subsubsect" />
 				</div>
-				<div v-if="attack.result" class="info-sect">Results:</div>
+				<div v-if="attack.result" class="info-sect">ผลลัพธ์:</div>
 				<info v-if="attack.result" :info="attack.result" :target="shortTarget" />
-				<div v-if="attack.acquire" class="info-sect">Produces:</div>
+				<div v-if="attack.acquire" class="info-sect">ผลิต:</div>
 				<info v-if="attack.acquire" :info="attack.acquire" :target="shortTarget" />
 			</div>
 
 			<div v-if="attack.hits">
 				<div v-for="(hit, idx) in attack.hits" :key="'hit-' + idx">
-					<div class="info-sect">Attack hit</div>
+					<div class="info-sect">การโจมตีที่โดน</div>
 					<attack :item="item" :atk="hit" :hideDmg="this.hideDmg" class="info-subsubsect" />
 				</div>
 			</div>
 
 			<div v-if="attack.dot">
-				<div class="info-sect">Applies</div>
+				<div class="info-sect">ใช้เอฟเฟกต์</div>
 				<dot
 					:dot="attack.dot"
 					:item="attack"

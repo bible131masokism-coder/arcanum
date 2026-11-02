@@ -48,11 +48,11 @@ export default {
 	<div class="top-bar">
 		<span class="load-opts">
 			<login v-if="Profile.CLOUD" />
-			<button type="button" @click="dispatch('save')">Save</button>
-			<button type="button" @click="dispatch('load')">Load</button>
-			<button type="button" @click="emit('save-file-check', $event)">Get Save</button>
+			<button type="button" @click="dispatch('save')">บันทึก</button>
+			<button type="button" @click="dispatch('load')">โหลด</button>
+			<button type="button" @click="emit('save-file-check', $event)">รับไฟล์เซฟ</button>
 			<button type="button" v-if="hasHall" class="text-button" @click="dispatch('hall-file', $event)">
-				Hall Save
+				เซฟห้องโถง
 			</button>
 			<!--<input type="file" name="[File]" accept="text/json" @change="fileDrop">-->
 			<button
@@ -63,7 +63,7 @@ export default {
 				@dragover="fileDrag"
 				@dragleave.capture.stop="dragOut"
 				name="[Load Save]">
-				[Load Save]
+				[โหลดเซฟ]
 			</button>
 			<input ref="fileInput" type="file" @change="fileSelect" accept="text/json text/*" />
 		</span>
@@ -71,7 +71,7 @@ export default {
 			<slot name="center"></slot>
 		</span>
 		<span class="link-bar">
-			<a class="item" href="https://arcanumtesting.gitlab.io/arcanum/" target="_blank">Test Site</a>
+			<a class="item" href="https://arcanumtesting.gitlab.io/arcanum/" target="_blank">ไซต์ทดสอบ</a>
 			<a class="item" href="https://discord.gg/bCABC96" target="_blank">Discord</a>
 			<a class="item" href="https://theoryofmagic.miraheze.org/wiki/Main_Page" target="_blank">Wiki</a>
 			<a class="item" href="https://www.reddit.com/r/wizrobe/" target="_blank">Reddit</a>

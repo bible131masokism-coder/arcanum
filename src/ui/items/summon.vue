@@ -42,14 +42,14 @@ export default {
 		</div>
 		<div v-else>
 			<div v-if="percent">
-				<div>Chance to summon: {{ percent }}</div>
+				<div>โอกาสในการเรียก: {{ percent }}</div>
 			</div>
 			<div v-if="summoncondition">
-				<div>Conditional: {{ summoncondition }}</div>
+				<div>เงื่อนไข: {{ summoncondition }}</div>
 			</div>
-			<div>Name: {{ itemName }}{{ count }}</div>
-			<div>Max: {{ cap }}</div>
-			<div v-if="keep">Instead of summoning, creates a permanent minion.</div>
+			<div>ชื่อ: {{ itemName }}{{ count }}</div>
+			<div>สูงสุด: {{ cap }}</div>
+			<div v-if="keep">แทนที่จะเรียกชั่วคราว จะสร้างมินเนี่ยนถาวร</div>
 		</div>
 	</div>
 </template>

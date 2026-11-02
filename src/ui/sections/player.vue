@@ -41,7 +41,7 @@ export default {
 			return this.player.speed.value;
 		},
 		delay() {
-			return "".concat("Turn delay: ", getDelay(this.player.speed.value).toPrecision(2), " seconds");
+			return "".concat("หน่วงเทิร์น: ", getDelay(this.player.speed.value).toPrecision(2), " วินาที");
 		},
 		bonusNames() {
 			return Object.keys(this.player.bonuses);
@@ -155,32 +155,32 @@ export default {
 		},
 		notorietyTip() {
 			return this.hallUnlocked
-				? "A measure of reputation. Each point of notoriety provides one point of hall prestige. Hall prestige may be spent to purchase Hall Upgrades."
-				: "A measure of reputation. Found a Wizard's Hall to learn more.";
+				? "การวัดชื่อเสียง แต้มชื่อเสียงฉาวโฉ่แต่ละแต้มให้เกียรติยศห้องโถงหนึ่งแต้ม เกียรติยศห้องโถงสามารถใช้ซื้ออัปเกรดห้องโถงได้"
+				: "การวัดชื่อเสียง ค้นพบห้องโถงจอมเวทเพื่อเรียนรู้เพิ่มเติม";
 		},
 		defenseTip() {
-			return "Reduces damage taken.";
+			return "ลดความเสียหายที่ได้รับ";
 		},
 		dodgeTip() {
-			return "Determines your chance to dodge.";
+			return "กำหนดโอกาสในการหลบหลีกของคุณ";
 		},
 		thornsTip() {
-			return "Retaliates with flat damage when struck by an enemy. Reduced by enemy defense.";
+			return "โต้กลับด้วยความเสียหายคงที่เมื่อโดนศัตรูโจมตี ลดลงตามการป้องกันของศัตรู";
 		},
 		reflectTip() {
-			return "Retaliates with percentage of damage taken when struck by an enemy. Reduced by enemy defense.";
+			return "โต้กลับด้วยเปอร์เซ็นต์ของความเสียหายที่ได้รับเมื่อโดนศัตรูโจมตี ลดลงตามการป้องกันของศัตรู";
 		},
 		hitTip() {
-			return "Determines your accuracy. Every 100 hit bonus halves opponents effective dodge";
+			return "กำหนดความแม่นยำของคุณ ทุกโบนัสโจมตี 100 แต้มจะลดการหลบหลีกที่มีประสิทธิภาพของคู่ต่อสู้ลงครึ่งหนึ่ง";
 		},
 		luckTip() {
-			return "Increases your overall chance to gain loot.";
+			return "เพิ่มโอกาสโดยรวมของคุณในการได้รับของรางวัล";
 		},
 		chainhitTip() {
-			return "Each point means an additional attack is made each turn. Fractional amounts translate to a percentage chance (eg:- 0.2 equals 20%).";
+			return "แต่ละแต้มหมายถึงการโจมตีเพิ่มเติมหนึ่งครั้งในแต่ละเทิร์น ค่าเศษส่วนแปลงเป็นเปอร์เซ็นต์โอกาส (เช่น 0.2 เท่ากับ 20%)";
 		},
 		chaincastTip() {
-			return "Each point means an additional spell cast each turn. Fractional amounts translate to a percentage chance (eg:- 0.2 equals 20%).";
+			return "แต่ละแต้มหมายถึงการร่ายเวทเพิ่มเติมหนึ่งครั้งในแต่ละเทิร์น ค่าเศษส่วนแปลงเป็นเปอร์เซ็นต์โอกาส (เช่น 0.2 เท่ากับ 20%)";
 		},
 	},
 	methods: {
@@ -201,7 +201,7 @@ export default {
 				},
 				elm: $evt.target,
 				strings: true,
-				title: "Titles",
+				title: "ตำแหน่ง",
 			});
 		},
 	},
@@ -219,50 +219,50 @@ export default {
 						<button type="button" @click="openHall">{{ hallName }}</button>
 					</span>
 				</h3>
-				<span @mouseenter.capture.stop="itemOver($event, player.titles, { title: 'Titles' })">
+				<span @mouseenter.capture.stop="itemOver($event, player.titles, { title: 'ตำแหน่ง' })">
 					<button
 						v-if="player.titles.length > 0"
 						type="button"
 						class="titleConfig"
 						@click="pickTitle($event)"></button>
-					<strong>Title: {{ title }}</strong>
+					<strong>ตำแหน่ง: {{ title }}</strong>
 				</span>
 			</div>
 			<div class="stat-block">
-				<div class="slotpick"><strong>Body shape</strong><slotpick pick="bodyplan" /></div>
-				<div class="slotpick"><strong>Leisure</strong><slotpick pick="leisure" canRemove="true" /></div>
-				<div class="slotpick"><strong>Mount</strong><slotpick pick="mount" canRemove="true" /></div>
-				<div class="slotpick"><strong>Companion</strong><slotpick pick="companion" canRemove="true" /></div>
+				<div class="slotpick"><strong>รูปร่าง</strong><slotpick pick="bodyplan" /></div>
+				<div class="slotpick"><strong>เวลาว่าง</strong><slotpick pick="leisure" canRemove="true" /></div>
+				<div class="slotpick"><strong>พาหนะ</strong><slotpick pick="mount" canRemove="true" /></div>
+				<div class="slotpick"><strong>สหาย</strong><slotpick pick="companion" canRemove="true" /></div>
 			</div>
-			<h4 class="section-header">Personal</h4>
+			<h4 class="section-header">ส่วนตัว</h4>
 			<div class="stat-block">
 				<div class="stat">
-					<strong>Level<br />Experience</strong>
+					<strong>ระดับ<br />ค่าประสบการณ์</strong>
 					<span>{{ level }}<br />{{ exp }} / {{ next }}</span>
 				</div>
 				<div class="stat">
-					<strong>Virtue<br />Evil</strong>
+					<strong>คุณธรรม<br />ความชั่ว</strong>
 					<span>
 						{{ Math.floor(player.virtue.valueOf()) }}<br />{{ Math.floor(player.evilamt.valueOf()) }}
 					</span>
 				</div>
 				<div class="stat" @mouseenter.capture.stop="itemOver($event, notorietyTip)">
-					<strong>Notoriety:</strong>
+					<strong>ชื่อเสียงฉาวโฉ่:</strong>
 					<span>{{ Math.floor(player.fame.valueOf()) }}</span>
 				</div>
 			</div>
-			<h4 class="section-header">Combat</h4>
+			<h4 class="section-header">การต่อสู้</h4>
 			<div class="stat-block">
 				<div class="stat" @mouseenter.capture.stop="itemOver($event, defenseTip)">
-					<strong>Defense:</strong>
+					<strong>การป้องกัน:</strong>
 					<span>{{ defense }} ({{ (100 - 100 * player.getDefenseMultiplier()).toFixed(1) }}%)</span>
 				</div>
 				<div class="stat" @mouseenter.capture.stop="itemOver($event, dodgeTip)">
-					<strong>Dodge:</strong>
+					<strong>การหลบหลีก:</strong>
 					<span>{{ dodge }} ({{ (100 * player.getDodgeChance()).toFixed(1) }}%)</span>
 				</div>
 				<div class="stat" v-if="thorns > 0" @mouseenter.capture.stop="itemOver($event, thornsTip)">
-					<strong>Thorns:</strong>
+					<strong>หนาม:</strong>
 					<span>{{ thorns }}</span>
 				</div>
 				<!--
@@ -272,32 +272,32 @@ export default {
 				</div>
 				-->
 				<div class="stat" @mouseenter.capture.stop="itemOver($event, hitTip)">
-					<strong>Hit Bonus:</strong>
+					<strong>โบนัสโจมตี:</strong>
 					<span>{{ precise(tohit) }}</span>
 				</div>
 				<div class="stat" @mouseenter.capture.stop="itemOver($event, delay)">
-					<strong>Speed:</strong>
+					<strong>ความเร็ว:</strong>
 					<span>{{ speed }}</span>
 				</div>
 				<div class="stat" @mouseenter.capture.stop="itemOver($event, luckTip)">
-					<strong>Luck:</strong>
+					<strong>โชค:</strong>
 					<span>{{ luck }}</span>
 				</div>
 				<div v-if="chainhit > 0">
 					<div class="stat" @mouseenter.capture.stop="itemOver($event, chainhitTip)">
-						<strong>Extra Attacks:</strong>
+						<strong>การโจมตีพิเศษ:</strong>
 						<span>{{ chainhit }}</span>
 					</div>
 				</div>
 				<div v-if="chaincast > 0">
 					<div class="stat" @mouseenter.capture.stop="itemOver($event, chaincastTip)">
-						<strong>Extra Spell Casts:</strong>
+						<strong>การร่ายเวทพิเศษ:</strong>
 						<span>{{ chaincast }}</span>
 					</div>
 				</div>
 			</div>
 			<div>
-				<h4 class="section-header">Global Potencies</h4>
+				<h4 class="section-header">ศักยภาพโดยรวม</h4>
 				<div class="stat-block">
 					<template v-for="(r, k) in globalPotencies" :key="k">
 						<div class="stat">
@@ -306,7 +306,7 @@ export default {
 						</div>
 					</template>
 				</div>
-				<h4 class="section-header">Potencies</h4>
+				<h4 class="section-header">ศักยภาพ</h4>
 				<div class="stat-block">
 					<template v-for="(r, k) in schoolPotencies" :key="k">
 						<div class="stat">
@@ -315,7 +315,7 @@ export default {
 						</div>
 					</template>
 				</div>
-				<h4 class="section-header">Status Negation</h4>
+				<h4 class="section-header">การลบล้างสถานะ</h4>
 				<div class="stat-block">
 					<template v-for="(r, k) in player.negate" :key="k">
 						<div class="stat">
@@ -324,7 +324,7 @@ export default {
 						</div>
 					</template>
 				</div>
-				<h4 class="section-header">Resists</h4>
+				<h4 class="section-header">ความต้านทาน</h4>
 				<div class="stat-block">
 					<template v-for="(r, k) in orderedResist" :key="k">
 						<div class="stat">

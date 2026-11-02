@@ -302,7 +302,7 @@ export default {
 			<div class="inputgroup">
 				<filterbox v-model="potionsBySearch" :prop="searchPotion" :items="potionsByLevel" />
 
-				<label class="level-lbl" :for="elmId('level')">Level</label>
+				<label class="level-lbl" :for="elmId('level')">ระดับ</label>
 				<input class="level" :id="elmId('level')" type="number" v-model="minLevel" min="0" size="5" />
 			</div>
 
@@ -326,8 +326,8 @@ export default {
 			</div>
 
 			<div class="buttongroup">
-				<button type="button" @click="toggleKeywords">Keywords</button>
-				<button type="button" @click="toggleAllSchools">Toggle Schools</button>
+				<button type="button" @click="toggleKeywords">คีย์เวิร์ด</button>
+				<button type="button" @click="toggleAllSchools">สลับสำนักเวท</button>
 			</div>
 			<!-- <div class="checks" v-for="(p, k) in allSchools" :key="k">
 				<input type="checkbox" :value="k" :id="elmId('chk' + k)" v-model="viewSchools" />

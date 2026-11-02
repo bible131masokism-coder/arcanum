@@ -1,7 +1,7 @@
 <script>
 import { centerX } from "@/ui/popups/popups.js";
 
-const WARN_MSG = "This action is not reversible. Continue?";
+const WARN_MSG = "การกระทำนี้ไม่สามารถย้อนกลับได้ ดำเนินการต่อหรือไม่?";
 
 export default {
 	emits: ["confirmed"],
@@ -74,14 +74,14 @@ export default {
 			<div>{{ item.desc }}</div>
 			<div v-if="!nomsg">{{ msg }}</div>
 			<div class="skip">
-				<label :for="elmId('nowarn')">Skip Warning</label>
+				<label :for="elmId('nowarn')">ข้ามคำเตือน</label>
 				<input type="checkbox" v-model="nowarn" :id="elmId('nowarn')" />
 			</div>
 		</div>
 
 		<div>
-			<button type="button" @click="confirm">Confirm</button>
-			<button type="button" @click="cancel">Cancel</button>
+			<button type="button" @click="confirm">ยืนยัน</button>
+			<button type="button" @click="cancel">ยกเลิก</button>
 		</div>
 	</div>
 </template>

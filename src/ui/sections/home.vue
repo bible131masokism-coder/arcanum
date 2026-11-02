@@ -78,7 +78,7 @@ export default {
 		<div class="pick-slots">
 			<button type="button" class="task-btn" v-if="hallUnlocked" @click="openHall">{{ hallName }}</button>
 
-			<slotpick title="Home" pick="home" must-pay="true" nonetext="Move in" />
+			<slotpick title="บ้าน" pick="home" must-pay="true" nonetext="ย้ายเข้า" />
 			<slotpick title="Werry" hide-empty="true" pick="werry" />
 		</div>
 

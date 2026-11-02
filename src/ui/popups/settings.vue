@@ -141,7 +141,7 @@ export default {
 			},
 		},
 		autoSaveTip() {
-			return "Periodically save current game.";
+			return "บันทึกเกมปัจจุบันเป็นระยะ";
 		},
 	},
 };
@@ -152,56 +152,53 @@ export default {
 		<vue-menu class="game-mid" :items="menuItems" v-model="psection">
 			<template #sect_settings_main>
 				<div>
-					<label :for="elmId('dark-mode')">Dark Mode</label>
+					<label :for="elmId('dark-mode')">โหมดมืด</label>
 					<input type="checkbox" :id="elmId('dark-mode')" v-model="darkMode" />
 				</div>
 				<div>
-					<label :for="elmId('compact-mode')">Compact Mode</label>
+					<label :for="elmId('compact-mode')">โหมดกะทัดรัด</label>
 					<input type="checkbox" :id="elmId('compact-mode')" v-model="compactMode" />
 				</div>
 
 				<div>
-					<label :for="elmId('smooth-bars')">Smooth bars</label>
+					<label :for="elmId('smooth-bars')">แถบเลื่อนเรียบ</label>
 					<input type="checkbox" :id="elmId('smooth-bars')" v-model="smoothBars" />
 				</div>
 				<div>
-					<label :for="elmId('auto-save')">Auto-Save</label>
+					<label :for="elmId('auto-save')">บันทึกอัตโนมัติ</label>
 					<input type="checkbox" :id="elmId('auto-save')" v-model="autosave" />
 					<div class="calc-text">
-						Periodically save game to storage. Game is saved to Browser storage by default.
+						บันทึกเกมลงในหน่วยความจำเป็นระยะ โดยค่าเริ่มต้นเกมจะถูกบันทึกลงในหน่วยความจำของเบราว์เซอร์
 					</div>
 				</div>
 			</template>
 			<template #sect_settings_extra>
-				<h3>Tooltip Stats</h3>
+				<h3>สถิติทูลทิป</h3>
 				<div>
-					<label :for="elmId('debug-rate')">Expand Resource Rate</label>
+					<label :for="elmId('debug-rate')">ขยายอัตราทรัพยากร</label>
 					<input type="checkbox" :id="elmId('debug-rate')" v-model="debugRate" />
 					<div class="calc-text">
-						Show calculated resource income from modified rate R, converters C, running tasks T, and buffs
-						B.
+						แสดงรายได้ทรัพยากรที่คำนวณได้จากอัตราที่ปรับแล้ว R ตัวแปลง C ภารกิจที่กำลังดำเนิน T และบัฟ B
 					</div>
 				</div>
 				<div>
-					<label :for="elmId('total-rate')">Display total task effects</label>
+					<label :for="elmId('total-rate')">แสดงผลรวมของภารกิจ</label>
 					<input type="checkbox" :id="elmId('total-rate')" v-model="totalRate" />
 					<div class="calc-text">
-						Shows remaining costs to pay and resources to acquire until next completion (for tasks with
-						completion time of more than 1 second)
+						แสดงค่าใช้จ่ายที่เหลือต้องจ่ายและทรัพยากรที่ต้องได้จนกว่าจะสำเร็จครั้งถัดไป (สำหรับภารกิจที่มีระยะเวลาสำเร็จมากกว่า 1 วินาที)
 					</div>
 				</div>
-				<h3>Gameplay adjustments</h3>
+				<h3>การปรับการเล่นเกม</h3>
 				<div>
-					<label :for="elmId('ensure-max')">Maximized efficiency mode</label>
+					<label :for="elmId('ensure-max')">โหมดประสิทธิภาพสูงสุด</label>
 					<input type="checkbox" :id="elmId('ensure-max')" v-model="ensureMaxProduction" />
 					<div class="calc-text">
-						Actions will only be performed if their outputs can be fully collected<br />
-						Warning! This can prevent you from fully filling your resources to max, but will prevent
-						wastefully underpoducing.
+						การกระทำจะเกิดขึ้นเมื่อผลลัพธ์สามารถเก็บได้ครบเท่านั้น<br />
+						คำเตือน! โหมดนี้อาจทำให้คุณไม่สามารถเติมทรัพยากรจนเต็มได้ แต่จะช่วยป้องกันการผลิตที่สูญเปล่า
 					</div>
 				</div>
 				<div>
-					<label :for="elmId('speedup-factor')">Fastforward speed</label>
+					<label :for="elmId('speedup-factor')">ความเร็วเร่งเวลา</label>
 					<input
 						type="number"
 						min="1"
@@ -210,8 +207,7 @@ export default {
 						:id="elmId('speedup-factor')"
 						v-model="speedupFactor" />
 					<div class="calc-text">
-						Speedup factor for fast-forward feature. It is not recommended to set it above 25, depending on
-						your PC performance.
+						ตัวคูณความเร็วสำหรับฟีเจอร์เร่งเวลา ไม่แนะนำให้ตั้งเกิน 25 ขึ้นอยู่กับประสิทธิภาพของเครื่องคอมพิวเตอร์ของคุณ
 					</div>
 				</div>
 			</template>
@@ -220,11 +216,11 @@ export default {
 
 		<div class="buttons">
 			<span>
-				<confirm @confirm="dispatch('reset')">Wipe Wizard</confirm>
-				<confirm @confirm="dispatch('resetHall')">Wipe Hall Save</confirm>
+				<confirm @confirm="dispatch('reset')">ล้างจอมเวท</confirm>
+				<confirm @confirm="dispatch('resetHall')">ล้างเซฟห้องโถง</confirm>
 			</span>
 
-			<button type="button" class="close" @click="close">Close</button>
+			<button type="button" class="close" @click="close">ปิด</button>
 		</div>
 	</div>
 </template>

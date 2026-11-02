@@ -45,7 +45,7 @@ export default {
 		},
 
 		dismiss(slot, name) {
-			this.emit("warn", `Dismiss ${name}`, () => {
+			this.emit("warn", `ไล่ ${name} ออก`, () => {
 				this.dispatch("dismiss-char", slot);
 			});
 		},
@@ -95,17 +95,17 @@ export default {
 		<div class="separate">
 			<div class="flex-col">
 				<div @mouseenter.capture.stop="itemOver($event, hall.prestige)">
-					Hall Prestige: {{ formatNumber(prestige) }}
+					เกียรติยศห้องโถง: {{ formatNumber(prestige) }}
 				</div>
 				<div v-if="probedepth.valueOf()" @mouseenter.capture.stop="itemOver($event, probedepth)">
-					Dimensions probed: {{ formatNumber(probedepth.valueOf()) }}
+					สำรวจมิติแล้ว: {{ formatNumber(probedepth.valueOf()) }}
 				</div>
 			</div>
 
 			<div class="header">
 				<input class="fld-name text-entry" type="text" v-model="hallName" />
 				<div class="text-button">
-					<a href="" @click.self.prevent="dispatch('hall-file', $event)" type="text/json">Hall Save</a>
+					<a href="" @click.self.prevent="dispatch('hall-file', $event)" type="text/json">เซฟห้องโถง</a>
 				</div>
 			</div>
 			<div></div>

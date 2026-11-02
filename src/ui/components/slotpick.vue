@@ -66,7 +66,7 @@ export default {
 			@mouseenter.capture.stop="itemOver($event, cur)"
 			@click="select"
 			:disabled="!avail.length > 0">
-			{{ cur ? cur.name : nonetext ? nonetext : "None" }}
+			{{ cur ? cur.name : nonetext ? nonetext : "ไม่มี" }}
 		</button>
 	</div>
 </template>

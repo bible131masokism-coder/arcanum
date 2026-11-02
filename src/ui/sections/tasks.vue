@@ -104,10 +104,10 @@ export default {
 			return this.groupMap(this.quests);
 		},
 		hideTip() {
-			return "Used to hide and unhide entries. This setting is retained between characters.";
+			return "ใช้เพื่อซ่อนและแสดงรายการ ตัวเลือกนี้จะถูกจำไว้ระหว่างตัวละคร";
 		},
 		favTip() {
-			return "Used to mark and unmark entries as favourites. This setting is retained between characters.";
+			return "ใช้เพื่อทำเครื่องหมายและยกเลิกเครื่องหมายรายการโปรด ตัวเลือกนี้จะถูกจำไว้ระหว่างตัวละคร";
 		},
 	},
 };
@@ -119,21 +119,21 @@ export default {
 			<button ref="btnHides" class="btnConfig" @mouseenter.capture.stop="itemOver($event, hideTip)"></button>
 			<button ref="btnFavs" class="btnFavConfig" @mouseenter.capture.stop="itemOver($event, favTip)"></button>
 		</div>
-		<div v-if="visibleFavourites.length != 0" class="div-hs">Favourites</div>
+		<div v-if="visibleFavourites.length != 0" class="div-hs">รายการโปรด</div>
 		<upgrades
 			v-if="visibleFavourites.length != 0"
 			class="upgrade-list"
 			:items="visibleFavourites"
 			:preventClick="inConfig" />
-		<div class="div-hs">Tasks</div>
+		<div class="div-hs">ภารกิจ</div>
 		<taskGroup id="tasks" v-for="group in visibleTasks" :group="group" :preventClick="inConfig" />
-		<div v-if="visibleUpgrades.length != 0" class="div-hs">Upgrades</div>
+		<div v-if="visibleUpgrades.length != 0" class="div-hs">อัปเกรด</div>
 		<taskGroup id="upgrades" v-for="group in visibleUpgrades" :group="group" :preventClick="inConfig" />
-		<div v-if="quests.length != 0" class="div-hs">Progression Quests</div>
+		<div v-if="quests.length != 0" class="div-hs">ภารกิจความก้าวหน้า</div>
 		<taskGroup id="quests" v-for="group in visibleQuests" :group="group" :preventClick="inConfig" />
-		<div v-if="classes.length != 0" class="div-hs">Classes</div>
+		<div v-if="classes.length != 0" class="div-hs">คลาส</div>
 		<upgrades class="upgrade-list" :items="classes" :preventClick="inConfig" />
-		<div v-if="morals.length != 0" class="div-hs">Morality Options</div>
+		<div v-if="morals.length != 0" class="div-hs">ทางเลือกศีลธรรม</div>
 		<upgrades class="upgrade-list" :items="morals" :preventClick="inConfig" />
 	</div>
 </template>

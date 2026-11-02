@@ -28,7 +28,7 @@ export default {
 	},
 	computed: {
 		hideTip() {
-			return "Used to hide and unhide entries. This setting is retained between characters.";
+			return "ใช้เพื่อซ่อนและแสดงรายการ ตัวเลือกนี้จะถูกจำไว้ระหว่างตัวละคร";
 		},
 	},
 	created() {

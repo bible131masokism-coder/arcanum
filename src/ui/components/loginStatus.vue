@@ -12,7 +12,7 @@ export default {
 
 <template>
 	<span v-if="active.loggedIn">
-		<button type="button" @click="dispatch('logout')">Logout</button>
+		<button type="button" @click="dispatch('logout')">ออกจากระบบ</button>
 	</span>
-	<span v-else><button type="button" @click="dispatch('show-login')">Login</button></span>
+	<span v-else><button type="button" @click="dispatch('show-login')">เข้าสู่ระบบ</button></span>
 </template>

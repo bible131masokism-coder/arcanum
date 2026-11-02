@@ -144,10 +144,10 @@ export default {
 					@click="choose(it)">
 					{{ strings ? it : it.name }}
 				</button>
-				<button type="button" class="task-btn" v-if="canRemove" @click="choose(false)">None</button>
+				<button type="button" class="task-btn" v-if="canRemove" @click="choose(false)">ไม่มี</button>
 			</div>
 
-			<button type="button" class="close-btn" @click="cancel">Cancel</button>
+			<button type="button" class="close-btn" @click="cancel">ยกเลิก</button>
 		</div>
 	</div>
 </template>

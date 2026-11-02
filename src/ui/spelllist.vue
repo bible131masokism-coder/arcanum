@@ -36,7 +36,7 @@ export default {
 	},
 	computed: {
 		shortcutTip() {
-			return "Shift+Click moves spells by 5 entries in your spelllist. Ctrl+Click moves spells to the top or botton of your spelllist instead.";
+			return "Shift+คลิก จะเลื่อนเวทมนตร์ไปทีละ 5 ตำแหน่งในรายการเวท ส่วน Ctrl+คลิก จะเลื่อนเวทมนตร์ไปยังบนสุดหรือล่างสุดของรายการแทน";
 		},
 	},
 
@@ -137,14 +137,14 @@ export default {
 				</select>
 			</div>
 			<span class="warn-text" v-if="spellLoadouts.items.length > topTier">
-				At your limit of {{ topTier + 1 }} spell lists.
+				ถึงขีดจำกัด {{ topTier + 1 }} รายการเวทแล้ว
 			</span>
 			<div v-if="!(spellLoadouts.items.length > topTier)">
-				<button type="button" @click="create(true)">Copy List</button>
-				<button @click="create(null)">New List</button>
+				<button type="button" @click="create(true)">คัดลอกรายการ</button>
+				<button @click="create(null)">รายการใหม่</button>
 			</div>
 
-			<span class="hint">You can press Alt+{Num} to change lists as well.</span>
+			<span class="hint">คุณสามารถกด Alt+{Num} เพื่อสลับรายการได้เช่นกัน</span>
 
 			<div v-for="(l, index) in spellLoadouts.items" class="custom" :key="'l' + index">
 				<span class="text-entry">
@@ -174,12 +174,12 @@ export default {
 			</div>
 		</div>
 
-		<div><button type="button" @click="list.removeAll()">Clear all spells</button></div>
+		<div><button type="button" @click="list.removeAll()">ล้างเวททั้งหมด</button></div>
 
 		<span class="maxlevels">
 			<button type="button" @mouseenter.capture.stop="itemOver($event, shortcutTip)">?</button>
-			Max Levels: {{ list.used + " / " + Math.floor(list.max.value) }}
-			<div class="warn-text note-text" v-if="list.full()">Spelllist is Full</div>
+			ระดับสูงสุด: {{ list.used + " / " + Math.floor(list.max.value) }}
+			<div class="warn-text note-text" v-if="list.full()">รายการเวทเต็มแล้ว</div>
 		</span>
 
 		<div v-for="(it, ind) in list.items" :key="ind" @mouseenter.capture.stop="itemOver($event, it)">

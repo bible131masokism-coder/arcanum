@@ -136,26 +136,26 @@ export default {
 <template>
 	<div>
 		<dropdown
-			label="Slot"
+			label="ช่อง"
 			:options="Slots"
 			@change="ClearItemMaterials()"
 			show="name"
-			disabled="Not selected"
+			disabled="ไม่ได้เลือก"
 			v-model="selectedSlot"
 			:searchable="true" />
 		<dropdown
-			label="Item"
+			label="ไอเทม"
 			:options="Items"
 			@change="ClearMaterials()"
 			show="name"
-			disabled="Not selected"
+			disabled="ไม่ได้เลือก"
 			v-model="selectedItem"
 			:searchable="true" />
 		<dropdown
-			label="Material"
+			label="วัสดุ"
 			:options="Materials"
 			show="name"
-			disabled="Not selected"
+			disabled="ไม่ได้เลือก"
 			v-model="selectedMaterial"
 			:searchable="true" />
 		<button
@@ -167,7 +167,7 @@ export default {
 				game.state.inventory.full()
 			"
 			@mouseenter.capture.stop="itemOver($event, this.prelimItem(this.selectedMaterial, this.selectedItem))">
-			Craft
+			สร้าง
 		</button>
 	</div>
 </template>

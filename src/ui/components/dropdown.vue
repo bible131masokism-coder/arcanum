@@ -77,7 +77,7 @@ export default {
 		<input
 			v-if="this.searchable"
 			type="text"
-			placeholder="Search..."
+			placeholder="ค้นหา..."
 			v-model="inputData"
 			id="SearchInput"
 			:disabled="this.options.length <= 0" />

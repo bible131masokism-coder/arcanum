@@ -395,9 +395,9 @@ export default {
 			</div>
 
 			<div class="buttongroup">
-				<button type="button" @click="toggleShow">Memorized</button>
-				<button type="button" @click="toggleKeywords">Keywords</button>
-				<button type="button" @click="toggleAllSchools">Toggle Schools</button>
+				<button type="button" @click="toggleShow">ท่องจำแล้ว</button>
+				<button type="button" @click="toggleKeywords">คีย์เวิร์ด</button>
+				<button type="button" @click="toggleAllSchools">สลับสำนักเวท</button>
 			</div>
 			<!-- <div class="checks" v-for="(p, k) in allSchools" :key="k">
 				<input type="checkbox" :value="k" :id="elmId('chk' + k)" v-model="viewSchools" />

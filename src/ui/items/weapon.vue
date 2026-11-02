@@ -17,9 +17,9 @@ export default {
 
 <template>
 	<div class="attack">
-		<div>Hit Bonus: {{ precise(item.tohit) || 0 }}</div>
-		<div>{{ item.hands > 1 ? "Two Handed" : "One Handed" }}</div>
-		<div>Kind: {{ item.kind.toString().toTitleCase() }}</div>
+		<div>โบนัสโจมตี: {{ precise(item.tohit) || 0 }}</div>
+		<div>{{ item.hands > 1 ? "สองมือ" : "มือเดียว" }}</div>
+		<div>ประเภท: {{ item.kind.toString().toTitleCase() }}</div>
 		<gdata v-if="item.dot" :item="item.dot" />
 	</div>
 </template>

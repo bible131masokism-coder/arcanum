@@ -190,7 +190,7 @@ export default {
 					if (!this.filter(orphanedEncounters[i])) orphanedEncounters.splice(i, 1);
 				}
 				tree.push({
-					locale: { id: "orphanedencs", name: "Encounters without locale" },
+					locale: { id: "orphanedencs", name: "การเผชิญหน้าที่ไม่มีท้องถิ่น" },
 					encs: orphanedEncounters,
 					baseencs: orphanedEncounters.slice(),
 					unknown: [],
@@ -199,13 +199,13 @@ export default {
 			return tree;
 		},
 		solTip() {
-			return "Shows only Sites of Learning, encounters or adventures that will grant permanent positive modifiers.";
+			return "แสดงเฉพาะแหล่งเรียนรู้ การเผชิญหน้า หรือการผจญภัยที่จะให้ค่าปรับปรุงเชิงบวกถาวร";
 		},
 		lockTip() {
-			return "Shows locked encounters that won't occur while adventuring.";
+			return "แสดงการเผชิญหน้าที่ถูกล็อกซึ่งจะไม่เกิดขึ้นระหว่างการผจญภัย";
 		},
 		clearTip() {
-			return "Time spent per encounter.";
+			return "เวลาที่ใช้ต่อการเผชิญหน้า";
 		},
 		hasLockedEncounter() {
 			return this.allEncounters().some(this.locked);
@@ -219,18 +219,18 @@ export default {
 		<filterbox v-model="filtered" :prop="searchIt" :items="allItems" :min-items="5" :defFunc="fixIt" />
 		<span class="chkSites" @mouseenter.capture.stop="itemOver($event, solTip)">
 			<input :id="elmId('showSites')" type="checkbox" v-model="fltLearn" />
-			<label :for="elmId('showSites')">Sites of Learning</label>
+			<label :for="elmId('showSites')">แหล่งเรียนรู้</label>
 		</span>
 		<span v-if="hasLockedEncounter" class="chkSites" @mouseenter.capture.stop="itemOver($event, lockTip)">
 			<input :id="elmId('showLocked')" type="checkbox" v-model="showLocked" />
-			<label :for="elmId('showLocked')">Locked</label>
+			<label :for="elmId('showLocked')">ถูกล็อก</label>
 		</span>
 	</div>
 	<div class="travelogue">
-		<span class="header">Encounters</span>
-		<span class="header" @mouseenter.capture.stop="itemOver($event, clearTip)">Clear Time</span>
-		<span class="header">Visits</span>
-		<span class="header">Learned</span>
+		<span class="header">การเผชิญหน้า</span>
+		<span class="header" @mouseenter.capture.stop="itemOver($event, clearTip)">เวลาเคลียร์</span>
+		<span class="header">จำนวนเยือน</span>
+		<span class="header">ที่เรียนรู้</span>
 		<template v-for="b in filtered" :key="b.locale.id">
 			<div class="locale">
 				<span @mouseenter.capture.stop="itemOver($event, b.locale)">

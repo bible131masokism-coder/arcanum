@@ -233,7 +233,7 @@ export default {
 					}}
 				</span>
 				<span v-else-if="item.type === 'furniture'">
-					max: {{ item.max ? formatNumber(item.max.value) : item.repeat ? "&infin;" : 1 }}
+					สูงสุด: {{ item.max ? formatNumber(item.max.value) : item.repeat ? "&infin;" : 1 }}
 				</span>
 				<span v-else-if="item.type === 'upgrade' || item.type === 'task'">
 					<br />
@@ -257,7 +257,7 @@ export default {
 		</span>
 
 		<div class="tight note-text" v-if="item.tags || item.hands">
-			<span v-if="item.hands > 1">Two-Handed </span>{{ tags }}
+			<span v-if="item.hands > 1">สองมือ </span>{{ tags }}
 		</div>
 		<span
 			class="flex-right"
@@ -276,7 +276,7 @@ export default {
 			"
 			v-html="spendingRate">
 		</span>
-		<span class="flex-right" v-if="item.restrate"> {{ restrate }}/s (Downtime) </span>
+		<span class="flex-right" v-if="item.restrate"> {{ restrate }}/s (ช่วงหยุดพัก) </span>
 		<span
 			class="flex-right"
 			v-if="
@@ -285,71 +285,71 @@ export default {
 				item.length > 0 &&
 				(item.type == 'task' || item.type == 'encounter')
 			">
-			Completion rate: {{ precise(item.rate.value * 100) }}%
+			อัตราความสำเร็จ: {{ precise(item.rate.value * 100) }}%
 		</span>
 		<div>
 			<span class="separate">
-				<span v-if="item.showLevel">Level: {{ item.showLevel() }}</span>
-				<span v-else-if="item.level && item.type === 'encounter'">Length: {{ item.length }} </span>
-				<span v-else-if="item.level">Level: {{ item.level }}</span>
+				<span v-if="item.showLevel">ระดับ: {{ item.showLevel() }}</span>
+				<span v-else-if="item.level && item.type === 'encounter'">ความยาว: {{ item.length }} </span>
+				<span v-else-if="item.level">ระดับ: {{ item.level }}</span>
 
 				<span v-if="item.slot && item.type !== 'armor' && item.type !== 'weapon'"
-					>Slot: {{ item.slot.toString().toTitleCase() }}</span
+					>ช่อง: {{ item.slot.toString().toTitleCase() }}</span
 				>
-				<span v-else-if="item.slot">Slot: {{ itemSlot }}</span>
+				<span v-else-if="item.slot">ช่อง: {{ itemSlot }}</span>
 				<span v-if="item.kind && (item.type === 'monster' || item.type === 'npc')">
-					Kind: {{ item.kind.toTitleCase() }}
+					ประเภท: {{ item.kind.toTitleCase() }}
 				</span>
 			</span>
 			<span class="separate">
-				<span v-if="item.regen && item.type !== 'player'">Regen: {{ item.regen }}</span>
-				<span v-if="item.recharge && item.type !== 'player'">Recharge: {{ item.recharge }}</span>
+				<span v-if="item.regen && item.type !== 'player'">ฟื้นฟู: {{ item.regen }}</span>
+				<span v-if="item.recharge && item.type !== 'player'">ชาร์จใหม่: {{ item.recharge }}</span>
 			</span>
 
 			<span v-if="item.enchants && item.enchants.max > 0">
-				Enchant Levels: {{ item.enchants.value }} / {{ item.enchants.max }}
+				ระดับเสริมเวท: {{ item.enchants.value }} / {{ item.enchants.max }}
 			</span>
 
 			<span v-if="item.at && nextAt > 0" class="note-text">
-				Next Improvement: {{ Math.round((100 * item.value) / nextAt) + "%" }}
+				การพัฒนาขั้นถัดไป: {{ Math.round((100 * item.value) / nextAt) + "%" }}
 			</span>
 			<span v-else-if="item.every && nextEvery >= 0" class="note-text">
-				Next Improvement: {{ Math.round(100 * nextEvery) + "%" }}
+				การพัฒนาขั้นถัดไป: {{ Math.round(100 * nextEvery) + "%" }}
 			</span>
 
 			<div v-if="item.cd || cdRemain > 0" class="note-text">
-				Cooldown: {{ cdRemain > 0 ? cdRemain.toFixed(2) + "Left" : item.cd + "s" }}
+				คูลดาวน์: {{ cdRemain > 0 ? cdRemain.toFixed(2) + " เหลือ" : item.cd + "s" }}
 			</div>
-			<div v-if="cdtags" class="note-text">Shares cooldown with: {{ cdtags }}</div>
-			<div v-if="item.exclude" class="note-text">Cannot be used with: {{ this.exclude(item.exclude) }}</div>
+			<div v-if="cdtags" class="note-text">ใช้คูลดาวน์ร่วมกับ: {{ cdtags }}</div>
+			<div v-if="item.exclude" class="note-text">ไม่สามารถใช้ร่วมกับ: {{ this.exclude(item.exclude) }}</div>
 			<div v-if="+item.dist && item.type !== 'player' && item.type !== 'npc' && item.type !== 'monster'">
-				Distance: {{ item.dist }}
+				ระยะทาง: {{ item.dist }}
 			</div>
-			<div v-if="+item.armor">Armor: {{ item.armor }}</div>
-			<div v-if="+item.evasion">Evasion: {{ item.evasion }}</div>
-			<div v-if="+item.shield">Shield: {{ item.shield }}</div>
-			<div v-if="+item.dmg && (!item.attack || item.attack.dmg !== item.dmg)">Base damage: {{ damage }}</div>
-			<div v-if="+item.heal && (!item.attack || item.attack.heal !== item.heal)">Healing: {{ healing }}</div>
+			<div v-if="+item.armor">เกราะ: {{ item.armor }}</div>
+			<div v-if="+item.evasion">การหลบหลีก: {{ item.evasion }}</div>
+			<div v-if="+item.shield">โล่: {{ item.shield }}</div>
+			<div v-if="+item.dmg && (!item.attack || item.attack.dmg !== item.dmg)">ความเสียหายพื้นฐาน: {{ damage }}</div>
+			<div v-if="+item.heal && (!item.attack || item.attack.heal !== item.heal)">การรักษา: {{ healing }}</div>
 
 			<div class="item-desc" v-if="item.desc">{{ joinedtext(item.desc) }}</div>
 			<div class="item-extdesc" v-if="item.extdesc">{{ joinedtext(item.extdesc) }}</div>
 		</div>
 
 		<span v-if="item.length > 0 && item.type === 'task'">
-			Completion time: {{ formatTime(((item.length - item.exp) * 1000) / item.rate) }}
+			เวลาสำเร็จ: {{ formatTime(((item.length - item.exp) * 1000) / item.rate) }}
 		</span>
 		<!-- End of upper section of tooltip -->
 
 		<info
 			v-if="item.need"
-			title="Need"
+			title="สิ่งที่ต้องมี"
 			:require="true"
 			:info="item.need"
 			:text="item.needtext"
 			:checkType="CheckTypes.NEED"
 			:itemRef="item" />
-		<info v-if="item.buy && !item.owned" :info="item.buy" :checkType="CheckTypes.COST" title="Purchase Cost" />
-		<info v-if="item.cost" :info="item.cost" :checkType="CheckTypes.COST" title="Cost" />
+		<info v-if="item.buy && !item.owned" :info="item.buy" :checkType="CheckTypes.COST" title="ค่าใช้จ่ายในการซื้อ" />
+		<info v-if="item.cost" :info="item.cost" :checkType="CheckTypes.COST" title="ค่าใช้จ่าย" />
 		<info
 			v-if="
 				(item.sell || item.instanced || item.type === 'furniture') &&
@@ -358,72 +358,72 @@ export default {
 			"
 			:info="sellPrice"
 			:checkType="CheckTypes.FULL"
-			title="Sell" />
-		<info v-if="item.run" :info="item.run" :checkType="CheckTypes.COST" title="Progress Cost" rate="true" />
+			title="ขาย" />
+		<info v-if="item.run" :info="item.run" :checkType="CheckTypes.COST" title="ค่าใช้จ่ายในการดำเนินการ" rate="true" />
 		<div v-if="item.attack">
-			<div class="info-sect">Attack</div>
+			<div class="info-sect">การโจมตี</div>
 			<attack :item="item" class="info-subsubsect" />
 		</div>
 		<div v-if="item.onSummon">
 			<div v-if="item.onSummon.name">
-				<div class="info-sect">When summoned in combat</div>
+				<div class="info-sect">เมื่อถูกเรียกเข้าสู่การต่อสู้</div>
 				<attack :item="item" onsummonflag="true" class="info-subsubsect" />
 			</div>
 		</div>
 		<div v-if="item.onHit">
 			<div v-if="item.onHit.name">
-				<div class="info-sect">When struck directly</div>
+				<div class="info-sect">เมื่อถูกโจมตีโดยตรง</div>
 				<attack :item="item" onhitflag="true" class="info-subsubsect" />
 			</div>
 		</div>
 		<div v-if="item.onMiss">
 			<div v-if="item.onMiss.name">
-				<div class="info-sect">After dodging an attack</div>
+				<div class="info-sect">หลังจากหลบการโจมตีได้</div>
 				<attack :item="item" onmissflag="true" class="info-subsubsect" />
 			</div>
 		</div>
 		<div v-if="item.onExpire">
 			<div v-if="item.onExpire.name">
-				<div class="info-sect">On expiration</div>
+				<div class="info-sect">เมื่อหมดเวลา</div>
 				<attack :item="item" onexpireflag="true" class="info-subsubsect" />
 			</div>
 		</div>
 		<div v-if="item.onDeath">
 			<div v-if="item.onDeath.name">
-				<div class="info-sect">When killed</div>
+				<div class="info-sect">เมื่อถูกฆ่า</div>
 				<attack :item="item" ondeathflag="true" class="info-subsubsect" />
 			</div>
 		</div>
 		<div v-if="item.onApply">
 			<div v-if="item.onApply.name">
-				<div class="info-sect">When applied</div>
+				<div class="info-sect">เมื่อถูกใช้</div>
 				<attack :item="item" onapplyflag="true" class="info-subsubsect" />
 			</div>
 		</div>
 		<div v-if="item.conditiontext">
-			<div class="info-sect">Has a conditional effect:</div>
+			<div class="info-sect">มีเอฟเฟกต์แบบมีเงื่อนไข:</div>
 			<div :class="{ failed: !item.conditionstatus }">
 				{{ item.conditiontext }}
 			</div>
 		</div>
 		<div v-if="item.removedot">
-			<div>This dot will be removed</div>
+			<div>เอฟเฟกต์นี้จะถูกลบออก</div>
 		</div>
 		<div v-if="item.conditional?.onSuccess">
-			<div class="info-subsect">When condition is met</div>
+			<div class="info-subsect">เมื่อเงื่อนไขสำเร็จ</div>
 			<dot :dot="item.conditional.onSuccess" :item="item" />
 		</div>
 		<div v-if="item.conditional?.onFailure">
-			<div class="info-subsect">When condition is not met</div>
+			<div class="info-subsect">เมื่อเงื่อนไขไม่สำเร็จ</div>
 			<dot :dot="item.conditional.onFailure" :item="item" />
 		</div>
 		<div v-if="item.effect">
-			<div class="info-sect">Effects:</div>
+			<div class="info-sect">เอฟเฟกต์:</div>
 			<info :info="item.effect" :text="item.effecttext" :rate="true" :checkType="CheckTypes.FULL" />
 		</div>
 
 		<div v-if="(item.mod && Object.keys(item.mod).length) || (item.alter && Object.keys(item.alter).length)">
-			<div class="info-sect">Modifications:</div>
+			<div class="info-sect">การปรับเปลี่ยน:</div>
 			<info v-if="item.mod && Object.keys(item.mod).length" :info="item.mod" :text="item.modtext" />
 			<info
 				v-if="item.alter && Object.values(item.alter).length"
@@ -433,17 +433,17 @@ export default {
 		</div>
 		<div v-if="item.convert">
 			<div v-if="!item.convert.singular" class="info-sect">
-				Conversion per {{ name.toString().toTitleCase() }}
+				การแปลงต่อ {{ name.toString().toTitleCase() }}
 			</div>
 			<div v-if="item.convert.singular" class="info-sect">
-				Constant conversion for {{ name.toString().toTitleCase() }}
+				การแปลงคงที่สำหรับ {{ name.toString().toTitleCase() }}
 			</div>
-			<div class="info-sect">Input:</div>
+			<div class="info-sect">ปัจจัยนำเข้า:</div>
 			<info
 				:info="item.convert.input"
 				:rate="item.perpetual > 0 || item.length > 0"
 				:checkType="CheckTypes.COST" />
-			<div class="info-sect">Output:</div>
+			<div class="info-sect">ผลลัพธ์:</div>
 			<info
 				v-if="item.convert.output.effect && Object.values(item.convert.output.effect).length"
 				:info="item.convert.output.effect"
@@ -454,66 +454,66 @@ export default {
 				:info="item.convert.output.mod" />
 		</div>
 		<div v-if="item.summon">
-			<div class="info-sect">Summons:</div>
+			<div class="info-sect">เรียก:</div>
 			<summon :item="item" class="info-subsubsect" />
 		</div>
 		<div v-if="item.resurrect">
-			<div class="info-sect">Resurrects:</div>
-			<div v-if="item.resurrect.only">Only: {{ this.only(item.resurrect.only) }}</div>
-			<div v-if="item.resurrect.maxlevel">Up to level {{ item.resurrect.maxlevel }}</div>
-			<div>Up to {{ item.resurrect.count || 1 }} minions per cast</div>
+			<div class="info-sect">ฟื้นคืนชีพ:</div>
+			<div v-if="item.resurrect.only">เฉพาะ: {{ this.only(item.resurrect.only) }}</div>
+			<div v-if="item.resurrect.maxlevel">สูงสุดระดับ {{ item.resurrect.maxlevel }}</div>
+			<div>เรียกมินเนี่ยนได้สูงสุด {{ item.resurrect.count || 1 }} ตัวต่อการร่าย</div>
 		</div>
 		<div v-if="item.once">
-			<div class="info-sect">On First Completion:</div>
+			<div class="info-sect">เมื่อสำเร็จครั้งแรก:</div>
 			<info :info="item.once" :checkType="CheckTypes.FULL" />
 			<div v-if="item.once.loot">
-				<div class="info-sect">Loot:</div>
+				<div class="info-sect">ของที่ได้:</div>
 				<info :info="item.once.loot" :checkType="CheckTypes.FULL" />
 			</div>
 		</div>
 		<div v-if="item.result">
-			<div class="info-sect">Results:</div>
+			<div class="info-sect">ผลลัพธ์:</div>
 			<info :info="item.resulttext || item.result" :checkType="CheckTypes.FULL" />
 		</div>
 		<div>
 			<div v-if="item.loot">
-				<div class="info-sect">Loot:</div>
-				<div v-if="item.type === CONST.MONSTER && !+item.value">Kill to discover</div>
-				<div v-else-if="item.type === CONST.ENCOUNTER && !+item.value">Complete to discover</div>
-				<div v-else-if="item.controller === CONST.EXPLORE && !+item.value">Complete to discover</div>
+				<div class="info-sect">ของที่ได้:</div>
+				<div v-if="item.type === CONST.MONSTER && !+item.value">ฆ่าเพื่อค้นพบ</div>
+				<div v-else-if="item.type === CONST.ENCOUNTER && !+item.value">ทำให้สำเร็จเพื่อค้นพบ</div>
+				<div v-else-if="item.controller === CONST.EXPLORE && !+item.value">ทำให้สำเร็จเพื่อค้นพบ</div>
 				<info v-else :info="item.loottext || item.loot" :checkType="CheckTypes.FULL" />
 			</div>
 		</div>
 
 		<div v-if="item.use">
-			<div class="info-sect">When used:</div>
+			<div class="info-sect">เมื่อใช้:</div>
 			<div class="info-subsubsect">
 				<info :info="item.use" :separate="true" />
 			</div>
 		</div>
 
 		<div v-if="item.runmod && Object.values(item.runmod).length">
-			<div class="info-sect">Modifications While Progressing:</div>
+			<div class="info-sect">การปรับเปลี่ยนระหว่างดำเนินการ:</div>
 			<info :info="item.runmod" />
 		</div>
 
 		<div v-if="item.dot">
-			<div class="info-sect">Buffs:</div>
+			<div class="info-sect">บัฟ:</div>
 			<dot :dot="item.dot" :item="item" class="info-subsubsect" />
 		</div>
 
 		<div v-if="item.lock">
-			<div class="info-sect">Locks:</div>
+			<div class="info-sect">ล็อก:</div>
 			<info :info="item.lock" />
 		</div>
 
 		<div v-if="item.disable">
-			<div class="info-sect">Disables:</div>
+			<div class="info-sect">ปิดใช้งาน:</div>
 			<info :info="item.disable" />
 		</div>
 
 		<div v-if="item.enable">
-			<div class="info-sect">Enables:</div>
+			<div class="info-sect">เปิดใช้งาน:</div>
 			<info :info="item.enable" />
 		</div>
 

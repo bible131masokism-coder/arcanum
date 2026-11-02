@@ -111,14 +111,14 @@ export default {
 		<div class="separate">
 			<div>
 				<div @mouseenter.capture.stop="itemOver($event, target)">
-					Target: {{ target ? target.name.toTitleCase() : "None" }}
+					เป้าหมาย: {{ target ? target.name.toTitleCase() : "ไม่มี" }}
 				</div>
-				<div class="note-text">Enchantment levels on an Item cannot exceed Item's enchant slots.</div>
+				<div class="note-text">ระดับการเสริมเวทบนไอเทมต้องไม่เกินจำนวนช่องเสริมเวทของไอเทมนั้น</div>
 			</div>
 
 			<span>
 				<button type="button" :disabled="enchantSlots.count == 0" @click="resume">
-					{{ runner.has(enchantSlots) ? "Pause" : "Resume" }}
+					{{ runner.has(enchantSlots) ? "หยุดชั่วคราว" : "ดำเนินต่อ" }}
 				</button>
 			</span>
 		</div>
@@ -156,7 +156,7 @@ export default {
 						</button>
 
 						<button v-else type="button" @click="begin(it, target)" :disabled="!this.canUse(it, target)">
-							Enchant
+							เสริมเวท
 						</button>
 					</div>
 				</div>

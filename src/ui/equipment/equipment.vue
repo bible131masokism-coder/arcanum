@@ -266,7 +266,7 @@ export default {
 		</div>
 		<div class="slots" v-else>
 			<div class="slots-title">
-				🧙🏻Equipment🧙🏻
+				🧙🏻อุปกรณ์🧙🏻
 				<button type="button" v-if="!locked(sections.enchanting)" @click="toggleEnchantingMode">🌟</button>
 			</div>
 			<div class="slot" v-for="slot in slots">
@@ -289,12 +289,12 @@ export default {
 		<div class="equip-sections">
 			<template v-if="enchantingMode">
 				<div class="section-title">
-					Enchanting.
+					การเสริมเวท.
 					<button type="button" :disabled="enchantSlots.count == 0" @click="toggleEnchantingTask">
-						{{ runner.has(enchantSlots) ? "Pause" : "Resume" }}
+						{{ runner.has(enchantSlots) ? "หยุดชั่วคราว" : "ดำเนินต่อ" }}
 					</button>
 				</div>
-				<div class="note-text">Enchantment levels on an Item cannot exceed Item's enchant slots.</div>
+				<div class="note-text">ระดับการเสริมเวทบนไอเทมต้องไม่เกินจำนวนช่องเสริมเวทของไอเทมนั้น</div>
 				<div class="checkboxes">
 					<div class="category" v-for="(p, k) in enchantingKinds" :key="k">
 						<input type="checkbox" :value="p" :id="elmId('chk' + k)" v-model="filteredKinds" />
@@ -304,10 +304,10 @@ export default {
 			</template>
 			<template v-else-if="!locked(sections.crafting)">
 				<div class="section-title">
-					Crafting: {{ this.selectedSlot ? this.selectedSlot.name : "Select slot" }}
+					การสร้าง: {{ this.selectedSlot ? this.selectedSlot.name : "เลือกช่อง" }}
 				</div>
 				<div v-if="selectedSlot" style="border-top: 1px solid var(--separator-color)">
-					Template:
+					แม่แบบ:
 					<button
 						v-for="item in protoItems"
 						@click="selectProtoItem(item)"
@@ -318,7 +318,7 @@ export default {
 					</button>
 				</div>
 				<div v-if="selectedSlot" style="border-top: 1px solid var(--separator-color)">
-					Materials:
+					วัสดุ:
 					<button
 						v-for="material in baseMaterials"
 						@click="selectMaterial(material)"
@@ -336,9 +336,9 @@ export default {
 				</div>
 			</template>
 			<div style="text-align: center; border-top: 1px solid var(--separator-color)">
-				Inventory
+				คลัง
 				<span v-if="inventory.max > 0">
-					- {{ inventory.items.length + " / " + Math.floor(inventory.max) + " Used" }}
+					- {{ inventory.items.length + " / " + Math.floor(inventory.max) + " ที่ใช้" }}
 				</span>
 			</div>
 			<div class="inventory">
@@ -349,9 +349,9 @@ export default {
 			</div>
 			<template v-if="!locked(sections.enchanting) && (enchantingMode || enchantSlots.count > 0)">
 				<div style="text-align: center; border-top: 1px solid var(--separator-color)">
-					Enchanting
+					การเสริมเวท
 					<span v-if="enchantSlots.max > 0">
-						- {{ enchantSlots.items.length + " / " + Math.floor(enchantSlots.max) + " Used" }}
+						- {{ enchantSlots.items.length + " / " + Math.floor(enchantSlots.max) + " ที่ใช้" }}
 					</span>
 				</div>
 				<div class="inventory">
@@ -362,7 +362,7 @@ export default {
 						@action="(...params) => onAction(enchantSlots, slot.target, ...params)" /></div
 			></template>
 			<template v-if="!locked(sections.loot) && !enchantingMode">
-				<div style="text-align: center; border-top: 1px solid var(--separator-color)">Loot</div>
+				<div style="text-align: center; border-top: 1px solid var(--separator-color)">ของที่ได้</div>
 				<div class="inventory" style="border-bottom: 1px solid var(--separator-color)">
 					<equipmentItem
 						v-for="item in filteredDrops"

@@ -24,9 +24,9 @@ export default {
 	methods: {
 		register() {
 			if (!this.email) {
-				this.err = "Email required";
+				this.err = "ต้องกรอกอีเมล";
 			} else if (!this.pw) {
-				this.err = "password required";
+				this.err = "ต้องกรอกรหัสผ่าน";
 			} else {
 				this.dispatch("try-register", this.email, this.pw);
 				this.email = null;
@@ -34,7 +34,7 @@ export default {
 		},
 
 		onRegister() {
-			this.err = "Confirmation email sent.\nCheck any junk-mail folders.";
+			this.err = "ส่งอีเมลยืนยันแล้ว\nกรุณาตรวจสอบโฟลเดอร์จดหมายขยะ";
 		},
 
 		onError(err) {
@@ -50,9 +50,9 @@ export default {
 		<div v-if="err">{{ err }}</div>
 		<div v-if="!sent">
 			<input type="email" placeholder="email@email.com" v-model="email" />
-			<input type="password" placeholder="password" v-model="pw" />
-			<input type="submit" value="register" @click="register" />
-			<button type="button" @click="$emit('close')">cancel</button>
+			<input type="password" placeholder="รหัสผ่าน" v-model="pw" />
+			<input type="submit" value="สมัครสมาชิก" @click="register" />
+			<button type="button" @click="$emit('close')">ยกเลิก</button>
 		</div>
 	</div>
 </template>

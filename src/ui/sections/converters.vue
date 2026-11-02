@@ -81,19 +81,19 @@ export default {
 
 <template>
 	<div class="converters" ref="conv-anchor">
-		<span><strong>Converters</strong></span>
-		<div>Displays all converters, their inputs, and their output effects.</div>
-		<div>Does not display "mod" outputs.</div>
+		<span><strong>ตัวแปลง</strong></span>
+		<div>แสดงตัวแปลงทั้งหมด ปัจจัยนำเข้า และเอฟเฟกต์ของผลลัพธ์</div>
+		<div>ไม่แสดงผลลัพธ์ประเภท "mod"</div>
 		<div class="conv-list">
 			<table v-for="(list, title) in allSections">
 				<tr>
 					<th colspan="4">{{ title.toTitleCase() }}</th>
 				</tr>
 				<tr>
-					<th>Converter</th>
-					<th>Total Inputs</th>
-					<th>Total Outputs</th>
-					<th>Converter Status</th>
+					<th>ตัวแปลง</th>
+					<th>ปัจจัยนำเข้าทั้งหมด</th>
+					<th>ผลลัพธ์ทั้งหมด</th>
+					<th>สถานะตัวแปลง</th>
 				</tr>
 				<tr v-for="it in list" :key="it.id" @mouseenter.capture.stop="itemOver($event, it)">
 					<td>{{ it.name.toTitleCase() + count(it) }}</td>
@@ -112,8 +112,8 @@ export default {
 						</div>
 					</td>
 					<td>
-						<div v-if="isFull(it)">Not running - output full</div>
-						<div v-else-if="isEmpty(it)">Not running - input missing</div>
+						<div v-if="isFull(it)">ไม่ทำงาน - ผลลัพธ์เต็ม</div>
+						<div v-else-if="isEmpty(it)">ไม่ทำงาน - ไม่มีปัจจัยนำเข้า</div>
 					</td>
 				</tr>
 			</table>

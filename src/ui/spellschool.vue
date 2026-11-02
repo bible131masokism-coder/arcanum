@@ -59,20 +59,20 @@ export default {
 							@click="emit('spell', s)"
 							:disabled="!s.canUse(game)"
 							class="spellButton">
-							Cast
+							ร่าย
 						</button>
 						<button
 							v-else-if="!s.owned"
 							@click="emit('buy', s)"
 							:disabled="!s.canBuy(game)"
 							class="spellButton">
-							Learn
+							เรียนรู้
 						</button>
 						<button
 							v-if="s.owned && list.canAdd(s) && list.max.value > 0 && !(mode === 'scraft') && !s.hasTag('t_nomemorize')"
 							@click="list.add(s)"
 							class="spellButton">
-							Memorize
+							ท่องจำ
 						</button>
 						<button
 							v-if="s.owned && mode === 'scraft'"

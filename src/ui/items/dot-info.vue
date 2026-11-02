@@ -71,85 +71,85 @@ export default {
 		</div>
 		<div v-else>
 			<div v-if="name && item?.name !== name">
-				<span>Name: </span><span>{{ name.toString().toTitleCase() }}</span>
+				<span>ชื่อ: </span><span>{{ name.toString().toTitleCase() }}</span>
 			</div>
 			<div>
 				<div v-if="!dot.damage && !dot.dmg && !dot.effect && !dot.mod && !name">
-					<div v-if="dot.id">Id: {{ dot.id.toString().toTitleCase() }}</div>
+					<div v-if="dot.id">ไอดี: {{ dot.id.toString().toTitleCase() }}</div>
 				</div>
 			</div>
 			<div v-if="percent">
-				<div>Chance to apply: {{ percent }}</div>
+				<div>โอกาสในการใช้เอฟเฟกต์: {{ percent }}</div>
 			</div>
 			<div>
 				<div v-if="displayDamage(dot)">
-					<span>Est. damage: </span><span>{{ damage }}</span>
-					<div v-if="dot.kind">Damage Type: {{ dot.kind.toString().toTitleCase() }}</div>
-					<div v-if="potencyPrimary.length > 0">Primary Potencies: {{ potencyPrimary }}</div>
-					<div v-if="potencySecondary.length > 0">Secondary Potencies: {{ potencySecondary }}</div>
-					<div v-if="dot.leech">Returns {{ leech }} of damage as healing</div>
-					<div v-if="dot.nodefense">Ignores defense</div>
+					<span>ความเสียหายโดยประมาณ: </span><span>{{ damage }}</span>
+					<div v-if="dot.kind">ประเภทความเสียหาย: {{ dot.kind.toString().toTitleCase() }}</div>
+					<div v-if="potencyPrimary.length > 0">ศักยภาพหลัก: {{ potencyPrimary }}</div>
+					<div v-if="potencySecondary.length > 0">ศักยภาพรอง: {{ potencySecondary }}</div>
+					<div v-if="dot.leech">เปลี่ยนความเสียหาย {{ leech }} เป็นการรักษา</div>
+					<div v-if="dot.nodefense">ไม่สนใจการป้องกัน</div>
 				</div>
 				<div v-if="displayHealing(dot)">
-					<span>Est. healing: </span><span>{{ healing }}</span>
-					<div v-if="dot.kind">Heal Type: {{ dot.kind.toString().toTitleCase() }}</div>
-					<div v-if="potencyPrimary.length > 0">Primary Potencies: {{ potencyPrimary }}</div>
-					<div v-if="potencySecondary.length > 0">Secondary Potencies: {{ potencySecondary }}</div>
+					<span>การรักษาโดยประมาณ: </span><span>{{ healing }}</span>
+					<div v-if="dot.kind">ประเภทการรักษา: {{ dot.kind.toString().toTitleCase() }}</div>
+					<div v-if="potencyPrimary.length > 0">ศักยภาพหลัก: {{ potencyPrimary }}</div>
+					<div v-if="potencySecondary.length > 0">ศักยภาพรอง: {{ potencySecondary }}</div>
 				</div>
-				<div v-if="dot.duration">Duration: {{ dot.duration + "s" || "infinity" }}</div>
+				<div v-if="dot.duration">ระยะเวลา: {{ dot.duration + "s" || "infinity" }}</div>
 			</div>
 			<div v-if="dot.conditiontext">
-				<div class="info-sect">Has a conditional effect:</div>
+				<div class="info-sect">มีเอฟเฟกต์แบบมีเงื่อนไข:</div>
 				<div>
 					{{ dot.conditiontext }}
 				</div>
 			</div>
 			<div v-if="dot.removedot">
-				<div>This dot will be removed</div>
+				<div>เอฟเฟกต์นี้จะถูกลบออก</div>
 			</div>
 			<div v-if="dot.conditional?.onSuccess">
-				<div class="info-subsect">When condition is met</div>
+				<div class="info-subsect">เมื่อเงื่อนไขสำเร็จ</div>
 				<dot-info :dot="dot.conditional.onSuccess" :item="this.item" :target="this.target" />
 			</div>
 			<div v-if="dot.conditional?.onFailure">
-				<div class="info-subsect">When condition is not met</div>
+				<div class="info-subsect">เมื่อเงื่อนไขไม่สำเร็จ</div>
 				<dot-info :dot="dot.conditional.onFailure" :item="this.item" :target="this.target" />
 			</div>
 			<div v-if="dot.effect">
-				<div class="info-sect">Effects</div>
+				<div class="info-sect">เอฟเฟกต์</div>
 				<info :info="dot.effect" rate="true" />
 			</div>
 			<div v-if="dot.summon">
-				<div class="info-sect">Summons</div>
+				<div class="info-sect">การเรียก</div>
 				<Summon :item="dot" class="info-subsubsect" />
 			</div>
 			<div v-if="dot.mod">
-				<div class="info-sect">Modifications</div>
+				<div class="info-sect">การปรับเปลี่ยน</div>
 				<info v-if="this.target === 'allies'" :info="dot.mod" :target="'friendly allies'" />
 				<info v-else :info="dot.mod" :target="this.target" />
 			</div>
 			<div v-if="dot.attack">
-				<div class="info-sect">Attack</div>
+				<div class="info-sect">การโจมตี</div>
 				<attack :item="dot" class="info-subsubsect" />
 			</div>
 			<div v-if="dot.onExpire">
-				<div class="info-sect">On expiration</div>
+				<div class="info-sect">เมื่อหมดเวลา</div>
 				<attack :item="dot" onexpireflag="true" class="info-subsubsect" />
 			</div>
 			<div v-if="dot.onHit">
-				<div class="info-sect">When struck directly</div>
+				<div class="info-sect">เมื่อถูกโจมตีโดยตรง</div>
 				<attack :item="dot" onhitflag="true" class="info-subsubsect" />
 			</div>
 			<div v-if="dot.onMiss">
-				<div class="info-sect">After dodging an attack</div>
+				<div class="info-sect">หลังจากหลบการโจมตีได้</div>
 				<attack :item="dot" onmissflag="true" class="info-subsubsect" />
 			</div>
 			<div v-if="dot.onDeath">
-				<div class="info-sect">When target killed</div>
+				<div class="info-sect">เมื่อเป้าหมายถูกฆ่า</div>
 				<attack :item="dot" ondeathflag="true" class="info-subsubsect" />
 			</div>
 			<div v-if="dot.onApply">
-				<div class="info-sect">When applied</div>
+				<div class="info-sect">เมื่อถูกใช้</div>
 				<attack :item="dot" onapplyflag="true" class="info-subsubsect" />
 			</div>
 		</div>

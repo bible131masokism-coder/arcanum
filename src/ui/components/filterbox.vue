@@ -62,7 +62,7 @@ export default {
 
 <template>
 	<div class="filter-box" v-if="!this.minItems || this.items.length >= this.minItems">
-		<label :for="elmId('filter')">Find</label>
+		<label :for="elmId('filter')">ค้นหา</label>
 		<input :id="elmId('filter')" v-model="filterText" type="text" />
 	</div>
 </template>

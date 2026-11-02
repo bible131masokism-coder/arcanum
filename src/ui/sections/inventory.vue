@@ -129,8 +129,8 @@ export default {
 		<span class="top">
 			<filterbox ref="filter" v-if="!nosearch" v-model="filtered" :prop="searchIt" :items="baseItems" />
 			<span v-if="!selecting && !combat">
-				<span v-if="inv.max > 0">{{ inv.items.length + " / " + Math.floor(inv.max.value) + " Used" }}</span>
-				<button type="button" v-if="inv.count > 0" @click="sellAll">Sell All</button>
+				<span v-if="inv.max > 0">{{ inv.items.length + " / " + Math.floor(inv.max.value) + " ที่ใช้" }}</span>
+				<button type="button" v-if="inv.count > 0" @click="sellAll">ขายทั้งหมด</button>
 			</span>
 		</span>
 
@@ -146,7 +146,7 @@ export default {
 
 				<div class="item-buttons">
 					<template v-if="selecting">
-						<button type="button" class="item-action" @click="onselect(it)">Select</button>
+						<button type="button" class="item-action" @click="onselect(it)">เลือก</button>
 					</template>
 					<template v-else-if="combat">
 						<button
@@ -156,7 +156,7 @@ export default {
 							class="item-action"
 							@mouseenter.capture.stop="itemOver($event, it)"
 							@click="emit(USE, it, inv)">
-							Use
+							ใช้
 						</button>
 					</template>
 					<template v-else>
@@ -165,7 +165,7 @@ export default {
 							v-if="it.equippable && canEquip(it)"
 							class="item-action"
 							@click="emit('equip', it, inv)">
-							Equip
+							สวมใส่
 						</button>
 						<button
 							type="button"
@@ -174,10 +174,10 @@ export default {
 							class="item-action"
 							@mouseenter.capture.stop="itemOver($event, it)"
 							@click="emit(USE, it, inv)">
-							Use
+							ใช้
 						</button>
 						<button type="button" v-if="take && canAdd(it)" class="item-action" @click="onTake(it)">
-							Take
+							รับ
 						</button>
 
 						<button
@@ -185,7 +185,7 @@ export default {
 							class="item-action"
 							@click="emit('sell', it, inv)"
 							@mouseenter.capture.stop="itemOver($event, it)">
-							Sell
+							ขาย
 						</button>
 						<button
 							type="button"
@@ -193,14 +193,14 @@ export default {
 							class="item-action"
 							@click="emit('sell', it, inv, it.count)"
 							@mouseenter.capture.stop="itemOver($event, it)">
-							Sell All
+							ขายทั้งหมด
 						</button>
 					</template>
 				</div>
 			</div>
 		</div>
 
-		<div v-if="playerFull" class="warn-text">Inventory Full</div>
+		<div v-if="playerFull" class="warn-text">คลังเต็ม</div>
 	</div>
 </template>
 

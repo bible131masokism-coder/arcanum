@@ -59,7 +59,7 @@ export default {
 <template>
 	<div class="log-view">
 		<div class="top-span">
-			<button type="button" class="inline btn-sm" @click="clearLog">Clear</button>
+			<button type="button" class="inline btn-sm" @click="clearLog">ล้าง</button>
 			<!--<button type="button" class="text-button" @click="doOptions">&#9881;</button>-->
 			<span class="checks">
 				<span v-for="(p, k) in LogTypes" :key="k">

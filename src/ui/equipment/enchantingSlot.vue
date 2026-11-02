@@ -27,9 +27,9 @@ export default {
 	<div class="slot" @mouseenter.capture.stop="itemOver($event, this.slot.target)">
 		<div class="slot-name">{{ title }}</div>
 		<div class="slot-actions">
-			<span class="slot-action"> {{ slot.done ? "Done" : `${slot.percent()}%` }}</span>
+			<span class="slot-action"> {{ slot.done ? "เสร็จ" : `${slot.percent()}%` }}</span>
 			<button class="slot-action" :disabled="!canTake" @click="doTake">
-				{{ slot.done ? "Take" : "Cancel" }}
+				{{ slot.done ? "รับ" : "ยกเลิก" }}
 			</button>
 		</div>
 	</div>

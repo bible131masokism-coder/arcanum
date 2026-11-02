@@ -37,12 +37,12 @@ export default {
 		<div class="char-stats" v-if="!empty">
 			<span class="fld-name">{{ char.name }} {{ char.name == " " ? "The" : "the" }} {{ char.title }}</span>
 			<span v-if="gclass">{{ gclass.toString().toTitleCase() }}</span>
-			<span v-if="level > 0">Level {{ level }}</span>
-			<span v-if="char.fame > 0">Notoriety: {{ fame }}</span>
-			<span v-if="char.titles > 0">Titles: {{ char.titles }}</span>
+			<span v-if="level > 0">ระดับ {{ level }}</span>
+			<span v-if="char.fame > 0">ชื่อเสียงฉาวโฉ่: {{ fame }}</span>
+			<span v-if="char.titles > 0">ตำแหน่ง: {{ char.titles }}</span>
 		</div>
 		<div v-else class="char-stats">
-			<span class="fld-name">Chair Empty</span>
+			<span class="fld-name">เก้าอี้ว่าง</span>
 		</div>
 
 		<div class="buttons">
@@ -52,11 +52,11 @@ export default {
 				v-if="!active"
 				@click="$emit('load', char)"
 				@mouseenter.capture.stop="itemOver($event, rollOver)">
-				<span v-if="empty">Begin</span><span v-else>Awaken</span>
+				<span v-if="empty">เริ่ม</span><span v-else>ปลุก</span>
 			</button>
 
 			<button type="button" class="dismiss" v-if="!active && !empty" @click="$emit('dismiss', char)">
-				Dismiss
+				ไล่ออก
 			</button>
 			<!--<button type="button" class="dismiss" v-if="killable" @click="$emit('kill',char)">Murder</button>-->
 		</div>

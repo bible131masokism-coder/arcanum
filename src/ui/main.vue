@@ -31,7 +31,7 @@ import { precise } from "@/util/format.js";
  */
 const SAVE_TIME = 30;
 const SAVE_MSG =
-	"As you currently own the Wizard hall, exporting the character file will not allow you to bring any hall progression over. Are you sure you want to export only the character data?";
+	"เนื่องจากคุณเป็นเจ้าของห้องโถงจอมเวทอยู่ การส่งออกไฟล์ตัวละครจะไม่อนุญาตให้คุณนำความคืบหน้าของห้องโถงไปด้วยได้ คุณแน่ใจหรือไม่ว่าต้องการส่งออกเฉพาะข้อมูลตัวละครเท่านั้น?";
 
 /**
  * @listens [sell]
@@ -477,10 +477,10 @@ export default {
 					@mouseenter.capture.stop="itemOver($event, 'Use stored time to speed up the game')"
 					@click="handleTurboModeChange"
 					:style="turboButton">
-					Fast-forward
+					เร่งเวลา
 				</button>
-				<span class="load-message" v-if="!state">LOADING DATA...</span>
-				<span class="load-error" v-if="displayError">ERROR {{ displayError }}</span>
+				<span class="load-message" v-if="!state">กำลังโหลดข้อมูล...</span>
+				<span class="load-error" v-if="displayError">ข้อผิดพลาด {{ displayError }}</span>
 				<dots v-if="state" :dots="state.player.dots" />
 			</template>
 		</topbar>
@@ -496,7 +496,7 @@ export default {
 		<!-- end popups -->
 
 		<span class="load-message" v-if="displayError">
-			Please try refreshing the page few times. If problem persists, you can seek help through Discord.
+			กรุณาลองรีเฟรชหน้านี้สักสองสามครั้ง หากปัญหายังคงอยู่ คุณสามารถขอความช่วยเหลือได้ทาง Discord
 		</span>
 		<div v-if="state" class="game-main">
 			<resources :items="mergedresources" />
