@@ -2,7 +2,7 @@
 	{
 		"id": "smchest",
 		"name": "small chest",
-		"desc": "A small wooden chest.",
+		"desc": "หีบไม้ขนาดเล็ก",
 		"require": "g.apprentice>0&&g.space.max>=5",
 		"max": 3,
 		"cost": {
@@ -17,7 +17,7 @@
 	{
 		"id": "ironchest",
 		"name": "iron chest",
-		"desc": "Treasure chest.",
+		"desc": "หีบสมบัติ",
 		"require": "g.gold.max>=125",
 		"max": 5,
 		"cost": {
@@ -32,7 +32,7 @@
 	{
 		"id": "ornatechest",
 		"name": "ornate chest",
-		"desc": "Treasure chest.",
+		"desc": "หีบสมบัติ",
 		"require": "g.gold.max>=500",
 		"max": 5,
 		"cost": {
@@ -47,7 +47,7 @@
 	},
 	{
 		"id": "cot",
-		"desc": "Slightly better than sleeping on the floor.",
+		"desc": "ดีกว่าการนอนกับพื้นเพียงเล็กน้อย",
 		"require": "g.apprentice>0&&g.space.max>=5",
 		"tags": "bed",
 		"slot": "bed",
@@ -66,7 +66,7 @@
 	{
 		"id": "woodbed",
 		"name": "wooden bed",
-		"desc": "Small wooden bed.",
+		"desc": "เตียงไม้ขนาดเล็ก",
 		"tags": "bed",
 		"slot": "bed",
 		"require": "g.stamina>=15&&g.evt_helper>0",
@@ -83,7 +83,7 @@
 	},
 	{
 		"id": "fourposter",
-		"desc": "Four post bed.",
+		"desc": "เตียงสี่เสา",
 		"tags": "bed",
 		"slot": "bed",
 		"require": "g.stamina>=30&&g.tier1>0",
@@ -106,7 +106,7 @@
 	{
 		"id": "luxbedroom",
 		"name": "luxury bedroom",
-		"desc": "Luxurious bedding, perfect air temperature, currents of mana to absorb as you sleep.",
+		"desc": "เครื่องนอนหรูหรา อุณหภูมิอากาศสมบูรณ์ และกระแสมานาที่ไหลเวียนให้ดูดซึมระหว่างหลับไหล",
 		"tags": "bed",
 		"slot": "bed",
 		"require": "g.tier3>0&&g.space.max>200",
@@ -129,8 +129,8 @@
 	{
 		"id": "loungeroom",
 		"name": "lounge room",
-		"desc": "Staffed with the most experienced professionals in the field of leisure, one could spend days here without even noticing.",
-		"extdesc": "Significantly increases the benefits of resting at the cost of gold",
+		"desc": "บริการด้วยมืออาชีพที่สุดประสบการณ์ในสายพักผ่อนหย่อนใจ ผู้คนอาจอยู่ที่นี่เป็นวัน ๆ โดยไม่รู้ตัว",
+		"extdesc": "เพิ่มประโยชน์จากการพักผ่อนอย่างมากแลกกับการใช้ทองคำ",
 		"tags": "bed",
 		"slot": "bed",
 		"require": "g.tier5>0&&g.gold.max>10000",
@@ -152,12 +152,12 @@
 			},
 			"space": 10
 		},
-		"flavor": "A little to the left, please"
+		"flavor": "ขยับไปทางซ้ายอีกหน่อยครับ"
 	},
 	{
 		"id": "otherworlysuite",
 		"name": "otherwordly suite",
-		"desc": "Located in the plane of leisure, the unparalleled relaxation is guaranteed.",
+		"desc": "ตั้งอยู่ในมิติแห่งการพักผ่อน การผ่อนคลายอันไร้เทียมทานเป็นสิ่งที่การันตีได้",
 		"tags": "bed,t_furn_portal",
 		"slot": "bed",
 		"need": "gate",
@@ -177,12 +177,12 @@
 			},
 			"space": 50
 		},
-		"flavor": "Bed and bath, beyond"
+		"flavor": "ที่นอนและอ่างอาบน้ำ เหนือกว่าใคร"
 	},
 	{
 		"id": "fiveposter",
 		"name": "Pentaposter",
-		"desc": "Shaped like a pentagram, it grants otherwordly insights in your sleep.",
+		"desc": "รูปทรงคล้ายดาวห้าแฉก มอบหยั่งรู้อันเหนือโลกให้คุณในยามหลับ",
 		"tags": "bed",
 		"slot": "bed",
 		"require": "g.t_demonclass>0",
@@ -207,7 +207,7 @@
 	{
 		"id": "burningcoals",
 		"name": "burning coals",
-		"desc": "Bed of burning coals.",
+		"desc": "เตียงถ่านเพลิงลุกโชน",
 		"tags": "bed",
 		"slot": "bed",
 		"require": "g.t_fireclass>0",
@@ -231,9 +231,9 @@
 	{
 		"id": "cache",
 		"name": "buried cache",
-		"desc": "A cache of treasure buried in the ground, protected by enchantment.",
+		"desc": "ขุมทรัพย์ที่ฝังใต้ดิน ถูกรักษาไว้ด้วยเวทมนตร์",
 		"need": ["outdoors", "g.enchanting>0"],
-		"needtext": "Must live outdoors and be capable of enchanting.",
+		"needtext": "ต้องพักอาศัยกลางแจ้งและสามารถเสริมเวทได้",
 		"max": 3,
 		"cost": {
 			"research": 50,
@@ -250,7 +250,7 @@
 	},
 	{
 		"id": "vault",
-		"desc": "A safe space for treasure.",
+		"desc": "พื้นที่ปลอดภัยสำหรับเก็บสมบัติ",
 		"require": "g.space.max>=25",
 		"max": 5,
 		"cost": {
@@ -268,7 +268,7 @@
 	{
 		"id": "treasureroom",
 		"name": "treasure room",
-		"desc": "A large room for accumulated treasures.",
+		"desc": "ห้องกว้างสำหรับสะสมสมบัติ",
 		"require": "g.space.max>=50",
 		"repeat": true,
 		"cost": {
@@ -287,7 +287,7 @@
 	{
 		"id": "smcage",
 		"name": "rusty cage",
-		"desc": "A cramped cage for keeping tiny test subjects.",
+		"desc": "กรงแคบ ๆ สำหรับเลี้ยงหนูทดลองตัวเล็ก",
 		"tags": "t_pets,shadowsource,t_evilact",
 		"require": "g.shadowlore>0&&g.evt_helper>0",
 		"max": 3,
@@ -295,7 +295,7 @@
 			"gold": 50,
 			"research": 100
 		},
-		"flavor": "It doesn't seem very nice.",
+		"flavor": "ดูไม่น่าอยู่สักเท่าไหร่",
 		"mod": {
 			"animals.mod.shadow.max": 0.1,
 			"shadow.max": 1,
@@ -304,7 +304,7 @@
 	},
 	{
 		"id": "vivarium",
-		"desc": "A glass enclosure for small reptiles, snakes, and frogs.",
+		"desc": "ตู้กระจกสำหรับเลี้ยงสัตว์เลื้อยคลาน งู และกบตัวเล็ก",
 		"tags": "earthsource,t_pets,naturesource",
 		"require": "g.neophyte>0&&g.earthlore>=3",
 		"cost": {
@@ -323,7 +323,7 @@
 	{
 		"id": "writingdesk",
 		"name": "writing desk",
-		"desc": "A desk for working and scribing.",
+		"desc": "โต๊ะสำหรับทำงานและจารึกเขียน",
 		"require": "evt_helper",
 		"tags": "workspace,t_bookfurn",
 		"cost": {
@@ -342,7 +342,7 @@
 		"id": "crafttable",
 		"name": "crafting table",
 		"tags": "workspace",
-		"desc": "Wide table for crafting projects.",
+		"desc": "โต๊ะกว้างสำหรับงานสร้างสรรค์",
 		"require": "evt_helper",
 		"max": 1,
 		"cost": {
@@ -359,7 +359,7 @@
 		"id": "enchanttable",
 		"name": "enchanting table",
 		"tags": "workspace,enchantsource",
-		"desc": "Runed table for enchanting.",
+		"desc": "โต๊ะจารึกรูนสำหรับเสริมเวท",
 		"require": "enchanting",
 		"cost": {
 			"gold": 200,
@@ -375,7 +375,7 @@
 	{
 		"id": "creepingvine",
 		"name": "creeping vine",
-		"desc": "A quickly growing plant.",
+		"desc": "พืชที่เจริญเติบโตอย่างรวดเร็ว",
 		"tags": "plantsource",
 		"require": "g.herbalism>=3",
 		"max": 5,
@@ -390,7 +390,7 @@
 	},
 	{
 		"id": "pedestal",
-		"desc": "A pedestal for reading magic tomes. Improves study habits.",
+		"desc": "แท่นสำหรับอ่านตำราเวท ช่วยพัฒนานิสัยการเล่าเรียน",
 		"require": "evt_helper",
 		"cost": {
 			"gold": 50
@@ -409,7 +409,7 @@
 		"cost": {
 			"mana": 5
 		},
-		"desc": "Activate your imbuement chambers, making gem imbuement a sustained action.",
+		"desc": "เปิดใช้ห้องหล่อหลอมพลัง ทำให้การบรรจุพลังลงเพชรพลอยเป็นไปอย่างต่อเนื่อง",
 		"mod": {
 			"gemimbue.perpetual": true,
 			"gemimbue.length": 4
@@ -422,7 +422,7 @@
 		"cost": {
 			"mana": 1
 		},
-		"desc": "Activate your enchanted scriptorium, making scroll scribing a sustained action.",
+		"desc": "เปิดใช้ห้องจารึกเวทมนตร์ ทำให้การเขียนม้วนคัมภีร์เป็นไปอย่างต่อเนื่อง",
 		"mod": {
 			"scribescroll.perpetual": true,
 			"scribescroll.length": 2
@@ -435,7 +435,7 @@
 		"cost": {
 			"mana": 3
 		},
-		"desc": "Activate your bindery, making codex binding a sustained action.",
+		"desc": "เปิดใช้ห้องเข้าเล่ม ทำให้การเข้าเล่มโคเด็กซ์เป็นไปอย่างต่อเนื่อง",
 		"mod": {
 			"bindcodex.perpetual": true,
 			"bindcodex.length": 4
@@ -444,7 +444,7 @@
 	{
 		"id": "spinwheel",
 		"name": "spinning wheel",
-		"desc": "Eases tasks related to weaving.",
+		"desc": "ผ่อนคลายภารกิจที่เกี่ยวข้องกับการทอผ้า",
 		"tags": "weavesource",
 		"require": "g.weaving>=3",
 		"cost": {
@@ -478,7 +478,7 @@
 		"name": "scroll rack",
 		"tags": "t_bookfurn",
 		"max": 5,
-		"desc": "Latticed shelves for easy scroll storage.",
+		"desc": "ชั้นไม้ขัดแตะสำหรับเก็บม้วนคัมภีร์อย่างสะดวก",
 		"require": "g.apprentice>0&&g.scrolls>=20",
 		"cost": {
 			"gold": 75,
@@ -494,7 +494,7 @@
 		"name": "bookshelf",
 		"tags": "t_bookfurn",
 		"max": 5,
-		"desc": "A single bookshelf for your books.",
+		"desc": "ชั้นหนังสือหนึ่งชั้นสำหรับหนังสือของคุณ",
 		"require": "g.codices>=5&&g.scrolls.max>=15",
 		"cost": {
 			"gold": 100
@@ -509,7 +509,7 @@
 		"id": "bookcase",
 		"name": "bookcase",
 		"tags": "t_bookfurn",
-		"desc": "A rough but sturdy bookcase.",
+		"desc": "ตู้หนังสือหยาบ ๆ แต่แข็งแรง",
 		"require": "g.codices>=20",
 		"max": 20,
 		"cost": {
@@ -526,7 +526,7 @@
 		"name": "scriptorium",
 		"tags": "t_bookfurn",
 		"max": 5,
-		"desc": "A niche dedicated to scrolls.",
+		"desc": "ซอกพื้นที่เฉพาะสำหรับม้วนคัมภีร์",
 		"require": "g.tier0>0",
 		"cost": {
 			"gold": 250
@@ -542,7 +542,7 @@
 		"id": "latticewindow",
 		"name": "lattice window",
 		"tags": "lightsource,airsource",
-		"desc": "An elegant latticed portal for letting in air and light.",
+		"desc": "ช่องประตูขัดแตะอันงดงามสำหรับระบายอากาศและแสง",
 		"require": "g.airlore>0&&g.space.max>=10",
 		"max": 3,
 		"cost": {
@@ -559,7 +559,7 @@
 		"id": "cloudchamber",
 		"name": "cloud chamber",
 		"tags": "airsource",
-		"desc": "A chamber of swirling vapours for study.",
+		"desc": "ห้องไอควันหมุนวนสำหรับการค้นคว้า",
 		"require": "g.neophyte>0&&g.airlore>=3",
 		"max": 3,
 		"cost": {
@@ -577,7 +577,7 @@
 		"id": "brasscandelabra",
 		"tags": "t_candelabra",
 		"name": "brass candelabra",
-		"desc": "Candle holder.",
+		"desc": "เชิงเทียน",
 		"require": "g.waxcandle>0&&g.gold.max>=200",
 		"max": 1,
 		"cost": {
@@ -593,7 +593,7 @@
 		"tags": "firesource",
 		"require": "g.outdoors>0&&g.firelore>0",
 		"need": "outdoors",
-		"needtext": "Must live outdoors.",
+		"needtext": "ต้องพักอาศัยกลางแจ้ง",
 		"cost": {},
 		"mod": {
 			"fire.rate": 0.05,
@@ -607,7 +607,7 @@
 		"id": "bonfire",
 		"tags": "firesource",
 		"require": "g.firelore>0&&g.space.max>=15",
-		"desc": "A burning pyre for the practice of pyromancy.",
+		"desc": "กองไฟลุกโชนสำหรับฝึกวิชาเปลวเพลิง",
 		"cost": {
 			"fire": 4
 		},
@@ -616,11 +616,11 @@
 			"fire.rate": 0.05,
 			"space": 2
 		},
-		"flavor": "Be careful where you put it."
+		"flavor": "ระวังตำแหน่งที่วางมันด้วย"
 	},
 	{
 		"id": "clepsydra",
-		"desc": "Crude measure of time.",
+		"desc": "เครื่องวัดเวลาอันหยาบ ๆ",
 		"require": "tier3",
 		"tags": "timesource",
 		"max": 10,
@@ -634,11 +634,11 @@
 			"water.rate": 0.01,
 			"space": 1
 		},
-		"flavor": "What is gone is gone."
+		"flavor": "สิ่งที่ผ่านไปแล้วก็ผ่านไป"
 	},
 	{
 		"id": "fireplace",
-		"desc": "A cozy place for cooking food and brewing potions.",
+		"desc": "สถานที่อบอุ่นสำหรับปรุงอาหารและต้มยา",
 		"tags": "firesource",
 		"require": "g.firelore>0&&g.space.max>=15",
 		"max": 5,
@@ -655,7 +655,7 @@
 		"id": "grotesque",
 		"tags": "earthsource,shadowsource",
 		"require": "g.tier0>0&&(g.earthlore>=4||g.shadowlore>=4)",
-		"desc": "A grim, disfigured stone statue.",
+		"desc": "เทวรูปหินอันโหดร้ายบิดเบี้ยว",
 		"max": 4,
 		"cost": {
 			"gold": 750
@@ -672,7 +672,7 @@
 		"id": "gargoyle",
 		"tags": "watersource,shadowsource",
 		"require": "g.tier0>0&&(g.waterlore>=4||g.shadowlore>=4)",
-		"desc": "A fountain issues from the stone demon's mouth.",
+		"desc": "น้ำพุไหลออกจากปากปีศาจหิน",
 		"max": 4,
 		"cost": {
 			"gold": 750
@@ -687,7 +687,7 @@
 	},
 	{
 		"id": "fountain",
-		"desc": "Water fountain.",
+		"desc": "น้ำพุ",
 		"tags": "watersource",
 		"require": "g.space.max>=15&&g.waterlore>0",
 		"cost": {
@@ -733,7 +733,7 @@
 	{
 		"id": "elemsiphon",
 		"name": "elemental siphon",
-		"desc": "A crystal apparatus to siphon elemental energies into mana.",
+		"desc": "เครื่องมือผลึกสำหรับดูดพลังธาตุให้กลายเป็นมานา",
 		"require": "g.tier4>0&&g.mana.max>=30",
 		"need": "workshop",
 		"max": 2,
@@ -763,7 +763,7 @@
 	{
 		"id": "elemflux",
 		"name": "elemental flux",
-		"desc": "Gems draw in pure mana and disperse it into elemental forms.",
+		"desc": "เพชรพลอยดูดซับมานาบริสุทธิ์แล้วกระจายออกเป็นรูปแบบธาตุ",
 		"require": "g.tier4>0&&g.mana.max>=30",
 		"max": 2,
 		"cost": {
@@ -791,7 +791,7 @@
 	},
 	{
 		"id": "cairn",
-		"desc": "Mystic rock pile.",
+		"desc": "กองหินเร้นลับ",
 		"tags": "spiritsource",
 		"require": "g.spirit.max>=10&&g.runelore>0",
 		"cost": {
@@ -809,7 +809,7 @@
 	},
 	{
 		"id": "reliquary",
-		"desc": "Saferoom for ancient sources of magic.",
+		"desc": "ห้องนิรภัยสำหรับแหล่งเวทมนตร์โบราณ",
 		"tags": "spiritsource",
 		"require": "g.spirit.max>=5",
 		"cost": {
@@ -825,8 +825,8 @@
 	{
 		"id": "darkshrine",
 		"name": "dark shrine",
-		"desc": "A shrine to EVIL.",
-		"flavor": "Zhakul Ihnaac.",
+		"desc": "ศาลบูชาความชั่วร้าย",
+		"flavor": "ซาคูล อินนาค",
 		"tags": "shadowsource,t_evilact",
 		"require": "g.evilamt>=3&&g.shadowlore>0&&g.good3==0",
 		"cost": {
@@ -843,7 +843,7 @@
 	},
 	{
 		"id": "armory",
-		"desc": "A storeroom of arms.",
+		"desc": "ห้องเก็บอาวุธยุทธภัณฑ์",
 		"tags": "armssource",
 		"require": "g.tier0>0&&g.weaponlore>=5",
 		"max": 5,
@@ -859,7 +859,7 @@
 	},
 	{
 		"id": "leggery",
-		"desc": "A little cubby for maintaining shoes and boots.",
+		"desc": "ซอกเล็ก ๆ สำหรับดูแลรองเท้าและบู๊ท",
 		"tags": "legssource",
 		"require": "g.tier0>0&&g.player.speed>=10",
 		"need": "armory",
@@ -894,7 +894,7 @@
 	{
 		"id": "weaponrack",
 		"name": "weapon rack",
-		"desc": "Holds equipment you aren't using.",
+		"desc": "ใช้เก็บอุปกรณ์ที่คุณไม่ได้ใช้งาน",
 		"require": "g.armory>0",
 		"tags": "armssource",
 		"max": 3,
@@ -911,7 +911,7 @@
 		"id": "archive",
 		"name": "arcane archive",
 		"tags": "t_bookfurn",
-		"desc": "A good archive does your research for you.",
+		"desc": "หอจดหมายเหตุที่ดีจะทำวิจัยให้คุณเอง",
 		"require": "g.lore.max>=12",
 		"max": 3,
 		"cost": {
@@ -928,7 +928,7 @@
 	},
 	{
 		"id": "shrine",
-		"desc": "A shrine to divine forces.",
+		"desc": "ศาลบูชาพลังศักดิ์สิทธิ์",
 		"require": "g.good1>0&&g.evil3==0",
 		"tags": "lightsource,t_goodact",
 		"cost": {
@@ -947,7 +947,7 @@
 	{
 		"id": "bloodfountain",
 		"name": "blood fountain",
-		"desc": "Fountain of blood.",
+		"desc": "น้ำพุเลือด",
 		"tags": "shadowsource",
 		"require": "g.evil1>0&&g.shadowlore>=3",
 		"cost": {
@@ -966,7 +966,7 @@
 		"id": "portaalchemica",
 		"name": "porta alchemica",
 		"require": "g.alchemy>=5&&g.planeslore>=5&&g.crafting>=10",
-		"desc": "A monument inscribed with alchemical runes.",
+		"desc": "อนุสาวรีย์ที่สลักรูนเล่นแร่แปรธาตุ",
 		"cost": {
 			"gems": 20
 		},
@@ -983,7 +983,7 @@
 		"id": "studyroom",
 		"name": "personal study",
 		"tags": "workspace",
-		"desc": "A place for reading and research.",
+		"desc": "สถานที่สำหรับการอ่านและค้นคว้า",
 		"require": "g.codices.max>=100",
 		"cost": {
 			"gold": 200,
@@ -1001,7 +1001,7 @@
 	},
 	{
 		"id": "orrery",
-		"desc": "A vast mechanical model of existence.",
+		"desc": "แบบจำลองกลไกอันใหญ่โตของการดำรงอยู่",
 		"require": "g.codices>=80&&g.astronomy>=8",
 		"tags": "starsource",
 		"max": 1,
@@ -1021,7 +1021,7 @@
 	},
 	{
 		"id": "garden",
-		"desc": "A small garden by your home.",
+		"desc": "สวนเล็ก ๆ ข้างบ้านของคุณ",
 		"tags": "naturesource,plantsource",
 		"require": "(g.t_natureclass+g.t_potionclass*2)>=2",
 		"max": 3,
@@ -1045,7 +1045,7 @@
 		"max": 5,
 		"require": "solidifier",
 		"tags": "t_alembic",
-		"desc": "A complex alchemical process drips arcane energy onto gemstones.",
+		"desc": "กระบวนการเล่นแร่แปรธาตุอันซับซ้อนหยดพลังงานลี้ลับลงบนเพชรพลอย",
 		"cost": {
 			"research": 1000,
 			"gold": 500
@@ -1071,7 +1071,7 @@
 		"max": 5,
 		"require": "g.solidifier>0&&g.bloodgem.locked==0",
 		"tags": "t_alembic",
-		"desc": "Captures your vital essence and condenses it into a gem.",
+		"desc": "จับพลังชีวิตของคุณแล้วกลั่นให้ข้นเป็นเพชรพลอย",
 		"cost": {
 			"research": 1000,
 			"gold": 500
@@ -1097,7 +1097,7 @@
 		"max": 5,
 		"require": "solidifier",
 		"tags": "t_alembic",
-		"desc": "Replicates the natural process of growth, imprinting its energies into a gem.",
+		"desc": "จำลองกระบวนการเจริญเติบโตตามธรรมชาติ แล้วประทับพลังของมันลงบนเพชรพลอย",
 		"cost": {
 			"research": 1000,
 			"gold": 500
@@ -1119,7 +1119,7 @@
 	},
 	{
 		"id": "starweb",
-		"desc": "Motes of stars fall daily from the sky. One need only collect them.",
+		"desc": "อนุภาคดาวร่วงหล่นจากฟ้าทุกวัน แค่เพียงเก็บมารวบรวม",
 		"require": "tier5",
 		"max": 5,
 		"cost": {
@@ -1136,7 +1136,7 @@
 	{
 		"id": "starwell",
 		"name": "star well",
-		"desc": "Pools of light congeal softly in the basin.",
+		"desc": "แอ่งแสงจับตัวกันอย่างนุ่มนวลในอ่าง",
 		"require": "tier5",
 		"max": 3,
 		"cost": {
@@ -1152,7 +1152,7 @@
 	{
 		"id": "runechest",
 		"name": "rune chest",
-		"desc": "A box carved from idrasil to hold the most potent runes.",
+		"desc": "กล่องแกะสลักจากไม้อิดราซิลสำหรับเก็บรูนที่ทรงพลังที่สุด",
 		"require": "g.runelore>=4",
 		"max": 5,
 		"cost": {
@@ -1170,12 +1170,12 @@
 			"prismaticrunes.max": 5,
 			"space": 5
 		},
-		"flavor": "Now with side compartments for elemental runes, too!"
+		"flavor": "ตอนนี้เพิ่มช่องข้างสำหรับรูนธาตุด้วย!"
 	},
 	{
 		"id": "latticefence",
 		"name": "lattice fence",
-		"desc": "Latticed fence for growing vines.",
+		"desc": "รั้วขัดแตะสำหรับปลูกไม้เลื้อย",
 		"require": "g.neophyte>0&&g.naturelore>=5",
 		"cost": {
 			"gold": 200,
@@ -1191,7 +1191,7 @@
 	},
 	{
 		"id": "pond",
-		"desc": "Pond.",
+		"desc": "สระน้ำ",
 		"tags": "watersource",
 		"require": "g.space.max>=30&&g.waterlore>0",
 		"cost": {
@@ -1206,13 +1206,13 @@
 			"waterlore.rate": 0.3,
 			"space": 15
 		},
-		"flavor": "Perfect for a yearly bath, if you feel fastidious."
+		"flavor": "เหมาะสำหรับอาบน้ำประจำปี หากคุณละเอียดถี่ถ้วน"
 	},
 	{
 		"id": "sandgarden",
 		"name": "sand garden",
 		"tags": "earthsource",
-		"desc": "Rocks and sand form patterns of intricate design.",
+		"desc": "หินและทรายประกอบกันเป็นลวดลายอันสลับซับซ้อน",
 		"require": "g.earth.max>=5&&g.space.max>=30",
 		"cost": {
 			"gold": 100,
@@ -1228,7 +1228,7 @@
 	{
 		"id": "banquethall",
 		"name": "banquet hall",
-		"desc": "A grand hall to entertain guests and supplicants.",
+		"desc": "ห้องโถงใหญ่สำหรับต้อนรับแขกและผู้มาเฝ้า",
 		"require": "tier2",
 		"cost": {
 			"gems": 20,
@@ -1243,7 +1243,7 @@
 	{
 		"id": "bottomlesspit",
 		"name": "bottomless pit",
-		"desc": "An endless hole in the ground.",
+		"desc": "หลุมไร้ก้นกลางผืนดิน",
 		"tags": "t_underground",
 		"require": "g.planeslore>=8&&g.space.max>=20&&g.tier4>0",
 		"cost": {
@@ -1266,7 +1266,7 @@
 	{
 		"id": "potroom",
 		"name": "potions room",
-		"desc": "Room for preparing and brewing potions.",
+		"desc": "ห้องสำหรับเตรียมและต้มยา",
 		"require": "potions",
 		"tags": "potsource",
 		"cost": {
@@ -1286,7 +1286,7 @@
 	{
 		"id": "workshop",
 		"tags": "workspace",
-		"desc": "A space suitable for crafting and enchanting items.",
+		"desc": "พื้นที่เหมาะสำหรับสร้างสรรค์และเสริมเวทไอเทม",
 		"require": "g.space.max>=50&&(g.crafting>=7||g.enchanting>=7)",
 		"cost": {
 			"gold": 1000,
@@ -1305,7 +1305,7 @@
 	{
 		"id": "library",
 		"tags": "booksource,t_bookfurn",
-		"desc": "The most important part of a proper wizard's stronghold.",
+		"desc": "ส่วนสำคัญที่สุดของป้อมปราการจอมเวทที่แท้จริง",
 		"require": "g.codices.max>=100&&g.tier3>0",
 		"cost": {
 			"gold": 500,
@@ -1321,7 +1321,7 @@
 	},
 	{
 		"id": "lexyrinth",
-		"desc": "All libraries hold hidden doors into its halls. Unlocking them is the hard bit.",
+		"desc": "ห้องสมุดทุกแห่งล้วนมีประตูลับเปิดเข้าไปในโถงของมัน สิ่งที่ยากคือการไขกุญแจมันต่างหาก",
 		"require": "g.library>0&&g.planeslore>=12",
 		"tags": "t_furn_portal,booksource,t_bookfurn",
 		"max": 1,
@@ -1338,11 +1338,11 @@
 			"tomes.max": 100,
 			"space": 40
 		},
-		"flavor": "Its shelves extend beyond all sight."
+		"flavor": "ชั้นหนังสือของมันทอดยาวเกินกว่าสายตาจะมองเห็น"
 	},
 	{
 		"id": "ziggurat",
-		"desc": "A vast mound of earth dedicated to occult practices.",
+		"desc": "เนินดินอันกว้างใหญ่สำหรับประกอบพิธีเร้นลับ",
 		"require": "tier4",
 		"tags": "starsource,ritesource",
 		"cost": {
@@ -1366,7 +1366,7 @@
 	{
 		"id": "bindcircle",
 		"name": "binding circle",
-		"desc": "Magic circle for binding summoned entities.",
+		"desc": "วงเวทสำหรับผูกมัดสิ่งมีชีวิตที่ถูกเรียก",
 		"tags": "prison,wardsource,summonsource",
 		"require": "g.summoning>=5||g.demonology>=5",
 		"cost": {
@@ -1386,7 +1386,7 @@
 	{
 		"id": "bonsaitree",
 		"name": "bonsai tree",
-		"desc": "A small, meticulously manicured tree.",
+		"desc": "ต้นไม้ขนาดเล็กที่ถูกแต่งดูแลอย่างพิถีพิถัน",
 		"tags": "naturesource",
 		"require": "g.pond>0",
 		"cost": {
@@ -1402,7 +1402,7 @@
 	{
 		"id": "medicalfacility",
 		"name": "medical facility",
-		"desc": "A space for treating the ill and injured.",
+		"desc": "พื้นที่สำหรับรักษาผู้ป่วยและผู้บาดเจ็บ",
 		"require": "g.heallore>=3",
 		"cost": {
 			"research": 5000,
@@ -1426,7 +1426,7 @@
 		"name": "cleansing fire",
 		"tags": "firesource,lightsource",
 		"require": "g.tier0>0&&(g.firelore>=4||g.lightlore>=4)",
-		"desc": "A constantly burning flame, devoid of smoke or ash.",
+		"desc": "เปลวไฟที่ลุกไหม้ตลอดกาล ไร้ควันหรือเถ้าถ่าน",
 		"max": 4,
 		"cost": {
 			"gold": 750
@@ -1444,7 +1444,7 @@
 		"name": "stained glass dome",
 		"tags": "airsource,lightsource",
 		"require": "g.tier0>0&&(g.airlore>=4||g.lightlore>=4)",
-		"desc": "Intricate patterns of light and a gentle breeze flow through its elaborate designs.",
+		"desc": "ลวดลายแสงอันวิจิตรและสายลมอ่อนโยนพัดผ่านการออกแบบอันประณีต",
 		"max": 4,
 		"cost": {
 			"gold": 750
@@ -1460,7 +1460,7 @@
 	{
 		"id": "runepress",
 		"name": "runic printing press",
-		"desc": "Technology too new to have a guild monopoly! Perfect for those pesky runes.",
+		"desc": "เทคโนโลยีใหม่เกินกว่าที่สมาคมจะผูกขาด! เหมาะสำหรับรูนจอมกวนพวกนั้น",
 		"require": "g.tier4>0&&g.runelore>=3&&g.crafting>=15",
 		"max": 1,
 		"cost": {
@@ -1482,7 +1482,7 @@
 	{
 		"id": "runeworkshop",
 		"name": "closed-loop runic workspace",
-		"desc": "Designed to reuse arcane energies that would otherwise dissipate, increases efficiency of rune-crafting.",
+		"desc": "ออกแบบมาเพื่อนำพลังลี้ลับที่มิฉะนั้นจะสลายไปกลับมาใช้ใหม่ เพิ่มประสิทธิภาพการสร้างรูน",
 		"require": "g.crafting>=14&&g.runelore>=3",
 		"max": 5,
 		"cost": {
@@ -1510,7 +1510,7 @@
 	{
 		"id": "scrollloom",
 		"name": "scroll loom",
-		"desc": "Inspiration struck and you devised a more elaborate loom, enchanted to weave ink and paper instead of thread.",
+		"desc": "แรงบันดาลใจพลุ่งพล่าน คุณจึงประดิษฐ์เครื่องทอที่สลับซับซ้อนยิ่งขึ้น อาคมให้ทอหมึกและกระดาษแทนเส้นด้าย",
 		"require": "g.tier0>0&&g.weaving>=2&&g.languages>=3",
 		"max": 3,
 		"cost": {
@@ -1533,7 +1533,7 @@
 	{
 		"id": "codexloom",
 		"name": "codex loom",
-		"desc": "Larger than the scroll loom, but simpler since it only needs to stitch scrolls together.",
+		"desc": "ใหญ่กว่าเครื่องทอม้วนคัมภีร์ แต่เรียบง่ายกว่า เพราะเพียงแค่เย็บคัมภีร์เข้าด้วยกัน",
 		"require": "g.tier1>0&&g.weaving>=3&&g.languages>=4",
 		"max": 3,
 		"cost": {
@@ -1557,7 +1557,7 @@
 	{
 		"id": "tomeloom",
 		"name": "tome loom",
-		"desc": "The most intricate one yet. Shuttles clack as it binds codices into tomes.",
+		"desc": "ประณีตที่สุดเท่าที่เคยมีมา กระสวยกระทบกันเป็นจังหวะขณะเข้าเล่มโคเด็กซ์ให้เป็นตำรา",
 		"require": "g.tier1>0&&g.weaving>=5&&g.languages>=5",
 		"max": 3,
 		"cost": {
@@ -1581,7 +1581,7 @@
 	{
 		"id": "goldportal",
 		"name": "gold portal",
-		"desc": "Interest on the gold, sent to forgotten times",
+		"desc": "ดอกเบี้ยจากทองคำที่ถูกส่งไปยังกาลเวลาอันถูกลืมเลือน",
 		"tags": "t_furn_portal",
 		"max": 10,
 		"require": "g.gate>0",

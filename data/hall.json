@@ -7,7 +7,7 @@
 				"id": "evt_hall",
 				"name": "Wizard's Hall",
 				"tags": "hall",
-				"desc": "Across the aeons wizards gather in hidden halls to exchange lore and augment their powers.",
+				"desc": "ตลอดกาลอันยาวนาน เหล่าจอมเวทมาชุมนุมกันในห้องโถงเร้นลับเพื่อแลกเปลี่ยนวิชาความรู้และเสริมพลังของตน",
 				"mod": {
 					"fame.result.hallPoints": 1
 				},
@@ -104,7 +104,7 @@
 				"name": "great wing",
 				"tags": "hall",
 				"max": 3,
-				"desc": "A new wing of the Great Hall where Wizards can lodge in comfort.",
+				"desc": "ปีกใหม่ของห้องโถงใหญ่ที่จอมเวทสามารถพำนักได้อย่างสุขสบาย",
 				"require": "g.expandhall>=1",
 				"cost": {
 					"gold": 10000,
@@ -122,7 +122,7 @@
 				"tags": "hall",
 				"require": "tier6",
 				"max": 3,
-				"desc": "An expansive chamber for viewing the heavens.",
+				"desc": "ห้องกว้างขวางสำหรับชมสรวงสวรรค์",
 				"cost": {
 					"sindel": 3,
 					"prestige": 10,
@@ -151,7 +151,7 @@
 				"max": 3,
 				"tags": "hall",
 				"require": "tier6",
-				"desc": "A conduit for magic energy.",
+				"desc": "ท่อนำพลังงานเวทมนตร์",
 				"cost": {
 					"prestige": 15
 				},
@@ -164,7 +164,7 @@
 				"id": "dreamchamber",
 				"name": "dream chamber",
 				"tags": "hall,t_oneiromancy",
-				"desc": "An ancient artifact from before the art of Oneiromancy was lost. Makes users capable of controlling dreams... and vice-versa.",
+				"desc": "โบราณวัตถุจากยุคก่อนที่ศิลปะแห่งการทำนายฝันจะสูญหาย ทำให้ผู้ใช้สามารถควบคุมความฝันได้... และในทางกลับกันก็เช่นกัน",
 				"require": "tier5",
 				"max": 1,
 				"cost": {
@@ -175,13 +175,13 @@
 					"dreams.rate": 0.0001,
 					"t_rest.effect.dreams": 0.0001
 				},
-				"flavor": "In some time and place, even dreams were once real."
+				"flavor": "ในกาลและสถานที่หนึ่ง แม้แต่ความฝันก็เคยเป็นจริง"
 			},
 			{
 				"id": "puppet_enhancedlabs",
 				"name": "enhanced laboratories",
 				"tags": "hall",
-				"desc": "Mechanical assistants and automated delivery systems.",
+				"desc": "ผู้ช่วยกลไกและระบบลำเลียงอัตโนมัติ",
 				"require": "g.mechamancer>0",
 				"max": 5,
 				"cost": {
@@ -197,7 +197,7 @@
 				"id": "titan_foundations",
 				"name": "stabilized foundations",
 				"tags": "hall",
-				"desc": "A procedure to prevent earthquakes from affecting member's buildings.",
+				"desc": "วิธีป้องกันไม่ให้แผ่นดินไหวมากระทบอาคารของสมาชิก",
 				"require": "g.titan>0",
 				"max": 3,
 				"cost": {
@@ -212,8 +212,8 @@
 				"id": "hall_time_1",
 				"name": "time fork",
 				"tags": "hall",
-				"desc": "Forces the timelines of all hall members to diverge without a need for a complicated procedure.",
-				"extdesc": "Adds a free timesplit to all wizards who do not yet own one, regardless of normal requirements.",
+				"desc": "บังคับให้เส้นเวลาของสมาชิกห้องโถงทุกคนแยกออกจากกันโดยไม่ต้องใช้วิธีอันซับซ้อน",
+				"extdesc": "มอบไทม์สปลิตฟรีหนึ่งอันแก่จอมเวททุกคนที่ยังไม่มี โดยไม่คำนึงถึงข้อกำหนดปกติ",
 				"require": "tier5",
 				"max": 1,
 				"cost": {
@@ -224,7 +224,7 @@
 				"id": "hall_time_2",
 				"name": "time knife",
 				"tags": "hall",
-				"desc": "Carve out just a little more time in a day.",
+				"desc": "สลักเวลาเพิ่มอีกสักเล็กน้อยในหนึ่งวัน",
 				"require": "tier5",
 				"need": "hall_time_1",
 				"max": 1,
@@ -240,9 +240,9 @@
 				"name": "time skewer",
 				"tags": "hall",
 				"require": "g.t_actionexpansion>0&&g.hall_time_2>0",
-				"desc": "Puncturing this senescent timeline, leak potential to the next.",
+				"desc": "เจาะทะลุเส้นเวลาเก่าแก่ที่โรยรา ปล่อยให้ศักยภาพรั่วไหลสู่เส้นเวลาถัดไป",
 				"need": "g.player.getWeapon().recipe=='timeedge'",
-				"needtext": "Currently equipped weapon must be Time's Flowering Edge.",
+				"needtext": "อาวุธที่สวมใส่ในปัจจุบันต้องเป็นดาบ Time's Flowering Edge",
 				"max": 1,
 				"cost": {
 					"prestige": 25,
@@ -257,7 +257,7 @@
 				"id": "magicstables",
 				"name": "magic stables",
 				"tags": "stables,hall",
-				"desc": "Dedicated stabling for the hall's mounts. Useful for discerning those with aptitude for magic.",
+				"desc": "คอกม้าเฉพาะสำหรับพาหนะของห้องโถง มีประโยชน์ในการคัดเลือกผู้มีพรสวรรค์ทางเวทมนตร์",
 				"require": "tier5",
 				"max": 4,
 				"cost": {
@@ -274,7 +274,7 @@
 				"id": "arcanacollectors",
 				"name": "arcana collectors",
 				"tags": "hall",
-				"desc": "Specialized facilities for newer mages to practice arcana absorption.",
+				"desc": "สิ่งอำนวยความสะดวกเฉพาะสำหรับจอมเวทหน้าใหม่ฝึกการดูดซึมพลังอาคาน่า",
 				"require": "tier5",
 				"max": 4,
 				"cost": {
@@ -288,7 +288,7 @@
 				"id": "classrooms",
 				"name": "classrooms",
 				"tags": "hall",
-				"desc": "Dedicated classrooms for efficient study and transfer of knowledge.",
+				"desc": "ห้องเรียนเฉพาะสำหรับการเล่าเรียนและการถ่ายทอดความรู้อย่างมีประสิทธิภาพ",
 				"require": "tier5",
 				"max": 5,
 				"cost": {
@@ -303,7 +303,7 @@
 				"id": "hall_tomeinsight",
 				"name": "tome of insight",
 				"tags": "hall",
-				"desc": "A rare treatise on the nature of learning.",
+				"desc": "ตำราเอกที่หายากว่าด้วยธรรมชาติของการเรียนรู้",
 				"require": "tier5",
 				"max": 2,
 				"cost": {
@@ -317,7 +317,7 @@
 				"id": "hall_books_basic",
 				"name": "elementalism textbooks",
 				"tags": "firesource,earthsource,airsource,watersource,hall",
-				"desc": "A set of textbooks intended to facilitate the study of the elements.",
+				"desc": "ชุดตำราเรียนที่จัดทำขึ้นเพื่ออำนวยความสะดวกในการศึกษาธาตุ",
 				"require": "tier5",
 				"max": 1,
 				"cost": {
@@ -338,7 +338,7 @@
 				"id": "hall_dimensionalnexus",
 				"name": "dimensional nexus",
 				"tags": "hall",
-				"desc": "A more advanced version of a dhrunic nexus, permitting deeper exploration into the planes.",
+				"desc": "เน็กซัสแห่งดรูน์เวอร์ชันขั้นสูงกว่า อนุญาตให้สำรวจมิติได้ลึกลงไปกว่าเดิม",
 				"require": "g.tier6>0&&g.gate>0",
 				"max": 1,
 				"cost": {
@@ -352,7 +352,7 @@
 				"id": "hall_dimensionalexploration",
 				"name": "dimensional exploration",
 				"tags": "hall",
-				"desc": "Crossing the vast distances between planes personally is a risky and expensive endeavor. Use a probe to research them instead.",
+				"desc": "การข้ามระยะอันไพศาลระหว่างมิติด้วยตัวเองเป็นกิจที่เสี่ยงและสิ้นเปลือง จงใช้ยานสำรวจทำการค้นคว้าแทน",
 				"require": "g.hall_dimensionalnexus>0",
 				"max": 1,
 				"cost": {
@@ -363,7 +363,7 @@
 				"id": "hall_probing_mastery1",
 				"name": "early dimensional exploration results",
 				"tags": "hall",
-				"desc": "Well-known planes: Fire, Darkness, Void. Most wizards would find such information basic, but the comprehensive surveys are nonetheless valuable.",
+				"desc": "มิติที่รู้จักกันดี ได้แก่ ไฟ ความมืด และความว่างเปล่า จอมเวทส่วนใหญ่คงเห็นว่าข้อมูลนี้พื้นฐาน แต่การสำรวจอย่างครอบคลุมก็ยังมีคุณค่า",
 				"require": "g.hall_probedepth>=5",
 				"max": 1,
 				"mod": {
@@ -374,7 +374,7 @@
 				"id": "hall_probing_mastery2",
 				"name": "further dimensional exploration results",
 				"tags": "hall",
-				"desc": "Lesser-known planes: That-which-exists, Zolohedron, Plane of Loathing. Inimical to existence of Dhrune's creatures, one can rest easy that the inhabitants would not be able to exist on Dhrune either.",
+				"desc": "มิติที่รู้จักน้อยกว่า ได้แก่ สิ่งที่ดำรงอยู่ โซโลเฮดรอน และมิติแห่งความเกลียดชัง ต่างเป็นปฏิปักษ์ต่อสรรพชีวิตแห่งดรูน์ วางใจได้ว่าสิ่งมีชีวิตที่นั่นก็ไม่อาจอยู่บนดรูน์ได้เช่นกัน",
 				"require": "g.hall_probedepth>=25",
 				"max": 1,
 				"mod": {
@@ -385,7 +385,7 @@
 				"id": "hall_probing_mastery3",
 				"name": "furthest dimensional exploration results",
 				"tags": "hall",
-				"desc": "Previously unknown planes. At this point, the laws governing them are largely incomprehensible to a denizen of Dhrune. Further exploration will not yield much in a way of practical insight.",
+				"desc": "มิติที่ไม่เคยรู้จักมาก่อน ณ จุดนี้ กฎที่ปกครองมิติเหล่านั้นส่วนใหญ่เกินความเข้าใจของคนแห่งดรูน์ การสำรวจต่อไปคงไม่ให้ข้อคิดเชิงปฏิบัติมากนัก",
 				"require": "g.hall_probedepth>=100",
 				"max": 1,
 				"mod": {
@@ -397,7 +397,7 @@
 			{
 				"id": "hall_probematerials",
 				"name": "dimensional probe materials",
-				"desc": "Properly staged materials for further advancement of dimensional probing.",
+				"desc": "วัสดุที่จัดเตรียมอย่างเป็นระบบสำหรับความก้าวหน้าต่อไปของการสำรวจมิติ",
 				"max": 60,
 				"group": "hall",
 				"convert": {
