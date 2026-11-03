@@ -1,139 +1,139 @@
 [
 	{
 		"id": "physdmg",
-		"name": "physical potency",
+		"name": "ศักยภาพกายภาพ",
 		"val": 100,
 		"damage": "Math.max((i.value/100)||0,0)"
 	},
 	{
 		"id": "spelldmg",
-		"name": "spell potency",
+		"name": "ศักยภาพคาถา",
 		"val": 100,
 		"damage": "Math.max((i.value/100)||0,0)"
 	},
 	{
 		"id": "runicdmg",
-		"name": "runic potency",
+		"name": "ศักยภาพรูน",
 		"val": 100,
 		"damage": "Math.max((i.value/100)||0,0)"
 	},
 	{
 		"id": "spellheal",
-		"name": "healing potency",
+		"name": "ศักยภาพการเยียวยา",
 		"val": 100,
 		"damage": "Math.max((i.value/100)||0,0)"
 	},
 	{
 		"id": "slashdmg",
-		"name": "slashing potency",
+		"name": "ศักยภาพการฟัน",
 		"val": 100,
 		"damage": "Math.max((i.value/100)||0,0)"
 	},
 	{
 		"id": "piercedmg",
-		"name": "piercing potency",
+		"name": "ศักยภาพการแทง",
 		"val": 100,
 		"damage": "Math.max((i.value/100)||0,0)"
 	},
 	{
 		"id": "bluntdmg",
-		"name": "bludgeoning potency",
+		"name": "ศักยภาพการทุบ",
 		"val": 100,
 		"damage": "Math.max((i.value/100)||0,0)"
 	},
 	{
 		"id": "manadmg",
-		"name": "mana potency",
+		"name": "ศักยภาพมานา",
 		"val": 100,
 		"damage": "Math.max((i.value/100)||0,0)"
 	},
 	{
 		"id": "waterdmg",
-		"name": "water potency",
+		"name": "ศักยภาพน้ำ",
 		"val": 100,
 		"damage": "Math.max((i.value/100)||0,0)"
 	},
 	{
 		"id": "airdmg",
-		"name": "air potency",
+		"name": "ศักยภาพลม",
 		"val": 100,
 		"damage": "Math.max((i.value/100)||0,0)"
 	},
 	{
 		"id": "firedmg",
-		"name": "fire potency",
+		"name": "ศักยภาพไฟ",
 		"val": 100,
 		"damage": "Math.max((i.value/100)||0,0)"
 	},
 	{
 		"id": "earthdmg",
-		"name": "earth potency",
+		"name": "ศักยภาพดิน",
 		"val": 100,
 		"damage": "Math.max((i.value/100)||0,0)"
 	},
 	{
 		"id": "naturedmg",
-		"name": "nature potency",
+		"name": "ศักยภาพธรรมชาติ",
 		"val": 100,
 		"damage": "Math.max((i.value/100)||0,0)"
 	},
 	{
 		"id": "spiritdmg",
-		"name": "spirit potency",
+		"name": "ศักยภาพวิญญาณ",
 		"val": 100,
 		"damage": "Math.max((i.value/100)||0,0)"
 	},
 	{
 		"id": "lightdmg",
-		"name": "light potency",
+		"name": "ศักยภาพแสง",
 		"val": 100,
 		"damage": "Math.max((i.value/100)||0,0)"
 	},
 	{
 		"id": "shadowdmg",
-		"name": "shadow potency",
+		"name": "ศักยภาพเงา",
 		"val": 100,
 		"damage": "Math.max((i.value/100)||0,0)"
 	},
 	{
 		"id": "chaosdmg",
-		"name": "chaos potency",
+		"name": "ศักยภาพความโกลาหล",
 		"val": 100,
 		"damage": "Math.max((i.value/100)||0,0)"
 	},
 	{
 		"id": "timedmg",
-		"name": "time potency",
+		"name": "ศักยภาพเวลา",
 		"val": 100,
 		"damage": "Math.max((i.value/100)||0,0)"
 	},
 	{
 		"id": "voiddmg",
-		"name": "void potency",
+		"name": "ศักยภาพความว่าง",
 		"val": 100,
 		"damage": "Math.max((i.value/100)||0,0)"
 	},
 	{
 		"id": "poisondmg",
-		"name": "poison potency",
+		"name": "ศักยภาพพิษ",
 		"val": 100,
 		"damage": "Math.max((i.value/100)||0,0)"
 	},
 	{
 		"id": "blooddmg",
-		"name": "blood potency",
+		"name": "ศักยภาพเลือด",
 		"val": 100,
 		"damage": "Math.max((i.value/100)||0,0)"
 	},
 	{
 		"id": "astraldmg",
-		"name": "astral potency",
+		"name": "ศักยภาพดวงดาว",
 		"val": 100,
 		"damage": "Math.max((i.value/100)||0,0)"
 	},
 	{
 		"id": "charmdmg",
-		"name": "charm potency",
+		"name": "ศักยภาพมนตร์เสน่ห์",
 		"val": 100,
 		"damage": "Math.max((i.value/100)||0,0)"
 	}
