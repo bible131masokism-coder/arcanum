@@ -5,14 +5,14 @@
 		"events": [
 			{
 				"id": "spr_intro",
-				"desc": "As winter thaws, life springs new from the ground, and the eternal cycle begins again."
+				"desc": "เมื่อฤดูหนาวละลาย ชีวิตก็ผลิบานใหม่จากพื้นดิน และวัฏจักรนิรันดร์ก็เริ่มต้นอีกครั้ง"
 			}
 		],
 		"potions": [
 			{
 				"id": "stone_soup",
 				"stack": true,
-				"desc": "A natural repast.",
+				"desc": "มื้ออาหารตามธรรมชาติ",
 				"cost": {
 					"earthgem": 3,
 					"herbs": 10
@@ -31,7 +31,7 @@
 			{
 				"id": "valelily",
 				"name": "lily of the vale",
-				"desc": "A scented white flower, worn for luck.",
+				"desc": "ดอกไม้สีขาวหอมกรุ่น สวมใส่เพื่อโชคลาภ",
 				"slot": "trinket",
 				"alter": {
 					"mod": {
@@ -56,12 +56,12 @@
 			{
 				"id": "spr_honey_jar",
 				"stack": true,
-				"desc": "A jar of golden honey."
+				"desc": "โหลน้ำผึ้งสีทอง"
 			},
 			{
 				"id": "spr_jar_bees",
 				"stack": true,
-				"desc": "A jar of wild bees.",
+				"desc": "โหลผึ้งป่า",
 				"use": "mk_apiary"
 			}
 		],
@@ -71,35 +71,35 @@
 				"name": "bees",
 				"max": 0,
 				"require": "apiculture",
-				"desc": "Bees have unexpected uses in spells of life and generation.",
-				"flavor": "Dbulm has a collection"
+				"desc": "ผึ้งมีประโยชน์ที่คาดไม่ถึงในคาถาแห่งชีวิตและการกำเนิด",
+				"flavor": "ดับูล์มมีคอลเลกชัน"
 			},
 			{
 				"id": "spr_hyacinth",
 				"name": "hyacinth",
 				"max": 5,
-				"desc": "A colorful and poisonous spring bloom.",
-				"flavor": "I could not speak, and my eyes failed, I was neither living nor dead, and I knew nothing."
+				"desc": "ดอกไม้ฤดูใบไม้ผลิสีสันสดใสและมีพิษ",
+				"flavor": "ข้าพูดไม่ได้ ตาก็พร่าเลือน ข้าไม่ใช่ทั้งคนเป็นและคนตาย และข้าไม่รู้อะไรเลย"
 			},
 			{
 				"id": "spr_bees",
 				"name": "bees",
 				"require": "apiculture",
-				"desc": "Bees have unexpected uses in spells of life and generation.",
-				"flavor": "Dbulm has a collection"
+				"desc": "ผึ้งมีประโยชน์ที่คาดไม่ถึงในคาถาแห่งชีวิตและการกำเนิด",
+				"flavor": "ดับูล์มมีคอลเลกชัน"
 			}
 		],
 		"upgrades": [
 			{
 				"id": "spr_portal",
 				"name": "portal of trees",
-				"desc": "A portal of tree trucks grows from the ground. If you could activate it, you might learn where the beasts came from.",
+				"desc": "ประตูมิติแห่งลำต้นไม้ผุดขึ้นจากพื้นดิน หากคุณเปิดมันได้ คุณอาจเรียนรู้ว่าเหล่าสัตว์ร้ายมาจากไหน",
 				"cost": {}
 			},
 			{
 				"id": "spr_mabs_carriage",
 				"name": "queen mab's carriage",
-				"desc": "A fairie-carriage carved from an enchanted chestnut.",
+				"desc": "รถม้าแฟรี่แกะสลักจากเกาลัดอาคม",
 				"require": "",
 				"slot": "mount",
 				"cost": {
@@ -117,7 +117,7 @@
 			{
 				"id": "spr_beeswax_candle",
 				"name": "beeswax candle",
-				"desc": "A candle with a refreshing aroma.",
+				"desc": "เทียนที่มีกลิ่นหอมสดชื่น",
 				"require": "spr_bees",
 				"max": 1,
 				"cost": {
@@ -134,16 +134,24 @@
 			{
 				"id": "spr_task_maypole",
 				"name": "spring rites",
-				"desc": "Call on satyrs and dryads to weave spells about your maypole.",
+				"desc": "เรียกเหล่าแซเทอร์และดรายแอดให้ร่ายคาถารอบเสาเมย์โพลของคุณ",
 				"require": "spr_maypole",
 				"tags": "t_rest",
 				"slot": "rest",
 				"perpetual": true,
 				"verb": "directing weaves",
-				"fill": ["hp", "prismatic", "stamina", "stress"],
+				"fill": [
+					"hp",
+					"prismatic",
+					"stamina",
+					"stress"
+				],
 				"effect": {
 					"stress": -1.7,
-					"prismatic": { "value": 0.7, "skipLocked": true },
+					"prismatic": {
+						"value": 0.7,
+						"skipLocked": true
+					},
 					"stamina": 0.7,
 					"vigor": 0.07,
 					"hp": 1,
@@ -160,7 +168,7 @@
 				"cost": {
 					"sp": 1
 				},
-				"desc": "Beekeeping has surprising uses in the magic of life and creation.",
+				"desc": "การเลี้ยงผึ้งมีประโยชน์น่าประหลาดในเวทมนตร์แห่งชีวิตและการสร้างสรรค์",
 				"flavor": ""
 			}
 		],
@@ -168,7 +176,7 @@
 			{
 				"id": "spr_stargaze",
 				"name": "stargazing",
-				"desc": "Bright spring skies bring new stars into view.",
+				"desc": "ท้องฟ้าฤดูใบไม้ผลิสว่างใสเผยหมู่ดาวดวงใหม่ให้มองเห็น",
 				"effect": {
 					"bf": "1~2",
 					"weary": "2~3"
@@ -180,7 +188,7 @@
 			{
 				"id": "spr_enc_rumors",
 				"name": "idle rumors",
-				"desc": "Every year rumors abound of lights and music from the nearby woods.",
+				"desc": "ทุกปีมีข่าวลือหนาหูเรื่องแสงและเสียงดนตรีจากป่าใกล้เคียง",
 				"effect": {
 					"bf": "1~2",
 					"unease": "1~2"
@@ -190,7 +198,7 @@
 			{
 				"id": "spr_night_dance",
 				"name": "evening dances",
-				"desc": "With warmer weather and lighter skies, the celebrations last long into the night.",
+				"desc": "ด้วยอากาศที่อบอุ่นขึ้นและท้องฟ้าที่สว่างขึ้น งานฉลองจึงยืดยาวไปจนดึกดื่น",
 				"effect": {
 					"weary": "3~5"
 				},
@@ -199,7 +207,7 @@
 			{
 				"id": "spr_bonfire",
 				"name": "festive fires",
-				"desc": "As evening fades to night, revellers kindle fires to continue the festivities.",
+				"desc": "เมื่อยามเย็นเลือนหายเป็นราตรี เหล่านักฉลองก่อไฟเพื่อสานต่อเทศกาล",
 				"effect": {
 					"rage": "1~3",
 					"wear": "0~2"
@@ -209,7 +217,7 @@
 			{
 				"id": "spr_enc_maypole",
 				"name": "maypole dance",
-				"desc": "Young women from Aylesmeade weave patterns of colored ribbons around a bare trunk.",
+				"desc": "หญิงสาวจากไอล์สมีดสานลวดลายริบบิ้นสีสันรอบลำต้นเปลือย",
 				"effect": {
 					"weaving.exp": 2,
 					"bf": "1~2",
@@ -222,7 +230,7 @@
 			{
 				"id": "spr_flowers",
 				"name": "potted flowers",
-				"desc": "Aylesmeade villagers arrange their spring blooms for sale.",
+				"desc": "ชาวบ้านไอล์สมีดจัดเรียงดอกไม้ฤดูใบไม้ผลิเพื่อขาย",
 				"effect": {
 					"herbalism.exp": 2,
 					"weary": "2~3"
@@ -234,7 +242,7 @@
 			{
 				"id": "spr_enc_gobmarket",
 				"name": "goblin market",
-				"desc": "In the woods at night, goblins hold a market of their own.",
+				"desc": "ในป่ายามค่ำคืน เหล่าก็อบลินจัดตลาดของพวกมันเอง",
 				"effect": {
 					"gold": -10,
 					"rage": "1~3",
@@ -249,7 +257,7 @@
 			{
 				"id": "spr_enc_market",
 				"name": "aylesmeade market",
-				"desc": "From spring spices to dwarven garnets, all manner of luxuries are bartered at the fair.",
+				"desc": "ตั้งแต่เครื่องเทศฤดูใบไม้ผลิไปจนถึงโกเมนคนแคระ สินค้าฟุ่มเฟือยสารพัดถูกแลกเปลี่ยนในงานแฟร์",
 				"effect": {
 					"gold": -0.5,
 					"weary": "1~3",
@@ -262,7 +270,7 @@
 			{
 				"id": "spr_enc_tinker",
 				"name": "tinker's wagon",
-				"desc": "Tinker wagons from distant lands creak along the roads, to trade their wares at the fair.",
+				"desc": "เกวียนพ่อค้าเร่จากดินแดนไกลลั่นเอี๊ยดอ๊าดไปตามถนน เพื่อแลกเปลี่ยนสินค้าที่งานแฟร์",
 				"effect": {
 					"rage": "1~3"
 				}
@@ -272,17 +280,22 @@
 			{
 				"id": "spr_fair",
 				"name": "aylesmeade fair",
-				"desc": "Each spring Aylesmeade holds its fabled fair in sight of the World Tree, Aesilwyr.",
+				"desc": "ทุกฤดูใบไม้ผลิไอล์สมีดจัดงานแฟร์ในตำนานของตนภายใต้สายตาของต้นไม้โลก เอซิลเวียร์",
 				"start": {},
-				"encs": ["spr_enc_maypole", "spr_enc_market", "spr_enc_tinker", "spr_enc_rumors"],
+				"encs": [
+					"spr_enc_maypole",
+					"spr_enc_market",
+					"spr_enc_tinker",
+					"spr_enc_rumors"
+				],
 				"flavor": ""
 			},
 			{
 				"id": "spr_aesilwyr",
 				"name": "tree of fate",
-				"desc": "At the center of the world the great idrasil stretches to the heavens.",
+				"desc": "ณ ใจกลางโลก ต้นอิดราซิลอันยิ่งใหญ่ทอดตัวสู่สรวงสวรรค์",
 				"encs": [],
-				"flavor": "A single seed once fell from Yggrasil."
+				"flavor": "กาลครั้งหนึ่งเมล็ดเมล็ดเดียวร่วงจากอิกกราซิล"
 			}
 		],
 		"furniture": [
@@ -302,7 +315,7 @@
 			{
 				"id": "spr_maypole",
 				"name": "maypole",
-				"desc": "Raise a maypole to perform spring rituals.",
+				"desc": "ตั้งเสาเมย์โพลเพื่อประกอบพิธีฤดูใบไม้ผลิ",
 				"cost": {
 					"gold": 500,
 					"herbs": 30
@@ -311,7 +324,7 @@
 			{
 				"id": "spr_beehive",
 				"name": "beehive",
-				"desc": "A small hive for keeping bees.",
+				"desc": "รังเล็ก ๆ สำหรับเลี้ยงผึ้ง",
 				"cost": {
 					"gold": 100,
 					"herbs": 10,
@@ -326,7 +339,7 @@
 			{
 				"id": "spr_wilds",
 				"name": "hidden wilds",
-				"desc": "A land of magic beasts, unknown to your lore.",
+				"desc": "ดินแดนแห่งสัตว์เวทมนตร์ ที่ไม่ปรากฏในภูมิปัญญาของคุณ",
 				"length": 100,
 				"require": "spr_portal",
 				"start": {
@@ -341,7 +354,16 @@
 					"magicbeasts.max": "?1"
 				},
 				"boss": "jabberwocky",
-				"spawns": ["wyvern2", ["wyvern", "wyvern", "wyvern"], "m_cordyceps", "m_stranglevine"]
+				"spawns": [
+					"wyvern2",
+					[
+						"wyvern",
+						"wyvern",
+						"wyvern"
+					],
+					"m_cordyceps",
+					"m_stranglevine"
+				]
 			},
 			{
 				"id": "spr_sunnyfield",
@@ -351,9 +373,9 @@
 				"dist": 0,
 				"start": {
 					"name": "",
-					"desc": "Returning from the fair you receive reports of fields overrun by great serpents and lizards. It may bear investigation."
+					"desc": "กลับจากงานแฟร์ คุณได้รับรายงานว่าทุ่งนาถูกรุกรานด้วยงูใหญ่และกิ้งก่า อาจน่าค้นหาสักหน่อย"
 				},
-				"desc": "The fields you remember from former days are now overrun with fearsome beasts.",
+				"desc": "ทุ่งนาที่คุณจดจำจากวันวาน บัดนี้เต็มไปด้วยสัตว์ร้ายน่าสะพรึง",
 				"run": {
 					"stamina": 1.5
 				},
@@ -365,7 +387,11 @@
 				"spawns": [
 					"basilisk2",
 					"basilisk",
-					["wyvern", "wyvern", "wyvern"],
+					[
+						"wyvern",
+						"wyvern",
+						"wyvern"
+					],
 					"m_cordyceps",
 					"greendragon",
 					"manticore",
@@ -373,7 +399,7 @@
 					"cockatrice",
 					"basilisk"
 				],
-				"flavor": "Every budding mage needs to die somewhere."
+				"flavor": "จอมเวทจอมแสวงทุกคนต้องตายที่ไหนสักแห่ง"
 			}
 		]
 	}
