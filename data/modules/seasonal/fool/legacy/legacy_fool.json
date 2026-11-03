@@ -6,15 +6,17 @@
 				"id": "fool_tshirt",
 				"sym": "🃏",
 				"name": "Painted cotton shirt",
-				"desc": "You have slain a dragon and all you got was a lousy t-shirt!",
-				"flavor": "That IS a sick painting of a dragon though",
+				"desc": "เจ้าสังหารมังกรได้ แต่สิ่งที่ได้กลับเป็นเสื้อยืดห่วย ๆ ตัวหนึ่ง!",
+				"flavor": "แต่นั่นเป็นภาพวาดมังกรที่สุดยอดจริง ๆ",
 				"level": 1,
 				"type": "armor",
 				"slot": "chest",
 				"tags": "t_chestplate",
 				"sell": {},
 				"enchants": 0,
-				"alter": { "mod.hp.max": 1 }
+				"alter": {
+					"mod.hp.max": 1
+				}
 			}
 		]
 	}
