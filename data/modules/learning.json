@@ -1,93 +1,74 @@
 {
 	"module": "learning",
 	"notes": {
-		"lore": 35.0,
+		"lore": 35,
 		"manalore2": 5.15,
 		"wizlore": 5.05,
 		"spellcraft": 25.1,
 		"mysticism": 15.1,
-		"languages": 24.0,
+		"languages": 24,
 		"history": 31.05,
-
-		"crafting": 27.0,
+		"crafting": 27,
 		"weaving": 10.1,
 		"runelore": 10.1,
 		"enchanting": 18.1,
-
 		"astrallore": 6.15,
 		"planeslore": 30.05,
 		"s_travel": 16.05,
-		"divination": 35.0,
+		"divination": 35,
 		"scrying": 23.05,
-		"astronomy": 37.0,
-
-		"concentrate": 11.0,
+		"astronomy": 37,
+		"concentrate": 11,
 		"composure": 16.1,
-
-		"citynavigation": 8.0,
-		"shopkeeping": 27.0,
+		"citynavigation": 8,
+		"shopkeeping": 27,
 		"debitomancy": 16.05,
-
-		"animals": 39.0,
+		"animals": 39,
 		"magicbeasts": 14.05,
-		"conjuration": 15.0,
+		"conjuration": 15,
 		"summoning": 17.05,
 		"demonology": 38.05,
 		"charms": 10.1,
-
-		"anatomy": 38.0,
+		"anatomy": 38,
 		"vivification": 13.05,
-
-		"waterlore": 32.0,
+		"waterlore": 32,
 		"waterlore2": 5.15,
-
-		"airlore": 40.0,
+		"airlore": 40,
 		"airlore2": 5.15,
-
-		"firelore": 39.0,
+		"firelore": 39,
 		"firelore2": 9.15,
 		"flamesculpting": 4.1,
-
-		"earthlore": 43.0,
+		"earthlore": 43,
 		"earthlore2": 5.15,
 		"geosculpting": 31.05,
-
-		"naturelore": 47.0,
+		"naturelore": 47,
 		"naturelore2": 7.15,
-		"herbalism": 34.0,
+		"herbalism": 34,
 		"potions": 23.05,
-		"alchemy": 32.0,
-
-		"spiritlore": 49.0,
+		"alchemy": 32,
+		"spiritlore": 49,
 		"spiritlore2": 6.15,
-
-		"lightlore": 41.0,
+		"lightlore": 41,
 		"lightlore2": 6.15,
 		"heallore": 12.05,
-
-		"shadowlore": 45.0,
+		"shadowlore": 45,
 		"shadowlore2": 6.15,
 		"necromancy": 18.05,
 		"reanimation": 25.05,
 		"embalming": 22.05,
 		"dissection": 15.05,
-
 		"chaoslore": 7.15,
 		"trickery": 29.05,
-
 		"voidlore": 13.15,
 		"chronomancy": 7.15,
-
 		"bloodlore": 5.1,
-
-		"weaponlore": 12.0,
+		"weaponlore": 12,
 		"bladelore": 17.1,
 		"duelinglore": 13.1,
 		"hammerlore": 18.5,
-
 		"magicalanimation": 19.05,
 		"magiphysics": 6.1,
-		"puppetry": 40.0,
+		"puppetry": 40,
 		"machinacreation": 29.05,
 		"automatasculpting": 25.1
 	},
@@ -110,7 +91,7 @@
 			{
 				"id": "learnJob",
 				"name": "Reviewing Your Notes",
-				"desc": "Remembering what you've been taught doesn't happen by magic.",
+				"desc": "การจดจำสิ่งที่คุณได้เรียนรู้ไม่ได้เกิดจากเวทมนตร์",
 				"flavor": "",
 				"group": "education",
 				"require": "g.t_job>0",
@@ -127,7 +108,7 @@
 			{
 				"id": "learn0",
 				"name": "Exploring New Ideas",
-				"desc": "Now that you're free to explore magic on your own without your master breathing down your neck, there's a few things you wanted to try...",
+				"desc": "บัดนี้คุณเป็นอิสระสำรวจเวทมนตร์ด้วยตัวเองโดยปราศจากนายคอยบีบคั้น มีสองสามสิ่งที่คุณอยากลอง...",
 				"flavor": "",
 				"group": "education",
 				"require": "g.tier0>0&&g.learnJob>0",
@@ -144,7 +125,7 @@
 			{
 				"id": "learn1",
 				"name": "Studious Trance",
-				"desc": "Sometimes you lose track of hours in your magical studies, but the knowledge is a worthy reward.",
+				"desc": "บางครั้งคุณลืมเวลาไประหว่างการศึกษาเวทมนตร์ แต่ความรู้นั้นเป็นรางวัลอันคุ้มค่า",
 				"flavor": "",
 				"group": "education",
 				"require": "g.tier1>0&&g.learn0>0",
@@ -161,7 +142,7 @@
 			{
 				"id": "learn2",
 				"name": "Mind Palace",
-				"desc": "A place for every piece of knowledge and every piece of knowledge has a place.",
+				"desc": "มีที่สำหรับความรู้ทุกชิ้น และความรู้ทุกชิ้นต่างมีที่ของมัน",
 				"flavor": "",
 				"group": "education",
 				"require": "g.tier2>0&&g.learn1>0",
@@ -178,7 +159,7 @@
 			{
 				"id": "learn3",
 				"name": "Arcane Comprehension",
-				"desc": "Remembering things you've learned CAN happen by magic if you try hard enough.",
+				"desc": "การจดจำสิ่งที่คุณเรียนรู้สามารถเกิดขึ้นได้ด้วยเวทมนตร์หากคุณพยายามมากพอ",
 				"flavor": "",
 				"group": "education",
 				"require": "g.tier3>0&&g.learn2>0",
@@ -195,7 +176,7 @@
 			{
 				"id": "learn4",
 				"name": "Runic Recollection",
-				"desc": "Your notes are inscribed with runes that improve your ability to remember the contents of each page.",
+				"desc": "บันทึกของคุณจารึกรูนที่ยกระดับความสามารถในการจดจำเนื้อหาของแต่ละหน้า",
 				"flavor": "",
 				"group": "education",
 				"require": "g.tier4>0&&g.learn3>0",
@@ -212,7 +193,7 @@
 			{
 				"id": "learn5",
 				"name": "Studious Sleep",
-				"desc": "Days and weeks pass by as you study the minutiae of magic, but you no longer care: the magic is the most important thing.",
+				"desc": "วันและสัปดาห์ผ่านไปขณะคุณศึกษารายละเอียดยิบย่อยของเวทมนตร์ แต่คุณไม่แยแสอีกต่อไป: เวทมนตร์คือสิ่งที่สำคัญที่สุด",
 				"flavor": "",
 				"group": "education",
 				"require": "g.tier5>0&&g.learn4>0",
@@ -229,7 +210,7 @@
 			{
 				"id": "learn6",
 				"name": "Memento Memory",
-				"desc": "One day you will learn everything there is to know, and at that point all there's left to do is remember.",
+				"desc": "วันหนึ่งคุณจะเรียนรู้ทุกสิ่งที่มีให้รู้ และเมื่อถึงจุดนั้น สิ่งที่เหลือให้ทำก็เพียงการจดจำ",
 				"flavor": "",
 				"group": "education",
 				"require": "g.tier6>0&&g.learn5>0",
@@ -1193,9 +1174,9 @@
 			{
 				"id": "craftinglearn1",
 				"name": "Crafting: Arms of Iron",
-				"desc": "Learn the basics of working with iron and other basic materials.",
-				"extdesc": "Unlocks basic materials and items for crafting.",
-				"flavor": "Normally you are supposed to get rusty, but it seems you already are.",
+				"desc": "เรียนรู้พื้นฐานการทำงานกับเหล็กและวัสดุพื้นฐานอื่น ๆ",
+				"extdesc": "ปลดล็อกวัสดุและไอเทมพื้นฐานสำหรับการคราฟต์",
+				"flavor": "โดยปกติคุณควรจะขึ้นสนิม แต่ดูเหมือนคุณขึ้นสนิมไปแล้ว",
 				"group": "education",
 				"require": "g.crafting>=3&&g.crafting.max>=6",
 				"cost": {
@@ -1209,9 +1190,9 @@
 			{
 				"id": "craftinglearn2",
 				"name": "Crafting: Arms of Quicksteel",
-				"desc": "Learn how to handle advanced materials in your crafting endeavors.",
-				"extdesc": "Unlocks advanced materials for crafting.",
-				"flavor": "So named for how easy it is to work with, not for its aerodynamic qualities.",
+				"desc": "เรียนรู้การจัดการวัสดุขั้นสูงในการคราฟต์ของคุณ",
+				"extdesc": "ปลดล็อกวัสดุขั้นสูงสำหรับการคราฟต์",
+				"flavor": "ตั้งชื่อเช่นนี้เพราะง่ายต่อการทำงาน ไม่ใช่เพราะคุณสมบัติตามหลักอากาศพลศาสตร์",
 				"group": "education",
 				"require": "g.crafting>=8&&g.crafting.max>=11&&g.craftinglearn1>0",
 				"cost": {
@@ -1226,9 +1207,9 @@
 			{
 				"id": "craftinglearn3",
 				"name": "Crafting: Masterwork arms",
-				"desc": "Learn how to craft advanced items.",
-				"extdesc": "Unlocks advanced items for crafting.",
-				"flavor": "What the hell is a ricasso.",
+				"desc": "เรียนรู้การคราฟต์ไอเทมขั้นสูง",
+				"extdesc": "ปลดล็อกไอเทมขั้นสูงสำหรับการคราฟต์",
+				"flavor": "ริคัสโซคืออะไรเนี่ย",
 				"group": "education",
 				"require": "g.crafting>=13&&g.crafting.max>=16&&g.craftinglearn2>0",
 				"cost": {
@@ -1245,9 +1226,9 @@
 			{
 				"id": "craftinglearn4",
 				"name": "Crafting: Arms of Adamant",
-				"desc": "Learn how to handle adamant and other magical materials.",
-				"extdesc": "Unlocks expert materials for crafting.",
-				"flavor": "Most smiths would have trouble getting their forge to the temperature of dragonbreath. You, however, have a solution.",
+				"desc": "เรียนรู้การจัดการเพชรและวัสดุเวทมนตร์อื่น ๆ",
+				"extdesc": "ปลดล็อกวัสดุระดับเซียนสำหรับการคราฟต์",
+				"flavor": "ช่างเหล็กส่วนใหญ่คงมีปัญหาให้เตาหลอมถึงอุณหภูมิลมหายใจมังกร แต่ของคุณมีทางออก",
 				"group": "education",
 				"require": "g.crafting>=18&&g.crafting.max>=21&&g.craftinglearn3>0",
 				"cost": {
@@ -1268,9 +1249,9 @@
 			{
 				"id": "craftinglearn5",
 				"name": "Crafting: Transcendent arms",
-				"desc": "Learn how to craft things that go beyond masterwork.",
-				"extdesc": "Unlocks expert items for crafting.",
-				"flavor": "The elusive swordchucks you have heard about, sadly remain out of reach.",
+				"desc": "เรียนรู้การคราฟต์สิ่งที่เหนือกว่าผลงานปรมาจารย์",
+				"extdesc": "ปลดล็อกไอเทมระดับเซียนสำหรับการคราฟต์",
+				"flavor": "ดาบลูกโซ่อันลึกลับที่คุณได้ยินมา ยังคงเอื้อมไม่ถึงอย่างน่าเศร้า",
 				"group": "education",
 				"require": "g.crafting>=22&&g.crafting.max>=25&&g.craftinglearn4>0",
 				"cost": {
@@ -2371,7 +2352,9 @@
 					"codices": 1,
 					"research": 250
 				},
-				"result": { "fame": 1 },
+				"result": {
+					"fame": 1
+				},
 				"mod": {
 					"necromancy.rate": 0.4,
 					"necromancy.mod.shademastery.rate": 0.2,
