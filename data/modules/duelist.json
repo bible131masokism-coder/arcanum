@@ -6,8 +6,8 @@
 			{
 				"id": "duelinglore",
 				"name": "dueling",
-				"desc": "Mastery of one-on-one combat.",
-				"flavor": "Includes a 101 on storing loose earthen particulate within the confines of one's clothing.",
+				"desc": "ความเชี่ยวชาญการต่อสู้แบบตัวต่อตัว",
+				"flavor": "ครอบคลุมบทเรียนพื้นฐานเรื่องการเก็บเศษดินในเสื้อผ้า",
 				"level": 10,
 				"require": "g.t_duelingclass>0",
 				"need": "armssource",
@@ -29,7 +29,7 @@
 				"id": "dueling_lessons",
 				"name": "dueling lessons",
 				"require": "g.duelinglore>=1",
-				"desc": "Arrange tutoring in the dueling arts.",
+				"desc": "จัดหาการสั่งสอนในศิลปะการดวล",
 				"max": 1,
 				"cost": {
 					"codices": "10+g.dueling_lessons*5",
@@ -40,14 +40,14 @@
 					"duelinglore.max": 1,
 					"duelinglore.rate": 0.5
 				},
-				"flavor": "A riposte here, a reprise there, you'll get the hang of it.",
+				"flavor": "แทงสวนตรงนี้ ตีโต้ตรงนั้น เดี๋ยวก็เกาะติดมัน",
 				"group": "martial"
 			},
 			{
 				"id": "quickthoughts",
 				"name": "proactive thinking",
 				"require": "g.duelinglore>=5",
-				"desc": "With practice, you can start casting a spell at the same time as you perform a fencing maneuver.",
+				"desc": "ด้วยการฝึกฝน คุณจะเริ่มร่ายคาถาไปพร้อมกับการทำท่าดาบได้",
 				"max": 1,
 				"cost": {
 					"codices": 20,
@@ -57,14 +57,14 @@
 				"mod": {
 					"self.chaincast": 0.5
 				},
-				"flavor": "Quickly think all the thoughts.",
+				"flavor": "คิดทุกความคิดอย่างรวดเร็ว",
 				"group": "spellcasting"
 			},
 			{
 				"id": "quickthoughts2",
 				"name": "focused flourishes",
 				"require": "g.duelinglore>=8",
-				"desc": "Your mastery affords you an ability to channel your swings into spellcasting motions.",
+				"desc": "ความเชี่ยวชาญของคุณมอบความสามารถในการส่งผ่านจังหวะฟันเข้าสู่ท่วงท่าการร่ายคาถา",
 				"max": 1,
 				"cost": {
 					"tomes": 10,
@@ -75,7 +75,7 @@
 				"mod": {
 					"self.chaincast": 0.5
 				},
-				"flavor": "We put casting in your casting, so you can cast while you cast.",
+				"flavor": "เราใส่การร่ายเข้าไปในการร่ายของคุณ เพื่อให้คุณร่ายได้ในขณะที่ร่าย",
 				"group": "spellcasting"
 			}
 		],
@@ -83,7 +83,7 @@
 			{
 				"id": "duelist",
 				"tags": "t_tier3,t_duelingclass,t_swordclass",
-				"desc": "Master of one-on-one combat, the speed of your spellcasting is matched only by your rapier.",
+				"desc": "เจ้าแห่งการต่อสู้ตัวต่อตัว ความเร็วการร่ายคาถาของคุณเทียบได้กับดาบเรเปียร์ของคุณเท่านั้น",
 				"require": "g.t3unlocker>0&&(g.t_swordclass>0||g.redadept>0||g.t_chaosclass>0)&&g.tier3==0",
 				"mod": {
 					"duelingdmg": 5,
@@ -98,7 +98,7 @@
 				"id": "rune_fencer",
 				"name": "rune fencer",
 				"tags": "t_tier4,t_duelingclass,t_swordclass",
-				"desc": "Sharp wit, sharper blade and some quick spells as backup, make for a formidable opponent.",
+				"desc": "ปัญญาคม ใบมีดคมกว่า และคาถาเร่งด่วนเป็นตัวสำรอง ทำให้เป็นคู่ต่อสู้ที่น่าเกรงขาม",
 				"require": "g.t4unlocker>0&&(g.t_swordclass>=2||g.duelist>0)&&g.tier4==0",
 				"cost": {
 					"airgem": 10,
@@ -128,26 +128,38 @@
 		"spells": [
 			{
 				"id": "engagement",
-				"desc": "Engage the enemy in close quarters, sacrificing defense for offense.",
-				"flavor": "En garde!",
+				"desc": "ประณานศัตรูในระยะประชิด เสียการป้องกันแลกกับการรุก",
+				"flavor": "เตรียมตัวรับ!",
 				"sortOrder": 380,
 				"level": 2,
 				"school": "martial",
 				"tags": "t_nospellcraft",
 				"keywords": {
-					"type": ["buff", "debuff"],
-					"target": ["self", "enemy"],
-					"targets": ["single"],
-					"delivery": ["over time"]
+					"type": [
+						"buff",
+						"debuff"
+					],
+					"target": [
+						"self",
+						"enemy"
+					],
+					"targets": [
+						"single"
+					],
+					"delivery": [
+						"over time"
+					]
 				},
 				"require": "g.duelinglore>=1",
 				"buy": {
 					"research": 1000,
 					"tomes": 5
 				},
-				"caststoppers": [1],
+				"caststoppers": [
+					1
+				],
 				"need": "g.player.getWeapon().hasTag('t_rapier')",
-				"needtext": "Currently equipped weapon must be a rapier.",
+				"needtext": "อาวุธที่สวมอยู่ต้องเป็นดาบเรเปียร์",
 				"cost": {
 					"vigor": 5
 				},
@@ -189,26 +201,36 @@
 			},
 			{
 				"id": "disengage",
-				"desc": "Jump away from the enemy, restoring your defensive capabilities",
-				"flavor": "Adios!",
+				"desc": "กระโดดหนีจากศัตรู ฟื้นฟูความสามารถการป้องกันของคุณ",
+				"flavor": "จูบแล้วลา!",
 				"sortOrder": 381,
 				"level": 2,
 				"school": "martial",
 				"tags": "t_nospellcraft",
 				"keywords": {
-					"type": ["recovery"],
-					"target": ["self"],
-					"targets": ["single"],
-					"delivery": ["instant"]
+					"type": [
+						"recovery"
+					],
+					"target": [
+						"self"
+					],
+					"targets": [
+						"single"
+					],
+					"delivery": [
+						"instant"
+					]
 				},
 				"require": "g.duelinglore>=1",
 				"buy": {
 					"research": 1000,
 					"tomes": 5
 				},
-				"caststoppers": [1],
+				"caststoppers": [
+					1
+				],
 				"need": "g.player.getWeapon().hasTag('t_rapier')",
-				"needtext": "Currently equipped weapon must be a rapier.",
+				"needtext": "อาวุธที่สวมอยู่ต้องเป็นดาบเรเปียร์",
 				"cost": {
 					"vigor": 5
 				},
@@ -224,27 +246,39 @@
 			{
 				"id": "moulinet",
 				"name": "moulinet",
-				"desc": "A graceful cut, shredding through enemies.",
-				"flavor": "A revolution in your wrist.",
+				"desc": "การฟันอันสง่างาม ฉีกศัตรูเป็นชิ้น ๆ",
+				"flavor": "การหมุนปฏิวัติข้อมือของคุณ",
 				"sortOrder": 332,
 				"level": 3,
 				"school": "martial",
 				"tags": "t_nospellcraft",
 				"keywords": {
-					"type": ["damage"],
-					"target": ["enemy"],
-					"targets": ["multiple"],
-					"delivery": ["instant"],
-					"special": ["weapon"]
+					"type": [
+						"damage"
+					],
+					"target": [
+						"enemy"
+					],
+					"targets": [
+						"multiple"
+					],
+					"delivery": [
+						"instant"
+					],
+					"special": [
+						"weapon"
+					]
 				},
 				"require": "g.duelinglore>=5",
 				"buy": {
 					"research": 1500,
 					"tomes": 2
 				},
-				"caststoppers": [1],
+				"caststoppers": [
+					1
+				],
 				"need": "g.player.getWeapon().hasTag('t_rapier')",
-				"needtext": "Currently equipped weapon must be a rapier.",
+				"needtext": "อาวุธที่สวมอยู่ต้องเป็นดาบเรเปียร์",
 				"cost": {
 					"vigor": 5
 				},
@@ -256,34 +290,51 @@
 					"targets": "enemies",
 					"maxTargets": 999,
 					"kind": "slash",
-					"potencies": ["physdmg", "slashdmg", "sworddmg", "duelingdmg"],
+					"potencies": [
+						"physdmg",
+						"slashdmg",
+						"sworddmg",
+						"duelingdmg"
+					],
 					"tohit": -2
 				}
 			},
 			{
 				"id": "duel_thrust",
 				"name": "duelist's thrust",
-				"desc": "A direct strike at the opponent.",
-				"flavor": "A basic move, yet incredibly effective.",
+				"desc": "การแทงตรงเข้าหาคู่ต่อสู้",
+				"flavor": "ท่าเบสิก แต่ได้ผลอย่างเหลือเชื่อ",
 				"sortOrder": 353,
 				"level": 3,
 				"school": "martial",
 				"tags": "t_nospellcraft",
 				"keywords": {
-					"type": ["damage"],
-					"target": ["enemy"],
-					"targets": ["single"],
-					"delivery": ["instant"],
-					"special": ["weapon"]
+					"type": [
+						"damage"
+					],
+					"target": [
+						"enemy"
+					],
+					"targets": [
+						"single"
+					],
+					"delivery": [
+						"instant"
+					],
+					"special": [
+						"weapon"
+					]
 				},
 				"require": "g.duelinglore>=2",
 				"buy": {
 					"research": 1500,
 					"tomes": 2
 				},
-				"caststoppers": [1],
+				"caststoppers": [
+					1
+				],
 				"need": "g.player.getWeapon().hasTag('t_rapier')",
-				"needtext": "Currently equipped weapon must be a rapier.",
+				"needtext": "อาวุธที่สวมอยู่ต้องเป็นดาบเรเปียร์",
 				"cost": {
 					"vigor": 3
 				},
@@ -294,39 +345,58 @@
 					"damage": "(a.getWeaponDamage()*1.5)||0",
 					"targetspec": {
 						"affectedby": {
-							"condition": ["enemy_engagement"],
+							"condition": [
+								"enemy_engagement"
+							],
 							"conditiontext": "engagement"
 						}
 					},
 					"targets": "enemy",
 					"kind": "pierce",
-					"potencies": ["physdmg", "piercedmg", "sworddmg", "duelingdmg"]
+					"potencies": [
+						"physdmg",
+						"piercedmg",
+						"sworddmg",
+						"duelingdmg"
+					]
 				}
 			},
 			{
 				"id": "one_two",
 				"name": "one-two",
-				"desc": "An involved technique that briefly bypasses an opponent's defenses.",
-				"flavor": "A refined move, for a more civilized mage.",
+				"desc": "เทคนิคอันสลับซับซ้อนที่ลอดผ่านการป้องกันของคู่ต่อสู้ชั่วครู่",
+				"flavor": "ท่าอันประณีต สำหรับจอมเวทที่สุภาพกว่า",
 				"sortOrder": 352,
 				"level": 4,
 				"school": "martial",
 				"tags": "t_nospellcraft",
 				"keywords": {
-					"type": ["damage"],
-					"target": ["enemy"],
-					"targets": ["single"],
-					"delivery": ["instant"],
-					"special": ["weapon"]
+					"type": [
+						"damage"
+					],
+					"target": [
+						"enemy"
+					],
+					"targets": [
+						"single"
+					],
+					"delivery": [
+						"instant"
+					],
+					"special": [
+						"weapon"
+					]
 				},
 				"require": "g.duelinglore>=4",
 				"buy": {
 					"research": 4000,
 					"tomes": 5
 				},
-				"caststoppers": [1],
+				"caststoppers": [
+					1
+				],
 				"need": "g.player.getWeapon().hasTag('t_rapier')",
-				"needtext": "Currently equipped weapon must be a rapier.",
+				"needtext": "อาวุธที่สวมอยู่ต้องเป็นดาบเรเปียร์",
 				"cost": {
 					"vigor": 6
 				},
@@ -337,40 +407,59 @@
 					"damage": "(a.getWeaponDamage()*1.6)||0",
 					"targetspec": {
 						"affectedby": {
-							"condition": ["enemy_engagement"],
+							"condition": [
+								"enemy_engagement"
+							],
 							"conditiontext": "engagement"
 						}
 					},
 					"targets": "enemy",
 					"kind": "pierce",
-					"potencies": ["physdmg", "piercedmg", "sworddmg", "duelingdmg"],
+					"potencies": [
+						"physdmg",
+						"piercedmg",
+						"sworddmg",
+						"duelingdmg"
+					],
 					"tohit": 1
 				}
 			},
 			{
 				"id": "colpo_fendente",
 				"name": "colpo fendente",
-				"desc": "A downward slash, inaccurate, but devastating.",
-				"flavor": "A brutish move, for a less civilized mage.",
+				"desc": "การฟันลงทางด้านล่าง ไม่แม่นยำ แต่ทำลายล้าง",
+				"flavor": "ท่าอันป่าเถื่อน สำหรับจอมเวทผู้มีอารยธรรมน้อยกว่า",
 				"sortOrder": 331,
 				"level": 6,
 				"school": "martial",
 				"tags": "t_nospellcraft",
 				"keywords": {
-					"type": ["damage"],
-					"target": ["enemy"],
-					"targets": ["single"],
-					"delivery": ["instant"],
-					"special": ["weapon"]
+					"type": [
+						"damage"
+					],
+					"target": [
+						"enemy"
+					],
+					"targets": [
+						"single"
+					],
+					"delivery": [
+						"instant"
+					],
+					"special": [
+						"weapon"
+					]
 				},
 				"require": "g.duelinglore>=6",
 				"buy": {
 					"research": 4000,
 					"tomes": 5
 				},
-				"caststoppers": [1],
+				"caststoppers": [
+					1
+				],
 				"need": "g.player.getWeapon().hasTag('t_rapier')",
-				"needtext": "Currently equipped weapon must be a rapier.",
+				"needtext": "อาวุธที่สวมอยู่ต้องเป็นดาบเรเปียร์",
 				"cost": {
 					"vigor": 10
 				},
@@ -382,40 +471,59 @@
 					"damage": "(a.getWeaponDamage()*2.5)||0",
 					"targetspec": {
 						"affectedby": {
-							"condition": ["enemy_engagement"],
+							"condition": [
+								"enemy_engagement"
+							],
 							"conditiontext": "engagement"
 						}
 					},
 					"targets": "enemy",
 					"kind": "slash",
-					"potencies": ["physdmg", "slashdmg", "sworddmg", "duelingdmg"],
+					"potencies": [
+						"physdmg",
+						"slashdmg",
+						"sworddmg",
+						"duelingdmg"
+					],
 					"tohit": -2
 				}
 			},
 			{
 				"id": "imbroccata",
 				"name": "imbroccata",
-				"desc": "A strike to the heart. Must be performed on an engaged enemy.",
-				"flavor": "A pinnacle of rapier techniques.",
+				"desc": "การแทงตรงหัวใจ ต้องทำกับศัตรูที่ติดพันอยู่เท่านั้น",
+				"flavor": "จุดสูงสุดของเทคนิคเรเปียร์",
 				"sortOrder": 351,
 				"level": 5,
 				"school": "martial",
 				"tags": "t_nospellcraft",
 				"keywords": {
-					"type": ["damage"],
-					"target": ["enemy"],
-					"targets": ["single"],
-					"delivery": ["instant"],
-					"special": ["weapon"]
+					"type": [
+						"damage"
+					],
+					"target": [
+						"enemy"
+					],
+					"targets": [
+						"single"
+					],
+					"delivery": [
+						"instant"
+					],
+					"special": [
+						"weapon"
+					]
 				},
 				"require": "g.duelinglore>=8",
 				"buy": {
 					"research": 6000,
 					"tomes": 10
 				},
-				"caststoppers": [1],
+				"caststoppers": [
+					1
+				],
 				"need": "g.player.getWeapon().hasTag('t_rapier')",
-				"needtext": "Currently equipped weapon must be a rapier.",
+				"needtext": "อาวุธที่สวมอยู่ต้องเป็นดาบเรเปียร์",
 				"cost": {
 					"vigor": 15
 				},
@@ -427,28 +535,39 @@
 					"damage": "(a.getWeaponDamage()*4)||0",
 					"targetspec": {
 						"affectedby": {
-							"condition": ["enemy_engagement"],
+							"condition": [
+								"enemy_engagement"
+							],
 							"strict": true,
 							"conditiontext": "engagement"
 						}
 					},
 					"targets": "enemy",
 					"kind": "pierce",
-					"potencies": ["physdmg", "piercedmg", "sworddmg", "duelingdmg"]
+					"potencies": [
+						"physdmg",
+						"piercedmg",
+						"sworddmg",
+						"duelingdmg"
+					]
 				}
 			},
 			{
 				"id": "ripostestance",
 				"name": "riposting stance",
-				"desc": "Utilize your rapier mastery to counter all comers.",
-				"flavor": "All who dare attack you will be stained crimson",
+				"desc": "ใช้ความเชี่ยวชาญเรเปียร์ของคุณสวนกลับผู้เข้ามาทั้งหมด",
+				"flavor": "ทุกผู้ที่กล้าโจมตีคุณจะเปื้อนเลือดสีแดงเข้ม",
 				"sortOrder": 397,
 				"level": 1,
 				"school": "martial",
 				"tags": "t_stance",
 				"keywords": {
-					"target": ["self"],
-					"special": ["stance"]
+					"target": [
+						"self"
+					],
+					"special": [
+						"stance"
+					]
 				},
 				"require": "g.duelinglore>=5",
 				"buy": {
@@ -472,14 +591,22 @@
 								"damage": "a.getWeaponDamage()*0.5||0",
 								"targets": "fixed",
 								"unreflectable": true,
-								"potencies": ["physdmg", "duelingdmg", "piercedmg"]
+								"potencies": [
+									"physdmg",
+									"duelingdmg",
+									"piercedmg"
+								]
 							},
 							"onMiss": {
 								"name": "Attack of opportunity",
 								"damage": "a.getWeaponDamage()*0.25||0",
 								"targets": "fixed",
 								"unreflectable": true,
-								"potencies": ["physdmg", "duelingdmg", "piercedmg"]
+								"potencies": [
+									"physdmg",
+									"duelingdmg",
+									"piercedmg"
+								]
 							}
 						}
 					}
