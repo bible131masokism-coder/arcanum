@@ -6,7 +6,7 @@
 			{
 				"id": "shopkeeping",
 				"require": "g.gold>=1000&&g.tier1>0",
-				"desc": "Buy and sell everything in the pursuit of gold",
+				"desc": "ซื้อและขายทุกสิ่งเพื่อไขว่คว้าทองคำ",
 				"buy": {
 					"arcana": 15
 				},
@@ -25,7 +25,7 @@
 				"id": "sellbooks",
 				"name": "Sell Tomes",
 				"tags": "t_bulk_sale_task,t_languagework",
-				"desc": "Even with the best scribes, these are always undervalued",
+				"desc": "ต่อให้มีนักจารึกที่ดีที่สุด สิ่งเหล่านี้ก็ถูกประเมินต่ำเสมอ",
 				"verb": "haggling over tomes",
 				"fill": "gold",
 				"require": "g.shopkeeping>=6&&g.tomes>=1",
@@ -63,7 +63,7 @@
 				"id": "sellcodices",
 				"name": "Sell Codices",
 				"verb": "haggling over codices",
-				"desc": "Sell codices to just about anyone that wants them",
+				"desc": "ขายโคเด็กซ์แก่ใครก็ตามที่ต้องการ",
 				"tags": "t_bulk_sale_task,t_languagework",
 				"require": "g.shopkeeping>=3&&g.codices>=1",
 				"fill": "gold",
@@ -105,7 +105,7 @@
 				"id": "sellscrolls",
 				"name": "Sell Scrolls",
 				"verb": "haggling over scrolls",
-				"desc": "Sell scrolls to whoever comes along",
+				"desc": "ขายม้วนคัมภีร์แก่ใครก็ตามที่ผ่านมา",
 				"tags": "t_bulk_sale_task,t_languagework",
 				"require": "g.shopkeeping>=1&&g.scrolls>=1",
 				"fill": "gold",
@@ -147,7 +147,7 @@
 				"id": "mass_sellherbs",
 				"name": "Sell Herbs",
 				"verb": "haggling over herbs",
-				"desc": "Sell herbs to people looking to make potions or incense.",
+				"desc": "ขายสมุนไพรแก่ผู้ที่ต้องการทำยาและเครื่องหอม",
 				"tags": "t_bulk_sale_task,t_languagework",
 				"require": "g.shopkeeping>=2&&g.herbs>=1",
 				"fill": "gold",
@@ -189,7 +189,7 @@
 				"id": "sellgems",
 				"name": "Sell Gems",
 				"verb": "haggling over gems",
-				"desc": "Sell gems to jewelers and traders",
+				"desc": "ขายอัญมณีแก่ช่างอัญมณีและพ่อค้า",
 				"tags": "t_bulk_sale_task,t_languagework",
 				"require": "g.shopkeeping>=3&&g.gems>=1",
 				"fill": "gold",
@@ -230,8 +230,8 @@
 			{
 				"id": "accountingbook",
 				"name": "accounting ledger",
-				"actname": "calculating expenses",
-				"desc": "Better organization of all your wizardly expenses",
+				"actname": "คำนวณค่าใช้จ่าย",
+				"desc": "การจัดระเบียบค่าใช้จ่ายจอมเวทของคุณให้ดีขึ้น",
 				"require": "g.shopkeeping>=4&&g.crafting>=2&&g.languages>=5",
 				"max": 1,
 				"length": 50,
@@ -259,7 +259,7 @@
 			{
 				"id": "tradingstall",
 				"name": "trading stall",
-				"desc": "Makes buyers come to you for scrolls and gems, rather than having to seek them out",
+				"desc": "ทำให้ผู้ซื้อมาหาคุณเพื่อม้วนคัมภีร์และอัญมณี แทนที่จะต้องออกตามหา",
 				"require": "g.shopkeeping>=5",
 				"max": 1,
 				"cost": {
@@ -275,7 +275,7 @@
 			{
 				"id": "colorfulsigns",
 				"name": "colorful sign",
-				"desc": "You could probably sell things faster with some fancy illusions and effects",
+				"desc": "คุณอาจขายของได้เร็วขึ้นด้วยภาพลวงตาและเอฟเฟกต์สวยหรู",
 				"require": "g.shopkeeping>=7",
 				"max": 1,
 				"cost": {
@@ -293,7 +293,7 @@
 			{
 				"id": "charmingsigns",
 				"name": "enchanted sign",
-				"desc": "Why convince buyers when you have magic",
+				"desc": "จะโน้มน้าวผู้ซื้อไปทำไม เมื่อคุณมีเวทมนตร์",
 				"require": "g.shopkeeping>=7 && g.charms>=5",
 				"max": 1,
 				"cost": {
@@ -313,7 +313,7 @@
 			{
 				"id": "taxloopholes",
 				"name": "tax loopholes",
-				"desc": "You tire of incinerating tax collectors. Delegate the tax evasion to the best lawyer magic can find.",
+				"desc": "คุณเบื่อหน่ายกับการเผาเจ้าหน้าที่เก็บภาษี จงมอบหมายการหนีภาษีให้ทนายความที่ดีที่สุดที่เวทมนตร์จะหาได้",
 				"require": "g.shopkeeping>=7&&g.demonology>=5",
 				"max": 3,
 				"cost": {
@@ -327,13 +327,13 @@
 					"shopkeeping.max": 0.5,
 					"demonology.rate": 0.5
 				},
-				"flavor": "The only lawyers more skilled than the tax legislators come from the planes below.",
+				"flavor": "ทนายความเพียงกลุ่มเดียวที่เก่งกว่าผู้ร่างกฎหมายภาษี มาจากมิติเบื้องล่าง",
 				"group": "knowledge"
 			},
 			{
 				"id": "gemtradercontact",
 				"name": "gemtrader contact",
-				"desc": "Seek out someone who will sell you gems for better prices",
+				"desc": "ตามหาคนที่จะขายอัญมณีให้คุณในราคาที่ดีกว่า",
 				"require": "g.shopkeeping>=7",
 				"max": 1,
 				"cost": {
@@ -348,7 +348,7 @@
 			{
 				"id": "splendorandriches",
 				"name": "splendor and riches",
-				"desc": "Sometimes a lot of gold and greed is all you need to be famous",
+				"desc": "บางครั้งทองคำและความโลภมากมายก็เพียงพอทำให้คุณโด่งดัง",
 				"require": "g.shopkeeping>=12",
 				"max": 1,
 				"cost": {
@@ -366,11 +366,15 @@
 			{
 				"id": "pot_negotiator",
 				"name": "negotiator's cunning",
-				"desc": "A clear, viscous liquid that smells like money but tastes like pennies",
+				"desc": "ของเหลวใสหนืดที่กลิ่นเหมือนเงิน แต่รสชาติเหมือนเหรียญเพนนี",
 				"school": "utility",
 				"keywords": {
-					"utility": ["task"],
-					"delivery": ["over time"]
+					"utility": [
+						"task"
+					],
+					"delivery": [
+						"over time"
+					]
 				},
 				"sortOrder": 207,
 				"require": "g.potions>=8&&g.shopkeeping>=5",
@@ -407,7 +411,7 @@
 			{
 				"id": "bazaar",
 				"name": "bazaar",
-				"desc": "A bustle of traders and merchants",
+				"desc": "ความจอแจของพ่อค้าและนักค้าขาย",
 				"require": "g.shopkeeping>=8&&g.tradingstall>0",
 				"max": 1,
 				"cost": {
@@ -429,7 +433,7 @@
 				"id": "herbmonger",
 				"name": "herb monger",
 				"tags": "t_shopkeeper_assistant",
-				"desc": "Constantly sells your freshly grown herbs at your behest.",
+				"desc": "ขายสมุนไพรสดที่คุณปลูกอย่างต่อเนื่องตามคำสั่งของคุณ",
 				"require": "g.shopkeeping>=5&&g.herbs>=30",
 				"max": 2,
 				"cost": {
@@ -453,7 +457,7 @@
 				"id": "scrollmonger",
 				"name": "scroll monger",
 				"tags": "t_shopkeeper_assistant",
-				"desc": "Constantly sells your scroll supply at your behest.",
+				"desc": "ขายสต็อกม้วนคัมภีร์ของคุณอย่างต่อเนื่องตามคำสั่งของคุณ",
 				"require": "g.shopkeeping>=7&&g.scrolls>=30",
 				"max": 2,
 				"cost": {
@@ -477,7 +481,7 @@
 				"id": "gemmonger",
 				"name": "gem monger",
 				"tags": "t_shopkeeper_assistant",
-				"desc": "Constantly sells your gem supply at your behest.",
+				"desc": "ขายสต็อกอัญมณีของคุณอย่างต่อเนื่องตามคำสั่งของคุณ",
 				"require": "g.shopkeeping>=9&&g.gems>=30",
 				"max": 2,
 				"cost": {
@@ -500,7 +504,7 @@
 			{
 				"id": "goldpile",
 				"name": "gold pile",
-				"desc": "Why sleep like a peasant, when you can sleep like a dragon",
+				"desc": "จะนอนอย่างชาวนาไปทำไม ในเมื่อคุณนอนอย่างมังกรได้",
 				"require": "g.shopkeeping>=7",
 				"max": 1,
 				"tags": "bed",
@@ -526,7 +530,7 @@
 			{
 				"id": "goldstash",
 				"name": "stash of gold",
-				"desc": "Protect your gold by stashing it away",
+				"desc": "ปกป้องทองคำของคุณโดยซุกซ่อนมันไว้",
 				"require": "g.shopkeeping>=8",
 				"repeat": true,
 				"cost": {
