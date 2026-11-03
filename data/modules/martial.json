@@ -6,7 +6,7 @@
 			{
 				"id": "weaponlore",
 				"name": "martial",
-				"desc": "Incorporate martial weapons into your magic.",
+				"desc": "ผสมผสานอาวุธการต่อสู้เข้ากับเวทมนตร์ของคุณ",
 				"need": "armssource",
 				"buy": {
 					"vigor": 5
@@ -31,7 +31,7 @@
 				"id": "weapon_care",
 				"name": "weapon Servicing",
 				"require": "g.weaponlore>=2&&g.player.getWeapon().damage>=8",
-				"desc": "Clean and service your weapon.",
+				"desc": "ทำความสะอาดและดูแลบำรุงอาวุธของคุณ",
 				"need": "armssource",
 				"max": 3,
 				"cost": {
@@ -43,14 +43,14 @@
 					"weaponlore.rate": 0.1,
 					"player.tohit": 0.1
 				},
-				"flavor": "Take care of your weapon and it will take care of you.",
+				"flavor": "ดูแลอาวุธของคุณ แล้วมันจะดูแลคุณตอบ",
 				"group": "martial"
 			},
 			{
 				"id": "weapon_attune",
 				"name": "weapon Attunement",
 				"require": "g.weaponlore>=6&&g.spiritlore>=8",
-				"desc": "Open yourself to forging a connection with your weapon.",
+				"desc": "เปิดใจสู่การสร้างสายใยเชื่อมโยงกับอาวุธของคุณ",
 				"max": 1,
 				"cost": {
 					"research": 1000,
@@ -61,17 +61,19 @@
 					"weaponlore.rate": 0.2,
 					"player.tohit": 0.3
 				},
-				"flavor": "Investing time to produce better results",
+				"flavor": "ลงทุนเวลาเพื่อผลลัพธ์ที่ดีขึ้น",
 				"group": "martial"
 			},
 			{
 				"id": "spec_blunt",
 				"name": "blunt Specialization",
 				"tags": "t_martial_spec",
-				"desc": "Specialize in blunt weapons like hammers and canes.",
+				"desc": "เชี่ยวชาญอาวุธทุบ เช่น ค้อนและไม้เท้า",
 				"require": "g.arms_tome>0&&g.tier2>0",
 				"warn": true,
-				"lock": ["t_martial_spec"],
+				"lock": [
+					"t_martial_spec"
+				],
 				"cost": {
 					"gold": 1000,
 					"vigor": 10
@@ -86,10 +88,12 @@
 				"id": "spec_pierce",
 				"name": "piercing Specialization",
 				"tags": "t_martial_spec",
-				"desc": "Specialize in piercing weapons like spears and daggers.",
+				"desc": "เชี่ยวชาญอาวุธแทง เช่น หอกและมีดสั้น",
 				"require": "g.arms_tome>0&&g.tier2>0",
 				"warn": true,
-				"lock": ["t_martial_spec"],
+				"lock": [
+					"t_martial_spec"
+				],
 				"cost": {
 					"gold": 1000,
 					"vigor": 10
@@ -104,10 +108,12 @@
 				"id": "spec_slash",
 				"name": "slashing Specialization",
 				"tags": "t_martial_spec",
-				"desc": "Specialize in slashing weapons like swords and axes.",
+				"desc": "เชี่ยวชาญอาวุธฟัน เช่น ดาบและขวาน",
 				"require": "g.arms_tome>0&&g.tier2>0",
 				"warn": true,
-				"lock": ["t_martial_spec"],
+				"lock": [
+					"t_martial_spec"
+				],
 				"cost": {
 					"gold": 1000,
 					"vigor": 10
@@ -125,7 +131,7 @@
 				"name": "training spars",
 				"require": "g.weaponlore>=1&&g.tier1>0",
 				"need": "armssource",
-				"desc": "Refine your weapon use against a friendly opponent. Costs more and takes longer with each session.",
+				"desc": "ฝึกฝนการใช้อาวุธของคุณกับคู่ต่อสู้ที่เป็นมิตร แพงขึ้นและใช้เวลานานขึ้นในแต่ละครั้ง",
 				"max": 5,
 				"length": 15,
 				"cost": {
@@ -145,7 +151,7 @@
 					"vigor.max": 0.2,
 					"martial_basics.length": 5
 				},
-				"flavor": "Not much help, but better than a dummy.",
+				"flavor": "ไม่ช่วยมากนัก แต่ดีกว่าหุ่นซ้อม",
 				"group": "martial"
 			},
 			{
@@ -153,7 +159,7 @@
 				"name": "defensive training",
 				"require": "g.weaponlore>=2&&g.martial_basics>0",
 				"need": "armssource",
-				"desc": "Learn to take a hit from an experienced weaponmaster. Costs more and takes longer with each session.",
+				"desc": "เรียนรู้การรับหมัดจากปรมาจารย์อาวุธผู้มากประสบการณ์ แพงขึ้นและใช้เวลานานขึ้นในแต่ละครั้ง",
 				"max": 5,
 				"length": 15,
 				"cost": {
@@ -172,7 +178,7 @@
 					"hp.max": 1,
 					"martial_defense.length": 5
 				},
-				"flavor": "Take the hits now so you don't take them later.",
+				"flavor": "รับหมัดตอนนี้เพื่อไม่ต้องรับมันทีหลัง",
 				"group": "martial"
 			},
 			{
@@ -180,7 +186,7 @@
 				"name": "manual of arms",
 				"require": "g.weaponlore>=5&&g.tier1>0",
 				"need": "armssource",
-				"desc": "Enlighten yourself to the multitude of weapons",
+				"desc": "เปิดหูเปิดตาตนเองสู่เหล่าอาวุธอันหลากหลาย",
 				"max": 1,
 				"length": 150,
 				"cost": {
@@ -199,7 +205,7 @@
 					"piercedmg": 1,
 					"bluntdmg": 1
 				},
-				"flavor": "Write down the techniques in a large book.",
+				"flavor": "จดเทคนิคลงในหนังสือเล่มใหญ่",
 				"group": "martial"
 			},
 			{
@@ -207,8 +213,8 @@
 				"name": "manual of legs",
 				"require": "g.arms_tome>0&&(g.martial_defense+g.martial_basics)>=10",
 				"need": "leggery",
-				"needtext": "Own a leggery furniture",
-				"desc": "All this training has gotten your legs into fantastic shape. Figure out how to put them to work.",
+				"needtext": "เป็นเจ้าของเครื่องเรือนเลกเกอรี",
+				"desc": "การฝึกทั้งหมดนี้ทำให้ขาของคุณแข็งแรงสุด ๆ หาวิธีนำมันมาใช้งาน",
 				"max": 1,
 				"length": 150,
 				"cost": {
@@ -226,7 +232,7 @@
 					"dist": 50,
 					"speed": 1
 				},
-				"flavor": "All the writing is a nice cooldown for your legs to stop aching.",
+				"flavor": "การเขียนทั้งหมดเป็นการผ่อนคลายที่ดีให้ขาของคุณหยุดปวด",
 				"group": "martial"
 			}
 		],
@@ -254,25 +260,39 @@
 			{
 				"id": "blunt_simple",
 				"name": "simple bash",
-				"desc": "Use your training to bash a foe.",
+				"desc": "ใช้การฝึกของคุณทุบศัตรู",
 				"sortOrder": 373,
 				"level": 2,
 				"school": "martial",
-				"tags": ["t_nospellcraft"],
+				"tags": [
+					"t_nospellcraft"
+				],
 				"keywords": {
-					"type": ["damage"],
-					"target": ["enemy"],
-					"targets": ["single"],
-					"delivery": ["instant"],
-					"special": ["weapon"]
+					"type": [
+						"damage"
+					],
+					"target": [
+						"enemy"
+					],
+					"targets": [
+						"single"
+					],
+					"delivery": [
+						"instant"
+					],
+					"special": [
+						"weapon"
+					]
 				},
 				"require": "g.weaponlore>=1",
 				"buy": {
 					"vigor": 4
 				},
-				"caststoppers": [1],
+				"caststoppers": [
+					1
+				],
 				"need": "g.player.getWeapon().hasTag('t_blunt')",
-				"needtext": "Currently equipped weapon must be blunt",
+				"needtext": "อาวุธที่สวมอยู่ต้องเป็นชนิดทุบ",
 				"cost": {
 					"vigor": 3
 				},
@@ -284,31 +304,48 @@
 					"kind": "blunt",
 					"tohit": 1,
 					"damage": "(a.getWeapon().damage||0)*0.9",
-					"potencies": ["physdmg", "bluntdmg"]
+					"potencies": [
+						"physdmg",
+						"bluntdmg"
+					]
 				}
 			},
 			{
 				"id": "pierce_simple",
 				"name": "simple thrust",
-				"desc": "Use your training to thrust at a foe.",
+				"desc": "ใช้การฝึกของคุณแทงศัตรู",
 				"sortOrder": 358,
 				"level": 2,
 				"school": "martial",
-				"tags": ["t_nospellcraft"],
+				"tags": [
+					"t_nospellcraft"
+				],
 				"keywords": {
-					"type": ["damage"],
-					"target": ["enemy"],
-					"targets": ["single"],
-					"delivery": ["instant"],
-					"special": ["weapon"]
+					"type": [
+						"damage"
+					],
+					"target": [
+						"enemy"
+					],
+					"targets": [
+						"single"
+					],
+					"delivery": [
+						"instant"
+					],
+					"special": [
+						"weapon"
+					]
 				},
 				"require": "g.weaponlore>=1",
 				"buy": {
 					"vigor": 4
 				},
-				"caststoppers": [1],
+				"caststoppers": [
+					1
+				],
 				"need": "g.player.getWeapon().hasTag('t_pierce')",
-				"needtext": "Currently equipped weapon must be piercing",
+				"needtext": "อาวุธที่สวมอยู่ต้องเป็นชนิดแทง",
 				"cost": {
 					"vigor": 3
 				},
@@ -320,31 +357,48 @@
 					"kind": "pierce",
 					"tohit": 1,
 					"damage": "(a.getWeapon().damage||0)*0.9",
-					"potencies": ["physdmg", "piercedmg"]
+					"potencies": [
+						"physdmg",
+						"piercedmg"
+					]
 				}
 			},
 			{
 				"id": "slash_simple",
 				"name": "simple slash",
-				"desc": "Use your training to slash at a foe.",
+				"desc": "ใช้การฝึกของคุณฟันศัตรู",
 				"sortOrder": 337,
 				"level": 2,
 				"school": "martial",
-				"tags": ["t_nospellcraft"],
+				"tags": [
+					"t_nospellcraft"
+				],
 				"keywords": {
-					"type": ["damage"],
-					"target": ["enemy"],
-					"targets": ["single"],
-					"delivery": ["instant"],
-					"special": ["weapon"]
+					"type": [
+						"damage"
+					],
+					"target": [
+						"enemy"
+					],
+					"targets": [
+						"single"
+					],
+					"delivery": [
+						"instant"
+					],
+					"special": [
+						"weapon"
+					]
 				},
 				"require": "g.weaponlore>=1",
 				"buy": {
 					"vigor": 4
 				},
-				"caststoppers": [1],
+				"caststoppers": [
+					1
+				],
 				"need": "g.player.getWeapon().hasTag('t_slash')",
-				"needtext": "Currently equipped weapon must be slashing",
+				"needtext": "อาวุธที่สวมอยู่ต้องเป็นชนิดฟัน",
 				"cost": {
 					"vigor": 3
 				},
@@ -356,22 +410,35 @@
 					"kind": "slash",
 					"tohit": 1,
 					"damage": "(a.getWeapon().damage||0)*0.9",
-					"potencies": ["physdmg", "slashdmg"]
+					"potencies": [
+						"physdmg",
+						"slashdmg"
+					]
 				}
 			},
 			{
 				"id": "defense_stance",
 				"name": "protective stance",
-				"desc": "Enhance your defense for a limited time.",
+				"desc": "เสริมการป้องกันของคุณชั่วระยะเวลาจำกัด",
 				"sortOrder": 391,
 				"level": 3,
 				"school": "martial",
-				"tags": ["t_nospellcraft"],
+				"tags": [
+					"t_nospellcraft"
+				],
 				"keywords": {
-					"type": ["buff"],
-					"target": ["self"],
-					"targets": ["single"],
-					"delivery": ["over time"]
+					"type": [
+						"buff"
+					],
+					"target": [
+						"self"
+					],
+					"targets": [
+						"single"
+					],
+					"delivery": [
+						"over time"
+					]
 				},
 				"require": "g.weaponlore>=2",
 				"buy": {
@@ -381,9 +448,11 @@
 				"cost": {
 					"vigor": 3
 				},
-				"caststoppers": [1],
+				"caststoppers": [
+					1
+				],
 				"need": "g.player.getWeapon().hasTag('t_martial')",
-				"needtext": "Currently equipped weapon must be martial",
+				"needtext": "อาวุธที่สวมอยู่ต้องเป็นอาวุธการต่อสู้",
 				"result": {
 					"weaponlore.exp": 0.3
 				},
@@ -400,27 +469,42 @@
 			{
 				"id": "mana_martial",
 				"name": "imbued attack",
-				"desc": "Charge your weapon with mana before attacking.",
-				"flavor": "Magic and a weapon, deals magic damage.",
+				"desc": "อัดมานาให้อาวุธของคุณก่อนโจมตี",
+				"flavor": "เวทมนตร์กับอาวุธ สร้างความเสียหายเวทมนตร์",
 				"sortOrder": 317,
 				"level": 3,
 				"school": "martial",
-				"tags": ["t_nospellcraft"],
+				"tags": [
+					"t_nospellcraft"
+				],
 				"keywords": {
-					"type": ["damage"],
-					"target": ["enemy"],
-					"targets": ["single"],
-					"delivery": ["instant"],
-					"special": ["weapon"]
+					"type": [
+						"damage"
+					],
+					"target": [
+						"enemy"
+					],
+					"targets": [
+						"single"
+					],
+					"delivery": [
+						"instant"
+					],
+					"special": [
+						"weapon"
+					]
 				},
 				"require": "g.spellbook.value>0&&g.weaponlore>=3&&g.lore>=5",
 				"buy": {
 					"scrolls": 5,
 					"vigor": 5
 				},
-				"caststoppers": [1, 4],
+				"caststoppers": [
+					1,
+					4
+				],
 				"need": "g.player.getWeapon().hasTag('t_martial')",
-				"needtext": "Currently equipped weapon must be martial",
+				"needtext": "อาวุธที่สวมอยู่ต้องเป็นอาวุธการต่อสู้",
 				"cost": {
 					"vigor": 4,
 					"mana": 3
@@ -433,34 +517,52 @@
 					"kind": "mana",
 					"tohit": 1,
 					"damage": "3+(a.getWeapon().damage||0)*0.75",
-					"potencies": ["physdmg", "manadmg"]
+					"potencies": [
+						"physdmg",
+						"manadmg"
+					]
 				}
 			},
 			{
 				"id": "mana_double",
 				"name": "charged combo",
-				"desc": "Imbue your weapon with mana, then strike twice.",
-				"flavor": "Set them up, then knock them down.",
+				"desc": "อัดมานาให้อาวุธของคุณ แล้วฟันสองครั้ง",
+				"flavor": "ตั้งมันขึ้นแล้วทุบมันลง",
 				"sortOrder": 316,
 				"level": 4,
 				"school": "martial",
-				"tags": ["t_nospellcraft"],
+				"tags": [
+					"t_nospellcraft"
+				],
 				"keywords": {
-					"type": ["damage"],
-					"target": ["enemy"],
-					"targets": ["single"],
-					"delivery": ["instant"],
-					"special": ["weapon"]
+					"type": [
+						"damage"
+					],
+					"target": [
+						"enemy"
+					],
+					"targets": [
+						"single"
+					],
+					"delivery": [
+						"instant"
+					],
+					"special": [
+						"weapon"
+					]
 				},
 				"require": "g.spellbook.value>0&&g.arms_tome>0",
-				"caststoppers": [1, 4],
+				"caststoppers": [
+					1,
+					4
+				],
 				"buy": {
 					"codices": 2,
 					"vigor": 8,
 					"managem": 1
 				},
 				"need": "g.player.getWeapon().hasTag('t_martial')",
-				"needtext": "Currently equipped weapon must be martial",
+				"needtext": "อาวุธที่สวมอยู่ต้องเป็นอาวุธการต่อสู้",
 				"cost": {
 					"vigor": 6,
 					"mana": 4
@@ -475,13 +577,19 @@
 							"kind": "mana",
 							"tohit": 1,
 							"damage": "2+(a.getWeapon().damage||0)*0.65",
-							"potencies": ["physdmg", "manadmg"]
+							"potencies": [
+								"physdmg",
+								"manadmg"
+							]
 						},
 						{
 							"kind": "mana",
 							"tohit": 1,
 							"damage": "1+(a.getWeapon().damage||0)*0.85",
-							"potencies": ["physdmg", "manadmg"]
+							"potencies": [
+								"physdmg",
+								"manadmg"
+							]
 						}
 					]
 				}
@@ -489,27 +597,41 @@
 			{
 				"id": "pommel_strike",
 				"name": "pommel strike",
-				"desc": "Use your weapon's pommel to stun an enemy.",
-				"flavor": "Deal 9 damage, draw a card.",
+				"desc": "ใช้ท้ายดาบของอาวุธทำให้ศัตรูสตัน",
+				"flavor": "สร้างความเสียหาย 9 จั่วการ์ด",
 				"sortOrder": 372,
 				"level": 4,
 				"school": "martial",
-				"tags": ["t_nospellcraft"],
+				"tags": [
+					"t_nospellcraft"
+				],
 				"keywords": {
-					"type": ["damage"],
-					"target": ["enemy"],
-					"targets": ["single"],
-					"delivery": ["instant"],
-					"special": ["weapon"]
+					"type": [
+						"damage"
+					],
+					"target": [
+						"enemy"
+					],
+					"targets": [
+						"single"
+					],
+					"delivery": [
+						"instant"
+					],
+					"special": [
+						"weapon"
+					]
 				},
 				"require": "g.weaponlore>=4",
 				"buy": {
 					"scrolls": 5,
 					"vigor": 7
 				},
-				"caststoppers": [1],
+				"caststoppers": [
+					1
+				],
 				"need": "g.player.getWeapon().hasTag('t_martial')",
-				"needtext": "Currently equipped weapon must be martial",
+				"needtext": "อาวุธที่สวมอยู่ต้องเป็นอาวุธการต่อสู้",
 				"cost": {
 					"vigor": 5
 				},
@@ -521,7 +643,10 @@
 					"kind": "blunt",
 					"tohit": 1,
 					"damage": "(a.getWeapon().damage||0)*0.8",
-					"potencies": ["physdmg", "bluntdmg"],
+					"potencies": [
+						"physdmg",
+						"bluntdmg"
+					],
 					"dot": {
 						"id": "paralyze",
 						"duration": 1.2
@@ -531,27 +656,43 @@
 			{
 				"id": "disarm_martial",
 				"name": "disarming blow",
-				"desc": "Remove your opponent's weapon from their hands.",
-				"flavor": "Hey, where'd your sword go?",
+				"desc": "ปลดอาวุธของคู่ต่อสู้จากมือของพวกมัน",
+				"flavor": "เฮ้ ดาบของเจ้าไปไหน?",
 				"sortOrder": 336,
 				"level": 5,
 				"school": "martial",
-				"tags": ["t_nospellcraft"],
+				"tags": [
+					"t_nospellcraft"
+				],
 				"keywords": {
-					"type": ["damage", "debuff"],
-					"target": ["enemy"],
-					"targets": ["single"],
-					"delivery": ["instant", "over time"],
-					"special": ["weapon"]
+					"type": [
+						"damage",
+						"debuff"
+					],
+					"target": [
+						"enemy"
+					],
+					"targets": [
+						"single"
+					],
+					"delivery": [
+						"instant",
+						"over time"
+					],
+					"special": [
+						"weapon"
+					]
 				},
 				"require": "g.weaponlore>=3",
 				"buy": {
 					"scrolls": 5,
 					"vigor": 5
 				},
-				"caststoppers": [1],
+				"caststoppers": [
+					1
+				],
 				"need": "g.player.getWeapon().hasTag('t_martial')",
-				"needtext": "Currently equipped weapon must be martial",
+				"needtext": "อาวุธที่สวมอยู่ต้องเป็นอาวุธการต่อสู้",
 				"cost": {
 					"vigor": 4
 				},
@@ -563,7 +704,10 @@
 					"kind": "slash",
 					"tohit": -1,
 					"damage": "(a.getWeapon().damage||0)*0.85",
-					"potencies": ["physdmg", "slashdmg"],
+					"potencies": [
+						"physdmg",
+						"slashdmg"
+					],
 					"dot": {
 						"id": "tangled",
 						"duration": 2
@@ -573,27 +717,42 @@
 			{
 				"id": "pierce_bleed",
 				"name": "stab wound",
-				"desc": "Aim for the vital organs for a lasting impression.",
-				"flavor": "Holes in armor tend to be a really bad idea.",
+				"desc": "เล็งที่อวัยวะสำคัญเพื่อสร้างความประทับใจที่ยั่งยืน",
+				"flavor": "รูในเกราะมักเป็นความคิดที่แย่มาก",
 				"sortOrder": 357,
 				"level": 3,
 				"school": "martial",
-				"tags": ["t_nospellcraft"],
+				"tags": [
+					"t_nospellcraft"
+				],
 				"keywords": {
-					"type": ["damage"],
-					"target": ["enemy"],
-					"targets": ["single"],
-					"delivery": ["instant", "over time"],
-					"special": ["weapon"]
+					"type": [
+						"damage"
+					],
+					"target": [
+						"enemy"
+					],
+					"targets": [
+						"single"
+					],
+					"delivery": [
+						"instant",
+						"over time"
+					],
+					"special": [
+						"weapon"
+					]
 				},
 				"require": "g.weaponlore>=2",
 				"buy": {
 					"scrolls": 5,
 					"vigor": 5
 				},
-				"caststoppers": [1],
+				"caststoppers": [
+					1
+				],
 				"need": "g.player.getWeapon().hasTag('t_martial')",
-				"needtext": "Currently equipped weapon must be martial",
+				"needtext": "อาวุธที่สวมอยู่ต้องเป็นอาวุธการต่อสู้",
 				"cost": {
 					"vigor": 3
 				},
@@ -605,39 +764,59 @@
 					"kind": "pierce",
 					"tohit": 1,
 					"damage": "((a.getWeapon().damage||0)*0.7)",
-					"potencies": ["physdmg", "piercedmg"],
+					"potencies": [
+						"physdmg",
+						"piercedmg"
+					],
 					"dot": {
 						"name": "bleed",
 						"damage": "3~6",
 						"duration": 10,
-						"potencies": ["physdmg", "piercedmg"]
+						"potencies": [
+							"physdmg",
+							"piercedmg"
+						]
 					}
 				}
 			},
 			{
 				"id": "pierce_thrust",
 				"name": "precise thrust",
-				"desc": "Put some power behind your thrusts.",
-				"flavor": "Not just a gentle poke.",
+				"desc": "ใส่พลังเข้าไปเบื้องหลังการแทงของคุณ",
+				"flavor": "ไม่ใช่แค่การแหย่เบา ๆ",
 				"sortOrder": 356,
 				"level": 4,
 				"school": "martial",
-				"tags": ["t_nospellcraft"],
+				"tags": [
+					"t_nospellcraft"
+				],
 				"keywords": {
-					"type": ["damage"],
-					"target": ["enemy"],
-					"targets": ["single"],
-					"delivery": ["instant"],
-					"special": ["weapon"]
+					"type": [
+						"damage"
+					],
+					"target": [
+						"enemy"
+					],
+					"targets": [
+						"single"
+					],
+					"delivery": [
+						"instant"
+					],
+					"special": [
+						"weapon"
+					]
 				},
 				"require": "g.spec_pierce>0",
 				"buy": {
 					"codices": 5,
 					"vigor": 5
 				},
-				"caststoppers": [1],
+				"caststoppers": [
+					1
+				],
 				"need": "g.player.getWeapon().hasTag('t_pierce')",
-				"needtext": "Currently equipped weapon must be piercing",
+				"needtext": "อาวุธที่สวมอยู่ต้องเป็นชนิดแทง",
 				"cost": {
 					"vigor": 4
 				},
@@ -649,24 +828,41 @@
 					"kind": "pierce",
 					"tohit": 1,
 					"damage": "4+((a.getWeapon().damage||0)*1.2)",
-					"potencies": ["physdmg", "piercedmg"]
+					"potencies": [
+						"physdmg",
+						"piercedmg"
+					]
 				}
 			},
 			{
 				"id": "pierce_armor",
 				"name": "armor piercer",
-				"desc": "Leave a hole in your foe's armor.",
-				"flavor": "Holes in armor are sometimes a really good idea.",
+				"desc": "ทิ้งรูในเกราะของศัตรู",
+				"flavor": "รูในเกราะบางครั้งเป็นความคิดที่ดีมาก",
 				"sortOrder": 355,
 				"level": 6,
 				"school": "martial",
-				"tags": ["t_nospellcraft"],
+				"tags": [
+					"t_nospellcraft"
+				],
 				"keywords": {
-					"type": ["damage", "debuff"],
-					"target": ["enemy"],
-					"targets": ["single"],
-					"delivery": ["instant", "over time"],
-					"special": ["weapon"]
+					"type": [
+						"damage",
+						"debuff"
+					],
+					"target": [
+						"enemy"
+					],
+					"targets": [
+						"single"
+					],
+					"delivery": [
+						"instant",
+						"over time"
+					],
+					"special": [
+						"weapon"
+					]
 				},
 				"require": "g.spec_pierce>0&&g.weaponlore>=6",
 				"cd": 5,
@@ -674,9 +870,11 @@
 					"codices": 5,
 					"vigor": 5
 				},
-				"caststoppers": [1],
+				"caststoppers": [
+					1
+				],
 				"need": "g.player.getWeapon().hasTag('t_pierce')",
-				"needtext": "Currently equipped weapon must be piercing",
+				"needtext": "อาวุธที่สวมอยู่ต้องเป็นชนิดแทง",
 				"cost": {
 					"vigor": 6
 				},
@@ -687,7 +885,10 @@
 					"kind": "pierce",
 					"tohit": 1,
 					"damage": "((a.getWeapon().damage||0)*1.0)",
-					"potencies": ["physdmg", "piercedmg"],
+					"potencies": [
+						"physdmg",
+						"piercedmg"
+					],
 					"dot": {
 						"name": "pierced armor",
 						"duration": 20,
@@ -700,27 +901,41 @@
 			{
 				"id": "blunt_heavy",
 				"name": "heavy slam",
-				"desc": "A thunderous blow that does impressive damage.",
-				"flavor": "That's gonna leave a bruise in the morning.",
+				"desc": "หมัดสายฟ้าฟาดที่สร้างความเสียหายน่าประทับใจ",
+				"flavor": "เช้านี้คงมีรอยช้ำแน่ ๆ",
 				"sortOrder": 371,
 				"level": 4,
 				"school": "martial",
-				"tags": ["t_nospellcraft"],
+				"tags": [
+					"t_nospellcraft"
+				],
 				"keywords": {
-					"type": ["damage"],
-					"target": ["enemy"],
-					"targets": ["single"],
-					"delivery": ["instant"],
-					"special": ["weapon"]
+					"type": [
+						"damage"
+					],
+					"target": [
+						"enemy"
+					],
+					"targets": [
+						"single"
+					],
+					"delivery": [
+						"instant"
+					],
+					"special": [
+						"weapon"
+					]
 				},
 				"require": "g.spec_blunt>0",
 				"buy": {
 					"codices": 5,
 					"vigor": 5
 				},
-				"caststoppers": [1],
+				"caststoppers": [
+					1
+				],
 				"need": "g.player.getWeapon().hasTag('t_blunt')",
-				"needtext": "Currently equipped weapon must be blunt",
+				"needtext": "อาวุธที่สวมอยู่ต้องเป็นชนิดทุบ",
 				"cost": {
 					"vigor": 4
 				},
@@ -732,33 +947,52 @@
 					"kind": "blunt",
 					"tohit": 1,
 					"damage": "((a.getWeapon().damage||0)*1.5)",
-					"potencies": ["physdmg", "bluntdmg"]
+					"potencies": [
+						"physdmg",
+						"bluntdmg"
+					]
 				}
 			},
 			{
 				"id": "blunt_crush",
 				"name": "crushing blow",
-				"desc": "A swing designed to crush armor and whatever's behind it.",
-				"flavor": "Keeping the local armorsmith in business.",
+				"desc": "จังหวะที่ออกแบบให้บดขยี้เกราะและอะไรก็ตามที่อยู่ด้านหลัง",
+				"flavor": "คอยสร้างรายได้ให้ช่างทำเกราะท้องถิ่น",
 				"sortOrder": 370,
 				"level": 6,
 				"school": "martial",
-				"tags": ["t_nospellcraft"],
+				"tags": [
+					"t_nospellcraft"
+				],
 				"keywords": {
-					"type": ["damage", "debuff"],
-					"target": ["enemy"],
-					"targets": ["single"],
-					"delivery": ["instant", "over time"],
-					"special": ["weapon"]
+					"type": [
+						"damage",
+						"debuff"
+					],
+					"target": [
+						"enemy"
+					],
+					"targets": [
+						"single"
+					],
+					"delivery": [
+						"instant",
+						"over time"
+					],
+					"special": [
+						"weapon"
+					]
 				},
 				"require": "g.spec_blunt>0&&g.weaponlore>=6",
 				"buy": {
 					"codices": 5,
 					"vigor": 5
 				},
-				"caststoppers": [1],
+				"caststoppers": [
+					1
+				],
 				"need": "g.player.getWeapon().hasTag('t_blunt')",
-				"needtext": "Currently equipped weapon must be blunt",
+				"needtext": "อาวุธที่สวมอยู่ต้องเป็นชนิดทุบ",
 				"cost": {
 					"vigor": 6
 				},
@@ -770,7 +1004,10 @@
 					"kind": "blunt",
 					"tohit": 1,
 					"damage": "5+((a.getWeapon().damage||0)*0.7)",
-					"potencies": ["physdmg", "bluntdmg"],
+					"potencies": [
+						"physdmg",
+						"bluntdmg"
+					],
 					"dot": {
 						"duration": 10,
 						"mod": {
@@ -783,27 +1020,41 @@
 			{
 				"id": "slash_twohand",
 				"name": "two-handed slash",
-				"desc": "Use your strength to deal a forceful strike.",
-				"flavor": "A sharp blade goes through like butter.",
+				"desc": "ใช้กำลังของคุณจัดการโจมตีอย่างทรงพลัง",
+				"flavor": "ใบมีดคมทะลุผ่านดั่งเนย",
 				"sortOrder": 335,
 				"level": 4,
 				"school": "martial",
-				"tags": ["t_nospellcraft"],
+				"tags": [
+					"t_nospellcraft"
+				],
 				"keywords": {
-					"type": ["damage"],
-					"target": ["enemy"],
-					"targets": ["single"],
-					"delivery": ["instant"],
-					"special": ["weapon"]
+					"type": [
+						"damage"
+					],
+					"target": [
+						"enemy"
+					],
+					"targets": [
+						"single"
+					],
+					"delivery": [
+						"instant"
+					],
+					"special": [
+						"weapon"
+					]
 				},
 				"require": "g.spec_slash>0",
 				"buy": {
 					"codices": 5,
 					"vigor": 5
 				},
-				"caststoppers": [1],
+				"caststoppers": [
+					1
+				],
 				"need": "g.player.getWeapon().hasTag('t_slash')",
-				"needtext": "Currently equipped weapon must be slashing",
+				"needtext": "อาวุธที่สวมอยู่ต้องเป็นชนิดฟัน",
 				"cost": {
 					"vigor": 4
 				},
@@ -815,33 +1066,52 @@
 					"kind": "slash",
 					"tohit": 1,
 					"damage": "2+((a.getWeapon().damage||0)*1.35)",
-					"potencies": ["physdmg", "slashdmg"]
+					"potencies": [
+						"physdmg",
+						"slashdmg"
+					]
 				}
 			},
 			{
 				"id": "slash_weaken",
 				"name": "weakening slash",
-				"desc": "Aim for the tendons and joints to weaken your enemy's attacks.",
-				"flavor": "Cut them off at the kneecaps, or the elbows, or whatever they happen to have.",
+				"desc": "เล็งที่เส้นเอ็นและข้อต่อเพื่อทำให้การโจมตีของศัตรูอ่อนแอลง",
+				"flavor": "ตัดมันที่เข่าหรือข้อศอก หรืออะไรก็ตามที่พวกมันมี",
 				"sortOrder": 334,
 				"level": 6,
 				"school": "martial",
-				"tags": ["t_nospellcraft"],
+				"tags": [
+					"t_nospellcraft"
+				],
 				"keywords": {
-					"type": ["damage", "debuff"],
-					"target": ["enemy"],
-					"targets": ["single"],
-					"delivery": ["instant", "over time"],
-					"special": ["weapon"]
+					"type": [
+						"damage",
+						"debuff"
+					],
+					"target": [
+						"enemy"
+					],
+					"targets": [
+						"single"
+					],
+					"delivery": [
+						"instant",
+						"over time"
+					],
+					"special": [
+						"weapon"
+					]
 				},
 				"require": "g.spec_slash>0&&g.weaponlore>=6",
 				"buy": {
 					"codices": 5,
 					"vigor": 5
 				},
-				"caststoppers": [1],
+				"caststoppers": [
+					1
+				],
 				"need": "g.player.getWeapon().hasTag('t_slash')",
-				"needtext": "Currently equipped weapon must be slashing",
+				"needtext": "อาวุธที่สวมอยู่ต้องเป็นชนิดฟัน",
 				"cost": {
 					"vigor": 6
 				},
@@ -853,7 +1123,10 @@
 					"kind": "slash",
 					"tohit": 1,
 					"damage": "((a.getWeapon().damage||0)*1.0)",
-					"potencies": ["physdmg", "slashdmg"],
+					"potencies": [
+						"physdmg",
+						"slashdmg"
+					],
 					"dot": {
 						"duration": 10,
 						"mod": {
