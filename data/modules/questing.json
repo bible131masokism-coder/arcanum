@@ -9,8 +9,8 @@
 				"require": "g.evt_hall>0&&g.tier4>0&&(g.good1>0||g.evil1>0)",
 				"length": 60,
 				"cd": 120,
-				"desc": "Embark on a perilous adventure to shape the world as you see fit. For good or ill.",
-				"extdesc": "Grants more Tales, the more good and/or evil aligned moralities and classes you obtain.",
+				"desc": "เริ่มการผจญภัยอันตรายเพื่อหล่อหลอมโลกตามที่คุณเห็นสมควร ไม่ว่าดีหรือร้าย",
+				"extdesc": "ให้ตำนานมากขึ้น ยิ่งคุณมีศีลธรรมและชั้นเรียนที่โน้มเอียงไปทางดีหรือชั่วมากเท่าไร",
 				"cost": {
 					"light": 5,
 					"shadow": 5,
@@ -37,7 +37,7 @@
 						"id": "virtuetale",
 						"name": "Tales of Heroics",
 						"sym": "🏰",
-						"desc": "The exploits of your Hall have begun to become well-known amongst the people, lauding you as their saviour.",
+						"desc": "วีรกรรมของห้องโถงของคุณเริ่มเป็นที่กล่าวขานในหมู่ผู้คน ยกย่องคุณเป็นผู้ช่วยให้รอด",
 						"group": "hall",
 						"max": 1250,
 						"mod": {
@@ -48,7 +48,7 @@
 						"id": "eviltale",
 						"name": "Tales of Villainy",
 						"sym": "🏰",
-						"desc": "The mere mention of your Hall has begun striking fear in the hearts of people, frightened over your next conquest.",
+						"desc": "เพียงเอ่ยถึงห้องโถงของคุณก็เริ่มทำให้ผู้คนหวาดกลัวในใจ เกรงกลัวต่อการยึดครองครั้งต่อไปของคุณ",
 						"group": "hall",
 						"max": 1250,
 						"mod": {
@@ -60,13 +60,13 @@
 					{
 						"id": "up_virtuequest",
 						"name": "The Hero's Journey",
-						"desc": "Having defeated the great evils plaguing this land, your wizards are often viewed as being closer to characters of myth.",
-						"flavor": "The minstrels sing your praises.",
+						"desc": "หลังจากปราบเหล่าอสูรร้ายที่รุมเร้าแผ่นดินนี้ จอมเวทของคุณจึงมักถูกมองว่าใกล้เคียงกับตัวละครในตำนาน",
+						"flavor": "เหล่านักขับกล่อมขับขานสรรเสริญคุณ",
 						"sym": "🏰",
 						"require": "g.virtuetale>0",
 						"max": 1,
 						"need": "g.virtuetale>=1250",
-						"needtext": "Become known for a total of 1250 Tales of Heroics.",
+						"needtext": "เป็นที่รู้จักด้วยตำนานวีรกรรมรวม 1250 เรื่อง",
 						"tags": "lightsource,hall",
 						"cost": {
 							"prestige": 25
@@ -81,13 +81,13 @@
 					{
 						"id": "up_evilquest",
 						"name": "Reign of Terror",
-						"desc": "Having dominated all challenges of this land, your wizards rule as unchallenged despots.",
-						"flavor": "The iron hand crushed the tyrant's head, and became a tyrant in his stead",
+						"desc": "หลังจากครองความท้าทายทั้งปวงของแผ่นดินนี้ จอมเวทของคุณปกครองในฐานะทรราชที่ไร้ผู้ท้าทาย",
+						"flavor": "กำปั้นเหล็กบดขยี้ศีรษะทรราช แล้วกลายเป็นทรราชแทนที่เขา",
 						"sym": "🏰",
 						"require": "g.eviltale>0",
 						"max": 1,
 						"need": "g.eviltale>=1250",
-						"needtext": "Become known for a total of 1250 Tales of Villainy.",
+						"needtext": "เป็นที่รู้จักด้วยตำนานอธรรมรวม 1250 เรื่อง",
 						"tags": "shadowsource,hall",
 						"cost": {
 							"prestige": 25
@@ -108,24 +108,24 @@
 						"tags": "t_gloss_game_mechanic,t_gloss_hall",
 						"sym": "🛠️🏰",
 						"desc": [
-							"➢ The Grand Quest task shall henceforth be unlocked whenever a Virtuous or Vile wizard in your Hall achieves Tier 4.",
+							"➢ ภารกิจจ้าวเควสต์จะถูกปลดล็อกเมื่อใดก็ตามที่จอมเวทผู้มีคุณธรรมหรือต่ำทรามในห้องโถงของคุณถึงไทเออร์ 4",
 							"",
-							"➢ As tales linked to your current wizard spread, the gain of prestige from performing this task will gradually wane, falling to 0.1 prestige after 100 completions.",
-							"The first 100 completions will reward you with ~25 prestige.",
+							"➢ เมื่อตำนานที่ผูกกับจอมเวทคนปัจจุบันของคุณแผ่ขยาย การได้ชื่อเสียงจากภารกิจนี้จะค่อย ๆ ลดลง จนเหลือ 0.1 ชื่อเสียงหลังทำครบ 100 ครั้ง",
+							"การสำเร็จ 100 ครั้งแรกจะให้รางวัลชื่อเสียงประมาณ 25",
 							"",
-							"➢ Besides producing prestige, it also grants 'Tales of Heroics' and 'Tales of Villainy', scaling with your good/evil aligned moralities and classes.",
+							"➢ นอกจากให้ชื่อเสียงแล้ว ยังมอบ 'ตำนานวีรกรรม' และ 'ตำนานอธรรม' ซึ่งขยายตามศีลธรรมและชั้นเรียนที่โน้มเอียงไปทางดีหรือชั่วของคุณ",
 							"",
-							"➢ The formula for 'Tales of Heroics' generated on each completion is as follows:-",
-							"• From moralities: 1 for 'Virtuous', 2 for 'Scrupulous', 5 for 'Incorruptible', 2 for 'Benevolent', 2 for 'Balanced' and 3 for 'In Equilibrium'.",
-							"• From classes: 2 for each class tagged as 'Master of Light'.",
-							"Tales of Heroics grant 0.00032 Light Rate each, maxing out at 0.4 at 1250.",
+							"➢ สูตรสำหรับ 'ตำนานวีรกรรม' ที่เกิดในการสำเร็จแต่ละครั้งมีดังนี้:-",
+							"• จากศีลธรรม: 1 สำหรับ 'มีคุณธรรม', 2 สำหรับ 'ระมัดระวัง', 5 สำหรับ 'ไม่เสื่อมทราม', 2 สำหรับ 'เมตตา', 2 สำหรับ 'สมดุล' และ 3 สำหรับ 'อยู่ในสมดุล'",
+							"• จากชั้นเรียน: 2 สำหรับแต่ละชั้นเรียนที่ติดแท็ก 'เจ้าแห่งแสง'",
+							"ตำนานวีรกรรมแต่ละเรื่องให้อัตราแสง 0.00032 สูงสุดที่ 0.4 เมื่อถึง 1250",
 							"",
-							"➢ The formula for 'Tales of Villainy' generated on each completion is as follows:-",
-							"• From moralities: 1 for 'Vile', 2 for 'Sinister', 5 for 'Irredeemable', 2 for 'Malevolent', 2 for 'Balanced' and 3 for 'In Equilibrium'.",
-							"• From classes: 2 for each class tagged as 'Master of Shadow'.",
-							"Tales of Villainy grant 0.00032 Shadow Rate each, maxing out at 0.4 at 1250.",
+							"➢ สูตรสำหรับ 'ตำนานอธรรม' ที่เกิดในการสำเร็จแต่ละครั้งมีดังนี้:-",
+							"• จากศีลธรรม: 1 สำหรับ 'ต่ำทราม', 2 สำหรับ 'อำมหิต', 5 สำหรับ 'สิ้นสูญ', 2 สำหรับ 'มุ่งร้าย', 2 สำหรับ 'สมดุล' และ 3 สำหรับ 'อยู่ในสมดุล'",
+							"• จากชั้นเรียน: 2 สำหรับแต่ละชั้นเรียนที่ติดแท็ก 'เจ้าแห่งเงา'",
+							"ตำนานอธรรมแต่ละเรื่องให้อัตราเงา 0.00032 สูงสุดที่ 0.4 เมื่อถึง 1250",
 							"",
-							"➢ After maxing out each respective type of Tale, you will be able to purchase a Hall upgrade specific to it."
+							"➢ หลังจากทำตำนานแต่ละประเภทถึงขีดสูงสุด คุณจะสามารถซื้ออัปเกรดห้องโถงเฉพาะของมันได้"
 						],
 						"require": "g.evt_hall>0&&g.tier4>0"
 					}
