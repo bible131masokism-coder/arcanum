@@ -7,13 +7,15 @@
 				"name": "guild of the sack makers",
 				"start": {
 					"name": "Guild Practices",
-					"desc": "Your unauthorized construction of pouches has sparked the ire of the Guild of Sackmakers."
+					"desc": "การสร้างถุงโดยไม่ได้รับอนุญาตของคุณได้ก่อความโกรธของสมาคมช่างถุง"
 				},
 				"difficulty": "💀💀💀💀💀",
 				"sortOrder": 65,
 				"require": "g.t_craftedbag>0",
 				"dist": 1830,
-				"run": { "stamina": 3.5 },
+				"run": {
+					"stamina": 3.5
+				},
 				"result": {
 					"title": "Guild Breaker",
 					"iron": "0~5",
@@ -35,18 +37,33 @@
 					"sackweaver",
 					"pouchmerchant",
 					"m_gemcutter",
-					["sackenforcer", "sackthug", "sackthug"],
-					["irongolem", "irongolem", "sackenforcer"],
+					[
+						"sackenforcer",
+						"sackthug",
+						"sackthug"
+					],
+					[
+						"irongolem",
+						"irongolem",
+						"sackenforcer"
+					],
 					"sackjman",
-					["burlapgolem", "burlapgolem", "burlapgolem"],
-					["sackthug", "sackthug"]
+					[
+						"burlapgolem",
+						"burlapgolem",
+						"burlapgolem"
+					],
+					[
+						"sackthug",
+						"sackthug"
+					]
 				]
 			}
 		],
 		"monsters": [
 			{
 				"id": "rumpelstiltskin",
-				"desc": "A strange imp that spins magic threads.",
+				"desc": "อิมป์ประหลาดที่ปั่นเส้นใยเวทมนตร์",
 				"noproc": true,
 				"level": 62,
 				"attack": {
@@ -54,12 +71,17 @@
 					"kind": "blunt",
 					"damage": "a.damage*0.7"
 				},
-				"loot": { "aetherhide": { "%": "60%", "value": "4~6" } }
+				"loot": {
+					"aetherhide": {
+						"%": "60%",
+						"value": "4~6"
+					}
+				}
 			},
 			{
 				"id": "sackapprentice",
 				"name": "sackmaker apprentice",
-				"desc": "They have no respect for wizard apprentices.",
+				"desc": "พวกมันไม่เคารพเด็กฝึกจอมเวท",
 				"noproc": true,
 				"level": 4,
 				"hp": 50,
@@ -71,7 +93,7 @@
 			{
 				"id": "sackthug",
 				"name": "guild thug",
-				"desc": "The guild's policies on unauthorized pouch sales are strictly enforced.",
+				"desc": "นโยบายของสมาคมเรื่องการขายถุงโดยไม่ได้รับอนุญาตถูกบังคับใช้อย่างเคร่งครัด",
 				"level": 51,
 				"attack": {
 					"name": "sand bag",
@@ -88,12 +110,17 @@
 					"kind": "earth",
 					"damage": "a.damage"
 				},
-				"loot": { "amberroot": { "%": "60%", "value": "4~6" } }
+				"loot": {
+					"amberroot": {
+						"%": "60%",
+						"value": "4~6"
+					}
+				}
 			},
 			{
 				"id": "m_gemcutter",
 				"name": "gem cutter",
-				"flavor": "The guild sells its gems cheaply. Now if you want a place to store them...",
+				"flavor": "สมาคมขายอัญมณีราคาถูก แต่ถ้าคุณอยากได้ที่เก็บมัน...ก็อีกเรื่อง",
 				"noproc": true,
 				"level": 61,
 				"attack": {
@@ -111,7 +138,7 @@
 			{
 				"id": "pouchmerchant",
 				"name": "pouch merchant",
-				"desc": "The guild hires merchants to drain gold from the pouches of others.",
+				"desc": "สมาคมจ้างพ่อค้าให้ดูดทองคำจากกระเป๋าของผู้อื่น",
 				"noproc": true,
 				"level": 63,
 				"immune": "charm",
@@ -120,26 +147,61 @@
 					"name": "transfer gold",
 					"kind": "spirit",
 					"damage": "66~77",
-					"result": { "gold": "-100~-200" }
+					"result": {
+						"gold": "-100~-200"
+					}
 				},
 				"loot": {
-					"iron": { "%": "50%", "value": "1~2" },
-					"leather": { "%": "50%", "value": "1~2" },
-					"cotton": { "%": "50%", "value": "1~2" },
-					"quicksteel": { "%": "50%", "value": "1~2" },
-					"serpentskin": { "%": "50%", "value": "1~2" },
-					"spidersilk": { "%": "50%", "value": "1~2" },
-					"rubies": { "%": "50%", "value": "1~2" },
-					"adamant": { "%": "50%", "value": "1~2" },
-					"aetherhide": { "%": "50%", "value": "1~2" },
-					"amberroot": { "%": "50%", "value": "1~2" },
-					"diamonds": { "%": "50%", "value": "1~2" }
+					"iron": {
+						"%": "50%",
+						"value": "1~2"
+					},
+					"leather": {
+						"%": "50%",
+						"value": "1~2"
+					},
+					"cotton": {
+						"%": "50%",
+						"value": "1~2"
+					},
+					"quicksteel": {
+						"%": "50%",
+						"value": "1~2"
+					},
+					"serpentskin": {
+						"%": "50%",
+						"value": "1~2"
+					},
+					"spidersilk": {
+						"%": "50%",
+						"value": "1~2"
+					},
+					"rubies": {
+						"%": "50%",
+						"value": "1~2"
+					},
+					"adamant": {
+						"%": "50%",
+						"value": "1~2"
+					},
+					"aetherhide": {
+						"%": "50%",
+						"value": "1~2"
+					},
+					"amberroot": {
+						"%": "50%",
+						"value": "1~2"
+					},
+					"diamonds": {
+						"%": "50%",
+						"value": "1~2"
+					}
 				}
 			},
 			{
 				"id": "burlapgolem",
 				"name": "burlap golem",
-				"desc": "Woven golem filled with heavy sand",
+				"desc": "โกเลมทอผ้าเต็มไปด้วยทรายหนัก",
 				"noproc": true,
 				"level": 50,
 				"attack": {
@@ -147,13 +209,18 @@
 					"kind": "earth",
 					"damage": "a.damage"
 				},
-				"loot": { "amberroot": { "%": "60%", "value": "5~8" } }
+				"loot": {
+					"amberroot": {
+						"%": "60%",
+						"value": "5~8"
+					}
+				}
 			},
 			{
 				"id": "sum_burlapgolem",
 				"name": "burlap golem",
 				"tags": "t_summon",
-				"desc": "Summoned woven golem filled with heavy sand",
+				"desc": "โกเลมทอผ้าที่ถูกเรียกมาเต็มไปด้วยทรายหนัก",
 				"level": 28,
 				"noproc": true,
 				"hp": 400,
@@ -167,18 +234,23 @@
 			{
 				"id": "sackjman",
 				"name": "sackmaker journeyman",
-				"desc": "Travels to towns, selling the finest quality bags and pouches.",
+				"desc": "เดินทางไปตามเมือง ขายกระเป๋าและถุงคุณภาพเยี่ยมที่สุด",
 				"level": 60,
 				"attack": {
 					"name": "punch",
 					"kind": "blunt",
 					"damage": "60~80"
 				},
-				"loot": { "amberroot": { "%": "60%", "value": "3~5" } }
+				"loot": {
+					"amberroot": {
+						"%": "60%",
+						"value": "3~5"
+					}
+				}
 			},
 			{
 				"id": "sackweaver",
-				"desc": "Uses flows of magic to weave bags for sale.",
+				"desc": "ใช้สายธารเวทมนตร์ทอถุงเพื่อขาย",
 				"noproc": true,
 				"level": 61,
 				"attack": {
@@ -186,13 +258,15 @@
 					"kind": "mana",
 					"damage": "a.damage"
 				},
-				"loot": { "adamant": 1 }
+				"loot": {
+					"adamant": 1
+				}
 			},
 			{
 				"id": "sackmaster",
 				"name": "sackmaker's lodge master",
-				"desc": "Surrounded by a cloud of needles, weaves and half finished pouches.",
-				"extdesc": "In matter of seconds you see burlap golems appear from the cloud and jump towards you!.",
+				"desc": "รายล้อมด้วยเมฆแห่งเข็ม เส้นใย และถุงที่ยังทอไม่เสร็จ",
+				"extdesc": "ภายในไม่กี่วินาทีคุณเห็นโกเลมกระสอบป่านผุดขึ้นจากเมฆและกระโจนเข้าหาคุณ!",
 				"noproc": true,
 				"level": 40,
 				"hp": 900,
@@ -212,10 +286,18 @@
 				"level": 9,
 				"school": "summoning",
 				"keywords": {
-					"type": ["summon"],
-					"target": ["ally"],
-					"targets": ["single"],
-					"delivery": ["instant"]
+					"type": [
+						"summon"
+					],
+					"target": [
+						"ally"
+					],
+					"targets": [
+						"single"
+					],
+					"delivery": [
+						"instant"
+					]
 				},
 				"require": "g.sackguild>0",
 				"buy": {
