@@ -6,7 +6,7 @@
 			{
 				"id": "debitomancy",
 				"require": "(g.debt>=10||g.shopkeeping>=6)&&g.tier1>0",
-				"desc": "Master that which is owed, and those who owe it",
+				"desc": "เชี่ยวชาญสิ่งที่ถูกเป็นหนี้ และผู้ที่ติดหนี้มัน",
 				"level": 5,
 				"buy": {
 					"arcana": 40
@@ -25,9 +25,9 @@
 			{
 				"id": "burningrecords",
 				"name": "ever burning records",
-				"actname": "burning records",
-				"desc": "Accumulated records of your debt, forever burning, erasing",
-				"flavor": "The unending scroll's malicious counterpart.",
+				"actname": "บันทึกที่ลุกไหม้",
+				"desc": "บันทึกหนี้สินสะสมที่ลุกไหม้ตลอดกาล ค่อย ๆ ลบเลือน",
+				"flavor": "ด้านมุ่งร้ายของม้วนคัมภีร์ที่ไม่รู้จบ",
 				"require": "g.debitomancy>=6&&g.firelore>=7&&g.languages>=7",
 				"max": 1,
 				"length": 120,
@@ -55,7 +55,7 @@
 				"id": "borrowmoney",
 				"name": "Borrow Money",
 				"verb": "borrowing",
-				"desc": "Borrow some fast money from people you know",
+				"desc": "ยืมเงินด่วนจากคนที่คุณรู้จัก",
 				"require": "g.shopkeeping>=6||g.debitomancy>=1",
 				"perpetual": true,
 				"run": {
@@ -71,8 +71,8 @@
 				"id": "prisonlabor",
 				"name": "prison Labor",
 				"verb": "cracking rocks",
-				"desc": "Manual labor to pay off your debt, a horrific thought for any self-respecting wizard",
-				"flavor": "No magic allowed, since the chronomancy incident.",
+				"desc": "ใช้แรงงานเพื่อใช้หนี้ ความคิดอันสยดสยองสำหรับจอมเวทผู้รักศักดิ์ศรี",
+				"flavor": "ไม่อนุญาตให้ใช้เวทมนตร์ นับตั้งแต่เหตุการณ์ไครโนแมนซี",
 				"require": "g.debitomancy>=1",
 				"need": "g.debt>=1",
 				"perpetual": true,
@@ -98,8 +98,8 @@
 				"id": "encase_debt",
 				"name": "Expand Accounting Logs",
 				"verb": "inking papers",
-				"desc": "Perhaps another set of books can throw off the debt collectors?",
-				"flavor": "This paper trail never seems to end... and keeps getting more expensive!",
+				"desc": "บางทีหนังสืออีกชุดหนึ่งอาจทำให้เหล่าคนเก็บหนี้สับสน?",
+				"flavor": "ร่องรอยเอกสารนี้ดูเหมือนไม่มีวันจบ...และแพงขึ้นเรื่อย ๆ!",
 				"tags": "t_languagework",
 				"require": "g.debitomancy>=10",
 				"perpetual": true,
@@ -144,7 +144,7 @@
 				"id": "lendgold",
 				"name": "lend Gold",
 				"verb": "moneylending",
-				"desc": "Lend gold to needy and foolish",
+				"desc": "ให้ยืมทองคำแก่ผู้ขัดสนและโง่เขลา",
 				"tags": "t_languagework",
 				"require": "g.debitomancy>=3",
 				"length": 20,
@@ -170,7 +170,7 @@
 			{
 				"id": "moredebt",
 				"name": "more lenders",
-				"desc": "Find more people to lend you money",
+				"desc": "หาคนให้ยืมเงินคุณมากขึ้น",
 				"require": "g.debitomancy>=2",
 				"max": 5,
 				"cost": {
@@ -189,7 +189,7 @@
 			{
 				"id": "creativeaccounting",
 				"name": "creative accounting",
-				"desc": "Just a few rounding errors here and there",
+				"desc": "แค่ข้อผิดพลาดการปัดเศษเล็กน้อยตรงโน้นตรงนี้",
 				"require": "g.debitomancy>=4",
 				"max": 1,
 				"cost": {
@@ -205,7 +205,7 @@
 			{
 				"id": "cheaperdebt",
 				"name": "better lenders",
-				"desc": "With enough research you can find money lenders which don't have such ridiculous interest rates",
+				"desc": "หากค้นคว้ามากพอ คุณจะพบผู้ให้กู้ที่ไม่มีอัตราดอกเบี้ยอันบ้าบอเช่นนั้น",
 				"require": "g.debitomancy>=6",
 				"max": 1,
 				"cost": {
@@ -220,7 +220,7 @@
 			{
 				"id": "debttravel",
 				"name": "debtor's travels",
-				"desc": "If you travel far enough surely they can't find you again",
+				"desc": "ถ้าคุณเดินทางไกลพอ พวกเขาคงตามหาคุณไม่เจออีก",
 				"require": "g.debitomancy>=3&&g.wander.locked==0",
 				"max": 1,
 				"cost": {
@@ -235,8 +235,8 @@
 			{
 				"id": "debttrickery",
 				"name": "debtor's trickery",
-				"desc": "Fast money and faster hands make your debt disappear more quickly.",
-				"flavor": "Fake names, fake thoughts, whatever is needed to escape the debt",
+				"desc": "เงินไวและมือไวทำให้หนี้ของคุณหายเร็วขึ้น",
+				"flavor": "ชื่อปลอม ความคิดปลอม ไม่ว่าอะไรที่จำเป็นเพื่อหนีหนี้",
 				"warn": true,
 				"warnMsg": "Debt and gold decreases from removing debt will both be faster with this upgrade",
 				"require": "g.debitomancy>=5&&g.trickery>=2",
@@ -254,7 +254,7 @@
 			{
 				"id": "debtgeomancy",
 				"name": "enchanted shackles",
-				"desc": "Sneak a geomancy enchantment into the prison labor camps to make it a bit easier",
+				"desc": "แอบเสริมเวทธรณีเวทในค่ายแรงงานนักโทษเพื่อให้ง่ายขึ้นหน่อย",
 				"group": "debt",
 				"require": "g.earthlore>=7&&g.debitomancy>=6",
 				"max": 1,
@@ -271,7 +271,7 @@
 			{
 				"id": "debtmurder",
 				"name": "debtor's murder",
-				"desc": "You don't owe debts to corpses",
+				"desc": "คุณไม่เป็นหนี้ศพ",
 				"group": "debt",
 				"require": "g.debitomancy>=2&&g.murder>0",
 				"max": 1,
@@ -289,8 +289,8 @@
 			{
 				"id": "debtdemon",
 				"name": "demonic money lending",
-				"desc": "Alternative collaterals are totally acceptable",
-				"flavor": "The pound of flesh, which I demand of him, is dearly bought; 'tis mine and I will have it.",
+				"desc": "หลักประกันทางเลือกเป็นที่ยอมรับอย่างยิ่ง",
+				"flavor": "ชิ้นเนื้อหนึ่งปอนด์ที่ข้าเรียกร้องจากเขานั้นซื้อมาอย่างแพง มันเป็นของข้าและข้าจะเอามัน",
 				"require": "g.debitomancy>=2&&g.demonology>=7",
 				"max": 1,
 				"cost": {
@@ -306,9 +306,9 @@
 			{
 				"id": "debtvirtuous",
 				"name": "virtuous credibility",
-				"desc": "When people trust you debt payments can be slowed a bit",
+				"desc": "เมื่อผู้คนไว้วางใจคุณ การจ่ายหนี้ก็สามารถชะลอลงได้บ้าง",
 				"need": "(g.virtue - g.evilamt)>=50",
-				"needtext": "Must have 50 more virtue than evil",
+				"needtext": "ต้องมีความดีมากกว่าความชั่ว 50",
 				"require": "g.debitomancy>=4&&g.evil2==0&&g.good1==1",
 				"max": 1,
 				"cost": {
@@ -325,7 +325,7 @@
 			{
 				"id": "curselendgold",
 				"name": "cursed gold",
-				"desc": "Mark your gold with terrible curses befalling those who don't pay back their debts to you",
+				"desc": "ทำเครื่องหมายทองของคุณด้วยคำสาปร้ายแรงที่ตกแก่ผู้ไม่ชำระหนี้คืนคุณ",
 				"require": "g.debitomancy>=4&&g.shadowlore>=6",
 				"max": 1,
 				"cost": {
@@ -342,7 +342,7 @@
 			{
 				"id": "planarlendgold",
 				"name": "interplanar lending",
-				"desc": "Extend your money lending services to other planes",
+				"desc": "ขยายบริการให้กู้ยืมของคุณไปยังมิติอื่น",
 				"require": "g.debitomancy>=5&&g.planeslore>=10",
 				"max": 1,
 				"cost": {
@@ -361,8 +361,8 @@
 			{
 				"id": "animallendgold",
 				"name": "ursine enforcement clause",
-				"desc": "Pursuant to the clause 3:3:63 of the standard lending contract, lapses in repayment may result in punitive damages to be delivered by ursa horribilis.",
-				"flavor": "Debtors exit, pursued by a bear.",
+				"desc": "ตามข้อ 3:3:63 ของสัญญากู้ยืมมาตรฐาน การผิดนัดชำระอาจส่งผลให้มีบทลงโทษเชิงชดใช้อันเกิดจากอูร์ซา ฮอร์ริบิลิส",
+				"flavor": "ลูกหนี้หลบหนี ตามล่าโดยหมี",
 				"require": "g.debitomancy>=9&&g.animals>=12",
 				"max": 1,
 				"cost": {
@@ -380,7 +380,7 @@
 			{
 				"id": "debtrevelation",
 				"name": "debtor's revelation",
-				"desc": "What happens when you have less than nothing",
+				"desc": "เกิดอะไรขึ้นเมื่อคุณมีน้อยกว่าศูนย์",
 				"require": "g.debitomancy>=5&&g.voidlore>0",
 				"warn": true,
 				"max": 1,
@@ -408,10 +408,10 @@
 			{
 				"id": "debtrevelation2",
 				"name": "debtor's epiphany",
-				"desc": "Imagination takes on substance",
+				"desc": "จินตนาการกลายเป็นรูปเป็นร่าง",
 				"require": "g.debtrevelation>0",
 				"need": "g.debt>=2500",
-				"needtext": "Must have 2500 or more debt",
+				"needtext": "ต้องมีหนี้ 2500 ขึ้นไป",
 				"max": 1,
 				"mod": {
 					"voidlore.max": 1
@@ -421,10 +421,10 @@
 			{
 				"id": "debtrevelation3",
 				"name": "debtor's enlightenment",
-				"desc": "An inverted world reveals itself on the other side of nothingness",
+				"desc": "โลกที่กลับด้านเผยตัวออกมาอีกฟากของความว่างเปล่า",
 				"require": "g.debtrevelation2>0",
 				"need": "g.debt>=5000",
-				"needtext": "Must have 5000 or more debt",
+				"needtext": "ต้องมีหนี้ 5000 ขึ้นไป",
 				"max": 1,
 				"mod": {
 					"voidlore.max": 1
@@ -434,10 +434,10 @@
 			{
 				"id": "ashdebtrevelation1",
 				"name": "ashen truth",
-				"desc": "Amidst the charred ledgers, you realize the true banality of material possessions.",
+				"desc": "ท่ามกลางสมุดบัญชีที่ไหม้เกรียม คุณตระหนักถึงความจืดชืดอย่างแท้จริงของทรัพย์สมบัติทางวัตถุ",
 				"require": "g.debtrevelation>0&&g.encase_debt>=10",
 				"need": "g.encase_debt>=50",
-				"needtext": "Must have expanded accounting logs 50 or more times.",
+				"needtext": "ต้องขยายบันทึกบัญชี 50 ครั้งขึ้นไป",
 				"max": 1,
 				"mod": {
 					"voidlore.max": 1
@@ -447,10 +447,10 @@
 			{
 				"id": "ashdebtrevelation2",
 				"name": "ashen bliss",
-				"desc": "You liberate yourself from the chains of material existence as you destroy all records of yourself.",
+				"desc": "คุณปลดปล่อยตัวเองจากโซ่ตรวนแห่งการดำรงอยู่ทางวัตถุเมื่อทำลายบันทึกทั้งหมดของตัวเอง",
 				"require": "g.ashdebtrevelation1>0",
 				"need": "g.encase_debt>=100",
-				"needtext": "Must have expanded accounting logs 100 or more times.",
+				"needtext": "ต้องขยายบันทึกบัญชี 100 ครั้งขึ้นไป",
 				"max": 1,
 				"mod": {
 					"voidlore.max": 1
@@ -462,7 +462,7 @@
 			{
 				"id": "debttransmuter",
 				"name": "debt transmuter",
-				"desc": "Turn debt and gold into nothing",
+				"desc": "เปลี่ยนหนี้และทองคำให้กลายเป็นความว่างเปล่า",
 				"require": "g.debitomancy>=5&&g.voidlore>=3&&g.debtrevelation>0",
 				"max": 3,
 				"cost": {
@@ -492,7 +492,7 @@
 			{
 				"id": "debt",
 				"group": "adversities",
-				"desc": "Debt is gnawing at you",
+				"desc": "หนี้กำลังกัดกินคุณ",
 				"require": "g.debt>=1",
 				"max": 500,
 				"sortOrder": 805,
@@ -513,15 +513,23 @@
 			{
 				"id": "mk_loan_shark",
 				"name": "summon loan shark",
-				"desc": "Summon a loan shark to track down your debtors. Comes with a suit and country club membership.",
+				"desc": "เรียกฉลามเงินกู้ให้ตามล่าลูกหนี้ของคุณ มาในชุดสูทพร้อมสมาชิกคันทรีคลับ",
 				"sortOrder": 1799,
 				"level": 7,
 				"school": "summoning",
 				"keywords": {
-					"type": ["summon"],
-					"target": ["ally"],
-					"targets": ["single"],
-					"delivery": ["instant"]
+					"type": [
+						"summon"
+					],
+					"target": [
+						"ally"
+					],
+					"targets": [
+						"single"
+					],
+					"delivery": [
+						"instant"
+					]
 				},
 				"require": "g.debitomancy>=10&&g.tier2>0",
 				"buy": {
@@ -551,16 +559,26 @@
 				"level": 3,
 				"school": "arcane",
 				"keywords": {
-					"target": ["enemy"],
-					"targets": ["single"],
-					"delivery": ["instant"],
-					"special": ["resource"]
+					"target": [
+						"enemy"
+					],
+					"targets": [
+						"single"
+					],
+					"delivery": [
+						"instant"
+					],
+					"special": [
+						"resource"
+					]
 				},
 				"require": "g.lore>999",
 				"attack": {
 					"targetspec": {
 						"notaffectedby": {
-							"condition": ["pilfered_dot"],
+							"condition": [
+								"pilfered_dot"
+							],
 							"strict": true,
 							"conditiontext": "having their valuables stolen"
 						}
@@ -584,7 +602,7 @@
 				"tags": "t_summon",
 				"kind": "demon",
 				"level": 20,
-				"desc": "It can smell desperation in the water from seven leagues away.",
+				"desc": "มันได้กลิ่นความสิ้นหวังในน้ำจากที่ไกลเจ็ดลีก",
 				"hp": 73,
 				"noproc": true,
 				"defense": 30,
