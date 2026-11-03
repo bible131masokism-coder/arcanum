@@ -41,7 +41,9 @@
 				},
 				"require": "g.craftinglearn1>0",
 				"alter": {
-					"sell": { "gold": 5 }
+					"sell": {
+						"gold": 5
+					}
 				}
 			},
 			{
@@ -69,7 +71,10 @@
 				},
 				"require": "g.craftinglearn1>0",
 				"alter": {
-					"sell": { "iron": 10, "leather": 2 }
+					"sell": {
+						"iron": 10,
+						"leather": 2
+					}
 				}
 			},
 			{
@@ -84,7 +89,10 @@
 				},
 				"require": "g.craftinglearn2>0",
 				"alter": {
-					"sell": { "quicksteel": 10, "serpentskin": 2 },
+					"sell": {
+						"quicksteel": 10,
+						"serpentskin": 2
+					},
 					"enchants.max": 1,
 					"damage.min": "100%",
 					"damage.max": "100%"
@@ -104,7 +112,10 @@
 				},
 				"require": "g.craftinglearn4>0",
 				"alter": {
-					"sell": { "adamant": 10, "aetherhide": 2 },
+					"sell": {
+						"adamant": 10,
+						"aetherhide": 2
+					},
 					"enchants.max": 2,
 					"damage.min": "300%",
 					"damage.max": "300%"
@@ -115,7 +126,7 @@
 			{
 				"id": "trainingsword",
 				"name": "Training sword",
-				"desc": "A plain wooden sword",
+				"desc": "ดาบไม้ธรรมดา",
 				"level": 1,
 				"slot": "mainhand",
 				"type": "weapon",
@@ -128,13 +139,17 @@
 					"kind": "slash",
 					"tohit": 1,
 					"damage": "(i.damage||0)*1",
-					"potencies": ["physdmg", "slashdmg", "sworddmg"]
+					"potencies": [
+						"physdmg",
+						"slashdmg",
+						"sworddmg"
+					]
 				}
 			},
 			{
 				"id": "trainingknife",
 				"name": "Training knife",
-				"desc": "A plain wooden knife",
+				"desc": "มีดไม้ธรรมดา",
 				"level": 1,
 				"type": "weapon",
 				"slot": "mainhand",
@@ -147,13 +162,16 @@
 					"kind": "pierce",
 					"tohit": 1,
 					"damage": "(i.damage||0)*1",
-					"potencies": ["physdmg", "piercedmg"]
+					"potencies": [
+						"physdmg",
+						"piercedmg"
+					]
 				}
 			},
 			{
 				"id": "traininghammer2",
 				"name": "Training hammer",
-				"desc": "A plain wooden hammer",
+				"desc": "ค้อนไม้ธรรมดา",
 				"level": 1,
 				"type": "weapon",
 				"slot": "mainhand",
@@ -166,7 +184,11 @@
 					"kind": "blunt",
 					"tohit": 1,
 					"damage": "(i.damage||0)*1",
-					"potencies": ["physdmg", "bluntdmg", "hammerdmg"]
+					"potencies": [
+						"physdmg",
+						"bluntdmg",
+						"hammerdmg"
+					]
 				}
 			},
 			{
@@ -188,9 +210,15 @@
 				"attack": {
 					"kind": "slash",
 					"damage": "(i.damage||0)*1",
-					"potencies": ["physdmg", "slashdmg", "sworddmg"]
+					"potencies": [
+						"physdmg",
+						"slashdmg",
+						"sworddmg"
+					]
 				},
-				"alter": { "mod.self.speed": 3 }
+				"alter": {
+					"mod.self.speed": 3
+				}
 			},
 			{
 				"id": "longsword",
@@ -211,7 +239,11 @@
 				"attack": {
 					"kind": "slash",
 					"damage": "(i.damage||0)*1",
-					"potencies": ["physdmg", "slashdmg", "sworddmg"]
+					"potencies": [
+						"physdmg",
+						"slashdmg",
+						"sworddmg"
+					]
 				}
 			},
 			{
@@ -230,13 +262,19 @@
 				"only": "martial",
 				"enchants": 1,
 				"damage": "3~6",
-
 				"attack": {
 					"kind": "slash",
 					"damage": "(i.damage||0)*1",
-					"potencies": ["physdmg", "slashdmg", "sworddmg", "runicdmg"]
+					"potencies": [
+						"physdmg",
+						"slashdmg",
+						"sworddmg",
+						"runicdmg"
+					]
 				},
-				"alter": { "mod.self.speed": -5 }
+				"alter": {
+					"mod.self.speed": -5
+				}
 			},
 			{
 				"id": "hatchet",
@@ -254,13 +292,17 @@
 				"enchants": 1,
 				"damage": "3~5",
 				"require": "g.craftinglearn1>0",
-
 				"attack": {
 					"kind": "slash",
 					"damage": "(i.damage||0)*1",
-					"potencies": ["physdmg", "slashdmg"]
+					"potencies": [
+						"physdmg",
+						"slashdmg"
+					]
 				},
-				"alter": { "mod.self.speed": 3 }
+				"alter": {
+					"mod.self.speed": 3
+				}
 			},
 			{
 				"id": "battleaxe",
@@ -278,11 +320,13 @@
 				"only": "martial",
 				"enchants": 1,
 				"damage": "3~6",
-
 				"attack": {
 					"kind": "slash",
 					"damage": "(i.damage||0)*1",
-					"potencies": ["physdmg", "slashdmg"]
+					"potencies": [
+						"physdmg",
+						"slashdmg"
+					]
 				}
 			},
 			{
@@ -301,13 +345,18 @@
 				"only": "martial",
 				"enchants": 1,
 				"damage": "4~7",
-
 				"attack": {
 					"kind": "slash",
 					"damage": "(i.damage||0)*1",
-					"potencies": ["physdmg", "slashdmg", "runicdmg"]
+					"potencies": [
+						"physdmg",
+						"slashdmg",
+						"runicdmg"
+					]
 				},
-				"alter": { "mod.self.speed": -5 }
+				"alter": {
+					"mod.self.speed": -5
+				}
 			},
 			{
 				"id": "epee",
@@ -325,20 +374,27 @@
 				"only": "martial",
 				"enchants": 1,
 				"damage": "2~4",
-
 				"attack": {
 					"kind": "pierce",
 					"damage": "(i.damage||0)*1",
-					"potencies": ["physdmg", "piercedmg", "duelingdmg"],
+					"potencies": [
+						"physdmg",
+						"piercedmg",
+						"duelingdmg"
+					],
 					"targets": "enemy",
 					"targetspec": {
 						"affectedby": {
-							"condition": ["enemy_engagement"],
+							"condition": [
+								"enemy_engagement"
+							],
 							"conditiontext": "engagement"
 						}
 					}
 				},
-				"alter": { "mod.self.speed": 3 }
+				"alter": {
+					"mod.self.speed": 3
+				}
 			},
 			{
 				"id": "rapier",
@@ -356,15 +412,20 @@
 				"only": "martial",
 				"enchants": 1,
 				"damage": "2~5",
-
 				"attack": {
 					"kind": "pierce",
 					"damage": "(i.damage||0)*1",
-					"potencies": ["physdmg", "piercedmg", "duelingdmg"],
+					"potencies": [
+						"physdmg",
+						"piercedmg",
+						"duelingdmg"
+					],
 					"targets": "enemy",
 					"targetspec": {
 						"affectedby": {
-							"condition": ["enemy_engagement"],
+							"condition": [
+								"enemy_engagement"
+							],
 							"conditiontext": "engagement"
 						}
 					}
@@ -386,15 +447,21 @@
 				"only": "martial",
 				"enchants": 1,
 				"damage": "3~6",
-
 				"attack": {
 					"kind": "pierce",
 					"damage": "(i.damage||0)*1",
-					"potencies": ["physdmg", "piercedmg", "duelingdmg", "runicdmg"],
+					"potencies": [
+						"physdmg",
+						"piercedmg",
+						"duelingdmg",
+						"runicdmg"
+					],
 					"targets": "enemy",
 					"targetspec": {
 						"affectedby": {
-							"condition": ["enemy_engagement"],
+							"condition": [
+								"enemy_engagement"
+							],
 							"conditiontext": "engagement"
 						}
 					}
@@ -423,13 +490,17 @@
 				"only": "martial",
 				"enchants": 1,
 				"damage": "3~5",
-
 				"attack": {
 					"kind": "pierce",
 					"damage": "(i.damage||0)*1",
-					"potencies": ["physdmg", "piercedmg"]
+					"potencies": [
+						"physdmg",
+						"piercedmg"
+					]
 				},
-				"alter": { "mod.self.speed": 3 }
+				"alter": {
+					"mod.self.speed": 3
+				}
 			},
 			{
 				"id": "spear",
@@ -447,11 +518,13 @@
 				"only": "martial",
 				"enchants": 1,
 				"damage": "3~6",
-
 				"attack": {
 					"kind": "pierce",
 					"damage": "(i.damage||0)*1",
-					"potencies": ["physdmg", "piercedmg"]
+					"potencies": [
+						"physdmg",
+						"piercedmg"
+					]
 				}
 			},
 			{
@@ -470,13 +543,18 @@
 				"only": "martial",
 				"enchants": 1,
 				"damage": "4~7",
-
 				"attack": {
 					"kind": "pierce",
 					"damage": "(i.damage||0)*1",
-					"potencies": ["physdmg", "piercedmg", "runicdmg"]
+					"potencies": [
+						"physdmg",
+						"piercedmg",
+						"runicdmg"
+					]
 				},
-				"alter": { "mod.self.speed": -5 }
+				"alter": {
+					"mod.self.speed": -5
+				}
 			},
 			{
 				"id": "mace",
@@ -494,13 +572,18 @@
 				"only": "martial",
 				"enchants": 1,
 				"damage": "2~4",
-
 				"attack": {
 					"kind": "blunt",
 					"damage": "(i.damage||0)*1",
-					"potencies": ["physdmg", "bluntdmg", "hammerdmg"]
+					"potencies": [
+						"physdmg",
+						"bluntdmg",
+						"hammerdmg"
+					]
 				},
-				"alter": { "mod.self.speed": 3 }
+				"alter": {
+					"mod.self.speed": 3
+				}
 			},
 			{
 				"id": "maul",
@@ -518,11 +601,14 @@
 				"only": "martial",
 				"enchants": 1,
 				"damage": "2~5",
-
 				"attack": {
 					"kind": "blunt",
 					"damage": "(i.damage||0)*1",
-					"potencies": ["physdmg", "bluntdmg", "hammerdmg"]
+					"potencies": [
+						"physdmg",
+						"bluntdmg",
+						"hammerdmg"
+					]
 				}
 			},
 			{
@@ -544,9 +630,16 @@
 				"attack": {
 					"kind": "blunt",
 					"damage": "(i.damage||0)*1",
-					"potencies": ["physdmg", "bluntdmg", "hammerdmg", "runicdmg"]
+					"potencies": [
+						"physdmg",
+						"bluntdmg",
+						"hammerdmg",
+						"runicdmg"
+					]
 				},
-				"alter": { "mod.self.speed": -5 }
+				"alter": {
+					"mod.self.speed": -5
+				}
 			},
 			{
 				"id": "caestus",
@@ -567,9 +660,14 @@
 				"attack": {
 					"kind": "blunt",
 					"damage": "(i.damage||0)*1",
-					"potencies": ["physdmg", "bluntdmg"]
+					"potencies": [
+						"physdmg",
+						"bluntdmg"
+					]
 				},
-				"alter": { "mod.self.speed": 3 }
+				"alter": {
+					"mod.self.speed": 3
+				}
 			},
 			{
 				"id": "flail",
@@ -590,7 +688,10 @@
 				"attack": {
 					"kind": "blunt",
 					"damage": "(i.damage||0)*1",
-					"potencies": ["physdmg", "bluntdmg"]
+					"potencies": [
+						"physdmg",
+						"bluntdmg"
+					]
 				}
 			},
 			{
@@ -612,9 +713,15 @@
 				"attack": {
 					"kind": "blunt",
 					"damage": "(i.damage||0)*1",
-					"potencies": ["physdmg", "bluntdmg", "runicdmg"]
+					"potencies": [
+						"physdmg",
+						"bluntdmg",
+						"runicdmg"
+					]
 				},
-				"alter": { "mod.self.speed": -5 }
+				"alter": {
+					"mod.self.speed": -5
+				}
 			}
 		],
 		"enchants": [
@@ -622,7 +729,7 @@
 				"id": "en_martial_physdmg",
 				"name": "Honed Blade",
 				"adj": "Honed",
-				"desc": "Increases physical damage.",
+				"desc": "เพิ่มความเสียหายกายภาพ",
 				"require": "g.enchanting>0",
 				"buy": {
 					"arcana": 1,
@@ -631,14 +738,18 @@
 				"level": 1,
 				"only": "t_martial",
 				"length": 30,
-				"cost": { "arcana": 1 },
-				"alter": { "mod.physdmg": 20 }
+				"cost": {
+					"arcana": 1
+				},
+				"alter": {
+					"mod.physdmg": 20
+				}
 			},
 			{
 				"id": "en_martial_physdmg_bargain",
 				"name": "Reckless Blade",
 				"adj": "Reckless",
-				"desc": "Greatly increases physical damage",
+				"desc": "เพิ่มความเสียหายกายภาพอย่างมาก",
 				"require": "g.enchanting>0",
 				"buy": {
 					"arcana": 1,
@@ -647,14 +758,19 @@
 				"level": 2,
 				"only": "t_martial",
 				"length": 30,
-				"cost": { "arcana": 1 },
-				"alter": { "mod.physdmg": 50, "mod.hp.max": "-50%" }
+				"cost": {
+					"arcana": 1
+				},
+				"alter": {
+					"mod.physdmg": 50,
+					"mod.hp.max": "-50%"
+				}
 			},
 			{
 				"id": "en_martial_spelldmg",
 				"name": "Channelling Core",
 				"adj": "Channelling",
-				"desc": "Increases spell damage",
+				"desc": "เพิ่มความเสียหายคาถา",
 				"require": "g.enchanting>0",
 				"buy": {
 					"arcana": 1,
@@ -663,14 +779,18 @@
 				"level": 1,
 				"only": "t_martial",
 				"length": 30,
-				"cost": { "arcana": 1 },
-				"alter": { "mod.spelldmg": 15 }
+				"cost": {
+					"arcana": 1
+				},
+				"alter": {
+					"mod.spelldmg": 15
+				}
 			},
 			{
 				"id": "en_martial_prismatic",
 				"name": "Empowering Core",
 				"adj": "Empowering",
-				"desc": "Improves accumulation of prismatic energies.",
+				"desc": "ปรับปรุงการสะสมพลังงานปริซึม",
 				"require": "g.enchanting>0",
 				"buy": {
 					"arcana": 1,
@@ -679,14 +799,18 @@
 				"level": 1,
 				"only": "t_martial",
 				"length": 30,
-				"cost": { "arcana": 1 },
-				"alter": { "mod.prismatic.rate": 0.3 }
+				"cost": {
+					"arcana": 1
+				},
+				"alter": {
+					"mod.prismatic.rate": 0.3
+				}
 			},
 			{
 				"id": "en_martial_speed",
 				"name": "Cheetah's Speed",
 				"adj": "%i of the Cheetah",
-				"desc": "Increases speed",
+				"desc": "เพิ่มความเร็ว",
 				"require": "g.enchanting>0",
 				"buy": {
 					"arcana": 1,
@@ -695,14 +819,18 @@
 				"level": 1,
 				"only": "t_martial",
 				"length": 30,
-				"cost": { "arcana": 1 },
-				"alter": { "mod.self.speed": 3 }
+				"cost": {
+					"arcana": 1
+				},
+				"alter": {
+					"mod.self.speed": 3
+				}
 			},
 			{
 				"id": "en_martial_tohit",
 				"name": "Eagle's Accuracy",
 				"adj": "%i of the Eagle",
-				"desc": "Increases chance to hit evasive enemies",
+				"desc": "เพิ่มโอกาสโจมตีโดนศัตรูที่ช่างหลบ",
 				"require": "g.enchanting>0",
 				"buy": {
 					"arcana": 1,
@@ -711,14 +839,18 @@
 				"level": 1,
 				"only": "t_martial",
 				"length": 30,
-				"cost": { "arcana": 1 },
-				"alter": { "mod.self.tohit": 30 }
+				"cost": {
+					"arcana": 1
+				},
+				"alter": {
+					"mod.self.tohit": 30
+				}
 			},
 			{
 				"id": "en_martial_resist_entangle",
 				"name": "Entangle Nullification",
 				"adj": "%i of Freedom",
-				"desc": "Greatly improves chance of negating entangle.",
+				"desc": "ปรับปรุงโอกาสต้านทานการพันกักอย่างมาก",
 				"require": "g.enchanting>0",
 				"buy": {
 					"arcana": 1,
@@ -727,15 +859,19 @@
 				"level": 1,
 				"only": "t_martial",
 				"length": 30,
-				"cost": { "arcana": 1 },
-				"alter": { "mod.self.negate.entangle": 75 }
+				"cost": {
+					"arcana": 1
+				},
+				"alter": {
+					"mod.self.negate.entangle": 75
+				}
 			},
 			{
 				"id": "en_martial_envenomed",
 				"name": "Envenom weapon",
 				"adj": "Envenomed %i",
-				"desc": "Coat your weapon with a deadly dose of contact venom.",
-				"extdesc": "Adds a toxic attack to the weapon.",
+				"desc": "เคลือบอาวุธของคุณด้วยพิษสัมผัสปริมาณร้ายแรง",
+				"extdesc": "เพิ่มการโจมตีพิษให้อาวุธ",
 				"require": "g.enchanting>=6&&g.naturelore>=6",
 				"buy": {
 					"naturegem": 15,
@@ -745,19 +881,27 @@
 				"level": 1,
 				"only": "t_martial",
 				"length": 30,
-				"cost": { "naturegem": 5 },
+				"cost": {
+					"naturegem": 5
+				},
 				"alter": {
 					"attack": {
 						"name": "Toxic strike",
 						"damage": "(i.damage||0)*1.25",
 						"damagedesc": "Deals damage equal to 125% of base weapon damage.",
 						"kind": "nature",
-						"potencies": ["physdmg", "naturedmg"],
+						"potencies": [
+							"physdmg",
+							"naturedmg"
+						],
 						"dot": {
 							"name": "Poisoned",
 							"duration": 5,
 							"kind": "nature",
-							"potencies": ["physdmg", "naturedmg"],
+							"potencies": [
+								"physdmg",
+								"naturedmg"
+							],
 							"damage": 2
 						}
 					}
@@ -767,8 +911,8 @@
 				"id": "en_martial_inflamed",
 				"name": "Inflame weapon",
 				"adj": "Inflamed %i",
-				"desc": "Imbue your weapon with raging flames to scorch your enemy.",
-				"extdesc": "Adds a fiery attack to the weapon.",
+				"desc": "อัดเปลวไฟที่ลุกโชนให้อาวุธของคุณเพื่อแผดเผาศัตรู",
+				"extdesc": "เพิ่มการโจมตีไฟให้อาวุธ",
 				"require": "g.enchanting>=6&&g.firelore>=6",
 				"buy": {
 					"firegem": 15,
@@ -778,14 +922,20 @@
 				"level": 1,
 				"only": "t_martial",
 				"length": 30,
-				"cost": { "firegem": 5, "arcana": 1 },
+				"cost": {
+					"firegem": 5,
+					"arcana": 1
+				},
 				"alter": {
 					"attack": {
 						"name": "Flaming strike",
 						"damage": "(i.damage||0)*1.5",
 						"damagedesc": "Deals damage equal to 150% of base weapon damage.",
 						"kind": "fire",
-						"potencies": ["physdmg", "firedmg"]
+						"potencies": [
+							"physdmg",
+							"firedmg"
+						]
 					}
 				}
 			},
@@ -793,8 +943,8 @@
 				"id": "en_martial_enbreezed",
 				"name": "Windburst weapon",
 				"adj": "%i of billowing breeze",
-				"desc": "Imbue your weapon with flensing gales.",
-				"extdesc": "Adds an air attack to the weapon.",
+				"desc": "อัดสายลมถลกหนังให้อาวุธของคุณ",
+				"extdesc": "เพิ่มการโจมตีลมให้อาวุธ",
 				"require": "g.enchanting>=6&&g.airlore>=6",
 				"buy": {
 					"airgem": 15,
@@ -804,14 +954,20 @@
 				"level": 1,
 				"only": "t_martial",
 				"length": 30,
-				"cost": { "airgem": 5, "arcana": 1 },
+				"cost": {
+					"airgem": 5,
+					"arcana": 1
+				},
 				"alter": {
 					"attack": {
 						"name": "Breezy strike",
 						"damage": "(i.damage||0)*0.8",
 						"damagedesc": "Deals damage equal to 80% of base weapon damage.",
 						"kind": "air",
-						"potencies": ["physdmg", "airdmg"],
+						"potencies": [
+							"physdmg",
+							"airdmg"
+						],
 						"repeathits": 2
 					}
 				}
@@ -820,8 +976,8 @@
 				"id": "en_martial_leech",
 				"name": "Vampire's Leech",
 				"adj": "%i of the Vampire",
-				"desc": "Enchant your weapon to thirst for enemy's very life force.",
-				"extdesc": "Adds a vampiric attack to the weapon.",
+				"desc": "เสริมเวทให้อาวุธของคุณกระหายพลังชีวิตของศัตรู",
+				"extdesc": "เพิ่มการโจมตีแวมไพร์ให้อาวุธ",
 				"require": "g.enchanting>=6&&g.shadowlore>=6",
 				"buy": {
 					"shadowgem": 15,
@@ -830,7 +986,10 @@
 				"level": 1,
 				"only": "t_martial",
 				"length": 30,
-				"cost": { "shadowgem": 5, "arcana": 1 },
+				"cost": {
+					"shadowgem": 5,
+					"arcana": 1
+				},
 				"alter": {
 					"attack": {
 						"name": "Leeching strike",
@@ -838,7 +997,10 @@
 						"damagedesc": "Deals damage equal to 80% of base weapon damage.",
 						"kind": "shadow",
 						"leech": 0.25,
-						"potencies": ["physdmg", "shadowdmg"]
+						"potencies": [
+							"physdmg",
+							"shadowdmg"
+						]
 					}
 				}
 			}
