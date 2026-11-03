@@ -1,28 +1,44 @@
 [
 	{
 		"id": "darkbolt",
-		"name": "dark bolt",
+		"name": "สายฟ้ามืด",
 		"sortOrder": 1207,
 		"level": 1,
 		"school": "shadow",
 		"keywords": {
-			"type": ["damage"],
-			"target": ["enemy"],
-			"targets": ["single"],
-			"delivery": ["instant", "over time"]
+			"type": [
+				"damage"
+			],
+			"target": [
+				"enemy"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"instant",
+				"over time"
+			]
 		},
 		"require": "g.spellbook>0&&g.shadowlore>0",
 		"buy": {
 			"research": 25,
 			"scrolls": 1
 		},
-		"cost": { "shadow": 1 },
+		"cost": {
+			"shadow": 1
+		},
 		"attack": {
 			"damage": "0.5~2",
-			"potencies": ["spelldmg", "shadowdmg"],
+			"potencies": [
+				"spelldmg",
+				"shadowdmg"
+			],
 			"targetspec": {
 				"notaffectedby": {
-					"condition": ["darkbolt_dot"],
+					"condition": [
+						"darkbolt_dot"
+					],
 					"conditiontext": "dark bolt"
 				}
 			},
@@ -32,12 +48,19 @@
 				"kind": "shadow",
 				"duration": 15,
 				"damage": 1,
-				"potencies": ["spelldmg", "shadowdmg"]
+				"potencies": [
+					"spelldmg",
+					"shadowdmg"
+				]
 			}
 		},
 		"at": {
-			"25": { "attack.damage.max": 1 },
-			"75": { "attack.damage.min": 1 },
+			"25": {
+				"attack.damage.max": 1
+			},
+			"75": {
+				"attack.damage.min": 1
+			},
 			"300": {
 				"attack.damage.max": 2,
 				"attack.damage.min": 1,
@@ -47,71 +70,105 @@
 	},
 	{
 		"id": "obscure1",
-		"name": "lesser obscuring shadows",
+		"name": "เงาบดบังระดับล่าง",
 		"sortOrder": 1246,
 		"level": 2,
 		"school": "shadow",
 		"tags": "t_obscurebuff",
 		"keywords": {
-			"type": ["buff"],
-			"target": ["self"],
-			"targets": ["single"],
-			"delivery": ["over time"]
+			"type": [
+				"buff"
+			],
+			"target": [
+				"self"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.spellbook>0&&g.shadowlore>0",
 		"buy": {
 			"research": 25,
 			"scrolls": 1
 		},
-		"cost": { "shadow": 2 },
+		"cost": {
+			"shadow": 2
+		},
 		"dot": {
 			"tags": "obscuringshadows",
 			"duration": 20,
-			"mod": { "self.dodge": 2 }
+			"mod": {
+				"self.dodge": 2
+			}
 		}
 	},
 	{
 		"id": "immuneblind",
-		"name": "penumbral senses",
+		"name": "ประสาทสัมผัสกึ่งเงา",
 		"sortOrder": 1248,
 		"level": 5,
 		"school": "shadow",
 		"keywords": {
-			"type": ["buff"],
-			"target": ["self"],
-			"targets": ["single"],
-			"delivery": ["over time"]
+			"type": [
+				"buff"
+			],
+			"target": [
+				"self"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.shadowlore>=8&&g.tier1>0",
 		"buy": {
 			"research": 4000,
 			"tomes": 1
 		},
-		"cost": { "shadow": 5 },
+		"cost": {
+			"shadow": 5
+		},
 		"cd": 15,
 		"dot": {
 			"duration": 30,
-			"mod": { "self.immunities.blind": 1 }
+			"mod": {
+				"self.immunities.blind": 1
+			}
 		}
 	},
 	{
 		"id": "prolight",
-		"name": "protection: light",
+		"name": "การป้องกัน: แสง",
 		"sortOrder": 1249,
 		"level": 2,
 		"school": "shadow",
 		"keywords": {
-			"type": ["buff"],
-			"target": ["self"],
-			"targets": ["single"],
-			"delivery": ["over time"]
+			"type": [
+				"buff"
+			],
+			"target": [
+				"self"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.shadowlore>=3",
 		"buy": {
 			"research": 100,
 			"scrolls": 10
 		},
-		"cost": { "shadow": 2 },
+		"cost": {
+			"shadow": 2
+		},
 		"dot": {
 			"duration": 20,
 			"mod": {
@@ -121,16 +178,20 @@
 	},
 	{
 		"id": "defensivestance",
-		"name": "defensive stance",
-		"desc": "Shift your focus from dodging to parrying.",
-		"flavor": "Face to face.",
+		"name": "ท่าตั้งรับ",
+		"desc": "เปลี่ยนจุดสนใจของคุณจากการหลบหลีกมาเป็นการปัดป้อง",
+		"flavor": "เผชิญหน้าต่อหน้า",
 		"sortOrder": 397,
 		"level": 1,
 		"school": "martial",
 		"tags": "t_stance",
 		"keywords": {
-			"target": ["self"],
-			"special": ["stance"]
+			"target": [
+				"self"
+			],
+			"special": [
+				"stance"
+			]
 		},
 		"require": "g.player.defense>=20",
 		"buy": {
@@ -149,16 +210,20 @@
 	},
 	{
 		"id": "counterstance",
-		"name": "countering stance",
-		"desc": "Focus on countering attacks.",
-		"flavor": "An eye for an eye.",
+		"name": "ท่าสวนกลับ",
+		"desc": "จดจ่อกับการสวนกลับการโจมตี",
+		"flavor": "ตาต่อตา ฟันต่อฟัน",
 		"sortOrder": 397,
 		"level": 1,
 		"school": "martial",
 		"tags": "t_stance",
 		"keywords": {
-			"target": ["self"],
-			"special": ["stance"]
+			"target": [
+				"self"
+			],
+			"special": [
+				"stance"
+			]
 		},
 		"require": "g.player.defense>=20",
 		"buy": {
@@ -182,7 +247,9 @@
 						"damage": "a.getWeapon().damage*0.5||0",
 						"unreflectable": true,
 						"targets": "fixed",
-						"potencies": ["physdmg"]
+						"potencies": [
+							"physdmg"
+						]
 					}
 				}
 			}
@@ -190,16 +257,20 @@
 	},
 	{
 		"id": "defensiveunstance",
-		"name": "Basic stance",
-		"desc": "Return to unmodified combat stance.",
-		"flavor": "Footwork and agility.",
+		"name": "ท่าพื้นฐาน",
+		"desc": "กลับสู่ท่าต่อสู้แบบเดิมไม่ดัดแปลง",
+		"flavor": "ฝีเท้าและความคล่องแคล่ว",
 		"sortOrder": 398,
 		"level": 1,
 		"school": "martial",
 		"tags": "t_stance",
 		"keywords": {
-			"target": ["self"],
-			"special": ["stance"]
+			"target": [
+				"self"
+			],
+			"special": [
+				"stance"
+			]
 		},
 		"require": "g.player.defense>=20",
 		"buy": {
@@ -207,22 +278,33 @@
 			"scrolls": 1
 		},
 		"attack": {
-			"cure": ["t_stance", "defensive"],
+			"cure": [
+				"t_stance",
+				"defensive"
+			],
 			"targets": "self"
 		}
 	},
 	{
 		"id": "invigorate",
-		"name": "invigorate",
-		"desc": "Utilize your stamina for combat.",
+		"name": "ปลุกพลัง",
+		"desc": "ใช้พลังของคุณเพื่อการต่อสู้",
 		"sortOrder": 399,
 		"level": 1,
 		"school": "martial",
 		"keywords": {
-			"type": ["recovery"],
-			"target": ["self"],
-			"targets": ["single"],
-			"delivery": ["instant"]
+			"type": [
+				"recovery"
+			],
+			"target": [
+				"self"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"instant"
+			]
 		},
 		"require": "g.weaponlore>=1",
 		"buy": {
@@ -263,15 +345,24 @@
 	},
 	{
 		"id": "speak",
-		"desc": "Breaks a curse of silence.",
+		"desc": "ทำลายคำสาปแห่งความเงียบ",
 		"sortOrder": 636,
 		"level": 8,
 		"school": "air",
 		"keywords": {
-			"type": ["recovery"],
-			"target": ["self", "ally"],
-			"targets": ["single"],
-			"delivery": ["instant"]
+			"type": [
+				"recovery"
+			],
+			"target": [
+				"self",
+				"ally"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"instant"
+			]
 		},
 		"require": "g.airlore>=6",
 		"caststoppers": [],
@@ -287,23 +378,34 @@
 			"targets": "ally",
 			"targetspec": {
 				"affectedby": {
-					"condition": ["t_silence"]
+					"condition": [
+						"t_silence"
+					]
 				}
 			}
 		}
 	},
 	{
 		"id": "cureparalyze",
-		"name": "cure paralysis",
-		"desc": "Loosens rigid muscles, nerves, and bones.",
+		"name": "รักษาอัมพาต",
+		"desc": "คลายกล้ามเนื้อ เส้นประสาท และกระดูกที่แข็งทื่อ",
 		"sortOrder": 434,
 		"level": 7,
 		"school": "mana",
 		"keywords": {
-			"type": ["recovery"],
-			"target": ["self", "ally"],
-			"targets": ["single"],
-			"delivery": ["instant"]
+			"type": [
+				"recovery"
+			],
+			"target": [
+				"self",
+				"ally"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"instant"
+			]
 		},
 		"require": "g.lore>=11",
 		"caststoppers": [],
@@ -319,25 +421,35 @@
 			"targets": "ally",
 			"targetspec": {
 				"affectedby": {
-					"condition": ["t_paralysis"]
+					"condition": [
+						"t_paralysis"
+					]
 				}
 			}
 		}
 	},
 	{
 		"id": "pilfer_gold",
-		"name": "pilfer",
-		"desc": "Unburden your opponent of excess gold, valuable pieces of anatomy and other materials of use to an enterprising wizard.",
+		"name": "ล้วงขโมย",
+		"desc": "ปลดเปลื้องทองคำส่วนเกิน ชิ้นส่วนกายวิภาคอันมีค่า และวัสดุอื่น ๆ ที่เป็นประโยชน์ต่อจอมเวทหัวใฝ่จากคู่ต่อสู้ของคุณ",
 		"extdesc": "Effect scales with the level of your opponent and your dedication to trickery. It is relatively random. Shown value approximates what you would get if you were stealing from yourself.",
-		"flavor": "Gold coins, dragon scales, mountain oysters, some kind of a beacon...",
+		"flavor": "เหรียญทอง เกล็ดมังกร หอยเชลล์ภูเขา บีคอนอะไรสักอย่าง...",
 		"sortOrder": 1372,
 		"level": 3,
 		"school": "chaos",
 		"keywords": {
-			"target": ["enemy"],
-			"targets": ["single"],
-			"delivery": ["instant"],
-			"special": ["resource"]
+			"target": [
+				"enemy"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"instant"
+			],
+			"special": [
+				"resource"
+			]
 		},
 		"require": "g.spellbook>0&&g.trickery>=5",
 		"buy": {
@@ -353,7 +465,9 @@
 		"attack": {
 			"targetspec": {
 				"notaffectedby": {
-					"condition": ["pilfered_dot"],
+					"condition": [
+						"pilfered_dot"
+					],
 					"strict": true,
 					"conditiontext": "having their valuables stolen"
 				}
@@ -372,17 +486,25 @@
 	},
 	{
 		"id": "pilfer_time",
-		"name": "borrow time",
-		"desc": "Just a couple of seconds, nothing bad ever happens in that amount of time.",
-		"flavor": "May I have a second of your time?",
+		"name": "ยืมเวลา",
+		"desc": "แค่ไม่กี่วินาที ไม่มีอะไรเลวร้ายเกิดขึ้นในเวลาขนาดนั้นหรอก",
+		"flavor": "ขอยืมเวลาสักวินาทีได้ไหม?",
 		"sortOrder": 1316,
 		"level": 5,
 		"school": "chaos",
 		"keywords": {
-			"target": ["enemy"],
-			"targets": ["single"],
-			"delivery": ["instant"],
-			"special": ["resource"]
+			"target": [
+				"enemy"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"instant"
+			],
+			"special": [
+				"resource"
+			]
 		},
 		"require": "g.act_fey>0&&g.trickery>=10",
 		"buy": {
@@ -398,7 +520,9 @@
 		"attack": {
 			"targetspec": {
 				"notaffectedby": {
-					"condition": ["pilfered_time_dot"],
+					"condition": [
+						"pilfered_time_dot"
+					],
 					"strict": true,
 					"conditiontext": "stolen time"
 				}
@@ -419,17 +543,27 @@
 	},
 	{
 		"id": "dream_realm",
-		"name": "midsummer night",
-		"desc": "Pull everyone into a dream of your making.",
-		"flavor": "If you die in a dream, you die in real life.",
+		"name": "คืนกลางฤดูร้อน",
+		"desc": "ดึงทุกคนเข้าสู่ความฝันที่คุณสร้าง",
+		"flavor": "ถ้าตายในความฝัน คุณก็ตายในชีวิตจริง",
 		"sortOrder": 440,
 		"level": 10,
 		"school": "mana",
 		"keywords": {
-			"type": ["debuff"],
-			"target": ["self", "ally", "enemy"],
-			"targets": ["multiple"],
-			"delivery": ["over time"]
+			"type": [
+				"debuff"
+			],
+			"target": [
+				"self",
+				"ally",
+				"enemy"
+			],
+			"targets": [
+				"multiple"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.act_fey>0||(g.dreamchamber>0&&(g.t_natureclass+g.tier5)>=3)",
 		"buy": {
@@ -495,19 +629,29 @@
 	},
 	{
 		"id": "gems_acquisition",
-		"name": "crystal seeding",
-		"desc": "Afflict the opponent with an earthen curse, so that their bones turn into gems.",
+		"name": "งอกผลึกคริสตัล",
+		"desc": "สาปศัตรูด้วยคำสาปแห่งดิน ให้กระดูกของพวกมันกลายเป็นอัญมณี",
 		"extdesc": "Gains 1 gem for every 10 defense the opponent had",
-		"flavor": "Sure to baffle future paleontologists.",
+		"flavor": "นักบรรพชีวินวิทยาในอนาคตต้องงงแน่",
 		"sortOrder": 870,
 		"level": 3,
 		"school": "earth",
 		"keywords": {
-			"type": ["debuff"],
-			"target": ["enemy"],
-			"targets": ["single"],
-			"delivery": ["over time"],
-			"special": ["resource"]
+			"type": [
+				"debuff"
+			],
+			"target": [
+				"enemy"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"over time"
+			],
+			"special": [
+				"resource"
+			]
 		},
 		"require": "g.t_earthclass>0",
 		"buy": {
@@ -523,7 +667,9 @@
 		"attack": {
 			"targetspec": {
 				"notaffectedby": {
-					"condition": ["t_body_preparation"],
+					"condition": [
+						"t_body_preparation"
+					],
 					"strict": true,
 					"conditiontext": "body preparation"
 				}
@@ -548,19 +694,29 @@
 	},
 	{
 		"id": "bloodgem_acquisition",
-		"name": "coagulant injection",
-		"desc": "Inject an enemy with a coagulant, allowing you to crystallize their blood.",
+		"name": "ฉีดสารแข็งตัวเลือด",
+		"desc": "ฉีดสารแข็งตัวเลือดให้ศัตรู ทำให้คุณทำให้เลือดของพวกมันตกผลึกได้",
 		"extdesc": "Amount of blood gems acquired is approximately 1 per 250 maximum hp an opponent had",
-		"flavor": "A blood-curdling sight.",
+		"flavor": "ภาพที่ชวนสยองขวัญ",
 		"sortOrder": 206,
 		"level": 3,
 		"school": "blood",
 		"keywords": {
-			"type": ["damage"],
-			"target": ["enemy"],
-			"targets": ["single"],
-			"delivery": ["over time"],
-			"special": ["resource"]
+			"type": [
+				"damage"
+			],
+			"target": [
+				"enemy"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"over time"
+			],
+			"special": [
+				"resource"
+			]
 		},
 		"require": "g.bloodlore>=5",
 		"buy": {
@@ -576,7 +732,9 @@
 		"attack": {
 			"targetspec": {
 				"notaffectedby": {
-					"condition": ["t_body_preparation"],
+					"condition": [
+						"t_body_preparation"
+					],
 					"strict": true,
 					"conditiontext": "body preparation"
 				}
@@ -599,7 +757,7 @@
 	},
 	{
 		"id": "quell",
-		"desc": "The full weight of a wizard's gaze is often overpowering.",
+		"desc": "สายตาจดจ้องของจอมเวทที่เต็มเปี่ยมมักกดดันอย่างล้นเหลือ",
 		"sortOrder": 442,
 		"level": 15,
 		"school": "mana",
@@ -627,15 +785,23 @@
 	},
 	{
 		"id": "poisonnettle",
-		"name": "poison nettle",
+		"name": "ต้นตำแยพิษ",
 		"sortOrder": 905,
 		"level": 1,
 		"school": "nature",
 		"keywords": {
-			"type": ["damage"],
-			"target": ["enemy"],
-			"targets": ["single"],
-			"delivery": ["over time"]
+			"type": [
+				"damage"
+			],
+			"target": [
+				"enemy"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.spellbook>0&&g.naturelore>0",
 		"buy": {
@@ -651,7 +817,9 @@
 		"attack": {
 			"targetspec": {
 				"notaffectedby": {
-					"condition": ["nettle"],
+					"condition": [
+						"nettle"
+					],
 					"conditiontext": "nettle"
 				}
 			},
@@ -660,22 +828,34 @@
 				"kind": "poison",
 				"duration": 10,
 				"damage": "0.5~1",
-				"potencies": ["spelldmg", "naturedmg", "poisondmg"]
+				"potencies": [
+					"spelldmg",
+					"naturedmg",
+					"poisondmg"
+				]
 			}
 		}
 	},
 	{
 		"id": "whirl1",
-		"name": "lesser whirling step",
+		"name": "ท่าหมุนเวียนระดับล่าง",
 		"sortOrder": 646,
 		"level": 1,
 		"school": "air",
 		"tags": "t_dodgebuff",
 		"keywords": {
-			"type": ["buff"],
-			"target": ["self"],
-			"targets": ["single"],
-			"delivery": ["over time"]
+			"type": [
+				"buff"
+			],
+			"target": [
+				"self"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.spellbook>0&&g.airlore>0",
 		"buy": {
@@ -699,16 +879,24 @@
 	},
 	{
 		"id": "whirl2",
-		"name": "whirling step",
+		"name": "ท่าหมุนเวียน",
 		"sortOrder": 645,
 		"level": 3,
 		"school": "air",
 		"tags": "t_dodgebuff",
 		"keywords": {
-			"type": ["buff"],
-			"target": ["self"],
-			"targets": ["single"],
-			"delivery": ["over time"]
+			"type": [
+				"buff"
+			],
+			"target": [
+				"self"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.whirl1.owned&&g.airlore>=5",
 		"buy": {
@@ -736,16 +924,24 @@
 	},
 	{
 		"id": "whirl3",
-		"name": "greater whirling step",
+		"name": "ท่าหมุนเวียนขั้นสูง",
 		"sortOrder": 644,
 		"level": 5,
 		"school": "air",
 		"tags": "t_dodgebuff",
 		"keywords": {
-			"type": ["buff"],
-			"target": ["self"],
-			"targets": ["single"],
-			"delivery": ["over time"]
+			"type": [
+				"buff"
+			],
+			"target": [
+				"self"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.whirl2.owned&&g.airlore>=10&&g.tier2>0",
 		"buy": {
@@ -772,17 +968,25 @@
 	},
 	{
 		"id": "lightregen1",
-		"name": "lesser pulsing light",
-		"desc": "A small pulse of light zips around you, mending injuries.",
+		"name": "แสงกะพริบระดับล่าง",
+		"desc": "แสงเล็ก ๆ พุ่งวนรอบตัวคุณ ซ่อมแซมบาดแผล",
 		"sortOrder": 1142,
 		"level": 1,
 		"school": "light",
 		"tags": "t_healspell,t_regenbuff",
 		"keywords": {
-			"type": ["recovery"],
-			"target": ["self"],
-			"targets": ["single"],
-			"delivery": ["over time"]
+			"type": [
+				"recovery"
+			],
+			"target": [
+				"self"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.spellbook>0&&g.lightlore>0",
 		"buy": {
@@ -799,23 +1003,34 @@
 			"tags": "lightregen",
 			"duration": 20,
 			"kind": "light",
-			"potencies": ["spellheal", "lightdmg"],
+			"potencies": [
+				"spellheal",
+				"lightdmg"
+			],
 			"healing": 1.3
 		}
 	},
 	{
 		"id": "lightregen2",
-		"name": "pulsing light",
-		"desc": "A pulse of light zips around you, mending injuries.",
+		"name": "แสงกะพริบ",
+		"desc": "แสงพุ่งวนรอบตัวคุณ ซ่อมแซมบาดแผล",
 		"sortOrder": 1141,
 		"level": 4,
 		"school": "light",
 		"tags": "t_healspell,t_regenbuff",
 		"keywords": {
-			"type": ["recovery"],
-			"target": ["self"],
-			"targets": ["single"],
-			"delivery": ["over time"]
+			"type": [
+				"recovery"
+			],
+			"target": [
+				"self"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.lightregen1.owned&&g.lightlore>=5",
 		"buy": {
@@ -834,23 +1049,34 @@
 			"tags": "lightregen",
 			"duration": 30,
 			"kind": "light",
-			"potencies": ["spellheal", "lightdmg"],
+			"potencies": [
+				"spellheal",
+				"lightdmg"
+			],
 			"healing": 3
 		}
 	},
 	{
 		"id": "lightregen3",
-		"name": "greater pulsing light",
-		"desc": "A large pulse of light zips around you, mending injuries.",
+		"name": "แสงกะพริบขั้นสูง",
+		"desc": "แสงขนาดใหญ่พุ่งวนรอบตัวคุณ ซ่อมแซมบาดแผล",
 		"sortOrder": 1140,
 		"level": 5,
 		"school": "light",
 		"tags": "t_healspell,t_regenbuff",
 		"keywords": {
-			"type": ["recovery"],
-			"target": ["self"],
-			"targets": ["single"],
-			"delivery": ["over time"]
+			"type": [
+				"recovery"
+			],
+			"target": [
+				"self"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.lightregen2.owned&&g.lightlore>=8&&g.tier1>0&&g.heallore>=4&&g.evil2==0",
 		"buy": {
@@ -858,7 +1084,10 @@
 			"tomes": 1,
 			"lightgem": 10
 		},
-		"need": ["g.evil2==0", "good2"],
+		"need": [
+			"g.evil2==0",
+			"good2"
+		],
 		"needtext": "Cannot be sinister and must be at least scrupulous.",
 		"cost": {
 			"light": 10
@@ -871,21 +1100,32 @@
 			"tags": "lightregen",
 			"duration": 40,
 			"kind": "light",
-			"potencies": ["spellheal", "lightdmg"],
+			"potencies": [
+				"spellheal",
+				"lightdmg"
+			],
 			"healing": 5
 		}
 	},
 	{
 		"id": "magicmissile",
-		"name": "magic missile",
+		"name": "มิสไซล์เวทมนตร์",
 		"sortOrder": 406,
 		"level": 1,
 		"school": "mana",
 		"keywords": {
-			"type": ["damage"],
-			"target": ["enemy"],
-			"targets": ["single"],
-			"delivery": ["instant"]
+			"type": [
+				"damage"
+			],
+			"target": [
+				"enemy"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"instant"
+			]
 		},
 		"require": "g.spellbook>0&&g.lore>0",
 		"buy": {
@@ -902,7 +1142,10 @@
 			"damage": "1.5~2.5",
 			"kind": "mana",
 			"tohit": 2,
-			"potencies": ["spelldmg", "manadmg"]
+			"potencies": [
+				"spelldmg",
+				"manadmg"
+			]
 		},
 		"at": {
 			"10": {
@@ -919,16 +1162,24 @@
 	},
 	{
 		"id": "prismaticspray",
-		"name": "prismatic spray",
-		"desc": "Lines of arcane energy damage all enemies.",
+		"name": "พ่นแสงปริซึม",
+		"desc": "เส้นพลังเวทสร้างความเสียหายแก่ศัตรูทั้งหมด",
 		"sortOrder": 402,
 		"level": 1,
 		"school": "mana",
 		"keywords": {
-			"type": ["damage"],
-			"target": ["enemy"],
-			"targets": ["multiple"],
-			"delivery": ["instant"]
+			"type": [
+				"damage"
+			],
+			"target": [
+				"enemy"
+			],
+			"targets": [
+				"multiple"
+			],
+			"delivery": [
+				"instant"
+			]
 		},
 		"require": "g.spellbook>0&&g.lore>0",
 		"buy": {
@@ -947,7 +1198,10 @@
 			"damage": "0~2",
 			"kind": "mana",
 			"tohit": 1,
-			"potencies": ["spelldmg", "manadmg"]
+			"potencies": [
+				"spelldmg",
+				"manadmg"
+			]
 		},
 		"at": {
 			"25": {
@@ -962,16 +1216,24 @@
 	},
 	{
 		"id": "prismaticspray2",
-		"name": "greater prismatic spray",
-		"desc": "Lines of arcane energy strike all enemies.",
+		"name": "พ่นแสงปริซึมขั้นสูง",
+		"desc": "เส้นพลังเวทพุ่งโจมตีศัตรูทั้งหมด",
 		"sortOrder": 400,
 		"level": 9,
 		"school": "mana",
 		"keywords": {
-			"type": ["damage"],
-			"target": ["enemy"],
-			"targets": ["multiple"],
-			"delivery": ["instant"]
+			"type": [
+				"damage"
+			],
+			"target": [
+				"enemy"
+			],
+			"targets": [
+				"multiple"
+			],
+			"delivery": [
+				"instant"
+			]
 		},
 		"require": "g.tier3>0",
 		"buy": {
@@ -990,7 +1252,10 @@
 			"damage": "12~30",
 			"kind": "mana",
 			"tohit": 2,
-			"potencies": ["spelldmg", "manadmg"]
+			"potencies": [
+				"spelldmg",
+				"manadmg"
+			]
 		},
 		"at": {
 			"25": {
@@ -1005,16 +1270,24 @@
 	},
 	{
 		"id": "moveearth",
-		"name": "fling stone",
-		"desc": "Throw a rock using magic.",
+		"name": "ขว้างก้อนหิน",
+		"desc": "ขว้างก้อนหินด้วยเวทมนตร์",
 		"sortOrder": 808,
 		"level": 1,
 		"school": "earth",
 		"keywords": {
-			"type": ["damage"],
-			"target": ["enemy"],
-			"targets": ["single"],
-			"delivery": ["instant"]
+			"type": [
+				"damage"
+			],
+			"target": [
+				"enemy"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"instant"
+			]
 		},
 		"require": "g.earthlore>=5",
 		"buy": {
@@ -1031,21 +1304,32 @@
 			"damage": "2~6",
 			"kind": "earth",
 			"tohit": 1,
-			"potencies": ["spelldmg", "earthdmg"]
+			"potencies": [
+				"spelldmg",
+				"earthdmg"
+			]
 		}
 	},
 	{
 		"id": "slow1",
-		"name": "mud",
-		"desc": "Engulfs target in mud.",
+		"name": "โคลน",
+		"desc": "ห่อหุ้มเป้าหมายด้วยโคลน",
 		"sortOrder": 846,
 		"level": 2,
 		"school": "earth",
 		"keywords": {
-			"type": ["debuff"],
-			"target": ["enemy"],
-			"targets": ["single"],
-			"delivery": ["instant"]
+			"type": [
+				"debuff"
+			],
+			"target": [
+				"enemy"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"instant"
+			]
 		},
 		"require": "g.earthlore>=5",
 		"buy": {
@@ -1062,7 +1346,9 @@
 		"attack": {
 			"targetspec": {
 				"notaffectedby": {
-					"condition": ["t_speeddown"]
+					"condition": [
+						"t_speeddown"
+					]
 				}
 			},
 			"dot": {
@@ -1076,15 +1362,23 @@
 	},
 	{
 		"id": "mk_spirit",
-		"name": "call spirit",
+		"name": "เรียกวิญญาณ",
 		"sortOrder": 1790,
 		"level": 1,
 		"school": "summoning",
 		"keywords": {
-			"type": ["summon"],
-			"target": ["ally"],
-			"targets": ["single"],
-			"delivery": ["instant"]
+			"type": [
+				"summon"
+			],
+			"target": [
+				"ally"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"instant"
+			]
 		},
 		"require": "g.spiritlore>0",
 		"buy": {
@@ -1111,16 +1405,24 @@
 	},
 	{
 		"id": "lightspear",
-		"name": "light spear",
-		"desc": "A barb of solid light.",
+		"name": "หอกแสง",
+		"desc": "แท่งแสงแข็งทึบ",
 		"sortOrder": 1101,
 		"level": 3,
 		"school": "light",
 		"keywords": {
-			"type": ["damage"],
-			"target": ["enemy"],
-			"targets": ["single"],
-			"delivery": ["instant"]
+			"type": [
+				"damage"
+			],
+			"target": [
+				"enemy"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"instant"
+			]
 		},
 		"require": "g.lightlore>0",
 		"buy": {
@@ -1137,7 +1439,10 @@
 		"attack": {
 			"damage": "5~8",
 			"kind": "light",
-			"potencies": ["spelldmg", "lightdmg"]
+			"potencies": [
+				"spelldmg",
+				"lightdmg"
+			]
 		},
 		"at": {
 			"30": {
@@ -1156,16 +1461,24 @@
 	},
 	{
 		"id": "lightspear2",
-		"name": "greater light spear",
-		"desc": "A lance of solid light.",
+		"name": "หอกแสงขั้นสูง",
+		"desc": "หอกแสงแข็งทึบ",
 		"sortOrder": 1100,
 		"level": 7,
 		"school": "light",
 		"keywords": {
-			"type": ["damage"],
-			"target": ["enemy"],
-			"targets": ["single"],
-			"delivery": ["instant"]
+			"type": [
+				"damage"
+			],
+			"target": [
+				"enemy"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"instant"
+			]
 		},
 		"require": "g.lightspear.owned&&g.lightlore>=5",
 		"buy": {
@@ -1183,7 +1496,10 @@
 			"damage": "21~29",
 			"tohit": 1,
 			"kind": "light",
-			"potencies": ["spelldmg", "lightdmg"]
+			"potencies": [
+				"spelldmg",
+				"lightdmg"
+			]
 		},
 		"at": {
 			"30": {
@@ -1203,17 +1519,25 @@
 	},
 	{
 		"id": "holyhandgrenade",
-		"name": "Sacred Grenade",
-		"desc": "Blow thine enemies to tiny bits in thy mercy.",
-		"flavor": "Thou shalt count to three, no more, no less.",
+		"name": "ระเบิดศักดิ์สิทธิ์",
+		"desc": "จงระเบิดศัตรูของเจ้าเป็นชิ้นเล็ก ๆ ด้วยเมตตาของเจ้า",
+		"flavor": "เจ้าจงนับถึงสาม อย่ามาก อย่าน้อย",
 		"sortOrder": 1102,
 		"level": 9,
 		"school": "light",
 		"keywords": {
-			"type": ["damage"],
-			"target": ["enemy"],
-			"targets": ["multiple"],
-			"delivery": ["instant"]
+			"type": [
+				"damage"
+			],
+			"target": [
+				"enemy"
+			],
+			"targets": [
+				"multiple"
+			],
+			"delivery": [
+				"instant"
+			]
 		},
 		"require": "g.lightlore>=20&&g.tier3>0",
 		"buy": {
@@ -1228,21 +1552,32 @@
 			"targets": "enemies",
 			"damage": "15~35",
 			"kind": "light",
-			"potencies": ["spelldmg", "lightdmg"]
+			"potencies": [
+				"spelldmg",
+				"lightdmg"
+			]
 		}
 	},
 	{
 		"id": "waterblast",
-		"name": "water spray",
-		"desc": "A violent burst of water.",
+		"name": "พ่นน้ำ",
+		"desc": "การปะทุของน้ำอย่างรุนแรง",
 		"sortOrder": 509,
 		"level": 3,
 		"school": "water",
 		"keywords": {
-			"type": ["damage"],
-			"target": ["enemy"],
-			"targets": ["single"],
-			"delivery": ["instant"]
+			"type": [
+				"damage"
+			],
+			"target": [
+				"enemy"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"instant"
+			]
 		},
 		"require": "g.waterlore>0",
 		"buy": {
@@ -1259,21 +1594,32 @@
 			"damage": "2~5",
 			"tohit": 2,
 			"kind": "water",
-			"potencies": ["spelldmg", "waterdmg"]
+			"potencies": [
+				"spelldmg",
+				"waterdmg"
+			]
 		}
 	},
 	{
 		"id": "frostbolt",
-		"name": "frost bolt",
-		"desc": "A sharp shard of ice.",
+		"name": "สายฟ้าละอองน้ำแข็ง",
+		"desc": "สะเก็ดน้ำแข็งอันคมกริบ",
 		"sortOrder": 508,
 		"level": 2,
 		"school": "water",
 		"keywords": {
-			"type": ["damage"],
-			"target": ["enemy"],
-			"targets": ["single"],
-			"delivery": ["instant"]
+			"type": [
+				"damage"
+			],
+			"target": [
+				"enemy"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"instant"
+			]
 		},
 		"require": "g.spellbook>0&&g.waterlore>0",
 		"buy": {
@@ -1291,7 +1637,10 @@
 			"damage": "6~11",
 			"tohit": 2,
 			"kind": "water",
-			"potencies": ["spelldmg", "waterdmg"]
+			"potencies": [
+				"spelldmg",
+				"waterdmg"
+			]
 		},
 		"at": {
 			"25": {
@@ -1309,16 +1658,24 @@
 	},
 	{
 		"id": "frostbolt2",
-		"name": "frost bolt II",
-		"desc": "Fling a large shard of ice.",
+		"name": "สายฟ้าละอองน้ำแข็ง II",
+		"desc": "ขว้างสะเก็ดน้ำแข็งขนาดใหญ่",
 		"sortOrder": 507,
 		"level": 6,
 		"school": "water",
 		"keywords": {
-			"type": ["damage"],
-			"target": ["enemy"],
-			"targets": ["single"],
-			"delivery": ["instant"]
+			"type": [
+				"damage"
+			],
+			"target": [
+				"enemy"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"instant"
+			]
 		},
 		"require": "g.frostbolt.owned&&g.waterlore>=5",
 		"buy": {
@@ -1335,7 +1692,10 @@
 			"damage": "16~21",
 			"tohit": 2,
 			"kind": "water",
-			"potencies": ["spelldmg", "waterdmg"]
+			"potencies": [
+				"spelldmg",
+				"waterdmg"
+			]
 		},
 		"at": {
 			"25": {
@@ -1353,16 +1713,24 @@
 	},
 	{
 		"id": "frostbolt3",
-		"name": "frost bolt III",
-		"desc": "A heavy shard of ice.",
+		"name": "สายฟ้าละอองน้ำแข็ง III",
+		"desc": "สะเก็ดน้ำแข็งอันหนักอึ้ง",
 		"sortOrder": 506,
 		"level": 10,
 		"school": "water",
 		"keywords": {
-			"type": ["damage"],
-			"target": ["enemy"],
-			"targets": ["single"],
-			"delivery": ["instant"]
+			"type": [
+				"damage"
+			],
+			"target": [
+				"enemy"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"instant"
+			]
 		},
 		"require": "g.frostbolt2.owned&&g.waterlore>=8&&g.tier1>0",
 		"buy": {
@@ -1379,7 +1747,10 @@
 			"damage": "36~45",
 			"tohit": 3,
 			"kind": "water",
-			"potencies": ["spelldmg", "waterdmg"]
+			"potencies": [
+				"spelldmg",
+				"waterdmg"
+			]
 		},
 		"at": {
 			"25": {
@@ -1397,16 +1768,24 @@
 	},
 	{
 		"id": "poisonward",
-		"name": "poison ward",
-		"desc": "Reduce the efficacy of common venoms.",
+		"name": "กำแพงพิษ",
+		"desc": "ลดประสิทธิภาพของพิษทั่วไป",
 		"sortOrder": 944,
 		"level": 2,
 		"school": "nature",
 		"keywords": {
-			"type": ["buff"],
-			"target": ["self"],
-			"targets": ["single"],
-			"delivery": ["over time"]
+			"type": [
+				"buff"
+			],
+			"target": [
+				"self"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.spellbook>0&&g.naturelore>0",
 		"buy": {
@@ -1429,16 +1808,24 @@
 	},
 	{
 		"id": "vinewhip",
-		"name": "vine whip",
-		"desc": "Vines lash out from the ground.",
+		"name": "แส้เถาวัลย์",
+		"desc": "เถาวัลย์ฟาดขึ้นมาจากผืนดิน",
 		"sortOrder": 900,
 		"level": 3,
 		"school": "nature",
 		"keywords": {
-			"type": ["damage"],
-			"target": ["enemy"],
-			"targets": ["single"],
-			"delivery": ["instant"]
+			"type": [
+				"damage"
+			],
+			"target": [
+				"enemy"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"instant"
+			]
 		},
 		"require": "g.naturelore>=5",
 		"buy": {
@@ -1456,7 +1843,10 @@
 			"damage": "6.5~10.5",
 			"tohit": 3,
 			"kind": "nature",
-			"potencies": ["spelldmg", "naturedmg"]
+			"potencies": [
+				"spelldmg",
+				"naturedmg"
+			]
 		},
 		"at": {
 			"25": {
@@ -1474,16 +1864,24 @@
 	},
 	{
 		"id": "mk_hobgoblin",
-		"name": "summon hobgoblin",
-		"desc": "In combat, summon a hobgoblin to fight for you.",
+		"name": "เรียกฮ็อบก็อบลิน",
+		"desc": "ในศึก เรียกฮ็อบก็อบลินมาสู้เพื่อคุณ",
 		"sortOrder": 1768,
 		"level": 6,
 		"school": "summoning",
 		"keywords": {
-			"type": ["summon"],
-			"target": ["ally"],
-			"targets": ["single"],
-			"delivery": ["instant"]
+			"type": [
+				"summon"
+			],
+			"target": [
+				"ally"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"instant"
+			]
 		},
 		"require": "g.conjuration>=5",
 		"buy": {
@@ -1510,16 +1908,24 @@
 	},
 	{
 		"id": "mk_spider",
-		"name": "summon spider",
-		"desc": "Summon a spider to fight for you.",
+		"name": "เรียกแมงมุม",
+		"desc": "เรียกแมงมุมมาสู้เพื่อคุณ",
 		"sortOrder": 1770,
 		"level": 5,
 		"school": "summoning",
 		"keywords": {
-			"type": ["summon"],
-			"target": ["ally"],
-			"targets": ["single"],
-			"delivery": ["instant"]
+			"type": [
+				"summon"
+			],
+			"target": [
+				"ally"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"instant"
+			]
 		},
 		"require": "g.conjuration>=3&&g.naturelore>=5",
 		"buy": {
@@ -1546,16 +1952,24 @@
 	},
 	{
 		"id": "revive",
-		"desc": "Call back to life a weak humanoid or goblinoid minion.",
+		"desc": "ปลุกชีวิตมินเนียนมนุษย์หรือก็อบลินอยด์ที่อ่อนแอกลับมา",
 		"sortOrder": 1030,
 		"level": 1,
 		"school": "spirit",
 		"tags": "rez",
 		"keywords": {
-			"type": ["summon"],
-			"target": ["ally"],
-			"targets": ["single"],
-			"delivery": ["instant"]
+			"type": [
+				"summon"
+			],
+			"target": [
+				"ally"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"instant"
+			]
 		},
 		"require": "g.spiritlore>=4",
 		"buy": {
@@ -1567,24 +1981,35 @@
 			"mana": 5
 		},
 		"resurrect": {
-			"only": ["humanoid", "goblinoid"],
+			"only": [
+				"humanoid",
+				"goblinoid"
+			],
 			"maxlevel": 10,
 			"count": 1
 		}
 	},
 	{
 		"id": "tend",
-		"name": "magic tending",
-		"desc": "Revive a weak beast minion.",
+		"name": "การดูแลเวทมนตร์",
+		"desc": "ฟื้นมินเนียนสัตว์ที่อ่อนแอ",
 		"sortOrder": 936,
 		"level": 1,
 		"school": "nature",
 		"tags": "rez",
 		"keywords": {
-			"type": ["summon"],
-			"target": ["ally"],
-			"targets": ["single"],
-			"delivery": ["instant"]
+			"type": [
+				"summon"
+			],
+			"target": [
+				"ally"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"instant"
+			]
 		},
 		"require": "g.naturelore>=4",
 		"buy": {
@@ -1596,25 +2021,35 @@
 			"nature": 5
 		},
 		"resurrect": {
-			"only": ["beast"],
+			"only": [
+				"beast"
+			],
 			"maxlevel": 10,
 			"count": 1
 		}
 	},
 	{
 		"id": "wildtend",
-		"name": "wild tending",
-		"desc": "Revive a stronger beast minion.",
+		"name": "การดูแลป่าเถื่อน",
+		"desc": "ฟื้นมินเนียนสัตว์ที่แข็งแกร่งกว่า",
 		"require": "g.t_natureclass>0",
 		"sortOrder": 935,
 		"level": 2,
 		"school": "nature",
 		"tags": "rez",
 		"keywords": {
-			"type": ["summon"],
-			"target": ["ally"],
-			"targets": ["single"],
-			"delivery": ["instant"]
+			"type": [
+				"summon"
+			],
+			"target": [
+				"ally"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"instant"
+			]
 		},
 		"buy": {
 			"research": 100,
@@ -1625,25 +2060,35 @@
 			"nature": 7
 		},
 		"resurrect": {
-			"only": ["beast"],
+			"only": [
+				"beast"
+			],
 			"maxlevel": 40,
 			"count": 1
 		}
 	},
 	{
 		"id": "mk_unicorn",
-		"name": "summon unicorn",
-		"desc": "In combat, summon an unicorn to fight for you.",
+		"name": "เรียกยูนิคอร์น",
+		"desc": "ในศึก เรียกยูนิคอร์นมาสู้เพื่อคุณ",
 		"tags": "t_fauna_spell",
 		"require": "(g.good2+g.t_divinationclass+g.t_summonclass)>0&&g.magicbeasts>=5",
 		"sortOrder": 1771,
 		"level": 5,
 		"school": "summoning",
 		"keywords": {
-			"type": ["summon"],
-			"target": ["ally"],
-			"targets": ["single"],
-			"delivery": ["instant"]
+			"type": [
+				"summon"
+			],
+			"target": [
+				"ally"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"instant"
+			]
 		},
 		"buy": {
 			"research": 1000,
@@ -1671,17 +2116,25 @@
 	},
 	{
 		"id": "deepshell",
-		"name": "core steel shell",
-		"desc": "Cover yourself in a shell made of core steel.",
+		"name": "เปลือกเหล็กแกนกลาง",
+		"desc": "ห่อหุ้มตัวเองด้วยเปลือกเหล็กแกนกลาง",
 		"sortOrder": 840,
 		"level": 15,
 		"school": "earth",
 		"tags": "t_defbuff",
 		"keywords": {
-			"type": ["buff"],
-			"target": ["self"],
-			"targets": ["single"],
-			"delivery": ["over time"]
+			"type": [
+				"buff"
+			],
+			"target": [
+				"self"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.titan>0&&g.geosculpting>=12",
 		"buy": {
@@ -1707,15 +2160,24 @@
 	},
 	{
 		"id": "quicksand",
-		"desc": "Command the earth to swallow the enemy.",
+		"desc": "สั่งให้ผืนดินกลืนศัตรู",
 		"sortOrder": 802,
 		"level": 15,
 		"school": "earth",
 		"keywords": {
-			"type": ["damage", "debuff"],
-			"target": ["enemy"],
-			"targets": ["multiple"],
-			"delivery": ["over time"]
+			"type": [
+				"damage",
+				"debuff"
+			],
+			"target": [
+				"enemy"
+			],
+			"targets": [
+				"multiple"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.geosculpting>=8",
 		"buy": {
@@ -1735,7 +2197,10 @@
 			"dot": {
 				"duration": 15,
 				"damage": "15~25",
-				"potencies": ["spelldmg", "earthdmg"],
+				"potencies": [
+					"spelldmg",
+					"earthdmg"
+				],
 				"mod": {
 					"self.speed": -5
 				}
@@ -1744,15 +2209,24 @@
 	},
 	{
 		"id": "entomb",
-		"desc": "Bury your enemies deep beneath the ground.",
+		"desc": "ฝังศัตรูของคุณลึกลงใต้ผืนดิน",
 		"sortOrder": 800,
 		"level": 25,
 		"school": "earth",
 		"keywords": {
-			"type": ["damage", "debuff"],
-			"target": ["enemy"],
-			"targets": ["multiple"],
-			"delivery": ["over time"]
+			"type": [
+				"damage",
+				"debuff"
+			],
+			"target": [
+				"enemy"
+			],
+			"targets": [
+				"multiple"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.titan>0",
 		"buy": {
@@ -1776,7 +2250,10 @@
 			"dot": {
 				"duration": 30,
 				"damage": "50~75",
-				"potencies": ["spelldmg", "earthdmg"],
+				"potencies": [
+					"spelldmg",
+					"earthdmg"
+				],
 				"mod": {
 					"self.speed": -15
 				}
@@ -1790,17 +2267,29 @@
 		"school": "martial",
 		"tags": "t_nospellcraft",
 		"keywords": {
-			"type": ["damage"],
-			"target": ["enemy"],
-			"targets": ["single"],
-			"delivery": ["instant"],
-			"special": ["weapon"]
+			"type": [
+				"damage"
+			],
+			"target": [
+				"enemy"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"instant"
+			],
+			"special": [
+				"weapon"
+			]
 		},
 		"require": "g.hammerlore>=5&&g.earthlore>=8&&g.tier1>0",
 		"buy": {
 			"research": 500
 		},
-		"caststoppers": [1],
+		"caststoppers": [
+			1
+		],
 		"need": "g.player.getWeapon().hasTag('t_blunt')",
 		"needtext": "Currently equipped weapon must be blunt.",
 		"cost": {
@@ -1814,28 +2303,46 @@
 			"damage": "((a.getWeapon().damage||0)+mod.flat)*(1.3+ mod.pct) ",
 			"tohit": 3,
 			"kind": "earth",
-			"potencies": ["physdmg", "earthdmg", "hammerdmg"]
+			"potencies": [
+				"physdmg",
+				"earthdmg",
+				"hammerdmg"
+			]
 		}
 	},
 	{
 		"id": "fissure",
-		"desc": "Crack the earth beneath the feet of your enemy.",
+		"desc": "ฉีกผืนดินใต้เท้าของศัตรูของคุณ",
 		"sortOrder": 310,
 		"level": 5,
 		"school": "martial",
 		"tags": "t_nospellcraft",
 		"keywords": {
-			"type": ["damage", "debuff"],
-			"target": ["enemy"],
-			"targets": ["single"],
-			"delivery": ["instant", "over time"],
-			"special": ["weapon"]
+			"type": [
+				"damage",
+				"debuff"
+			],
+			"target": [
+				"enemy"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"instant",
+				"over time"
+			],
+			"special": [
+				"weapon"
+			]
 		},
 		"require": "g.hammerlore>=10&&g.earthlore>=12&&g.tier3>0",
 		"buy": {
 			"research": 12000
 		},
-		"caststoppers": [1],
+		"caststoppers": [
+			1
+		],
 		"need": "g.player.getWeapon().hasTag('t_blunt')",
 		"needtext": "Currently equipped weapon must be blunt.",
 		"cost": {
@@ -1849,7 +2356,11 @@
 		"attack": {
 			"damage": "((a.getWeapon().damage||0))*4",
 			"tohit": 15,
-			"potencies": ["physdmg", "earthdmg", "hammerdmg"],
+			"potencies": [
+				"physdmg",
+				"earthdmg",
+				"hammerdmg"
+			],
 			"kind": "earth",
 			"dot": {
 				"kind": "earth",
@@ -1860,15 +2371,23 @@
 	},
 	{
 		"id": "proshadow",
-		"name": "protection: shadow",
+		"name": "การป้องกัน: เงา",
 		"sortOrder": 1156,
 		"level": 2,
 		"school": "light",
 		"keywords": {
-			"type": ["buff"],
-			"target": ["self"],
-			"targets": ["single"],
-			"delivery": ["over time"]
+			"type": [
+				"buff"
+			],
+			"target": [
+				"self"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.lightlore>=3",
 		"buy": {
@@ -1890,15 +2409,23 @@
 	},
 	{
 		"id": "profire",
-		"name": "protection: fire",
+		"name": "การป้องกัน: ไฟ",
 		"sortOrder": 748,
 		"level": 2,
 		"school": "fire",
 		"keywords": {
-			"type": ["buff"],
-			"target": ["self"],
-			"targets": ["single"],
-			"delivery": ["over time"]
+			"type": [
+				"buff"
+			],
+			"target": [
+				"self"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.firelore>=2",
 		"buy": {
@@ -1920,15 +2447,23 @@
 	},
 	{
 		"id": "prowater",
-		"name": "protection: water",
+		"name": "การป้องกัน: น้ำ",
 		"sortOrder": 546,
 		"level": 2,
 		"school": "water",
 		"keywords": {
-			"type": ["buff"],
-			"target": ["self"],
-			"targets": ["single"],
-			"delivery": ["over time"]
+			"type": [
+				"buff"
+			],
+			"target": [
+				"self"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.waterlore>=3",
 		"buy": {
@@ -1950,15 +2485,23 @@
 	},
 	{
 		"id": "pronature",
-		"name": "protection: nature",
+		"name": "การป้องกัน: ธรรมชาติ",
 		"sortOrder": 946,
 		"level": 2,
 		"school": "nature",
 		"keywords": {
-			"type": ["buff"],
-			"target": ["self"],
-			"targets": ["single"],
-			"delivery": ["over time"]
+			"type": [
+				"buff"
+			],
+			"target": [
+				"self"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.naturelore>=3",
 		"buy": {
@@ -1980,17 +2523,25 @@
 	},
 	{
 		"id": "heal1",
-		"name": "sealing light",
-		"desc": "Seams of light close your wounds.",
+		"name": "แสงผนึก",
+		"desc": "รอยต่อแห่งแสงรังปิดบาดแผลของคุณ",
 		"sortOrder": 1136,
 		"level": 2,
 		"school": "light",
 		"tags": "t_healspell",
 		"keywords": {
-			"type": ["recovery"],
-			"target": ["self"],
-			"targets": ["single"],
-			"delivery": ["instant"]
+			"type": [
+				"recovery"
+			],
+			"target": [
+				"self"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"instant"
+			]
 		},
 		"require": "g.lightlore>=4",
 		"buy": {
@@ -2009,19 +2560,27 @@
 			"harmless": true,
 			"healing": 20,
 			"kind": "light",
-			"potencies": ["spellheal", "lightdmg"]
+			"potencies": [
+				"spellheal",
+				"lightdmg"
+			]
 		}
 	},
 	{
 		"id": "gold_exploration",
-		"name": "windcomb",
-		"desc": "Use directed gusts of wind to clear away debris and detritus, making exploration a much more profitable affair.",
+		"name": "หวีลม",
+		"desc": "ใช้ลมกระโชกที่ควบคุมทิศทางกวาดเศษขยะและซากปรักหักพังออกไป ทำให้การสำรวจคุ้มค่ายิ่งขึ้น",
 		"sortOrder": 670,
 		"level": 2,
 		"school": "air",
 		"keywords": {
-			"delivery": ["over time"],
-			"special": ["explore", "resource"]
+			"delivery": [
+				"over time"
+			],
+			"special": [
+				"explore",
+				"resource"
+			]
 		},
 		"require": "g.airlore>=4",
 		"buy": {
@@ -2045,17 +2604,25 @@
 	},
 	{
 		"id": "insight",
-		"name": "insight",
-		"desc": "All your studies fall neatly into place.",
-		"flavor": "I know the pieces fit.",
+		"name": "ญาณหยั่งรู้",
+		"desc": "การศึกษาทั้งหมดของคุณต่อกันอย่างลงตัว",
+		"flavor": "ข้ารู้ว่าชิ้นส่วนมันเข้าที่กัน",
 		"sortOrder": 1172,
 		"level": 3,
 		"school": "light",
 		"keywords": {
-			"type": ["buff"],
-			"target": ["self"],
-			"targets": ["single"],
-			"delivery": ["over time"]
+			"type": [
+				"buff"
+			],
+			"target": [
+				"self"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.lightlore>=5",
 		"buy": {
@@ -2079,16 +2646,24 @@
 	},
 	{
 		"id": "fireinsight",
-		"name": "fire sense",
-		"desc": "Temporarily increase your natural aptitude for fire.",
+		"name": "ประสาทสัมผัสไฟ",
+		"desc": "เพิ่มพรสวรรค์ด้านไฟของคุณชั่วคราว",
 		"sortOrder": 772,
 		"level": 2,
 		"school": "fire",
 		"keywords": {
-			"type": ["buff"],
-			"target": ["self"],
-			"targets": ["single"],
-			"delivery": ["over time"]
+			"type": [
+				"buff"
+			],
+			"target": [
+				"self"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.firelore>=1",
 		"buy": {
@@ -2112,16 +2687,24 @@
 	},
 	{
 		"id": "earthinsight",
-		"name": "earth sense",
-		"desc": "Temporarily increase your natural aptitude for earth.",
+		"name": "ประสาทสัมผัสดิน",
+		"desc": "เพิ่มพรสวรรค์ด้านดินของคุณชั่วคราว",
 		"sortOrder": 874,
 		"level": 2,
 		"school": "earth",
 		"keywords": {
-			"type": ["buff"],
-			"target": ["self"],
-			"targets": ["single"],
-			"delivery": ["over time"]
+			"type": [
+				"buff"
+			],
+			"target": [
+				"self"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.earthlore>=1",
 		"buy": {
@@ -2145,16 +2728,24 @@
 	},
 	{
 		"id": "waterinsight",
-		"name": "water sense",
-		"desc": "Temporarily increase your natural aptitude for water.",
+		"name": "ประสาทสัมผัสน้ำ",
+		"desc": "เพิ่มพรสวรรค์ด้านน้ำของคุณชั่วคราว",
 		"sortOrder": 570,
 		"level": 2,
 		"school": "water",
 		"keywords": {
-			"type": ["buff"],
-			"target": ["self"],
-			"targets": ["single"],
-			"delivery": ["over time"]
+			"type": [
+				"buff"
+			],
+			"target": [
+				"self"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.waterlore>=1",
 		"buy": {
@@ -2178,16 +2769,24 @@
 	},
 	{
 		"id": "airinsight",
-		"name": "wind sense",
-		"desc": "Temporarily increase your natural aptitude for air.",
+		"name": "ประสาทสัมผัสลม",
+		"desc": "เพิ่มพรสวรรค์ด้านลมของคุณชั่วคราว",
 		"sortOrder": 672,
 		"level": 2,
 		"school": "air",
 		"keywords": {
-			"type": ["buff"],
-			"target": ["self"],
-			"targets": ["single"],
-			"delivery": ["over time"]
+			"type": [
+				"buff"
+			],
+			"target": [
+				"self"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.airlore>=1",
 		"buy": {
@@ -2211,14 +2810,19 @@
 	},
 	{
 		"id": "herbs_exploration",
-		"name": "natural instinct",
-		"desc": "Enhance your sense of smell to more easily locate herbs worth harvesting.",
+		"name": "สัญชาตญาณธรรมชาติ",
+		"desc": "เสริมประสาทรับกลิ่นให้ตามหาสมุนไพรที่ควรเก็บได้ง่ายขึ้น",
 		"sortOrder": 971,
 		"level": 1,
 		"school": "nature",
 		"keywords": {
-			"delivery": ["over time"],
-			"special": ["explore", "resource"]
+			"delivery": [
+				"over time"
+			],
+			"special": [
+				"explore",
+				"resource"
+			]
 		},
 		"require": "g.spellbook>0&&g.herbalism>=3&&g.naturelore>0",
 		"buy": {
@@ -2241,16 +2845,24 @@
 	},
 	{
 		"id": "magebolt",
-		"name": "mage bolt",
+		"name": "สายฟ้าจอมเวท",
 		"sortOrder": 404,
 		"level": 9,
 		"require": "g.t_manaclass>=2",
 		"school": "mana",
 		"keywords": {
-			"type": ["damage"],
-			"target": ["enemy"],
-			"targets": ["single"],
-			"delivery": ["instant"]
+			"type": [
+				"damage"
+			],
+			"target": [
+				"enemy"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"instant"
+			]
 		},
 		"buy": {
 			"research": 5000,
@@ -2267,7 +2879,10 @@
 			"damage": "10~20",
 			"kind": "mana",
 			"tohit": 10,
-			"potencies": ["spelldmg", "manadmg"]
+			"potencies": [
+				"spelldmg",
+				"manadmg"
+			]
 		},
 		"at": {
 			"10": {
@@ -2284,15 +2899,20 @@
 	},
 	{
 		"id": "knowledge_exploration",
-		"name": "ancient communion",
-		"desc": "Call on remnants of the dead to impart the knowledge of their lives. Has a relatively short effective range.",
-		"flavor": "Did you hear something?",
+		"name": "พิธีสังสรรค์โบราณ",
+		"desc": "อัญเชิญเศษซากของคนตายให้ถ่ายทอดความรู้ในชีวิตของพวกเขา มีพิสัยที่ค่อนข้างสั้น",
+		"flavor": "เจ้าได้ยินอะไรไหม?",
 		"sortOrder": 1070,
 		"level": 1,
 		"school": "spirit",
 		"keywords": {
-			"delivery": ["over time"],
-			"special": ["explore", "resource"]
+			"delivery": [
+				"over time"
+			],
+			"special": [
+				"explore",
+				"resource"
+			]
 		},
 		"require": "g.spiritlore>=4",
 		"buy": {
@@ -2318,15 +2938,23 @@
 	},
 	{
 		"id": "venom1",
-		"name": "venom I",
+		"name": "พิษ I",
 		"sortOrder": 904,
 		"level": 5,
 		"school": "nature",
 		"keywords": {
-			"type": ["damage"],
-			"target": ["enemy"],
-			"targets": ["single"],
-			"delivery": ["over time"]
+			"type": [
+				"damage"
+			],
+			"target": [
+				"enemy"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.naturelore>=6&&g.tier1>0",
 		"buy": {
@@ -2343,7 +2971,9 @@
 		"attack": {
 			"targetspec": {
 				"notaffectedby": {
-					"condition": ["t_venom"],
+					"condition": [
+						"t_venom"
+					],
 					"conditiontext": "venom"
 				}
 			},
@@ -2353,22 +2983,34 @@
 				"id": "t_venom",
 				"duration": 30,
 				"damage": "2~4",
-				"potencies": ["spelldmg", "naturedmg", "poisondmg"]
+				"potencies": [
+					"spelldmg",
+					"naturedmg",
+					"poisondmg"
+				]
 			}
 		}
 	},
 	{
 		"id": "hex1",
-		"name": "spiteful hex",
+		"name": "สาปอาฆาต",
 		"sortOrder": 1009,
 		"level": 4,
 		"require": "g.t_spiritclass>0",
 		"school": "spirit",
 		"keywords": {
-			"type": ["damage"],
-			"target": ["enemy"],
-			"targets": ["single"],
-			"delivery": ["over time"]
+			"type": [
+				"damage"
+			],
+			"target": [
+				"enemy"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"buy": {
 			"research": 1000,
@@ -2384,7 +3026,9 @@
 		"attack": {
 			"targetspec": {
 				"notaffectedby": {
-					"condition": ["t_hex"],
+					"condition": [
+						"t_hex"
+					],
 					"conditiontext": "hex"
 				}
 			},
@@ -2394,21 +3038,32 @@
 				"id": "hex",
 				"duration": 15,
 				"damage": "5~7",
-				"potencies": ["spelldmg", "spiritdmg"]
+				"potencies": [
+					"spelldmg",
+					"spiritdmg"
+				]
 			}
 		}
 	},
 	{
 		"id": "jinx",
-		"desc": "Curse an enemy with a streak of bad luck.",
+		"desc": "สาปศัตรูด้วยโชคร้ายติดต่อกัน",
 		"sortOrder": 1347,
 		"level": 2,
 		"school": "chaos",
 		"keywords": {
-			"type": ["debuff"],
-			"target": ["enemy"],
-			"targets": ["single"],
-			"delivery": ["over time"]
+			"type": [
+				"debuff"
+			],
+			"target": [
+				"enemy"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "trickster",
 		"buy": {
@@ -2423,7 +3078,9 @@
 		"attack": {
 			"targetspec": {
 				"notaffectedby": {
-					"condition": ["dot_jinx1"],
+					"condition": [
+						"dot_jinx1"
+					],
 					"conditiontext": "jinx"
 				}
 			},
@@ -2440,17 +3097,25 @@
 	},
 	{
 		"id": "speed1",
-		"name": "dust devil",
-		"desc": "A whirl of wind at your feet.",
+		"name": "ปีศาจพายุฝุ่น",
+		"desc": "ลมหมุนวนใต้เท้าของคุณ",
 		"sortOrder": 641,
 		"level": 3,
 		"school": "air",
 		"tags": "t_speedbuff",
 		"keywords": {
-			"type": ["buff"],
-			"target": ["self"],
-			"targets": ["single"],
-			"delivery": ["over time"]
+			"type": [
+				"buff"
+			],
+			"target": [
+				"self"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.airlore>=4",
 		"buy": {
@@ -2476,17 +3141,25 @@
 	},
 	{
 		"id": "speed2",
-		"name": "dust devil II",
-		"desc": "A whirl of wind at your feet.",
+		"name": "ปีศาจพายุฝุ่น II",
+		"desc": "ลมหมุนวนใต้เท้าของคุณ",
 		"sortOrder": 640,
 		"level": 5,
 		"school": "air",
 		"tags": "t_speedbuff",
 		"keywords": {
-			"type": ["buff"],
-			"target": ["self"],
-			"targets": ["single"],
-			"delivery": ["over time"]
+			"type": [
+				"buff"
+			],
+			"target": [
+				"self"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.airlore>=8&&g.speed1.owned&&g.tier1>0",
 		"buy": {
@@ -2513,16 +3186,24 @@
 	},
 	{
 		"id": "massjinx",
-		"name": "mass jinx",
-		"desc": "Curse all enemies with a streak of bad luck.",
+		"name": "สาปหมู่",
+		"desc": "สาปศัตรูทั้งหมดด้วยโชคร้ายติดต่อกัน",
 		"sortOrder": 1346,
 		"level": 4,
 		"school": "chaos",
 		"keywords": {
-			"type": ["debuff"],
-			"target": ["enemy"],
-			"targets": ["multiple"],
-			"delivery": ["over time"]
+			"type": [
+				"debuff"
+			],
+			"target": [
+				"enemy"
+			],
+			"targets": [
+				"multiple"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.trickster>0||g.t_chaosclass>=2",
 		"buy": {
@@ -2552,16 +3233,24 @@
 	},
 	{
 		"id": "guidestr",
-		"name": "guided strike",
+		"name": "การฟันนำเป้า",
 		"sortOrder": 1046,
 		"level": 1,
 		"school": "spirit",
 		"tags": "t_accuracybuff",
 		"keywords": {
-			"type": ["buff"],
-			"target": ["self"],
-			"targets": ["single"],
-			"delivery": ["over time"]
+			"type": [
+				"buff"
+			],
+			"target": [
+				"self"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.divination>=3",
 		"buy": {
@@ -2585,16 +3274,24 @@
 	},
 	{
 		"id": "truestrike",
-		"name": "true strike",
+		"name": "การฟันแม่นยำ",
 		"sortOrder": 1045,
 		"level": 3,
 		"school": "spirit",
 		"tags": "t_accuracybuff",
 		"keywords": {
-			"type": ["buff"],
-			"target": ["self"],
-			"targets": ["single"],
-			"delivery": ["over time"]
+			"type": [
+				"buff"
+			],
+			"target": [
+				"self"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.scrying>=1",
 		"buy": {
@@ -2618,16 +3315,24 @@
 	},
 	{
 		"id": "perfectstrike",
-		"name": "perfect strike",
+		"name": "การฟันสมบูรณ์",
 		"sortOrder": 1044,
 		"level": 5,
 		"school": "spirit",
 		"tags": "t_accuracybuff",
 		"keywords": {
-			"type": ["buff"],
-			"target": ["self"],
-			"targets": ["single"],
-			"delivery": ["over time"]
+			"type": [
+				"buff"
+			],
+			"target": [
+				"self"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.scrying>=5",
 		"buy": {
@@ -2652,17 +3357,25 @@
 	},
 	{
 		"id": "heal2",
-		"name": "sealing light II",
-		"desc": "Seams of light close your wounds.",
+		"name": "แสงผนึก II",
+		"desc": "รอยต่อแห่งแสงรังปิดบาดแผลของคุณ",
 		"sortOrder": 1135,
 		"level": 4,
 		"school": "light",
 		"tags": "t_healspell",
 		"keywords": {
-			"type": ["recovery"],
-			"target": ["self"],
-			"targets": ["single"],
-			"delivery": ["instant"]
+			"type": [
+				"recovery"
+			],
+			"target": [
+				"self"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"instant"
+			]
 		},
 		"require": "g.heal1.owned&&g.lightlore>=6&&g.evil2==0",
 		"buy": {
@@ -2683,20 +3396,31 @@
 			"harmless": true,
 			"healing": 75,
 			"kind": "light",
-			"potencies": ["spellheal", "lightdmg"]
+			"potencies": [
+				"spellheal",
+				"lightdmg"
+			]
 		}
 	},
 	{
 		"id": "airburst",
-		"name": "burst",
+		"name": "ระเบิด",
 		"sortOrder": 610,
 		"level": 1,
 		"school": "air",
 		"keywords": {
-			"type": ["damage"],
-			"target": ["enemy"],
-			"targets": ["single"],
-			"delivery": ["instant"]
+			"type": [
+				"damage"
+			],
+			"target": [
+				"enemy"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"instant"
+			]
 		},
 		"require": "g.airlore>0",
 		"buy": {
@@ -2713,20 +3437,33 @@
 			"damage": "1~4",
 			"tohit": 3,
 			"kind": "air",
-			"potencies": ["spelldmg", "airdmg"]
+			"potencies": [
+				"spelldmg",
+				"airdmg"
+			]
 		}
 	},
 	{
 		"id": "zap",
-		"desc": "An electric shock leaps from your fingers.",
+		"desc": "ไฟฟ้าช็อตพุ่งออกจากปลายนิ้วของคุณ",
 		"sortOrder": 608,
 		"level": 3,
 		"school": "air",
 		"keywords": {
-			"type": ["damage", "debuff"],
-			"target": ["enemy"],
-			"targets": ["single"],
-			"delivery": ["instant", "over time"]
+			"type": [
+				"damage",
+				"debuff"
+			],
+			"target": [
+				"enemy"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"instant",
+				"over time"
+			]
 		},
 		"require": "g.airlore>=5",
 		"buy": {
@@ -2743,7 +3480,10 @@
 			"damage": "1~2",
 			"tohit": 5,
 			"kind": "air",
-			"potencies": ["spelldmg", "airdmg"],
+			"potencies": [
+				"spelldmg",
+				"airdmg"
+			],
 			"dot": {
 				"name": "blind",
 				"duration": 5,
@@ -2768,17 +3508,27 @@
 	},
 	{
 		"id": "elec1",
-		"name": "lightning",
-		"desc": "An arc of lightning flashes from the sky.",
-		"flavor": "Shazaaam?",
+		"name": "สายฟ้า",
+		"desc": "สายฟ้าพาดวาบลงมาจากท้องฟ้า",
+		"flavor": "ชาซ่ามม?",
 		"sortOrder": 606,
 		"level": 6,
 		"school": "air",
 		"keywords": {
-			"type": ["damage", "debuff"],
-			"target": ["enemy"],
-			"targets": ["single"],
-			"delivery": ["instant", "over time"]
+			"type": [
+				"damage",
+				"debuff"
+			],
+			"target": [
+				"enemy"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"instant",
+				"over time"
+			]
 		},
 		"require": "g.airlore>=8&&g.zap.owned&&g.tier1>0",
 		"buy": {
@@ -2797,7 +3547,10 @@
 			"damage": "5~10",
 			"tohit": 7,
 			"kind": "air",
-			"potencies": ["spelldmg", "airdmg"],
+			"potencies": [
+				"spelldmg",
+				"airdmg"
+			],
 			"dot": {
 				"name": "blind",
 				"duration": 5,
@@ -2822,17 +3575,27 @@
 	},
 	{
 		"id": "elec2",
-		"name": "doublestrike",
-		"desc": "Twin arcs of lightning flash from the sky.",
-		"flavor": "Sometimes lightning does strike twice.",
+		"name": "ฟันคู่",
+		"desc": "สายฟ้าสองสายพาดวาบลงมาจากท้องฟ้า",
+		"flavor": "บางครั้งฟ้าก็ผ่าซ้ำสอง",
 		"sortOrder": 602,
 		"level": 9,
 		"school": "air",
 		"keywords": {
-			"type": ["damage", "debuff"],
-			"target": ["enemy"],
-			"targets": ["single"],
-			"delivery": ["instant", "over time"]
+			"type": [
+				"damage",
+				"debuff"
+			],
+			"target": [
+				"enemy"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"instant",
+				"over time"
+			]
 		},
 		"require": "g.airlore>=12&&g.elec1.owned&&g.tier3>0",
 		"buy": {
@@ -2850,13 +3613,19 @@
 			"damage": "7~15",
 			"tohit": 12,
 			"kind": "air",
-			"potencies": ["spelldmg", "airdmg"],
+			"potencies": [
+				"spelldmg",
+				"airdmg"
+			],
 			"dot": {
 				"name": "blind",
 				"duration": 5,
 				"tags": "t_tohitdown",
 				"damage": "2~3",
-				"potencies": ["spelldmg", "airdmg"],
+				"potencies": [
+					"spelldmg",
+					"airdmg"
+				],
 				"mod": {
 					"self.tohit": -3
 				}
@@ -2877,16 +3646,26 @@
 	},
 	{
 		"id": "elec3",
-		"name": "thunderstrike",
-		"desc": "A blinding storm of lightning.",
+		"name": "สายฟ้าฟาด",
+		"desc": "พายุสายฟ้าอันพร่างพราย",
 		"sortOrder": 600,
 		"level": 12,
 		"school": "air",
 		"keywords": {
-			"type": ["damage", "debuff"],
-			"target": ["enemy"],
-			"targets": ["multiple"],
-			"delivery": ["instant", "over time"]
+			"type": [
+				"damage",
+				"debuff"
+			],
+			"target": [
+				"enemy"
+			],
+			"targets": [
+				"multiple"
+			],
+			"delivery": [
+				"instant",
+				"over time"
+			]
 		},
 		"require": "g.airlore>=15&&g.elec2.owned&&g.tier3>0",
 		"buy": {
@@ -2910,7 +3689,10 @@
 				"kind": "air",
 				"duration": 15,
 				"damage": "7~25",
-				"potencies": ["spelldmg", "airdmg"],
+				"potencies": [
+					"spelldmg",
+					"airdmg"
+				],
 				"mod": {
 					"self.tohit": -5
 				}
@@ -2933,17 +3715,27 @@
 	},
 	{
 		"id": "downswinging",
-		"name": "down swinging",
-		"desc": "You won't go down without a fight.",
-		"flavor": "Am I more than you bargained for yet?",
+		"name": "สู้จนสุดแรง",
+		"desc": "เจ้าจะไม่ยอมล้มลงโดยไม่สู้",
+		"flavor": "ข้าเกินกว่าที่เจ้าคาดไว้แล้วใช่ไหม?",
 		"sortOrder": 210,
 		"level": 7,
 		"school": "blood",
 		"keywords": {
-			"type": ["recovery", "buff"],
-			"target": ["self"],
-			"targets": ["single"],
-			"delivery": ["instant", "over time"]
+			"type": [
+				"recovery",
+				"buff"
+			],
+			"target": [
+				"self"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"instant",
+				"over time"
+			]
 		},
 		"require": "g.bloodmage>0",
 		"buy": {
@@ -2977,17 +3769,27 @@
 	},
 	{
 		"id": "bodyisdry",
-		"name": "last stand",
-		"desc": "Before your body is dry.",
-		"flavor": "Don't lose your way.",
+		"name": "ยืนหยัดครั้งสุดท้าย",
+		"desc": "ก่อนที่ร่างของเจ้าจะแห้งเหือด",
+		"flavor": "อย่าหลงทาง",
 		"sortOrder": 208,
 		"level": 10,
 		"school": "blood",
 		"keywords": {
-			"type": ["recovery", "buff"],
-			"target": ["self"],
-			"targets": ["single"],
-			"delivery": ["instant", "over time"]
+			"type": [
+				"recovery",
+				"buff"
+			],
+			"target": [
+				"self"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"instant",
+				"over time"
+			]
 		},
 		"require": "g.t_bloodclass>=2&&g.tier5>0",
 		"buy": {
@@ -3021,18 +3823,26 @@
 	},
 	{
 		"id": "bloodshot",
-		"desc": "A projectile made of your blood savagely mutilates the enemy.",
+		"desc": "กระสุนที่ทำจากเลือดของคุณฉีกทำลายศัตรูอย่างโหดเหี้ยม",
 		"extdesc": "Costs part of your hp, scaling with the amount of blood mastery classes you took. Deals damage based on your max hp, improved with use and blood classes taken.",
-		"flavor": "You would put it in a sausage instead, but you are not in the mood.",
+		"flavor": "เจ้าน่าจะเอาไปทำไส้กรอกแทน แต่เจ้าไม่อยู่ในอารมณ์",
 		"sortOrder": 202,
 		"level": 8,
 		"school": "blood",
 		"tags": "t_nospellcraft",
 		"keywords": {
-			"type": ["damage"],
-			"target": ["enemy"],
-			"targets": ["single"],
-			"delivery": ["instant"]
+			"type": [
+				"damage"
+			],
+			"target": [
+				"enemy"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"instant"
+			]
 		},
 		"require": "g.bloodlore>=3",
 		"buy": {
@@ -3050,20 +3860,31 @@
 		"attack": {
 			"kind": "blood",
 			"damage": "15+20*Math.min(1,g.bloodshot/100)+(a.hp*(1+2*Math.min(1,g.bloodshot/100)))/(50-5*g.t_bloodclass)",
-			"potencies": ["spelldmg", "blooddmg"]
+			"potencies": [
+				"spelldmg",
+				"blooddmg"
+			]
 		}
 	},
 	{
 		"id": "bloodspike",
-		"desc": "Blast all enemies with crystallized shards of magically charged blood.",
+		"desc": "ระเบิดศัตรูทั้งหมดด้วยสะเก็ดเลือดที่อัดประจุเวทแล้วตกผลึก",
 		"sortOrder": 204,
 		"level": 5,
 		"school": "blood",
 		"keywords": {
-			"type": ["damage"],
-			"target": ["enemy"],
-			"targets": ["multiple"],
-			"delivery": ["instant"]
+			"type": [
+				"damage"
+			],
+			"target": [
+				"enemy"
+			],
+			"targets": [
+				"multiple"
+			],
+			"delivery": [
+				"instant"
+			]
 		},
 		"require": "g.bloodlore>=5",
 		"buy": {
@@ -3082,7 +3903,10 @@
 			"damage": 16,
 			"targets": "enemies",
 			"maxTargets": 999,
-			"potencies": ["spelldmg", "blooddmg"]
+			"potencies": [
+				"spelldmg",
+				"blooddmg"
+			]
 		},
 		"at": {
 			"100": {
@@ -3097,15 +3921,20 @@
 	},
 	{
 		"id": "gems_exploration",
-		"name": "gem resonance",
-		"desc": "Use your knowledge of the earth to detect valuable gemstones by their resonance.",
-		"flavor": "Hi-Ho, Hi-Ho.",
+		"name": "เสียงสะท้อนอัญมณี",
+		"desc": "ใช้ความรู้เรื่องดินตรวจจับอัญมณีมีค่าด้วยเสียงสะท้อนของมัน",
+		"flavor": "ฮี-โฮ ฮี-โฮ",
 		"sortOrder": 870,
 		"level": 1,
 		"school": "earth",
 		"keywords": {
-			"delivery": ["over time"],
-			"special": ["explore", "resource"]
+			"delivery": [
+				"over time"
+			],
+			"special": [
+				"explore",
+				"resource"
+			]
 		},
 		"require": "g.earthlore>=8&&g.tier1>0",
 		"buy": {
@@ -3130,18 +3959,26 @@
 	},
 	{
 		"id": "mk_apiary",
-		"name": "dbulm's apiary",
-		"desc": "In combat, summon a really angry bee to fight for you.",
+		"name": "โรงเลี้ยงผึ้งของดับูล์ม",
+		"desc": "ในศึก เรียกผึ้งโกรธจัดมาสู้เพื่อคุณ",
 		"tags": "t_fauna_spell",
-		"flavor": "Beees.",
+		"flavor": "ผึ้งงงง.",
 		"sortOrder": 1772,
 		"level": 5,
 		"school": "summoning",
 		"keywords": {
-			"type": ["summon"],
-			"target": ["ally"],
-			"targets": ["multiple"],
-			"delivery": ["over time"]
+			"type": [
+				"summon"
+			],
+			"target": [
+				"ally"
+			],
+			"targets": [
+				"multiple"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.tier5>0&&g.conjuration>=5&&g.summoning>=10",
 		"buy": {
@@ -3180,15 +4017,23 @@
 	},
 	{
 		"id": "starfall",
-		"desc": "You can't escape the sky.",
+		"desc": "เจ้าหนีท้องฟ้าไม่พ้น",
 		"sortOrder": 1600,
 		"level": 10,
 		"school": "astral",
 		"keywords": {
-			"type": ["damage"],
-			"target": ["enemy"],
-			"targets": ["multiple"],
-			"delivery": ["over time"]
+			"type": [
+				"damage"
+			],
+			"target": [
+				"enemy"
+			],
+			"targets": [
+				"multiple"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.tier5>0&&(g.astralseer+g.wizard3+g.wizard2)>0&&g.astronomy>=15&&g.evil2==0",
 		"buy": {
@@ -3211,22 +4056,33 @@
 				"duration": 30,
 				"kind": "astral",
 				"damage": "20~30",
-				"potencies": ["spelldmg", "astraldmg"]
+				"potencies": [
+					"spelldmg",
+					"astraldmg"
+				]
 			}
 		}
 	},
 	{
 		"id": "stoneskin",
-		"name": "stone skin",
+		"name": "ผิวหนังหิน",
 		"sortOrder": 845,
 		"level": 1,
 		"school": "earth",
 		"tags": "t_defbuff",
 		"keywords": {
-			"type": ["buff"],
-			"target": ["self"],
-			"targets": ["single"],
-			"delivery": ["over time"]
+			"type": [
+				"buff"
+			],
+			"target": [
+				"self"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.spellbook>0&&g.earthlore>0",
 		"buy": {
@@ -3250,17 +4106,25 @@
 	},
 	{
 		"id": "copperskin",
-		"name": "copper skin",
-		"desc": "Hardens the skin of the self.",
+		"name": "ผิวหนังทองแดง",
+		"desc": "ทำให้ผิวหนังของตัวเองแข็งแกร่ง",
 		"sortOrder": 844,
 		"level": 2,
 		"school": "earth",
 		"tags": "t_defbuff",
 		"keywords": {
-			"type": ["buff"],
-			"target": ["self"],
-			"targets": ["single"],
-			"delivery": ["over time"]
+			"type": [
+				"buff"
+			],
+			"target": [
+				"self"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.earthlore>=8&&g.tier0>0",
 		"buy": {
@@ -3285,17 +4149,25 @@
 	},
 	{
 		"id": "ironskin",
-		"name": "iron skin",
-		"desc": "Hardens the skin of the self.",
+		"name": "ผิวหนังเหล็ก",
+		"desc": "ทำให้ผิวหนังของตัวเองแข็งแกร่ง",
 		"sortOrder": 843,
 		"level": 3,
 		"school": "earth",
 		"tags": "t_defbuff",
 		"keywords": {
-			"type": ["buff"],
-			"target": ["self"],
-			"targets": ["single"],
-			"delivery": ["over time"]
+			"type": [
+				"buff"
+			],
+			"target": [
+				"self"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.stoneskin.owned&&g.earthlore>=8&&g.tier1>0",
 		"buy": {
@@ -3320,17 +4192,25 @@
 	},
 	{
 		"id": "steelskin",
-		"name": "steel skin",
-		"desc": "Hardens the skin of the self.",
+		"name": "ผิวหนังเหล็กกล้า",
+		"desc": "ทำให้ผิวหนังของตัวเองแข็งแกร่ง",
 		"sortOrder": 842,
 		"level": 5,
 		"school": "earth",
 		"tags": "t_defbuff",
 		"keywords": {
-			"type": ["buff"],
-			"target": ["self"],
-			"targets": ["single"],
-			"delivery": ["over time"]
+			"type": [
+				"buff"
+			],
+			"target": [
+				"self"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.ironskin.owned&&g.earthlore>=12&&g.tier2>0",
 		"buy": {
@@ -3355,17 +4235,25 @@
 	},
 	{
 		"id": "adamantshell",
-		"name": "adamant shell",
-		"desc": "Your skin becomes adamant.",
+		"name": "เปลือกเพชร",
+		"desc": "ผิวหนังของคุณกลายเป็นเพชร",
 		"sortOrder": 841,
 		"level": 10,
 		"school": "earth",
 		"tags": "t_defbuff",
 		"keywords": {
-			"type": ["buff"],
-			"target": ["self"],
-			"targets": ["single"],
-			"delivery": ["over time"]
+			"type": [
+				"buff"
+			],
+			"target": [
+				"self"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.steelskin.owned&&g.earthlore>=15&&g.tier3>0",
 		"buy": {
@@ -3392,15 +4280,24 @@
 	},
 	{
 		"id": "tremor",
-		"desc": "The earth shakes beneath your enemies' feet.",
+		"desc": "ผืนดินสั่นสะเทือนใต้เท้าของศัตรู",
 		"sortOrder": 804,
 		"level": 5,
 		"school": "earth",
 		"keywords": {
-			"type": ["damage", "debuff"],
-			"target": ["enemy"],
-			"targets": ["multiple"],
-			"delivery": ["over time"]
+			"type": [
+				"damage",
+				"debuff"
+			],
+			"target": [
+				"enemy"
+			],
+			"targets": [
+				"multiple"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.slow1.owned&&g.earthlore>=8&&g.tier1>0",
 		"buy": {
@@ -3421,7 +4318,10 @@
 			"kind": "earth",
 			"dot": {
 				"damage": "2~3",
-				"potencies": ["spelldmg", "earthdmg"],
+				"potencies": [
+					"spelldmg",
+					"earthdmg"
+				],
 				"duration": 3,
 				"mod": {
 					"self.speed": -5
@@ -3446,15 +4346,24 @@
 	{
 		"id": "quake",
 		"alias": "earthquake",
-		"desc": "The earth shakes at your command.",
+		"desc": "ผืนดินสั่นสะเทือนตามคำสั่งของคุณ",
 		"sortOrder": 803,
 		"level": 9,
 		"school": "earth",
 		"keywords": {
-			"type": ["damage", "debuff"],
-			"target": ["enemy"],
-			"targets": ["multiple"],
-			"delivery": ["over time"]
+			"type": [
+				"damage",
+				"debuff"
+			],
+			"target": [
+				"enemy"
+			],
+			"targets": [
+				"multiple"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.earthlore>=10&&g.tier2>0",
 		"buy": {
@@ -3476,7 +4385,10 @@
 			"dot": {
 				"duration": 30,
 				"damage": "5~12",
-				"potencies": ["spelldmg", "earthdmg"],
+				"potencies": [
+					"spelldmg",
+					"earthdmg"
+				],
 				"mod": {
 					"self.speed": -7
 				}
@@ -3485,16 +4397,24 @@
 	},
 	{
 		"id": "resistparalysis",
-		"name": "resist paralysis",
-		"desc": "Keep your limbs fluid.",
+		"name": "ต้านทานอัมพาต",
+		"desc": "ทำให้แขนขาของคุณคงความยืดหยุ่น",
 		"sortOrder": 548,
 		"level": 7,
 		"school": "water",
 		"keywords": {
-			"type": ["buff"],
-			"target": ["self"],
-			"targets": ["single"],
-			"delivery": ["over time"]
+			"type": [
+				"buff"
+			],
+			"target": [
+				"self"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.waterlore>=10&&g.tier2>0",
 		"buy": {
@@ -3517,16 +4437,24 @@
 	},
 	{
 		"id": "resistsilence",
-		"name": "resist silence",
-		"desc": "Keep your mind active and alert.",
+		"name": "ต้านทานความเงียบ",
+		"desc": "ทำให้จิตใจของคุณคงความตื่นตัวและแจ่มใส",
 		"sortOrder": 448,
 		"level": 7,
 		"school": "mana",
 		"keywords": {
-			"type": ["buff"],
-			"target": ["self"],
-			"targets": ["single"],
-			"delivery": ["over time"]
+			"type": [
+				"buff"
+			],
+			"target": [
+				"self"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.lore>=15",
 		"buy": {
@@ -3555,10 +4483,18 @@
 		"level": 7,
 		"school": "light",
 		"keywords": {
-			"type": ["buff"],
-			"target": ["self"],
-			"targets": ["single"],
-			"delivery": ["over time"]
+			"type": [
+				"buff"
+			],
+			"target": [
+				"self"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.lightlore>=9&&g.tier1>0",
 		"buy": {
@@ -3587,13 +4523,18 @@
 	},
 	{
 		"id": "abundance",
-		"desc": "Herbs sprout all around you as you walk.",
+		"desc": "สมุนไพรงอกขึ้นทั่วรอบตัวคุณขณะเดิน",
 		"sortOrder": 970,
 		"level": 8,
 		"school": "nature",
 		"keywords": {
-			"delivery": ["over time"],
-			"special": ["explore", "resource"]
+			"delivery": [
+				"over time"
+			],
+			"special": [
+				"explore",
+				"resource"
+			]
 		},
 		"require": "g.naturelore>=15&&g.tier3>0",
 		"buy": {
@@ -3616,16 +4557,26 @@
 	},
 	{
 		"id": "blindflash",
-		"name": "blinding flash",
-		"desc": "A flash of pure white light.",
+		"name": "แสงแวววาบ",
+		"desc": "แสงสีขาวบริสุทธิ์แวบวาบ",
 		"sortOrder": 1104,
 		"level": 8,
 		"school": "light",
 		"keywords": {
-			"type": ["damage", "debuff"],
-			"target": ["enemy"],
-			"targets": ["multiple"],
-			"delivery": ["instant", "over time"]
+			"type": [
+				"damage",
+				"debuff"
+			],
+			"target": [
+				"enemy"
+			],
+			"targets": [
+				"multiple"
+			],
+			"delivery": [
+				"instant",
+				"over time"
+			]
 		},
 		"require": "g.lightlore>=10&&g.tier2>0",
 		"buy": {
@@ -3643,7 +4594,10 @@
 			"targets": "enemies",
 			"maxTargets": 999,
 			"damage": "3~5",
-			"potencies": ["spelldmg", "lightdmg"],
+			"potencies": [
+				"spelldmg",
+				"lightdmg"
+			],
 			"dot": {
 				"name": "blind",
 				"kind": "light",
@@ -3657,15 +4611,23 @@
 	},
 	{
 		"id": "venom2",
-		"name": "venom II",
+		"name": "พิษ II",
 		"sortOrder": 903,
 		"level": 9,
 		"school": "nature",
 		"keywords": {
-			"type": ["damage"],
-			"target": ["enemy"],
-			"targets": ["single"],
-			"delivery": ["over time"]
+			"type": [
+				"damage"
+			],
+			"target": [
+				"enemy"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.venom1.owned&&g.naturelore>=15&&g.tier3>0",
 		"buy": {
@@ -3682,7 +4644,9 @@
 		"attack": {
 			"targetspec": {
 				"notaffectedby": {
-					"condition": ["t_venom"],
+					"condition": [
+						"t_venom"
+					],
 					"conditiontext": "venom"
 				}
 			},
@@ -3692,22 +4656,37 @@
 				"tags": "t_venom",
 				"duration": 30,
 				"damage": "8~15",
-				"potencies": ["spelldmg", "naturedmg", "poisondmg"]
+				"potencies": [
+					"spelldmg",
+					"naturedmg",
+					"poisondmg"
+				]
 			}
 		}
 	},
 	{
 		"id": "hightide",
-		"name": "high tide",
-		"desc": "Flood the field of battle.",
+		"name": "น้ำขึ้นสูง",
+		"desc": "ท่วมสนามรบ",
 		"sortOrder": 502,
 		"level": 6,
 		"school": "water",
 		"keywords": {
-			"type": ["damage", "debuff"],
-			"target": ["self", "ally", "enemy"],
-			"targets": ["multiple"],
-			"delivery": ["over time"]
+			"type": [
+				"damage",
+				"debuff"
+			],
+			"target": [
+				"self",
+				"ally",
+				"enemy"
+			],
+			"targets": [
+				"multiple"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.waterlore>=11",
 		"buy": {
@@ -3742,7 +4721,10 @@
 								"self.speed": -3,
 								"dodge": -3
 							},
-							"potencies": ["spelldmg", "waterdmg"]
+							"potencies": [
+								"spelldmg",
+								"waterdmg"
+							]
 						}
 					},
 					{
@@ -3771,13 +4753,21 @@
 		"level": 7,
 		"school": "nature",
 		"keywords": {
-			"type": ["damage"],
-			"target": ["enemy"],
-			"targets": ["multiple"],
-			"delivery": ["over time"]
+			"type": [
+				"damage"
+			],
+			"target": [
+				"enemy"
+			],
+			"targets": [
+				"multiple"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.venom2.owned&&(g.t_natureclass+g.tier4)>=2",
-		"desc": "A fungal cloud that damages all enemies.",
+		"desc": "เมฆเห็ดราที่สร้างความเสียหายแก่ศัตรูทั้งหมด",
 		"buy": {
 			"research": 4000,
 			"tomes": 10,
@@ -3799,23 +4789,35 @@
 				"tags": "t_venom",
 				"duration": 45,
 				"damage": "7~11",
-				"potencies": ["spelldmg", "naturedmg", "poisondmg"]
+				"potencies": [
+					"spelldmg",
+					"naturedmg",
+					"poisondmg"
+				]
 			}
 		}
 	},
 	{
 		"id": "heal3",
-		"name": "sealing light III",
-		"desc": "Seams of light close your wounds.",
+		"name": "แสงผนึก III",
+		"desc": "รอยต่อแห่งแสงรังปิดบาดแผลของคุณ",
 		"sortOrder": 1134,
 		"level": 7,
 		"school": "light",
 		"tags": "t_healspell",
 		"keywords": {
-			"type": ["recovery"],
-			"target": ["self"],
-			"targets": ["single"],
-			"delivery": ["instant"]
+			"type": [
+				"recovery"
+			],
+			"target": [
+				"self"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"instant"
+			]
 		},
 		"require": "g.lightlore>=14&&g.heal2.owned&&g.heallore>=3&&g.tier3>0&&g.evil2==0",
 		"buy": {
@@ -3823,7 +4825,10 @@
 			"tomes": 10,
 			"lightgem": 10
 		},
-		"need": ["g.evil2==0", "good2"],
+		"need": [
+			"g.evil2==0",
+			"good2"
+		],
 		"needtext": "Cannot be sinister and must be at least scrupulous.",
 		"cost": {
 			"light": 7
@@ -3836,22 +4841,35 @@
 			"harmless": true,
 			"healing": 200,
 			"kind": "light",
-			"potencies": ["spellheal", "lightdmg"]
+			"potencies": [
+				"spellheal",
+				"lightdmg"
+			]
 		}
 	},
 	{
 		"id": "forceten",
-		"name": "force ten",
-		"desc": "The storm before the calm.",
-		"flavor": "Force without form.",
+		"name": "แรงสิบ",
+		"desc": "พายุก่อนความสงบ",
+		"flavor": "พลังไร้รูปทรง",
 		"sortOrder": 500,
 		"level": 15,
 		"school": "water",
 		"keywords": {
-			"type": ["damage"],
-			"target": ["self", "ally", "enemy"],
-			"targets": ["multiple"],
-			"delivery": ["over time"]
+			"type": [
+				"damage"
+			],
+			"target": [
+				"self",
+				"ally",
+				"enemy"
+			],
+			"targets": [
+				"multiple"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.waterlore>=18&&g.tier4>0",
 		"buy": {
@@ -3879,7 +4897,10 @@
 						"kind": "water",
 						"damage": "20~30",
 						"name": "hurricane",
-						"potencies": ["spelldmg", "waterdmg"]
+						"potencies": [
+							"spelldmg",
+							"waterdmg"
+						]
 					},
 					{
 						"targets": "allies",
@@ -3896,17 +4917,27 @@
 	},
 	{
 		"id": "calming",
-		"name": "calming murmurs",
-		"desc": "Whispers on the wind calm your troubled mind.",
+		"name": "เสียงพึมพำผ่อนคลาย",
+		"desc": "เสียงกระซิบตามสายลมทำให้จิตใจที่ว้าวุ่นของคุณสงบลง",
 		"sortOrder": 1970,
 		"level": 2,
 		"school": "charms",
 		"keywords": {
-			"type": ["recovery"],
-			"target": ["self"],
-			"targets": ["single"],
-			"delivery": ["over time"],
-			"special": ["explore"]
+			"type": [
+				"recovery"
+			],
+			"target": [
+				"self"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"over time"
+			],
+			"special": [
+				"explore"
+			]
 		},
 		"require": "g.spiritlore>=5",
 		"buy": {
@@ -3932,17 +4963,27 @@
 	},
 	{
 		"id": "soothing",
-		"name": "soothing breeze",
-		"desc": "A light wind steadies your nerves.",
+		"name": "สายลมอ่อนโยน",
+		"desc": "สายลมเบา ๆ ทำให้เส้นประสาทของคุณทรงตัว",
 		"sortOrder": 1971,
 		"level": 2,
 		"school": "charms",
 		"keywords": {
-			"type": ["recovery"],
-			"target": ["self"],
-			"targets": ["single"],
-			"delivery": ["over time"],
-			"special": ["explore"]
+			"type": [
+				"recovery"
+			],
+			"target": [
+				"self"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"over time"
+			],
+			"special": [
+				"explore"
+			]
 		},
 		"require": "g.airlore>=3",
 		"buy": {
@@ -3968,16 +5009,26 @@
 	},
 	{
 		"id": "quickening_melody",
-		"name": "quickening melody",
-		"desc": "A magical melody that quickens everyone's pace.",
+		"name": "ท่วงทำนองเร่งจังหวะ",
+		"desc": "ท่วงทำนองเวทมนตร์ที่เร่งก้าวของทุกคน",
 		"sortOrder": 1940,
 		"level": 3,
 		"school": "charms",
 		"keywords": {
-			"type": ["buff"],
-			"target": ["self", "ally", "enemy"],
-			"targets": ["multiple"],
-			"delivery": ["over time"]
+			"type": [
+				"buff"
+			],
+			"target": [
+				"self",
+				"ally",
+				"enemy"
+			],
+			"targets": [
+				"multiple"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.charms>=4",
 		"buy": {
@@ -4010,16 +5061,26 @@
 	},
 	{
 		"id": "luminescent_enchantment",
-		"name": "luminescent enchantment",
-		"desc": "Conjure a swirling array of dancing lights that stick to everyone.",
+		"name": "เวทเรืองแสง",
+		"desc": "สร้างวงแสงร่ายรำที่หมุนวนและติดตัวทุกคน",
 		"sortOrder": 1944,
 		"level": 6,
 		"school": "charms",
 		"keywords": {
-			"type": ["debuff"],
-			"target": ["self", "ally", "enemy"],
-			"targets": ["multiple"],
-			"delivery": ["over time"]
+			"type": [
+				"debuff"
+			],
+			"target": [
+				"self",
+				"ally",
+				"enemy"
+			],
+			"targets": [
+				"multiple"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.charms>=4&&g.evil2<=0",
 		"buy": {
@@ -4054,16 +5115,26 @@
 	},
 	{
 		"id": "glimmering_aura",
-		"name": "glimmering aura",
-		"desc": "Render a gemstone into a temporary source of illumination.",
+		"name": "ออร่าแวววาว",
+		"desc": "ทำให้อัญมณีกลายเป็นแหล่งกำเนิดแสงชั่วคราว",
 		"sortOrder": 1942,
 		"level": 2,
 		"school": "charms",
 		"keywords": {
-			"type": ["buff"],
-			"target": ["self", "ally", "enemy"],
-			"targets": ["multiple"],
-			"delivery": ["over time"]
+			"type": [
+				"buff"
+			],
+			"target": [
+				"self",
+				"ally",
+				"enemy"
+			],
+			"targets": [
+				"multiple"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.charms>=4",
 		"buy": {
@@ -4095,16 +5166,24 @@
 	},
 	{
 		"id": "eclipsing_desolate_destinies",
-		"name": "eclipsing desolate destinies",
-		"desc": "Fill the mind of a foe with visions of varying horrifying fates, forcing them to grapple with the reality of their imminent demise.",
+		"name": "ดับบดบังชะตาวอดวาย",
+		"desc": "เติมเต็มจิตใจของศัตรูด้วยภาพชะตากรรมอันน่าสยดสยองนานัปการ บีบให้พวกเขาต้องเผชิญกับความจริงของการจากไปอันใกล้ถนัด",
 		"sortOrder": 1900,
 		"level": 8,
 		"school": "charms",
 		"keywords": {
-			"type": ["damage"],
-			"target": ["enemy"],
-			"targets": ["single"],
-			"delivery": ["over time"]
+			"type": [
+				"damage"
+			],
+			"target": [
+				"enemy"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.charms>=5&&g.spiritlore>=8",
 		"buy": {
@@ -4135,22 +5214,33 @@
 					"kind": "spirit",
 					"damage": "3~5",
 					"duration": 3,
-					"potencies": ["spelldmg", "charmdmg"]
+					"potencies": [
+						"spelldmg",
+						"charmdmg"
+					]
 				}
 			}
 		}
 	},
 	{
 		"id": "clarity",
-		"desc": "Cure yourself or an ally of a charm.",
+		"desc": "รักษาตัวคุณหรือพันธมิตรจากมนตร์เสน่ห์",
 		"sortOrder": 1938,
 		"level": 7,
 		"school": "charms",
 		"keywords": {
-			"type": ["recovery"],
-			"target": ["self"],
-			"targets": ["single"],
-			"delivery": ["instant"]
+			"type": [
+				"recovery"
+			],
+			"target": [
+				"self"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"instant"
+			]
 		},
 		"require": "g.charms>=3",
 		"caststoppers": [],
@@ -4167,16 +5257,28 @@
 	},
 	{
 		"id": "bolstering_hope",
-		"name": "bolstering hope",
-		"desc": "Gently disperse the essence of hopeful aspirations, imbuing the minds of others.",
+		"name": "เสริมความหวัง",
+		"desc": "ค่อย ๆ แผ่กระจายแก่นแท้แห่งความหวังอันทะเยอทะยาน ซึมซับเข้าสู่จิตใจผู้อื่น",
 		"sortOrder": 1930,
 		"level": 4,
 		"school": "charms",
 		"keywords": {
-			"type": ["recovery", "buff"],
-			"target": ["self", "ally", "enemy"],
-			"targets": ["multiple"],
-			"delivery": ["instant", "over time"]
+			"type": [
+				"recovery",
+				"buff"
+			],
+			"target": [
+				"self",
+				"ally",
+				"enemy"
+			],
+			"targets": [
+				"multiple"
+			],
+			"delivery": [
+				"instant",
+				"over time"
+			]
 		},
 		"require": "g.charms>=3",
 		"buy": {
@@ -4232,16 +5334,27 @@
 	},
 	{
 		"id": "aura_of_benevolence",
-		"name": "aura of benevolence",
-		"desc": "Use your life force to produce a beneficial aura, mending the wounds and spirits of your allies.",
+		"name": "ออร่าแห่งเมตตา",
+		"desc": "ใช้พลังชีวิตของคุณสร้างออร่าอันเป็นประโยชน์ ซ่อมแซมบาดแผลและขวัญกำลังใจของพันธมิตร",
 		"sortOrder": 1932,
 		"level": 3,
 		"school": "charms",
 		"keywords": {
-			"type": ["damage", "recovery", "buff"],
-			"target": ["self", "ally"],
-			"targets": ["multiple"],
-			"delivery": ["over time"]
+			"type": [
+				"damage",
+				"recovery",
+				"buff"
+			],
+			"target": [
+				"self",
+				"ally"
+			],
+			"targets": [
+				"multiple"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.tier3>=1&&g.charms>=5",
 		"buy": {
@@ -4308,17 +5421,25 @@
 	},
 	{
 		"id": "waterregen1",
-		"name": "lesser mending river",
-		"desc": "Cleansing waters trickle over you, slowly mending your wounds.",
+		"name": "สายน้ำเยียวยาระดับล่าง",
+		"desc": "น้ำชำระล้างไหลรินผ่านตัวคุณ ค่อย ๆ เยียวยาบาดแผล",
 		"sortOrder": 532,
 		"level": 4,
 		"school": "water",
 		"tags": "t_healspell,t_waterhealbuff",
 		"keywords": {
-			"type": ["recovery"],
-			"target": ["self"],
-			"targets": ["single"],
-			"delivery": ["over time"]
+			"type": [
+				"recovery"
+			],
+			"target": [
+				"self"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.waterlore>=4&&g.tier0>0",
 		"buy": {
@@ -4336,7 +5457,10 @@
 			"harmless": true,
 			"targets": "self",
 			"kind": "water",
-			"potencies": ["spellheal", "waterdmg"],
+			"potencies": [
+				"spellheal",
+				"waterdmg"
+			],
 			"tags": "t_waterheal",
 			"duration": 90,
 			"healing": 2
@@ -4344,17 +5468,25 @@
 	},
 	{
 		"id": "waterregen2",
-		"name": "mending river",
-		"desc": "Cleansing waters flow over you, slowly mending your wounds.",
+		"name": "สายน้ำเยียวยา",
+		"desc": "น้ำชำระล้างไหลผ่านตัวคุณ ค่อย ๆ เยียวยาบาดแผล",
 		"sortOrder": 531,
 		"level": 7,
 		"school": "water",
 		"tags": "t_healspell,t_waterhealbuff",
 		"keywords": {
-			"type": ["recovery"],
-			"target": ["self"],
-			"targets": ["single"],
-			"delivery": ["over time"]
+			"type": [
+				"recovery"
+			],
+			"target": [
+				"self"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.waterlore>=7&&g.tier0>0",
 		"buy": {
@@ -4373,7 +5505,10 @@
 			"harmless": true,
 			"targets": "self",
 			"kind": "water",
-			"potencies": ["spellheal", "waterdmg"],
+			"potencies": [
+				"spellheal",
+				"waterdmg"
+			],
 			"tags": "t_waterheal",
 			"duration": 90,
 			"healing": 4
@@ -4381,17 +5516,25 @@
 	},
 	{
 		"id": "waterregen3",
-		"name": "greater mending river",
-		"desc": "Cleansing waters rush over you, rapidly mending your wounds.",
+		"name": "สายน้ำเยียวยาขั้นสูง",
+		"desc": "น้ำชำระล้างหลั่งไหลผ่านตัวคุณ เยียวยาบาดแผลอย่างรวดเร็ว",
 		"sortOrder": 530,
 		"level": 10,
 		"school": "water",
 		"tags": "t_healspell,t_waterhealbuff",
 		"keywords": {
-			"type": ["recovery"],
-			"target": ["self"],
-			"targets": ["single"],
-			"delivery": ["over time"]
+			"type": [
+				"recovery"
+			],
+			"target": [
+				"self"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.waterlore>=12&&g.tier1>0&&g.heallore>=5",
 		"buy": {
@@ -4410,7 +5553,10 @@
 			"harmless": true,
 			"targets": "self",
 			"kind": "water",
-			"potencies": ["spellheal", "waterdmg"],
+			"potencies": [
+				"spellheal",
+				"waterdmg"
+			],
 			"tags": "t_waterheal",
 			"duration": 90,
 			"healing": 6
@@ -4418,17 +5564,25 @@
 	},
 	{
 		"id": "natureheal1",
-		"name": "lesser life's bloom",
-		"desc": "Wild energies flow through you, slowly closing wounds before providing a burst of healing energy.",
+		"name": "ดอกไม้ชีวิตระดับล่าง",
+		"desc": "พลังป่าเถื่อนไหลผ่านตัวคุณ ค่อย ๆ ปิดบาดแผลก่อนจะมอบพลังเยียวยาอย่างรวดเร็ว",
 		"sortOrder": 931,
 		"level": 5,
 		"school": "nature",
 		"tags": "t_healspell,t_naturehealbuff",
 		"keywords": {
-			"type": ["recovery"],
-			"target": ["self"],
-			"targets": ["single"],
-			"delivery": ["over time"]
+			"type": [
+				"recovery"
+			],
+			"target": [
+				"self"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.naturelore>=9",
 		"buy": {
@@ -4449,30 +5603,44 @@
 			"tags": "t_natureheal",
 			"duration": 10,
 			"healing": 1.5,
-			"potencies": ["spellheal", "naturedmg"],
+			"potencies": [
+				"spellheal",
+				"naturedmg"
+			],
 			"onExpire": {
 				"name": "blossom",
 				"harmless": true,
 				"targets": "self",
 				"kind": "nature",
-				"potencies": ["spellheal", "naturedmg"],
+				"potencies": [
+					"spellheal",
+					"naturedmg"
+				],
 				"healing": 40
 			}
 		}
 	},
 	{
 		"id": "natureheal2",
-		"name": "life's bloom",
-		"desc": "Wild energies course through you, knitting together injuries and then providing a rapid burst of healing.",
+		"name": "ดอกไม้ชีวิต",
+		"desc": "พลังป่าเถื่อนพัดผ่านตัวคุณ เย็บประสานบาดแผลแล้วมอบพลังเยียวยาอย่างรวดเร็ว",
 		"sortOrder": 930,
 		"level": 9,
 		"school": "nature",
 		"tags": "t_healspell,t_naturehealbuff",
 		"keywords": {
-			"type": ["recovery"],
-			"target": ["self"],
-			"targets": ["single"],
-			"delivery": ["over time"]
+			"type": [
+				"recovery"
+			],
+			"target": [
+				"self"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.naturelore>=14&&g.heallore>=5&&g.tier0>0",
 		"buy": {
@@ -4494,28 +5662,42 @@
 			"tags": "t_natureheal",
 			"duration": 15,
 			"healing": 3,
-			"potencies": ["spellheal", "naturedmg"],
+			"potencies": [
+				"spellheal",
+				"naturedmg"
+			],
 			"onExpire": {
 				"name": "blossom",
 				"harmless": true,
 				"targets": "self",
 				"kind": "nature",
-				"potencies": ["spellheal", "naturedmg"],
+				"potencies": [
+					"spellheal",
+					"naturedmg"
+				],
 				"healing": 100
 			}
 		}
 	},
 	{
 		"id": "braveryaura",
-		"name": "Aura of Bravery",
+		"name": "ออร่าแห่งความกล้าหาญ",
 		"sortOrder": 1151,
 		"level": 6,
 		"school": "light",
 		"keywords": {
-			"type": ["buff"],
-			"target": ["ally"],
-			"targets": ["multiple"],
-			"delivery": ["over time"]
+			"type": [
+				"buff"
+			],
+			"target": [
+				"ally"
+			],
+			"targets": [
+				"multiple"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.lightlore>=12&&g.charms>=4",
 		"buy": {
@@ -4547,17 +5729,25 @@
 	},
 	{
 		"id": "etherealness1",
-		"name": "lesser etherealness",
-		"desc": "A partial intangibility to protect from physical attacks.",
+		"name": "ภาวะไร้กายระดับล่าง",
+		"desc": "สภาวะจับต้องไม่ได้บางส่วนเพื่อป้องกันการโจมตีกายภาพ",
 		"sortOrder": 1041,
 		"level": 5,
 		"school": "spirit",
 		"tags": "t_etherealbuff",
 		"keywords": {
-			"type": ["buff"],
-			"target": ["self"],
-			"targets": ["single"],
-			"delivery": ["over time"]
+			"type": [
+				"buff"
+			],
+			"target": [
+				"self"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.spiritlore>=3",
 		"buy": {
@@ -4583,17 +5773,25 @@
 	},
 	{
 		"id": "etherealness2",
-		"name": "etherealness",
-		"desc": "More potent than its predecessor, with greater protection against the weapons of your enemies.",
+		"name": "ภาวะไร้กาย",
+		"desc": "ทรงพลังกว่าบรรพบุรุษ ด้วยการป้องกันอาวุธของศัตรูที่แข็งแกร่งกว่า",
 		"sortOrder": 1040,
 		"level": 8,
 		"school": "spirit",
 		"tags": "t_etherealbuff",
 		"keywords": {
-			"type": ["buff"],
-			"target": ["self"],
-			"targets": ["single"],
-			"delivery": ["over time"]
+			"type": [
+				"buff"
+			],
+			"target": [
+				"self"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.etherealness1.owned&&g.spiritlore>=9&&g.tier2>0",
 		"buy": {
@@ -4619,17 +5817,26 @@
 	},
 	{
 		"id": "spiritpossess",
-		"name": "spiritual possession",
-		"desc": "Entreat a captured soul to briefly possess an enemy before being granted its release.",
-		"flavor": "Their screams of terror would pierce your ears, if only they could make a sound.",
+		"name": "การสิงสู่วิญญาณ",
+		"desc": "อ้อนวอนวิญญาณที่กักขังไว้ให้เข้าสิงศัตรูชั่วครู่ก่อนจะปล่อยมันเป็นอิสระ",
+		"flavor": "เสียงกรีดร้องแห่งความสยดสยองของพวกมันคงแทงทะลุหูคุณ หากเพียงพวกมันส่งเสียงได้",
 		"sortOrder": 1007,
 		"level": 10,
 		"school": "spirit",
 		"keywords": {
-			"type": ["damage"],
-			"target": ["enemy"],
-			"targets": ["single"],
-			"delivery": ["instant", "over time"]
+			"type": [
+				"damage"
+			],
+			"target": [
+				"enemy"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"instant",
+				"over time"
+			]
 		},
 		"tags": "t_silencespell",
 		"require": "g.spiritlore>=15&&g.tier3>0",
@@ -4648,30 +5855,46 @@
 		},
 		"attack": {
 			"damage": "20~25",
-			"potencies": ["spelldmg", "spiritdmg"],
+			"potencies": [
+				"spelldmg",
+				"spiritdmg"
+			],
 			"dot": {
 				"flags": "silence",
 				"name": "possessed",
 				"kind": "spirit",
 				"duration": 6,
 				"damage": "4~6",
-				"potencies": ["spelldmg", "spiritdmg"]
+				"potencies": [
+					"spelldmg",
+					"spiritdmg"
+				]
 			}
 		}
 	},
 	{
 		"id": "spiritconfuse",
-		"name": "befuddling spirits",
-		"desc": "Confuse the mind of the target.",
+		"name": "วิญญาณสับสน",
+		"desc": "ทำให้จิตใจของเป้าหมายสับสน",
 		"sortOrder": 1005,
 		"level": 7,
 		"school": "spirit",
 		"tags": "t_confusespell",
 		"keywords": {
-			"type": ["damage", "debuff"],
-			"target": ["enemy"],
-			"targets": ["single"],
-			"delivery": ["instant", "over time"]
+			"type": [
+				"damage",
+				"debuff"
+			],
+			"target": [
+				"enemy"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"instant",
+				"over time"
+			]
 		},
 		"require": "g.spiritlore>=12&&g.tier2>0",
 		"buy": {
@@ -4688,7 +5911,10 @@
 		},
 		"attack": {
 			"damage": "25~30",
-			"potencies": ["spelldmg", "spiritdmg"],
+			"potencies": [
+				"spelldmg",
+				"spiritdmg"
+			],
 			"dot": {
 				"id": "confuse",
 				"name": "confused",
@@ -4700,17 +5926,25 @@
 	},
 	{
 		"id": "mk_snek",
-		"name": "summon arcane serpent",
-		"desc": "In combat, summon an arcane serpent to fight for you.",
+		"name": "เรียกงูเวทมนตร์",
+		"desc": "ในศึก เรียกงูเวทมนตร์มาสู้เพื่อคุณ",
 		"tags": "t_fauna_spell",
 		"sortOrder": 1780,
 		"level": 3,
 		"school": "summoning",
 		"keywords": {
-			"type": ["summon"],
-			"target": ["ally"],
-			"targets": ["single"],
-			"delivery": ["instant"]
+			"type": [
+				"summon"
+			],
+			"target": [
+				"ally"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"instant"
+			]
 		},
 		"require": "g.tier3>0&&g.conjuration>=5&&g.lore>=15",
 		"buy": {
@@ -4736,16 +5970,24 @@
 	},
 	{
 		"id": "mk_prism",
-		"name": "summon fulminant prism",
-		"desc": "In combat, create a fulminant prism to destroy your enemies.",
+		"name": "เรียกปริซึมระเบิดพลัง",
+		"desc": "ในศึก สร้างปริซึมระเบิดพลังเพื่อทำลายศัตรูของคุณ",
 		"sortOrder": 1759,
 		"level": 8,
 		"school": "summoning",
 		"keywords": {
-			"type": ["summon"],
-			"target": ["ally"],
-			"targets": ["single"],
-			"delivery": ["instant"]
+			"type": [
+				"summon"
+			],
+			"target": [
+				"ally"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"instant"
+			]
 		},
 		"require": "g.tier5>0&&g.summoning>=5&&g.lore>=20",
 		"buy": {
@@ -4774,16 +6016,24 @@
 	},
 	{
 		"id": "mk_hero_ancestor",
-		"name": "summon heroic ancestor",
-		"desc": "In combat, summon an ancestral hero to defend you.",
+		"name": "เรียกบรรพชนผู้กล้า",
+		"desc": "ในศึก เรียกวีรบุรุษบรรพชนมาปกป้องคุณ",
 		"sortOrder": 1757,
 		"level": 8,
 		"school": "summoning",
 		"keywords": {
-			"type": ["summon"],
-			"target": ["ally"],
-			"targets": ["single"],
-			"delivery": ["instant"]
+			"type": [
+				"summon"
+			],
+			"target": [
+				"ally"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"instant"
+			]
 		},
 		"require": "g.tier5>0&&g.summoning>=5&&g.spiritlore>=15",
 		"buy": {
@@ -4812,16 +6062,24 @@
 	},
 	{
 		"id": "mk_frostgiant",
-		"name": "summon frost giant",
-		"desc": "In combat, summon a frost giant to fight for you.",
+		"name": "เรียกยักษ์น้ำแข็ง",
+		"desc": "ในศึก เรียกยักษ์น้ำแข็งมาสู้เพื่อคุณ",
 		"sortOrder": 1758,
 		"level": 8,
 		"school": "summoning",
 		"keywords": {
-			"type": ["summon"],
-			"target": ["ally"],
-			"targets": ["single"],
-			"delivery": ["instant"]
+			"type": [
+				"summon"
+			],
+			"target": [
+				"ally"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"instant"
+			]
 		},
 		"require": "g.tier5>0&&g.summoning>=5&&g.waterlore>=15",
 		"buy": {
@@ -4850,14 +6108,22 @@
 	},
 	{
 		"id": "mon_mk_stingybee",
-		"name": "spawn bees",
+		"name": "สร้างผึ้ง",
 		"level": 5,
 		"school": "arcane",
 		"keywords": {
-			"type": ["summon"],
-			"target": ["ally"],
-			"targets": ["single"],
-			"delivery": ["instant"]
+			"type": [
+				"summon"
+			],
+			"target": [
+				"ally"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"instant"
+			]
 		},
 		"require": "g.lore>9999",
 		"cd": 30,
@@ -4874,17 +6140,25 @@
 	},
 	{
 		"id": "mk_phoenix",
-		"name": "summon phoenix",
-		"desc": "In combat, summon a phoenix to fight for you.",
+		"name": "เรียกฟีนิกซ์",
+		"desc": "ในศึก เรียกฟีนิกซ์มาสู้เพื่อคุณ",
 		"tags": "t_fauna_spell",
 		"sortOrder": 1760,
 		"level": 7,
 		"school": "summoning",
 		"keywords": {
-			"type": ["summon"],
-			"target": ["ally"],
-			"targets": ["single"],
-			"delivery": ["instant"]
+			"type": [
+				"summon"
+			],
+			"target": [
+				"ally"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"instant"
+			]
 		},
 		"require": "g.summoning>=12&&g.tier4>0",
 		"buy": {
@@ -4913,17 +6187,25 @@
 	},
 	{
 		"id": "mk_sandmite",
-		"name": "summon sand mite",
-		"desc": "In combat, summon a sand mite to fight for you.",
+		"name": "เรียกไรทราย",
+		"desc": "ในศึก เรียกไรทรายมาสู้เพื่อคุณ",
 		"tags": "t_fauna_spell",
 		"sortOrder": 1778,
 		"level": 4,
 		"school": "summoning",
 		"keywords": {
-			"type": ["summon"],
-			"target": ["ally"],
-			"targets": ["single"],
-			"delivery": ["instant"]
+			"type": [
+				"summon"
+			],
+			"target": [
+				"ally"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"instant"
+			]
 		},
 		"require": "g.conjuration>=7||g.tier2>0",
 		"buy": {
@@ -4952,14 +6234,22 @@
 	},
 	{
 		"id": "mon_dig",
-		"name": "dig",
+		"name": "ขุด",
 		"level": 1,
 		"school": "earth",
 		"keywords": {
-			"type": ["damage"],
-			"target": ["enemy"],
-			"targets": ["multiple"],
-			"delivery": ["over time"]
+			"type": [
+				"damage"
+			],
+			"target": [
+				"enemy"
+			],
+			"targets": [
+				"multiple"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.earthlore>999",
 		"cd": 10,
@@ -4990,16 +6280,24 @@
 	},
 	{
 		"id": "mk_shadow",
-		"name": "coalesce shadow",
-		"desc": "Animate your shadow for a dependable ally- a risky move.",
+		"name": "รวมเงา",
+		"desc": "ปลุกเงาของคุณให้เป็นพันธมิตรที่ไว้ใจได้-การเดิมพันที่เสี่ยง",
 		"sortOrder": 1773,
 		"level": 5,
 		"school": "summoning",
 		"keywords": {
-			"type": ["summon"],
-			"target": ["ally"],
-			"targets": ["single"],
-			"delivery": ["instant"]
+			"type": [
+				"summon"
+			],
+			"target": [
+				"ally"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"instant"
+			]
 		},
 		"require": "(g.conjuration>=8||g.tier2>0)&&g.shadowlore>=5",
 		"buy": {
@@ -5029,16 +6327,24 @@
 	},
 	{
 		"id": "mk_painrune",
-		"name": "summon rune of agony",
-		"desc": "Summon a rune of pure suffering. Its dark power doesn't distinguish between friend and foe.",
+		"name": "เรียกรูนแห่งความเจ็บปวด",
+		"desc": "เรียกรูนแห่งความทุกข์ทรมานบริสุทธิ์ พลังมืดของมันไม่แยกแยะมิตรและศัตรู",
 		"sortOrder": 1761,
 		"level": 7,
 		"school": "summoning",
 		"keywords": {
-			"type": ["summon"],
-			"target": ["ally"],
-			"targets": ["single"],
-			"delivery": ["instant"]
+			"type": [
+				"summon"
+			],
+			"target": [
+				"ally"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"instant"
+			]
 		},
 		"require": "g.summoning>=10&&g.runelore>=3&&g.shadowlore>=10",
 		"buy": {
@@ -5067,16 +6373,24 @@
 	},
 	{
 		"id": "mk_nova",
-		"name": "summon nova",
-		"desc": "Summon an incarnation of extreme light as an ally.",
+		"name": "เรียกโนวา",
+		"desc": "เรียกอวตารแห่งแสงอันสุดขั้วมาเป็นพันธมิตร",
 		"sortOrder": 1747,
 		"level": 10,
 		"school": "summoning",
 		"keywords": {
-			"type": ["summon"],
-			"target": ["ally"],
-			"targets": ["single"],
-			"delivery": ["instant"]
+			"type": [
+				"summon"
+			],
+			"target": [
+				"ally"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"instant"
+			]
 		},
 		"require": "g.summoning>=13&&g.planeslore>=15&&g.lightlore>=15",
 		"buy": {
@@ -5106,16 +6420,24 @@
 	},
 	{
 		"id": "mk_black_hole",
-		"name": "summon black hole",
-		"desc": "Summon an incarnation of extreme shadow as an ally.",
+		"name": "เรียกหลุมดำ",
+		"desc": "เรียกอวตารแห่งเงาอันสุดขั้วมาเป็นพันธมิตร",
 		"sortOrder": 1748,
 		"level": 10,
 		"school": "summoning",
 		"keywords": {
-			"type": ["summon"],
-			"target": ["ally"],
-			"targets": ["single"],
-			"delivery": ["instant"]
+			"type": [
+				"summon"
+			],
+			"target": [
+				"ally"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"instant"
+			]
 		},
 		"require": "g.summoning>=13&&g.voidlore>=3&&g.shadowlore>=15",
 		"buy": {
@@ -5144,17 +6466,27 @@
 	},
 	{
 		"id": "reclaim_power",
-		"name": "reclaim power",
-		"desc": "Sacrifice the minion with proportionally the lowest current life to buff everyone else. It's fine, summons are just mana simulacra.",
-		"flavor": "Just be careful not to use it on non-summoned minions, okay? Okay.",
+		"name": "ทวงคืนพลัง",
+		"desc": "สังเวยมินเนียนที่มีพลังชีวิตปัจจุบันต่ำสุดตามสัดส่วนเพื่อบัฟคนอื่นทั้งหมด ไม่เป็นไร ซัมมอนก็เป็นแค่ภาพจำลองจากมานา",
+		"flavor": "แค่ระวังอย่าใช้กับมินเนียนที่ไม่ใช่ซัมมอนก็พอ โอเค? โอเค",
 		"sortOrder": 1701,
 		"level": 4,
 		"school": "summoning",
 		"keywords": {
-			"type": ["damage", "buff"],
-			"target": ["self", "ally"],
-			"targets": ["multiple"],
-			"delivery": ["over time"]
+			"type": [
+				"damage",
+				"buff"
+			],
+			"target": [
+				"self",
+				"ally"
+			],
+			"targets": [
+				"multiple"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.summoning>=11&&g.charms>=5",
 		"buy": {
@@ -5199,17 +6531,27 @@
 	},
 	{
 		"id": "absorb_minion",
-		"name": "absorb summon",
-		"desc": "Sacrifice the minion with the highest life to heal yourself. Remember, summons are merely mana simulacra.",
-		"flavor": "Just be careful not to use it on non-summoned minions, okay? Okay.",
+		"name": "ดูดซับซัมมอน",
+		"desc": "สังเวยมินเนียนที่มีพลังชีวิตสูงสุดเพื่อเยียวยาตัวเอง จำไว้ว่าซัมมอนเป็นเพียงภาพจำลองจากมานา",
+		"flavor": "แค่ระวังอย่าใช้กับมินเนียนที่ไม่ใช่ซัมมอนก็พอ โอเค? โอเค",
 		"sortOrder": 1700,
 		"level": 6,
 		"school": "summoning",
 		"keywords": {
-			"type": ["damage", "recovery"],
-			"target": ["self", "ally"],
-			"targets": ["single"],
-			"delivery": ["over time"]
+			"type": [
+				"damage",
+				"recovery"
+			],
+			"target": [
+				"self",
+				"ally"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.summoning>=12&&g.charms>=5",
 		"buy": {
@@ -5239,16 +6581,24 @@
 	},
 	{
 		"id": "conjure_minion_armor",
-		"name": "conjure minion armor",
-		"desc": "Conjure armor for your precious minions.",
+		"name": "สร้างเกราะมินเนียน",
+		"desc": "สร้างเกราะให้มินเนียนอันล้ำค่าของคุณ",
 		"sortOrder": 1702,
 		"level": 3,
 		"school": "summoning",
 		"keywords": {
-			"type": ["buff"],
-			"target": ["ally"],
-			"targets": ["multiple"],
-			"delivery": ["over time"]
+			"type": [
+				"buff"
+			],
+			"target": [
+				"ally"
+			],
+			"targets": [
+				"multiple"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.conjuration>=9",
 		"buy": {
@@ -5277,16 +6627,24 @@
 	},
 	{
 		"id": "conjure_stone_barrier",
-		"name": "conjure stone barrier",
-		"desc": "Conjure a wall of stone to protect yourself.",
+		"name": "สร้างกำแพงหิน",
+		"desc": "สร้างกำแพงหินเพื่อปกป้องตัวเอง",
 		"sortOrder": 1781,
 		"level": 3,
 		"school": "summoning",
 		"keywords": {
-			"type": ["summon"],
-			"target": ["ally"],
-			"targets": ["single"],
-			"delivery": ["instant"]
+			"type": [
+				"summon"
+			],
+			"target": [
+				"ally"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"instant"
+			]
 		},
 		"require": "(g.conjuration>=7&&g.earthlore>=5)||(g.earthlore>=10&&g.tier3>0)",
 		"buy": {
@@ -5315,16 +6673,24 @@
 	},
 	{
 		"id": "conjure_beartrap",
-		"name": "conjure beartrap",
-		"desc": "Conjure a bear trap to maim someone.",
+		"name": "สร้างกับดักหมี",
+		"desc": "สร้างกับดักหมีเพื่อทำให้ใครสักคนพิการ",
 		"sortOrder": 1782,
 		"level": 3,
 		"school": "summoning",
 		"keywords": {
-			"type": ["summon"],
-			"target": ["ally"],
-			"targets": ["single"],
-			"delivery": ["instant"]
+			"type": [
+				"summon"
+			],
+			"target": [
+				"ally"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"instant"
+			]
 		},
 		"require": "(g.conjuration>=7&&g.crafting>=7)||g.crafting>=15",
 		"buy": {
@@ -5354,17 +6720,25 @@
 	},
 	{
 		"id": "illusiondance",
-		"name": "illusive dance",
-		"desc": "A bewildering dance that makes you seem to be in multiple places at once.",
+		"name": "การเต้นลวงตา",
+		"desc": "การเต้นอันชวนงุนงงที่ทำให้คุณดูเหมือนอยู่หลายที่ในคราวเดียวกัน",
 		"sortOrder": 1331,
 		"level": 5,
 		"school": "chaos",
 		"tags": "t_dodgebuff",
 		"keywords": {
-			"type": ["buff"],
-			"target": ["self"],
-			"targets": ["single"],
-			"delivery": ["over time"]
+			"type": [
+				"buff"
+			],
+			"target": [
+				"self"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.chaoslore>=3&&g.madcap>0",
 		"buy": {
@@ -5391,16 +6765,24 @@
 	},
 	{
 		"id": "superposition",
-		"desc": "This one has you actually shift between multiple places at once.",
-		"flavor": "Or are you just rolling around at the speed of sound?",
+		"desc": "การเต้นนี้ทำให้คุณเคลื่อนย้ายระหว่างหลายที่ในคราวเดียวกันจริง ๆ",
+		"flavor": "หรือว่าเจ้าแค่กลิ้งไปมาด้วยความเร็วเสียง?",
 		"sortOrder": 1330,
 		"level": 7,
 		"school": "chaos",
 		"keywords": {
-			"type": ["buff"],
-			"target": ["self"],
-			"targets": ["single"],
-			"delivery": ["over time"]
+			"type": [
+				"buff"
+			],
+			"target": [
+				"self"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.illusiondance.owned&&g.chaoslore>=5&&g.jester>0",
 		"buy": {
@@ -5427,17 +6809,29 @@
 	},
 	{
 		"id": "stealdodge",
-		"name": "steal fortune",
-		"desc": "Claim your enemy's fortune for yourself.",
+		"name": "ขโมยวาสนา",
+		"desc": "อ้างสิทธิ์โชคลาภของศัตรูเป็นของตัวเอง",
 		"sortOrder": 1370,
 		"level": 3,
 		"school": "chaos",
 		"keywords": {
-			"type": ["buff", "debuff"],
-			"target": ["self", "enemy"],
-			"targets": ["single"],
-			"delivery": ["over time"],
-			"special": ["resource"]
+			"type": [
+				"buff",
+				"debuff"
+			],
+			"target": [
+				"self",
+				"enemy"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"over time"
+			],
+			"special": [
+				"resource"
+			]
 		},
 		"require": "g.chaoslore>=2",
 		"buy": {
@@ -5476,18 +6870,26 @@
 	},
 	{
 		"id": "toonphysics",
-		"name": "convenient physics",
-		"desc": "Alter reality to make certain injuries irrelevant.",
-		"flavor": "Fire only leaves a layer of soot. Your body bounces back from impacts. Holes plug themselves back up.",
+		"name": "ฟิสิกส์แสนสะดวก",
+		"desc": "ดัดแปลงความเป็นจริงให้บาดแผลบางอย่างไร้ความหมาย",
+		"flavor": "ไฟทิ้งไว้เพียงชั้นเขม่าดำ ร่างกายของคุณเด้งกลับจากการกระแทก รูโหว่ปิดกลับได้เอง",
 		"sortOrder": 1333,
 		"level": 6,
 		"cd": 90,
 		"school": "chaos",
 		"keywords": {
-			"type": ["buff"],
-			"target": ["self"],
-			"targets": ["single"],
-			"delivery": ["over time"]
+			"type": [
+				"buff"
+			],
+			"target": [
+				"self"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.chaoslore>=5&&(g.jester>0||g.act_fey>0)",
 		"buy": {
@@ -5513,16 +6915,24 @@
 	},
 	{
 		"id": "chaosbolt",
-		"name": "chaos bolt",
-		"desc": "A brief burst of magic destabilizing whatever it touches.",
+		"name": "สายฟ้าโกลาหล",
+		"desc": "การระเบิดเวทมนตร์สั้น ๆ ที่ทำให้สิ่งที่สัมผัสไร้เสถียรภาพ",
 		"sortOrder": 1306,
 		"level": 2,
 		"school": "chaos",
 		"keywords": {
-			"type": ["damage"],
-			"target": ["enemy"],
-			"targets": ["single"],
-			"delivery": ["instant"]
+			"type": [
+				"damage"
+			],
+			"target": [
+				"enemy"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"instant"
+			]
 		},
 		"require": "g.chaoslore>=1",
 		"buy": {
@@ -5538,7 +6948,10 @@
 			"damage": "1~17",
 			"tohit": 2,
 			"kind": "chaos",
-			"potencies": ["spelldmg", "chaosdmg"]
+			"potencies": [
+				"spelldmg",
+				"chaosdmg"
+			]
 		},
 		"at": {
 			"25": {
@@ -5555,16 +6968,25 @@
 	},
 	{
 		"id": "chaoswave",
-		"name": "chaos wave",
-		"desc": "Research suggests that your enemies dislike having bits swapped at random.",
+		"name": "คลื่นโกลาหล",
+		"desc": "งานวิจัยชี้ว่าเหล่าศัตรูไม่ชอบให้ชิ้นส่วนถูกสลับแบบสุ่ม",
 		"sortOrder": 1303,
 		"level": 3,
 		"school": "chaos",
 		"keywords": {
-			"type": ["damage"],
-			"target": ["enemy"],
-			"targets": ["multiple"],
-			"delivery": ["instant", "over time"]
+			"type": [
+				"damage"
+			],
+			"target": [
+				"enemy"
+			],
+			"targets": [
+				"multiple"
+			],
+			"delivery": [
+				"instant",
+				"over time"
+			]
 		},
 		"require": "g.chaoslore>=2",
 		"buy": {
@@ -5581,7 +7003,10 @@
 			"maxTargets": 999,
 			"damage": "1~5",
 			"kind": "chaos",
-			"potencies": ["spelldmg", "chaosdmg"],
+			"potencies": [
+				"spelldmg",
+				"chaosdmg"
+			],
 			"dot": {
 				"name": "bleed",
 				"damage": "1~3",
@@ -5601,17 +7026,25 @@
 	},
 	{
 		"id": "chaosblast",
-		"name": "chaos blast",
-		"desc": "An onslaught of chaos drowns your foe.",
+		"name": "ระเบิดโกลาหล",
+		"desc": "การรุกเร้าของความโกลาหลจมน้ำศัตรูของคุณ",
 		"sortOrder": 1305,
 		"level": 5,
 		"school": "chaos",
 		"require": "g.chaosbolt.owned&&g.chaoslore>=3&&(g.madcap>0||g.t_chaosclass>=2)",
 		"keywords": {
-			"type": ["damage"],
-			"target": ["enemy"],
-			"targets": ["single"],
-			"delivery": ["instant"]
+			"type": [
+				"damage"
+			],
+			"target": [
+				"enemy"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"instant"
+			]
 		},
 		"buy": {
 			"chaosgem": 66
@@ -5626,7 +7059,10 @@
 			"damage": "1~28",
 			"tohit": 2,
 			"kind": "chaos",
-			"potencies": ["spelldmg", "chaosdmg"]
+			"potencies": [
+				"spelldmg",
+				"chaosdmg"
+			]
 		},
 		"at": {
 			"25": {
@@ -5644,17 +7080,26 @@
 	},
 	{
 		"id": "chaosstorm",
-		"name": "chaos storm",
-		"desc": "You've learned to swap bits between living and inanimate things.",
+		"name": "พายุโกลาหล",
+		"desc": "คุณเรียนรู้การสลับชิ้นส่วนระหว่างสิ่งมีชีวิตกับสิ่งไร้ชีวิต",
 		"sortOrder": 1302,
 		"level": 6,
 		"school": "chaos",
 		"require": "g.chaoswave.owned&&g.chaoslore>=4&&(g.madcap>0||g.t_chaosclass>=2)",
 		"keywords": {
-			"type": ["damage"],
-			"target": ["enemy"],
-			"targets": ["multiple"],
-			"delivery": ["instant", "over time"]
+			"type": [
+				"damage"
+			],
+			"target": [
+				"enemy"
+			],
+			"targets": [
+				"multiple"
+			],
+			"delivery": [
+				"instant",
+				"over time"
+			]
 		},
 		"buy": {
 			"chaosgem": 77
@@ -5670,7 +7115,10 @@
 			"maxTargets": 999,
 			"damage": "1~12",
 			"kind": "chaos",
-			"potencies": ["spelldmg", "chaosdmg"],
+			"potencies": [
+				"spelldmg",
+				"chaosdmg"
+			],
 			"dot": {
 				"name": "bleed",
 				"damage": "1~9",
@@ -5691,8 +7139,8 @@
 	},
 	{
 		"id": "unmake",
-		"name": "unmake",
-		"desc": "The weight of your will grinds your adversaries away.",
+		"name": "แก้สร้าง",
+		"desc": "น้ำหนักแห่งเจตจำนงของคุณบดขยี้เหล่าศัตรูให้แหลกละเอียด",
 		"sortOrder": 1300,
 		"level": 12,
 		"school": "chaos",
@@ -5710,7 +7158,10 @@
 			"damage": 42,
 			"tohit": 3,
 			"kind": "chaos",
-			"potencies": ["spelldmg", "chaosdmg"]
+			"potencies": [
+				"spelldmg",
+				"chaosdmg"
+			]
 		},
 		"at": {
 			"25": {
@@ -5728,16 +7179,28 @@
 	},
 	{
 		"id": "chaosworld",
-		"name": "world of chaos",
-		"desc": "Elements invert. Ground and sky dance. Gales howl, and fragments slice.",
+		"name": "โลกแห่งความโกลาหล",
+		"desc": "ธาตุพลิกกลับ พื้นดินและท้องฟ้าเริงระบำ ลมกระโชกหอนโหย และเศษสะเก็ดเฉือนผ่าน",
 		"sortOrder": 1320,
 		"level": 13,
 		"school": "chaos",
 		"keywords": {
-			"type": ["damage", "buff", "debuff"],
-			"target": ["self", "ally", "enemy"],
-			"targets": ["multiple"],
-			"delivery": ["over time"]
+			"type": [
+				"damage",
+				"buff",
+				"debuff"
+			],
+			"target": [
+				"self",
+				"ally",
+				"enemy"
+			],
+			"targets": [
+				"multiple"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.chaosstorm.owned&&g.chaoslore>=5&&g.jester>0&&g.tier5>0",
 		"buy": {
@@ -5779,7 +7242,10 @@
 							"damage": "1~10",
 							"duration": 3,
 							"kind": "chaos",
-							"potencies": ["spelldmg", "chaosdmg"],
+							"potencies": [
+								"spelldmg",
+								"chaosdmg"
+							],
 							"mod": {
 								"self.speed": -10,
 								"self.dodge": -10
@@ -5789,22 +7255,30 @@
 				]
 			}
 		},
-		"flavor": "Let all glimpse how it was before the beginning."
+		"flavor": "ให้ทุกคนได้แลเห็นว่ามันเป็นอย่างไรก่อนจุดกำเนิด"
 	},
 	{
 		"id": "petroleumdouse",
-		"name": "douse in petroleum",
-		"desc": "Make an enemy more susceptible to flames.",
-		"flavor": "For when you feel too impatient to heat the tar and feathers.",
+		"name": "ราดปิโตรเลียม",
+		"desc": "ทำให้ศัตรูไวต่อเปลวไฟมากขึ้น",
+		"flavor": "สำหรับเวลาที่คุณรู้สึกใจร้อนเกินกว่าจะอุ่นน้ำมันดินและขนนก",
 		"sortOrder": 1353,
 		"level": 2,
 		"school": "chaos",
 		"tags": "t_coating",
 		"keywords": {
-			"type": ["debuff"],
-			"target": ["enemy"],
-			"targets": ["single"],
-			"delivery": ["over time"]
+			"type": [
+				"debuff"
+			],
+			"target": [
+				"enemy"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.trickery>=1&&g.firelore>=3",
 		"buy": {
@@ -5831,17 +7305,25 @@
 	},
 	{
 		"id": "invertelements",
-		"name": "elemental inversion",
-		"desc": "Invert the cycle of the natural elements within the target to create a weakness to them.",
+		"name": "พลิกธาตุ",
+		"desc": "พลิกวงจรธาตุธรรมชาติภายในเป้าหมายเพื่อสร้างจุดอ่อนต่อธาตุเหล่านั้น",
 		"sortOrder": 1343,
 		"level": 5,
 		"school": "chaos",
 		"tags": "t_resist_debuff",
 		"keywords": {
-			"type": ["debuff"],
-			"target": ["enemy"],
-			"targets": ["single"],
-			"delivery": ["over time"]
+			"type": [
+				"debuff"
+			],
+			"target": [
+				"enemy"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.chaoslore>=3&&g.firelore>=3&&g.waterlore>=3&&g.airlore>=3&&g.earthlore>=3",
 		"buy": {
@@ -5873,17 +7355,25 @@
 	},
 	{
 		"id": "invertesoterics",
-		"name": "esoteric inversion",
-		"desc": "Invert the cycle of the esoteric elements within the target to create a weakness to them.",
+		"name": "พลิกพลังลี้ลับ",
+		"desc": "พลิกวงจรธาตุลี้ลับภายในเป้าหมายเพื่อสร้างจุดอ่อนต่อธาตุเหล่านั้น",
 		"sortOrder": 1344,
 		"level": 5,
 		"school": "chaos",
 		"tags": "t_resist_debuff",
 		"keywords": {
-			"type": ["debuff"],
-			"target": ["enemy"],
-			"targets": ["single"],
-			"delivery": ["over time"]
+			"type": [
+				"debuff"
+			],
+			"target": [
+				"enemy"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.chaoslore>=3&&g.spiritlore>=3&&g.naturelore>3&&g.lightlore>=3&&g.shadowlore>=3",
 		"buy": {
@@ -5915,17 +7405,25 @@
 	},
 	{
 		"id": "invertphysical",
-		"name": "physical inversion",
-		"desc": "Invert the regulation of matter within the target to create a weakness to physical attacks.",
+		"name": "พลิกกายภาพ",
+		"desc": "พลิกการควบคุมสสารภายในเป้าหมายเพื่อสร้างจุดอ่อนต่อการโจมตีกายภาพ",
 		"sortOrder": 1341,
 		"level": 5,
 		"school": "chaos",
 		"tags": "t_resist_debuff",
 		"keywords": {
-			"type": ["debuff"],
-			"target": ["enemy"],
-			"targets": ["single"],
-			"delivery": ["over time"]
+			"type": [
+				"debuff"
+			],
+			"target": [
+				"enemy"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.chaoslore>=3&&g.weaponlore>=3&&(g.trickster>0||g.t_chaosclass>=2)",
 		"buy": {
@@ -5953,16 +7451,24 @@
 	},
 	{
 		"id": "invertreality",
-		"name": "reality inversion",
-		"desc": "Invert the laws of reality within the target to create a weakness to chaos.",
+		"name": "พลิกความเป็นจริง",
+		"desc": "พลิกกฎแห่งความเป็นจริงภายในเป้าหมายเพื่อสร้างจุดอ่อนต่อความโกลาหล",
 		"sortOrder": 1342,
 		"level": 5,
 		"school": "chaos",
 		"keywords": {
-			"type": ["debuff"],
-			"target": ["enemy"],
-			"targets": ["single"],
-			"delivery": ["over time"]
+			"type": [
+				"debuff"
+			],
+			"target": [
+				"enemy"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.chaoslore>=4&&(g.trickster>0||g.t_chaosclass>=2)",
 		"buy": {
@@ -5988,16 +7494,24 @@
 	},
 	{
 		"id": "debilitate",
-		"name": "debilitate",
-		"desc": "Weaken the concept of your enemy just so, and render them no longer immune to attacks.",
+		"name": "ทำให้อ่อนแอ",
+		"desc": "ทำลายแนวคิดของศัตรูด้วยความพอเหมาะ ทำให้พวกมันไม่ถูกกันการโจมตีอีกต่อไป",
 		"sortOrder": 1340,
 		"level": 5,
 		"school": "chaos",
 		"keywords": {
-			"type": ["debuff"],
-			"target": ["enemy"],
-			"targets": ["single"],
-			"delivery": ["over time"]
+			"type": [
+				"debuff"
+			],
+			"target": [
+				"enemy"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.chaoslore>=5&&(g.madcap>0||g.t_chaosclass>=2)",
 		"buy": {
@@ -6036,17 +7550,27 @@
 	},
 	{
 		"id": "chaosconfuse",
-		"name": "chaotic madness",
-		"desc": "Chaos makes it impossible to think straight.",
+		"name": "ความบ้าคลั่งอลหม่าน",
+		"desc": "ความโกลาหลทำให้คิดตรง ๆ ไม่ได้",
 		"sortOrder": 1308,
 		"level": 7,
 		"school": "chaos",
 		"tags": "t_confusespell",
 		"keywords": {
-			"type": ["damage", "debuff"],
-			"target": ["enemy"],
-			"targets": ["single"],
-			"delivery": ["instant", "over time"]
+			"type": [
+				"damage",
+				"debuff"
+			],
+			"target": [
+				"enemy"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"instant",
+				"over time"
+			]
 		},
 		"require": "g.chaoslore>=4&&g.madcap>0",
 		"buy": {
@@ -6063,7 +7587,10 @@
 		},
 		"attack": {
 			"damage": "1~7",
-			"potencies": ["spelldmg", "chaosdmg"],
+			"potencies": [
+				"spelldmg",
+				"chaosdmg"
+			],
 			"dot": {
 				"id": "confuse",
 				"name": "confused",
@@ -6076,17 +7603,25 @@
 	},
 	{
 		"id": "stickygum",
-		"name": "chewing gum prank",
-		"desc": "Trip up your enemies.",
-		"flavor": "Double the flavor, stick both their feet to the ground and double your fun.",
+		"name": "มุกหมากฝรั่ง",
+		"desc": "ทำให้ศัตรูของคุณล้มคว่ำ",
+		"flavor": "รสชาติสองเท่า ติดเท้าทั้งสองข้างติดพื้นและสนุกเป็นสองเท่า",
 		"sortOrder": 1351,
 		"level": 2,
 		"school": "chaos",
 		"keywords": {
-			"type": ["debuff"],
-			"target": ["enemy"],
-			"targets": ["multiple"],
-			"delivery": ["over time"]
+			"type": [
+				"debuff"
+			],
+			"target": [
+				"enemy"
+			],
+			"targets": [
+				"multiple"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.trickery>=3",
 		"buy": {
@@ -6114,17 +7649,25 @@
 	},
 	{
 		"id": "randomizearmor",
-		"name": "randomize armor",
-		"desc": "Rearrange your enemies' defenses.",
-		"flavor": "A pauldron does no good worn like a crown.",
+		"name": "สุ่มเกราะ",
+		"desc": "จัดเรียงแนวป้องกันของศัตรูใหม่",
+		"flavor": "สนับไหล่ไม่เกิดประโยชน์อะไรเลยหากสวมแทนมงกุฎ",
 		"sortOrder": 1349,
 		"level": 4,
 		"school": "chaos",
 		"keywords": {
-			"type": ["debuff"],
-			"target": ["enemy"],
-			"targets": ["multiple"],
-			"delivery": ["over time"]
+			"type": [
+				"debuff"
+			],
+			"target": [
+				"enemy"
+			],
+			"targets": [
+				"multiple"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.chaoslore>3&&(g.madcap>0||g.t_chaosclass>=2)",
 		"buy": {
@@ -6152,18 +7695,26 @@
 	},
 	{
 		"id": "newfaceheal",
-		"name": "facioplasty",
-		"desc": "Replace your injured flesh.",
-		"flavor": "For most, this would be a disfiguring injury.  For me, it is merely an inconvenience.",
+		"name": "ศัลยกรรมใบหน้า",
+		"desc": "เปลี่ยนเนื้อหนังที่บาดเจ็บของคุณ",
+		"flavor": "สำหรับคนส่วนใหญ่ นี่คงเป็นบาดแผลที่เสียโฉม แต่สำหรับข้า มันเป็นเพียงความไม่สะดวก",
 		"sortOrder": 1133,
 		"level": 2,
 		"school": "light",
 		"tags": "t_healspell",
 		"keywords": {
-			"type": ["recovery"],
-			"target": ["self"],
-			"targets": ["single"],
-			"delivery": ["instant"]
+			"type": [
+				"recovery"
+			],
+			"target": [
+				"self"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"instant"
+			]
 		},
 		"require": "g.facecollect>0&&g.chaoslore>=4",
 		"buy": {
@@ -6182,20 +7733,31 @@
 			"harmless": true,
 			"healing": 33,
 			"kind": "chaos",
-			"potencies": ["spellheal", "chaosdmg"]
+			"potencies": [
+				"spellheal",
+				"chaosdmg"
+			]
 		}
 	},
 	{
 		"id": "starbolt",
-		"desc": "A weak projection of astral energy. Perhaps you could do better if you devoted yourself fully to the study of stars.",
+		"desc": "การฉายพลังดวงดาวอันอ่อนแอ บางทีเจ้าอาจทำได้ดีกว่านี้หากอุทิศตนเต็มที่แก่การศึกษาดวงดาว",
 		"level": 3,
 		"school": "astral",
 		"sortOrder": 1602,
 		"keywords": {
-			"type": ["damage"],
-			"target": ["enemy"],
-			"targets": ["single"],
-			"delivery": ["instant"]
+			"type": [
+				"damage"
+			],
+			"target": [
+				"enemy"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"instant"
+			]
 		},
 		"require": "g.picatrix>0",
 		"buy": {
@@ -6211,7 +7773,10 @@
 			"damage": "6~11",
 			"tohit": 2,
 			"kind": "astral",
-			"potencies": ["spelldmg", "astraldmg"]
+			"potencies": [
+				"spelldmg",
+				"astraldmg"
+			]
 		},
 		"at": {
 			"25": {
@@ -6229,15 +7794,23 @@
 	},
 	{
 		"id": "astrology",
-		"desc": "Borrow a little of the influence of a star. Perhaps you could do better if you devoted yourself fully to the study of stars.",
+		"desc": "ยืมอิทธิพลของดวงดาวมาสักเล็กน้อย บางทีเจ้าอาจทำได้ดีกว่านี้หากอุทิศตนเต็มที่แก่การศึกษาดวงดาว",
 		"level": 3,
 		"school": "astral",
 		"sortOrder": 1603,
 		"keywords": {
-			"type": ["buff"],
-			"target": ["self"],
-			"targets": ["single"],
-			"delivery": ["over time"]
+			"type": [
+				"buff"
+			],
+			"target": [
+				"self"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.picatrix>0",
 		"buy": {
@@ -6263,17 +7836,25 @@
 	},
 	{
 		"id": "manaveil",
-		"name": "Mana Veil",
-		"desc": "Restore your barrier with a surge of arcane energy",
+		"name": "ม่านมานา",
+		"desc": "ฟื้นฟูบาเรียของคุณด้วยพลังเวทที่หลั่งไหล",
 		"extdesc": "Effect scales with your maximum barrier, restoring about half of it.",
 		"sortOrder": 435,
 		"level": 3,
 		"school": "mana",
 		"keywords": {
-			"type": ["recovery"],
-			"target": ["self"],
-			"targets": ["single"],
-			"delivery": ["over time"]
+			"type": [
+				"recovery"
+			],
+			"target": [
+				"self"
+			],
+			"targets": [
+				"single"
+			],
+			"delivery": [
+				"over time"
+			]
 		},
 		"require": "g.lore>8&&g.barrier.max>100",
 		"buy": {
@@ -6281,12 +7862,18 @@
 			"codices": 1,
 			"mana": 8
 		},
-		"cost": { "mana": 8 },
+		"cost": {
+			"mana": 8
+		},
 		"cd": 30,
-		"result": { "lore.exp": 0.8 },
+		"result": {
+			"lore.exp": 0.8
+		},
 		"dot": {
 			"duration": 10,
-			"effect": { "barrier": "t.barrier.max * 0.05" }
+			"effect": {
+				"barrier": "t.barrier.max * 0.05"
+			}
 		}
 	}
 ]
