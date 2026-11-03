@@ -3,38 +3,45 @@
 		"id": "newt",
 		"level": 2,
 		"kind": "beast",
-		"flavor": "Wriggly.",
+		"flavor": "ดิ้นไปมา",
 		"hp": 2,
 		"defense": 1,
 		"attack": {
-			"name": "newting",
+			"name": "ดิ้นนึง",
 			"kind": "blunt",
 			"damage": "1~2"
 		},
-		"biome": ["swamp", "plains", "woods", "hills"]
+		"biome": [
+			"swamp",
+			"plains",
+			"woods",
+			"hills"
+		],
+		"name": "นิวต์"
 	},
 	{
 		"id": "kakapo",
 		"level": 4,
 		"kind": "beast",
-		"flavor": "Better leave it. They're endangered.",
+		"flavor": "ปล่อยมันไว้เถอะ พวกมันใกล้สูญพันธุ์",
 		"hp": 5,
 		"defense": 2,
 		"attack": {
-			"name": "beak",
+			"name": "จะงอยปาก",
 			"type": "pierce",
 			"damage": "1~4"
-		}
+		},
+		"name": "นกแก้วคากาโป"
 	},
 	{
 		"id": "wisp",
 		"level": 2,
 		"kind": "spirit",
-		"desc": "A ghostly wisp of air.",
+		"desc": "แสงวิญญาณแห่งอากาศระยิบระยับ",
 		"hp": 1,
 		"defense": 1,
 		"attack": {
-			"name": "shiver",
+			"name": "สั่นสะท้าน",
 			"kind": "spirit",
 			"damage": "0.2~1",
 			"dot": {
@@ -43,30 +50,32 @@
 				"flags": "noattack",
 				"duration": 3
 			}
-		}
+		},
+		"name": "แสงวิญญาณ"
 	},
 	{
 		"id": "gremlin",
-		"flavor": "Na-na-na-na-Na-na Na-na-na-na-Na-na...",
+		"flavor": "นา-นา-นา-นา-นา-นา นา-นา-นา-นา-นา-นา...",
 		"kind": "goblinoid",
 		"level": 5,
 		"hp": 6,
 		"regen": 0.25,
 		"attack": {
-			"name": "claws",
+			"name": "กรงเล็บ",
 			"kind": "slash",
 			"damage": 1
-		}
+		},
+		"name": "เกรมลิน"
 	},
 	{
 		"id": "twikman",
-		"name": "twik-man",
-		"desc": "Tiny vicious humanoid riding a dragonfly.",
+		"name": "มนุษย์ทวิก",
+		"desc": "มนุษย์แคระดุร้ายขี่แมลงปอ",
 		"kind": "humanoid",
 		"level": 3,
 		"hp": 4,
 		"attack": {
-			"name": "spear",
+			"name": "หอก",
 			"kind": "slash",
 			"damage": "1~2"
 		}
@@ -74,44 +83,49 @@
 	{
 		"id": "bat",
 		"kind": "beast",
-		"biome": ["hills", "cave", "woods"],
+		"biome": [
+			"hills",
+			"cave",
+			"woods"
+		],
 		"level": 2,
 		"hp": 3,
 		"attack": {
-			"name": "bite",
+			"name": "กัด",
 			"kind": "pierce",
 			"damage": "0.5~1.5"
-		}
+		},
+		"name": "ค้างคาว"
 	},
 	{
 		"id": "lgmouse",
-		"name": "large mouse",
+		"name": "หนูตัวใหญ่",
 		"kind": "beast",
 		"level": 1,
 		"hp": 2,
 		"attack": {
-			"name": "nibble",
+			"name": "แทะ",
 			"kind": "pierce",
 			"damage": "0.2~0.7"
 		}
 	},
 	{
 		"id": "stingybee",
-		"name": "stingy bee",
+		"name": "ผึ้งขี้เหนียว",
 		"kind": "beast",
 		"level": 2,
 		"hp": 2,
 		"defense": 2,
 		"speed": 3,
 		"attack": {
-			"name": "sting",
+			"name": "ต่อย",
 			"kind": "nature",
 			"damage": "0.5~1.5"
 		}
 	},
 	{
 		"id": "bigstone",
-		"name": "big stone",
+		"name": "ก้อนหินใหญ่",
 		"kind": "natural",
 		"level": 1,
 		"hp": 5,
@@ -120,10 +134,14 @@
 	},
 	{
 		"id": "gardengnome",
-		"name": "garden gnome",
-		"desc": "Standard variety garden gnome.",
+		"name": "โนมสวน",
+		"desc": "โนมสวนแบบมาตรฐาน",
 		"kind": "humanoid",
-		"biome": ["town", "plains", "hills"],
+		"biome": [
+			"town",
+			"plains",
+			"hills"
+		],
 		"level": 3,
 		"hp": 3,
 		"spells": "magicmissile",
@@ -136,43 +154,49 @@
 				"id": "paralyze"
 			}
 		},
-		"loot": [{ "scrolls": 1 }]
+		"loot": [
+			{
+				"scrolls": 1
+			}
+		]
 	},
 	{
 		"id": "homunculus",
-		"desc": "Must have escaped its jar.",
+		"desc": "คงหนีออกมาจากกระปุกของมันมา",
 		"kind": "construct",
 		"level": 6,
 		"hp": 7,
 		"attack": {
-			"name": "nasty bite",
+			"name": "กัดอย่างโหดเหี้ยม",
 			"kind": "pierce",
 			"damage": "1~2"
-		}
+		},
+		"name": "โฮมังกูลัส"
 	},
 	{
 		"id": "jackal",
 		"level": 2,
 		"kind": "beast",
-		"desc": "They're tricksy.",
+		"desc": "พวกมันเจ้าเล่ห์",
 		"hp": 11,
 		"defense": 8,
 		"attack": {
-			"name": "bite",
+			"name": "กัด",
 			"kind": "pierce",
 			"damage": "1~3"
 		},
-		"biome": "plains"
+		"biome": "plains",
+		"name": "หมาป่าแจ็กคัล"
 	},
 	{
 		"id": "lgsnail",
-		"name": "large snail",
+		"name": "หอยทากใหญ่",
 		"kind": "beast",
 		"level": 4,
 		"hp": 14,
 		"defense": 4,
 		"attack": {
-			"name": "slime",
+			"name": "สไลม์",
 			"kind": "nature",
 			"damage": "1~3",
 			"dot": {
@@ -184,33 +208,35 @@
 	},
 	{
 		"id": "lgrat",
-		"name": "large rat",
+		"name": "หนูตัวใหญ่",
 		"kind": "beast",
 		"level": 3,
 		"hp": 4,
 		"attack": {
-			"name": "bite",
+			"name": "กัด",
 			"kind": "pierce",
 			"damage": "0~2.5"
 		}
 	},
 	{
 		"id": "lgbird",
-		"name": "angry bird",
+		"name": "นกโมโห",
 		"kind": "beast",
 		"level": 3,
 		"hp": 5,
 		"attack": {
-			"name": "peck",
+			"name": "จิก",
 			"kind": "pierce",
 			"damage": "0~3"
 		},
-		"loot": { "airgem": "20%" }
+		"loot": {
+			"airgem": "20%"
+		}
 	},
 	{
 		"id": "lgsnake",
-		"name": "big snake",
-		"desc": "Intenstly venomous.",
+		"name": "งูใหญ่",
+		"desc": "มีพิษร้ายแรงถึงขีดสุด",
 		"kind": "beast",
 		"level": 30,
 		"hp": 50,
@@ -222,25 +248,32 @@
 				"damage": "3.5~4.5"
 			}
 		},
-		"resist": { "nature": 25 },
-		"loot": { "serpentskin": { "%": "30%", "value": "2~4" } }
+		"resist": {
+			"nature": 25
+		},
+		"loot": {
+			"serpentskin": {
+				"%": "30%",
+				"value": "2~4"
+			}
+		}
 	},
 	{
 		"id": "ratskeleton",
-		"name": "skeletal rat",
-		"desc": "Even the dead rats are a problem...",
+		"name": "หนูโครงกระดูก",
+		"desc": "แม้หนูที่ตายแล้วก็ยังเป็นปัญหา...",
 		"kind": "undead",
 		"level": 2,
 		"hp": 3,
 		"attack": {
-			"name": "bite",
+			"name": "กัด",
 			"kind": "pierce",
 			"damage": "0~2"
 		}
 	},
 	{
 		"id": "raven",
-		"name": "raven",
+		"name": "กาดำ",
 		"kind": "beast",
 		"level": 4,
 		"hp": 3,
@@ -248,86 +281,90 @@
 		"defense": 3,
 		"attack": {
 			"kind": "pierce",
-			"name": "peck",
+			"name": "จิก",
 			"damage": "1~2"
 		},
-		"flavor": "Like a writing desk."
+		"flavor": "เหมือนโต๊ะเขียนหนังสือ"
 	},
 	{
 		"id": "wombat",
-		"desc": "Just wombatting around.",
+		"desc": "แค่วอมแบตไปทั่ว",
 		"kind": "beast",
 		"level": 9,
 		"hp": 9,
 		"attack": {
-			"name": "wombatting",
+			"name": "ตีวอมแบต",
 			"kind": "blunt",
 			"damage": "1~3.5"
-		}
+		},
+		"name": "วอมแบท"
 	},
 	{
 		"id": "coyote",
-		"name": "coyote",
+		"name": "โคโยตี",
 		"kind": "beast",
 		"level": 16,
 		"hp": 15,
 		"dodge": 30,
 		"attack": {
-			"name": "claws",
+			"name": "กรงเล็บ",
 			"kind": "slash",
 			"damage": "2~3"
 		},
 		"loot": {
-			"leather": { "%": "30%", "value": "2~4" }
+			"leather": {
+				"%": "30%",
+				"value": "2~4"
+			}
 		}
 	},
 	{
 		"id": "hawk",
-		"name": "hawk",
+		"name": "เหยี่ยว",
 		"kind": "beast",
 		"level": 8,
 		"hp": 8,
 		"attack": {
-			"name": "claws",
+			"name": "กรงเล็บ",
 			"kind": "slash",
 			"damage": "1.5~3"
 		}
 	},
 	{
 		"id": "willowisp",
-		"name": "will o' wisp",
-		"desc": "A gleaming orb of light.",
+		"name": "แสงไฟหลอกผี",
+		"desc": "ดวงแสงที่ส่องประกายเจิดจ้า",
 		"kind": "spirit",
 		"level": 42,
 		"dodge": 60,
 		"attack": {
-			"name": "flicker",
+			"name": "ริบหรี่",
 			"kind": "spirit",
 			"damage": "11~15"
 		}
 	},
 	{
 		"id": "warthog",
-		"name": "Warthog",
+		"name": "หมูป่า",
 		"kind": "beast",
 		"level": 6,
 		"hp": 7,
 		"defense": 4,
 		"attack": {
-			"name": "bite",
+			"name": "กัด",
 			"damage": "1~4",
 			"kind": "pierce"
 		}
 	},
 	{
 		"id": "mutantrat",
-		"name": "mutant rat",
+		"name": "หนูกลายพันธุ์",
 		"kind": "magicbeast",
 		"level": 6,
 		"hp": 4,
 		"defense": 3,
 		"attack": {
-			"name": "bite",
+			"name": "กัด",
 			"damage": "2~4",
 			"kind": "pierce"
 		}
@@ -335,56 +372,63 @@
 	{
 		"id": "skeleton",
 		"kind": "undead",
-		"desc": "It appears to be missing all its fleshy bits.",
+		"desc": "ดูเหมือนมันจะขาดเนื้อและส่วนต่าง ๆ ไปทั้งหมด",
 		"level": 11,
 		"hp": 11,
 		"attack": {
-			"name": "slash",
+			"name": "ฟัน",
 			"kind": "slash",
 			"damage": "1~4"
 		},
 		"loot": {
-			"iron": { "%": "30%", "value": "2~5" },
-			"bones": { "value": "2~5", "skipLocked": true }
-		}
+			"iron": {
+				"%": "30%",
+				"value": "2~5"
+			},
+			"bones": {
+				"value": "2~5",
+				"skipLocked": true
+			}
+		},
+		"name": "โครงกระดูก"
 	},
 	{
 		"id": "badexperiment",
-		"name": "failed experiment",
-		"desc": "Apparently some sort of long lost arcane experiment, with a mind of its own. It doesn't look friendly.",
+		"name": "การทดลองที่ล้มเหลว",
+		"desc": "ดูเหมือนเป็นการทดลองเวทมนตร์โบราณที่สาบสูญ ซึ่งมีจิตใจเป็นของตัวเอง มันดูไม่เป็นมิตรเอาซะเลย",
 		"kind": "arcane",
 		"level": 4,
 		"hp": 4,
 		"attack": {
-			"name": "psychic blast",
+			"name": "คลื่นพลังจิต",
 			"damage": "1~2",
 			"kind": "mana"
 		}
 	},
 	{
 		"id": "ratking",
-		"name": "rat king",
+		"name": "ราชาหนู",
 		"kind": "magicbeast",
 		"unique": true,
 		"level": 6,
 		"hp": 30,
 		"regen": 0.25,
 		"attack": {
-			"name": "kingly bite",
+			"name": "กัดอย่างองค์ราชา",
 			"damage": "1~3",
 			"kind": "pierce"
 		}
 	},
 	{
 		"id": "m_scarab",
-		"name": "scarab",
-		"desc": "Massive shimmering beetle with a projecting horn.",
+		"name": "แมลงปีกแข็งสการับ",
+		"desc": "แมลงปีกแข็งสีแวววาวขนาดมหึมาพร้อมเขาที่ยื่นออกมา",
 		"kind": "beast",
 		"level": 17,
 		"hp": 16,
 		"defense": 30,
 		"attack": {
-			"name": "charge",
+			"name": "พุ่งชน",
 			"kind": "blunt",
 			"damage": "1~4"
 		}
@@ -395,41 +439,53 @@
 		"level": 5,
 		"hp": 5,
 		"attack": {
-			"name": "dagger",
+			"name": "มีดสั้น",
 			"kind": "pierce",
 			"damage": "1~2"
-		}
+		},
+		"name": "ก็อบลิน"
 	},
 	{
 		"id": "gobwarrior",
-		"name": "goblin warrior",
+		"name": "นักรบก็อบลิน",
 		"kind": "goblinoid",
 		"level": 15,
 		"hp": 10,
 		"defense": 20,
 		"dodge": 20,
 		"attack": {
-			"name": "shortsword",
+			"name": "ดาบสั้น",
 			"kind": "pierce",
 			"damage": "2~3"
 		},
-		"loot": { "iron": { "%": "50%", "value": "2~3" } }
+		"loot": {
+			"iron": {
+				"%": "50%",
+				"value": "2~3"
+			}
+		}
 	},
 	{
 		"id": "gobpriest",
-		"desc": "Covered from top to bottom in animal leathers.",
-		"flavor": "Tries to divine headache in your future",
+		"desc": "ปกคลุมไปด้วยหนังสัตว์ตั้งแต่หัวจรดเท้า",
+		"flavor": "พยายามหยั่งรู้เรื่องปวดหัวในอนาคตของคุณ",
 		"kind": "goblinoid",
 		"level": 8,
 		"hp": 9,
 		"regen": 0.5,
 		"dodge": 20,
 		"attack": {
-			"name": "club",
+			"name": "ไม้กระบอง",
 			"kind": "blunt",
 			"damage": "2~4"
 		},
-		"loot": { "leather": { "%": "50%", "value": "2~3" } }
+		"loot": {
+			"leather": {
+				"%": "50%",
+				"value": "2~3"
+			}
+		},
+		"name": "นักบวชก็อบลิน"
 	},
 	{
 		"id": "gobchief",
@@ -439,26 +495,30 @@
 		"hp": 32,
 		"defense": 10,
 		"attack": {
-			"name": "rusty cleaver",
+			"name": "มีดสับขึ้นสนิม",
 			"kind": "slash",
 			"damage": "1~4"
-		}
+		},
+		"name": "หัวหน้าเผ่าก็อบลิน"
 	},
 	{
 		"id": "gobchief2",
-		"desc": "Older cousin of the gobchief you found on the treffil woods edges",
-		"extdesc": "Looks angrier, too",
+		"desc": "ญาติผู้พี่ของหัวหน้าเผ่าก็อบลินที่คุณพบที่ขอบป่าทรเรฟฟิล",
+		"extdesc": "ดูโกรธเกรี้ยวยิ่งกว่าด้วย",
 		"kind": "goblinoid",
 		"unique": true,
 		"level": 20,
 		"hp": 70,
 		"defense": 30,
 		"attack": {
-			"name": "two rusty cleavers",
+			"name": "มีดสับขึ้นสนิมสองเล่ม",
 			"kind": "slash",
 			"damage": "2~5"
 		},
-		"loot": { "iron": "5~12" }
+		"loot": {
+			"iron": "5~12"
+		},
+		"name": "หัวหน้าเผ่าก็อบลินสายเลือดเก่า"
 	},
 	{
 		"id": "gobchamp",
@@ -469,7 +529,8 @@
 		"attack": {
 			"damage": "4~7",
 			"kind": "slash"
-		}
+		},
+		"name": "แชมป์นักรบก็อบลิน"
 	},
 	{
 		"id": "gobking",
@@ -478,11 +539,12 @@
 		"hp": 18,
 		"defense": 23,
 		"attack": {
-			"name": "magic missle",
+			"name": "มิสไซล์เวทมนตร์",
 			"damage": "5~9",
 			"kind": "mana"
 		},
-		"flavor": "You remind me of the babe."
+		"flavor": "คุณทำให้ข้านึกถึงเด็กน้อย",
+		"name": "ราชาก็อบลิน"
 	},
 	{
 		"id": "warg",
@@ -491,21 +553,29 @@
 		"hp": 24,
 		"dodge": 35,
 		"attack": {
-			"name": "bite",
+			"name": "กัด",
 			"kind": "pierce",
 			"damage": "2~5"
 		},
-		"loot": { "leather": { "%": "30%", "value": "5~7" } }
+		"loot": {
+			"leather": {
+				"%": "30%",
+				"value": "5~7"
+			}
+		},
+		"name": "หมาป่าสงครามวาร์ก"
 	},
 	{
 		"id": "giantspider",
-		"name": "giant spider",
+		"name": "แมงมุมยักษ์",
 		"kind": "beast",
 		"level": 34,
 		"hp": 70,
-		"resist": { "nature": 25 },
+		"resist": {
+			"nature": 25
+		},
 		"attack": {
-			"name": "bite",
+			"name": "กัด",
 			"kind": "pierce",
 			"damage": "4~7",
 			"dot": {
@@ -517,41 +587,57 @@
 				"damage": "1~3"
 			}
 		},
-		"loot": { "spidersilk": { "%": "30%", "value": "3~5" } }
+		"loot": {
+			"spidersilk": {
+				"%": "30%",
+				"value": "3~5"
+			}
+		}
 	},
 	{
 		"id": "kobold",
-		"flavor": "You no take candle!",
+		"flavor": "เจ้าห้ามเอาเทียนไป!",
 		"kind": "humanoid",
-		"biome": ["mountains", "hills", "swamp"],
+		"biome": [
+			"mountains",
+			"hills",
+			"swamp"
+		],
 		"level": 4,
 		"hp": 4,
 		"attack": {
-			"name": "pointy stick",
+			"name": "ไม้แหลม",
 			"kind": "pierce",
 			"damage": "1~3"
 		},
-		"loot": { "gold": "1~3" }
+		"loot": {
+			"gold": "1~3"
+		},
+		"name": "โคโบลด์"
 	},
 	{
 		"id": "orc",
 		"kind": "humanoid",
-		"desc": "For the Horde!",
+		"desc": "เพื่อฝูงชน!",
 		"level": 26,
 		"hp": 34,
 		"attack": {
-			"name": "spear",
+			"name": "หอก",
 			"kind": "pierce",
 			"damage": "3~6"
 		},
 		"loot": {
 			"gold": "4~5",
-			"cotton": { "%": "30%", "value": "3~5" }
-		}
+			"cotton": {
+				"%": "30%",
+				"value": "3~5"
+			}
+		},
+		"name": "ออร์ค"
 	},
 	{
 		"id": "orcpriest",
-		"name": "orc shaman",
+		"name": "หมอผีออร์ค",
 		"kind": "humanoid",
 		"level": 25,
 		"hp": 25,
@@ -559,7 +645,7 @@
 		"dodge": 30,
 		"attack": [
 			{
-				"name": "curse",
+				"name": "คำสาป",
 				"kind": "shadow",
 				"damage": "4~8"
 			},
@@ -572,14 +658,20 @@
 		],
 		"loot": {
 			"managem": "30%",
-			"cotton": { "%": "30%", "value": "5~7" },
-			"leather": { "%": "30%", "value": "5~7" }
+			"cotton": {
+				"%": "30%",
+				"value": "5~7"
+			},
+			"leather": {
+				"%": "30%",
+				"value": "5~7"
+			}
 		}
 	},
 	{
 		"id": "orcchief",
-		"name": "orc chieftain",
-		"desc": "The strongest orc in the whole tribe.",
+		"name": "หัวหน้าเผ่าออร์ค",
+		"desc": "ออร์คที่แข็งแกร่งที่สุดในเผ่าทั้งหมด",
 		"kind": "humanoid",
 		"unique": true,
 		"level": 28,
@@ -587,24 +679,31 @@
 		"defense": 40,
 		"dodge": 30,
 		"attack": {
-			"name": "broadsword",
+			"name": "ดาบใหญ่",
 			"kind": "slash",
 			"damage": "4.5~6.5"
 		}
 	},
 	{
 		"id": "zombie",
-		"desc": "Slow and rotting corpse.",
+		"desc": "ศพเน่าเปื่อยที่คืบคลานเชื่องช้า",
 		"kind": "undead",
 		"level": 11,
 		"hp": 14,
 		"speed": 0,
 		"attack": {
-			"name": "smash",
+			"name": "ทุบ",
 			"kind": "blunt",
 			"damage": "3~5"
 		},
-		"loot": { "bodies": { "%": "10%", "value": 1, "skipLocked": true } }
+		"loot": {
+			"bodies": {
+				"%": "10%",
+				"value": 1,
+				"skipLocked": true
+			}
+		},
+		"name": "ซอมบี้"
 	},
 	{
 		"id": "vulture",
@@ -613,36 +712,41 @@
 		"hp": 15,
 		"dodge": 35,
 		"attack": {
-			"name": "peck",
+			"name": "จิก",
 			"kind": "pierce",
 			"damage": "2~3"
-		}
+		},
+		"name": "แร้ง"
 	},
 	{
 		"id": "cutpurse",
-		"desc": "Wants to steal your stuff.",
+		"desc": "อยากขโมยของของคุณ",
 		"kind": "humanoid",
 		"biome": "town",
 		"level": 11,
 		"hp": 7,
 		"attack": {
-			"name": "dagger",
+			"name": "มีดสั้น",
 			"kind": "pierce",
 			"damage": "2~5"
 		},
 		"loot": {
 			"gold": "3~5",
-			"cotton": { "%": "30%", "value": "2~4" }
-		}
+			"cotton": {
+				"%": "30%",
+				"value": "2~4"
+			}
+		},
+		"name": "นักล้วงกระเป๋า"
 	},
 	{
 		"id": "elf",
-		"desc": "So lithe. So graceful.",
+		"desc": "คล่องแคล่ว งดงามสง่า",
 		"kind": "humanoid",
 		"level": 30,
 		"attack": [
 			{
-				"name": "bow",
+				"name": "ธนู",
 				"kind": "pierce",
 				"damage": "a.damage"
 			},
@@ -653,32 +757,36 @@
 					"id": "entangle"
 				}
 			}
-		]
+		],
+		"name": "เอลฟ์"
 	},
 	{
 		"id": "slinger",
-		"name": "hobbit slinger",
-		"flavor": "How much damage could he do with just a sling?",
+		"name": "นักสลิงฮ็อบบิท",
+		"flavor": "แค่สลิงมันจะทำดาเมจได้สักแค่ไหนกัน?",
 		"kind": "humanoid",
-		"biome": ["town", "plains"],
+		"biome": [
+			"town",
+			"plains"
+		],
 		"level": 7,
 		"hp": 7,
 		"attack": {
-			"name": "sling",
+			"name": "สลิง",
 			"kind": "blunt",
 			"damage": "Math.pow(Math.random(), 3)*16"
 		}
 	},
 	{
 		"id": "direbat",
-		"name": "dire bat",
-		"desc": "That's one large bat.",
+		"name": "ค้างคาวปีศาจ",
+		"desc": "นั่นคือค้างคาวขนาดใหญ่จริง ๆ",
 		"kind": "magicbeast",
 		"level": 31,
 		"hp": 40,
 		"dodge": 25,
 		"attack": {
-			"name": "bite",
+			"name": "กัด",
 			"kind": "pierce",
 			"damage": "4~7",
 			"leech": 0.1
@@ -686,74 +794,91 @@
 	},
 	{
 		"id": "direrat",
-		"name": "dire rat",
-		"desc": "Red eyes... that's different.",
+		"name": "หนูปีศาจ",
+		"desc": "ตาแดง...นั่นดูแปลกไป",
 		"kind": "magicbeast",
 		"level": 13,
 		"hp": 10,
 		"attack": {
-			"name": "bite",
+			"name": "กัด",
 			"kind": "pierce",
 			"damage": "1~5"
 		},
-		"loot": { "leather": { "%": "50%", "value": 2 } }
+		"loot": {
+			"leather": {
+				"%": "50%",
+				"value": 2
+			}
+		}
 	},
 	{
 		"id": "scrapling",
-		"desc": "Tiny creature made from random pieces of scrap metal, animated by residual magical energy",
-		"flavor": "Surprisingly swift, but fragile",
+		"desc": "สิ่งมีชีวิตจิ๋วที่สร้างจากเศษโลหะสุ่ม ๆ ซึ่งถูกพลังเวทที่หลงเหลือทำให้เคลื่อนไหว",
+		"flavor": "ว่องไวอย่างน่าประหลาด แต่เปราะบาง",
 		"kind": "animated",
 		"level": 7,
 		"hp": 6,
 		"speed": 40,
 		"attack": {
-			"name": "scratch",
+			"name": "ข่วน",
 			"kind": "slash",
 			"damage": "0.5~1.5"
 		},
-		"loot": { "iron": { "%": "75%", "value": "2~3" } }
+		"loot": {
+			"iron": {
+				"%": "75%",
+				"value": "2~3"
+			}
+		},
+		"name": "ศัตรูตัวเล็ก"
 	},
 	{
 		"id": "eel",
-		"name": "spark eel",
-		"desc": "So wriggly.",
-		"flavor": "Water near them turns spicy",
+		"name": "ปลาไหลประกายไฟ",
+		"desc": "ดิ้นไปมาเหลือเกิน",
+		"flavor": "น้ำที่อยู่ใกล้พวกมันกลายเป็นน้ำเผ็ด ๆ",
 		"kind": "beast",
 		"biome": "swamp",
 		"level": 36,
 		"hp": 80,
-		"resist": { "water": 20 },
+		"resist": {
+			"water": 20
+		},
 		"attack": {
-			"name": "shock",
+			"name": "ไฟฟ้าช็อต",
 			"kind": "air",
 			"damage": "0~14"
 		}
 	},
 	{
 		"id": "piranha",
-		"name": "piranha school",
-		"desc": "It's bitey.",
+		"name": "ฝูงปิรันยา",
+		"desc": "มันชอบกัด",
 		"kind": "beast",
 		"biome": "swamp",
 		"level": 40,
-		"resist": { "water": 20 },
+		"resist": {
+			"water": 20
+		},
 		"speed": 80,
 		"attack": {
-			"name": "bite",
+			"name": "กัด",
 			"kind": "pierce",
 			"damage": 5
 		}
 	},
 	{
 		"id": "jellyfish",
-		"name": "jellyfish swarm",
-		"flavor": "No touchy.",
+		"name": "ฝูงแมงกะพรุน",
+		"flavor": "ห้ามจับ",
 		"kind": "beast",
 		"biome": "swamp",
 		"level": 41,
-		"resist": { "water": 20 },
+		"resist": {
+			"water": 20
+		},
 		"attack": {
-			"name": "sting",
+			"name": "ต่อย",
 			"kind": "nature",
 			"damage": "8~12",
 			"dot": {
@@ -765,45 +890,47 @@
 	},
 	{
 		"id": "icewalker",
-		"desc": "They say those who die on the cold heights search the passes for mortals to join them.",
+		"desc": "เล่ากันว่าคนที่ตายบนที่สูงอันหนาวเหน็บจะเฝ้าตามช่องเขาหามนุษย์มาร่วมทางด้วย",
 		"kind": "undead",
 		"level": 30,
 		"hp": 50,
 		"attack": {
-			"name": "frozen claws",
+			"name": "กรงเล็บน้ำแข็ง",
 			"kind": "water",
 			"damage": "3~6"
 		},
 		"resist": {
 			"water": 25,
 			"air": 25
-		}
+		},
+		"name": "ผู้เดินน้ำแข็ง"
 	},
 	{
 		"id": "ranger",
-		"desc": "Rangers aren't very good with people.",
+		"desc": "พรานป่าไม่ค่อยเข้ากับผู้คนเท่าไร",
 		"kind": "humanoid",
 		"level": 34,
 		"attack": {
-			"name": "longbow",
+			"name": "ธนูยาว",
 			"kind": "pierce",
 			"damage": "a.damage*0.8"
-		}
+		},
+		"name": "พรานป่า"
 	},
 	{
 		"id": "highelf",
-		"name": "high elf",
-		"desc": "Other elves are as newborns to their elder kin.",
+		"name": "ไฮเอลฟ์",
+		"desc": "เอลฟ์อื่น ๆ ราวกับเด็กแรกเกิดเมื่อเทียบกับญาติผู้ใหญ่ของตน",
 		"kind": "humanoid",
 		"level": 36,
 		"attack": [
 			{
-				"name": "enchanted bow",
+				"name": "ธนูอาคม",
 				"kind": "air",
 				"damage": "a.damage"
 			},
 			{
-				"name": "stone fling",
+				"name": "โยนหิน",
 				"kind": "earth",
 				"damage": "a.damage"
 			}
@@ -811,12 +938,12 @@
 	},
 	{
 		"id": "highranger",
-		"name": "thangmor ranger",
-		"desc": "All rangers travel far. Some farther than others.",
+		"name": "พรานป่าธังมอร์",
+		"desc": "พรานป่าทุกคนเดินทางไกล บางคนไกลกว่าคนอื่น",
 		"kind": "humanoid",
 		"level": 41,
 		"attack": {
-			"name": "rain of arrows",
+			"name": "สายฝนลูกธนู",
 			"kind": "air",
 			"targets": "enemies",
 			"maxTargets": 3,
@@ -825,14 +952,14 @@
 	},
 	{
 		"id": "eledin",
-		"name": "eledin strongbow",
-		"desc": "When Tenwick told Eledin the Ettinmoors couldn't be crossed in safety, the ranger picked up his bow and headed east.",
+		"name": "เอเลดิน ธนูแข็งแกร่ง",
+		"desc": "เมื่อเทนวิกบอกเอเลดินว่าทุ่งเอตตินมอร์ข้ามไปอย่างปลอดภัยไม่ได้ พรานป่าก็หยิบธนูของเขามุ่งหน้าไปทางตะวันออก",
 		"kind": "humanoid",
 		"unique": true,
 		"level": 43,
 		"hp": 500,
 		"attack": {
-			"name": "explosive greatarrows",
+			"name": "ลูกธนูใหญ่ระเบิด",
 			"kind": "fire",
 			"targets": "enemies",
 			"maxTargets": 2,
@@ -841,9 +968,9 @@
 	},
 	{
 		"id": "gildella",
-		"name": "gildella the lighthearted",
-		"desc": "The elf Gildella had roamed the Ettinmoors for centuries when Eledin first crossed her path. Their path has been the same since then.",
-		"flavor": "'I thought the moors too wild for decent folk,' said Eledin in surprise. 'Oh?' replied Gildella, 'I hadn't noticed.'",
+		"name": "กิลเดลลา ผู้ร่าเริง",
+		"desc": "เอลฟ์กิลเดลลาร่อนเร่ในทุ่งเอตตินมอร์มาหลายศตวรรษ ก่อนที่เอเลดินจะบังเอิญพบเส้นทางของนาง เส้นทางของทั้งคู่ก็เป็นหนึ่งเดียวกันตั้งแต่นั้นมา",
+		"flavor": "'ข้านึกว่าทุ่งนี้ดุร้ายเกินไปสำหรับคนดี ๆ' เอเลดินเอ่ยด้วยความประหลาดใจ 'โอ้?' กิลเดลลาตอบ 'ข้าไม่เห็นรู้สึกเลย'",
 		"kind": "humanoid",
 		"unique": true,
 		"level": 43,
@@ -851,17 +978,17 @@
 		"speed": 60,
 		"attack": [
 			{
-				"name": "arrow of light",
+				"name": "ลูกธนูแห่งแสง",
 				"kind": "light",
 				"damage": "10~15"
 			},
 			{
-				"name": "arrow of nature",
+				"name": "ลูกธนูแห่งธรรมชาติ",
 				"kind": "nature",
 				"damage": "10~15"
 			},
 			{
-				"name": "arrow of mana",
+				"name": "ลูกธนูแห่งมานา",
 				"kind": "mana",
 				"damage": "10~15"
 			}
@@ -871,37 +998,42 @@
 		"id": "thrall",
 		"level": 8,
 		"kind": "undead",
-		"desc": "One isn't too bad. 100 can be a problem.",
+		"desc": "ตัวเดียวยังรับไหว ร้อยตัวนี่สิปัญหา",
 		"hp": 14,
 		"defense": 5,
 		"attack": {
-			"name": "axe",
+			"name": "ขวาน",
 			"kind": "slash",
 			"damage": "5~9"
-		}
+		},
+		"name": "ทาสรับใช้"
 	},
 	{
 		"id": "bandit",
-		"desc": "Wants to steal your stuff.",
+		"desc": "อยากขโมยของของคุณ",
 		"kind": "humanoid",
 		"level": 15,
 		"hp": 14,
 		"defense": 10,
 		"dodge": 10,
 		"attack": {
-			"name": "short sword",
+			"name": "ดาบสั้น",
 			"kind": "slash",
 			"damage": "4~7"
 		},
 		"loot": {
 			"gold": "10~15",
-			"cotton": { "%": "60%", "value": "2~3" }
-		}
+			"cotton": {
+				"%": "60%",
+				"value": "2~3"
+			}
+		},
+		"name": "โจร"
 	},
 	{
 		"id": "electriceel",
-		"name": "electric eel",
-		"desc": "So wriggly.",
+		"name": "ปลาไหลไฟฟ้า",
+		"desc": "ดิ้นไปมาเหลือเกิน",
 		"kind": "beast",
 		"biome": "sea",
 		"level": 43,
@@ -910,7 +1042,7 @@
 			"air": 25
 		},
 		"attack": {
-			"name": "zap",
+			"name": "ช็อต",
 			"kind": "air",
 			"targets": "enemies",
 			"maxTargets": 999,
@@ -919,13 +1051,13 @@
 	},
 	{
 		"id": "orcwarrior",
-		"name": "orc warrior",
+		"name": "นักรบออร์ค",
 		"kind": "humanoid",
 		"level": 27,
 		"hp": 34,
 		"defense": 30,
 		"attack": {
-			"name": "orc hammer",
+			"name": "ค้อนออร์ค",
 			"kind": "blunt",
 			"damage": "2~7"
 		}
@@ -937,16 +1069,17 @@
 		"hp": 9,
 		"defense": 17,
 		"attack": {
-			"name": "dagger",
+			"name": "มีดสั้น",
 			"kind": "pierce",
 			"damage": "2~3"
-		}
+		},
+		"name": "ฮ็อบก็อบลิน"
 	},
 	{
 		"id": "snek",
-		"name": "arcane serpent",
-		"desc": "Fiercely loyal when summoned by magic.",
-		"flavor": "Do not boop.",
+		"name": "งูเวทมนตร์",
+		"desc": "ภักดีอย่างยิ่งเมื่อถูกเรียกด้วยเวทมนตร์",
+		"flavor": "ห้ามจุ๊กจิก",
 		"kind": "magicbeast",
 		"level": 12,
 		"hp": 50,
@@ -954,12 +1087,12 @@
 		"defense": 20,
 		"attack": [
 			{
-				"name": "constrict",
+				"name": "รัด",
 				"kind": "blunt",
 				"damage": "6~14"
 			},
 			{
-				"name": "venom",
+				"name": "พิษ",
 				"dot": {
 					"duration": 7,
 					"kind": "nature",
@@ -970,28 +1103,30 @@
 	},
 	{
 		"id": "barracuda",
-		"name": "great barracuda",
-		"desc": "It's bitey.",
+		"name": "ปลาบาราคูดายักษ์",
+		"desc": "มันชอบกัด",
 		"kind": "beast",
 		"biome": "sea",
 		"level": 40,
-		"resist": { "water": 20 },
+		"resist": {
+			"water": 20
+		},
 		"attack": {
-			"name": "bite",
+			"name": "กัด",
 			"kind": "pierce",
 			"damage": "11~13"
 		}
 	},
 	{
 		"id": "giantcentipede",
-		"name": "giant centipede",
+		"name": "ตะขาบยักษ์",
 		"kind": "beast",
 		"level": 10,
-		"desc": "Creepy crawly.",
+		"desc": "สัตว์เลื้อยคลานขนลุก",
 		"hp": 16,
 		"defense": 15,
 		"attack": {
-			"name": "sting",
+			"name": "ต่อย",
 			"kind": "pierce",
 			"damage": "5~8",
 			"dot": {
@@ -1009,69 +1144,91 @@
 		"hp": 16,
 		"dodge": 30,
 		"attack": {
-			"name": "bite",
+			"name": "กัด",
 			"kind": "pierce",
 			"damage": "2~4"
 		},
-		"loot": { "leather": { "%": "40%", "value": "2~4" } }
+		"loot": {
+			"leather": {
+				"%": "40%",
+				"value": "2~4"
+			}
+		},
+		"name": "หมาป่า"
 	},
 	{
 		"id": "leech",
 		"kind": "beast",
-		"desc": "Blood sucking leech.",
+		"desc": "ปลิงดูดเลือด",
 		"level": 28,
 		"attack": {
-			"name": "suck",
+			"name": "ดูด",
 			"kind": "pierce",
 			"damage": "2~4",
 			"leech": 0.5
-		}
+		},
+		"name": "ปลิง"
 	},
 	{
 		"id": "slime",
 		"kind": "magicbeast",
-		"desc": "You see some undigested bones and jewels in its... 'belly'? Gross.",
-		"flavor": "Eww, it doesn't even try to hold its form, just splashes acid everywhere.",
+		"desc": "คุณเห็นกระดูกและเพชรพลอยที่ย่อยไม่หมดใน... 'พุง'? ของมัน น่าขยะแขยง",
+		"flavor": "อี๋ มันไม่แม้แต่จะพยุงร่างตัวเองไว้ แค่สาดกรดไปทั่ว",
 		"level": 21,
 		"hp": 30,
 		"attack": {
-			"name": "squelch",
+			"name": "ย่ำไปมา",
 			"kind": "nature",
 			"targets": "enemies",
 			"maxTargets": 999,
 			"damage": "1~4"
 		},
 		"loot": {
-			"skulls": { "%": "20%", "value": 1, "skipLocked": true },
-			"bones": { "value": "3~5", "skipLocked": true },
+			"skulls": {
+				"%": "20%",
+				"value": 1,
+				"skipLocked": true
+			},
+			"bones": {
+				"value": "3~5",
+				"skipLocked": true
+			},
 			"gems": "2~3"
-		}
+		},
+		"name": "สไลม์"
 	},
 	{
 		"id": "corpse",
-		"name": "bloated corpse",
+		"name": "ศพบวม",
 		"kind": "undead",
 		"level": 30,
-		"resist": { "shadow": 20 },
+		"resist": {
+			"shadow": 20
+		},
 		"attack": {
-			"name": "body slam",
+			"name": "ทุ่มตัวลงทับ",
 			"kind": "blunt",
 			"damage": "3~4"
 		},
-		"loot": { "bodies": { "value": 1, "skipLocked": true } }
+		"loot": {
+			"bodies": {
+				"value": 1,
+				"skipLocked": true
+			}
+		}
 	},
 	{
 		"id": "banditlord",
-		"name": "bandit lord",
-		"desc": "Armed, agile, and deadly. His purses are certainly filled to the brim.",
-		"flavor": "All your loot are belong to him.",
+		"name": "เจ้าโจร",
+		"desc": "ครบทั้งอาวุธความว่องไวและอันตราย กระเป๋าเงินของเขาคงเต็มแน่น ๆ",
+		"flavor": "ของรางวัลทั้งหมดของคุณเป็นของเขาหมด",
 		"kind": "humanoid",
 		"level": 17,
 		"hp": 50,
 		"defense": 20,
 		"dodge": 30,
 		"attack": {
-			"name": "short sword",
+			"name": "ดาบสั้น",
 			"kind": "slash",
 			"damage": "2~5"
 		},
@@ -1084,9 +1241,11 @@
 		"id": "ghoul",
 		"kind": "undead",
 		"level": 29,
-		"resist": { "shadow": 20 },
+		"resist": {
+			"shadow": 20
+		},
 		"attack": {
-			"name": "infectious bite",
+			"name": "กัดติดเชื้อ",
 			"kind": "shadow",
 			"damage": "a.damage",
 			"dot": {
@@ -1094,19 +1253,20 @@
 				"duration": 15,
 				"damage": 1
 			}
-		}
+		},
+		"name": "กูล"
 	},
 	{
 		"id": "mechswordsman",
-		"name": "mechanical swordsman",
+		"name": "นักดาบจักรกล",
 		"level": 10,
 		"kind": "construct",
 		"evil": 0,
-		"desc": "Durable, but not very good at its job.",
+		"desc": "ทนทาน แต่ทำงานได้ไม่ค่อยดีนัก",
 		"hp": 22,
 		"defense": 28,
 		"attack": {
-			"name": "short sword",
+			"name": "ดาบสั้น",
 			"kind": "slash",
 			"damage": "3~7"
 		},
@@ -1114,13 +1274,13 @@
 	},
 	{
 		"id": "crab",
-		"name": "scuttling crab",
-		"desc": "A massive scuttling crab.",
+		"name": "ปูเดินกะปูดกะแป๊ด",
+		"desc": "ปูตัวมหึมาวิ่งกะปูดกะแป๊ด",
 		"kind": "beast",
 		"biome": "sea",
 		"level": 35,
 		"attack": {
-			"name": "claws",
+			"name": "กรงเล็บ",
 			"kind": "blunt",
 			"damage": "7~9"
 		}
@@ -1130,32 +1290,35 @@
 		"biome": "swamp",
 		"level": 10,
 		"kind": "beast",
-		"flavor": "They're wild!",
+		"flavor": "พวกมันดุร้าย!",
 		"hp": 14,
 		"defense": 20,
 		"attack": {
-			"name": "bite",
+			"name": "กัด",
 			"kind": "pierce",
 			"damage": "4~7"
 		},
 		"resist": {
 			"water": 15,
 			"nature": 20
-		}
+		},
+		"name": "จระเข้"
 	},
 	{
 		"id": "snowleopard",
-		"name": "snow leopard",
+		"name": "เสือดาวหิมะ",
 		"kind": "beast",
 		"level": 32,
 		"hp": 30,
 		"dodge": 50,
 		"attack": {
-			"name": "claws",
+			"name": "กรงเล็บ",
 			"kind": "water",
 			"damage": "4~7"
 		},
-		"resist": { "water": 20 }
+		"resist": {
+			"water": 20
+		}
 	},
 	{
 		"id": "minotaur",
@@ -1164,14 +1327,21 @@
 		"hp": 30,
 		"defense": 30,
 		"attack": {
-			"name": "mallet",
+			"name": "ค้อนไม้",
 			"kind": "blunt",
 			"damage": "3~6"
 		},
 		"loot": {
-			"iron": { "%": "30%", "value": "5~7" },
-			"leather": { "%": "30%", "value": "5~7" }
-		}
+			"iron": {
+				"%": "30%",
+				"value": "5~7"
+			},
+			"leather": {
+				"%": "30%",
+				"value": "5~7"
+			}
+		},
+		"name": "มินะทอร์"
 	},
 	{
 		"id": "werewolf",
@@ -1183,10 +1353,11 @@
 		"regen": 1.5,
 		"defense": 25,
 		"attack": {
-			"name": "claws",
+			"name": "กรงเล็บ",
 			"kind": "slash",
 			"damage": "3~6"
-		}
+		},
+		"name": "มนุษย์หมาป่า"
 	},
 	{
 		"id": "lion",
@@ -1197,54 +1368,56 @@
 		"defense": 18,
 		"speed": 8,
 		"attack": {
-			"name": "claws",
+			"name": "กรงเล็บ",
 			"kind": "slash",
 			"damage": "7~10"
-		}
+		},
+		"name": "สิงโต"
 	},
 	{
 		"id": "harpy",
-		"desc": "She doesn't look harpy to see you.",
+		"desc": "เธอดูไม่ยินดีเท่าไรที่ได้เจอคุณ",
 		"kind": "humanoid",
 		"level": 31,
 		"hp": 30,
 		"dodge": 30,
 		"speed": 40,
 		"attack": {
-			"name": "claws",
+			"name": "กรงเล็บ",
 			"kind": "slash",
 			"damage": "3~5"
-		}
+		},
+		"name": "ฮาร์ปี"
 	},
 	{
 		"id": "drunkenboxer",
-		"name": "drunken boxer",
+		"name": "นักมวยเมา",
 		"level": 12,
 		"kind": "humanoid",
 		"evil": -2,
-		"desc": "This monk has had a bit too much to drink...",
+		"desc": "พระรูปนี้ดื่มเข้าไปหน่อยเกินไปเสียหน่อย...",
 		"hp": 15,
 		"defense": 29,
 		"attack": {
-			"name": "fists",
+			"name": "หมัด",
 			"kind": "blunt",
 			"damage": "4~8"
 		}
 	},
 	{
 		"id": "imp",
-		"desc": "Little demonic bastards.",
+		"desc": "เจ้าปีศาจจอมกวนตัวน้อย",
 		"kind": "demon",
 		"level": 37,
 		"regen": 1,
 		"attack": [
 			{
-				"name": "fiery tongue",
+				"name": "ลิ้นเพลิง",
 				"kind": "fire",
 				"damage": "a.damage*1.4"
 			},
 			{
-				"name": "voice thievery",
+				"name": "ขโมยเสียง",
 				"dot": {
 					"%": "20%",
 					"id": "silence",
@@ -1252,19 +1425,28 @@
 				}
 			}
 		],
-		"resist": { "fire": 20 }
+		"resist": {
+			"fire": 20
+		},
+		"name": "อิมป์"
 	},
 	{
 		"id": "lgspider",
-		"name": "large spider",
-		"desc": "You can't tell if she looks hungry. Or what a spider the size of a dog would eat.",
+		"name": "แมงมุมใหญ่",
+		"desc": "บอกไม่ถูกว่าเธอดูหิวหรือเปล่า หรือว่าแมงมุมขนาดเท่าสุนัขจะกินอะไรได้บ้าง",
 		"kind": "beast",
-		"biome": ["swamp", "woods", "mountains"],
+		"biome": [
+			"swamp",
+			"woods",
+			"mountains"
+		],
 		"level": 30,
 		"hp": 40,
-		"resist": { "nature": 25 },
+		"resist": {
+			"nature": 25
+		},
 		"attack": {
-			"name": "bite",
+			"name": "กัด",
 			"kind": "pierce",
 			"damage": "3~5",
 			"dot": {
@@ -1274,19 +1456,24 @@
 				"damage": 1
 			}
 		},
-		"loot": { "spidersilk": { "%": "30%", "value": "2~4" } }
+		"loot": {
+			"spidersilk": {
+				"%": "30%",
+				"value": "2~4"
+			}
+		}
 	},
 	{
 		"id": "vampirebat",
-		"name": "vampire bat",
+		"name": "ค้างคาวแวมไพร์",
 		"level": 8,
 		"kind": "magicbeast",
 		"evil": 5,
-		"desc": "It vants to zuck your blood.",
+		"desc": "มันอยากดูดเลือดของคุณ",
 		"hp": 12,
 		"defense": 25,
 		"attack": {
-			"name": "bite",
+			"name": "กัด",
 			"kind": "pierce",
 			"leech": 0.2,
 			"damage": "5~7"
@@ -1294,49 +1481,53 @@
 	},
 	{
 		"id": "sandmite",
-		"name": "sand mite",
-		"desc": "Oversized parasites of the dunes.",
+		"name": "ไรทะเลทราย",
+		"desc": "ปรสิตตัวโตเกินขนาดแห่งเนินทราย",
 		"kind": "beast",
 		"level": 29,
 		"hp": 40,
 		"attack": {
-			"name": "burrow",
+			"name": "ขุดโพรง",
 			"kind": "pierce",
 			"damage": "4~6"
 		}
 	},
 	{
 		"id": "vrrek",
-		"desc": "An intelligent scavenger with the features of a vulture.",
-		"flavor": "Vrrek is what most of their words sound like.",
+		"desc": "สัตว์กินซากผู้ชาญฉลาดมีหน้าตาเหมือนแร้ง",
+		"flavor": "วเร็กคือสิ่งที่คำพูดส่วนใหญ่ของพวกมันฟังดูคล้าย",
 		"kind": "humanoid",
 		"level": 20,
 		"hp": 20,
 		"attack": {
-			"name": "talons",
+			"name": "กรงเล็บ",
 			"kind": "slash",
 			"damage": "2~3.5"
-		}
+		},
+		"name": "วเร็ก"
 	},
 	{
 		"id": "callodiper",
-		"desc": "Their globed hands glow with pale, unearthly light.",
-		"flavor": "It is said they feed on darkness.",
+		"desc": "มือกลม ๆ ของพวกมันเรืองแสงซีด ๆ อันเกินโลก",
+		"flavor": "เล่ากันว่าพวกมันกินความมืดเป็นอาหาร",
 		"biome": "cave",
 		"kind": "humanoid",
 		"level": 55,
-		"resist": { "light": 20 },
+		"resist": {
+			"light": 20
+		},
 		"attack": {
-			"name": "light burst",
+			"name": "แสงระเบิด",
 			"targets": "enemies",
 			"maxTargets": 999,
 			"kind": "light",
 			"damage": "a.damage*0.7"
-		}
+		},
+		"name": "คัลโลดิเปอร์"
 	},
 	{
 		"id": "direwolf",
-		"name": "dire wolf",
+		"name": "หมาป่าปีศาจ",
 		"level": 10,
 		"kind": "magicbeast",
 		"evil": 7,
@@ -1344,7 +1535,7 @@
 		"hp": 17,
 		"defense": 20,
 		"attack": {
-			"name": "bite",
+			"name": "กัด",
 			"kind": "pierce",
 			"damage": "3~6"
 		}
@@ -1360,14 +1551,15 @@
 			"shadow": 15
 		},
 		"attack": {
-			"name": "spectral claws",
+			"name": "กรงเล็บวิญญาณ",
 			"kind": "spirit",
 			"damage": "0~10"
-		}
+		},
+		"name": "ไวต์"
 	},
 	{
 		"id": "doppelganger",
-		"desc": "Such a good-looking fellow!",
+		"desc": "ช่างเป็นหนุ่มหน้าตาดีจริง ๆ!",
 		"kind": "humanoid",
 		"level": 32,
 		"hp": 25,
@@ -1376,31 +1568,32 @@
 		"speed": 10,
 		"attack": [
 			{
-				"name": "fire dart",
+				"name": "หอกเพลิง",
 				"kind": "fire",
 				"damage": "5~6"
 			},
 			{
-				"name": "zap",
+				"name": "ช็อต",
 				"kind": "air",
 				"damage": "3~7"
 			},
 			{
-				"name": "light spear",
+				"name": "หอกแสง",
 				"kind": "light",
 				"damage": "5~8"
 			}
-		]
+		],
+		"name": "ด็อพเพิลแกงเกอร์"
 	},
 	{
 		"id": "ghost",
-		"flavor": "Boo!",
+		"flavor": "บู!",
 		"kind": "undead",
 		"level": 12,
 		"hp": 10,
 		"defense": 20,
 		"attack": {
-			"name": "death touch",
+			"name": "สัมผัสแห่งความตาย",
 			"kind": "shadow",
 			"damage": "1~4"
 		},
@@ -1408,12 +1601,13 @@
 			"slash": 50,
 			"pierce": 50,
 			"blunt": 50
-		}
+		},
+		"name": "ผี"
 	},
 	{
 		"id": "ghost2",
-		"name": "ghost",
-		"flavor": "Boooooo!",
+		"name": "ผี",
+		"flavor": "บู้วววว!",
 		"kind": "undead",
 		"level": 33,
 		"hp": 60,
@@ -1424,7 +1618,7 @@
 		},
 		"attack": [
 			{
-				"name": "death swipe",
+				"name": "ฟันแห่งความตาย",
 				"kind": "shadow",
 				"damage": "2~5"
 			},
@@ -1449,7 +1643,7 @@
 		"defense": 23,
 		"spells": "firebolt",
 		"attack": {
-			"name": "flame claws",
+			"name": "กรงเล็บเพลิง",
 			"kind": "fire",
 			"damage": "3~9",
 			"dot": {
@@ -1472,25 +1666,31 @@
 					"damage": "i.damage||0",
 					"tohit": 5,
 					"kind": "fire",
-					"potencies": ["spelldmg", "firedmg"]
+					"potencies": [
+						"spelldmg",
+						"firedmg"
+					]
 				}
 			}
-		}
+		},
+		"name": "ซาลาแมนเดอร์"
 	},
 	{
 		"id": "giantsnake",
-		"name": "giant snake",
-		"desc": "Not venomous at all.",
+		"name": "งูยักษ์",
+		"desc": "ไม่มีพิษเลยแม้แต่นิด",
 		"kind": "beast",
 		"level": 35,
 		"hp": 80,
 		"defense": 20,
 		"attack": {
-			"name": "constrict",
+			"name": "รัด",
 			"kind": "blunt",
 			"damage": "8~10"
 		},
-		"resist": { "nature": 25 }
+		"resist": {
+			"nature": 25
+		}
 	},
 	{
 		"id": "bugbear",
@@ -1499,49 +1699,61 @@
 		"hp": 18,
 		"defense": 25,
 		"attack": {
-			"name": "mace",
+			"name": "กระบองหนาม",
 			"kind": "blunt",
 			"damage": "2.5~4"
-		}
+		},
+		"name": "บั๊กแบร์"
 	},
 	{
 		"id": "evilpriest",
-		"name": "evil priest",
-		"desc": "He worships evil.",
+		"name": "นักบวชชั่วร้าย",
+		"desc": "เขาบูชาความชั่วร้าย",
 		"kind": "human",
 		"level": 42,
 		"hp": 60,
 		"regen": 5,
 		"barrier": 60,
-		"resist": { "shadow": 20 },
+		"resist": {
+			"shadow": 20
+		},
 		"attack": {
-			"name": "dark bolt",
+			"name": "สายฟ้าความมืด",
 			"kind": "shadow",
 			"damage": "13~19"
 		},
 		"loot": {
-			"spidersilk": { "%": "30%", "value": "2~4" },
-			"rubies": { "%": "30%", "value": "3~4" }
+			"spidersilk": {
+				"%": "30%",
+				"value": "2~4"
+			},
+			"rubies": {
+				"%": "30%",
+				"value": "3~4"
+			}
 		}
 	},
 	{
 		"id": "blasphemer",
-		"desc": "She screams black obscenities.",
+		"desc": "เธอกรีดร้องถ้อยคำหยาบคายสีดำ",
 		"kind": "humanoid",
 		"level": 40,
-		"resist": { "shadow": 20 },
+		"resist": {
+			"shadow": 20
+		},
 		"attack": {
-			"name": "screech",
+			"name": "กรีดร้อง",
 			"kind": "shadow",
 			"targets": "enemies",
 			"maxTargets": 999,
 			"damage": "10~15"
-		}
+		},
+		"name": "ผู้หมิ่นประมาท"
 	},
 	{
 		"id": "m_hierophant",
-		"name": "wicked hierophant",
-		"desc": "Leader of wicked congregation",
+		"name": "มหาปุโรหิตผู้ชั่วร้าย",
+		"desc": "ผู้นำที่ประชุมชนผู้ชั่วร้าย",
 		"kind": "humanoid",
 		"level": 42,
 		"hp": 100,
@@ -1552,179 +1764,219 @@
 			"light": 15
 		},
 		"attack": {
-			"name": "sunset spears",
+			"name": "หอกยามอาทิตย์อัสดง",
 			"kind": "light",
 			"targets": "enemies",
 			"maxTargets": 999,
 			"damage": "10~15"
 		},
 		"loot": {
-			"spidersilk": { "%": "50%", "value": "4~5" },
-			"rubies": { "%": "50%", "value": "3~4" }
+			"spidersilk": {
+				"%": "50%",
+				"value": "4~5"
+			},
+			"rubies": {
+				"%": "50%",
+				"value": "3~4"
+			}
 		}
 	},
 	{
 		"id": "palus",
-		"name": "palus the sinner",
-		"desc": "Palus was a mere dabbler before unearthing the remains of a Dhrozen knight. Now he leads the Barrow priests.",
+		"name": "พาลัสผู้บาปหนา",
+		"desc": "พาลัสเป็นเพียงมือสมัครเล่นก่อนจะขุดพบซากอัศวินดรอเซน บัดนี้เขานำเหล่าปุโรหิตแห่งบาร์โรว์",
 		"kind": "humanoid",
 		"unique": true,
 		"level": 44,
 		"hp": 350,
 		"defense": 75,
 		"attack": {
-			"name": "harm",
+			"name": "ทำร้าย",
 			"kind": "shadow",
 			"damage": "16~22"
 		}
 	},
 	{
 		"id": "magicblade",
-		"name": "magic blade",
-		"desc": "It just floats there...",
+		"name": "ใบมีดเวทมนตร์",
+		"desc": "มันแค่ลอยอยู่ตรงนั้น...",
 		"kind": "construct",
 		"level": 40,
 		"hp": 100,
 		"defense": 30,
-		"resist": { "mana": 30 },
+		"resist": {
+			"mana": 30
+		},
 		"attack": {
-			"name": "itself",
+			"name": "ตัวมันเอง",
 			"kind": "slash",
 			"damage": 13
 		},
-		"loot": { "quicksteel": { "%": "30%", "value": "2~4" } }
+		"loot": {
+			"quicksteel": {
+				"%": "30%",
+				"value": "2~4"
+			}
+		}
 	},
 	{
 		"id": "bear",
-		"desc": "He's angry now!!!",
+		"desc": "ตอนนี้เขากำลังโมโหแล้ว!!!",
 		"kind": "beast",
-		"biome": ["woods", "hills", "mountains"],
+		"biome": [
+			"woods",
+			"hills",
+			"mountains"
+		],
 		"level": 28,
 		"attack": {
-			"name": "claws",
+			"name": "กรงเล็บ",
 			"kind": "slash",
 			"damage": "a.damage*0.8"
-		}
+		},
+		"name": "หมี"
 	},
 	{
 		"id": "ghast",
 		"kind": "undead",
 		"level": 29,
-		"resist": { "shadow": 20 },
+		"resist": {
+			"shadow": 20
+		},
 		"attack": {
-			"name": "claws",
+			"name": "กรงเล็บ",
 			"kind": "slash",
 			"damage": "a.damage*0.8"
-		}
+		},
+		"name": "แกสต์"
 	},
 	{
 		"id": "berserker",
-		"flavor": "You gotta... dance.",
+		"flavor": "เจ้าน่ะ...ต้องเต้น",
 		"kind": "humanoid",
 		"level": 14,
 		"hp": 25,
 		"defense": 29,
 		"attack": {
-			"name": "claymore",
+			"name": "ดาบเคลย์มอร์",
 			"kind": "slash",
 			"damage": "3~10"
-		}
+		},
+		"name": "นักรบบ้าคลั่ง"
 	},
 	{
 		"id": "quasit",
-		"desc": "Like a demonic humanoid vulture.",
+		"desc": "เหมือนแร้งรูปร่างมนุษย์ปีศาจ",
 		"kind": "demon",
 		"level": 51,
 		"regen": 1,
 		"attack": {
-			"name": "Poisonous Claws",
+			"name": "กรงเล็บพิษ",
 			"kind": "nature",
 			"damage": "35~42"
 		},
-		"loot": { "aetherhide": { "%": "60%", "value": "2~3" } }
+		"loot": {
+			"aetherhide": {
+				"%": "60%",
+				"value": "2~3"
+			}
+		},
+		"name": "ควาซิต"
 	},
 	{
 		"id": "greaterzombie",
-		"name": "greater zombie",
+		"name": "ซอมบี้ขั้นสูง",
 		"level": 14,
 		"kind": "undead",
 		"evil": 13,
-		"desc": "It ate up all the smaller zombies.",
+		"desc": "มันกินซอมบี้ตัวเล็ก ๆ ไปหมดแล้ว",
 		"hp": 42,
 		"defense": 22,
 		"regen": 1,
 		"attack": {
-			"name": "slam",
+			"name": "ทุ่ม",
 			"kind": "blunt",
 			"damage": "7~12"
 		},
 		"loot": {
-			"bodies": { "value": 1, "skipLocked": true }
+			"bodies": {
+				"value": 1,
+				"skipLocked": true
+			}
 		}
 	},
 	{
 		"id": "shriekingeel",
-		"name": "shrieking eel",
-		"desc": "Oversized eel with bladed teeth and a terrifying screach.",
+		"name": "ปลาไหลกรีดร้อง",
+		"desc": "ปลาไหลตัวโตเกินขนาดมีฟันคมและเสียงกรีดร้องอันน่าสะพรึง",
 		"kind": "beast",
 		"biome": "sea",
 		"level": 42,
-		"resist": { "water": 20 },
+		"resist": {
+			"water": 20
+		},
 		"attack": {
-			"name": "scream",
+			"name": "กรีดร้อง",
 			"kind": "air",
 			"damage": "10~20"
 		}
 	},
 	{
 		"id": "dwarp",
-		"desc": "Its contorted purple body can hide in the smallest crevices.",
-		"flavor": "A dwarp can hear the drip of water through 100 feet of solid rock.",
+		"desc": "ร่างสีม่วงที่บิดเบี้ยวของมันซ่อนตัวในรอยแตกที่เล็กที่สุดได้",
+		"flavor": "คนแคระดวาร์ปได้ยินเสียงน้ำหยดทะลุหินแข็งหนา 100 ฟุตได้",
 		"kind": "humanoid",
 		"biome": "cave",
 		"level": 57,
 		"hp": 200,
 		"dodge": 200,
 		"attack": {
-			"name": "strangle",
+			"name": "รัดคอ",
 			"kind": "blunt",
 			"damage": "40~60"
-		}
+		},
+		"name": "คนแคระดวาร์ป"
 	},
 	{
 		"id": "ogre",
-		"flavor": "Ever wonder how orcs would look if they were three times as large?",
+		"flavor": "เคยสงสัยไหมว่าออร์คจะหน้าตาอย่างไรถ้าตัวใหญ่เป็นสามเท่า?",
 		"kind": "giant",
 		"level": 31,
 		"hp": 44,
 		"defense": 20,
 		"speed": 20,
 		"attack": {
-			"name": "club",
+			"name": "ไม้กระบอง",
 			"kind": "blunt",
 			"damage": "6~9"
-		}
+		},
+		"name": "โอเกร"
 	},
 	{
 		"id": "ogrewarrior",
-		"name": "ogre warrior",
-		"flavor": "Ever wonder how ogres would look if they were twice as strong?",
+		"name": "นักรบโอเกร",
+		"flavor": "เคยสงสัยไหมว่าโอเกรจะหน้าตาอย่างไรถ้าแข็งแกร่งเป็นสองเท่า?",
 		"kind": "giant",
 		"level": 33,
 		"hp": 54,
 		"defense": 20,
 		"speed": 20,
 		"attack": {
-			"name": "magic club",
+			"name": "กระบองเวทมนตร์",
 			"kind": "mana",
 			"damage": "9~14"
 		},
-		"loot": { "quicksteel": { "%": "30%", "value": "2~4" } }
+		"loot": {
+			"quicksteel": {
+				"%": "30%",
+				"value": "2~4"
+			}
+		}
 	},
 	{
 		"id": "ogrechief",
-		"name": "chief of ogres",
-		"flavor": "Ever wonder how ettins would look if they lead a tribe for years?",
+		"name": "หัวหน้าเผ่าโอเกร",
+		"flavor": "เคยสงสัยไหมว่าเอตตินจะหน้าตาอย่างไรถ้าพวกมันปกครองเผ่ามาหลายปี?",
 		"kind": "giant",
 		"unique": true,
 		"level": 37,
@@ -1734,89 +1986,94 @@
 		"speed": 20,
 		"attack": [
 			{
-				"name": "totem pole",
+				"name": "เสาโทเท็ม",
 				"kind": "blunt",
 				"damage": "16~12"
 			},
 			{
-				"name": "ice wave",
+				"name": "คลื่นน้ำแข็ง",
 				"kind": "water",
 				"targets": "enemies",
 				"maxTargets": 999,
 				"damage": "7~10"
 			},
 			{
-				"name": "life's boon",
+				"name": "พรแห่งชีวิต",
 				"kind": "nature",
 				"targets": "self",
 				"healing": 4
 			}
 		],
-		"loot": { "quicksteel": "3~4" }
+		"loot": {
+			"quicksteel": "3~4"
+		}
 	},
 	{
 		"id": "frixie",
-		"desc": "A nasty fey of cold disposition.",
+		"desc": "ภูติจอมวายร้ายนิสัยเย็นชา",
 		"kind": "fey",
 		"level": 31,
 		"hp": 45,
 		"dodge": 20,
 		"attack": {
-			"name": "frost bolt",
+			"name": "สายฟ้าละอองน้ำแข็ง",
 			"kind": "water",
 			"damage": "4~17"
 		},
 		"resist": {
 			"water": 25,
 			"nature": 25
-		}
+		},
+		"name": "ฟริกซี"
 	},
 	{
 		"id": "claygolem",
-		"name": "clay golem",
-		"desc": "Bulky little fellow, but very sluggish.",
-		"flavor": "I made you out of clay...",
+		"name": "โกเลมดินเหนียว",
+		"desc": "ตัวถึก ๆ แต่เชื่องช้ามาก",
+		"flavor": "ข้าสร้างเจ้าจากดินเหนียว...",
 		"kind": "construct",
 		"level": 32,
 		"hp": 24,
 		"defense": 20,
 		"speed": 0,
 		"attack": {
-			"name": "smash",
+			"name": "ทุบ",
 			"kind": "blunt",
 			"damage": "6~10"
 		}
 	},
 	{
 		"id": "direcrocodile",
-		"name": "dire crocodile",
+		"name": "จระเข้ปีศาจ",
 		"kind": "magicbeast",
 		"biome": "swamp",
 		"level": 35,
 		"attack": {
-			"name": "bite",
+			"name": "กัด",
 			"kind": "nature",
 			"damage": "5~10"
 		}
 	},
 	{
 		"id": "spiderqueen",
-		"name": "spider queen",
+		"name": "ราชินีแมงมุม",
 		"kind": "beast",
 		"unique": true,
 		"level": 38,
 		"hp": 200,
 		"attack": [
 			{
-				"name": "web throw",
+				"name": "ขว้างใย",
 				"dot": {
 					"name": "webbed",
 					"duration": 3,
-					"mod": { "self.speed": -5 }
+					"mod": {
+						"self.speed": -5
+					}
 				}
 			},
 			{
-				"name": "call spider",
+				"name": "เรียกแมงมุม",
 				"targets": "self",
 				"summon": {
 					"id": "lgspider",
@@ -1825,13 +2082,20 @@
 				}
 			}
 		],
-		"loot": { "spidersilk": "3~5" }
+		"loot": {
+			"spidersilk": "3~5"
+		}
 	},
 	{
 		"id": "ettin",
-		"flavor": "Ever wonder how ogre warriors would look if they had twice as many heads? And used magic?",
+		"flavor": "เคยสงสัยไหมว่านักรบโอเกรจะหน้าตาอย่างไรถ้ามีหัวเป็นสองเท่า? และใช้เวทมนตร์?",
 		"kind": "giant",
-		"biome": ["hills", "woods", "swamp", "mountains"],
+		"biome": [
+			"hills",
+			"woods",
+			"swamp",
+			"mountains"
+		],
 		"level": 35,
 		"hp": 57,
 		"defense": 20,
@@ -1839,38 +2103,45 @@
 		"speed": 20,
 		"attack": [
 			{
-				"name": "magic club",
+				"name": "กระบองเวทมนตร์",
 				"kind": "mana",
 				"damage": "9~14"
 			},
 			{
-				"name": "fire wave",
+				"name": "คลื่นเพลิง",
 				"kind": "fire",
 				"targets": "enemies",
 				"maxTargets": 999,
 				"damage": "7~10"
 			}
 		],
-		"loot": { "quicksteel": { "%": "30%", "value": "2~4" } }
+		"loot": {
+			"quicksteel": {
+				"%": "30%",
+				"value": "2~4"
+			}
+		},
+		"name": "เอตติน"
 	},
 	{
 		"id": "shark",
 		"level": 18,
 		"kind": "beast",
 		"biome": "sea",
-		"desc": "It's bitey.",
+		"desc": "มันชอบกัด",
 		"hp": 58,
 		"speed": 11,
 		"defense": 18,
 		"attack": {
-			"name": "bite",
+			"name": "กัด",
 			"kind": "pierce",
 			"damage": "10~15",
 			"leech": 0.2
 		},
 		"resist": {
 			"water": 50
-		}
+		},
+		"name": "ฉลาม"
 	},
 	{
 		"id": "shade",
@@ -1883,164 +2154,190 @@
 			"spirit": 50
 		},
 		"attack": {
-			"name": "otherwordly touch",
+			"name": "สัมผัสจากต่างโลก",
 			"kind": "spirit",
 			"damage": "100~140",
 			"leech": 0.05
-		}
+		},
+		"name": "เงามืด"
 	},
 	{
 		"id": "stalker",
-		"name": "invisible stalker",
-		"desc": "You don't see a thing.",
+		"name": "ผู้ไล่ล่าล่องหน",
+		"desc": "คุณไม่เห็นอะไรเลย",
 		"kind": "humanoid",
 		"level": 41,
 		"hp": 90,
 		"dodge": 60,
 		"attack": {
-			"name": "something invisible",
+			"name": "บางสิ่งบางอย่างที่มองไม่เห็น",
 			"kind": "mana",
 			"damage": "13~15"
 		}
 	},
 	{
 		"id": "m_druid",
-		"name": "druid",
-		"desc": "Ardent of nature.",
+		"name": "ดรูอิด",
+		"desc": "ผู้ศรัทธาในธรรมชาติอย่างแรงกล้า",
 		"kind": "humanoid",
 		"level": 34,
-		"resist": { "nature": 25 },
+		"resist": {
+			"nature": 25
+		},
 		"regen": 3,
 		"attack": {
-			"name": "leafstorm",
+			"name": "พายุใบไม้",
 			"kind": "nature",
 			"damage": "9~17"
 		}
 	},
 	{
 		"id": "steelgolem",
-		"name": "steel golem",
-		"desc": "Much more sophisticated magic and materials went into this creation, as you see it swiftly rolling around",
+		"name": "โกเลมเหล็กกล้า",
+		"desc": "เวทมนตร์และวัสดุอันประณีตกว่านั้นมากถูกใช้สร้างสิ่งนี้ อย่างที่คุณเห็นมันกลิ้งไปมาอย่างว่องไว",
 		"kind": "construct",
 		"level": 34,
 		"hp": 50,
 		"defense": 50,
 		"attack": {
-			"name": "attached blade",
+			"name": "ใบมีดติดกับตัว",
 			"kind": "slash",
 			"damage": "7~8"
 		},
-		"loot": { "quicksteel": "4~7" }
+		"loot": {
+			"quicksteel": "4~7"
+		}
 	},
 	{
 		"id": "masterswordsman",
-		"name": "master swordsman",
-		"desc": "He's looking for a six-fingered man.",
+		"name": "จอมดาบ",
+		"desc": "เขากำลังตามหาชายหกนิ้ว",
 		"kind": "humanoid",
 		"level": 51,
 		"hp": 150,
 		"defense": 50,
 		"dodge": 50,
 		"attack": {
-			"name": "longsword of highest quality",
+			"name": "ดาบยาวคุณภาพเยี่ยมที่สุด",
 			"kind": "slash",
 			"damage": "a.damage*0.7"
 		},
-		"loot": { "adamant": { "%": "60%", "value": "2~3" } }
+		"loot": {
+			"adamant": {
+				"%": "60%",
+				"value": "2~3"
+			}
+		}
 	},
 	{
 		"id": "pegasus",
 		"level": 16,
 		"kind": "magicbeast",
 		"evil": -13,
-		"desc": "It's a unicorn with wings and no horn.",
+		"desc": "มันคือยูนิคอร์นมีปีกและไม่มีเขา",
 		"hp": 54,
 		"defense": 27,
 		"spells": "whirl3",
 		"attack": {
-			"name": "trample",
+			"name": "เหยียบย่ำ",
 			"kind": "blunt",
 			"damage": "9~15"
 		},
 		"resist": {
 			"air": 20
-		}
+		},
+		"name": "เพกาซัส"
 	},
 	{
 		"id": "earthelemental",
-		"name": "earth elemental",
-		"desc": "How do you fight dirt?",
+		"name": "เอเลเมนทัลดิน",
+		"desc": "จะสู้กับดินได้อย่างไร?",
 		"kind": "elemental",
 		"level": 23,
 		"hp": 25,
-		"resist": { "earth": 20 },
+		"resist": {
+			"earth": 20
+		},
 		"speed": 0,
 		"attack": {
-			"name": "pound",
+			"name": "ทุบซ้ำ",
 			"kind": "earth",
 			"damage": "8~12"
 		},
-		"loot": { "earthgem": "10%" }
+		"loot": {
+			"earthgem": "10%"
+		}
 	},
 	{
 		"id": "airelemental",
-		"name": "air elemental",
-		"desc": "It must have been the wind",
+		"name": "เอเลเมนทัลลม",
+		"desc": "คงต้องเป็นลมแน่ ๆ",
 		"kind": "elemental",
 		"level": 23,
 		"hp": 25,
-		"resist": { "air": 20 },
+		"resist": {
+			"air": 20
+		},
 		"speed": 40,
 		"attack": {
-			"name": "air whip",
+			"name": "แส้ลม",
 			"kind": "air",
 			"damage": "1.5~2.5"
 		},
-		"loot": { "airgem": "10%" }
+		"loot": {
+			"airgem": "10%"
+		}
 	},
 	{
 		"id": "stonegolem",
-		"name": "stone golem",
-		"desc": "The head stone's connected to the... spine stone.",
+		"name": "โกเลมหิน",
+		"desc": "หินหัวต่อกับ...หินกระดูกสันหลัง",
 		"kind": "construct",
 		"level": 32,
 		"hp": 30,
 		"defense": 30,
 		"speed": 0,
 		"attack": {
-			"name": "smash",
+			"name": "ทุบ",
 			"kind": "earth",
 			"damage": "9~13"
 		}
 	},
 	{
 		"id": "unicorn",
-		"desc": "Its horn is full of magic.",
+		"desc": "เขาของมันเต็มไปด้วยเวทมนตร์",
 		"kind": "magicbeast",
-		"biome": ["plains", "woods"],
+		"biome": [
+			"plains",
+			"woods"
+		],
 		"level": 35,
 		"attack": {
-			"name": "magic horn",
+			"name": "เขาเวทมนตร์",
 			"kind": "mana",
 			"damage": "8~10"
-		}
+		},
+		"name": "ยูนิคอร์น"
 	},
 	{
 		"id": "vampire",
-		"desc": "Standard blood sucking variety.",
+		"desc": "จำพวกดูดเลือดแบบมาตรฐาน",
 		"kind": "undead",
 		"level": 38,
-		"resist": { "shadow": 20 },
+		"resist": {
+			"shadow": 20
+		},
 		"attack": {
-			"name": "bite",
+			"name": "กัด",
 			"kind": "shadow",
 			"damage": "6~15",
 			"leech": 0.1
-		}
+		},
+		"name": "แวมไพร์"
 	},
 	{
 		"id": "wraith",
-		"desc": "A ghostly black form.",
+		"desc": "ร่างสีดำคล้ายวิญญาณ",
 		"kind": "undead",
 		"level": 29,
 		"hp": 30,
@@ -2050,37 +2347,46 @@
 			"shadow": 20
 		},
 		"attack": {
-			"name": "death touch",
+			"name": "สัมผัสแห่งความตาย",
 			"kind": "shadow",
 			"damage": "3~7"
 		},
-		"loot": { "souls": { "%": "30%", "value": "2~4", "skipLocked": true } }
+		"loot": {
+			"souls": {
+				"%": "30%",
+				"value": "2~4",
+				"skipLocked": true
+			}
+		},
+		"name": "เรธ"
 	},
 	{
 		"id": "magicmirror",
-		"name": "magic mirror",
+		"name": "กระจกวิเศษ",
 		"kind": "construct",
 		"level": 33,
 		"hp": 52,
 		"attack": {
-			"name": "light beam",
+			"name": "ลำแสง",
 			"targets": "enemies",
 			"maxTargets": 999,
 			"kind": "light",
 			"damage": "0~12"
 		},
-		"resist": { "light": 30 }
+		"resist": {
+			"light": 30
+		}
 	},
 	{
 		"id": "phoenix",
 		"level": 14,
-		"desc": "It's more fire than bird.",
+		"desc": "มันเป็นไฟมากกว่านก",
 		"kind": "magicbeast",
 		"evil": -13,
 		"hp": 47,
 		"defense": 40,
 		"attack": {
-			"name": "flame wing",
+			"name": "ปีกเพลิง",
 			"kind": "fire",
 			"damage": "11~20"
 		},
@@ -2088,27 +2394,32 @@
 			{
 				"firegem": "1~3"
 			}
-		]
+		],
+		"name": "ฟีนิกซ์"
 	},
 	{
 		"id": "iceelemental",
-		"name": "ice elemental",
-		"desc": "What's so scary about a bunch of icicles?",
+		"name": "เอเลเมนทัลน้ำแข็ง",
+		"desc": "หิ้วน้ำแข็งพวงหนึ่งมันน่ากลัวตรงไหน?",
 		"kind": "elemental",
 		"level": 23,
 		"hp": 25,
-		"resist": { "water": 20 },
+		"resist": {
+			"water": 20
+		},
 		"attack": {
-			"name": "ice shard",
+			"name": "สะเก็ดน้ำแข็ง",
 			"kind": "water",
 			"damage": "3~7"
 		},
-		"loot": { "watergem": "10%" }
+		"loot": {
+			"watergem": "10%"
+		}
 	},
 	{
 		"id": "roc",
-		"desc": "An avian terror of mythic repute.",
-		"extdesc": "This one looks pretty young.",
+		"desc": "นกสยองขวัญระดับตำนาน",
+		"extdesc": "ตัวนี้ดูยังหนุ่มอยู่เลย",
 		"kind": "magicbeast",
 		"unique": true,
 		"biome": "mountains",
@@ -2117,23 +2428,24 @@
 		"dodge": 50,
 		"attack": [
 			{
-				"name": "beak",
+				"name": "จะงอยปาก",
 				"kind": "pierce",
 				"damage": "2~4"
 			},
 			{
-				"name": "razor feathers",
+				"name": "ขนนกคมมีด",
 				"kind": "slash",
 				"targets": "enemies",
 				"maxTargets": 999,
 				"damage": "1.5~3.5"
 			}
-		]
+		],
+		"name": "นกยักษ์ร็อก"
 	},
 	{
 		"id": "roc2",
-		"name": "roc",
-		"desc": "An avian terror of mythic repute.",
+		"name": "นกยักษ์ร็อก",
+		"desc": "นกสยองขวัญระดับตำนาน",
 		"kind": "magicbeast",
 		"unique": true,
 		"biome": "mountains",
@@ -2142,12 +2454,12 @@
 		"dodge": 50,
 		"attack": [
 			{
-				"name": "beak",
+				"name": "จะงอยปาก",
 				"kind": "pierce",
 				"damage": "4~6"
 			},
 			{
-				"name": "razor feathers",
+				"name": "ขนนกคมมีด",
 				"kind": "slash",
 				"targets": "enemies",
 				"maxTargets": 999,
@@ -2157,28 +2469,34 @@
 	},
 	{
 		"id": "incubus",
-		"desc": "You could bounce a coin off those abs.",
+		"desc": "โยนเหรียญลงไปบนกล้ามท้องพวกนั้นได้เลย",
 		"kind": "demon",
 		"level": 50,
 		"regen": 2,
 		"attack": {
-			"name": "seduction",
+			"name": "ยั่วยวน",
 			"kind": "shadow",
 			"targets": "enemies",
 			"damage": "a.damage"
 		},
-		"loot": { "aetherhide": { "%": "60%", "value": "2~3" } }
+		"loot": {
+			"aetherhide": {
+				"%": "60%",
+				"value": "2~3"
+			}
+		},
+		"name": "อินคิวบัส"
 	},
 	{
 		"id": "medusa",
-		"desc": "Kind of ugly.",
+		"desc": "น่าเกลียดไปหน่อย",
 		"kind": "humanoid",
 		"level": 42,
 		"hp": 100,
 		"defense": 30,
 		"dodge": 30,
 		"attack": {
-			"name": "stare",
+			"name": "จ้องเขม็ง",
 			"kind": "mana",
 			"targets": "enemies",
 			"maxTargets": 999,
@@ -2191,46 +2509,58 @@
 			}
 		},
 		"loot": {
-			"serpentskin": { "%": "60%", "value": "4~6" },
-			"rubies": { "%": "50%", "value": "3~4" }
-		}
+			"serpentskin": {
+				"%": "60%",
+				"value": "4~6"
+			},
+			"rubies": {
+				"%": "50%",
+				"value": "3~4"
+			}
+		},
+		"name": "เมดูซา"
 	},
 	{
 		"id": "orcchampion",
-		"name": "orc champion",
+		"name": "แชมป์นักรบออร์ค",
 		"level": 16,
 		"kind": "humanoid",
-		"desc": "A champion among orcs.",
+		"desc": "แชมป์ในหมู่เหล่าออร์ค",
 		"hp": 100,
 		"defense": 40,
 		"attack": {
-			"name": "broadsword",
+			"name": "ดาบใหญ่",
 			"kind": "slash",
 			"damage": "15~20"
 		}
 	},
 	{
 		"id": "direbear",
-		"name": "dire bear",
-		"desc": "He's angrier now!!!",
-		"biome": ["hills", "woods"],
+		"name": "หมีปีศาจ",
+		"desc": "ตอนนี้เขาโมโหยิ่งกว่าเดิม!!!",
+		"biome": [
+			"hills",
+			"woods"
+		],
 		"kind": "magicbeast",
 		"level": 41,
 		"attack": {
-			"name": "magical claws",
+			"name": "กรงเล็บเวทมนตร์",
 			"kind": "nature",
 			"damage": "a.damage"
 		}
 	},
 	{
 		"id": "undeadhorror",
-		"name": "undead horror",
-		"desc": "You need to stop looking at it before you go insane.",
+		"name": "ปีศาจอันเดด",
+		"desc": "คุณต้องหยุดมองมันก่อนที่คุณจะบ้าไป",
 		"kind": "undead",
 		"level": 34,
-		"resist": { "shadow": 20 },
+		"resist": {
+			"shadow": 20
+		},
 		"attack": {
-			"name": "chill touch",
+			"name": "สัมผัสเย็นยะเยือก",
 			"kind": "water",
 			"damage": "a.damage"
 		}
@@ -2239,23 +2569,28 @@
 		"id": "dullahan",
 		"level": 16,
 		"evil": 20,
-		"desc": "It doesn't have a head. But you do.",
+		"desc": "มันไม่มีหัว แต่คุณมี",
 		"kind": "humanoid",
 		"hp": 55,
 		"defense": 45,
 		"attack": {
-			"name": "vorpal sword",
+			"name": "ดาบวอร์พัล",
 			"kind": "slash",
 			"damage": "7~15"
 		},
-		"biome": ["town", "woods", "plains"],
+		"biome": [
+			"town",
+			"woods",
+			"plains"
+		],
 		"resist": {
 			"spirit": 25
-		}
+		},
+		"name": "ดัลลาฮาน"
 	},
 	{
 		"id": "naga",
-		"desc": "From the waist up, it doesn't look that bad.",
+		"desc": "ตั้งแต่เอวขึ้นไปก็ดูไม่เลวร้ายเท่าไร",
 		"kind": "humanoid",
 		"level": 42,
 		"hp": 100,
@@ -2263,12 +2598,12 @@
 		"dodge": 30,
 		"attack": [
 			{
-				"name": "scimitars",
+				"name": "ดาบคู่โค้ง",
 				"kind": "slash",
 				"damage": "12~15"
 			},
 			{
-				"name": "fangs",
+				"name": "เขี้ยว",
 				"kind": "nature",
 				"dot": {
 					"name": "venom",
@@ -2279,51 +2614,63 @@
 			}
 		],
 		"loot": {
-			"quicksteel": { "%": "30%", "value": "4~8" },
-			"serpentskin": { "%": "60%", "value": "4~7" }
-		}
+			"quicksteel": {
+				"%": "30%",
+				"value": "4~8"
+			},
+			"serpentskin": {
+				"%": "60%",
+				"value": "4~7"
+			}
+		},
+		"name": "นาคา"
 	},
 	{
 		"id": "poltergeist",
-		"desc": "Only the objects flying at your head alert you to its presence.",
+		"desc": "มีเพียงสิ่งของที่ปลิวเข้าหัวคุณเท่านั้นที่ทำให้รู้ว่ามันอยู่ใกล้",
 		"kind": "undead",
 		"level": 16,
 		"hp": 60,
 		"defense": 40,
 		"attack": {
-			"name": "chill touch",
+			"name": "สัมผัสเย็นยะเยือก",
 			"kind": "shadow",
 			"damage": "2~5"
-		}
+		},
+		"name": "โพลเทอร์ไกสต์"
 	},
 	{
 		"id": "fireelemental",
-		"name": "fire elemental",
-		"desc": "Too hot to get close to.",
+		"name": "เอเลเมนทัลไฟ",
+		"desc": "ร้อนเกินกว่าจะเข้าใกล้",
 		"kind": "elemental",
 		"level": 23,
 		"hp": 25,
-		"resist": { "fire": 20 },
+		"resist": {
+			"fire": 20
+		},
 		"attack": {
-			"name": "scorch",
+			"name": "แผดเผา",
 			"targets": "enemies",
 			"maxTargets": 999,
 			"kind": "fire",
 			"damage": "3~4"
 		},
-		"loot": { "firegem": "10%" }
+		"loot": {
+			"firegem": "10%"
+		}
 	},
 	{
 		"id": "lightelem",
-		"name": "light elemental",
-		"desc": "Too bright to see.",
-		"flavor": "My eyeeees!!!!",
+		"name": "เอเลเมนทัลแสง",
+		"desc": "สว่างเกินกว่าจะมองเห็น",
+		"flavor": "ตาข้าข้าาาา!!!!",
 		"kind": "elemental",
 		"level": 32,
 		"hp": 30,
 		"dodge": 50,
 		"attack": {
-			"name": "light beam",
+			"name": "ลำแสง",
 			"kind": "light",
 			"damage": "4~10",
 			"dot": {
@@ -2331,39 +2678,47 @@
 				"duration": 20,
 				"tags": "t_tohitdown",
 				"kind": "blind",
-				"mod": { "self.tohit": -20 }
+				"mod": {
+					"self.tohit": -20
+				}
 			}
 		},
-		"loot": { "lightgem": "10%" }
+		"loot": {
+			"lightgem": "10%"
+		}
 	},
 	{
 		"id": "cavetroll",
-		"name": "cave troll",
+		"name": "โทรลล์ถ้ำ",
 		"level": 18,
 		"evil": 15,
 		"kind": "giant",
-		"biome": ["hills", "mountains", "cave"],
-		"flavor": "They have a cave troll...",
+		"biome": [
+			"hills",
+			"mountains",
+			"cave"
+		],
+		"flavor": "พวกมันมีโทรลล์ถ้ำ...",
 		"hp": 90,
 		"defense": 35,
 		"regen": 2,
 		"attack": {
-			"name": "club",
+			"name": "ไม้กระบอง",
 			"kind": "blunt",
 			"damage": "15~27"
 		}
 	},
 	{
 		"id": "irongolem",
-		"name": "iron golem",
-		"desc": "It moves with heavy clonking steps.",
+		"name": "โกเลมเหล็ก",
+		"desc": "มันเคลื่อนที่ด้วยฝีเท้าที่ส่งเสียงกุกกักหนักหน่วง",
 		"level": 33,
 		"kind": "construct",
 		"hp": 45,
 		"defense": 45,
 		"speed": 0,
 		"attack": {
-			"name": "smash",
+			"name": "ทุบ",
 			"kind": "blunt",
 			"damage": "15~24"
 		},
@@ -2372,34 +2727,42 @@
 			"pierce": 10,
 			"blunt": 10
 		},
-		"loot": { "iron": "8~12" }
+		"loot": {
+			"iron": "8~12"
+		}
 	},
 	{
 		"id": "succubus",
 		"kind": "demon",
-		"flavor": "Oh my!",
+		"flavor": "โอ้โห!",
 		"level": 50,
 		"regen": 2,
 		"attack": {
-			"name": "seduction",
+			"name": "ยั่วยวน",
 			"kind": "shadow",
 			"targets": "enemies",
 			"maxTargets": 999,
 			"damage": "a.damage*0.7"
 		},
-		"loot": { "aetherhide": { "%": "60%", "value": "2~3" } }
+		"loot": {
+			"aetherhide": {
+				"%": "60%",
+				"value": "2~3"
+			}
+		},
+		"name": "ซักคิวบัส"
 	},
 	{
 		"id": "drunkenmaster",
-		"name": "drunken master",
+		"name": "จอมยุทธเมา",
 		"level": 20,
 		"evil": -10,
 		"kind": "humanoid",
-		"desc": "Master Wong Fei-Hung.",
+		"desc": "มาสเตอร์หว่องเฟยหง",
 		"hp": 53,
 		"defense": 44,
 		"attack": {
-			"name": "fists",
+			"name": "หมัด",
 			"kind": "blunt",
 			"damage": "7~17"
 		},
@@ -2410,26 +2773,27 @@
 	},
 	{
 		"id": "yeti",
-		"flavor": "You ain't seen nothing yeti.",
+		"flavor": "เจ้ายังไม่ได้เห็นเยติอะไรทั้งนั้น",
 		"kind": "giant",
 		"biome": "mountains",
 		"level": 32,
 		"hp": 60,
 		"attack": {
-			"name": "frozen claws",
+			"name": "กรงเล็บน้ำแข็ง",
 			"kind": "water",
 			"damage": "5~7"
-		}
+		},
+		"name": "เยติ"
 	},
 	{
 		"id": "lightningelemental",
-		"name": "lightning elemental",
-		"flavor": "All your hairs feel prickly.",
+		"name": "เอเลเมนทัลสายฟ้า",
+		"flavor": "ขนทุกเส้นของคุณรู้สึกชา ๆ เสียว ๆ",
 		"kind": "elemental",
 		"level": 28,
 		"hp": 40,
 		"attack": {
-			"name": "lightning",
+			"name": "สายฟ้า",
 			"targets": "enemies",
 			"maxTargets": 999,
 			"kind": "light",
@@ -2443,15 +2807,15 @@
 	},
 	{
 		"id": "mindslayer",
-		"name": "mind slayer",
+		"name": "สังหารจิต",
 		"level": 22,
 		"evil": 24,
-		"desc": "It licks your brain with its mind.",
+		"desc": "มันใช้จิตเลียสมองของคุณ",
 		"kind": "humanoid",
 		"hp": 49,
 		"defense": 44,
 		"attack": {
-			"name": "mind flay",
+			"name": "ถลกจิต",
 			"kind": "mana",
 			"damage": "11~19",
 			"dot": {
@@ -2462,12 +2826,12 @@
 	},
 	{
 		"id": "lesserwyrm",
-		"name": "lesser wyrm",
-		"desc": "A cross between a worm and a dragon.",
+		"name": "ไวร์มระดับล่าง",
+		"desc": "ลูกผสมระหว่างหนอนกับมังกร",
 		"kind": "magicbeast",
 		"level": 40,
 		"attack": {
-			"name": "bite",
+			"name": "กัด",
 			"kind": "fire",
 			"damage": "9~15"
 		}
@@ -2476,13 +2840,13 @@
 		"id": "basilisk",
 		"level": 22,
 		"kind": "magicbeast",
-		"desc": "A large lizard with a petrifying bite.",
+		"desc": "กิ้งก่าตัวใหญ่ที่มีพิษกัดกลายเป็นหิน",
 		"hp": 64,
 		"defense": 32,
 		"speed": 8,
 		"attack": [
 			{
-				"name": "bite",
+				"name": "กัด",
 				"kind": "earth",
 				"damage": "10~30",
 				"dot": {
@@ -2491,25 +2855,31 @@
 				}
 			},
 			{
-				"name": "claws",
+				"name": "กรงเล็บ",
 				"kind": "slash",
 				"damage": "20~50"
 			}
 		],
-		"loot": { "basiliskhide": { "%": "30%", "value": "2~4" } },
-		"immune": "poison"
+		"loot": {
+			"basiliskhide": {
+				"%": "30%",
+				"value": "2~4"
+			}
+		},
+		"immune": "poison",
+		"name": "บาซิลิสก์"
 	},
 	{
 		"id": "m_cordyceps",
-		"name": "cordyceps",
+		"name": "เห็ดเขากวาง",
 		"kind": "plant",
 		"level": 26,
-		"desc": "A writhing fungus chokes the air with spores.",
+		"desc": "เห็ดราที่ดิ้นไปมาสำลักอากาศด้วยสปอร์",
 		"hp": 65,
 		"defense": 80,
 		"attack": [
 			{
-				"name": "spores",
+				"name": "สปอร์",
 				"kind": "nature",
 				"damage": "20~40",
 				"dot": {
@@ -2521,14 +2891,14 @@
 	},
 	{
 		"id": "m_stranglevine",
-		"name": "stranglevine",
+		"name": "เถาวัลย์รัดคอ",
 		"kind": "plant",
 		"level": 34,
-		"desc": "Writhing tendrils seek to ensnare fresh prey.",
+		"desc": "เถาวัลย์ที่ดิ้นไปมาพยายามพันเหยื่อรายใหม่",
 		"hp": 165,
 		"spells": "vinewhip",
 		"attack": {
-			"name": "strangle",
+			"name": "รัดคอ",
 			"kind": "blunt",
 			"damage": "10~20",
 			"dot": [
@@ -2550,12 +2920,12 @@
 		"id": "cockatrice",
 		"level": 30,
 		"kind": "magicbeast",
-		"desc": "The stare of the cockatrice is death.",
+		"desc": "การจ้องมองของคอกคาทริซคือความตาย",
 		"speed": 8,
 		"hp": 300,
 		"attack": [
 			{
-				"name": "gaze",
+				"name": "จ้องตา",
 				"kind": "earth",
 				"damage": "30~60",
 				"dot": {
@@ -2564,18 +2934,19 @@
 				}
 			}
 		],
-		"immune": "paralyze"
+		"immune": "paralyze",
+		"name": "คอกคาทริซ"
 	},
 	{
 		"id": "basilisk2",
-		"name": "greater basilisk",
+		"name": "บาซิลิสก์ขั้นสูง",
 		"level": 34,
 		"kind": "magicbeast",
-		"desc": "A massive lizard with a petrifying bite.",
+		"desc": "กิ้งก่ามหึมาที่มีพิษกัดกลายเป็นหิน",
 		"hp": 300,
 		"attack": [
 			{
-				"name": "bite",
+				"name": "กัด",
 				"kind": "earth",
 				"damage": "40~70",
 				"dot": {
@@ -2585,26 +2956,31 @@
 				}
 			},
 			{
-				"name": "claws",
+				"name": "กรงเล็บ",
 				"kind": "slash",
 				"damage": "50~100"
 			}
 		],
-		"loot": { "basiliskhide": { "%": "30%", "value": "3~5" } },
+		"loot": {
+			"basiliskhide": {
+				"%": "30%",
+				"value": "3~5"
+			}
+		},
 		"immune": "poison,paralyze"
 	},
 	{
 		"id": "hillgiant",
-		"name": "hill giant",
+		"name": "ยักษ์เขา",
 		"level": 22,
 		"biome": "hills",
 		"kind": "giant",
 		"evil": 17,
-		"desc": "You've seen bigger.",
+		"desc": "คุณเคยเห็นตัวใหญ่กว่านี้",
 		"hp": 120,
 		"defense": 45,
 		"attack": {
-			"name": "club",
+			"name": "ไม้กระบอง",
 			"kind": "blunt",
 			"damage": "15~24"
 		},
@@ -2614,29 +2990,35 @@
 	},
 	{
 		"id": "troll",
-		"flavor": "Tro lo lo.",
+		"flavor": "โท โล โล",
 		"kind": "giant",
-		"biome": ["woods", "hills", "mountains", "swamp"],
+		"biome": [
+			"woods",
+			"hills",
+			"mountains",
+			"swamp"
+		],
 		"level": 35,
 		"hp": 100,
 		"regen": 2,
 		"speed": 10,
 		"attack": {
-			"name": "claws",
+			"name": "กรงเล็บ",
 			"kind": "blunt",
 			"damage": "10~13"
-		}
+		},
+		"name": "โทรลล์"
 	},
 	{
 		"id": "vampiremaster",
-		"name": "vampire master",
-		"desc": "Worked his way up the vampire ranks, and has his very own brood now.",
+		"name": "จอมแวมไพร์",
+		"desc": "ไต่เต้าขึ้นมาตามยศแวมไพร์ และตอนนี้มีลูกหมู่เป็นของตัวเองแล้ว",
 		"kind": "undead",
 		"unique": true,
 		"level": 43,
 		"hp": 340,
 		"attack": {
-			"name": "bite",
+			"name": "กัด",
 			"kind": "shadow",
 			"damage": "10~25",
 			"leech": 0.2
@@ -2644,8 +3026,8 @@
 	},
 	{
 		"id": "desillaconcubine",
-		"name": "desilla's concubine",
-		"desc": "A devoted follower of the sorceress Desilla.",
+		"name": "สนมของเดซิลลา",
+		"desc": "ผู้ติดตามอย่างภักดีของแม่มดเดซิลลา",
 		"kind": "humanoid",
 		"unique": true,
 		"level": 54,
@@ -2654,7 +3036,7 @@
 		"dodge": 50,
 		"regen": 3,
 		"attack": {
-			"name": "claws",
+			"name": "กรงเล็บ",
 			"damage": "35~45",
 			"type": "slash"
 		},
@@ -2665,14 +3047,14 @@
 	},
 	{
 		"id": "firegolem",
-		"name": "fire golem",
+		"name": "โกเลมไฟ",
 		"level": 22,
 		"kind": "construct",
-		"desc": "Crafted from only the finest phlogiston.",
+		"desc": "สร้างจากไฟโลจิสตันชั้นเลิศเท่านั้น",
 		"hp": 100,
 		"defense": 53,
 		"attack": {
-			"name": "fire punch",
+			"name": "หมัดเพลิง",
 			"kind": "fire",
 			"damage": "15~23"
 		},
@@ -2681,73 +3063,83 @@
 	{
 		"id": "grimstalk",
 		"biome": "woods",
-		"desc": "A wooden demon with fingers like blades.",
+		"desc": "ปีศาจไม้ที่มีนิ้วมือเหมือนใบมีด",
 		"kind": "demon",
 		"level": 41,
 		"hp": 100,
 		"defense": 40,
 		"regen": 2,
 		"attack": {
-			"name": "claws",
+			"name": "กรงเล็บ",
 			"kind": "slash",
 			"damage": "10~14"
-		}
+		},
+		"name": "กริมสตอล์ก"
 	},
 	{
 		"id": "valkyrie",
-		"desc": "She'll take you to Valhalla.",
+		"desc": "เธอจะพาคุณไปวัลฮัลลา",
 		"kind": "humanoid",
 		"level": 35,
 		"hp": 45,
 		"defense": 30,
 		"dodge": 30,
 		"attack": {
-			"name": "claymore",
+			"name": "ดาบเคลย์มอร์",
 			"kind": "slash",
 			"damage": "6~7"
 		},
 		"loot": {
 			"ichor": "1%",
-			"quicksteel": { "%": "75%", "value": "4~5" },
-			"rubies": { "%": "75%", "value": "2~3" }
-		}
+			"quicksteel": {
+				"%": "75%",
+				"value": "4~5"
+			},
+			"rubies": {
+				"%": "75%",
+				"value": "2~3"
+			}
+		},
+		"name": "วัลคีรี"
 	},
 	{
 		"id": "trow",
 		"level": 24,
 		"evil": 5,
-		"desc": "A towering giant of stone.",
-		"flavor": "You should have stayed out of the cloudspine.",
+		"desc": "ยักษ์หินสูงตระหง่าน",
+		"flavor": "เจ้าน่าจะไม่เขย่งเข้าไปในเทือกเขาคลาวด์สไปน์",
 		"kind": "giant",
 		"hp": 225,
 		"defense": 50,
 		"attack": {
-			"name": "kick",
+			"name": "ถีบ",
 			"kind": "blunt",
 			"damage": "14~20"
-		}
+		},
+		"name": "โทรว์"
 	},
 	{
 		"id": "gryffon",
-		"desc": "Body of a lion. Face of a giant eagle.",
+		"desc": "ร่างเป็นสิงโต หน้าเป็นนกอินทรียักษ์",
 		"kind": "magicbeast",
 		"level": 36,
 		"attack": {
-			"name": "beak",
+			"name": "จะงอยปาก",
 			"kind": "pierce",
 			"damage": "a.damage*0.8"
-		}
+		},
+		"name": "กริฟฟอน"
 	},
 	{
 		"id": "bloodgolem",
-		"name": "blood golem",
+		"name": "โกเลมเลือด",
 		"level": 24,
 		"kind": "construct",
-		"desc": "A creature of pure blood.",
+		"desc": "สิ่งมีชีวิตที่เกิดจากเลือดบริสุทธิ์",
 		"hp": 90,
 		"defense": 45,
 		"attack": {
-			"name": "slam",
+			"name": "ทุ่ม",
 			"kind": "blunt",
 			"damage": "15~20",
 			"leech": 0.5
@@ -2763,7 +3155,7 @@
 		"hp": 130,
 		"defense": 48,
 		"attack": {
-			"name": "sting",
+			"name": "ต่อย",
 			"damage": "15~25",
 			"kind": "pierce",
 			"dot": {
@@ -2771,22 +3163,25 @@
 				"damage": "5~8",
 				"duration": 5
 			}
-		}
+		},
+		"name": "แมนติคอร์"
 	},
 	{
 		"id": "bogwitch",
-		"name": "bog witch",
+		"name": "แม่มดพรุ",
 		"kind": "humanoid",
-		"desc": "Vicious witch in the waters of the Great Bog.",
+		"desc": "แม่มดดุเดือดประจำผืนน้ำแห่งพรุใหญ่",
 		"unique": true,
 		"biome": "swamp",
 		"level": 44,
 		"hp": 600,
 		"defense": 48,
 		"regen": 3,
-		"resist": { "nature": 20 },
+		"resist": {
+			"nature": 20
+		},
 		"attack": {
-			"name": "claws",
+			"name": "กรงเล็บ",
 			"kind": "slash",
 			"damage": "8~16",
 			"dot": {
@@ -2796,60 +3191,74 @@
 				"damage": "6~10"
 			}
 		},
-		"loot": { "rubies": { "%": "50%", "value": "6~8" } }
+		"loot": {
+			"rubies": {
+				"%": "50%",
+				"value": "6~8"
+			}
+		}
 	},
 	{
 		"id": "skellord",
-		"name": "skeleton lord",
-		"desc": "Are those rubies in its eyes?",
+		"name": "เจ้านายโครงกระดูก",
+		"desc": "นั่นคือทับทิมในดวงตามันหรือเปล่า?",
 		"kind": "undead",
 		"unique": true,
 		"level": 45,
 		"hp": 600,
 		"defense": 30,
 		"attack": {
-			"name": "longsword",
+			"name": "ดาบยาว",
 			"kind": "slash",
 			"damage": "10~18"
 		},
 		"loot": {
-			"bones": { "value": 10, "skipLocked": true },
+			"bones": {
+				"value": 10,
+				"skipLocked": true
+			},
 			"rubies": 2
 		}
 	},
 	{
 		"id": "ent",
-		"desc": "Out cruising for some ent-wives.",
+		"desc": "ออกเที่ยวหาคู่ครองเอ็นต์",
 		"kind": "giant",
 		"biome": "woods",
 		"level": 42,
 		"hp": 120,
 		"defense": 50,
-		"resist": { "nature": 30 },
+		"resist": {
+			"nature": 30
+		},
 		"regen": 2,
 		"speed": 0,
 		"attack": {
-			"name": "trunk slam",
+			"name": "ทุบด้วยลำต้น",
 			"kind": "nature",
 			"damage": "40~60"
-		}
+		},
+		"name": "เอ็นต์"
 	},
 	{
 		"id": "wyvern",
-		"desc": "Not a dragon. But it will kill you like one.",
-		"flavor": "Except the part where it kills you like a proper dragon would.",
+		"desc": "ไม่ใช่มังกร แต่จะฆ่าคุณเหมือนมังกร",
+		"flavor": "ยกเว้นส่วนที่มันฆ่าคุณแบบมังกรตัวจริงจะทำ",
 		"kind": "magicbeast",
 		"level": 61,
-		"resist": { "water": 50 },
+		"resist": {
+			"water": 50
+		},
 		"attack": {
-			"name": "ice spikes",
+			"name": "หนามน้ำแข็ง",
 			"kind": "water",
 			"damage": "100~120"
-		}
+		},
+		"name": "ไวเวิร์น"
 	},
 	{
 		"id": "wyvern2",
-		"name": "vicious wyvern",
+		"name": "ไวเวิร์นดุร้าย",
 		"level": 40,
 		"desc": "",
 		"kind": "magicbeast",
@@ -2857,7 +3266,7 @@
 		"defense": 42,
 		"attack": [
 			{
-				"name": "bite",
+				"name": "กัด",
 				"kind": "pierce",
 				"damage": "40~80",
 				"dot": {
@@ -2879,7 +3288,7 @@
 		"defense": 42,
 		"attack": [
 			{
-				"name": "bite",
+				"name": "กัด",
 				"kind": "pierce",
 				"damage": "40~80",
 				"dot": {
@@ -2889,39 +3298,44 @@
 				}
 			}
 		],
-		"immune": "air,poison"
+		"immune": "air,poison",
+		"name": "แจบเบอร์วอกกี"
 	},
 	{
 		"id": "greendragon",
-		"name": "green dragon",
-		"desc": "Just your standard green dragon.",
+		"name": "มังกรเขียว",
+		"desc": "แค่มังกรเขียวมาตรฐานของคุณ",
 		"kind": "dragon",
 		"level": 50,
 		"hp": 210,
 		"defense": 50,
-		"resist": { "fire": 25 },
+		"resist": {
+			"fire": 25
+		},
 		"attack": [
 			{
-				"name": "fire breath",
+				"name": "ลมหายใจเพลิง",
 				"targets": "enemies",
 				"maxTargets": 999,
 				"kind": "fire",
 				"damage": "25~35"
 			}
 		],
-		"loot": { "dragonscale": "1~16" }
+		"loot": {
+			"dragonscale": "1~16"
+		}
 	},
 	{
 		"id": "sandwyrm",
-		"name": "sand wyrm",
+		"name": "ไวร์มทะเลทราย",
 		"kind": "beast",
 		"level": 28,
-		"desc": "Terror of the desert wastes.",
+		"desc": "ความน่าสะพรึงแห่งทะเลทรายอันเวิ้งว้าง",
 		"hp": 130,
 		"defense": 50,
 		"spells": "quake",
 		"attack": {
-			"name": "crush",
+			"name": "บดขยี้",
 			"kind": "blunt",
 			"damage": "12~24"
 		},
@@ -2932,25 +3346,34 @@
 	{
 		"id": "beholder",
 		"kind": "magicbeast",
-		"desc": "It seeeeees you.",
+		"desc": "มันเห็นมึงงงงงงงงง",
 		"level": 72,
 		"hp": 1300,
 		"defense": 50,
 		"attack": [
 			{
-				"name": "Evil eye of silence",
-				"dot": { "duration": 2, "id": "silence" }
+				"name": "ดวงตาชั่วร้ายแห่งความเงียบ",
+				"dot": {
+					"duration": 2,
+					"id": "silence"
+				}
 			},
 			{
-				"name": "Evil eye of paralysis",
-				"dot": { "duration": 2, "id": "paralyze" }
+				"name": "ดวงตาชั่วร้ายแห่งอัมพาต",
+				"dot": {
+					"duration": 2,
+					"id": "paralyze"
+				}
 			},
 			{
-				"name": "Evil eye of entaglement",
-				"dot": { "duration": 2, "id": "entangle" }
+				"name": "ดวงตาชั่วร้ายแห่งการพันกัก",
+				"dot": {
+					"duration": 2,
+					"id": "entangle"
+				}
 			},
 			{
-				"name": "Evil eye of torment",
+				"name": "ดวงตาชั่วร้ายแห่งการทรมาน",
 				"dot": {
 					"name": "Psychic torment",
 					"duration": 5,
@@ -2958,36 +3381,42 @@
 					"damage": "200~300"
 				}
 			}
-		]
+		],
+		"name": "บีโฮลเดอร์"
 	},
 	{
 		"id": "angel",
-		"desc": "It has wings and a halo of light.",
+		"desc": "มันมีปีกและมีประภามณฑลแห่งแสง",
 		"kind": "celestial",
 		"level": 38,
 		"hp": 45,
 		"defense": 45,
 		"dodge": 45,
-		"resist": { "light": 20 },
+		"resist": {
+			"light": 20
+		},
 		"attack": {
-			"name": "light sword",
+			"name": "ดาบแสง",
 			"kind": "light",
 			"damage": "a.damage"
 		},
-		"loot": { "ichor": "30%" }
+		"loot": {
+			"ichor": "30%"
+		},
+		"name": "ทูตสวรรค์"
 	},
 	{
 		"id": "m_lich",
-		"name": "lich",
+		"name": "ลิช",
 		"level": 28,
 		"kind": "undead",
 		"evil": 30,
-		"desc": "It was a wizard, once.",
+		"desc": "เคยเป็นจอมเวทมาก่อน",
 		"hp": 166,
 		"defense": 68,
 		"regen": 3,
 		"attack": {
-			"name": "death touch",
+			"name": "สัมผัสแห่งความตาย",
 			"kind": "shadow",
 			"leech": 0.1,
 			"damage": "26~36"
@@ -3008,11 +3437,17 @@
 		},
 		"regen": 6,
 		"attack": {
-			"name": "darksword",
+			"name": "ดาบมืด",
 			"kind": "shadow",
 			"damage": "100~140"
 		},
-		"loot": { "aetherhide": { "%": "60%", "value": "4~7" } }
+		"loot": {
+			"aetherhide": {
+				"%": "60%",
+				"value": "4~7"
+			}
+		},
+		"name": "ปีศาจ"
 	},
 	{
 		"id": "cyclops",
@@ -3023,60 +3458,66 @@
 		"hp": 170,
 		"defense": 65,
 		"attack": {
-			"name": "punch",
+			"name": "หมัด",
 			"kind": "blunt",
 			"damage": "17~50"
 		},
 		"loot": {
 			"ichor": "5%"
-		}
+		},
+		"name": "ไซคลอปส์"
 	},
 	{
 		"id": "reddragon",
-		"name": "red dragon",
+		"name": "มังกรแดง",
 		"kind": "dragon",
 		"level": 56,
 		"hp": 400,
 		"defense": 60,
-		"resist": { "fire": 50 },
+		"resist": {
+			"fire": 50
+		},
 		"attack": {
-			"name": "fire breath",
+			"name": "ลมหายใจเพลิง",
 			"targets": "enemies",
 			"maxTargets": 999,
 			"kind": "fire",
 			"damage": "25~35"
 		},
-		"loot": { "dragonscale": "1~24" }
+		"loot": {
+			"dragonscale": "1~24"
+		}
 	},
 	{
 		"id": "behemoth",
-		"desc": "Such an incredible vitality.",
-		"flavor": "Much wow",
+		"desc": "พลังชีวิตอันน่าทึ่งจริง ๆ",
+		"flavor": "ว้าวมาก ๆ",
 		"kind": "beast",
 		"level": 74,
 		"hp": 1200,
 		"defense": 100,
 		"regen": 15,
 		"attack": {
-			"name": "trample",
+			"name": "เหยียบย่ำ",
 			"targets": "enemies",
 			"maxTargets": 999,
 			"kind": "earth",
 			"damage": "150~200"
-		}
+		},
+		"name": "บีเฮมอท"
 	},
 	{
 		"id": "vampirelord",
-		"name": "vampire lord",
+		"name": "จ้าวแวมไพร์",
 		"level": 30,
 		"kind": "undead",
 		"evil": 40,
-		"desc": "Master Vampires are its lackeys.",
+		"desc": "จอมแวมไพร์เป็นลูกน้องของมัน",
 		"hp": 120,
 		"defense": 70,
 		"regen": 5,
 		"attack": {
-			"name": "bite",
+			"name": "กัด",
 			"kind": "shadow",
 			"damage": "20~40",
 			"leech": 0.3
@@ -3091,7 +3532,7 @@
 	},
 	{
 		"id": "frostgiant",
-		"name": "frost giant",
+		"name": "ยักษ์น้ำแข็ง",
 		"kind": "giant",
 		"unique": true,
 		"level": 44,
@@ -3100,7 +3541,7 @@
 		"regen": 2,
 		"speed": 0,
 		"attack": {
-			"name": "ice quake",
+			"name": "น้ำแข็งไหว",
 			"targets": "enemies",
 			"maxTargets": 999,
 			"kind": "water",
@@ -3109,29 +3550,29 @@
 	},
 	{
 		"id": "m_lichlord",
-		"name": "lich lord",
-		"desc": "It was a wizard, once.",
+		"name": "เจ้านายลิช",
+		"desc": "เคยเป็นจอมเวทมาก่อน",
 		"kind": "undead",
 		"level": 72,
 		"hp": 1,
 		"barrier": 2000,
 		"recharge": 20,
 		"attack": {
-			"name": "death touch",
+			"name": "สัมผัสแห่งความตาย",
 			"kind": "shadow",
 			"damage": "250~300"
 		}
 	},
 	{
 		"id": "mithrilgolem",
-		"name": "mithril golem",
+		"name": "โกเลมมิธริล",
 		"level": 34,
 		"kind": "construct",
-		"desc": "Would be worth a fortune if you could even make a dent in it.",
+		"desc": "คงมีค่าเป็นทรัพย์มหาศาลถ้าเจ้าสามารถทำรอยบุ๋มให้มันได้",
 		"hp": 200,
 		"defense": 100,
 		"attack": {
-			"name": "pound",
+			"name": "ทุบซ้ำ",
 			"kind": "blunt",
 			"damage": "50~95"
 		},
@@ -3146,15 +3587,17 @@
 	},
 	{
 		"id": "ancientvampire",
-		"name": "ancient vampire",
+		"name": "แวมไพร์โบราณ",
 		"kind": "undead",
 		"level": 61,
 		"hp": 280,
 		"defense": 75,
 		"dodge": 75,
-		"resist": { "shadow": 50 },
+		"resist": {
+			"shadow": 50
+		},
 		"attack": {
-			"name": "bite",
+			"name": "กัด",
 			"kind": "shadow",
 			"damage": "80~120",
 			"leech": 0.05
@@ -3164,58 +3607,68 @@
 		"id": "leviathan",
 		"level": 36,
 		"kind": "beast",
-		"desc": "A mountain moves in the depths of the sea.",
+		"desc": "ภูเขาลูกหนึ่งเคลื่อนไหวในห้วงทะเลลึก",
 		"hp": 400,
 		"defense": 75,
 		"attack": {
-			"name": "crush",
+			"name": "บดขยี้",
 			"kind": "blunt",
 			"damage": "80~110"
 		},
-		"immune": "water"
+		"immune": "water",
+		"name": "เลวีอาธาน"
 	},
 	{
 		"id": "balrog",
-		"desc": "A servant of Morgoth.",
+		"desc": "ผู้รับใช้ของมอร์กอธ",
 		"kind": "maiar",
 		"level": 63,
 		"hp": 600,
 		"defense": 80,
 		"immune": "fire",
 		"attack": {
-			"name": "flame whip",
+			"name": "แส้เพลิง",
 			"kind": "fire",
 			"damage": "90~150"
 		},
 		"loot": {
 			"firegem": 10,
-			"aetherhide": { "%": "60%", "value": "4~6" }
-		}
+			"aetherhide": {
+				"%": "60%",
+				"value": "4~6"
+			}
+		},
+		"name": "บัลร็อก"
 	},
 	{
 		"id": "archon",
 		"kind": "celestial",
-		"desc": "It has wings and a halo of light.",
-		"extdesc": "And more wings and another halo...",
-		"flavor": "And more wings and another halo...",
+		"desc": "มันมีปีกและมีประภามณฑลแห่งแสง",
+		"extdesc": "และมีปีกมากขึ้นอีกกับประภามณฑลอีกวง...",
+		"flavor": "และมีปีกมากขึ้นอีกกับประภามณฑลอีกวง...",
 		"unique": true,
 		"level": 45,
 		"hp": 270,
 		"defense": 90,
 		"regen": 10,
-		"resist": { "light": 50 },
+		"resist": {
+			"light": 50
+		},
 		"speed": -20,
 		"attack": {
-			"name": "glimpse of the apocalypse",
+			"name": "แวบหนึ่งของวันสิ้นโลก",
 			"kind": "light",
 			"damage": 200
 		},
-		"loot": { "ichor": "50%" }
+		"loot": {
+			"ichor": "50%"
+		},
+		"name": "อาร์คอน"
 	},
 	{
 		"id": "adamantgolem",
-		"name": "adamant golem",
-		"desc": "Unbreakable.",
+		"name": "โกเลมเพชร",
+		"desc": "ยากจะทำลาย",
 		"kind": "construct",
 		"level": 61,
 		"hp": 450,
@@ -3226,22 +3679,26 @@
 			"blunt": 100
 		},
 		"attack": {
-			"name": "smash",
+			"name": "ทุบ",
 			"kind": "blunt",
 			"damage": "a.damage*0.7"
 		},
-		"loot": { "adamant": 25 }
+		"loot": {
+			"adamant": 25
+		}
 	},
 	{
 		"id": "maturereddragon",
-		"name": "mature red dragon",
+		"name": "มังกรแดงเต็มวัย",
 		"kind": "dragon",
 		"level": 61,
 		"hp": 500,
 		"defense": 90,
-		"resist": { "fire": 90 },
+		"resist": {
+			"fire": 90
+		},
 		"attack": {
-			"name": "fire breath",
+			"name": "ลมหายใจเพลิง",
 			"targets": "enemies",
 			"maxTargets": 999,
 			"kind": "fire",
@@ -3250,7 +3707,7 @@
 	},
 	{
 		"id": "mythicvampire",
-		"name": "mythic vampire",
+		"name": "แวมไพร์ในตำนาน",
 		"level": 38,
 		"kind": "undead",
 		"evil": 60,
@@ -3259,7 +3716,7 @@
 		"regen": 10,
 		"defense": 110,
 		"attack": {
-			"name": "bite",
+			"name": "กัด",
 			"kind": "shadow",
 			"damage": "50~70",
 			"leech": 0.5
@@ -3273,9 +3730,9 @@
 	},
 	{
 		"id": "karnivex",
-		"name": "Karnivex the BloodLock",
-		"desc": "The weakest of the Archlocks built his reputation upon sheer slaughter.",
-		"flavor": "Subtlety was lost on karnivex.",
+		"name": "คาร์นีเว็กซ์ผู้ล็อกเลือด",
+		"desc": "อาร์กล็อกที่อ่อนแอที่สุดสร้างชื่อเสียงจากความเข่นฆ่าล้วน ๆ",
+		"flavor": "คาร์นีเว็กซ์ไม่เข้าใจเรื่องการแยบยลเลย",
 		"kind": "humanoid",
 		"unique": true,
 		"level": 64,
@@ -3283,8 +3740,11 @@
 		"barrier": 1200,
 		"attack": [
 			{
-				"name": "fire storm",
-				"log": { "%": "10%", "desc": "I have no equals!" },
+				"name": "พายุเพลิง",
+				"log": {
+					"%": "10%",
+					"desc": "I have no equals!"
+				},
 				"targets": "enemies",
 				"maxTargets": 999,
 				"dot": {
@@ -3294,27 +3754,33 @@
 				}
 			},
 			{
-				"name": "fire bolt",
-				"log": { "%": "10%", "desc": "I will not be mocked!" },
+				"name": "สายฟ้าเพลิง",
+				"log": {
+					"%": "10%",
+					"desc": "I will not be mocked!"
+				},
 				"kind": "fire",
 				"damage": "70~100"
 			}
 		],
-		"loot": { "karnivexcrown": "100%", "diamonds": "8~12" }
+		"loot": {
+			"karnivexcrown": "100%",
+			"diamonds": "8~12"
+		}
 	},
 	{
 		"id": "desilla",
-		"name": "Desilla the Vicious",
+		"name": "เดซิลลาผู้ดุร้าย",
 		"level": 40,
 		"evil": 27,
-		"desc": "Among the Archlocks, desilla was more inclined to indulgence than conquest.",
+		"desc": "ในบรรดาเหล่าอาร์กล็อก เดซิลลามักโอนเอียงไปทางความสำราญมากกว่าการพิชิต",
 		"kind": "humanoid",
 		"hp": 1500,
 		"defense": 133,
 		"unique": true,
 		"attack": [
 			{
-				"name": "red haze",
+				"name": "หมอกแดง",
 				"log": {
 					"%": "10%",
 					"desc": "Don't be clouded by desires."
@@ -3328,7 +3794,7 @@
 				}
 			},
 			{
-				"name": "red bolt",
+				"name": "สายฟ้าแดง",
 				"damage": "90~123",
 				"log": {
 					"%": "10%",
@@ -3340,7 +3806,7 @@
 	},
 	{
 		"id": "bodias",
-		"name": "Bodias the Grim",
+		"name": "โบเดียสผู้หม่นหมอง",
 		"level": 50,
 		"evil": 27,
 		"desc": "",
@@ -3350,7 +3816,7 @@
 		"defense": 150,
 		"attack": [
 			{
-				"name": "quake",
+				"name": "แผ่นดินไหว",
 				"targets": "enemies",
 				"maxTargets": 999,
 				"kind": "earth",
@@ -3366,7 +3832,7 @@
 				}
 			},
 			{
-				"name": "disintegrate",
+				"name": "สลาย",
 				"damage": "100~150",
 				"log": {
 					"%": "10%",
@@ -3378,7 +3844,7 @@
 	},
 	{
 		"id": "narz",
-		"name": "Narz, the Black Spindle",
+		"name": "นาร์ซ แกนหมุนสีดำ",
 		"level": 42,
 		"desc": "",
 		"unused": true,
@@ -3388,7 +3854,7 @@
 		"defense": 200,
 		"attack": [
 			{
-				"name": "void shroud",
+				"name": "ผ้าห่อความว่าง",
 				"targets": "enemies",
 				"maxTargets": 999,
 				"log": {
@@ -3404,7 +3870,7 @@
 				"kind": "void"
 			},
 			{
-				"name": "void bolt",
+				"name": "สายฟ้าความว่าง",
 				"damage": "100~150",
 				"kind": "void"
 			}
@@ -3412,7 +3878,7 @@
 	},
 	{
 		"id": "natureswrath",
-		"name": "nature's wrath",
+		"name": "พิโรธแห่งธรรมชาติ",
 		"level": 44,
 		"kind": "spirit",
 		"evil": 20,
@@ -3421,7 +3887,7 @@
 		"regen": 15,
 		"defense": 120,
 		"attack": {
-			"name": "lifestorm",
+			"name": "พายุชีวิต",
 			"kind": "nature",
 			"damage": "100~125"
 		},
@@ -3429,15 +3895,15 @@
 	},
 	{
 		"id": "m_avatar",
-		"name": "avatar",
+		"name": "อวตาร",
 		"level": 46,
 		"kind": "deity",
-		"desc": "Incarnation of a god.",
+		"desc": "อวตารของเทพเจ้า",
 		"hp": 700,
 		"defense": 120,
 		"regen": 20,
 		"attack": {
-			"name": "holy shine",
+			"name": "แสงศักดิ์สิทธิ์",
 			"kind": "light",
 			"damage": "75~130"
 		},
@@ -3445,7 +3911,7 @@
 	},
 	{
 		"id": "cthulhu",
-		"desc": "In his house at R'lyeh dead Cthulhu waits dreaming.",
+		"desc": "ในบ้านของเขาที่อาร์'ลีเอห์ คธูลูผู้สิ้นชีพเฝ้ารอฝันอยู่",
 		"kind": "outsider",
 		"unique": true,
 		"level": 75,
@@ -3453,17 +3919,18 @@
 		"defense": 125,
 		"regen": 25,
 		"attack": {
-			"name": "madness",
+			"name": "ความบ้าคลั่ง",
 			"targets": "enemies",
 			"maxTargets": 999,
 			"kind": "spirit",
 			"damage": "160~200"
-		}
+		},
+		"name": "คธูลู"
 	},
 	{
 		"id": "jazid",
-		"desc": "Jazid's sole purpose is to kill the bearer of his compass.",
-		"flavor": "Tales of Jazid were already ancient when Dhroze was entombed.",
+		"desc": "จุดประสงค์เดียวของจาซิดคือการสังหารผู้ถือเข็มทิศของเขา",
+		"flavor": "ตำนานของจาซิดเก่าแก่ไปแล้วตั้งแต่ดรอเซยังถูกฝังไว้",
 		"kind": "kell",
 		"unique": true,
 		"require": "g.jazidscompass.isEquipped()",
@@ -3471,25 +3938,26 @@
 		"hp": 2000,
 		"speed": -50,
 		"attack": {
-			"name": "The Claw",
+			"name": "กรงเล็บ",
 			"tohit": 999,
 			"targets": "enemyleader",
 			"kind": "pure",
 			"damage": "5000~8000"
-		}
+		},
+		"name": "จาซิด"
 	},
 	{
 		"id": "m_ancientlich",
-		"name": "ancient lich",
+		"name": "ลิชโบราณ",
 		"level": 46,
 		"kind": "undead",
 		"evil": 30,
-		"desc": "Not one lich in a hundred live to reach such heights.",
+		"desc": "ลิชหนึ่งในร้อยตัวเท่านั้นที่อยู่รอดจนถึงระดับนี้",
 		"hp": 550,
 		"regen": 15,
 		"defense": 120,
 		"attack": {
-			"name": "death touch",
+			"name": "สัมผัสแห่งความตาย",
 			"kind": "shadow",
 			"damage": "80~120",
 			"leech": 0.1
@@ -3506,8 +3974,8 @@
 	},
 	{
 		"id": "strativax1",
-		"name": "strativax slumbering",
-		"desc": "He does not appear to notice your presence.",
+		"name": "สตราติแวกซ์หลับใหล",
+		"desc": "ดูเหมือนเขาจะไม่สังเกตเห็นการปรากฏตัวของคุณ",
 		"kind": "dragon",
 		"unique": true,
 		"level": 68,
@@ -3516,8 +3984,8 @@
 	},
 	{
 		"id": "strativax2",
-		"name": "strativax waking",
-		"desc": "The dragon's eyes begin to open.",
+		"name": "สตราติแวกซ์ตื่น",
+		"desc": "ดวงตาของมังกรเริ่มเปิดออก",
 		"level": 68,
 		"unique": true,
 		"kind": "dragon",
@@ -3525,12 +3993,12 @@
 		"speed": 0,
 		"attack": [
 			{
-				"name": "tail flick",
+				"name": "สะบัดหาง",
 				"kind": "pierce",
 				"damage": "100~150"
 			},
 			{
-				"name": "burning yawn",
+				"name": "หาวอันร้อนระอุ",
 				"targets": "enemies",
 				"maxTargets": 999,
 				"kind": "fire",
@@ -3540,8 +4008,8 @@
 	},
 	{
 		"id": "strativax3",
-		"name": "strativax awaken",
-		"desc": "Strativax now furious at your impetuous intrusion.",
+		"name": "สตราติแวกซ์ตื่นเต็มตา",
+		"desc": "สตราติแวกซ์บัดนี้โกรธจัดเพราะการบุกรุกอันหุนหันของคุณ",
 		"kind": "dragon",
 		"unique": true,
 		"level": 68,
@@ -3549,12 +4017,12 @@
 		"speed": 40,
 		"attack": [
 			{
-				"name": "talon crush",
+				"name": "บดขยี้ด้วยกรงเล็บ",
 				"kind": "blunt",
 				"damage": "200~300"
 			},
 			{
-				"name": "fire breath",
+				"name": "ลมหายใจเพลิง",
 				"targets": "enemies",
 				"maxTargets": 999,
 				"kind": "fire",
@@ -3567,15 +4035,15 @@
 	},
 	{
 		"id": "gorborung",
-		"name": "the gorborung",
-		"desc": "The gargantuan entity in the depths of Mt. Gorbu never seen by mortal eyes.",
-		"flavor": "Most agree it's best the Gorborung reside in darkness.",
+		"name": "กอร์โบรุง",
+		"desc": "สิ่งมีชีวิตมหึมาในห้วงลึกแห่งเขากอร์บู ที่ตาเนื้อมนุษย์ไม่เคยเห็น",
+		"flavor": "ส่วนใหญ่เห็นพ้องว่าดีที่สุดที่กอร์โบรุงจะอาศัยอยู่ในความมืด",
 		"unique": true,
 		"level": 77,
 		"hp": 5000,
 		"defense": 100,
 		"attack": {
-			"name": "gorboring",
+			"name": "ขุดกอร์โบรุง",
 			"targets": "enemies",
 			"maxTargets": 999,
 			"kind": "air",
@@ -3584,16 +4052,16 @@
 	},
 	{
 		"id": "brittelwort",
-		"name": "brittelwort the watcher",
+		"name": "บริตเทิลวอร์ตผู้เฝ้ามอง",
 		"kind": "kell",
 		"level": 54,
 		"unique": true,
-		"desc": "The silent Brittelwort watches in the Felkill mountains, punishing all transgressions.",
+		"desc": "บริตเทิลวอร์ตผู้เงียบงันเฝ้ามองอยู่บนเทือกเขาเฟลคิลล์ ลงโทษการล่วงละเมิดทั้งปวง",
 		"hp": 4000,
 		"defense": 100,
 		"attack": [
 			{
-				"name": "siphon",
+				"name": "ดูดกลืน",
 				"kind": "shadow",
 				"leech": 0.2,
 				"damage": "70~100"
@@ -3605,33 +4073,33 @@
 				}
 			}
 		],
-		"flavor": "It bears a striking similarity to the lesser mummers."
+		"flavor": "มันมีเค้าโครงคล้ายคลึงกับมัมเมอร์ระดับล่างอย่างน่าประหลาด"
 	},
 	{
 		"id": "dhrozenknight",
-		"name": "dhrozen knight",
+		"name": "อัศวินดรอเซน",
 		"level": 50,
 		"evil": 70,
-		"desc": "An immortal knight of Dhroz. Of fifty slain, one is knighted.",
+		"desc": "อัศวินอมตะแห่งดรอซ ในบรรดาผู้ถูกสังหารห้าสิบคน มีหนึ่งคนที่ได้รับอิสริยยศอัศวิน",
 		"hp": 1200,
 		"attack": {
-			"name": "nether blade",
+			"name": "ใบมีดเนเธอร์",
 			"kind": "shadow",
 			"damage": "130~150"
 		},
-		"flavor": "To escape Sarnagar one had only collect the pieces of a single set of Dhrozen armor.",
+		"flavor": "เพื่อหลบหนีจากซาร์นาเกอร์ เพียงแค่เก็บชิ้นส่วนเกราะดรอเซนครบหนึ่งชุด",
 		"immune": "sleep,charm"
 	},
 	{
 		"id": "mummer",
 		"level": 48,
 		"kind": "spirit",
-		"desc": "A voiceless form with a bare and twisted skull.",
+		"desc": "ร่างไร้เสียงพร้อมกะโหลกเปลือยบิดเบี้ยว",
 		"hp": 700,
 		"defense": 70,
 		"attack": [
 			{
-				"name": "soul siphon",
+				"name": "ดูดกลืนวิญญาณ",
 				"kind": "shadow",
 				"leech": 0.3,
 				"damage": "40~70"
@@ -3643,19 +4111,20 @@
 				}
 			}
 		],
-		"flavor": "Believed to be a corrupted form of lesser Kell.",
-		"immune": "charm"
+		"flavor": "เชื่อกันว่าคือเคลล์ระดับล่างที่ถูกทำให้วิปริต",
+		"immune": "charm",
+		"name": "มัมเมอร์"
 	},
 	{
 		"id": "netherwraith",
 		"level": 52,
 		"kind": "spirit",
-		"desc": "A spirit cloaked in noxious nether.",
+		"desc": "วิญญาณที่ห่อหุ้มด้วยเนเธอร์อันเป็นพิษ",
 		"hp": 1000,
 		"defense": 40,
 		"dodge": 30,
 		"attack": {
-			"name": "nether touch",
+			"name": "สัมผัสเนเธอร์",
 			"kind": "spirit",
 			"damage": "50~80",
 			"dot": {
@@ -3664,11 +4133,17 @@
 				"damage": 30
 			}
 		},
-		"loot": { "souls": { "value": 1, "skipLocked": true } },
+		"loot": {
+			"souls": {
+				"value": 1,
+				"skipLocked": true
+			}
+		},
 		"resist": {
 			"spirit": 50
 		},
-		"immune": "paralysis"
+		"immune": "paralysis",
+		"name": "เรธเนเธอร์"
 	},
 	{
 		"id": "reaper",
@@ -3676,14 +4151,14 @@
 		"evil": 50,
 		"noproc": true,
 		"unused": true,
-		"desc": "a raw manifestation of death is fleeting, but terrible beyond measure.",
+		"desc": "การสำแดงความตายดิบ ๆ นั้นแสนชั่วครู่ แต่ช่างน่าสยดสยองเกินจะประมาณ",
 		"kind": "shade",
 		"hp": 6666,
 		"defense": 200,
 		"regen": -100,
 		"attack": [
 			{
-				"name": "deathly presence",
+				"name": "รัศมีมรณะ",
 				"targets": "enemies",
 				"maxTargets": 999,
 				"dot": {
@@ -3693,11 +4168,12 @@
 				}
 			},
 			{
-				"name": "reap",
+				"name": "เก็บเกี่ยว",
 				"kind": "shadow",
 				"damage": "150~300"
 			}
-		]
+		],
+		"name": "ยมทูต"
 	},
 	{
 		"id": "fetigern",
@@ -3706,12 +4182,12 @@
 		"unused": true,
 		"evil": 100,
 		"kind": "humanoid",
-		"desc": "The terror before the Wind Age.",
+		"desc": "ความน่าสะพรึงก่อนยุคแห่งสายลม",
 		"hp": 9000,
 		"regen": 30,
 		"defense": 400,
 		"attack": {
-			"name": "bite",
+			"name": "กัด",
 			"kind": "nature",
 			"dot": {
 				"kind": "nature",
@@ -3719,7 +4195,8 @@
 				"damage": "130~200"
 			},
 			"damage": "100~200"
-		}
+		},
+		"name": "เฟติเกิร์น"
 	},
 	{
 		"id": "ouroboros",
@@ -3727,23 +4204,24 @@
 		"kind": "deity",
 		"unused": true,
 		"unique": true,
-		"desc": "The serpent that grips the earth in its scales.",
+		"desc": "งูที่โอบกอดผืนดินไว้ในเกล็ดของมัน",
 		"hp": 130000,
 		"defense": 200,
 		"attack": {
-			"name": "crush",
+			"name": "บดขยี้",
 			"kind": "blunt",
 			"damage": "200~350"
 		},
-		"immune": "earth"
+		"immune": "earth",
+		"name": "อูโรโบรอส"
 	},
 	{
 		"id": "sum_wisp",
-		"name": "wisp",
+		"name": "แสงวิญญาณ",
 		"tags": "t_summon",
 		"level": 2,
 		"kind": "spirit",
-		"desc": "A ghostly wisp of summoned air.",
+		"desc": "แสงวิญญาณแห่งอากาศที่ถูกเรียกมา",
 		"hp": 1,
 		"noproc": true,
 		"defense": 1,
@@ -3767,7 +4245,7 @@
 	},
 	{
 		"id": "sum_hobgoblin",
-		"name": "hobgoblin",
+		"name": "ฮ็อบก็อบลิน",
 		"tags": "t_summon",
 		"level": 10,
 		"kind": "goblinoid",
@@ -3776,23 +4254,23 @@
 		"noproc": true,
 		"defense": 17,
 		"attack": {
-			"name": "dagger",
+			"name": "มีดสั้น",
 			"kind": "pierce",
 			"damage": "1~5"
 		}
 	},
 	{
 		"id": "sum_lgspider",
-		"name": "large spider",
+		"name": "แมงมุมใหญ่",
 		"tags": "t_summon,t_summon_beast",
 		"level": 6,
 		"kind": "beast",
-		"desc": "You can't tell if she looks hungry.",
+		"desc": "บอกไม่ถูกว่าเธอดูหิวหรือเปล่า",
 		"hp": 8,
 		"noproc": true,
 		"defense": 15,
 		"attack": {
-			"name": "bite",
+			"name": "กัด",
 			"kind": "pierce",
 			"damage": "4~9",
 			"dot": {
@@ -3808,24 +4286,24 @@
 	},
 	{
 		"id": "sum_unicorn",
-		"name": "unicorn",
+		"name": "ยูนิคอร์น",
 		"tags": "t_summon,t_summon_beast",
 		"level": 18,
 		"kind": "magicbeast",
-		"desc": "Its horn is full of magic.",
+		"desc": "เขาของมันเต็มไปด้วยเวทมนตร์",
 		"hp": 77,
 		"noproc": true,
 		"defense": 35,
 		"spells": "lightspear,lightregen1",
 		"attack": {
-			"name": "horn",
+			"name": "เขา",
 			"kind": "pierce",
 			"damage": "7~14"
 		}
 	},
 	{
 		"id": "sum_stingybee",
-		"name": "stingy bee",
+		"name": "ผึ้งขี้เหนียว",
 		"tags": "t_summon,t_summon_beast",
 		"kind": "beast",
 		"level": 2,
@@ -3851,16 +4329,16 @@
 	},
 	{
 		"id": "sum_magicblade",
-		"name": "magic blade",
+		"name": "ใบมีดเวทมนตร์",
 		"tags": "t_summon",
 		"level": 12,
 		"kind": "construct",
-		"desc": "It just floats there...",
+		"desc": "มันแค่ลอยอยู่ตรงนั้น...",
 		"hp": 45,
 		"noproc": true,
 		"defense": 35,
 		"attack": {
-			"name": "magic sword",
+			"name": "ดาบเวทมนตร์",
 			"kind": "slash",
 			"damage": "4~10"
 		},
@@ -3870,12 +4348,12 @@
 	},
 	{
 		"id": "sum_snek",
-		"name": "arcane serpent",
+		"name": "งูเวทมนตร์",
 		"tags": "t_summon,t_summon_beast",
 		"level": 12,
 		"kind": "magicbeast",
-		"desc": "Summoned by magic, now fiercely loyal to you.",
-		"flavor": "Boop as desired.",
+		"desc": "ถูกเรียกด้วยเวทมนตร์ บัดนี้ภักดีต่อคุณอย่างสุดหัวใจ",
+		"flavor": "จุ๊กจิกตามใจชอบได้เลย",
 		"hp": 50,
 		"noproc": true,
 		"regen": 2,
@@ -3883,12 +4361,12 @@
 		"speed": 12,
 		"attack": [
 			{
-				"name": "constrict",
+				"name": "รัด",
 				"kind": "blunt",
 				"damage": "6~14"
 			},
 			{
-				"name": "venom",
+				"name": "พิษ",
 				"dot": {
 					"duration": 10,
 					"kind": "nature",
@@ -3902,11 +4380,11 @@
 	},
 	{
 		"id": "sum_prism",
-		"name": "fulminant prism",
+		"name": "ปริซึมระเบิดพลัง",
 		"tags": "t_summon",
 		"level": 32,
 		"kind": "construct",
-		"desc": "A floating prism of unstable magical power.",
+		"desc": "ปริซึมลอยได้ของพลังเวทอันไร้เสถียรภาพ",
 		"hp": 100,
 		"noproc": true,
 		"defense": 50,
@@ -3937,11 +4415,11 @@
 	},
 	{
 		"id": "sum_hero_ancestor",
-		"name": "heroic ancestor",
+		"name": "บรรพชนผู้กล้า",
 		"tags": "t_summon",
 		"level": 26,
 		"kind": "spirit",
-		"desc": "A great hero of yore, inspiring awe with each strike.",
+		"desc": "วีรบุรุษผู้ยิ่งใหญ่ในอดีต สร้างความเกรงขามทุกครั้งที่ฟัน",
 		"hp": 55,
 		"noproc": true,
 		"defense": 35,
@@ -3955,7 +4433,7 @@
 		},
 		"attack": [
 			{
-				"name": "glorious blade",
+				"name": "ดาบอันรุ่งโรจน์",
 				"kind": "slash",
 				"damage": "36~45",
 				"dot": {
@@ -3964,7 +4442,7 @@
 				}
 			},
 			{
-				"name": "glorious hammer",
+				"name": "ค้อนอันรุ่งโรจน์",
 				"kind": "blunt",
 				"damage": "36~45",
 				"dot": {
@@ -3973,7 +4451,7 @@
 				}
 			},
 			{
-				"name": "glorious spear",
+				"name": "หอกอันรุ่งโรจน์",
 				"kind": "pierce",
 				"damage": "36~45",
 				"dot": {
@@ -3985,7 +4463,7 @@
 	},
 	{
 		"id": "sum_frostgiant",
-		"name": "frost giant",
+		"name": "ยักษ์น้ำแข็ง",
 		"tags": "t_summon",
 		"level": 32,
 		"kind": "giant",
@@ -4002,7 +4480,7 @@
 			}
 		},
 		"attack": {
-			"name": "punch",
+			"name": "หมัด",
 			"kind": "water",
 			"damage": "40~60"
 		},
@@ -4013,17 +4491,17 @@
 	},
 	{
 		"id": "sum_queenbee",
-		"name": "queen bee",
+		"name": "ราชินีผึ้ง",
 		"tags": "t_summon,t_summon_beast",
 		"level": 16,
 		"kind": "beast",
-		"desc": "Dbulm called them war wasps upon their discovery, thinking of their value in battle and tenacity in defense of their home. They've later been determined to be a type of bee, but the name has stuck as well as their honey.",
+		"desc": "ดับูล์มเรียกพวกมันว่าต่อยูมต่อสู้เมื่อค้นพบครั้งแรก ด้วยคิดถึงคุณค่าของมันในสงครามและความดื้อรั้นในการปกป้องรังของมัน ภายหลังจึงระบุว่ามันคือผึ้งชนิดหนึ่ง แต่ชื่อติดปากไปแล้วพร้อมกับน้ำผึ้งของพวกมัน",
 		"hp": 85,
 		"noproc": true,
 		"defense": 30,
 		"spells": "mon_mk_stingybee",
 		"attack": {
-			"name": "sting",
+			"name": "ต่อย",
 			"kind": "pierce",
 			"damage": "5~10",
 			"dot": {
@@ -4037,16 +4515,16 @@
 	},
 	{
 		"id": "sum_warwasp",
-		"name": "war wasp",
+		"name": "ต่อยูมต่อสู้",
 		"tags": "t_summon,t_summon_beast",
 		"level": 8,
 		"kind": "beast",
-		"desc": "Actually a type of bee, despite Dbulm's nomenclature.",
+		"desc": "แท้จริงแล้วคือผึ้งชนิดหนึ่ง แม้ดับูล์มจะตั้งชื่อไว้อย่างนั้น",
 		"hp": 20,
 		"noproc": true,
 		"defense": 15,
 		"attack": {
-			"name": "sting",
+			"name": "ต่อย",
 			"kind": "pierce",
 			"damage": "5~10",
 			"dot": {
@@ -4059,10 +4537,10 @@
 	},
 	{
 		"id": "sum_phoenixegg",
-		"name": "phoenix egg",
+		"name": "ไข่ฟีนิกซ์",
 		"tags": "t_summon,t_summon_beast",
 		"level": 8,
-		"desc": "Guard it carefully and the hatched phoenix will be grateful.",
+		"desc": "เฝ้าดูแลมันอย่างดี แล้วฟีนิกซ์ที่ฟักออกมาจะรู้สึกขอบคุณ",
 		"kind": "magicbeast",
 		"hp": 10,
 		"noproc": true,
@@ -4101,10 +4579,10 @@
 	},
 	{
 		"id": "sum_phoenix",
-		"name": "phoenix",
+		"name": "ฟีนิกซ์",
 		"tags": "t_summon,t_summon_beast",
 		"level": 14,
-		"desc": "It's more fire than bird.",
+		"desc": "มันเป็นไฟมากกว่านก",
 		"kind": "magicbeast",
 		"hp": 47,
 		"noproc": true,
@@ -4127,7 +4605,7 @@
 			}
 		},
 		"attack": {
-			"name": "flame wing",
+			"name": "ปีกเพลิง",
 			"kind": "fire",
 			"damage": "11~20"
 		},
@@ -4135,17 +4613,17 @@
 	},
 	{
 		"id": "sum_sandmite",
-		"name": "sand mite",
+		"name": "ไรทะเลทราย",
 		"tags": "t_summon,t_summon_beast",
 		"kind": "beast",
 		"level": 10,
-		"desc": "Oversized parasites of the dunes.",
+		"desc": "ปรสิตตัวโตเกินขนาดแห่งเนินทราย",
 		"hp": 16,
 		"noproc": true,
 		"speed": 7,
 		"spells": "mon_dig",
 		"attack": {
-			"name": "burrow",
+			"name": "ขุดโพรง",
 			"kind": "pierce",
 			"damage": "7~14"
 		},
@@ -4155,17 +4633,17 @@
 	},
 	{
 		"id": "sum_shadow",
-		"name": "your own shadow",
+		"name": "เงาของตัวคุณเอง",
 		"tags": "t_summon",
 		"kind": "shadow",
 		"level": 14,
-		"desc": "Your own shadow, severed to fight at your side. Take care- it remains part of you.",
+		"desc": "เงาของคุณเอง ที่ถูกตัดออกมาเพื่อสู้เคียงข้างคุณ ระวังด้วย - มันยังคงเป็นส่วนหนึ่งของตัวคุณ",
 		"hp": 32,
 		"noproc": true,
 		"defense": 10,
 		"spells": "gloom,deathbolt",
 		"attack": {
-			"name": "swipe",
+			"name": "กวาดฟัน",
 			"kind": "shadow",
 			"targets": "enemies",
 			"maxTargets": 999,
@@ -4192,11 +4670,11 @@
 	},
 	{
 		"id": "sum_painrune",
-		"name": "rune of agony",
+		"name": "รูนแห่งความเจ็บปวด",
 		"tags": "t_summon",
 		"kind": "rune",
 		"level": 20,
-		"desc": "Suffering made manifest, indiscriminately flooding its surroundings with dark power.",
+		"desc": "ความทุกข์ทรมานที่ปรากฏเป็นรูปเป็นร่าง ท่วมท้นสภาพแวดล้อมรอบข้างด้วยพลังมืดโดยไม่เลือกหน้า",
 		"hp": 61,
 		"noproc": true,
 		"defense": 27,
@@ -4226,11 +4704,11 @@
 	},
 	{
 		"id": "sum_nova",
-		"name": "nova",
+		"name": "โนวา",
 		"tags": "t_summon",
 		"level": 32,
 		"kind": "construct",
-		"desc": "A floating orb of unstable astral magic.",
+		"desc": "ดวงกลมลอยได้ของเวทมนตร์ดวงดาวอันไร้เสถียรภาพ",
 		"hp": 100,
 		"noproc": true,
 		"defense": 50,
@@ -4271,11 +4749,11 @@
 	},
 	{
 		"id": "sum_black_hole",
-		"name": "black hole",
+		"name": "หลุมดำ",
 		"tags": "t_summon",
 		"level": 32,
 		"kind": "construct",
-		"desc": "A floating orb of unstable void magic.",
+		"desc": "ดวงกลมลอยได้ของเวทมนตร์ความว่างอันไร้เสถียรภาพ",
 		"hp": 100,
 		"noproc": true,
 		"defense": 50,
@@ -4317,8 +4795,8 @@
 	},
 	{
 		"id": "sum_imp",
-		"name": "imp",
-		"desc": "Little demonic bastards.",
+		"name": "อิมป์",
+		"desc": "เจ้าปีศาจจอมกวนตัวน้อย",
 		"kind": "demon",
 		"tags": "t_summon",
 		"noproc": true,
@@ -4329,7 +4807,7 @@
 		"spells": "darkbolt,magicmissile,firedart",
 		"attack": [
 			{
-				"name": "claws",
+				"name": "กรงเล็บ",
 				"kind": "slash",
 				"damage": "4~7"
 			},
@@ -4355,15 +4833,18 @@
 					"damage": "i.damage||0",
 					"kind": "fire",
 					"tohit": 1,
-					"potencies": ["spelldmg", "firedmg"]
+					"potencies": [
+						"spelldmg",
+						"firedmg"
+					]
 				}
 			}
 		}
 	},
 	{
 		"id": "sum_quasit",
-		"name": "quasit",
-		"desc": "Like a demonic humanoid vulture.",
+		"name": "ควาซิต",
+		"desc": "เหมือนแร้งรูปร่างมนุษย์ปีศาจ",
 		"kind": "demon",
 		"tags": "t_summon",
 		"noproc": true,
@@ -4373,7 +4854,7 @@
 		"regen": 7,
 		"spells": "searingbolt,magebolt",
 		"attack": {
-			"name": "claws",
+			"name": "กรงเล็บ",
 			"kind": "slash",
 			"damage": "4~9"
 		},
@@ -4391,12 +4872,18 @@
 					"damage": "i.damage||0",
 					"tohit": 5,
 					"kind": "fire",
-					"potencies": ["spelldmg", "firedmg"],
+					"potencies": [
+						"spelldmg",
+						"firedmg"
+					],
 					"dot": {
 						"kind": "fire",
 						"damage": "2~3",
 						"duration": 10,
-						"potencies": ["spelldmg", "firedmg"]
+						"potencies": [
+							"spelldmg",
+							"firedmg"
+						]
 					}
 				}
 			}
@@ -4404,8 +4891,8 @@
 	},
 	{
 		"id": "sum_grimstalk",
-		"name": "grimstalk",
-		"desc": "A wooden demon with fingers like blades.",
+		"name": "กริมสตอล์ก",
+		"desc": "ปีศาจไม้ที่มีนิ้วมือเหมือนใบมีด",
 		"kind": "demon",
 		"tags": "t_summon",
 		"noproc": true,
@@ -4414,7 +4901,7 @@
 		"defense": 55,
 		"regen": 7,
 		"attack": {
-			"name": "claws",
+			"name": "กรงเล็บ",
 			"kind": "slash",
 			"damage": "12~28"
 		},
@@ -4425,8 +4912,8 @@
 	},
 	{
 		"id": "sum_demon",
-		"name": "demon",
-		"flavor": "He should really trim his horns a bit, they are starting to get tangled.",
+		"name": "ปีศาจ",
+		"flavor": "เขาควรเล็มเขาของเขาบ้างจริง ๆ พวกมันเริ่มพันกันยุ่งเหยิงแล้ว",
 		"tags": "t_summon",
 		"level": 42,
 		"kind": "demon",
@@ -4435,7 +4922,7 @@
 		"defense": 666,
 		"regen": 6.6,
 		"attack": {
-			"name": "darksword",
+			"name": "ดาบมืด",
 			"kind": "shadow",
 			"damage": "33~66"
 		},
@@ -4446,11 +4933,11 @@
 	},
 	{
 		"id": "sum_stone_barrier",
-		"name": "stone wall",
+		"name": "กำแพงหิน",
 		"tags": "t_summon",
 		"level": 10,
 		"kind": "construct",
-		"desc": "Rock climbing's becoming popular these days.",
+		"desc": "การปีนหน้าผากำลังเป็นที่นิยมในสมัยนี้",
 		"hp": 20,
 		"noproc": true,
 		"defense": 40,
@@ -4477,11 +4964,11 @@
 	},
 	{
 		"id": "sum_beartrap",
-		"name": "beartrap",
+		"name": "กับดักหมี",
 		"tags": "t_summon",
 		"level": 10,
 		"kind": "construct",
-		"desc": "Don't tread on me.",
+		"desc": "อย่าเหยียบฉัน",
 		"hp": 10,
 		"noproc": true,
 		"defense": 15,
@@ -4507,7 +4994,7 @@
 		"tags": "t_animalcompanion",
 		"slot": "companion",
 		"require": "g.rabbittrick>0",
-		"name": "rabbit companion",
+		"name": "กระต่ายคู่หู",
 		"level": 20,
 		"kind": "beast",
 		"noproc": true,
@@ -4527,13 +5014,13 @@
 		},
 		"attack": [
 			{
-				"name": "vorpal bite",
+				"name": "กัดแบบวอร์พัล",
 				"kind": "pierce",
 				"targets": "enemy",
 				"damage": "1+(Math.random()*Math.min(t.hp.max/10, 50))"
 			},
 			{
-				"name": "tomfoolery",
+				"name": "ลู่อลวน",
 				"kind": "chaos",
 				"targets": "enemy",
 				"damage": "1~7",
@@ -4545,7 +5032,7 @@
 				}
 			},
 			{
-				"name": "shenanigans",
+				"name": "กลอุบายอุกอาจ",
 				"kind": "chaos",
 				"targets": "enemies",
 				"maxTargets": 999,
@@ -4561,52 +5048,64 @@
 			}
 		],
 		"immune": "chaos",
-		"flavor": "Loves childish tricks."
+		"flavor": "ชอบกลอุบายแบบเด็ก ๆ"
 	},
 	{
 		"id": "iceelemental2",
-		"name": "Greater Ice Elemental",
-		"desc": "What's so scary about a bunch of icicles? Well... this.",
+		"name": "เอเลเมนทัลน้ำแข็งขั้นสูง",
+		"desc": "หิ้วน้ำแข็งพวงหนึ่งมันน่ากลัวตรงไหน? เอาเป็นว่า...นี่แหละ",
 		"kind": "elemental",
 		"level": 46,
-		"resist": { "water": 50 },
+		"resist": {
+			"water": 50
+		},
 		"attack": {
-			"name": "ice avalanche",
+			"name": "หิมะถล่ม",
 			"kind": "water",
 			"damage": "a.damage"
 		},
 		"loot": {
 			"watergem": "1~3",
-			"amberroot": { "%": "60%", "value": "2~3" }
+			"amberroot": {
+				"%": "60%",
+				"value": "2~3"
+			}
 		}
 	},
 	{
 		"id": "airelemental2",
-		"name": "Greater Air Elemental",
-		"desc": "It must have been a lot, a lot of wind",
+		"name": "เอเลเมนทัลลมขั้นสูง",
+		"desc": "ต้องเป็นลมมาก ๆ เสียจริง ๆ",
 		"kind": "elemental",
 		"level": 46,
-		"resist": { "air": 50 },
+		"resist": {
+			"air": 50
+		},
 		"speed": 40,
 		"attack": {
-			"name": "wind blades",
+			"name": "ใบมีดลม",
 			"kind": "air",
 			"damage": "a.damage"
 		},
 		"loot": {
 			"airgem": "1~3",
-			"amberroot": { "%": "60%", "value": "2~3" }
+			"amberroot": {
+				"%": "60%",
+				"value": "2~3"
+			}
 		}
 	},
 	{
 		"id": "fireelemental2",
-		"name": "Greater Fire Elemental",
-		"desc": "Too hot to even look at.",
+		"name": "เอเลเมนทัลไฟขั้นสูง",
+		"desc": "ร้อนเกินกว่าจะมองด้วยซ้ำ",
 		"kind": "elemental",
 		"level": 46,
-		"resist": { "fire": 50 },
+		"resist": {
+			"fire": 50
+		},
 		"attack": {
-			"name": "fireball",
+			"name": "ลูกไฟ",
 			"targets": "enemies",
 			"maxTargets": 6,
 			"kind": "fire",
@@ -4614,19 +5113,24 @@
 		},
 		"loot": {
 			"firegem": "1~3",
-			"amberroot": { "%": "60%", "value": "2~3" }
+			"amberroot": {
+				"%": "60%",
+				"value": "2~3"
+			}
 		}
 	},
 	{
 		"id": "earthelemental2",
-		"name": "Greater Earth Elemental",
-		"desc": "How do you fight dirt the very ground you stand on?",
+		"name": "เอเลเมนทัลดินขั้นสูง",
+		"desc": "เจ้าจะสู้กับดินผืนที่เจ้ายืนอยู่ได้อย่างไร?",
 		"kind": "elemental",
 		"level": 46,
-		"resist": { "earth": 20 },
+		"resist": {
+			"earth": 20
+		},
 		"speed": 0,
 		"attack": {
-			"name": "earthquake",
+			"name": "แผ่นดินไหว",
 			"targets": "enemies",
 			"maxTargets": 999,
 			"kind": "earth",
@@ -4634,25 +5138,30 @@
 		},
 		"loot": {
 			"earthgem": "1~3",
-			"amberroot": { "%": "60%", "value": "2~3" }
+			"amberroot": {
+				"%": "60%",
+				"value": "2~3"
+			}
 		}
 	},
 	{
 		"id": "tempestelemental",
-		"name": "Tempest Elemental",
-		"desc": "Deafening, violent and unforgiving. One can only hope it'll pass in another direction. Truly an untamed disaster.",
+		"name": "เอเลเมนทัลพายุ",
+		"desc": "หูหนวก รุนแรง และไม่ให้อภัย หวังได้เพียงว่ามันจะเคลื่อนผ่านไปอีกทางหนึ่ง นี่คือหายนะอันไร้การขัดเกลาอย่างแท้จริง",
 		"kind": "elemental",
 		"level": 52,
-		"resist": { "fire": 20 },
+		"resist": {
+			"fire": 20
+		},
 		"speed": 80,
 		"attack": [
 			{
-				"name": "lightning",
+				"name": "สายฟ้า",
 				"kind": "air",
 				"damage": "a.damage*0.6"
 			},
 			{
-				"name": "torrent",
+				"name": "กระแสน้ำซัด",
 				"kind": "water",
 				"damage": "a.damage*0.6"
 			}
@@ -4660,19 +5169,24 @@
 		"loot": {
 			"airrune": "1~2",
 			"waterrune": "1~2",
-			"amberroot": { "%": "60%", "value": "4~6" }
+			"amberroot": {
+				"%": "60%",
+				"value": "4~6"
+			}
 		}
 	},
 	{
 		"id": "mudelemental",
-		"name": "Mud Elemental",
-		"desc": "Hulking mass, constantly shifting and dripping. Slow, but immense. Truly an untamed disaster.",
+		"name": "เอเลเมนทัลโคลน",
+		"desc": "ก้อนมหึมา เลื่อนไหลและหยดย้อยตลอดเวลา เชื่องช้าแต่ใหญ่โตมโหฬาร นี่คือหายนะอันไร้การขัดเกลาอย่างแท้จริง",
 		"kind": "elemental",
 		"level": 52,
-		"resist": { "air": 20 },
+		"resist": {
+			"air": 20
+		},
 		"speed": 20,
 		"attack": {
-			"name": "entomb",
+			"name": "ฝังกลบ",
 			"targets": "enemies",
 			"maxTargets": 999,
 			"kind": "earth",
@@ -4682,25 +5196,32 @@
 				"duration": 4,
 				"kind": "water",
 				"damage": 15,
-				"mod": { "self.speed": -5 }
+				"mod": {
+					"self.speed": -5
+				}
 			}
 		},
 		"loot": {
 			"earthrune": "1~2",
 			"waterrune": "1~2",
-			"amberroot": { "%": "60%", "value": "4~6" }
+			"amberroot": {
+				"%": "60%",
+				"value": "4~6"
+			}
 		}
 	},
 	{
 		"id": "magmaelemental",
-		"name": "Magma Elemental",
-		"desc": "Relentless and everflowing. But calm and serene... at least until it's provoked. Truly an untamed disaster.",
+		"name": "เอเลเมนทัลแม็กมา",
+		"desc": "ไม่รู้จักเหน็ดเหนื่อยและไหลรินไม่หยุด แต่สงบนิ่ง...อย่างน้อยก็จนกว่าจะถูกยั่วโมโห นี่คือหายนะอันไร้การขัดเกลาอย่างแท้จริง",
 		"kind": "elemental",
 		"level": 52,
-		"resist": { "earth": 20 },
+		"resist": {
+			"earth": 20
+		},
 		"speed": 40,
 		"attack": {
-			"name": "magma surge",
+			"name": "ซัดแม็กมา",
 			"kind": "earth",
 			"damage": "40~60",
 			"dot": {
@@ -4713,14 +5234,17 @@
 		"loot": {
 			"earthrune": "1~2",
 			"firerune": "1~2",
-			"amberroot": { "%": "60%", "value": "2~3" }
+			"amberroot": {
+				"%": "60%",
+				"value": "2~3"
+			}
 		}
 	},
 	{
 		"id": "ashelemental",
-		"name": "Ash Elemental",
-		"desc": "Weight of what was lost, and hope of what shall be born anew. Aftermath of the disaster is never pretty.",
-		"flavor": "Plin plin plon...",
+		"name": "เอเลเมนทัลเถ้า",
+		"desc": "น้ำหนักของสิ่งที่สูญหาย และความหวังของสิ่งที่จะเกิดใหม่ เบื้องหลังของหายนะไม่เคยสวยงาม",
+		"flavor": "ปลิน ปลิน ปลอน...",
 		"kind": "elemental",
 		"unique": true,
 		"level": 55,
@@ -4734,7 +5258,7 @@
 		},
 		"attack": [
 			{
-				"name": "Tide of Regret",
+				"name": "คลื่นแห่งความเสียใจ",
 				"dot": {
 					"name": "Burning regret",
 					"duration": 4,
@@ -4743,7 +5267,7 @@
 				}
 			},
 			{
-				"name": "Sting of Sorrow",
+				"name": "เหล็กไนแห่งความโศกเศร้า",
 				"dot": {
 					"name": "Piercing sorrow",
 					"duration": 4,
@@ -4752,7 +5276,7 @@
 				}
 			},
 			{
-				"name": "Cover of Longing",
+				"name": "ผ้าคลุมแห่งความคิดถึง",
 				"kind": "nature",
 				"targets": "self",
 				"healing": "30~50"
@@ -4766,21 +5290,21 @@
 	},
 	{
 		"id": "abyssal_dreg",
-		"name": "Dreg of the Abyss",
+		"name": "กากตะกอนแห่งเหวลึก",
 		"kind": "abyssal",
 		"noproc": true,
 		"level": 58,
 		"hp": 500,
 		"dodge": 30,
 		"attack": {
-			"name": "pale struggle",
+			"name": "การดิ้นรนอันซีดเผือด",
 			"kind": "shadow",
 			"damage": "60~90"
 		}
 	},
 	{
 		"id": "abyssal_lesser_shadow",
-		"name": "Lesser Shadow of the Abyss",
+		"name": "เงาระดับล่างแห่งเหวลึก",
 		"kind": "abyssal",
 		"noproc": true,
 		"level": 63,
@@ -4788,56 +5312,56 @@
 		"defense": 25,
 		"dodge": 30,
 		"attack": {
-			"name": "spectral wallop",
+			"name": "ทุบวิญญาณ",
 			"kind": "spirit",
 			"damage": "100~150"
 		}
 	},
 	{
 		"id": "abyssal_rat_mother",
-		"name": "Rat Mother of the Abyss",
+		"name": "แม่หนูแห่งเหวลึก",
 		"kind": "abyssal",
 		"noproc": true,
 		"level": 63,
 		"hp": 600,
 		"dodge": 30,
 		"attack": {
-			"name": "tainted slam",
+			"name": "ทุ่มที่แปดเปื้อน",
 			"kind": "nature",
 			"damage": "20~60"
 		}
 	},
 	{
 		"id": "abyssal_rat",
-		"name": "Rat of the Abyss",
+		"name": "หนูแห่งเหวลึก",
 		"kind": "abyssal",
 		"noproc": true,
 		"level": 48,
 		"hp": 200,
 		"dodge": 30,
 		"attack": {
-			"name": "tainted bite",
+			"name": "กัดที่แปดเปื้อน",
 			"kind": "nature",
 			"damage": "5~55"
 		}
 	},
 	{
 		"id": "abyssal_raven_flock",
-		"name": "Raven Flock of the Abyss",
+		"name": "ฝูงกาดำแห่งเหวลึก",
 		"kind": "abyssal",
 		"noproc": true,
 		"level": 64,
 		"hp": 750,
 		"dodge": 40,
 		"attack": {
-			"name": "swarming assault",
+			"name": "โจมตีเป็นฝูง",
 			"kind": "air",
 			"damage": "120~170"
 		}
 	},
 	{
 		"id": "abyssal_cinder_golem",
-		"name": "Cinder Golem of the Abyss",
+		"name": "โกเลมเถ้าถ่านแห่งเหวลึก",
 		"kind": "abyssal",
 		"noproc": true,
 		"level": 70,
@@ -4846,12 +5370,12 @@
 		"speed": 20,
 		"attack": [
 			{
-				"name": "boulder sling",
+				"name": "สลิงก้อนหิน",
 				"kind": "earth",
 				"damage": "600~750"
 			},
 			{
-				"name": "heatwave",
+				"name": "คลื่นความร้อน",
 				"kind": "fire",
 				"targets": "enemies",
 				"damage": "150~260"
@@ -4860,14 +5384,14 @@
 	},
 	{
 		"id": "abyssal_proselyte",
-		"name": "Proselyte of the Abyss",
+		"name": "ศาสนิกชนแห่งเหวลึก",
 		"kind": "abyssal",
 		"noproc": true,
 		"level": 74,
 		"hp": 1200,
 		"dodge": 30,
 		"attack": {
-			"name": "lightless burst",
+			"name": "ระเบิดไร้แสง",
 			"kind": "light",
 			"damage": "120~180",
 			"targets": "enemies"
@@ -4875,7 +5399,7 @@
 	},
 	{
 		"id": "abyssal_soldier",
-		"name": "Soldier of the Abyss",
+		"name": "ทหารแห่งเหวลึก",
 		"kind": "abyssal",
 		"noproc": true,
 		"level": 74,
@@ -4883,14 +5407,14 @@
 		"defense": 25,
 		"dodge": 35,
 		"attack": {
-			"name": "piercing thrust",
+			"name": "แทงทะลุ",
 			"kind": "pierce",
 			"damage": "140~160"
 		}
 	},
 	{
 		"id": "abyssal_knight",
-		"name": "Knight of the Abyss",
+		"name": "อัศวินแห่งเหวลึก",
 		"kind": "abyssal",
 		"noproc": true,
 		"level": 78,
@@ -4898,7 +5422,7 @@
 		"defense": 50,
 		"dodge": 35,
 		"attack": {
-			"name": "square off",
+			"name": "ตั้งท่าประจัญ",
 			"kind": "slash",
 			"damage": "180~220"
 		}
