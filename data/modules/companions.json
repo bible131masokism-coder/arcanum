@@ -252,10 +252,18 @@
 				"level": 1,
 				"school": "animation",
 				"keywords": {
-					"type": ["summon"],
-					"target": ["ally"],
-					"targets": ["multiple"],
-					"delivery": ["instant"]
+					"type": [
+						"summon"
+					],
+					"target": [
+						"ally"
+					],
+					"targets": [
+						"multiple"
+					],
+					"delivery": [
+						"instant"
+					]
 				},
 				"require": "g.lore>=9999",
 				"summon": [
