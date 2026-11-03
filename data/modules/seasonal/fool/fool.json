@@ -5,25 +5,28 @@
 			{
 				"id": "fool_init",
 				"name": "Inexplicable commotion",
-				"desc": "A huge commotion right outside your window catches your attention.",
+				"desc": "เสียงอลหม่านใหญ่ใต้หน้าต่างของคุณดึงความสนใจ",
 				"require": "g.tier0>0"
 			},
 			{
 				"id": "fool_end",
 				"name": "Dragon...falls?",
-				"desc": "As the construct falls apart, some very angry festival-goers approach you. Apparently you 'attacked a parade float' and 'disrupted the festivities'. You choose to beat a hasty retreat, but not before grabbing a souvenir.",
+				"desc": "ขณะที่สิ่งก่อสร้างแตกสลาย ผู้มาร่วมเทศกาลที่โมโหจัดเข้าหาคุณ ดูเหมือนคุณ 'โจมตีขบวนแห่' และ 'ทำลายบรรยากาศงานฉลอง' คุณเลือกที่จะล่าถอยอย่างรีบเร่ง แต่ไม่พลาดที่จะเก็บของที่ระลึก",
 				"require": "g.fool_clash1>0||g.fool_clash2>0",
 				"loot": {
 					"fool_tshirt": 1
 				},
-				"lock": ["fool_clash1", "fool_clash2"]
+				"lock": [
+					"fool_clash1",
+					"fool_clash2"
+				]
 			}
 		],
 		"clashes": [
 			{
 				"id": "fool_clash1",
 				"name": "Dragon attacking",
-				"desc": "An enormous dragon is attacking the town! Get out there and fight it before it gets to you!",
+				"desc": "มังกรยักษ์กำลังโจมตีเมือง! ออกไปสู้มันก่อนที่มันจะมาถึงคุณ!",
 				"level": 1,
 				"dist": 1,
 				"length": 1,
@@ -35,7 +38,7 @@
 			{
 				"id": "fool_clash2",
 				"name": "Strativax attacking",
-				"desc": "Somehow, Strativax returned! Get out there and fight it before it gets to you!",
+				"desc": "ไม่รู้อย่างไร สตราติแวกซ์กลับมาแล้ว! ออกไปสู้มันก่อนที่มันจะมาถึงคุณ!",
 				"level": 1,
 				"dist": 1,
 				"length": 1,
@@ -49,7 +52,7 @@
 			{
 				"id": "fool_strativax",
 				"name": "Strativax",
-				"desc": "An enormous dragon, wreathed in dancing flames stands before you. It might be hopeless.",
+				"desc": "มังกรยักษ์ที่ห้อมล้อมด้วยเปลวไฟเริงระบำยืนตระหง่านต่อหน้าคุณ มันอาจสิ้นหวัง",
 				"level": 80,
 				"unique": true,
 				"kind": "dragon",
