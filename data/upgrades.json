@@ -2,7 +2,7 @@
 	{
 		"id": "humanoid_body",
 		"name": "humanoid",
-		"desc": "Two hands, two legs, hopefully a head",
+		"desc": "สองมือ สองขา หวังว่าจะมีหัวด้วย",
 		"tags": "t_bodyplan",
 		"locked": false,
 		"slot": "bodyplan",
@@ -20,13 +20,13 @@
 			"shins.max": 1,
 			"feet.max": 1
 		},
-		"flavor": "Survey says, only ring fingers matter"
+		"flavor": "ผลสำรวจชี้ว่า มีเพียงนิ้วนางเท่านั้นที่สำคัญ"
 	},
 	{
 		"id": "flyingcarpet",
 		"name": "flying carpet",
 		"require": "g.weaving>=4&&g.airlore>=10",
-		"flavor": "A whole new world.",
+		"flavor": "โลกใบใหม่ทั้งใบ",
 		"slot": "mount",
 		"buy": {
 			"gems": 20,
@@ -42,7 +42,7 @@
 	},
 	{
 		"id": "timesplit",
-		"desc": "Perform tasks of different types simultaneously.",
+		"desc": "ปฏิบัติภารกิจประเภทต่าง ๆ พร้อมกันได้",
 		"require": "g.chronomancy>=5",
 		"max": 1,
 		"cost": {
@@ -56,7 +56,7 @@
 	},
 	{
 		"id": "mule",
-		"desc": "A mount that doesn't require much training.",
+		"desc": "พาหนะที่ไม่ต้องฝึกฝนมากนัก",
 		"require": "g.player.level>=4||g.animals>=2",
 		"slot": "mount",
 		"tags": "steed",
@@ -72,7 +72,7 @@
 	{
 		"id": "oldnag",
 		"name": "old nag",
-		"desc": "This horse has seen better days.",
+		"desc": "ม้าตัวนี้เคยเจอวันดี ๆ มาแล้ว",
 		"require": "g.animals>=3",
 		"slot": "mount",
 		"tags": "steed",
@@ -87,7 +87,7 @@
 	{
 		"id": "gelding",
 		"name": "demure gelding",
-		"desc": "A calm and sturdy horse, for moderate journeys.",
+		"desc": "ม้าอันสงบและแข็งแรง สำหรับการเดินทางระยะปานกลาง",
 		"slot": "mount",
 		"tags": "steed",
 		"require": "g.stables>0&&g.gold.max>=300",
@@ -104,7 +104,7 @@
 	{
 		"id": "bayhorse",
 		"name": "fine bay",
-		"desc": "A fine horse in its prime.",
+		"desc": "ม้าตัวงามในวัยฉกรรจ์",
 		"require": "g.stables>0&&g.gold.max>=750",
 		"slot": "mount",
 		"tags": "steed",
@@ -121,7 +121,7 @@
 	{
 		"id": "firecharger",
 		"name": "fire charger",
-		"desc": "Hooves of flame leave lines of fire in the ground.",
+		"desc": "กีบเพลิงทิ้งรอยไฟไว้บนพื้นดิน",
 		"require": "g.firelore>=5&&g.magicbeasts>=5&&g.stables>0",
 		"need": "stables",
 		"slot": "mount",
@@ -140,7 +140,7 @@
 	},
 	{
 		"id": "fly",
-		"desc": "Fly on the winds.",
+		"desc": "โบยบินไปตามสายลม",
 		"require": "g.airlore>=16",
 		"slot": "mount",
 		"buy": {
@@ -171,13 +171,13 @@
 			"fire.rate": 0.2,
 			"fire.max": 1
 		},
-		"flavor": "Bring me my chariot of fire.",
+		"flavor": "จงนำรถรบเพลิงของข้ามา",
 		"group": "mount"
 	},
 	{
 		"id": "pegasusmount",
 		"name": "pegasus",
-		"desc": "A winged horse.",
+		"desc": "ม้ามีปีก",
 		"require": "g.lightlore>=10&&g.stables>0",
 		"need": "stables",
 		"slot": "mount",
@@ -196,7 +196,7 @@
 	{
 		"id": "gryffonmount",
 		"name": "gryffon",
-		"desc": "As fleet as it is fearsome.",
+		"desc": "รวดเร็วดั่งที่น่าเกรงขาม",
 		"require": "g.magicbeasts>=7&&g.stables>0",
 		"need": "stables",
 		"slot": "mount",
@@ -233,7 +233,7 @@
 		"name": "travel tent",
 		"require": "g.naturelore>=3",
 		"max": 1,
-		"desc": "Allows you to stay in the wilds longer.",
+		"desc": "ช่วยให้คุณพำนักในป่าทุรกันดารได้นานขึ้น",
 		"cost": {
 			"gold": 100,
 			"research": 50
@@ -249,7 +249,7 @@
 		"name": "travel map",
 		"require": "g.crafting>=6&&g.astronomy>=4",
 		"max": 1,
-		"desc": "A map of the surrounding localities.",
+		"desc": "แผนที่ของพื้นที่โดยรอบ",
 		"cost": {
 			"research": 700
 		},
@@ -263,14 +263,14 @@
 		"name": "travel pack",
 		"require": "tier0",
 		"max": 1,
-		"desc": "A pack to facilitate longer travels.",
+		"desc": "เป้สะพายเพื่ออำนวยการเดินทางไกล",
 		"cost": {
 			"gold": 800
 		},
 		"mod": {
 			"dist": "7%"
 		},
-		"flavor": "Someone needs to have a talk with the Sack Maker's guild.",
+		"flavor": "ใครสักคนต้องไปคุยกับสมาคมช่างทำกระสอบเสียที",
 		"group": "exploration"
 	},
 	{
@@ -278,7 +278,7 @@
 		"name": "tenwick's travel map",
 		"require": "g.history>=4||g.crafting>=10",
 		"max": 1,
-		"desc": "Though neither a mage, nor a warrior, few braved the wilds of inner-Dhrune so completely as Tenwick.",
+		"desc": "แม้ไม่ใช่จอมเวทหรือนักรบ มีเพียงไม่กี่คนที่ท้าทายป่าทุรกันดารภายในดรูน์ได้ครบถ้วนดั่งเทนวิค",
 		"cost": {
 			"gold": 800,
 			"research": 900
@@ -291,7 +291,7 @@
 	{
 		"id": "magictent",
 		"name": "casgair's conjured canopy",
-		"desc": "Conjure a large tent for long journeys.",
+		"desc": "เนรมิตเต็นท์หลังใหญ่สำหรับการเดินทางยาวไกล",
 		"require": "g.lore>=15&&g.conjuration>=5&&g.research.max>=800",
 		"max": 1,
 		"cost": {
@@ -308,8 +308,8 @@
 		"id": "waxcandle",
 		"name": "wax candle",
 		"tags": "candle",
-		"desc": "A tiny glowing candle.",
-		"flavor": "You no take candle!",
+		"desc": "เทียนเล่มเล็กเรืองแสง",
+		"flavor": "เจ้าห้ามเอาเทียนไป!",
 		"require": "mana",
 		"max": 1,
 		"cost": {
@@ -323,7 +323,7 @@
 	{
 		"id": "mortar",
 		"name": "mortar and Pestle",
-		"desc": "Useful for grinding herbs & fine ingredients.",
+		"desc": "มีประโยชน์ในการโขลกสมุนไพรและส่วนผสมอันละเอียด",
 		"require": "g.herbalism>=2&&g.herbs>=5",
 		"max": 1,
 		"cost": {
@@ -339,13 +339,13 @@
 	},
 	{
 		"id": "pouch",
-		"desc": "Keep your money safe.",
+		"desc": "เก็บเงินของคุณให้ปลอดภัย",
 		"require": "g.gold>=5",
 		"max": 3,
 		"cost": {
 			"gold": 5
 		},
-		"flavor": "Seems a tad pricey for a bag.",
+		"flavor": "ดูแพงไปหน่อยสำหรับกระเป๋าใบหนึ่ง",
 		"mod": {
 			"gold.max": 10
 		},
@@ -354,13 +354,13 @@
 	{
 		"id": "gembag",
 		"name": "velvet bag",
-		"desc": "Small bag keeps gems safe without scratching.",
+		"desc": "ถุงเล็ก ๆ เก็บเพชรพลอยอย่างปลอดภัยไร้รอยขีดข่วน",
 		"require": "g.gems>=5",
 		"max": 2,
 		"cost": {
 			"gold": 300
 		},
-		"flavor": "Who prices these bags?!",
+		"flavor": "ใครเป็นคนตั้งราคาถุงพวกนี้กันนะ?!",
 		"mod": {
 			"magicgems.max": 1,
 			"bloodgem.max": 1,
@@ -371,7 +371,7 @@
 	{
 		"id": "gembox",
 		"name": "gem box",
-		"desc": "Finely crafted box for storing magic gems.",
+		"desc": "กล่องฝีมือประณีตสำหรับเก็บเพชรพลอยเวทมนตร์",
 		"require": ["tier0", "magicgems"],
 		"max": 5,
 		"cost": {
@@ -387,7 +387,7 @@
 	{
 		"id": "herbbag",
 		"name": "herb pouch",
-		"desc": "Bag for holding herbs.",
+		"desc": "ถุงสำหรับใส่สมุนไพร",
 		"require": "g.herbalism>=4",
 		"max": 3,
 		"cost": {
@@ -397,13 +397,13 @@
 		"mod": {
 			"herbs.max": 10
 		},
-		"flavor": "It holds herbs.",
+		"flavor": "มันใช้ใส่สมุนไพร",
 		"group": "storage"
 	},
 	{
 		"id": "runebag",
 		"name": "rune pouch",
-		"desc": "Pouch for holding runes.",
+		"desc": "ถุงเล็กสำหรับใส่รูน",
 		"require": "g.runelore>=2",
 		"max": 5,
 		"cost": {
@@ -418,7 +418,7 @@
 	{
 		"id": "orb",
 		"name": "arcane orb",
-		"desc": "Stores magical energy.",
+		"desc": "เก็บพลังงานเวทมนตร์",
 		"require": "g.mana.max>=10&&g.crafting>=7",
 		"max": 2,
 		"cost": {
@@ -434,10 +434,10 @@
 	{
 		"id": "unseenscribe",
 		"name": "unseen scribe",
-		"desc": "The quill lifts off the desk and begins to write...",
+		"desc": "ขนนกค่อย ๆ ลอยขึ้นจากโต๊ะแล้วเริ่มเขียน...",
 		"require": "g.spiritlore>=5&&g.airlore>0",
 		"need": ["writingdesk"],
-		"needtext": "Writing Desk",
+		"needtext": "โต๊ะเขียนหนังสือ",
 		"max": 3,
 		"cost": {
 			"arcana": 1,
@@ -445,7 +445,7 @@
 			"air": 1,
 			"research": 100
 		},
-		"flavor": "Magic will do our magic for us now.",
+		"flavor": "เวทมนตร์จะทำเวทมนตร์ของเราให้เองแล้ว",
 		"mod": {
 			"scrolls.rate": 0.05
 		},
@@ -454,7 +454,7 @@
 	{
 		"id": "ghostcompiler",
 		"name": "ghost compiler",
-		"desc": "An invisible spirit binds your scrolls into codices.",
+		"desc": "วิญญาณล่องหนเข้าเล่มม้วนคัมภีร์ของคุณให้เป็นโคเด็กซ์",
 		"require": "g.tier1>0&&g.unseenscribe>0",
 		"max": 3,
 		"cost": {
@@ -462,7 +462,7 @@
 			"spirit": 5,
 			"research": 200
 		},
-		"flavor": "Spirits never sleep.",
+		"flavor": "วิญญาณไม่เคยหลับใหล",
 		"convert": {
 			"input": {
 				"scrolls": 0.01
@@ -479,7 +479,7 @@
 		"id": "ghostchains",
 		"name": "ghost chains",
 		"require": "g.tier2>0&&g.spirit>=8&&g.ghostcompiler>=2",
-		"desc": "Hold more spirits in your sway.",
+		"desc": "ควบคุมวิญญาณได้มากขึ้นภายใต้อำนาจคุณ",
 		"max": 3,
 		"cost": {
 			"research": 200,
@@ -496,7 +496,7 @@
 	{
 		"id": "woodpipe",
 		"name": "wood pipe",
-		"desc": "Finely carved wooden pipe. Ruminate while peering into the sunset or a fire.",
+		"desc": "ไปป์ไม้แกะสลักประณีต ลำพึงครุ่นคิดไปพลางจ้องตะวันยามอัสดงหรือกองไฟ",
 		"require": "g.scrying>=5&&g.crafting>=7",
 		"max": 1,
 		"cost": {
@@ -544,7 +544,7 @@
 	},
 	{
 		"id": "metronome",
-		"desc": "Focus of temporal synchronicity.",
+		"desc": "จุดโฟกัสแห่งการประสานกันของกาลเวลา",
 		"tags": "timesource",
 		"require": "g.crafting>=10&&g.chronomancylearn4>0",
 		"max": 1,
@@ -562,7 +562,7 @@
 	{
 		"id": "celestialglobe",
 		"name": "celestial globe",
-		"desc": "A globe of the stars and constellations.",
+		"desc": "ลูกโลกหมู่ดาวและกลุ่มดาวจักรราศี",
 		"require": "g.astronomy>=9&&g.crafting>=9",
 		"max": 1,
 		"cost": {
@@ -582,7 +582,7 @@
 	{
 		"id": "armillarysphere",
 		"name": "armillary sphere",
-		"desc": "A small mechanical model of the known worlds.",
+		"desc": "แบบจำลองกลไกขนาดเล็กของโลกทั้งหลายที่รู้จัก",
 		"require": "g.astronomy>=7&&g.crafting>=7",
 		"max": 1,
 		"cost": {
@@ -602,7 +602,7 @@
 	{
 		"id": "loreoverture",
 		"name": "loremaster's beginning",
-		"desc": "A comprehensive catalog of Dhrune's greatest history and achievements. A target for you to surpass.",
+		"desc": "บัญชีรายการอันครอบคลุมของประวัติศาสตร์และความสำเร็จอันยิ่งใหญ่ที่สุดแห่งดรูน์ เป็นเป้าหมายให้คุณทลาย",
 		"require": "g.tier4>0&&g.t_knowledgeclass>=2",
 		"max": 1,
 		"cost": {
@@ -624,7 +624,7 @@
 	{
 		"id": "lorecoda",
 		"name": "loremaster's triumph",
-		"desc": "A comprehensive work on Dhrune's history and achievements, large enough to fill a library.",
+		"desc": "ผลงานอันครอบคลุมว่าด้วยประวัติศาสตร์และความสำเร็จแห่งดรูน์ ใหญ่โตพอจะเต็มห้องสมุดทั้งห้อง",
 		"require": "g.tier5>0&&g.t_knowledgeclass>=3",
 		"max": 1,
 		"cost": {
@@ -658,7 +658,7 @@
 	{
 		"id": "fourleaf",
 		"name": "four leaf clover",
-		"desc": "A small but helpful charm.",
+		"desc": "เครื่องรางเล็ก ๆ ที่ช่วยเหลือได้เสมอ",
 		"require": "g.trickery>=3&&g.herbs>=3",
 		"max": 1,
 		"cost": {
@@ -676,8 +676,8 @@
 	{
 		"id": "restless",
 		"name": "Restless Nights",
-		"desc": "Continue working even while idle.",
-		"flavor": "A good apprentice knows there are 30 hours to the day.",
+		"desc": "ทำงานต่อไปแม้จะว่างเว้นไม่ได้ลงมือ",
+		"flavor": "ศิษย์ที่ดีรู้ดีว่าหนึ่งวันมีสามสิบชั่วโมง",
 		"require": "g.lore>=3",
 		"max": 1,
 		"cost": {
@@ -692,9 +692,9 @@
 	{
 		"id": "arcanaaction",
 		"name": "Aided Thoughts",
-		"desc": "As you support your thinking with Arcana, sleep becomes less of a necessity. You can use your time in a more efficient manner now",
-		"extdesc": "Provides an additional action slot",
-		"flavor": "Arcana does nothing for the strain on your muscles, making this method useless for the average worker",
+		"desc": "เมื่อคุณค้ำจุนความคิดด้วยอาคาน่า การนอนจึงกลายเป็นเรื่องจำเป็นน้อยลง บัดนี้คุณใช้เวลาได้อย่างมีประสิทธิภาพยิ่งขึ้น",
+		"extdesc": "มอบช่องการกระทำเพิ่มเติมหนึ่งช่อง",
+		"flavor": "อาคาน่าไม่ได้ช่วยอะไรกับความเมื่อยล้าของกล้ามเนื้อ ทำให้วิธีนี้ไร้ประโยชน์สำหรับคนทำงานทั่วไป",
 		"require": "g.neophyte>0&&g.research.max>=90",
 		"max": 1,
 		"cost": {
@@ -709,7 +709,7 @@
 	{
 		"id": "speakbirds",
 		"name": "speak to Birds",
-		"desc": "Learn the secret languages of birds.",
+		"desc": "เรียนรู้ภาษาลับของเหลกว์นก",
 		"require": "g.falconer>0||g.animals>=8",
 		"max": 1,
 		"cost": {
@@ -729,7 +729,7 @@
 	{
 		"id": "dragontongue",
 		"name": "dragon Tongue",
-		"desc": "Learn the ancient language of dragons.",
+		"desc": "เรียนรู้ภาษาโบราณของมังกร",
 		"require": "g.languages>=13&&g.magicbeasts>=5",
 		"max": 1,
 		"cost": {
@@ -745,7 +745,7 @@
 	},
 	{
 		"id": "purse",
-		"desc": "Common way to carry coins.",
+		"desc": "วิธีพกพาเหรียญทั่วไป",
 		"require": "g.gold>=20",
 		"max": 2,
 		"cost": {
@@ -764,7 +764,7 @@
 			"research": 300,
 			"arcana": 1
 		},
-		"flavor": "Nothing up my sleeves...",
+		"flavor": "ไม่มีอะไรซ่อนอยู่ในแขนเสื้อ...",
 		"mod": {
 			"purse.max": 3,
 			"pouch.max": 5,
@@ -775,7 +775,7 @@
 	{
 		"id": "carddeck",
 		"name": "card deck",
-		"desc": "A simple deck of cards.",
+		"desc": "สำรับไพ่เรียบง่าย",
 		"require": "g.prestidigitation>0||g.trickery>0",
 		"max": 1,
 		"tags": "tricksource",
@@ -790,7 +790,7 @@
 	{
 		"id": "threesidecoin",
 		"name": "three-sided coin",
-		"desc": "You create your own luck.",
+		"desc": "คุณสร้างโชคชะตาของตัวเอง",
 		"require": "g.trickery>=4",
 		"max": 1,
 		"tags": "tricksource",
@@ -807,7 +807,7 @@
 	{
 		"id": "bloodbag",
 		"name": "membranous pouch",
-		"desc": "A sack woven from living tissue helps preserve the gems.",
+		"desc": "ถุงที่ทอจากเนื้อเยื่อมีชีวิตช่วยรักษาเพชรพลอยให้คงสภาพ",
 		"require": "g.bloodlore>=5&&g.weaving>=5",
 		"tags": "t_craftedbag",
 		"max": 1,
@@ -825,7 +825,7 @@
 		"id": "bagofholding",
 		"name": "bag of holding",
 		"require": "g.lore>=11&&g.conjuration>=5&&g.crafting>=15",
-		"desc": "You'll make your own bags, thank you.",
+		"desc": "ถุงของตัวเองคุณทำเองเถอะ ขอบคุณค่ะ",
 		"tags": "t_craftedbag",
 		"max": 1,
 		"cost": {
@@ -839,7 +839,7 @@
 			"gems.max": 20,
 			"prismaticgems.max": 5
 		},
-		"flavor": "The research costs a little more than you expected...",
+		"flavor": "งานวิจัยชิ้นนี้แพงกว่าที่คาดไว้นิดหน่อย...",
 		"group": "storage"
 	},
 	{
@@ -847,7 +847,7 @@
 		"name": "deep Pockets",
 		"require": "g.hiddenpockets>0&&g.trickster>0&&g.conjuration>=3",
 		"max": 1,
-		"desc": "Cheaper than buying pouches.",
+		"desc": "ถูกกว่าการซื้อถุงเล็ก",
 		"cost": {
 			"research": 300,
 			"arcana": 1
@@ -857,13 +857,13 @@
 			"purse.mod.gold.max": 10,
 			"inv.max": 1
 		},
-		"flavor": "There's another coin down here somewhere...",
+		"flavor": "มีเหรียญอีกลอยอยู่แถวนี้ที่ไหนสักแห่ง...",
 		"group": "storage"
 	},
 	{
 		"id": "retreat",
 		"name": "two-way portal",
-		"desc": "Allows for expedient getaways so you are never far from home.",
+		"desc": "ช่วยให้หลบหนีได้โดยสะดวก คุณจึงไม่ห่างไกลจากบ้านเลย",
 		"require": "g.t_chaosclass>0||g.tier2>0",
 		"max": 1,
 		"cost": {
@@ -886,7 +886,7 @@
 			"tomes": 5,
 			"arcana": 20
 		},
-		"desc": "Unlocks an ability to imbue gems as a continuous action. Activate via furniture.",
+		"desc": "ปลดล็อกความสามารถในการบรรจุพลังลงเพชรพลอยอย่างต่อเนื่อง เปิดใช้ผ่านเฟอร์นิเจอร์",
 		"group": "special"
 	},
 	{
@@ -899,7 +899,7 @@
 			"scrolls": 10,
 			"arcana": 5
 		},
-		"desc": "Unlocks abilities to scribe scrolls and bind codices as continuous actions. Activate via furniture.",
+		"desc": "ปลดล็อกความสามารถในการเขียนคัมภีร์และเข้าเล่มโคเด็กซ์อย่างต่อเนื่อง เปิดใช้ผ่านเฟอร์นิเจอร์",
 		"group": "special"
 	},
 	{
@@ -912,7 +912,7 @@
 			"tomes": 10,
 			"arcana": 30
 		},
-		"desc": "Improve the speed of your gem enchanting.",
+		"desc": "พัฒนาความเร็วในการเสริมเวทเพชรพลอยของคุณ",
 		"mod": {
 			"furn_gemcraft.mod.gemimbue.length": "-3"
 		},
@@ -928,7 +928,7 @@
 			"scrolls": 30,
 			"arcana": 10
 		},
-		"desc": "Improve the speed of your book writing.",
+		"desc": "พัฒนาความเร็วในการเขียนหนังสือของคุณ",
 		"mod": {
 			"furn_scrollcraft.mod.scribescroll.length": "-1",
 			"furn_codexcraft.mod.bindcodex.length": "-3"
@@ -939,7 +939,7 @@
 		"id": "mithridatism",
 		"alias": "poisonaffinity",
 		"name": "Mithridatism",
-		"desc": "Build up a natural resistance to most poisons by regularly ingesting them in increasing dosages.",
+		"desc": "สะสมความต้านทานตามธรรมชาติต่อยาพิษส่วนใหญ่ โดยการรับประทานมันเป็นประจำในปริมาณที่เพิ่มขึ้นเรื่อย ๆ",
 		"require": "g.nature>=10&&g.t_natureclass>0&&g.tier3>0",
 		"max": 1,
 		"cost": {
@@ -955,7 +955,7 @@
 	{
 		"id": "manaaffinity",
 		"name": "mana adaptation",
-		"desc": "Resistance to attacks channeling pure mana.",
+		"desc": "ความต้านทานต่อการโจมตีที่ชักนำมานาบริสุทธิ์",
 		"require": "g.mana>=10&&g.tier1>0",
 		"max": 1,
 		"cost": {
@@ -972,7 +972,7 @@
 	{
 		"id": "earthaffinity",
 		"name": "earth adaptation",
-		"desc": "Resistance to earth-based attacks and afflictions.",
+		"desc": "ความต้านทานต่อการโจมตีและอาคมภัยจากธาตุดิน",
 		"require": "g.earth>=10&&g.tier1>0",
 		"max": 1,
 		"cost": {
@@ -989,7 +989,7 @@
 	{
 		"id": "airaffinity",
 		"name": "air adaptation",
-		"desc": "Resistance to air-based assaults and enfeeblements.",
+		"desc": "ความต้านทานต่อการจู่โจมและการระแวงจากธาตุลม",
 		"require": "g.air>=10&&g.tier1>0",
 		"max": 1,
 		"cost": {
@@ -1006,7 +1006,7 @@
 	{
 		"id": "wateraffinity",
 		"name": "water adaptation",
-		"desc": "Resistance to water-based barrages and detriments.",
+		"desc": "ความต้านทานต่อการระดมยิงและผลร้ายจากธาตุน้ำ",
 		"require": "g.water>=10&&g.tier1>0",
 		"max": 1,
 		"cost": {
@@ -1023,7 +1023,7 @@
 	{
 		"id": "fireaffinity",
 		"name": "fire adaptation",
-		"desc": "Resistance to fire-based blasts and immolations.",
+		"desc": "ความต้านทานต่อการระเบิดและการเผาไหม้จากธาตุไฟ",
 		"require": "g.fire>=10&&g.tier1>0",
 		"max": 1,
 		"cost": {
@@ -1040,7 +1040,7 @@
 	{
 		"id": "natureaffinity",
 		"name": "nature adaptation",
-		"desc": "Resistance to nature-based thorns and toxins.",
+		"desc": "ความต้านทานต่อหนามและพิษจากธาตุธรรมชาติ",
 		"require": "g.nature>=10&&g.tier1>0",
 		"cost": {
 			"research": 250,
@@ -1056,7 +1056,7 @@
 	{
 		"id": "spiritaffinity",
 		"name": "spirit adaptation",
-		"desc": "Resistance to spirit-based hexes and haunts.",
+		"desc": "ความต้านทานต่อคำสาปและการหลอกหลอนจากธาตุวิญญาณ",
 		"require": "g.spirit>=10&&g.tier1>0",
 		"cost": {
 			"research": 250,
@@ -1072,7 +1072,7 @@
 	{
 		"id": "lightaffinity",
 		"name": "light adaptation",
-		"desc": "Resistance to light-based rays and dazzles.",
+		"desc": "ความต้านทานต่อลำแสงและการบาดตาจากธาตุแสง",
 		"require": "g.light>=10&&g.tier1>0",
 		"cost": {
 			"research": 250,
@@ -1088,7 +1088,7 @@
 	{
 		"id": "shadowaffinity",
 		"name": "shadow adaptation",
-		"desc": "Resistance to shadow-based curses and ruins.",
+		"desc": "ความต้านทานต่อคำสาปและการทำลายจากธาตุเงา",
 		"require": "g.shadow>=10&&g.tier1>0",
 		"cost": {
 			"research": 250,
@@ -1109,7 +1109,7 @@
 		"max": 1,
 		"warn": true,
 		"lock": "t_birthsign",
-		"desc": "Born under the celestial sign of the arcane.",
+		"desc": "ถือกำเนิดภายใต้สัญลักษณ์สรวงสวรรค์แห่งเวทมนตร์เร้นลับ",
 		"cost": {
 			"research": 1000,
 			"managem": 15,
@@ -1129,7 +1129,7 @@
 		"max": 1,
 		"warn": true,
 		"lock": "t_birthsign",
-		"desc": "Born under the celestial sign of fire.",
+		"desc": "ถือกำเนิดภายใต้สัญลักษณ์สรวงสวรรค์แห่งไฟ",
 		"cost": {
 			"research": 1000,
 			"firegem": 15,
@@ -1148,7 +1148,7 @@
 		"require": "g.wateraffinity>0&&g.water>=15&&g.tier2>0",
 		"lock": "t_birthsign",
 		"warn": true,
-		"desc": "Born under the celestial sign of water.",
+		"desc": "ถือกำเนิดภายใต้สัญลักษณ์สรวงสวรรค์แห่งน้ำ",
 		"cost": {
 			"research": 1000,
 			"watergem": 15,
@@ -1167,7 +1167,7 @@
 		"require": "g.earthaffinity>0&&g.earth>=15&&g.tier2>0",
 		"lock": "t_birthsign",
 		"warn": true,
-		"desc": "Born under the celestial sign of earth.",
+		"desc": "ถือกำเนิดภายใต้สัญลักษณ์สรวงสวรรค์แห่งดิน",
 		"cost": {
 			"research": 1000,
 			"earthgem": 15,
@@ -1186,7 +1186,7 @@
 		"warn": true,
 		"require": "g.airaffinity>0&&g.air>=15&&g.tier2>0",
 		"lock": "t_birthsign",
-		"desc": "Born under the celestial sign of wind.",
+		"desc": "ถือกำเนิดภายใต้สัญลักษณ์สรวงสวรรค์แห่งลม",
 		"cost": {
 			"research": 1000,
 			"airgem": 15,
@@ -1205,7 +1205,7 @@
 		"warn": true,
 		"require": "g.natureaffinity>0&&g.nature>=15&&g.tier2>0",
 		"lock": "t_birthsign",
-		"desc": "Born under the celestial sign of nature.",
+		"desc": "ถือกำเนิดภายใต้สัญลักษณ์สรวงสวรรค์แห่งธรรมชาติ",
 		"cost": {
 			"research": 1000,
 			"naturegem": 15,
@@ -1224,7 +1224,7 @@
 		"warn": true,
 		"require": "g.spiritaffinity>0&&g.spirit>=15&&g.tier2>0",
 		"lock": "t_birthsign",
-		"desc": "Born under the celestial sign of spirit.",
+		"desc": "ถือกำเนิดภายใต้สัญลักษณ์สรวงสวรรค์แห่งวิญญาณ",
 		"cost": {
 			"research": 1000,
 			"spiritgem": 15,
@@ -1243,7 +1243,7 @@
 		"warn": true,
 		"require": "g.lightaffinity>0&&g.light>=15&&g.tier2>0",
 		"lock": "t_birthsign",
-		"desc": "Born under the celestial sign of light.",
+		"desc": "ถือกำเนิดภายใต้สัญลักษณ์สรวงสวรรค์แห่งแสง",
 		"cost": {
 			"research": 1000,
 			"lightgem": 15,
@@ -1262,7 +1262,7 @@
 		"warn": true,
 		"require": "g.shadowaffinity>0&&g.shadow>=15&&g.tier2>0",
 		"lock": "t_birthsign",
-		"desc": "Born under the celestial sign of darkness.",
+		"desc": "ถือกำเนิดภายใต้สัญลักษณ์สรวงสวรรค์แห่งความมืด",
 		"cost": {
 			"research": 1000,
 			"shadowgem": 15,
@@ -1277,7 +1277,7 @@
 	{
 		"id": "poisonveins",
 		"name": "poison veins",
-		"desc": "You do not fear poison.",
+		"desc": "คุณไม่หวาดกลัวยาพิษ",
 		"require": "g.mithridatism>0&&g.nature>=15",
 		"max": 1,
 		"cost": {
@@ -1294,13 +1294,13 @@
 	{
 		"id": "coinmagic",
 		"name": "coin tricks",
-		"desc": "Manipulate coins to produce more coins.",
+		"desc": "ควบคุมเหรียญเพื่อสร้างเหรียญเพิ่มขึ้น",
 		"require": "hiddenpockets",
 		"max": 1,
 		"cost": {
 			"research": 400
 		},
-		"flavor": "Didn't even palm it.",
+		"flavor": "ไม่ต้องซ่อนมือเลยด้วยซ้ำ",
 		"mod": {
 			"gold.rate": 0.15
 		},
@@ -1309,7 +1309,7 @@
 	{
 		"id": "guidingstar",
 		"name": "guiding star",
-		"desc": "A light in the heavens guides your way.",
+		"desc": "แสงสว่างบนสรวงสวรรค์นำทางของคุณ",
 		"flavor": "Mornië Alantië.",
 		"require": "g.astronomy>=15",
 		"max": 1,
@@ -1342,7 +1342,7 @@
 	},
 	{
 		"id": "satchel",
-		"desc": "Carry more scrolls.",
+		"desc": "พกม้วนคัมภีร์ได้มากขึ้น",
 		"require": "g.scrolls>=10",
 		"max": 1,
 		"scale": 2,
@@ -1356,7 +1356,7 @@
 	},
 	{
 		"id": "abstraction",
-		"desc": "A wizard's power is the sum of their knowledge.",
+		"desc": "พลังของจอมเวทคือผลรวมของความรู้ของเขาทั้งหมด",
 		"require": "g.lore>=14",
 		"max": 1,
 		"cost": {
@@ -1380,7 +1380,7 @@
 	{
 		"id": "alkahest",
 		"name": "alkahest",
-		"desc": "Discover a Universal Solvent.",
+		"desc": "ค้นพบตัวทำละลายสากล",
 		"require": "g.alchemy>=15&&g.crafting>=10",
 		"max": 1,
 		"cost": {
@@ -1393,12 +1393,12 @@
 			"alchemy.max": 2,
 			"alchemy.rate": 0.2
 		},
-		"flavor": "Anything can be a liquid.",
+		"flavor": "อะไรก็เป็นของเหลวได้ทั้งนั้น",
 		"group": "knowledge"
 	},
 	{
 		"id": "prism",
-		"desc": "A small crystal for performing optical experiments.",
+		"desc": "ผลึกเล็ก ๆ สำหรับการทดลองทางแสง",
 		"require": "neophyte",
 		"max": 1,
 		"tags": "lightsource",
@@ -1416,7 +1416,7 @@
 		"id": "windchime",
 		"name": "windchime",
 		"tags": "airsource,spiritsource",
-		"desc": "Focus of air magic.",
+		"desc": "จุดโฟกัสแห่งเวทมนตร์ลม",
 		"require": "g.space.max>=11",
 		"max": 1,
 		"cost": {
@@ -1434,7 +1434,7 @@
 	{
 		"id": "dreamcatcher",
 		"name": "dream catcher",
-		"desc": "You may not like what you catch.",
+		"desc": "สิ่งที่คุณจับได้อาจไม่ถูกใจคุณก็ได้",
 		"tags": "spiritsource",
 		"require": "g.crafting>=5",
 		"max": 1,
@@ -1453,9 +1453,9 @@
 		"id": "heartcandle",
 		"name": "heart Candle",
 		"tags": "candle",
-		"desc": "A warm glowing candle.",
+		"desc": "เทียนอันอบอุ่นเรืองแสง",
 		"max": 2,
-		"flavor": "Spare a little candle, save some light for me.",
+		"flavor": "จุดเทียนน้อย ๆ ไว้สักเล่ม ช่วยเก็บแสงไฟบ้าง",
 		"require": "g.mana.max>=15",
 		"cost": {
 			"gold": 35
@@ -1470,10 +1470,10 @@
 		"id": "holycandle",
 		"name": "holy candle",
 		"tags": "candle",
-		"desc": "White glowing candle.",
+		"desc": "เทียนสีขาวเรืองแสง",
 		"max": 2,
 		"require": "g.light.max>=10",
-		"flavor": "It is better to light one candle than to curse the darkness.",
+		"flavor": "การจุดเทียนหนึ่งเล่มยังดีกว่าการสาปแช่งความมืด",
 		"cost": {
 			"gold": 75
 		},
@@ -1487,7 +1487,7 @@
 		"id": "sombercandle",
 		"name": "somber candle",
 		"tags": "candle",
-		"desc": "Its faint light stirs the restless spirits.",
+		"desc": "แสงริบหรี่ของมันปลุกเร้าเหล่าวิญญาณกระสับกระส่าย",
 		"max": 5,
 		"require": "g.spiritlore.max>=7",
 		"cost": {
@@ -1503,10 +1503,10 @@
 		"id": "blackcandle",
 		"name": "unholy candle",
 		"tags": "candle",
-		"desc": "What flames cast shadows?",
+		"desc": "ไฟชนิดไหนกันที่ทิ้งเงามืด?",
 		"max": 2,
 		"require": "g.shadow.max>=10",
-		"flavor": "Darkness, Darkness.",
+		"flavor": "ความมืด ความมืด",
 		"cost": {
 			"gold": 75
 		},
@@ -1520,7 +1520,7 @@
 		"id": "ball",
 		"name": "crystal ball",
 		"tags": "spiritsource",
-		"desc": "A crystal sphere revealing distant lands.",
+		"desc": "ลูกแก้วคริสตัลเผยแผ่นดินอันไกลโพ้น",
 		"require": "g.tier0>0&&g.gems>0",
 		"max": 1,
 		"cost": {
@@ -1540,7 +1540,7 @@
 		"require": "g.evt_helper>0",
 		"need": "pedestal",
 		"max": 1,
-		"desc": "A weighty tome of knowledge.",
+		"desc": "ตำราความรู้อันหนักอึ้ง",
 		"cost": {
 			"gold": 100,
 			"codices": 1
@@ -1559,7 +1559,7 @@
 		"tags": "spiritsource",
 		"require": "g.scrying>=5&&g.spirit.max>=7",
 		"max": 1,
-		"desc": "See without seeing.",
+		"desc": "มองเห็นโดยไม่ต้องแลเห็น",
 		"cost": {
 			"spirit": 5,
 			"arcana": 1,
@@ -1576,7 +1576,7 @@
 	},
 	{
 		"id": "chakravarti",
-		"desc": "Wheels upon wheels; you turn them all.",
+		"desc": "วงล้อทับวงล้อ คุณหมุนมันทั้งหมด",
 		"require": "(g.t_swordclass)>0&&(g.t_shadowclass+g.t_manaclass)>0",
 		"max": 1,
 		"cost": {
@@ -1598,7 +1598,7 @@
 	},
 	{
 		"id": "specialization",
-		"desc": "Specialize in a school of magic.",
+		"desc": "เชี่ยวชาญเฉพาะในสำนักเวทมนตร์",
 		"require": "g.lore>999",
 		"unused": true,
 		"max": 1,
@@ -1619,7 +1619,7 @@
 		"id": "crystalmind",
 		"name": "crystal mind",
 		"max": 3,
-		"desc": "Expend your research to enhance your mental fortitude.",
+		"desc": "ใช้จ่ายงานวิจัยเพื่อเสริมความแข็งแกร่งทางจิตใจ",
 		"require": "tier0",
 		"cost": {
 			"research": "5*Math.pow(2,g.crystalmind)",
@@ -1636,7 +1636,7 @@
 		"id": "occultendure",
 		"name": "occult endurance",
 		"max": 3,
-		"desc": "Expend your research to discover new sources of stamina.",
+		"desc": "ใช้จ่ายงานวิจัยเพื่อค้นพบแหล่งพลังกายใหม่",
 		"require": "g.tier1>0",
 		"cost": {
 			"research": "5*Math.pow(2,g.occultendure)",
@@ -1654,7 +1654,7 @@
 		"id": "arcanebody",
 		"name": "arcane body",
 		"max": 1,
-		"desc": "Expend your research to enhance your durability.",
+		"desc": "ใช้จ่ายงานวิจัยเพื่อเสริมความคงทน",
 		"require": "g.lore>=7&&g.tier0>0",
 		"cost": {
 			"research": "5*Math.pow(2,g.arcanebody)",
@@ -1668,7 +1668,7 @@
 	{
 		"id": "arcanebody2",
 		"name": "greater arcane body",
-		"desc": "Magic over matter.",
+		"desc": "เวทมนตร์เหนือสสาร",
 		"require": "g.tier4>0",
 		"max": 3,
 		"cost": {
@@ -1678,7 +1678,7 @@
 		"mod": {
 			"hp.rate": 0.25
 		},
-		"flavor": "Magic over matter.",
+		"flavor": "เวทมนตร์เหนือสสาร",
 		"group": "body"
 	},
 	{
@@ -1686,7 +1686,7 @@
 		"name": "inner light",
 		"require": "g.t_divinationclass>0&&g.divination>=8",
 		"max": 1,
-		"desc": "A light in the darkness.",
+		"desc": "แสงสว่างท่ามกลางความมืด",
 		"cost": {
 			"research": 500,
 			"lightgem": 10,
@@ -1704,7 +1704,7 @@
 		"id": "forewarned",
 		"require": "g.t_divinationclass>0&&g.divination>=12",
 		"max": 1,
-		"desc": "All these things have I expected, and more...",
+		"desc": "สิ่งทั้งปวงนี้ข้าคาดการณ์ไว้แล้ว และอีกมากมาย...",
 		"cost": {
 			"lightgem": 20,
 			"research": 800,
@@ -1721,7 +1721,7 @@
 		"id": "truesight",
 		"require": "g.t_divinationclass>0&&g.tier4>0",
 		"max": 1,
-		"desc": "Immunity to mortal deceptions.",
+		"desc": "ภูมิคุ้มกันต่อการหลอกลวงของมนุษย์ปุถุชน",
 		"cost": {
 			"tomes": 5,
 			"research": 1000,
@@ -1743,7 +1743,7 @@
 		"id": "fatalist",
 		"require": "g.t_divinationclass>0&&g.tier5>0&&g.truesight>0",
 		"max": 1,
-		"desc": "The guiding hand of fate.",
+		"desc": "มืออันนำทางแห่งโชคชะตา",
 		"cost": {
 			"tomes": 10,
 			"research": 2000,
@@ -1758,13 +1758,13 @@
 			"player.defense": 3,
 			"dodge": 3
 		},
-		"flavor": "Gods do not play dice...",
+		"flavor": "เหล่าเทพไม่เล่นลูกเต๋า...",
 		"group": "knowledge"
 	},
 	{
 		"id": "up_windspeed",
 		"name": "Zephyr Stride",
-		"desc": "Move as unburdened as the wind. Every step more elegant than the last.",
+		"desc": "เคลื่อนไหวไร้ภาระดั่งสายลม ทุกย่างก้าวงดงามยิ่งกว่าก้าวก่อน",
 		"require": "g.tier1>0&&g.airlore>=7",
 		"cost": {
 			"research": 500,
@@ -1779,7 +1779,7 @@
 	{
 		"id": "up_firespeed",
 		"name": "Ember Surge",
-		"desc": "Your inner fervour reaches a fever pitch, as uncontrolled as the dancing flame.",
+		"desc": "ความเร่าร้อนภายในของคุณถึงขีดเดือด ไร้การควบคุมดั่งเปลวไฟที่ระบำ",
 		"require": "g.tier2>0&&g.firelore>=7",
 		"cost": {
 			"research": 1000,
@@ -1794,7 +1794,7 @@
 	{
 		"id": "up_timespeed",
 		"name": "Time Walk",
-		"desc": "Warp to your future position on the battlefield, faster than you could physically move.",
+		"desc": "วกวนไปยังตำแหน่งในอนาคตของคุณบนสนามรบ เร็วกว่าที่ร่างกายจะขยับได้",
 		"require": "g.tier3>0&&g.chronomancy>=4",
 		"cost": {
 			"research": 1500,
@@ -1809,7 +1809,7 @@
 	{
 		"id": "infusedbody",
 		"name": "infused body",
-		"desc": "Increases the effectiveness of arcane body.",
+		"desc": "เพิ่มประสิทธิภาพของร่างลี้ลับ",
 		"max": 1,
 		"require": "tier2",
 		"cost": {
@@ -1825,7 +1825,7 @@
 	},
 	{
 		"id": "chirography",
-		"desc": "Improve the efficacy of your scrolls by meticulous attention to penmanship.",
+		"desc": "เพิ่มประสิทธิภาพคัมภีร์ของคุณด้วยความใส่ใจจดจ่อในฝีมือการเขียน",
 		"require": "g.lore>=10&&g.tier1>0",
 		"max": 1,
 		"cost": {
@@ -1839,7 +1839,7 @@
 	},
 	{
 		"id": "orthography",
-		"desc": "Make your spelling match your spelling.",
+		"desc": "ทำให้การสะกดของคุณตรงกับเวทมนตร์ที่คุณร่าย",
 		"require": "g.lore>=12&&g.tier2>0&&g.chirography>0",
 		"max": 1,
 		"cost": {
@@ -1855,7 +1855,7 @@
 	{
 		"id": "symboliccompression",
 		"name": "symbolic compression",
-		"desc": "Devise a new system of writing to make characters more legible when densely packed.",
+		"desc": "คิดค้นระบบการเขียนใหม่เพื่อให้ตัวอักษรอ่านง่ายขึ้นเมื่อเรียงชิดกันแน่น",
 		"require": "g.lore>=14&&g.tier3>0&&g.languages>=3&&g.orthography>0",
 		"max": 1,
 		"cost": {
@@ -1871,7 +1871,7 @@
 	{
 		"id": "thaumictext",
 		"name": "thaumic text",
-		"desc": "Enchant your text so your books organize themselves.",
+		"desc": "เสริมเวทให้ข้อเขียนของคุณเพื่อให้หนังสือจัดระเบียบตัวเองได้",
 		"require": "g.lore>=16&&g.tier4>0&&g.enchanting>=3&&g.symboliccompression>0",
 		"max": 1,
 		"cost": {
@@ -1887,7 +1887,7 @@
 	{
 		"id": "explosiverunes",
 		"name": "explosive runes",
-		"desc": "Engineer a new runic script that allows each glyph to expand into an entire sentence in your mind's eye.",
+		"desc": "คิดค้นอักขรารูนแบบใหม่ที่ให้แต่ละสัญลักษณ์ขยายเป็นประโยคทั้งประโยคในมโนภาพของคุณ",
 		"require": "g.lore>=18&&g.tier5>0&&g.runelore>=3&&g.thaumictext>0",
 		"max": 1,
 		"cost": {
@@ -1902,7 +1902,7 @@
 	},
 	{
 		"id": "ithkuil",
-		"desc": "Create an entirely new eldritch language that removes any form of ambiguity.",
+		"desc": "สร้างภาษาแปลกพิลึกแบบใหม่ที่ขจัดความคลุมเครือทุกรูปแบบ",
 		"require": "g.lore>=20&&g.tier6>0&&g.spellcraft>=3&&g.explosiverunes>0",
 		"max": 1,
 		"cost": {
@@ -1920,7 +1920,7 @@
 		"name": "touching the void",
 		"require": "g.voidlore>=7",
 		"max": 1,
-		"desc": "Beyond the sphere of the planes lies a great void. Of its powers and dangers, the books are silent.",
+		"desc": "พ้นอาณาเขตแห่งเหล่ามิติออกไปมีห้วงว่างอันยิ่งใหญ่ ว่าด้วยพลังและอันตรายของมัน ตำราเงียบงัน",
 		"cost": {
 			"research": 10000,
 			"tomes": 5
@@ -1939,8 +1939,8 @@
 		"id": "goals1",
 		"alias": "pursuit",
 		"name": "dedicated goal",
-		"desc": "The first step of becoming a wizard is finding the motivation.",
-		"extdesc": "Mark an activity as a goal to perform it as much as possible.",
+		"desc": "ก้าวแรกของการเป็นจอมเวทคือการค้นหาแรงบันดาลใจ",
+		"extdesc": "ทำเครื่องหมายกิจกรรมเป็นเป้าหมายเพื่อปฏิบัติมันให้มากที่สุดเท่าที่จะทำได้",
 		"require": "g.lore>=6",
 		"max": 1,
 		"cost": {
@@ -1955,8 +1955,8 @@
 	{
 		"id": "goals2",
 		"name": "maniacal goals",
-		"desc": "Monomaniacal pursuits are characteristic of all independent wizards.",
-		"extdesc": "Mark an additional activity as a goal",
+		"desc": "การไล่ตามอย่างคลั่งไคล้เพียงสิ่งเดียวคือเอกลักษณ์ของจอมเวทอิสระทั้งปวง",
+		"extdesc": "ทำเครื่องหมายกิจกรรมเพิ่มเติมเป็นเป้าหมาย",
 		"require": "g.tier1>0",
 		"max": 1,
 		"cost": {
@@ -1972,8 +1972,8 @@
 		"id": "hobbies1",
 		"alias": "pursuit1",
 		"name": "idle hobbies",
-		"desc": "Any good wizard knows that the best rest is a change of occupation.",
-		"extdesc": "Mark an activity as a hobby, to perform while idle.",
+		"desc": "จอมเวทที่ดีย่อมรู้ดีว่าการพักผ่อนที่ดีที่สุดคือการเปลี่ยนอิริยาบถ",
+		"extdesc": "ทำเครื่องหมายกิจกรรมเป็นงานอดิเรก เพื่อปฏิบัติในยามว่าง",
 		"require": "g.lore>=7",
 		"max": 1,
 		"cost": {
@@ -1989,8 +1989,8 @@
 		"id": "hobbies2",
 		"alias": "pursuit2",
 		"name": "expanded interests",
-		"desc": "Expand your idle interests to an additional area.",
-		"extdesc": "Mark an additional activity as a hobby",
+		"desc": "ขยายความสนใจยามว่างของคุณไปสู่อีกหนึ่งด้าน",
+		"extdesc": "ทำเครื่องหมายกิจกรรมเพิ่มเติมเป็นงานอดิเรก",
 		"require": "g.tier2>0",
 		"max": 1,
 		"cost": {
@@ -2006,8 +2006,8 @@
 		"id": "hobbies3",
 		"alias": "pursuit3",
 		"name": "never-idle",
-		"desc": "You do not remember the last time you had a truly idle moment.",
-		"extdesc": "Mark yet another activity as a hobby",
+		"desc": "คุณนึกไม่ขึ้นเลยว่าครั้งสุดท้ายที่ได้ว่างจริง ๆ คือเมื่อใด",
+		"extdesc": "ทำเครื่องหมายกิจกรรมอีกหนึ่งเป็นงานอดิเรก",
 		"require": "g.tier5>0",
 		"max": 1,
 		"cost": {
@@ -2021,7 +2021,7 @@
 	},
 	{
 		"id": "somnambulist",
-		"desc": "A wizard's dreams are full as waking hours.",
+		"desc": "ความฝันของจอมเวทแน่นหนาไม่แพ้ชั่วโมงตื่น",
 		"require": "g.dreamchamber>0&&g.tier2>0",
 		"max": 1,
 		"cost": {
@@ -2032,14 +2032,14 @@
 			"arcana.rate": 0.03,
 			"dreams.rate": 0.0003
 		},
-		"flavor": "Every second of the night I live another life.",
+		"flavor": "ทุกวินาทีแห่งรัตติกาล ฉันได้มีชีวิตอีกหนึ่งชีวิต",
 		"group": "crafting"
 	},
 	{
 		"id": "siversgate",
 		"name": "siver's gate",
-		"desc": "Siver knew true power comes only at great cost.",
-		"flavor": "To stand before it would kill most men. to step beyond...",
+		"desc": "ซีเวอร์รู้ดีว่าพลังที่แท้จริงต้องแลกมาด้วยราคาอันใหญ่หลวง",
+		"flavor": "การยืนอยู่เบื้องหน้ามันจะฆ่าคนส่วนใหญ่ให้ตาย และการก้าวข้ามมันไป...",
 		"warn": true,
 		"group": "bargain",
 		"require": "g.lore>=30&&g.tier4>0",
@@ -2062,8 +2062,8 @@
 	{
 		"id": "siversspirit",
 		"name": "Plane of Spirits",
-		"desc": "You sense countless sprits beyond the gate.",
-		"flavor": "They seem to be in good spirits",
+		"desc": "คุณสัมผัสได้ถึงวิญญาณนับไม่ถ้วนหลังประตู",
+		"flavor": "พวกมันดูจะอารมณ์ดีอยู่",
 		"group": "bargain",
 		"require": "g.lore>=30&&g.tier4>0&&g.spiritlore>=15",
 		"need": "siversgate",
@@ -2082,8 +2082,8 @@
 	{
 		"id": "siversshadow",
 		"name": "Plane of Shadows",
-		"desc": "Constant screaming, wailing and torture sounds can be heard as you approach the gate.",
-		"flavor": "So this is where everybody gets sent to.",
+		"desc": "เสียงกรีดร้อง เสียงร่ำไห้ และเสียงทรมานดังไม่ขาดสายเมื่อคุณเข้าใกล้ประตู",
+		"flavor": "ที่แท้ทุกคนก็ถูกส่งมาที่นี่นี่เอง",
 		"group": "bargain",
 		"require": "g.lore>=30&&g.tier4>0&&g.shadowlore>=15",
 		"need": "siversgate",
@@ -2102,8 +2102,8 @@
 	{
 		"id": "dishwasher",
 		"name": "lesser hydrokinesis",
-		"desc": "Learn how to gently nudge water with your will alone. Little more than a party trick for most, it is a great tool for cleaning the mountains of dishes your master's experiments leave behind.",
-		"flavor": "Nobody ever enchanted a tool to do this on its own. Because everybody that could do so or afford it has more convenient options, like an apprentice or servants.",
+		"desc": "เรียนรู้วิธีผลักน้ำอย่างแผ่วเบาด้วยเจตจำนงเพียงลำพัง สำหรับคนส่วนใหญ่ก็แค่กลพรรค์ในงานเลี้ยง แต่สำหรับคุณมันคือเครื่องมือชั้นดีสำหรับล้างจานกองภูเขาที่การทดลองของนายท่านทิ้งไว้",
+		"flavor": "ไม่มีใครเคยเสริมเวทให้เครื่องมือทำสิ่งนี้ได้เอง เพราะทุกคนที่ทำได้หรือพอจะจ่ายไหวล้วนมีทางเลือกที่สะดวกกว่า เช่น ศิษย์รับใช้หรือคนใช้",
 		"require": "g.waterlore>=2&&g.tier0==0",
 		"max": 1,
 		"cost": {
@@ -2121,8 +2121,8 @@
 		"id": "up_pitcher",
 		"name": "bottomless pitcher",
 		"tags": "watersource",
-		"desc": "Unlimited source of water.",
-		"flavor": "All you can drink.",
+		"desc": "แหล่งน้ำอันไร้ขีดจำกัด",
+		"flavor": "ดื่มได้ไม่อั้น",
 		"require": "g.water.max>=10",
 		"max": 1,
 		"cost": {
@@ -2143,7 +2143,7 @@
 		"id": "evanescence",
 		"name": "evanescence",
 		"tags": "airsource",
-		"desc": "Like you don't exist at all.",
+		"desc": "ราวกับคุณไม่มีตัวตนอยู่เลย",
 		"require": "g.air.max>=8",
 		"max": 1,
 		"cost": {
@@ -2159,14 +2159,14 @@
 			"air.rate": 0.05,
 			"airdmg": 5
 		},
-		"flavor": "The nothing you've become.",
+		"flavor": "ความว่างเปล่าที่คุณกลายเป็น",
 		"group": "magic"
 	},
 	{
 		"id": "typhoon",
 		"name": "typhoon",
 		"tags": ["airsource", "watersource"],
-		"desc": "The whirling chaos above the sea.",
+		"desc": "ความโกลาหลหมุนวนเหนือผืนทะเล",
 		"require": "((g.air.max+g.t_airclass*5)>=15&&(g.water.max+g.t_waterclass*5)>=15)",
 		"max": 1,
 		"cost": {
@@ -2182,7 +2182,7 @@
 			"airdmg": 10,
 			"waterdmg": 10
 		},
-		"flavor": "Become one with the wind and water.",
+		"flavor": "กลายเป็นหนึ่งเดียวกับลมและน้ำ",
 		"group": "magic"
 	},
 	{
@@ -2191,7 +2191,7 @@
 		"require": "g.anatomy>=5&&g.tier0>0",
 		"need": "alchemy",
 		"max": 1,
-		"desc": "Train your body to heal on its own.",
+		"desc": "ฝึกฝนร่างกายให้รักษาตัวเองได้",
 		"cost": {
 			"research": 100,
 			"mana": 10,
@@ -2201,12 +2201,12 @@
 		"mod": {
 			"hp.rate": 0.5
 		},
-		"flavor": "I've had worse.",
+		"flavor": "เคยเจอแย่กว่านี้แล้ว",
 		"group": "body"
 	},
 	{
 		"id": "earthworks",
-		"desc": "Strong walls around your home, to deter unwise attackers.",
+		"desc": "กำแพงแข็งแกร่งรอบบ้านของคุณ เพื่อยับยั้งผู้รุกรานที่ไร้สติ",
 		"require": "g.geosculpting>=5",
 		"max": 2,
 		"cost": {
@@ -2217,13 +2217,13 @@
 			"geosculpting.max": 1,
 			"player.defense": 5
 		},
-		"flavor": "Doubles as a burial mound.",
+		"flavor": "ใช้แทนเป็นเนินฝังศพได้ด้วย",
 		"group": "knowledge"
 	},
 	{
 		"id": "coretap",
 		"name": "core tap",
-		"desc": "Tap the world's core for endless heat.",
+		"desc": "เจาะแกนโลกเพื่อความร้อนอันไร้ขีดจำกัด",
 		"require": "(g.earthshaker>0||(g.t_earthclass+g.t_elementalclass)>=3)&&g.geosculpting>=6",
 		"max": 1,
 		"cost": {
@@ -2245,7 +2245,7 @@
 		"name": "tamed pathway",
 		"require": "g.geomancer>0||(g.t_earthclass+g.t_elementalclass>=3)&&g.dist>=200",
 		"max": 1,
-		"desc": "Train the roads around your home to behave.",
+		"desc": "ฝึกฝนถนนรอบบ้านของคุณให้ประพฤติตนเรียบร้อย",
 		"cost": {
 			"gold": 3000,
 			"earthgem": 5,
@@ -2254,14 +2254,14 @@
 		"mod": {
 			"dist": 100
 		},
-		"flavor": "Those good boys are perfect for keeping unwanted guests away.",
+		"flavor": "เจ้าเด็กดีพวกนั้นสุดยอดในการไล่แขกที่ไม่เชิญ",
 		"group": "exploration"
 	},
 	{
 		"id": "hiddenchamber",
 		"name": "hidden chamber",
 		"tags": "t_underground",
-		"desc": "A place to meditate in solitude, deep beneath the earth.",
+		"desc": "สถานที่สำหรับเพ่งพิจารณาอย่างสันโดษ ลึกลงใต้ผืนดิน",
 		"max": 1,
 		"require": "g.geosculpting>0",
 		"cost": {
@@ -2278,7 +2278,7 @@
 	{
 		"id": "expandedlungs",
 		"name": "expansive lungs",
-		"desc": "All the air you require.",
+		"desc": "อากาศทั้งหมดที่คุณต้องการ",
 		"require": "(g.t_airclass*2+g.t_elementalclass)>=2",
 		"max": 1,
 		"cost": {
@@ -2296,7 +2296,7 @@
 	{
 		"id": "waterbreathing",
 		"name": "water breathing",
-		"desc": "Water is as air to you.",
+		"desc": "น้ำเป็นดั่งอากาศสำหรับคุณ",
 		"require": "(g.t_waterclass*2+g.t_elementalclass)>=2",
 		"max": 1,
 		"cost": {
@@ -2314,7 +2314,7 @@
 	{
 		"id": "rockcollection",
 		"name": "minerals collection",
-		"desc": "Sorted by hardness.",
+		"desc": "จัดเรียงตามความแข็ง",
 		"require": "g.geomancer>0||g.t_hammerclass>=2",
 		"max": 3,
 		"cost": {
@@ -2325,13 +2325,13 @@
 			"hammerlore.max": 1,
 			"hammerlore.rate": 0.3
 		},
-		"flavor": "A fantastic way to test your strength.",
+		"flavor": "วิธีทดสอบกำลังของคุณอันยอดเยี่ยม",
 		"group": "knowledge"
 	},
 	{
 		"id": "artificialmountain",
 		"name": "raise mountain",
-		"desc": "Leave your mark on this world.",
+		"desc": "ทิ้งร่องรอยของคุณไว้บนโลกใบนี้",
 		"require": "g.earthshaker>0||g.t_earthclass>=2",
 		"max": 1,
 		"cost": {
@@ -2354,7 +2354,7 @@
 	{
 		"id": "constructquarry",
 		"name": "magic quarry",
-		"desc": "A rocky escarpment to conduct your excavations more efficiently.",
+		"desc": "หน้าผาหินสำหรับดำเนินการขุดค้นอย่างมีประสิทธิภาพยิ่งขึ้น",
 		"require": "geosculpting",
 		"max": 3,
 		"cost": {
@@ -2372,7 +2372,7 @@
 	{
 		"id": "mythicanvil",
 		"name": "mythic anvil",
-		"desc": "Made of mythical metals, this anvil can withstand even a titan's power.",
+		"desc": "หลอมจากโลหะในตำนาน ทั่งนี้ทนทานแม้แต่พลังของไททัน",
 		"require": "titan",
 		"max": 1,
 		"cost": {
@@ -2392,7 +2392,7 @@
 	{
 		"id": "undertunnels",
 		"name": "subterranean pathways",
-		"desc": "A twisting maze of indistinguishable passages spanning your domain.",
+		"desc": "เขาวงกตอันวกวนของทางเดินที่แยกไม่ออก ทอดยาวทั่วอาณาเขตของคุณ",
 		"require": "g.geosculpting>=10",
 		"max": 1,
 		"cost": {
@@ -2409,8 +2409,8 @@
 		"id": "innerfire",
 		"name": "inner fire",
 		"tags": "firesource",
-		"desc": "Your body is a source of fire.",
-		"flavor": "Ashes to ashes.",
+		"desc": "ร่างกายของคุณคือแหล่งกำเนิดไฟ",
+		"flavor": "เถ้าแก่เถ้า",
 		"require": "g.fire.max>=10",
 		"max": 1,
 		"cost": {
@@ -2431,7 +2431,7 @@
 		"id": "earthsoul",
 		"name": "earth soul",
 		"tags": "earthsource",
-		"desc": "Your body is tuned to the earth.",
+		"desc": "ร่างกายของคุณประสานกับผืนดิน",
 		"require": "g.earth.max>=10",
 		"max": 1,
 		"cost": {
@@ -2456,7 +2456,7 @@
 		"id": "heartofstone",
 		"name": "heart of stone",
 		"tags": "earthsource",
-		"desc": "Ruthless as the barren earth.",
+		"desc": "โหดเหี้ยมดั่งผืนดินแห้งแล้ง",
 		"require": "g.geomancer>0||(g.earth.max+g.t_elementalclass*3+g.t_earthclass*4)>=25",
 		"max": 1,
 		"cost": {
@@ -2479,8 +2479,8 @@
 		"id": "airglobe",
 		"name": "swirling globe",
 		"tags": "airsource",
-		"desc": "An unending supply of air.",
-		"flavor": "Out of nothing at all.",
+		"desc": "อากาศที่ส่งมาไม่ขาดสาย",
+		"flavor": "จากความว่างเปล่าเสียด้วยซ้ำ",
 		"require": "g.air.max>=5",
 		"max": 1,
 		"cost": {
@@ -2499,7 +2499,7 @@
 	{
 		"id": "bellows",
 		"name": "ceaseless bellows",
-		"desc": "These bellows run on their own.",
+		"desc": "เครื่องสูบลมนี้ทำงานเองได้",
 		"require": "g.crafting>=7&&g.air>0",
 		"max": 1,
 		"cost": {
@@ -2516,7 +2516,7 @@
 	},
 	{
 		"id": "mendicant",
-		"desc": "Sacrifice luxury for higher attainments.",
+		"desc": "ยอมสละความหรูหราเพื่อสู่ความสำเร็จอันสูงส่ง",
 		"need": "g.evil3==0&&(g.good1>=1||g.neutral>=1)&&g.gold.max>=1000&&g.light.max>=8",
 		"max": 1,
 		"warn": true,
@@ -2537,7 +2537,7 @@
 		"name": "inner sanctum",
 		"need": "g.mendicant>0&&g.truesight>0",
 		"max": 1,
-		"desc": "The halls of the mind are without limits.",
+		"desc": "โถงแห่งจิตใจไร้ซึ่งขอบเขต",
 		"cost": {
 			"lightgem": 5,
 			"research": 5000
@@ -2549,7 +2549,7 @@
 	},
 	{
 		"id": "alembic",
-		"desc": "Essential instrument in alchemical distilling.",
+		"desc": "เครื่องมือจำเป็นในการกลั่นทางเล่นแร่แปรธาตุ",
 		"require": "g.tier0>0&&g.alchemy>=3",
 		"max": 1,
 		"cost": {
@@ -2587,7 +2587,7 @@
 	{
 		"id": "crucible",
 		"name": "fine crucible",
-		"desc": "Resiliant vessel for melting substances.",
+		"desc": "ภาชนะอันทนทานสำหรับหลอมสาร",
 		"require": "g.tier0>0&&g.alchemy>0",
 		"max": 1,
 		"cost": {
@@ -2603,11 +2603,11 @@
 	{
 		"id": "pot",
 		"name": "cooking pot",
-		"desc": "A standard cooking pot.",
+		"desc": "หม้อทำอาหารมาตรฐาน",
 		"tags": "potsource",
 		"need": "firesource",
 		"max": 1,
-		"flavor": "Boil 'em, mash 'em, stick 'em in a stew.",
+		"flavor": "ต้มมัน บดมัน ใส่เป็นสตูว์ไปเลย",
 		"cost": {
 			"gold": 25
 		},
@@ -2620,7 +2620,7 @@
 	{
 		"id": "cauldron",
 		"name": "cauldron",
-		"desc": "Like a cooking pot, but larger.",
+		"desc": "เหมือนหม้อทำอาหาร แต่ใหญ่กว่า",
 		"tags": "potsource",
 		"require": ["tier1", "firesource"],
 		"max": 1,
@@ -2628,7 +2628,7 @@
 		"cost": {
 			"gold": 150
 		},
-		"flavor": "Fire burn and cauldron bubble.",
+		"flavor": "ไฟลุกไหม้และหม้อต้มเดือดปุด ๆ",
 		"mod": {
 			"potions.rate": 0.1,
 			"rest.effect.stamina": 0.12,
@@ -2659,7 +2659,7 @@
 	},
 	{
 		"id": "cellar",
-		"desc": "Add a cellar to your domicile.",
+		"desc": "เพิ่มห้องใต้ดินให้ที่พำนักของคุณ",
 		"require": "tier1",
 		"max": 1,
 		"cost": {
@@ -2673,7 +2673,7 @@
 	{
 		"id": "expandcellar",
 		"name": "expanded cellars",
-		"desc": "Increase the size of your existing cellars.",
+		"desc": "ขยายขนาดห้องใต้ดินที่มีอยู่ของคุณ",
 		"require": "cellar",
 		"max": 1,
 		"cost": {
@@ -2687,7 +2687,7 @@
 	{
 		"id": "siegeperilous",
 		"name": "siege perilous",
-		"desc": "The fabled seat of destiny.",
+		"desc": "บัลลังก์ในตำนานแห่งโชคชะตา",
 		"require": "g.fame>=10",
 		"max": 1,
 		"cost": {
@@ -2707,13 +2707,13 @@
 	},
 	{
 		"id": "up_runecrafter",
-		"actname": "Hire Dwarven Runecrafter",
+		"actname": "จ้างช่างรูนคนแคระ",
 		"name": "dwarven runecrafter",
-		"desc": "Hire a dwarf to craft runestones for you.",
-		"extdesc": "A dwarf serves no tyrant. Should you descend into evil, these runecrafters would surely abandon you.",
+		"desc": "จ้างคนแคระมาแกะหินรูนให้คุณ",
+		"extdesc": "คนแคระไม่รับใช้ทรราช หากคุณจมดิ่งสู่ความชั่วร้าย เหล่าช่างรูนย่อมทอดทิ้งคุณแน่นอน",
 		"require": "g.runelore>=5&&g.tier3>0&&g.evil2<1",
 		"need": "(g.up_evil_runecrafter + g.up_runecrafter) <5",
-		"needtext": "Must own less than 5 total Dwarven Runecrafters or Skeletal Runecarvers.",
+		"needtext": "ต้องมีช่างรูนคนแคระหรือช่างแกะรูนโครงกระดูก รวมกันน้อยกว่า 5 คน",
 		"max": 5,
 		"cost": {
 			"gems": 100
@@ -2735,13 +2735,13 @@
 	},
 	{
 		"id": "up_evil_runecrafter",
-		"actname": "Animate Skeletal Runecarver",
+		"actname": "ปลุกชีพช่างแกะรูนโครงกระดูก",
 		"name": "Skeletal Runecarver",
-		"desc": "Make a skeleton to craft runestones for you.",
-		"extdesc": "If you had a moral conscience, you wouldn't be able to stomach utilising the dead as servants.",
+		"desc": "สร้างโครงกระดูกมาแกะหินรูนให้คุณ",
+		"extdesc": "หากคุณยังมีมโนธรรม คุณคงทนไม่ได้กับการใช้คนตายเป็นคนรับใช้",
 		"require": "g.runelore>=5&&g.tier3>0&&g.good2<1",
 		"need": "(g.up_evil_runecrafter + g.up_runecrafter) <5",
-		"needtext": "Must own less than 5 total Dwarven Runecrafters or Skeletal Runecarvers.",
+		"needtext": "ต้องมีช่างรูนคนแคระหรือช่างแกะรูนโครงกระดูก รวมกันน้อยกว่า 5 คน",
 		"max": 5,
 		"cost": {
 			"bloodgem": 25,
@@ -2765,7 +2765,7 @@
 	{
 		"id": "up_apprentice",
 		"name": "apprentice",
-		"desc": "Take on an apprentice to do work for you.",
+		"desc": "รับศิษย์ฝึกหัดมาทำงานให้คุณ",
 		"require": "tier2",
 		"max": 1,
 		"cost": {
@@ -2781,12 +2781,12 @@
 			"codices.rate": 0.01,
 			"tomes.rate": 0.001
 		},
-		"flavor": "Why does it cost money?",
+		"flavor": "ทำไมมันถึงต้องเสียเงินด้วย?",
 		"group": "materials"
 	},
 	{
 		"id": "basement",
-		"desc": "Install a basement beneath your home.",
+		"desc": "ติดตั้งชั้นใต้ดินใต้บ้านของคุณ",
 		"require": "g.tier1>0&&g.earthlore>=3",
 		"max": 1,
 		"cost": {
@@ -2803,7 +2803,7 @@
 		"name": "oracular insight",
 		"require": "oracle",
 		"max": 1,
-		"desc": "You see things before they happen.",
+		"desc": "คุณมองเห็นสิ่งต่าง ๆ ก่อนที่มันจะเกิดขึ้น",
 		"cost": {
 			"research": 300,
 			"arcana": 5
@@ -2818,7 +2818,7 @@
 		"name": "core steel forging",
 		"require": "g.titan>0&&(g.coretap>0||g.mythicanvil>0)",
 		"max": 1,
-		"desc": "Relocate your forge to the very core of the world.",
+		"desc": "ย้ายโรงตีเหล็กของคุณไปยังแกนกลางของโลก",
 		"cost": {
 			"earthrune": 25,
 			"research": 1000,
@@ -2841,7 +2841,7 @@
 		"tags": "t_hall",
 		"slot": "hall",
 		"require": "g.tier5>0",
-		"desc": "Construct a Wizard's Hall.",
+		"desc": "ก่อสร้างห้องโถงจอมเวท",
 		"buy": {
 			"research": 35000,
 			"arcana": 30,
@@ -2871,7 +2871,7 @@
 		"slot": "werry",
 		"name": "fire werry",
 		"tags": "t_werry",
-		"desc": "A hidden pocket of the plane of ash and fire.",
+		"desc": "หย่อมที่ซ่อนเร้นของมิติแห่งเถ้าและไฟ",
 		"require": "g.tier5>0&&g.gate>0&&g.firelore>=10",
 		"need": ["gate"],
 		"buy": {
@@ -2891,7 +2891,7 @@
 	{
 		"id": "fireplanesecrets",
 		"name": "fire plane discoveries",
-		"desc": "Building the werry taught you much of the plane of fire.",
+		"desc": "การสร้างหีบวิเศษสอนบทเรียนมากมายแก่คุณเกี่ยวกับมิติแห่งไฟ",
 		"require": "g.fireplane.owned",
 		"mod": {
 			"firelore.max": 2
@@ -2901,7 +2901,7 @@
 		"id": "waterplane",
 		"name": "water werry",
 		"slot": "werry",
-		"desc": "A pocket of the endless sea.",
+		"desc": "หย่อมหนึ่งของทะเลที่ไร้ที่สิ้นสุด",
 		"tags": "t_werry",
 		"require": "g.tier5>0&&g.gate>0&&g.waterlore>=10",
 		"need": ["gate"],
@@ -2922,7 +2922,7 @@
 	{
 		"id": "waterplanesecrets",
 		"name": "water plane discoveries",
-		"desc": "Building the werry taught you much of the plane of water.",
+		"desc": "การสร้างหีบวิเศษสอนบทเรียนมากมายแก่คุณเกี่ยวกับมิติแห่งน้ำ",
 		"require": "g.waterplane.owned",
 		"mod": {
 			"waterlore.max": 2
@@ -2931,7 +2931,7 @@
 	{
 		"id": "earthplane",
 		"name": "earth werry",
-		"desc": "A space carved from the plane of earth.",
+		"desc": "พื้นที่ที่สลักขึ้นจากมิติแห่งดิน",
 		"tags": "t_werry",
 		"slot": "werry",
 		"require": "g.tier5>0&&g.gate>0&&g.earthlore>=10",
@@ -2953,7 +2953,7 @@
 	{
 		"id": "earthplanesecrets",
 		"name": "earth plane discoveries",
-		"desc": "Building the werry taught you much of the plane of earth.",
+		"desc": "การสร้างหีบวิเศษสอนบทเรียนมากมายแก่คุณเกี่ยวกับมิติแห่งดิน",
 		"require": "g.earthplane.owned",
 		"mod": {
 			"earthlore.max": 2
@@ -2962,7 +2962,7 @@
 	{
 		"id": "airplane",
 		"name": "wind werry",
-		"desc": "An island floating in an endless sky.",
+		"desc": "เกาะลอยกลางท้องฟ้าอันไร้ที่สิ้นสุด",
 		"tags": "t_werry",
 		"slot": "werry",
 		"require": "g.tier5>0&&g.gate>0&&g.airlore>=10",
@@ -2984,7 +2984,7 @@
 	{
 		"id": "airplanesecrets",
 		"name": "air plane discoveries",
-		"desc": "Building the werry taught you much of the plane of air.",
+		"desc": "การสร้างหีบวิเศษสอนบทเรียนมากมายแก่คุณเกี่ยวกับมิติแห่งลม",
 		"require": "g.airplane.owned",
 		"mod": {
 			"airlore.max": 2
@@ -2993,8 +2993,8 @@
 	{
 		"id": "familiarcat",
 		"name": "cat familiar",
-		"desc": "Your familiar is a cat, as dark as the night that spawned him.",
-		"flavor": "Port to geese",
+		"desc": "ภูตผู้รับใช้ของคุณคือแมว ดำมืดดั่งรัตติกาลที่ให้กำเนิดมัน",
+		"flavor": "ประตูสู่เหล่าห่าน",
 		"warn": true,
 		"group": "familliar",
 		"tags": "t_familiar",
@@ -3015,7 +3015,7 @@
 	{
 		"id": "familiarowl",
 		"name": "owl familiar",
-		"desc": "Your familiar is an owl, most active at night, just like you are.",
+		"desc": "ภูตผู้รับใช้ของคุณคือนกเค้าแมว ขยันที่สุดในยามค่ำคืน เฉกเช่นตัวคุณ",
 		"warn": true,
 		"group": "familliar",
 		"tags": "t_familiar",
@@ -3036,7 +3036,7 @@
 	{
 		"id": "familiarkobold",
 		"name": "kobold familiar",
-		"desc": "Your familiar is a kobold, greedy for gold.",
+		"desc": "ภูตผู้รับใช้ของคุณคือโคโบลด์ ละโมบโลภในทองคำ",
 		"warn": true,
 		"group": "familliar",
 		"tags": "t_familiar",
@@ -3057,7 +3057,7 @@
 	{
 		"id": "familiarimp",
 		"name": "imp familiar",
-		"desc": "Your familiar is an imp, devious and prone to mischief.",
+		"desc": "ภูตผู้รับใช้ของคุณคืออิมป์ เจ้าเล่ห์และชอบก่อกวน",
 		"warn": true,
 		"group": "familliar",
 		"tags": "t_familiar",
@@ -3078,7 +3078,7 @@
 	{
 		"id": "familiartome",
 		"name": "tome familiar",
-		"desc": "Your familiar is an animated tome, filled with arcane knowledge and a thirst for expansion.",
+		"desc": "ภูตผู้รับใช้ของคุณคือตำราเคลื่อนไหวได้ เต็มเปี่ยมด้วยความรู้ลี้ลับและความกระหายที่จะขยายเพิ่ม",
 		"warn": true,
 		"group": "familliar",
 		"tags": "t_familiar",
@@ -3101,7 +3101,7 @@
 		"name": "runic reinforcement",
 		"require": "g.runicdmg>100",
 		"max": 1,
-		"desc": "Learn how to apply your mastery of runes to your runic weapons.",
+		"desc": "เรียนรู้วิธีประยุกต์ความชำนาญรูนของคุณกับอาวุธรูน",
 		"cost": {
 			"tomes": 80,
 			"research": 15000,
@@ -3111,7 +3111,7 @@
 		"mod": {
 			"runelore.mod.runicdmg": 2
 		},
-		"flavor": "Most mages just treat runic enchantments as a tedious, if effective endeavor. Why bother finding out why it works, if you can just repeat the patterns from a book?",
+		"flavor": "จอมเวทส่วนใหญ่แค่มองการเสริมรูนเป็นกิจที่น่าเบื่อแม้จะได้ผล ทำไมต้องมัวค้นคว้าทำไมมันถึงได้ผล ในเมื่อแค่ทำตามลายจากหนังสือก็พอ?",
 		"group": "martial"
 	},
 	{
@@ -3119,7 +3119,7 @@
 		"name": "blood gem cache",
 		"require": "g.bloodgem>0",
 		"max": 1,
-		"desc": "These things seem... vital. Find room for more.",
+		"desc": "สิ่งเหล่านี้ดูเหมือน...สำคัญยิ่งนัก จงหาที่ว่างเพิ่มให้มากกว่านี้",
 		"cost": {
 			"research": 200
 		},
@@ -3133,7 +3133,7 @@
 		"name": "blood gem stash",
 		"require": "bloodstorage1",
 		"max": 1,
-		"desc": "More. You need more. Secrete them away from prying eyes.",
+		"desc": "เพิ่มอีก คุณต้องการมากกว่านี้ ซ่อนมันไว้ให้พ้นจากสายตาผู้คน",
 		"cost": {
 			"research": 300
 		},
@@ -3147,7 +3147,7 @@
 		"name": "blood gem arsenal",
 		"require": "bloodstorage2",
 		"max": 1,
-		"desc": "Closer. Closer. Somewhere they'll never leave your sight.",
+		"desc": "ใกล้เข้ามา ใกล้เข้ามา สักที่ที่มันจะไม่มีวันหลุดจากสายตาคุณ",
 		"cost": {
 			"research": 500
 		},
@@ -3161,7 +3161,7 @@
 		"name": "corporeal reconstruction",
 		"require": "g.anatomy>=20",
 		"max": 1,
-		"desc": "You've learned better. Perfected the science. You can recreate yourself perfect and free of mankind's flaws.",
+		"desc": "คุณเรียนรู้สิ่งที่ดีกว่าแล้วทำให้วิทยาศาสตร์สมบูรณ์ คุณสามารถสร้างตัวเองขึ้นมาใหม่ให้สมบูรณ์แบบและปราศจากข้อบกพร่องของมนุษยชาติ",
 		"cost": {
 			"research": 5000,
 			"tomes": 10,
@@ -3171,7 +3171,7 @@
 		"mod": {
 			"anatomy.mod.hp.max": 1
 		},
-		"flavor": "The optic nerve doesn't have to connect like that. The joints are inefficient. Why does that nerve take such a detour? So many baffling errors.",
+		"flavor": "เส้นประสาทตาก็ไม่จำเป็นต้องต่อแบบนั้น ข้อต่อก็ไร้ประสิทธิภาพ ทำไมเส้นประสาทเส้นนั้นถึงต้องอ้อมค้อมเช่นนั้น? มีข้อผิดพลาดงงงวยมากมาย",
 		"group": "body"
 	},
 	{
@@ -3179,8 +3179,8 @@
 		"name": "herbal remedy",
 		"require": "g.herbs>=1",
 		"max": 6,
-		"desc": "Create a herbal mixture to repair the damage in your body that living as a starving street orphan brought with it.",
-		"flavor": "The bitter taste serves as better motivator to feed yourself properly than hunger ever could.",
+		"desc": "สร้างยาสมุนไพรเพื่อซ่อมแซมความเสียหายในร่างกายที่การมีชีวิตแบบเด็กกำพร้าจนตรอกบนถนนก่อไว้",
+		"flavor": "รสขมเป็นแรงจูงใจให้กินข้าวอย่างถูกต้องได้ดีกว่าความหิวเสียอีก",
 		"cost": {
 			"research": 100,
 			"herbs": "10+(5*g.herbalremedy)"
@@ -3195,9 +3195,9 @@
 		"name": "stony resilience",
 		"require": "g.tier4>0",
 		"need": "(g.earthlore+g.gargoyle+g.grotesque)>g.stonyresilience",
-		"needtext": "Your geomancy level must be higher than the amount of times you bought this upgrade. Gargoyles and grotesques are counted as 1 geomancy levels each for this requirement.",
+		"needtext": "ระดับธรณีเวทของคุณต้องสูงกว่าจำนวนครั้งที่ซื้ออัปเกรดนี้ การ์กอยล์และรูปปั้นโกรเตสก์นับเป็นระดับธรณีเวท 1 ต่อหนึ่งตนสำหรับข้อกำหนดนี้",
 		"max": 8,
-		"desc": "Inspired by your statuary, make your flesh as enduring as granite.",
+		"desc": "ได้แรงบันดาลใจจากรูปปั้นของคุณ จงทำให้เนื้อหนังของคุณยั่งยืนดั่งหินแกรนิต",
 		"cost": {
 			"earthrune": 1
 		},
@@ -3209,7 +3209,7 @@
 	{
 		"id": "up_magiccircle",
 		"name": "magic circle",
-		"desc": "Essential for developing wizardly defenses.",
+		"desc": "จำเป็นต่อการพัฒนาการป้องกันแบบจอมเวท",
 		"tags": "wardsource",
 		"require": "g.lore>0",
 		"max": 1,
@@ -3227,7 +3227,7 @@
 	{
 		"id": "ablativebarrier",
 		"name": "ablative barrier",
-		"desc": "The circle's ward shields you from harm.",
+		"desc": "กำบังของวงเวทปกป้องคุณจากภัย",
 		"require": "g.up_magiccircle>0",
 		"need": "wardsource",
 		"max": 1,
@@ -3244,7 +3244,7 @@
 	{
 		"id": "gordian_knot",
 		"name": "Gordian Knot",
-		"desc": "Compact your barrier into an intricately tangled web, nearly impossible to sever with basic attacks.",
+		"desc": "อัดแน่นบาเรียของคุณให้เป็นใยที่พันยุ่งเหยิงอันซับซ้อน แทบเป็นไปไม่ได้ที่การโจมตีพื้นฐานจะตัดขาดได้",
 		"max": 1,
 		"require": "g.weaving>=3&&g.tier0>0",
 		"need": "wardsource",
@@ -3261,7 +3261,7 @@
 	{
 		"id": "granite_barrier",
 		"name": "Granite Barrier",
-		"desc": "Your barrier hardens till it's tougher than rocks.",
+		"desc": "บาเรียของคุณแข็งแกร่งขึ้นจนเหนียวแน่นยิ่งกว่าศิลา",
 		"max": 1,
 		"require": "g.earthlore>=4&&g.tier1>0",
 		"need": "wardsource",
@@ -3278,7 +3278,7 @@
 	{
 		"id": "predictive_padding",
 		"name": "Predictive Padding",
-		"desc": "Divining your opponents' future attacks, pre-emptively reinforce the area of your barrier about to be damaged.",
+		"desc": "หยั่งรู้การโจมตีในอนาคตของคู่ต่อสู้ แล้วเสริมกำลังส่วนของบาเรียที่กำลังจะถูกทำลายไว้ล่วงหน้า",
 		"max": 1,
 		"require": "g.divination>=4&&g.tier2>0",
 		"need": "wardsource",
@@ -3295,7 +3295,7 @@
 	{
 		"id": "arcane_veil",
 		"name": "Arcane Veil",
-		"desc": "Enchant your barrier with a plethora of protections.",
+		"desc": "เสริมเวทให้บาเรียของคุณด้วยการป้องกันหลากหลาย",
 		"max": 1,
 		"require": "g.enchanting>=3&&g.tier2>0",
 		"need": "wardsource",
@@ -3313,7 +3313,7 @@
 	{
 		"id": "dimensional_well",
 		"name": "Dimensional Well",
-		"desc": "Your barrier begins to warp a fraction of attacks coming in contact with it to parallel planes.",
+		"desc": "บาเรียของคุณเริ่มบิดเบือนการโจมตีส่วนหนึ่งที่สัมผัสมันไปยังมิติขนาน",
 		"max": 1,
 		"require": "g.planeslore>=4&&g.tier3>0",
 		"need": "wardsource",
@@ -3330,8 +3330,8 @@
 	{
 		"id": "payback_pact",
 		"name": "Payback Pact",
-		"desc": "Instead of sustaining the entire damage to your barrier, grant your enemies I.O.Us for potential future attacks.",
-		"flavor": "The dead can't claim debts.",
+		"desc": "แทนที่จะรับความเสียหายทั้งหมดไว้บนบาเรียของคุณ มอบหนี้ต่างตอบแทนแก่ศัตรูสำหรับการโจมตีในอนาคต",
+		"flavor": "คนตายเรียกเก็บหนี้ไม่ได้",
 		"max": 1,
 		"require": "g.debitomancy>=3&&g.tier3>0",
 		"need": "wardsource",
@@ -3348,7 +3348,7 @@
 	{
 		"id": "chronoshell",
 		"name": "Chronos Shell",
-		"desc": "Selectively rewind time for sections of your barrier to nullify any harm done to them.",
+		"desc": "ย้อนเวลาอย่างเฉพาะจุดให้บางส่วนของบาเรียของคุณ เพื่อลบล้างความเสียหายที่เกิดขึ้นกับมัน",
 		"max": 1,
 		"require": "g.chronomancy>=3&&g.tier4>0",
 		"need": "wardsource",
@@ -3366,7 +3366,7 @@
 	{
 		"id": "runedome",
 		"name": "Runic Dome",
-		"desc": "Imbuing runic sigils on your barrier heightens its defensive prowess.",
+		"desc": "การจารึกรูนลงบนบาเรียของคุณยกระดับความสามารถในการป้องกัน",
 		"max": 1,
 		"require": "g.runelore>=4&&g.tier4>0",
 		"need": "wardsource",
@@ -3383,7 +3383,7 @@
 	{
 		"id": "probability_space",
 		"name": "Probability Space",
-		"desc": "Alter probabilities to weaken any damage your barrier sustains in combat.",
+		"desc": "พลิกแพลงความน่าจะเป็นเพื่อลดทอนความเสียหายที่บาเรียของคุณได้รับในศึก",
 		"max": 1,
 		"require": "g.chaoslore>=4&&g.tier5>0",
 		"need": "wardsource",
@@ -3400,7 +3400,7 @@
 	{
 		"id": "reactive_mending",
 		"name": "Reactive Mending",
-		"desc": "Siphoning a portion of the force used against your barrier, repair it.",
+		"desc": "ดูดกลืนแรงที่ใช้โจมตีบาเรียคุณบางส่วนแล้วซ่อมแซมมัน",
 		"max": 1,
 		"require": "g.magiphysics>=3&&g.tier5>0",
 		"cost": {
@@ -3416,7 +3416,7 @@
 	{
 		"id": "event_horizon",
 		"name": "Event Horizon",
-		"desc": "Manipulate the space between attacks and your barrier, with your foes often losing momentum before even scratching it.",
+		"desc": "ยักย้ายพื้นที่ระหว่างการโจมตีกับบาเรียของคุณ ศัตรูมักหมดแรงเสียก่อนกระทั่งจะขีดข่วนมัน",
 		"max": 1,
 		"require": "g.voidlore>=4&&g.tier6>0",
 		"need": "wardsource",
@@ -3433,7 +3433,7 @@
 	{
 		"id": "astral_ward",
 		"name": "Astral Ward",
-		"desc": "Attune a star shard to your barrier's core to further reinforce it.",
+		"desc": "ประสานเศษดวงดาวเข้ากับแกนกลางของบาเรียเพื่อเสริมแกร่งมันยิ่งขึ้น",
 		"max": 1,
 		"require": "g.astrallore>=3&&g.tier6>0",
 		"need": "wardsource",
@@ -3452,7 +3452,7 @@
 		"name": "unquenchable flames",
 		"require": "g.innerfire>0&&g.tier2>0",
 		"max": 1,
-		"desc": "The flame of life within you refuses to go out.",
+		"desc": "เปลวไฟแห่งชีวิตภายในตัวคุณปฏิเสธที่จะดับลง",
 		"cost": {
 			"firegem": 10,
 			"research": 1000,
@@ -3468,7 +3468,7 @@
 		"name": "hallway of faces",
 		"require": "g.jester>0",
 		"max": 1,
-		"desc": "Start collecting strangers' faces as disguises.",
+		"desc": "เริ่มสะสมใบหน้าของคนแปลกหน้าสำหรับใช้เป็นหน้ากาก",
 		"cost": {
 			"research": 777,
 			"chaosgem": 77,
@@ -3484,7 +3484,7 @@
 		"name": "ghostly pranks",
 		"require": "g.spiritlore>=3&&g.trickery>=3",
 		"max": 1,
-		"desc": "Recruit idle spirits to play pranks on passersby.",
+		"desc": "เกณฑ์เหล่าวิญญาณจรจัดมาแกล้งผู้สัญจร",
 		"cost": {
 			"gems": 3,
 			"spirit": 3,
@@ -3500,7 +3500,7 @@
 		"name": "aerial eavesdropping",
 		"require": "g.airlore>=3&&g.trickery>=3",
 		"max": 1,
-		"desc": "Eavesdrop upon the breeze to gather gossip and blackmail.",
+		"desc": "ดักฟังสายลมเพื่อรวบรวมข่าวซุบซิบและสารแบล็กเมล",
 		"cost": {
 			"gems": 3,
 			"air": 3,
@@ -3516,7 +3516,7 @@
 		"name": "icy games",
 		"require": "g.waterlore>=3&&g.trickery>=3",
 		"max": 1,
-		"desc": "Teach the spirits of water a game about freezing the villagers' hair and laundry.",
+		"desc": "สอนผีน้ำเล่นเกมเกี่ยวกับการแช่แข็งผมและเสื้อผ้าของชาวบ้าน",
 		"cost": {
 			"gems": 3,
 			"water": 3,
@@ -3532,7 +3532,7 @@
 		"name": "magical spying",
 		"require": "g.divination>=3&&g.trickery>=3",
 		"max": 1,
-		"desc": "Use your new magics to furtively poke and pry into people's private affairs.",
+		"desc": "ใช้เวทมนตร์ใหม่ของคุณแอบยุ่งและสอดรู้สอดเห็นเรื่องส่วนตัวของผู้อื่น",
 		"cost": {
 			"gems": 3,
 			"spirit": 3,
@@ -3548,7 +3548,7 @@
 		"name": "harvesting faces",
 		"require": "g.facecollection>0&&g.embalming>=3&&g.evil3>0",
 		"max": 1,
-		"desc": "It occurs to you that you could make collecting faces so much quicker and easier.",
+		"desc": "คุณนึกขึ้นได้ว่าคุณสามารถเก็บใบหน้าได้รวดเร็วและง่ายดายยิ่งกว่านี้มาก",
 		"cost": {
 			"codices": 13
 		},
@@ -3556,7 +3556,7 @@
 			"facecollect.cost.herbs": 1,
 			"facecollect.rate": "50%"
 		},
-		"flavor": "It just needs the aid of a knife and a few preservatives.",
+		"flavor": "เพียงแค่ต้องพึ่งมีดสักเล่มกับสารกันบูดสองสามอย่าง",
 		"group": "crafting"
 	},
 	{
@@ -3564,7 +3564,7 @@
 		"name": "scanning faces",
 		"require": "g.facecollection>0&&g.automatasculpting>=3&&g.mechamancer>0",
 		"max": 2,
-		"desc": "Calibrating your automata's sensors for facial recognition should speed the process.",
+		"desc": "การปรับเทียบเซนเซอร์ของหุ่นยนต์ของคุณสำหรับการจดจำใบหน้าควรช่วยเร่งกระบวนการให้เร็วขึ้น",
 		"cost": {
 			"gold": 10000,
 			"research": 5000,
@@ -3581,7 +3581,7 @@
 		"name": "earthly attunement",
 		"require": "g.geosculpting>=5",
 		"max": 1,
-		"desc": "Ponder upon your newfound connection to the earth.",
+		"desc": "ครุ่นคิดถึงความเชื่อมโยงอันเพิ่งค้นพบกับผืนดินของคุณ",
 		"cost": {
 			"research": 1000,
 			"earthgem": 25,
@@ -3597,7 +3597,7 @@
 		"id": "extracandles",
 		"name": "extra candles",
 		"require": "g.waxcandle>0&&g.gold.max>=200",
-		"desc": "More candles, more!",
+		"desc": "เทียนเพิ่ม เทียนอีก!",
 		"max": 2,
 		"cost": {
 			"gold": 10
@@ -3611,7 +3611,7 @@
 		"id": "bolthole",
 		"name": "bolthole",
 		"tags": "t_underground",
-		"desc": "A portal to a safe place deep underground, for exploration and experiments.",
+		"desc": "ประตูสู่สถานที่ปลอดภัยลึกลงใต้ดิน สำหรับการสำรวจและการทดลอง",
 		"max": 1,
 		"require": "g.tier4>0&&(g.earthlore+g.shadowlore+g.planeslore>=15)&&(g.cellar+g.basement>0)",
 		"need": "gate",
@@ -3629,7 +3629,7 @@
 		"id": "backyard",
 		"name": "backyard",
 		"tags": "outdoors",
-		"desc": "A portal to a safe place far into the wilderness, for relaxation and landscaping.",
+		"desc": "ประตูสู่สถานที่ปลอดภัยไกลเข้าไปในป่า สำหรับการพักผ่อนและการจัดภูมิทัศน์",
 		"max": 1,
 		"require": "g.tier4>0&&(g.naturelore+g.planeslore>=10)",
 		"need": "gate",
@@ -3648,9 +3648,9 @@
 		"name": "rune construction",
 		"require": "g.runelore>=5",
 		"need": "g.runestones>=(15*(1+g.conlanging))",
-		"needtext": "You need to have 15 more runestones than the last time you took this upgrade, starting at 15 and ending at 75.",
+		"needtext": "ต้องมีหินรูนมากกว่าครั้งก่อนที่คุณซื้ออัปเกรดนี้ 15 ชิ้น เริ่มจาก 15 และจบที่ 75",
 		"max": 5,
-		"desc": "The ancient runic languages of yore were mostly lost in the Rending. Create your own.",
+		"desc": "ภาษาโบราณแห่งรูนในอดีตส่วนใหญ่สูญหายไปในเหตุการณ์ฉีกขาด จงสร้างมันขึ้นมาใหม่ด้วยตัวคุณเอง",
 		"cost": {
 			"research": 1000,
 			"codices": 5
@@ -3669,7 +3669,7 @@
 		"max": 1,
 		"require": "(g.t_divinationclass+g.t_lightclass+g.mage)>0",
 		"need": "g.evil2<=0",
-		"needtext": "Cannot be sinister.",
+		"needtext": "ต้องไม่ชั่วร้าย",
 		"buy": {
 			"light": 5
 		},
@@ -3688,7 +3688,7 @@
 		"name": "commune",
 		"slot": "leisure",
 		"max": 1,
-		"desc": "Commune with natural forces.",
+		"desc": "สื่อสารกับพลังธรรมชาติ",
 		"require": "g.naturelore>=12",
 		"buy": {
 			"nature": 5
@@ -3704,9 +3704,9 @@
 		"max": 1,
 		"name": "Lucid Dreaming",
 		"require": "g.dreamchamber>0&&g.runner.max>=3",
-		"extdesc": "Replaces Relax with a stronger perpetual rest action.",
-		"desc": "It is within a grand dream that an oneiromancer can do the impossible.",
-		"flavor": "You almost wish to never wake up again.",
+		"extdesc": "แทนที่การผ่อนคลายด้วยการพักผ่อนอันทรงพลังและต่อเนื่องถาวร",
+		"desc": "ในความฝันอันยิ่งใหญ่เท่านั้นที่นักทำนายฝันจะทำสิ่งที่เป็นไปไม่ได้ได้",
+		"flavor": "คุณแทบอยากจะไม่ตื่นขึ้นมาอีกเลย",
 		"cost": {
 			"arcana": 5
 		},
@@ -3719,8 +3719,8 @@
 	{
 		"id": "enchanted_study",
 		"name": "Enchanted Study",
-		"desc": "Using your arcane powers, enchant the texts populating your study's shelves to whisper their hidden wisdoms.",
-		"flavor": "For what good is a wizard without grimoires as magical as himself?",
+		"desc": "ด้วยพลังลี้ลับของคุณ จงเสริมเวทให้ตำราที่เรียงรายบนชั้นหนังสือในห้องศึกษาให้กระซิบความปัญญาที่ซ่อนเร้นออกมา",
+		"flavor": "จอมเวทจะดีอะไรได้ หากไร้ตำราเวทอันมหัศจรรย์พอ ๆ กับตัวเขา",
 		"require": "g.codices.max>=100&&g.enchanting>=6",
 		"need": "studyroom",
 		"cost": {
@@ -3740,21 +3740,21 @@
 	{
 		"id": "internalizelore",
 		"name": "internalize lore",
-		"desc": "Etch the ancient secrets of your tomes into your memory.",
+		"desc": "จารึกความลับโบราณแห่งตำราของคุณไว้ในความทรงจำ",
 		"max": 10,
 		"require": "g.tomes>=10",
 		"need": "g.tomes>=((g.internalizelore+1)*10)",
-		"needtext": "Each purchase needs 10 more tomes than the previous, starting with 10 for the first and ending with 100 for the tenth.",
+		"needtext": "การซื้อแต่ละครั้งต้องใช้ตำรามากกว่าครั้งก่อน 10 เล่ม เริ่มจาก 10 สำหรับครั้งแรก และจบที่ 100 สำหรับครั้งที่สิบ",
 		"mod": {
 			"lore.max": 1
 		},
-		"flavor": "Much that is lost can be remembered again.",
+		"flavor": "สิ่งที่สูญหายไปมากมายนั้นสามารถถูกจดจำได้อีกครั้ง",
 		"group": "knowledge"
 	},
 	{
 		"id": "gate",
 		"name": "dhrunic nexus",
-		"desc": "A nexus of portals, leading to all kinds of places and dimensions.",
+		"desc": "ศูนย์รวมประตูมิติ ที่ทอดนำไปสู่สถานที่และมิตินานัปการ",
 		"require": "g.planeslore>=10&&g.tier4>0",
 		"max": 1,
 		"cost": {
@@ -3769,7 +3769,7 @@
 		"id": "tool_herbalist",
 		"name": "tool of the trade",
 		"require": "g.herbalist>0",
-		"desc": "Your master offers you an old sickle. 'I used this one for years, so it should be good enough for you.'",
+		"desc": "นายท่านยื่นเคียวเก่าแก่ให้คุณ 'ข้าใช้มันมาหลายปีแล้ว มันน่าจะดีพอสำหรับเจ้า'",
 		"mod": {
 			"gatherherbs.cost.stamina": -1,
 			"gatherherbs.result.herbs": 1
@@ -3779,7 +3779,7 @@
 		"id": "tool_scribe",
 		"name": "tool of the trade",
 		"require": "g.scribe>0",
-		"desc": "Your master offers you an old quill. 'Used this one for quite a few of the books you've read, so don't even think about complaining.'",
+		"desc": "นายท่านยื่นขนนกเก่าให้คุณ 'ข้าใช้มันเขียนหนังสือหลายเล่มที่เจ้าอ่านมา อย่าได้คิดบ่นแม้แต่น้อย'",
 		"mod": {
 			"scribescroll.cost.research": -1,
 			"bindcodex.cost.mana": -0.3
@@ -3789,7 +3789,7 @@
 		"id": "tool_falconer",
 		"name": "tool of the trade",
 		"require": "g.falconer>0",
-		"desc": "Your master offers you an old glove. 'My falcons are used to this one, just don't let them get into the holes.'",
+		"desc": "นายท่านยื่นถุงมือเก่าให้คุณ 'เหยี่ยวของข้าคุ้นเคยกับมันแล้ว แค่ระวังอย่าให้พวกมันเข้าไปในรู'",
 		"mod": {
 			"tendanimals.run.stamina": -0.05,
 			"chores.cost.stamina": -0.05
@@ -3799,7 +3799,7 @@
 		"id": "tool_smith",
 		"name": "tool of the trade",
 		"require": "g.job_smith>0",
-		"desc": "Your master offers you an old hammer. 'The first hammer I made myself. Its balance is awful, do be careful.'",
+		"desc": "นายท่านยื่นค้อนเก่าให้คุณ 'ค้อนเล่มแรกที่ข้าทำเอง จุดสมดุลมันแย่มาก ระวังด้วยล่ะ'",
 		"mod": {
 			"smith_work.length": -1,
 			"smith_work.result.gold": 2
@@ -3809,7 +3809,7 @@
 		"id": "stone_working_kit",
 		"name": "stone working kit",
 		"require": "g.loc_orrem>0",
-		"desc": "The finest tools for crafting runes, reinvented after you discovered the secrets of lost Orrem.",
+		"desc": "เครื่องมือชั้นยอดสำหรับแกะรูน ถูกคิดค้นใหม่หลังจากคุณค้นพบความลับของออร์เร็มที่สาบสูญ",
 		"mod": {
 			"craftrune.cost.managem": -1,
 			"craftrune.cost.mana": 2,
@@ -3836,7 +3836,7 @@
 		"id": "botanical_kit",
 		"name": "botanical kit",
 		"require": "g.herbalism+2*g.naturelore>=10",
-		"desc": "A wooden box brimming with tools for gathering and preserving herbs, flowers, and roots.",
+		"desc": "กล่องไม้ที่เต็มไปด้วยเครื่องมือสำหรับเก็บและถนอมสมุนไพร ดอกไม้ และรากไม้",
 		"mod": {
 			"herbs.max": 20,
 			"gatherherbs.result.herbalism.exp": 2,
@@ -3849,7 +3849,7 @@
 		"id": "phoenix_quill",
 		"name": "phoenix quill",
 		"require": "g.rithel>0||g.phoenix.value>=10",
-		"desc": "A quill found in an ancient nest at Rithel, tempered in the ash pile of a phoenix.",
+		"desc": "ขนนกที่พบในรังโบราณแห่งริเธล ผ่านการชุบบ่มในกองเถ้าของฟีนิกซ์",
 		"mod": {
 			"scribescroll.result.scrolls": 0.1,
 			"scrollloom.mod.research.convert.output.effect.scrolls": 0.00005,
@@ -3864,7 +3864,7 @@
 		"id": "enchanted_fountain_pen",
 		"name": "enchanted fountain pen",
 		"require": "g.genezereth>0",
-		"desc": "A moonstone pen retrieved from Genezereth, imbued with magic to make its ink flow without error.",
+		"desc": "ปากกาหินแสงจันทร์ที่กู้มาจากเจนเนเซเรธ อัดแน่นด้วยเวทมนตร์ให้หมึกไหลอย่างไร้ข้อผิดพลาด",
 		"mod": {
 			"scribescroll.cost.mana": -0.1,
 			"bindcodex.cost.mana": -0.3,
@@ -3876,7 +3876,7 @@
 		"id": "bookcarousel",
 		"name": "book carousel",
 		"require": "g.tier3>0&&g.crafting>=7",
-		"desc": "A device that looks a little like a waterwheel, with seven shelves to switch between books at your leisure.",
+		"desc": "อุปกรณ์ที่หน้าตาคล้ายกังหันน้ำ มีชั้นหนังสือเจ็ดชั้นให้สลับอ่านได้ตามอัธยาศัย",
 		"cost": {
 			"research": 500,
 			"gold": 200
@@ -3885,7 +3885,7 @@
 			"codices.mod.research.rate": 0.03,
 			"tomes.mod.research.rate": 0.2
 		},
-		"flavor": "You're getting sick of this. A mighty wizard such as you shouldn't be limited to looking at one book at once.",
+		"flavor": "คุณเริ่มเบื่อหน่ายสิ่งนี้ จอมเวทผู้ยิ่งใหญ่อย่างคุณไม่ควรถูกจำกัดให้มองหนังสือทีละเล่ม",
 		"group": "knowledge"
 	},
 	{
@@ -3894,8 +3894,8 @@
 		"require": "g.apprentice>0&&g.space.max>=5",
 		"tags": "t_pets",
 		"max": 1,
-		"desc": "Master has offered you one of his prized avians to practice falconry. It barely looks fit to be a messenger.",
-		"flavor": "'To tame magical beasts you must begin with the ordinary', he says.",
+		"desc": "นายท่านยื่นนกล้ำค่าตัวหนึ่งของเขาให้คุณฝึกนกเหยี่ยว มันแทบไม่ดูเหมาะจะใช้เป็นนกสื่อสารเลย",
+		"flavor": "'การจะฝึกสัตว์เวทมนตร์ให้เชื่อง เจ้าต้องเริ่มจากสัตว์ธรรมดาเสียก่อน' เขากล่าว",
 		"cost": {
 			"research": 20,
 			"gold": 25
@@ -3911,8 +3911,8 @@
 		"tags": "plantsource",
 		"require": "g.lore>0&&g.space.max>=5",
 		"max": 1,
-		"desc": "Your master handed you a flowerpot and some seeds. Harmony with nature begins with a green thumb.",
-		"flavor": "Turns out mana really does grow on trees.",
+		"desc": "นายท่านยื่นกระถางดอกไม้กับเมล็ดพืชให้คุณ ความสอดคล้องกับธรรมชาติเริ่มต้นจากนิ้วเขียว",
+		"flavor": "ปรากฏว่ามานาเติบโตบนต้นไม้จริง ๆ ด้วย",
 		"cost": {
 			"research": 20,
 			"gold": 25
@@ -3928,8 +3928,8 @@
 		"require": "g.apprentice>0&&g.space.max>=5",
 		"max": 1,
 		"tags": "workspace",
-		"desc": "The handwriting of an uneducated ragamuffin like you is no good for penning magic texts. Master ordered writing supplies for you to practice every stroke.",
-		"flavor": "When first asked to write your name, you produced a script not yet known to man.",
+		"desc": "ลายมือของเด็กเร่ร่อนไร้การศึกษาอย่างเจ้าไม่เหมาะกับการจารึกตำราเวท นายท่านจึงสั่งอุปกรณ์เขียนหนังสือให้เจ้าได้ฝึกทุกขีด",
+		"flavor": "เมื่อถูกขอให้เขียนชื่อตัวเองเป็นครั้งแรก เจ้ากลับเขียนอักษรที่มนุษย์ยังไม่รู้จักออกมา",
 		"cost": {
 			"gold": 15
 		},
@@ -3944,8 +3944,8 @@
 		"require": "g.neophyte>0",
 		"max": 1,
 		"tags": "firesource",
-		"desc": "Inexpensive illumination for studying well into the night.",
-		"flavor": "You feel drawn to its flickering flame.",
+		"desc": "แสงสว่างราคาย่อมเยาสำหรับการเล่าเรียนยันดึกดื่น",
+		"flavor": "คุณรู้สึกถูกดึงดูดเข้าหาเปลวไฟริบหรี่ของมัน",
 		"cost": {
 			"gold": 75
 		},
@@ -3961,8 +3961,8 @@
 		"require": "g.apprentice>0&&g.space.max>=5",
 		"max": 1,
 		"tags": "watersource",
-		"desc": "Holds water for washing yourself and other some such.",
-		"flavor": "Whilst seeing your reflection, an understanding of flow and stagnation dawns.",
+		"desc": "เก็บน้ำไว้ใช้ชำระร่างกายและอื่น ๆ ทำนองนั้น",
+		"flavor": "ขณะมองเงาสะท้อนของตน ความเข้าใจเรื่องการไหลและการหยุดนิ่งก็ผุดขึ้น",
 		"cost": {
 			"gold": 50
 		},
@@ -3978,8 +3978,8 @@
 		"require": "g.space.max>=10",
 		"max": 1,
 		"tags": "airsource",
-		"desc": "Allows for a gentle breeze to fill your cramped room.",
-		"flavor": "From where does the zephyr come?",
+		"desc": "ปล่อยให้สายลมอ่อนโยนพัดเข้ามาเติมเต็มห้องคับแคบของคุณ",
+		"flavor": "สายลมโชยมาจากที่ไหนกัน?",
 		"cost": {
 			"gold": 50
 		},
@@ -3995,8 +3995,8 @@
 		"require": "g.neophyte>0",
 		"max": 1,
 		"tags": "earthsource",
-		"desc": "While performing chores, something illustrious catches your eye. Sure of its worthlessness, you wonder about its composition.",
-		"flavor": "All that glitters...",
+		"desc": "ระหว่างทำงานบ้าน บางสิ่งเจิดจรัสสะดุดตาคุณ ทั้งมั่นใจว่ามันไร้ค่า คุณจึงใคร่ครวญถึงองค์ประกอบของมัน",
+		"flavor": "ทุกสิ่งที่วาววับ...",
 		"cost": {
 			"research": 75
 		},
@@ -4012,8 +4012,8 @@
 		"max": 1,
 		"tags": "shadowsource",
 		"require": "g.evt_helper>0",
-		"desc": "Foretells all phases of the moon this year, making special mention of days of magical significance.",
-		"flavor": "What a horrible night to have a curse.",
+		"desc": "พยากรณ์ข้างขึ้นข้างแรมทั้งปี พร้อมระบุวันที่มีนัยสำคัญทางเวทมนตร์ไว้เป็นพิเศษ",
+		"flavor": "ค่ำคืนอันน่าสยดสยองจริง ๆ ที่จะต้องมีคำสาป",
 		"cost": {
 			"gold": 50,
 			"research": 50
@@ -4027,7 +4027,7 @@
 	{
 		"id": "training_dummy",
 		"name": "Training Dummy",
-		"desc": "A way to practice your skills",
+		"desc": "หนทางฝึกฝนทักษะของคุณ",
 		"tags": "armssource",
 		"require": "g.evt_helper>0",
 		"max": 1,
@@ -4043,7 +4043,7 @@
 		"id": "up_sextant",
 		"name": "Sextant",
 		"max": 1,
-		"desc": "Measure the stars.",
+		"desc": "วัดหมู่ดาว",
 		"require": "neophyte",
 		"tags": "starsource",
 		"cost": {
@@ -4060,7 +4060,7 @@
 		"id": "up_loom",
 		"name": "Loom",
 		"max": 1,
-		"desc": "For weaving intricate tapestries.",
+		"desc": "สำหรับทอผืนผ้าอันประณีต",
 		"tags": "weavesource",
 		"require": "g.crafting>=6&&g.tier0>0",
 		"cost": {
@@ -4076,8 +4076,8 @@
 	{
 		"id": "retreat2",
 		"name": "Portal Network",
-		"desc": "Powered by your Dhrunic Nexus, a hallway of portals linking your abode to distant hinterlands to begin exploration in a jiffy.",
-		"flavor": "Now you're thinking with portals.",
+		"desc": "ขับเคลื่อนด้วยเน็กซัสแห่งดรูน์ของคุณ ทางเดินประตูมิติเชื่อมที่พำนักของคุณสู่ห้วงป่าอันไกลโพ้น เพื่อเริ่มสำรวจได้ในพริบตา",
+		"flavor": "เอาล่ะ ตอนนี้คุณเริ่มคิดแบบใช้ประตูมิติแล้ว",
 		"need": "gate",
 		"tags": "t_mobilehome",
 		"cost": {
@@ -4094,7 +4094,7 @@
 		"id": "up_stam1",
 		"name": "Refreshing Dew",
 		"require": "g.waterlore>=3",
-		"desc": "Circulate water mana in your vicinity to combat exhaustion.",
+		"desc": "หมุนเวียนมานาน้ำรอบตัวคุณเพื่อต่อสู้กับความเหนื่อยล้า",
 		"cost": {
 			"research": 25,
 			"scrolls": 1
@@ -4113,7 +4113,7 @@
 	{
 		"id": "up_stam2",
 		"name": "Misty Fanning",
-		"desc": "An enveloping shroud of air and water magic to ensure you keep cool.",
+		"desc": "ผ้าคลุมโอบจากเวทมนตร์ลมและน้ำเพื่อให้คุณเย็นสบายอยู่เสมอ",
 		"require": "g.up_stam1>0&&g.waterlore>=5&&g.airlore>=5",
 		"cost": {
 			"watergem": 10,
@@ -4136,7 +4136,7 @@
 		"id": "up_stam3",
 		"name": "Frosted Ventilation",
 		"require": "g.up_stam2>0&&g.waterlore>=10&&g.airlore>=10&&g.tier4>0",
-		"desc": "Utilising the cooling properties of water and air mana, ensure a comfortable temperature across every nook and cranny of your residence.",
+		"desc": "ใช้คุณสมบัติเย็นเยียบของมานาน้ำและลม ทำให้มั่นใจว่าอุณหภูมิในทุกซอกมุมของที่พำนักของคุณสบายสบาย",
 		"cost": {
 			"watergem": 25,
 			"waterrune": 5,
@@ -4159,8 +4159,8 @@
 	{
 		"id": "up_ghostlyassist",
 		"name": "ghostly assistants",
-		"desc": "Unseen spirits assist you in compiling knowledge, speeding up your work.",
-		"flavor": "The sound of quill scratching against parchment seems ceaseless.",
+		"desc": "วิญญาณล่องหนคอยช่วยคุณรวบรวมความรู้ ทำให้งานของคุณเร็วขึ้น",
+		"flavor": "เสียงขนนกครูดบนแผ่นหนังดูเหมือนไม่เคยหยุด",
 		"require": "g.spiritlore>=10&&g.ghostchains>0",
 		"cost": {
 			"research": 1000,
@@ -4179,8 +4179,8 @@
 		"name": "Ledgerdemain",
 		"require": "g.chaoslore>=2",
 		"max": 1,
-		"desc": "Chaos magic to send the gold on your ledger sheets into volatile half-states. It collapses into either multiplication or depletion on later observation.",
-		"flavor": "Wealth through sheer probability.",
+		"desc": "เวทมนตร์อลหม่านส่งทองคำในบัญชีของคุณเข้าสู่สภาวะกึ่งกลางอันผันผวน มันจะยุบลงเป็นการทวีคูณหรือการร่อยหรอเมื่อตรวจสอบในภายหลัง",
+		"flavor": "ความร่ำรวยจากศักยภาพแห่งความน่าจะเป็น",
 		"cost": {
 			"research": 3000,
 			"codices": 30,
@@ -4196,10 +4196,10 @@
 		"name": "Library Haul",
 		"require": "g.mustylibrary.locked==0||g.tier0>0",
 		"need": "(g.mustylibrary>g.up_mustylibrary)||g.tier0>0",
-		"needtext": "You can purchase this once per completion of 'Musty Library'.",
+		"needtext": "คุณสามารถซื้อสิ่งนี้ได้หนึ่งครั้งต่อการสำเร็จ 'ห้องสมุดเหม็นอับ' หนึ่งครั้ง",
 		"max": 4,
-		"desc": "Reading through your master's texts increases the depth of your arcane knowledge.",
-		"flavor": "Where three lines of explanation would have sufficed, the text calls for references in five books, which need to be painstakingly searched for in your master's library.",
+		"desc": "การอ่านตำราของนายท่านช่วยเพิ่มความลึกซึ้งของความรู้เวทมนตร์ของคุณ",
+		"flavor": "ในที่ที่คำอธิบายสามบรรทัดก็น่าจะเพียงพอ ตำรากลับอ้างอิงถึงห้าหนังสือ ซึ่งต้องค้นหาอย่างอุตส่าห์ในห้องสมุดของนายท่าน",
 		"cost": {
 			"research": 25,
 			"mana": 2
