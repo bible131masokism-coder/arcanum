@@ -5,7 +5,7 @@
 			{
 				"id": "enc_beltane_hawthorn",
 				"name": "hawthorn tree",
-				"desc": "A hawthorn tree stands before you, its branches heavy with sacred blossoms. The fae watch from the shadows, but allow respectful gathering.",
+				"desc": "ต้นฮอว์ธอร์นยืนตระหง่านต่อหน้าคุณ กิ่งก้านหนักอึ้งด้วยดอกศักดิ์สิทธิ์ เหล่าแฟรีเฝ้าดูจากเงามืด แต่ยอมให้เก็บด้วยความเคารพ",
 				"tags": "site_of_learning",
 				"level": 1,
 				"effect": {
@@ -23,7 +23,7 @@
 			{
 				"id": "enc_beltane_mayflowers",
 				"name": "mayflower patch",
-				"desc": "A carpet of mayflowers blooms before your eyes, blessed by Beltane's magic and ripe for gathering.",
+				"desc": "พรมเมย์ฟลาวเวอร์เบ่งบานต่อหน้าต่อตา อวยพรด้วยเวทมนตร์เบลเทนและพร้อมเก็บ",
 				"tags": "site_of_learning",
 				"level": 1,
 				"effect": {
@@ -42,7 +42,7 @@
 			{
 				"id": "enc_beltane_fae_blessing",
 				"name": "fae blessing",
-				"desc": "A fae spirit approaches, unbound by the loosened pacts. It bestows a blessing upon you for honoring the old ways.",
+				"desc": "วิญญาณแฟรีเดินเข้ามา ไร้พันธนาการจากพันธสัญญาที่คลายลง มันประทานพรแก่คุณที่ให้เกียรติวิถีโบราณ",
 				"tags": "site_of_learning",
 				"level": 2,
 				"effect": {
@@ -61,7 +61,7 @@
 			{
 				"id": "enc_beltane_dancer",
 				"name": "beltane dancer",
-				"desc": "A dancer moves around the Beltane fire, their movements weaving ribbons around the maypole and invoking ancient fertility magic.",
+				"desc": "นักเต้นเคลื่อนไหวรอบกองไฟเบลเทน ท่วงท่าของเขาทอริบบิ้นรอบเสาเมย์โพลและอัญเชิญเวทมนตร์ความอุดมสมบูรณ์โบราณ",
 				"tags": "site_of_learning",
 				"level": 2,
 				"effect": {
@@ -80,7 +80,7 @@
 			{
 				"id": "enc_beltane_hawthorn_tree",
 				"name": "ancient hawthorn",
-				"desc": "An ancient hawthorn tree, guardian of the sacred grove. Its blossoms fall like snow, each petal carrying Beltane's blessing.",
+				"desc": "ต้นฮอว์ธอร์นโบราณ ผู้พิทักษ์ดงศักดิ์สิทธิ์ ดอกของมันร่วงดั่งหิมะ แต่ละกลีบพกพรแห่งเบลเทน",
 				"tags": "site_of_learning",
 				"level": 3,
 				"effect": {
@@ -102,10 +102,10 @@
 			{
 				"id": "enc_beltane_meadow_walk",
 				"name": "may meadow walk",
-				"desc": "A peaceful walk through the May meadow, where hawthorn trees bloom and fae lights dance among the flowers.",
+				"desc": "การเดินอย่างสงบผ่านทุ่งเมย์ ที่ต้นฮอว์ธอร์นผลิบานและแสงแฟรีเริงระบำท่ามกลางดอกไม้",
 				"tags": "site_of_learning",
 				"level": 1,
-				"flavor": "The fae lights guide your path through the blooming meadow.",
+				"flavor": "แสงแฟรีนำทางผ่านทุ่งที่เบ่งบาน",
 				"effect": {
 					"naturelore.exp": 0.5,
 					"bf": "-1~-2",
@@ -122,10 +122,10 @@
 			{
 				"id": "enc_beltane_mayflower_gathering",
 				"name": "mayflower gathering",
-				"desc": "You stumble across a thick patch of mayflowers, stems heavy with blooms. Easy pickings if you take the time to sort through them.",
+				"desc": "คุณสะดุดพบกอเมย์ฟลาวเวอร์หนาแน่น ก้านโน้มหนักด้วยดอก เก็บง่ายถ้าใช้เวลาคัดแยก",
 				"tags": "site_of_learning",
 				"level": 1,
-				"flavor": "The best ones are always just a bit further in.",
+				"flavor": "ดอกที่ดีที่สุดอยู่ลึกเข้าไปอีกหน่อยเสมอ",
 				"effect": {
 					"herbalism.exp": 0.5,
 					"weary": "1~2",
@@ -142,10 +142,10 @@
 			{
 				"id": "enc_beltane_blossom_rain",
 				"name": "hawthorn blossom rain",
-				"desc": "Hawthorn petals fall like rain from the hawthorn trees, creating a magical Beltane scene filled with protective magic.",
+				"desc": "กลีบฮอว์ธอร์นร่วงดั่งฝนจากต้นฮอว์ธอร์น สร้างฉากเบลเทนอันน่าพิศวงเต็มไปด้วยเวทมนตร์ปกป้อง",
 				"tags": "site_of_learning",
 				"level": 2,
-				"flavor": "The petals catch the light as they fall, each one a blessing.",
+				"flavor": "กลีบกระทบแสงขณะร่วง แต่ละกลีบคือหนึ่งคำอวยพร",
 				"effect": {
 					"naturelore.exp": 1,
 					"bf": "-1~-2",
@@ -163,10 +163,10 @@
 			{
 				"id": "enc_beltane_old_growth",
 				"name": "the old growth stirs",
-				"desc": "The Old Growth stirs among the trees, bark shifting like skin. It acknowledges your presence with a slow, creaking nod.",
+				"desc": "ต้นไม้เก่าขยับตัวท่ามกลางต้นไม้ เปลือกเคลื่อนไหวดั่งผิวหนัง มันรับรู้การปรากฏของคุณด้วยการผงกหัวช้า ๆ เสียงเอี๊ยดอ๊าด",
 				"tags": "site_of_learning",
 				"level": 2,
-				"flavor": "Something ancient has taken notice of you. Whether that is good remains to be seen.",
+				"flavor": "บางสิ่งที่โบราณคร่ำคร่าเริ่มจับตามองคุณ ว่าจะดีหรือไม่ ต้องคอยดู",
 				"effect": {
 					"naturelore.exp": 1,
 					"bf": "-1~-2",
@@ -182,10 +182,10 @@
 			{
 				"id": "enc_beltane_sacred_ground",
 				"name": "sacred ground",
-				"desc": "You discover ground blessed by the Beltane fires, exceptionally fertile and perfect for planting.",
+				"desc": "คุณพบผืนดินที่อวยพรด้วยกองไฟเบลเทน อุดมสมบูรณ์เป็นพิเศษและเหมาะแก่การปลูก",
 				"tags": "site_of_learning",
 				"level": 3,
-				"flavor": "The earth itself seems to pulse with Beltane's magic.",
+				"flavor": "ผืนดินเองดูเหมือนเต้นเป็นจังหวะด้วยเวทมนตร์เบลเทน",
 				"effect": {
 					"naturelore.exp": 1.5,
 					"herbalism.exp": 1,
@@ -204,10 +204,10 @@
 			{
 				"id": "enc_beltane_hawthorn_shade",
 				"name": "hawthorn shade",
-				"desc": "You rest beneath an ancient hawthorn tree, its blossoms falling like gentle snow. The fae watch peacefully from the shadows.",
+				"desc": "คุณพักใต้ต้นฮอว์ธอร์นโบราณ ดอกของมันร่วงดั่งหิมะอ่อนโยน เหล่าแฟรีเฝ้าดูอย่างสงบจากเงามืด",
 				"tags": "site_of_learning",
 				"level": 2,
-				"flavor": "The tree's protective magic soothes your mind.",
+				"flavor": "เวทมนตร์ปกป้องของต้นไม้ปลอบประโลมจิตใจของคุณ",
 				"effect": {
 					"naturelore.exp": 0.5,
 					"rage": "-2~0",
@@ -229,13 +229,17 @@
 			{
 				"id": "mayflowertea",
 				"name": "mayflower tea",
-				"desc": "A fragrant tea brewed from mayflowers gathered on Beltane morning, filling you with vitality and protection from fae mischief.",
+				"desc": "ชาหอมกรุ่นที่ชงจากเมย์ฟลาวเวอร์ที่เก็บในเช้าเบลเทน เติมเต็มคุณด้วยพลังชีวิตและการปกป้องจากความแกล้งของแฟรี",
 				"need": "g.lore>999",
-				"needtext": "Cannot be brewed out of season",
+				"needtext": "ไม่สามารถต้มได้นอกฤดูกาล",
 				"school": "utility",
 				"keywords": {
-					"utility": ["resource"],
-					"delivery": ["over time"]
+					"utility": [
+						"resource"
+					],
+					"delivery": [
+						"over time"
+					]
 				},
 				"buy": {
 					"gold": 200,
@@ -265,13 +269,17 @@
 			{
 				"id": "fertilityelixir",
 				"name": "fertility elixir",
-				"desc": "A potent elixir blessed by the Beltane fires and the Old Growth's touch, enhancing growth and natural abilities.",
+				"desc": "ยาอายุวัฒน์เข้มข้น อวยพรด้วยกองไฟเบลเทนและสัมผัสต้นไม้เก่า เสริมการเติบโตและความสามารถตามธรรมชาติ",
 				"need": "g.lore>999",
-				"needtext": "Cannot be brewed out of season",
+				"needtext": "ไม่สามารถต้มได้นอกฤดูกาล",
 				"school": "utility",
 				"keywords": {
-					"utility": ["resource"],
-					"delivery": ["over time"]
+					"utility": [
+						"resource"
+					],
+					"delivery": [
+						"over time"
+					]
 				},
 				"buy": {
 					"gold": 500,
@@ -308,10 +316,10 @@
 						"name": "withered grove",
 						"sym": "🏰🔥",
 						"tags": "hall",
-						"desc": "The Beltane grove has withered with the passing of the season. The hawthorn trees stand dormant, their blossoms long faded, and the kell have withdrawn behind renewed pacts.",
+						"desc": "ดงเบลเทนเหี่ยวเฉาตามฤดูกาลที่ผ่านพ้น ต้นฮอว์ธอร์นยืนสงบนิ่ง ดอกเลือนหายไปนาน และเหล่าเคลล์ถอยกลับหลังพันธสัญญาที่ต่ออายุใหม่",
 						"require": "g.lore>999",
 						"need": "g.lore>999",
-						"needtext": "Can only be done during Beltane",
+						"needtext": "ทำได้เฉพาะช่วงเบลเทน",
 						"max": 1,
 						"cost": {
 							"research": 500,
