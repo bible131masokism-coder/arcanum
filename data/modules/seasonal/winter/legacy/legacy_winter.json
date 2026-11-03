@@ -35,7 +35,7 @@
 			{
 				"id": "enc_w_lifeforce",
 				"name": "siphon lifeforce",
-				"desc": "The old tree has lain dormant for centuries. Now it draws life back into its branches.",
+				"desc": "ต้นไม้เก่านอนสงบนิ่งมานานหลายศตวรรษ บัดนี้มันดึงชีวิตกลับเข้าสู่กิ่งก้าน",
 				"level": 2,
 				"run": {
 					"hp": 2
@@ -48,7 +48,7 @@
 			{
 				"id": "enc_w_faz_nothingthere",
 				"name": "behind you",
-				"desc": "Nothing there.",
+				"desc": "ไม่มีอะไรที่นั่น",
 				"effect": {
 					"madness": "3~5",
 					"unease": "4~6"
@@ -61,7 +61,7 @@
 			{
 				"id": "enc_w_faz_somethingthere",
 				"name": "behind you",
-				"desc": "Tangled metal skeletons hover behind you.",
+				"desc": "โครงกระดูกโลหะที่พันกันยุ่งลอยอยู่เบื้องหลังคุณ",
 				"effect": {
 					"bf": "3~5",
 					"unease": "4~6"
@@ -74,7 +74,7 @@
 			{
 				"id": "enc_w_faz_nothingthere2",
 				"name": "false alarm",
-				"desc": "A transportation alarm triggers, but it appears whatever it was meant to transport is missing.",
+				"desc": "สัญญาณเตือนระบบขนส่งดังขึ้น แต่ดูเหมือนสิ่งที่มันควรจะขนส่งนั้นหายไป",
 				"require": "w_fazbit7",
 				"effect": {
 					"madness": "2~3",
@@ -89,7 +89,7 @@
 			{
 				"id": "enc_w_faz_somethingthere2",
 				"name": "transport alarm",
-				"desc": "A transportation alarm triggers. You step aside to dodge its cargo.",
+				"desc": "สัญญาณเตือนระบบขนส่งดังขึ้น คุณหลบข้างทางเพื่อเลี่ยงของบรรทุกของมัน",
 				"require": "w_fazbit7",
 				"effect": {
 					"bf": "2~3",
@@ -104,7 +104,7 @@
 			{
 				"id": "enc_w_faz_nothingthere3",
 				"name": "material transportation",
-				"desc": "You quickly take off a cold one from the automated transportation system. A slight adjustment to valid transportation targets is needed.",
+				"desc": "คุณรีบหยิบ 'ตัวเย็นเฉียบ' ตัวหนึ่งออกจากระบบขนส่งอัตโนมัติ จำเป็นต้องปรับเป้าหมายการขนส่งที่ถูกต้องเล็กน้อย",
 				"effect": {
 					"madness": "1~2",
 					"unease": "2~4"
@@ -117,7 +117,7 @@
 			{
 				"id": "enc_w_faz_somethingthere3",
 				"name": "material transportation",
-				"desc": "A quick infusion of energy to refresh a weakening sigil.",
+				"desc": "การชุบพลังอย่างรวดเร็วเพื่อฟื้นฟูสัญลักษณ์เวทที่อ่อนแอ",
 				"effect": {
 					"bf": "1~2",
 					"unease": "2~4"
@@ -130,7 +130,7 @@
 			{
 				"id": "enc_w_faz_tinyskeletons",
 				"name": "tiny skeletons",
-				"desc": "Tiny, malformed metal skeletons litter the floor.",
+				"desc": "โครงกระดูกโลหะจิ๋วที่ผิดรูปเกลื่อนพื้น",
 				"effect": {
 					"weary": "3~5",
 					"unease": "4~6"
@@ -143,7 +143,7 @@
 			{
 				"id": "enc_w_faz_tinyskeletons2",
 				"name": "doll's endoskeletons",
-				"desc": "Brass contraptions sit still, inanimate and imperfect.",
+				"desc": "เครื่องจักรทองเหลืองนั่งนิ่งเฉย ไร้ชีวิตและไม่สมบูรณ์",
 				"tags": "site_of_learning",
 				"require": "w_fazbit2",
 				"effect": {
@@ -163,7 +163,7 @@
 			{
 				"id": "enc_w_faz_tinyskeletons3",
 				"name": "prepared endoskeletons",
-				"desc": "Molded out of brass, they will serve as a fine conduit for animation charms.",
+				"desc": "หล่อขึ้นจากทองเหลือง พวกมันจะทำหน้าที่เป็นท่อนำที่ยอดเยี่ยมสำหรับคาถาปลุกชีพ",
 				"tags": "site_of_learning",
 				"effect": {
 					"madness": "1~2",
@@ -181,7 +181,7 @@
 			{
 				"id": "enc_w_faz_blobs",
 				"name": "blob maker",
-				"desc": "The machine throws chunks of metal into a cauldron. Round, bouncy balls emerge.",
+				"desc": "เครื่องจักรโยนก้อนโลหะลงในหม้อใหญ่ ลูกกลม ๆ เด้งดึ๋ง ๆ ผุดขึ้นมา",
 				"effect": {
 					"bf": "3~5",
 					"unease": "4~6"
@@ -194,7 +194,7 @@
 			{
 				"id": "enc_w_faz_blobs2",
 				"name": "automatic coater",
-				"desc": "A malfunctioning machine attempts to coat the malformed skeletons to no avail.",
+				"desc": "เครื่องจักรที่ผิดปกติพยายามเคลือบโครงกระดูกลายพันธุ์แต่ไม่สำเร็จ",
 				"tags": "site_of_learning",
 				"require": "w_fazbit4",
 				"effect": {
@@ -215,7 +215,7 @@
 			{
 				"id": "enc_w_faz_blobs3",
 				"name": "endo coating station",
-				"desc": "You adjust the coating thickness a little, to ensure better adhesion to the base endo.",
+				"desc": "คุณปรับความหนาของสารเคลือบเล็กน้อย เพื่อให้ยึดเกาะกับโครงภายในได้ดีขึ้น",
 				"tags": "site_of_learning",
 				"effect": {
 					"bf": "1~2",
@@ -234,7 +234,7 @@
 			{
 				"id": "enc_w_faz_paint",
 				"name": "sudden blindness",
-				"desc": "As you clear your eyes, you realize you've been meticulously covered in magical paint.",
+				"desc": "เมื่อคุณปัดสายตาออก คุณก็รู้ว่าตัวเองถูกป้ายสีเวทมนตร์อย่างพิถีพิถัน",
 				"effect": {
 					"bf": "3~5",
 					"unease": "4~6"
@@ -248,7 +248,7 @@
 				"id": "enc_w_faz_paint2",
 				"name": "festive splashing",
 				"tags": "site_of_learning",
-				"desc": "A magical painter splashes paint all over, creating unquestionably festive patterns.",
+				"desc": "จิตรกรเวทมนตร์สาดสีไปทั่ว สร้างลวดลายรื่นเริงอย่างไม่ต้องสงสัย",
 				"require": "w_fazbit8",
 				"effect": {
 					"bf": "2~3",
@@ -267,7 +267,7 @@
 				"id": "enc_w_faz_paint3",
 				"name": "painting station",
 				"tags": "site_of_learning",
-				"desc": "The automated painter cheerily paints on yet another cute face. No issues here.",
+				"desc": "จิตรกรอัตโนมัติทาสีหน้าน่ารักอีกหนึ่งหน้าอย่างร่าเริง ไม่มีปัญหาใด ๆ ตรงนี้",
 				"effect": {
 					"bf": "1~2",
 					"unease": "2~4"
@@ -283,7 +283,7 @@
 			{
 				"id": "enc_w_faz_boominglaugh",
 				"name": "booming laugh",
-				"desc": "Deep, metallic laugh echoes through the facility.",
+				"desc": "เสียงหัวเราะโลหะก้องกังวานไปทั่วโรงงาน",
 				"effect": {
 					"madness": "3~5",
 					"unease": "4~6"
@@ -296,7 +296,7 @@
 			{
 				"id": "enc_w_faz_creepylaugh",
 				"name": "creepy laugh",
-				"desc": "A hysterical, repeating laugh fills the halls.",
+				"desc": "เสียงหัวเราะซ้ำ ๆ อันคลุ้มคลั่งดังก้องเต็มโถงทางเดิน",
 				"effect": {
 					"madness": "3~5",
 					"unease": "4~6"
@@ -309,7 +309,7 @@
 			{
 				"id": "enc_w_faz_boominglaugh2",
 				"name": "cheerful laugh",
-				"desc": "Cheerful laughter reverberates in the empty halls.",
+				"desc": "เสียงหัวเราะร่าเริงสะท้อนก้องในโถงที่ว่างเปล่า",
 				"tags": "site_of_learning",
 				"require": "w_fazbit3",
 				"effect": {
@@ -328,7 +328,7 @@
 			{
 				"id": "enc_w_faz_creepylaugh2",
 				"name": "children's laugh",
-				"desc": "Sounds of happy children echo in the desolate halls.",
+				"desc": "เสียงเด็ก ๆ อย่างมีความสุขดังก้องในโถงที่ร้างเปล่า",
 				"tags": "site_of_learning",
 				"require": "w_fazbit3",
 				"effect": {
@@ -347,7 +347,7 @@
 			{
 				"id": "enc_w_faz_boominglaugh3",
 				"name": "cheerful laugh",
-				"desc": "Cheerful laughter fills the halls.",
+				"desc": "เสียงหัวเราะร่าเริงดังก้องเต็มโถงทางเดิน",
 				"tags": "site_of_learning",
 				"effect": {
 					"madness": "1~2",
@@ -364,7 +364,7 @@
 			{
 				"id": "enc_w_faz_creepylaugh3",
 				"name": "children's laugh",
-				"desc": "Sounds of happy children echo in the halls. The cold ones seem a little warmer at that.",
+				"desc": "เสียงเด็ก ๆ อย่างมีความสุขดังก้องในโถง เหล่า'ตัวเย็นเฉียบ'ดูอบอุ่นขึ้นเล็กน้อยด้วย",
 				"tags": "site_of_learning",
 				"effect": {
 					"madness": "1~2",
@@ -381,7 +381,7 @@
 			{
 				"id": "enc_w_faz_auditlog",
 				"name": "audit log",
-				"desc": "The crumbling pages reveal little.",
+				"desc": "หน้ากระดาษที่ผุกร่อนเผยอะไรเพียงเล็กน้อย",
 				"effect": {
 					"rage": "3~5",
 					"unease": "4~6"
@@ -395,7 +395,7 @@
 				"id": "enc_w_faz_auditlog2",
 				"name": "audit log",
 				"tags": "site_of_learning",
-				"desc": "A meticulously organized log of material deliveries. Alchemical reagents and certain metals feature prominently.",
+				"desc": "บันทึกการส่งมอบวัสดุอันเป็นระเบียบพิถีพิถัน สารเล่นแร่แปรธาตุและโลหะบางชนิดปรากฏเด่นชัด",
 				"require": "w_fazbit1",
 				"effect": {
 					"bf": "2~3",
@@ -415,7 +415,7 @@
 				"id": "enc_w_faz_auditlog3",
 				"name": "audit log",
 				"tags": "site_of_learning",
-				"desc": "You review the shipment plans, just in case. No logistical issues seem apparent.",
+				"desc": "คุณทบทวนแผนการขนส่งเผื่อไว้ ไม่พบปัญหาด้านลอจิสติกส์ที่ชัดเจน",
 				"effect": {
 					"bf": "1~2",
 					"unease": "2~4"
@@ -432,7 +432,7 @@
 			{
 				"id": "enc_w_faz_prototype",
 				"name": "screeching skeleton",
-				"desc": "A calmly sitting skeleton suddenly reaches for you, screeching.",
+				"desc": "โครงกระดูกที่นั่งสงบนิ่งอยู่ดี ๆ ก็ยื่นมือมาหาคุณ พร้อมเสียงกรีดร้อง",
 				"effect": {
 					"madness": "3~5",
 					"unease": "4~6"
@@ -445,7 +445,7 @@
 			{
 				"id": "enc_w_faz_prototype2",
 				"name": "animated doll",
-				"desc": "It's clear that the enchantments applied to this were meant to follow the animation spellchart, but age has taken its toll.",
+				"desc": "ชัดเจนว่าเวทมนตร์ที่ใช้กับสิ่งนี้ตั้งใจให้เป็นไปตามแผนผังคาถาปลุกชีพ แต่กาลเวลาได้บั่นทอนมัน",
 				"tags": "site_of_learning",
 				"require": "w_fazbit6",
 				"effect": {
@@ -465,7 +465,7 @@
 			{
 				"id": "enc_w_faz_prototype3",
 				"name": "prototype unit",
-				"desc": "The first doll made after the repairs, it now sits as a standard for all future production.",
+				"desc": "ตุ๊กตาตัวแรกที่สร้างหลังการซ่อมแซม บัดนี้ยืนเป็นมาตรฐานสำหรับการผลิตทั้งหมดในอนาคต",
 				"tags": "site_of_learning",
 				"effect": {
 					"madness": "1~2",
@@ -483,7 +483,7 @@
 			{
 				"id": "enc_w_faz_stockpile",
 				"name": "materials stockpile",
-				"desc": "You happen upon a store of valuable materials.",
+				"desc": "คุณบังเอิญพบคลังวัสดุมีค่า",
 				"effect": {
 					"unease": "5~7"
 				},
@@ -499,7 +499,7 @@
 			{
 				"id": "enc_w_faz_stockpile2",
 				"name": "materials stockpile",
-				"desc": "With the ledger and logs in hand, finding the most valuable of materials proves trivial.",
+				"desc": "ด้วยสมุดบัญชีและบันทึกในมือ การค้นหาวัสดุที่มีค่าที่สุดจึงเป็นเรื่องง่ายดาย",
 				"require": "w_fazbit5",
 				"effect": {
 					"unease": "4~6"
@@ -515,7 +515,7 @@
 			{
 				"id": "enc_w_faz_stockpile3",
 				"name": "materials stockpile",
-				"desc": "Review the material stockpiles for any excesses to apropriate.",
+				"desc": "ทบทวนกองสต็อกวัสดุเพื่อหาส่วนเกินมาวินิจฉัย",
 				"effect": {
 					"unease": "3~5"
 				},
@@ -528,7 +528,7 @@
 			{
 				"id": "enc_w_faz_scrapper",
 				"name": "metal twister",
-				"desc": "A machine repeatedly tears apart then welds together what appears to be unrecognizable lumps of metal.",
+				"desc": "เครื่องจักรฉีกแล้วเชื่อมกลับซ้ำ ๆ ซาก ๆ กับก้อนโลหะที่ดูไม่ออกว่าเป็นอะไร",
 				"effect": {
 					"bf": "3~5",
 					"unease": "4~6"
@@ -541,7 +541,7 @@
 			{
 				"id": "enc_w_faz_scrapper2",
 				"name": "adjuster",
-				"desc": "Once meant to make minute adjustments to better suit individual recipients, it has been reduced to an eternity of useless work.",
+				"desc": "ครั้งหนึ่งเคยตั้งใจให้ปรับแต่งรายละเอียดให้เหมาะกับผู้รับแต่ละคน มันถูกลดเหลืองานไร้ประโยชน์ชั่วนิรันดร์",
 				"require": "w_fazbit9",
 				"effect": {
 					"madness": "2~3",
@@ -555,7 +555,7 @@
 			{
 				"id": "enc_w_faz_scrapper3",
 				"name": "customization station",
-				"desc": "While there are no missives for it to process, it is still used to put a unique touch on every doll you produce.",
+				"desc": "ถึงไม่มีสารที่จะประมวลผล มันก็ยังใช้เติมเอกลักษณ์ให้ตุ๊กตาทุกตัวที่คุณผลิต",
 				"effect": {
 					"madness": "1~2",
 					"unease": "2~4"
@@ -568,7 +568,7 @@
 			{
 				"id": "enc_icestudy",
 				"name": "ebin's notes",
-				"desc": "A detailed study of the properties of ice.",
+				"desc": "การศึกษาอย่างละเอียดถึงคุณสมบัติของน้ำแข็ง",
 				"tags": "site_of_learning",
 				"effect": {
 					"bf": "1~3",
@@ -585,7 +585,7 @@
 			{
 				"id": "enc_winterstudy",
 				"name": "tome of winters past",
-				"desc": "The year's coldest season is also known for its dark legends.",
+				"desc": "ฤดูที่หนาวที่สุดของปียังขึ้นชื่อเรื่องตำนานมืดหม่น",
 				"effect": {
 					"bf": "1~2",
 					"rage": "0~3",
@@ -600,7 +600,7 @@
 			{
 				"id": "frozenbookcase",
 				"name": "frozen bookcase",
-				"desc": "The cracked pages of the books are fused with ice",
+				"desc": "หน้ากระดาษแตกร้าวของหนังสือหลอมติดกับน้ำแข็ง",
 				"effect": {
 					"madness": "1~2",
 					"fire": -0.1,
@@ -617,7 +617,7 @@
 			{
 				"id": "enc_w_drawscheme",
 				"name": "drawing mystic schemes",
-				"desc": "The patterns must be laid precisely to direct the magic weaves.",
+				"desc": "ลวดลายต้องวางอย่างแม่นยำเพื่อนำทางสายใยเวทมนตร์",
 				"level": 2,
 				"effect": {
 					"madness": "1~2",
@@ -631,7 +631,7 @@
 			{
 				"id": "enc_w_placegems",
 				"name": "placing gems",
-				"desc": "Magical gems will focus the power of the tree of rites.",
+				"desc": "อัญมณีเวทมนตร์จะโฟกัสพลังของต้นไม้แห่งพิธีกรรม",
 				"level": 2,
 				"effect": {
 					"unease": "0~2",
@@ -644,7 +644,7 @@
 			{
 				"id": "enc_w_setfocus",
 				"name": "connecting focal points",
-				"desc": "Snow golems will serve well for this purpose.",
+				"desc": "โกเลมหิมะจะทำหน้าที่นี้ได้ดี",
 				"level": 2,
 				"effect": {
 					"weary": "0~2",
@@ -658,7 +658,7 @@
 			{
 				"id": "enc_w_attune",
 				"name": "attuning to local magic",
-				"desc": "Attuning to magic of the tree, before the rite proceeds.",
+				"desc": "ปรับจูนเข้ากับเวทมนตร์ของต้นไม้ ก่อนพิธีกรรมจะดำเนินต่อไป",
 				"tags": "site_of_learning",
 				"level": 2,
 				"effect": {
@@ -675,7 +675,7 @@
 			{
 				"id": "enc_w_kidsplaying",
 				"name": "playing in the snow",
-				"desc": "The children seem to enjoy the snowballs you conjure from the air.",
+				"desc": "เหล่าเด็กดูเพลิดเพลินกับก้อนหิมะที่คุณประกอบจากอากาศ",
 				"level": 2,
 				"effect": {
 					"weary": "1~2",
@@ -691,7 +691,7 @@
 			{
 				"id": "enc_w_windbarrier",
 				"name": "windbarrier",
-				"desc": "Building a barrier against the harsh winds",
+				"desc": "สร้างกำแพงต้านทานสายลมพัดกระโชก",
 				"effect": {
 					"weary": "1~2",
 					"airlore.exp": 2
@@ -704,7 +704,7 @@
 			{
 				"id": "enc_w_conjuring",
 				"name": "conjuring",
-				"desc": "Conjuring a fire elemental at the magic circle. That should stave away the cold!",
+				"desc": "ประกอบเอเลเมนทัลไฟที่วงเวทมนตร์ น่าจะไล่ความหนาวได้!",
 				"effect": {
 					"mana": "0.5~1",
 					"firelore.exp": 3,
@@ -719,7 +719,7 @@
 			{
 				"id": "enc_w_candles",
 				"name": "crafting candles",
-				"desc": "Crafting everburning candles",
+				"desc": "ประดิษฐ์เทียนที่ไหม้ไม่รู้ดับ",
 				"effect": {
 					"unease": "1~2",
 					"crafting.exp": 3
@@ -732,7 +732,7 @@
 			{
 				"id": "enc_w_legends",
 				"name": "stories",
-				"desc": "Listening to elders recite their winter legends.",
+				"desc": "ฟังเหล่าผู้เฒ่าร่ายตำนานฤดูหนาว",
 				"effect": {
 					"bf": "1~2",
 					"unease": "0~2",
@@ -747,7 +747,7 @@
 			{
 				"id": "enc_w_decorations",
 				"name": "old decorations",
-				"desc": "Brass trinkets and baubles adorn the village.",
+				"desc": "เครื่องประดับทองเหลืองและลูกปัดประดับหมู่บ้าน",
 				"effect": {
 					"bf": "1~2",
 					"madness": "0~2"
@@ -760,7 +760,7 @@
 			{
 				"id": "enc_w_coldsnap",
 				"name": "cold snap",
-				"desc": "A sudden burst of icy winds chills you to the bone.",
+				"desc": "สายลมน้ำแข็งที่พัดวูบหนึ่งหนาวเย็นถึงกระดูก",
 				"effect": {
 					"weary": "-1~3",
 					"unease": "-1~3",
@@ -773,7 +773,7 @@
 			{
 				"id": "enc_emberstone",
 				"name": "emberstone",
-				"desc": "Some latent heat springs here from the ground.",
+				"desc": "ความร้อนแฝงบางส่วนผุดขึ้นจากพื้นดินตรงนี้",
 				"effect": {
 					"madness": "1~2",
 					"hp": "-1~-2",
@@ -784,7 +784,7 @@
 			{
 				"id": "drippingwater",
 				"name": "water source",
-				"desc": "Some of the ice here is melting. How it fights the cold is a mystery.",
+				"desc": "น้ำแข็งบางส่วนตรงนี้กำลังละลาย มันสู้ความหนาวได้อย่างไรยังเป็นปริศนา",
 				"tags": "site_of_learning",
 				"effect": {
 					"madness": "1~2",
@@ -798,7 +798,7 @@
 			{
 				"id": "frozenloam",
 				"name": "frozen herbs",
-				"desc": "A few herbs still survive in the frozen loam.",
+				"desc": "สมุนไพรเล็กน้อยยังรอดในดินดานแช่แข็ง",
 				"level": 3,
 				"effect": {
 					"rage": "1~3",
@@ -813,7 +813,7 @@
 			{
 				"id": "w_crystalsocket",
 				"name": "sparkling crystals",
-				"desc": "A vein of crystals embedded in the cave wall, sparkling in the dark.",
+				"desc": "เส้นคริสตัลฝังในกำแพงถ้ำ ส่องประกายในความมืด",
 				"level": 3,
 				"effect": {
 					"rage": "1~3",
@@ -829,7 +829,7 @@
 			{
 				"id": "icegrave",
 				"name": "ice grave",
-				"desc": "A traveller here was frozen alive. The body may still be of use.",
+				"desc": "นักเดินทางที่นี่ถูกแช่แข็งทั้งเป็น ศพอาจยังใช้ประโยชน์ได้",
 				"tags": "site_of_learning",
 				"effect": {
 					"madness": "2~3",
@@ -838,8 +838,16 @@
 				},
 				"loot": {
 					"winteressence": 0.1,
-					"bodies": { "%": "8%", "value": "10~15", "skipLocked": true },
-					"bones": { "%": "40%", "value": "2~4", "skipLocked": true },
+					"bodies": {
+						"%": "8%",
+						"value": "10~15",
+						"skipLocked": true
+					},
+					"bones": {
+						"%": "40%",
+						"value": "2~4",
+						"skipLocked": true
+					},
 					"bloodgem": "5%"
 				},
 				"mod": {
@@ -849,7 +857,7 @@
 			{
 				"id": "icesculpture",
 				"name": "ice sculpture",
-				"desc": "Humanoid figure formed from ice and snow. The right enchantment will give it life.",
+				"desc": "ร่างมนุษย์ที่ก่อจากน้ำแข็งและหิมะ เวทมนตร์ที่ถูกต้องจะมอบชีวิตแก่มัน",
 				"tags": "site_of_learning",
 				"level": 2,
 				"effect": {
@@ -867,7 +875,7 @@
 			{
 				"id": "icefairy",
 				"name": "ice fairy",
-				"desc": "A flickering of crystalline wings can be seen in the distance. Approaching it would be unwise.",
+				"desc": "ปีกผลึกกะพริบวับให้เห็นแต่ไกล การเข้าใกล้มันคงไม่ฉลาด",
 				"tags": "site_of_learning",
 				"level": 2,
 				"effect": {
@@ -895,7 +903,12 @@
 				"attack": {
 					"kind": "slash",
 					"damage": "i.damage||0",
-					"potencies": ["sworddmg", "slashdmg", "physdmg", "icedmg"]
+					"potencies": [
+						"sworddmg",
+						"slashdmg",
+						"physdmg",
+						"icedmg"
+					]
 				},
 				"cost": 20,
 				"level": 5
@@ -906,7 +919,7 @@
 				"name": "orb of winters",
 				"unique": true,
 				"tags": "t_event,t_orb,t_artifact",
-				"desc": "A snowglobe with magical powers. It reminds you of colder days.",
+				"desc": "ลูกแก้วหิมะที่มีพลังเวทมนตร์ มันทำให้นึกถึงวันที่หนาวเย็นกว่า",
 				"level": 10,
 				"material": "mat_caster_diamond",
 				"type": "weapon",
@@ -922,7 +935,10 @@
 					"tohit": 2,
 					"targets": "enemies",
 					"maxTargets": 999,
-					"potencies": ["spelldmg", "icedmg"],
+					"potencies": [
+						"spelldmg",
+						"icedmg"
+					],
 					"dot": {
 						"duration": 5,
 						"id": "frostbite",
@@ -931,7 +947,10 @@
 						"mod": {
 							"self.speed": -3
 						},
-						"potencies": ["spelldmg", "icedmg"]
+						"potencies": [
+							"spelldmg",
+							"icedmg"
+						]
 					}
 				},
 				"alter": {
@@ -951,7 +970,7 @@
 			{
 				"id": "coldnecklace",
 				"name": "coldsteel necklace",
-				"desc": "Wearing it makes your thoughts cold and your focus sharp.",
+				"desc": "การสวมมันทำให้ความคิดของคุณเยือกเย็นและสมาธิคมชัด",
 				"tags": "t_accessory,t_necklace",
 				"unique": true,
 				"level": 1,
@@ -973,10 +992,10 @@
 				"id": "pot_icecreamevil",
 				"name": "Melted ice cream",
 				"hide": true,
-				"desc": "No longer a refreshing treat, this bit of goo has no practical use",
+				"desc": "ไม่ใช่ขนมสดชื่นอีกต่อไป เจ้ายางก้อนนี้ไม่มีประโยชน์ในทางปฏิบัติ",
 				"require": "g.potions>=999",
 				"need": "g.lore>999",
-				"needtext": "Can only be done in winter",
+				"needtext": "ทำได้เฉพาะในฤดูหนาว",
 				"sell": {
 					"gold": 1
 				},
@@ -995,10 +1014,10 @@
 				"id": "pot_icecream",
 				"name": "Melted ice cream",
 				"hide": true,
-				"desc": "No longer a refreshing treat, this bit of goo has no practical use",
+				"desc": "ไม่ใช่ขนมสดชื่นอีกต่อไป เจ้ายางก้อนนี้ไม่มีประโยชน์ในทางปฏิบัติ",
 				"require": "g.potions>=999",
 				"need": "g.lore>999",
-				"needtext": "Can only be done in winter",
+				"needtext": "ทำได้เฉพาะในฤดูหนาว",
 				"sell": {
 					"gold": 1
 				},
@@ -1030,10 +1049,10 @@
 						"name": "fazbit's workshop restoration project",
 						"sym": "🏰❄️",
 						"tags": "hall",
-						"desc": "This place must have once been a source of great joy to people all over the realm. It would be a tremendous accomplishment to repair it... when the season permits, that is.",
+						"desc": "สถานที่นี้ครั้งหนึ่งคงเคยเป็นแหล่งความยินดีอันยิ่งใหญ่ของผู้คนทั่วอาณาจักร การซ่อมแซมมันคงเป็นความสำเร็จอันยิ่งใหญ่...เมื่อฤดูกาลเอื้ออำนวย",
 						"require": "g.lore>999",
 						"need": "g.lore>999",
-						"needtext": "Can only be done in winter",
+						"needtext": "ทำได้เฉพาะในฤดูหนาว",
 						"max": 1,
 						"result": {
 							"fame": 10
@@ -1044,10 +1063,10 @@
 						"name": "fazbit's sealed winter workshop",
 						"sym": "🏰❄️",
 						"tags": "hall",
-						"desc": "It slumbers, waiting for the next time it's needed.",
+						"desc": "มันหลับใหล รอเวลาที่มันจำเป็นอีกครั้ง",
 						"require": "g.lore>999",
 						"need": "g.lore>999",
-						"needtext": "Can only be done in winter",
+						"needtext": "ทำได้เฉพาะในฤดูหนาว",
 						"max": 1,
 						"mod": {
 							"puppetry.buy.arcana": "-100%",
@@ -1061,7 +1080,7 @@
 						"name": "fazbit's jolliness",
 						"sym": "🏰❄️",
 						"require": "g.fazbithearth>0",
-						"desc": "Even in the depths of frost and cold, warmth endures.",
+						"desc": "แม้ในห้วงความหนาวเย็นจัด ความอบอุ่นก็ยังดำรงอยู่",
 						"max": 1,
 						"cost": {
 							"research": 100
@@ -1077,7 +1096,7 @@
 						"name": "fazbit's jolliness",
 						"sym": "🏰❄️",
 						"require": "g.fazbithearth>0",
-						"desc": "Even in the depths of frost and cold, warmth endures.",
+						"desc": "แม้ในห้วงความหนาวเย็นจัด ความอบอุ่นก็ยังดำรงอยู่",
 						"max": 1,
 						"cost": {
 							"research": 100
