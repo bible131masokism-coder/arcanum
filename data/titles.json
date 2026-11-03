@@ -1,91 +1,91 @@
 {
 	"autopoet": {
-		"prefix": "Shifting",
-		"suffix": "Autopoet",
+		"prefix": "ผู้แปรเปลี่ยน",
+		"suffix": "กวีผู้สร้างสรรค์ตน",
 		"combo": {
-			"greynecromancer": "Dracolich",
-			"infernalist": "Dragon Incarnate",
-			"kell": "Beastkin",
-			"class_leviathan": "Sea Serpent",
-			"mechamancer": "Shifting Gears",
-			"primarch": "Blessing in Disguise",
-			"psychopomp": "Shapeless Soul",
-			"titan": "Sand Wurm"
+			"greynecromancer": "ดราโคลิช",
+			"infernalist": "มังกรอวตาร",
+			"kell": "ผู้มีกายสัตว์ป่า",
+			"class_leviathan": "งูทะเล",
+			"mechamancer": "เฟืองหมุนเปลี่ยน",
+			"primarch": "พรปลอมตัว",
+			"psychopomp": "วิญญาณไร้รูป",
+			"titan": "ไวร์มทราย"
 		}
 	},
 	"greynecromancer": {
-		"prefix": "Undead",
-		"suffix": "Necromancer",
+		"prefix": "อันเดด",
+		"suffix": "นักกบดาน",
 		"combo": {
-			"infernalist": "Burning Skull",
-			"kell": "Master of Decay",
-			"class_leviathan": "Dead Sea",
-			"mechamancer": "Amalgamation",
-			"primarch": "Please contact the Discord",
-			"psychopomp": "Soulmonger",
-			"titan": "Undertaker"
+			"infernalist": "กะโหลกเพลิง",
+			"kell": "จอมการเน่าเปื่อย",
+			"class_leviathan": "ทะเลมรณะ",
+			"mechamancer": "เศษส่วนรวม",
+			"primarch": "โปรดติดต่อดิสคอร์ด",
+			"psychopomp": "ผู้ค้าวิญญาณ",
+			"titan": "ผู้จัดการศพ"
 		}
 	},
 	"infernalist": {
-		"prefix": "Infernal",
-		"suffix": "Infernalist",
+		"prefix": "อินเฟอร์นัล",
+		"suffix": "นักอินเฟอร์นัล",
 		"combo": {
-			"kell": "Forestfire",
-			"class_leviathan": "Boiling Point",
-			"mechamancer": "Searing Forgemaster",
-			"primarch": "Sacred Flame",
-			"psychopomp": "Burning Spirit",
-			"titan": "Volcanist"
+			"kell": "ไฟป่า",
+			"class_leviathan": "จุดเดือด",
+			"mechamancer": "ช่างตีเหล็กแผดเผา",
+			"primarch": "เปลวศักดิ์สิทธิ์",
+			"psychopomp": "จิตวิญญาณเพลิง",
+			"titan": "นักภูเขาไฟ"
 		}
 	},
 	"kell": {
-		"prefix": "Nature's",
-		"suffix": "Kell",
+		"prefix": "แห่งธรรมชาติ",
+		"suffix": "เคลล์",
 		"combo": {
-			"class_leviathan": "Kelp Forest",
-			"mechamancer": "Brass Grove",
-			"primarch": "Sage of the Woods",
-			"psychopomp": "Greenwood Spirit",
-			"titan": "Timber Rock Ranger"
+			"class_leviathan": "ป่าสาหร่าย",
+			"mechamancer": "ดงทองเหลือง",
+			"primarch": "นักปราชญ์แห่งป่า",
+			"psychopomp": "จิตวิญญาณป่าเขียว",
+			"titan": "พรานหินไม้"
 		}
 	},
 	"class_leviathan": {
-		"prefix": "Whorling",
-		"suffix": "Leviathan",
+		"prefix": "ผู้หมุนวน",
+		"suffix": "เลวีอาธาน",
 		"combo": {
-			"mechamancer": "Iron Tide",
-			"primarch": "Father of Tides",
-			"psychopomp": "Sea Spirit",
-			"titan": "Tsunami"
+			"mechamancer": "กระแสเหล็ก",
+			"primarch": "บิดาแห่งกระแสน้ำ",
+			"psychopomp": "จิตวิญญาณทะเล",
+			"titan": "สึนามิ"
 		}
 	},
 	"mechamancer": {
-		"prefix": "Mechanical",
-		"suffix": "Mechamancer",
+		"prefix": "จักรกล",
+		"suffix": "นักจักรกล",
 		"combo": {
-			"primarch": "Deus Ex Machina",
-			"psychopomp": "Wraithworks",
-			"titan": "Mechatitan"
+			"primarch": "เดอุสเอ็กซ์มาคีนา",
+			"psychopomp": "งานเรธ",
+			"titan": "เมคาไททัน"
 		}
 	},
 	"primarch": {
-		"prefix": "Holy",
-		"suffix": "Primarch",
+		"prefix": "ศักดิ์สิทธิ์",
+		"suffix": "พรีมาร์ช",
 		"combo": {
-			"psychopomp": "Shepherd of Souls",
-			"titan": "Rock of the Faith"
+			"psychopomp": "ผู้เลี้ยงวิญญาณ",
+			"titan": "ศิลาแห่งศรัทธา"
 		}
 	},
 	"psychopomp": {
-		"prefix": "Guiding",
-		"suffix": "Psychopomp",
+		"prefix": "ผู้ชี้นำ",
+		"suffix": "ผู้พาวิญญาณ",
 		"combo": {
-			"titan": "Stonesouled"
+			"titan": "จิตใจดั่งศิลา"
 		}
 	},
 	"titan": {
-		"prefix": "Titanic",
-		"suffix": "Titan",
+		"prefix": "ไททานิก",
+		"suffix": "ไททัน",
 		"combo": {}
 	}
 }
