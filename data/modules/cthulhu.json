@@ -32,14 +32,14 @@
 			{
 				"id": "abholos",
 				"name": "abholos",
-				"desc": "A grey mass of pustulous malevolence. (Devourer in the Mist)",
+				"desc": "ก้อนเทาแห่งความมุ่งร้ายที่เป็นหนอง (ผู้กลืนกินในสายหมอก)",
 				"biome": "air",
 				"level": 30
 			},
 			{
 				"id": "alala",
 				"name": "alala",
-				"desc": "Entity of living sound.",
+				"desc": "สิ่งมีชีวิตแห่งเสียงที่มีชีวิต",
 				"biome": "air",
 				"level": 30
 			},
@@ -60,7 +60,7 @@
 			{
 				"id": "idhyaa",
 				"name": "idh-yaa the worm",
-				"desc": "First bride of Cthulhu",
+				"desc": "เจ้าสาวคนแรกของคธูลู",
 				"biome": "earth",
 				"level": 30
 			},
@@ -74,7 +74,7 @@
 			{
 				"id": "zothommog",
 				"name": "zoth-ommog",
-				"desc": "Third son of cthulhu with a razor fanged, reptilian head.",
+				"desc": "บุตรคนที่สามของคธูลูที่มีหัวเป็นสัตว์เลื้อยคลานฟันคมกริบ",
 				"biome": "seas",
 				"level": 30
 			},
@@ -88,7 +88,7 @@
 			{
 				"id": "azathoth",
 				"name": "azathoth",
-				"desc": "The blind idiot god at the center of infinity.",
+				"desc": "เทพบ้าตาบอด ณ ศูนย์กลางแห่งอนันต์",
 				"biome": "voids",
 				"level": 100
 			}
