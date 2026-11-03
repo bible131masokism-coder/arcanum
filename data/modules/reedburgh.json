@@ -6,7 +6,7 @@
 				"id": "citynavigation",
 				"name": "city navigation",
 				"require": "tier1",
-				"desc": "Like stars, spells, or any complex systems, cities and their tunnels also merit study.",
+				"desc": "ดั่งดวงดาว คาถา หรือระบบอันซับซ้อนทั้งหลาย เมืองและอุโมงค์ใต้ดินของมันก็สมควรแก่การศึกษาเช่นกัน",
 				"buy": {
 					"arcana": 20
 				},
@@ -23,7 +23,7 @@
 			{
 				"id": "reedburgh_city_papers",
 				"name": "reedburgh city pass",
-				"desc": "Allows free access into and out of the Reedburgh City's first ring, Vesparia's beating heart, bursting with commerce and labour.",
+				"desc": "อนุญาตเข้าออกอย่างเสรีในวงแหวนแรกของนครรีดเบิร์ก หัวใจที่เต้นระรัวของเวสปาเรีย อัดแน่นไปด้วยการค้าและแรงงาน",
 				"require": "g.citynavigation>0",
 				"max": 1,
 				"cost": {
@@ -37,7 +37,7 @@
 			{
 				"id": "reedburgh_city_map",
 				"name": "map of reedburgh city first ring",
-				"desc": "A map of the first ring, more complex than most basic spells...",
+				"desc": "แผนที่ของวงแหวนแรก ซับซ้อนยิ่งกว่าคาถาพื้นฐานส่วนใหญ่...",
 				"require": "g.reedburgh_market>0",
 				"max": 1,
 				"cost": {
@@ -51,7 +51,7 @@
 			{
 				"id": "reedburgh_gym_membership",
 				"name": "reedburgh gymnasium pass",
-				"desc": "Membership to a gymnasium you found in Reedburgh.",
+				"desc": "สมาชิกโรงยิมที่คุณพบในรีดเบิร์ก",
 				"require": "g.reedburgh_market>0",
 				"max": 1,
 				"cost": {
@@ -65,7 +65,7 @@
 			{
 				"id": "reedburgh_city_bank",
 				"name": "reedburgh city bank documents",
-				"desc": "Gain access to shops and markets using Vesparian guilders, that are tightly controlled through banks and debt.",
+				"desc": "เข้าถึงร้านค้าและตลาดด้วยกิลเดอร์เวสปาเรีย ที่ถูกควบคุมอย่างเข้มงวดผ่านธนาคารและหนี้สิน",
 				"require": "g.debitomancy>=1&&g.reedburgh_city_papers>0",
 				"max": 1,
 				"cost": {
@@ -82,7 +82,7 @@
 				"id": "reedburgh_badge",
 				"name": "reedburgh's copper medal",
 				"type": "armor",
-				"desc": "A token from Reedburgh for clearing out the sewer ways. Having one of these makes you seem more trustworthy to people.",
+				"desc": "โทเคนจากรีดเบิร์กสำหรับกวาดล้างทางระบายน้ำ การมีสิ่งนี้ทำให้คุณดูน่าเชื่อถือขึ้นในสายตาผู้คน",
 				"tags": "t_bauble",
 				"unique": true,
 				"level": 1,
@@ -102,7 +102,7 @@
 				"id": "reedburgh_herobadge",
 				"name": "reedburgh rose gold medal",
 				"type": "armor",
-				"desc": "Given mostly to knights for heroic acts, nobles that had made wealthy donations or others of higher standing, this medal serves as one of Vesparia's highest honours, bestowed by King Rudrich himself.",
+				"desc": "มอบให้แก่อัศวินผู้กระทำวีรกรรม ขุนนางที่บริจาคเงินมหาศาล หรือผู้อื่นที่มีสถานะสูงส่ง เหรียญนี้เป็นหนึ่งในเกียรติยศสูงสุดของเวสปาเรีย ประทานโดยราชารุดริชเอง",
 				"tags": "t_bauble",
 				"unique": true,
 				"level": 1,
@@ -124,14 +124,22 @@
 			{
 				"id": "reedburgh_call_backup",
 				"name": "Call guard",
-				"desc": "HELP! HELLLPPP! HELP ME!!",
+				"desc": "ช่วยด้วย! ช่ววยยยยยยย! ช่วยฉัน!!",
 				"level": 1,
 				"school": "charm",
 				"keywords": {
-					"type": ["summon"],
-					"target": ["ally"],
-					"targets": ["single"],
-					"delivery": ["instant"]
+					"type": [
+						"summon"
+					],
+					"target": [
+						"ally"
+					],
+					"targets": [
+						"single"
+					],
+					"delivery": [
+						"instant"
+					]
 				},
 				"require": "g.citynavigation>999",
 				"buy": {
@@ -155,15 +163,23 @@
 			{
 				"id": "mon_blunt_heavy",
 				"name": "heavy slam",
-				"desc": "A thunderous blow that does impressive damage.",
-				"flavor": "That's gonna leave a bruise in the morning.",
+				"desc": "หมัดสายฟ้าฟาดที่สร้างความเสียหายน่าประทับใจ",
+				"flavor": "เช้านี้คงมีรอยช้ำแน่ ๆ",
 				"level": 4,
 				"school": "martial",
 				"keywords": {
-					"type": ["damage"],
-					"target": ["enemy"],
-					"targets": ["single"],
-					"delivery": ["instant"]
+					"type": [
+						"damage"
+					],
+					"target": [
+						"enemy"
+					],
+					"targets": [
+						"single"
+					],
+					"delivery": [
+						"instant"
+					]
 				},
 				"require": "g.citynavigation>999",
 				"cd": 5,
@@ -176,14 +192,22 @@
 			{
 				"id": "reedburgh_call_backup_captain",
 				"name": "Call guard",
-				"desc": "HELP! HELLLPPP! HELP ME!!",
+				"desc": "ช่วยด้วย! ช่ววยยยยยยย! ช่วยฉัน!!",
 				"level": 1,
 				"school": "charm",
 				"keywords": {
-					"type": ["summon"],
-					"target": ["ally"],
-					"targets": ["single"],
-					"delivery": ["instant"]
+					"type": [
+						"summon"
+					],
+					"target": [
+						"ally"
+					],
+					"targets": [
+						"single"
+					],
+					"delivery": [
+						"instant"
+					]
 				},
 				"require": "g.citynavigation>999",
 				"buy": {
@@ -209,7 +233,7 @@
 			{
 				"id": "reedburgh_seized_goods",
 				"name": "seized goods wagon",
-				"desc": "A halted wagon with confiscated goodies",
+				"desc": "เกวียนที่หยุดนิ่งพร้อมของกลางที่ยึดมา",
 				"effect": {
 					"weary": "1~2",
 					"shadow": -0.5
@@ -221,14 +245,21 @@
 					"codices": "45%",
 					"scrolls": "1~2",
 					"managem": "80%",
-					"skulls": { "%": "50%", "value": 1, "skipLocked": true },
-					"bonedust": { "value": "3~5", "skipLocked": true }
+					"skulls": {
+						"%": "50%",
+						"value": 1,
+						"skipLocked": true
+					},
+					"bonedust": {
+						"value": "3~5",
+						"skipLocked": true
+					}
 				}
 			},
 			{
 				"id": "reedburgh_armory",
 				"name": "reedburgh weapon storage",
-				"desc": "A compact shed with an assortment of mounted weapons inside.",
+				"desc": "เพิงเล็ก ๆ ที่ภายในมีอาวุธนานาชนิดติดตั้งไว้",
 				"level": 1,
 				"length": 5,
 				"effect": {
@@ -239,7 +270,7 @@
 			{
 				"id": "reedburgh_training",
 				"name": "guard training grounds",
-				"desc": "A field strewn with combat training equipment, weapons, and scattered personal belongings.",
+				"desc": "ทุ่งที่เกลื่อนไปด้วยอุปกรณ์ฝึกการต่อสู้ อาวุธ และของใช้ส่วนตัวกระจัดกระจาย",
 				"level": 1,
 				"length": 5,
 				"effect": {
@@ -253,7 +284,7 @@
 			{
 				"id": "reedburgh_barracks",
 				"name": "reedburgh barracks housing",
-				"desc": "Empty guard quarters, housing equipment and personal items.",
+				"desc": "ห้องพักยามที่ว่างเปล่า รองรับอุปกรณ์และของใช้ส่วนตัว",
 				"level": 1,
 				"length": 5,
 				"effect": {
@@ -266,7 +297,7 @@
 			{
 				"id": "reedburgh_guardpost",
 				"name": "guard post",
-				"desc": "Vigilant sentinels on the lookout for any signs of disturbance.",
+				"desc": "เหล่าทหารยามผู้ตื่นตัว คอยจับตาสัญญาณความวุ่นวายใด ๆ",
 				"effect": {
 					"rage": "1~2",
 					"shadow": -0.5
@@ -275,7 +306,7 @@
 			{
 				"id": "reedburgh_streets",
 				"name": "maze-like streets",
-				"desc": "Some streets are dead ends, others loop back into themselves.",
+				"desc": "บางถนนเป็นทางตัน บางสายวกกลับมาเข้าหาตัวเอง",
 				"effect": {
 					"madness": "1~4"
 				}
@@ -283,7 +314,7 @@
 			{
 				"id": "reedburgh_crime",
 				"name": "alleyway trouble",
-				"desc": "Dimly lit offshoots, sounds of people in trouble, people beating up one another and other city terrors.",
+				"desc": "ตรอกซอกซอยสลัว แหล่งเสียงผู้คนเดือดร้อน ผู้คนรุมทำร้ายกันและความน่าสยดสยองอื่น ๆ ของเมือง",
 				"effect": {
 					"unease": "1~4"
 				}
@@ -291,12 +322,12 @@
 			{
 				"id": "reedburgh_nothing",
 				"name": "wandering",
-				"desc": "No stores to window shop, no trouble on the road, just passing by."
+				"desc": "ไม่มีร้านให้มองเล่น ไม่มีปัญหาเร่ร่อน แค่ผ่านทางไป"
 			},
 			{
 				"id": "reedburgh_con",
 				"name": "street shows",
-				"desc": "As you pass by many street shows you find your bags to be a bit lighter, the suspects lost in crowds.",
+				"desc": "ขณะเดินผ่านการแสดงข้างถนนมากมาย คุณพบว่ากระเป๋าเบาลงเล็กน้อย เหล่าผู้ต้องสงสัยสาบสูญไปในฝูงชน",
 				"effect": {
 					"rage": "2~3"
 				},
@@ -307,7 +338,7 @@
 			{
 				"id": "reedburgh_stalls",
 				"name": "street stalls",
-				"desc": "A wide range of stalls, rugs and other street shops forcing wares onto passers.",
+				"desc": "แผงลอย ผ้าปู และร้านข้างถนนหลากหลาย ที่ยัดเยียดสินค้าให้ผู้สัญจร",
 				"effect": {
 					"weary": "1~3"
 				},
@@ -319,13 +350,16 @@
 					"codices": "80%",
 					"scrolls": "1~2",
 					"gems": "1~2",
-					"bones": { "value": "3~5", "skipLocked": true }
+					"bones": {
+						"value": "3~5",
+						"skipLocked": true
+					}
 				}
 			},
 			{
 				"id": "reedburgh_checkpoint_bad",
 				"name": "thug checkpoint",
-				"desc": "Threats, daggers, and harassment from locals, trying to shake down a few extra coins from passersby. All while bribed guards watch.",
+				"desc": "คำข่มขู่ มีด และการรังควานจากชาวเมือง พยายามรีดเหรียญพิเศษจากผู้สัญจร ท่ามกลางสายตาของยามรับสินบน",
 				"effect": {
 					"rage": 1.5,
 					"unease": 1.5
@@ -337,7 +371,7 @@
 			{
 				"id": "reedburgh_checkpoint",
 				"name": "checkpoint",
-				"desc": "Lots of questions, showing papers and waiting around while guards check over everyone.",
+				"desc": "คำถามมากมาย แสดงเอกสารและรออยู่รอบ ๆ ขณะยามตรวจทุกคน",
 				"effect": {
 					"rage": 1.5
 				}
@@ -345,7 +379,7 @@
 			{
 				"id": "reedburgh_show",
 				"name": "putting on a show",
-				"desc": "Many have never seen your magic before, maybe doing a small performance wouldn't hurt.",
+				"desc": "หลายคนไม่เคยเห็นเวทมนตร์ของคุณมาก่อน บางทีการโชว์เล็ก ๆ น้อย ๆ ก็ไม่เสียหาย",
 				"effect": {
 					"bf": -1.5,
 					"mana": -1
@@ -357,7 +391,7 @@
 			{
 				"id": "reedburgh_scrolls",
 				"name": "scrolls shop",
-				"desc": "Outrageous prices for common paper with an impossible to say no to, sales clerk.",
+				"desc": "ราคามหึมาสำหรับกระดาษธรรมดา กับพนักงานขายที่ปฏิเสธไม่ได้",
 				"effect": {
 					"rage": 0.5
 				},
@@ -371,7 +405,7 @@
 			{
 				"id": "reedburgh_beggars",
 				"name": "street beggars",
-				"desc": "Passing by poorer houses, many people beg you for even a single coin, while others take it with sleight of hand.",
+				"desc": "ขณะเดินผ่านบ้านยากจน หลายคนอ้อนวอนขอแม้แต่เหรียญเดียว ขณะที่คนอื่นขโมยมันไปด้วยมืออันว่องไว",
 				"effect": {
 					"rage": "3~4"
 				},
@@ -382,7 +416,7 @@
 			{
 				"id": "reedburgh_lost",
 				"name": "complex streets",
-				"desc": "Dead ends, everywhere you go. Closed-off streets only compound the issue.",
+				"desc": "ทางตัน ไม่ว่าคุณไปที่ไหน ถนนที่ปิดกั้นยิ่งทำให้ปัญหาแย่ลง",
 				"effect": {
 					"rage": "1~2",
 					"bf": "3~4"
@@ -391,7 +425,7 @@
 			{
 				"id": "reedburgh_gems",
 				"name": "gems shops",
-				"desc": "A jewelers street of colors and reflections charming even the most frugal spender.",
+				"desc": "ถนนร้านอัญมณีแห่งสีสันและแสงสะท้อนที่หลงใหลแม้แต่นักใช้จ่ายขี้เหนียวที่สุด",
 				"effect": {
 					"rage": -1,
 					"bf": -1
@@ -410,28 +444,36 @@
 			{
 				"id": "village_pillage_tavern",
 				"name": "plundering village tavern",
-				"desc": "A merry place of gold and booze.",
+				"desc": "สถานที่ครื้นเครงแห่งทองคำและสุรา",
 				"length": 15,
-				"effect": { "stamina": -0.1 },
-				"result": { "gold": "30~50" }
+				"effect": {
+					"stamina": -0.1
+				},
+				"result": {
+					"gold": "30~50"
+				}
 			},
 			{
 				"id": "village_pillage_house",
 				"name": "ransack house",
-				"desc": "Quickly look through for a purse or loose gold coins.",
+				"desc": "รีบมองหาถุงเหรียญหรือเหรียญทองที่หลุด ๆ",
 				"length": 15,
 				"effect": {
 					"stamina": -0.1,
 					"mana": -0.1
 				},
-				"result": { "gold": "0~15" }
+				"result": {
+					"gold": "0~15"
+				}
 			},
 			{
 				"id": "village_pillage_shop",
 				"name": "loot village shop",
-				"desc": "Take any wealth this small cottage has.",
+				"desc": "ยึดทรัพย์สมบัติทั้งหมดที่กระท่อมเล็ก ๆ นี้มี",
 				"length": 15,
-				"effect": { "stamina": -0.1 },
+				"effect": {
+					"stamina": -0.1
+				},
 				"result": {
 					"gems": "0~6",
 					"gold": "30~75"
@@ -440,24 +482,30 @@
 			{
 				"id": "reedburgh_sewer_breath",
 				"name": "sewer walkway",
-				"desc": "A section of the sewers not engulfed in overflowing water.",
+				"desc": "ช่วงหนึ่งของท่อระบายน้ำที่ยังไม่ถูกน้ำท่วมกลืน",
 				"effect": {
 					"stamina": -0.1,
 					"breath": 1.2
 				},
-				"result": { "hp": "15~30" }
+				"result": {
+					"hp": "15~30"
+				}
 			},
 			{
 				"id": "reedburgh_sewer_stash",
 				"name": "lost coin bag",
-				"desc": "A lost bag, submerged in water, in a section with a harsh current",
-				"effect": { "weary": "1~2" },
-				"result": { "gold": "15~30" }
+				"desc": "กระเป๋าที่หล่นหาย จมอยู่ในน้ำ ในช่วงที่มีกระแสน้ำเชี่ยวกราก",
+				"effect": {
+					"weary": "1~2"
+				},
+				"result": {
+					"gold": "15~30"
+				}
 			},
 			{
 				"id": "reedburgh_sewer_blockage",
 				"name": "sewer blockage",
-				"desc": "Trash, water vines, gates, you name it, it's in the way.",
+				"desc": "ขยะ เถาวัลย์น้ำ ประตู อะไรก็ตามที่เอ่ย มันขวางทาง",
 				"effect": {
 					"rage": "0.75~2.5",
 					"madness": "1~3"
@@ -466,17 +514,19 @@
 			{
 				"id": "reedburgh_sewer_beggar",
 				"name": "sewer beggars",
-				"desc": "Poor beggars cast down into lower sewer sections, begging for coins. Passing through these sections always seems to make a purse lighter.",
+				"desc": "ขอทานยากจนที่ถูกโยนลงสู่ช่วงล่างของท่อระบายน้ำ วอนขอเหรียญ การลอดผ่านช่วงเหล่านี้มักทำให้กระเป๋าเบาลงเสมอ",
 				"effect": {
 					"rage": "0.75~2.5",
 					"breath": 1.5
 				},
-				"result": { "gold": "0~-15" }
+				"result": {
+					"gold": "0~-15"
+				}
 			},
 			{
 				"id": "reedburgh_sewer_misunderstand",
 				"name": "sewer argument",
-				"desc": "City guards question you endlessly while you pass by an open section.",
+				"desc": "ยามเมืองสอบถามคุณไม่รู้จบขณะคุณผ่านช่วงที่โล่ง",
 				"effect": {
 					"rage": "0.75~2.5",
 					"breath": 1.5
@@ -485,7 +535,7 @@
 			{
 				"id": "reedburgh_sewer_crimestash",
 				"name": "hidden drop off",
-				"desc": "Remote corners and dead ends often serve as havens for the exchange of contraband materials.",
+				"desc": "มุมห่างไกลและทางตันมักเป็นที่หลบภัยของการแลกเปลี่ยนของเถื่อน",
 				"effect": {
 					"bf": "0.75~2.5",
 					"stamina": -0.4
@@ -499,30 +549,30 @@
 			{
 				"id": "the_last_rep",
 				"name": "the last rep",
-				"desc": "Just one more then you can go home, right? The receptionist said this was a good gym...",
+				"desc": "แค่อีกหน่อยก็กลับบ้านได้แล้ว ใช่ไหม? พนักงานต้อนรับบอกว่านี่เป็นโรงยิมที่ดี...",
 				"effect": {
 					"weary": "2~5",
 					"stamina": -2,
 					"vigor": -1
 				},
-				"flavor": "It's always the hardest."
+				"flavor": "มันยากที่สุดเสมอ"
 			},
 			{
 				"id": "gym_crowd",
 				"name": "crowded gym",
-				"desc": "Everywhere people shout and grunt. A spot's nowhere to be found.",
+				"desc": "ทุ่งทุกแห่งผู้คนตะโกนและครางหืดหอบ หาที่ว่างสักจุดก็ไม่มี",
 				"effect": {
 					"rage": "1~2",
 					"madness": "0.5~1.5",
 					"stamina": -0.5,
 					"vigor": -0.05
 				},
-				"flavor": "Amidst it all a man in a horse mask slumps."
+				"flavor": "ท่ามกลางทั้งหมดนั้น ชายผู้สวมหน้ากากม้าทรุดลง"
 			},
 			{
 				"id": "lifting_weights",
 				"name": "lifting weights",
-				"desc": "And putting them down again.",
+				"desc": "แล้วก็วางมันลงอีกครั้ง",
 				"tags": "site_of_learning",
 				"effect": {
 					"weary": "1~3",
@@ -536,7 +586,7 @@
 			{
 				"id": "running_laps",
 				"name": "running laps",
-				"desc": "Best to build up your legs with how many places you have to see and how many creditors you have to flee.",
+				"desc": "ดีที่สุดที่ต้องสร้างความแข็งแรงขา ด้วยจำนวนสถานที่ที่ต้องไปและเจ้าหนี้ที่ต้องหนี",
 				"tags": "site_of_learning",
 				"effect": {
 					"weary": "1~3",
@@ -550,7 +600,7 @@
 			{
 				"id": "dropped_the_weight",
 				"name": "dropped the weight",
-				"desc": "You dropped the bar oh gods oh gods o gods don't go into the light",
+				"desc": "เจ้าทำบาร์ตก โอ้พระเจ้า โอ้พระเจ้า อย่าเข้าไปในแสงสว่าง",
 				"effect": {
 					"hp": -1,
 					"stamina": -0.5,
@@ -561,7 +611,7 @@
 			{
 				"id": "hair_pluckers",
 				"name": "hair pluckers",
-				"desc": "People getting their bodies tweezed free of hair would be a lot easier to ignore if not for the screaming.",
+				"desc": "ผู้คนกำลังให้คนถอนขนตามตัวออกด้วยแหน คงทำเป็นไม่สนใจได้ง่ายกว่านี้ถ้าไม่มีเสียงกรีดร้อง",
 				"effect": {
 					"bf": "1~3",
 					"unease": "1~3"
@@ -570,7 +620,7 @@
 			{
 				"id": "dodge_shotputs",
 				"name": "shotput dodge",
-				"desc": "The shotput team's aim is bad enough sober. Their drinking makes it worse.",
+				"desc": "ฝีมือทีมทุ่มน้ำหนักแย่พออยู่แล้วเมื่อไม่เมา พอเมายิ่งแย่ลงไปอีก",
 				"effect": {
 					"stamina": -0.5,
 					"vigor": -0.05,
@@ -582,7 +632,7 @@
 			{
 				"id": "gym_spar",
 				"name": "gymnasium sparring",
-				"desc": "Practice your strikes and grappling.",
+				"desc": "ฝึกฝนการโจมตีและการจับทุ่มของคุณ",
 				"tags": "site_of_learning",
 				"effect": {
 					"stamina": -0.8,
@@ -596,7 +646,7 @@
 			{
 				"id": "gym_supplements",
 				"name": "supplement pusher",
-				"desc": "A suspicious man browbeats you into buying something to drink for workouts.",
+				"desc": "ชายน่าสงสัยข่มขู่ให้คุณซื้อเครื่องดื่มสำหรับการออกกำลังกาย",
 				"effect": {
 					"bf": "1~3"
 				},
@@ -610,7 +660,7 @@
 			{
 				"id": "gym_supplements_bad",
 				"name": "supplement pusher",
-				"desc": "A suspicious man browbeats you into buying something to drink for workouts.",
+				"desc": "ชายน่าสงสัยข่มขู่ให้คุณซื้อเครื่องดื่มสำหรับการออกกำลังกาย",
 				"effect": {
 					"bf": "1~3"
 				},
@@ -625,7 +675,7 @@
 				"id": "reedburgh_market",
 				"name": "reedburgh Markets",
 				"tags": "site_of_learning",
-				"desc": "Navigate the intricate web of streets that is Vesparia's capital, with bustling stalls, and vibrant shops. Travelers, burdened by debt, find themselves compelled to lend a hand in the noble task of sewer cleanup.",
+				"desc": "นำทางผ่านใยถนนอันซับซ้อนที่เป็นเมืองหลวงของเวสปาเรีย เต็มไปด้วยแผงลอยจอแจและร้านค้าสดใส เหล่านักเดินทางที่แบกหนี้สินพบว่าตนเองถูกบีบบังคับให้ช่วยเหลือภารกิจอันสูงส่งในการทำความสะอาดท่อระบายน้ำ",
 				"level": 4,
 				"dist": 65,
 				"require": "g.reedburgh_city_papers>0",
@@ -640,8 +690,14 @@
 					"gembag.max": "?1"
 				},
 				"encs": [
-					["daylight_mugging", "daylight_mugging"],
-					["gang_mugging", "gang_mugging"],
+					[
+						"daylight_mugging",
+						"daylight_mugging"
+					],
+					[
+						"gang_mugging",
+						"gang_mugging"
+					],
 					"daylight_mugging",
 					"gang_mugging",
 					{
@@ -670,7 +726,7 @@
 			{
 				"id": "reedburgh_gymnasium",
 				"name": "reedburgh Gymnasium",
-				"desc": "Finally, someplace pleasant in this wretched city.",
+				"desc": "ในที่สุด ก็มีที่ที่น่ารื่นรมย์ในเมืองที่ชวนทุกข์ทรมานนี้",
 				"tags": "site_of_learning",
 				"level": 5,
 				"dist": 69,
@@ -690,10 +746,15 @@
 					"hp.max": "2//10/-1"
 				},
 				"boss": {
-					"40": ["unleashed_beast"]
+					"40": [
+						"unleashed_beast"
+					]
 				},
 				"encs": [
-					["roid_rage", "roid_rage"],
+					[
+						"roid_rage",
+						"roid_rage"
+					],
 					"roid_rage",
 					"the_last_rep",
 					"gym_crowd",
@@ -710,7 +771,7 @@
 			{
 				"id": "reedburgh_second_ring",
 				"name": "infiltrate reedburgh second ring",
-				"desc": "By utilizing waterways, one can discover hidden passages into the second city ring of Reedburgh.",
+				"desc": "ด้วยการใช้เส้นทางสายน้ำ เราสามารถค้นพบทางลับสู่เมืองวงแหวนที่สองของรีดเบิร์ก",
 				"level": 4,
 				"dist": 65,
 				"require": "g.evil1>0&&g.citynavigation>=6&&g.reedburgh_city_sewer>=1",
@@ -720,10 +781,17 @@
 					"shadow": 0.1
 				},
 				"boss": {
-					"31": ["reedburgh_captain", "reedburgh_guard", "reedburgh_guard"]
+					"31": [
+						"reedburgh_captain",
+						"reedburgh_guard",
+						"reedburgh_guard"
+					]
 				},
 				"encs": [
-					["reedburgh_guard", "reedburgh_guard"],
+					[
+						"reedburgh_guard",
+						"reedburgh_guard"
+					],
 					"reedburgh_guard",
 					"reedburgh_guardpost",
 					"reedburgh_training",
@@ -739,7 +807,7 @@
 				"name": "mugger",
 				"level": 10,
 				"kind": "convict",
-				"desc": "Someone that is excellent at stabbing and robbing.",
+				"desc": "ผู้ที่เก่งกาจเรื่องการแทงและการปล้น",
 				"hp": 30,
 				"defense": 5,
 				"noproc": true,
@@ -763,7 +831,7 @@
 				"name": "gang thug",
 				"level": 10,
 				"kind": "convict",
-				"desc": "A goon of the local gang, looking to steal your gems.",
+				"desc": "ลูกน้องของแก๊งท้องถิ่น ที่หมายจะขโมยอัญมณีของคุณ",
 				"hp": 35,
 				"defense": 5,
 				"noproc": true,
@@ -785,7 +853,7 @@
 			{
 				"id": "village_farmer",
 				"name": "village farmer",
-				"desc": "A poor farmer.",
+				"desc": "ชาวนาผู้ยากจน",
 				"kind": "victim",
 				"level": 4,
 				"hp": 5,
@@ -802,8 +870,15 @@
 					}
 				],
 				"loot": {
-					"cotton": { "%": "30%", "value": "2~4" },
-					"bodies": { "%": "80%", "value": 1, "skipLocked": true }
+					"cotton": {
+						"%": "30%",
+						"value": "2~4"
+					},
+					"bodies": {
+						"%": "80%",
+						"value": 1,
+						"skipLocked": true
+					}
 				}
 			},
 			{
@@ -819,14 +894,21 @@
 					"damage": "1~2.5"
 				},
 				"loot": {
-					"leather": { "%": "30%", "value": "2~4" },
-					"bodies": { "%": "70%", "value": 1, "skipLocked": true }
+					"leather": {
+						"%": "30%",
+						"value": "2~4"
+					},
+					"bodies": {
+						"%": "70%",
+						"value": 1,
+						"skipLocked": true
+					}
 				}
 			},
 			{
 				"id": "village_militia",
 				"name": "village militia",
-				"desc": "A poor farmer forced to take up arms to protect their home.",
+				"desc": "ชาวนาผู้ยากจนที่ถูกบีบบังคับให้จับอาวุธเพื่อปกป้องบ้านของตน",
 				"kind": "victim",
 				"level": 10,
 				"hp": 10,
@@ -838,8 +920,15 @@
 				},
 				"loot": {
 					"gold": "2~3",
-					"iron": { "%": "30%", "value": "2~4" },
-					"bodies": { "%": "60%", "value": 1, "skipLocked": true }
+					"iron": {
+						"%": "30%",
+						"value": "2~4"
+					},
+					"bodies": {
+						"%": "60%",
+						"value": 1,
+						"skipLocked": true
+					}
 				}
 			},
 			{
@@ -848,7 +937,7 @@
 				"noproc": true,
 				"level": 12,
 				"kind": "victim",
-				"desc": "A retired adventurer, clad in old armor and armed with a longsword.",
+				"desc": "นักผจญภัยที่เกษียณแล้ว สวมเกราะเก่าและถือดาบยาว",
 				"hp": 50,
 				"defense": 5,
 				"tohit": 12,
@@ -881,7 +970,7 @@
 				"name": "village stallion",
 				"level": 8,
 				"kind": "monster",
-				"desc": "A well-fed horse.",
+				"desc": "ม้าที่อ้วนพี",
 				"hp": 75,
 				"defense": 0,
 				"noproc": true,
@@ -908,7 +997,7 @@
 			{
 				"id": "reedburgh_smuggler",
 				"name": "reedburgh smuggler",
-				"desc": "Typically smuggling in herbs and gems.",
+				"desc": "โดยปกติลักลอบนำสมุนไพรและอัญมณีเข้าเมือง",
 				"kind": "convict",
 				"level": 23,
 				"hp": 18,
@@ -920,16 +1009,28 @@
 					"damage": "6~10"
 				},
 				"loot": {
-					"bloodgem": { "%": "10%", "value": "1~3" },
-					"gems": { "%": "25%", "value": "2~5" },
-					"gold": { "%": "30%", "value": "15~30" },
-					"herbs": { "%": "25%", "value": "4~7" }
+					"bloodgem": {
+						"%": "10%",
+						"value": "1~3"
+					},
+					"gems": {
+						"%": "25%",
+						"value": "2~5"
+					},
+					"gold": {
+						"%": "30%",
+						"value": "15~30"
+					},
+					"herbs": {
+						"%": "25%",
+						"value": "4~7"
+					}
 				}
 			},
 			{
 				"id": "reedburgh_quest_monster",
 				"name": "reedburgh sewer fungus",
-				"desc": "Watery creatures from the sewers. Local guilds can clear some of your debts for their eradication",
+				"desc": "สิ่งมีชีวิตแห่งน้ำจากท่อระบายน้ำ สมาคมท้องถิ่นสามารถหักหนี้ของคุณบางส่วนสำหรับการกำจัดพวกมัน",
 				"kind": "monster",
 				"level": 22,
 				"hp": 20,
@@ -957,7 +1058,7 @@
 			{
 				"id": "reedburgh_water_vines",
 				"name": "reedburgh water tangle",
-				"desc": "A mass of thin weeds and vines grappling in its victims, known to clog up water ways.",
+				"desc": "ก้อนวัชพืชเส้นบางและเถาวัลย์ที่รัดรึงเหยื่อ ขึ้นชื่อว่าอุดตันเส้นทางน้ำ",
 				"kind": "monster",
 				"level": 24,
 				"hp": 25,
@@ -987,7 +1088,7 @@
 			{
 				"id": "reedburgh_water_massvines",
 				"name": "reedburgh water thicket",
-				"desc": "A overgrown mass of vines and water tangle.",
+				"desc": "ก้อนเถาวัลย์ที่รกครึ้มและสายน้ำพันกันยุ่ง",
 				"kind": "monster",
 				"unique": true,
 				"level": 28,
@@ -1025,7 +1126,7 @@
 				"name": "reedburgh decorated captain",
 				"level": 28,
 				"kind": "victim",
-				"desc": "An aged captain, now solely dedicated to overseeing training, still donning the weighty armor of the past.",
+				"desc": "นายทหารชราผู้อุทิศตนเพียงการกำกับดูแลการฝึก ยังคงสวมเกราะอันหนักอึ้งแห่งอดีต",
 				"tohit": 15,
 				"noproc": true,
 				"hp": 100,
@@ -1086,7 +1187,7 @@
 				"name": "reedburgh guard",
 				"level": 14,
 				"kind": "victim",
-				"desc": "A well-trained civil servant entrusted with maintaining peace and handling minor crimes.",
+				"desc": "ข้าราชการที่ผ่านการฝึกฝนมาอย่างดี รับมอบหมายให้รักษาความสงบและจัดการอาชญากรรมเล็กน้อย",
 				"tohit": 12,
 				"noproc": true,
 				"hp": 50,
@@ -1129,7 +1230,7 @@
 				"level": 14,
 				"kind": "victim",
 				"noproc": true,
-				"desc": "A well-trained civil servant entrusted with maintaining peace and handling minor crimes.",
+				"desc": "ข้าราชการที่ผ่านการฝึกฝนมาอย่างดี รับมอบหมายให้รักษาความสงบและจัดการอาชญากรรมเล็กน้อย",
 				"hp": 50,
 				"dodge": 5,
 				"defense": 4,
@@ -1169,7 +1270,7 @@
 				"name": "enraged strongman",
 				"level": 10,
 				"kind": "humanoid",
-				"desc": "You took his spot!",
+				"desc": "เจ้าแย่งที่ของเขาไปแล้ว!",
 				"hp": 30,
 				"defense": 12,
 				"spells": "mon_blunt_heavy",
@@ -1184,7 +1285,7 @@
 				"name": "unleashed beast",
 				"level": 18,
 				"kind": "beast",
-				"desc": "Someone's sparring opponent broke free!",
+				"desc": "คู่ซ้อมของใครบางคนหลุดเป็นอิสระ!",
 				"hp": 40,
 				"defense": 19,
 				"spells": "terrifyingvisage",
@@ -1200,14 +1301,14 @@
 						"damage": "10~20"
 					}
 				],
-				"flavor": "The tiger/He destroyed his cage/Yes/YES/The tiger is out"
+				"flavor": "เสือ/มันทำลายกรงของมัน/ใช่/ใช่เลย/เสือออกมาแล้ว"
 			}
 		],
 		"dungeons": [
 			{
 				"id": "pillage_village",
 				"name": "pillage village",
-				"desc": "Go out and steal, plunder and otherwise ruin a once peaceful village.",
+				"desc": "ออกไปขโมย ปล้นสะดม และทำให้หมู่บ้านที่เคยสงบสุขพินาศ",
 				"difficulty": "🦴",
 				"sortOrder": 6,
 				"require": "g.evil1>0",
@@ -1220,12 +1321,24 @@
 					"gold": "50~150",
 					"gems": "3~5"
 				},
-				"mod": { "pillage_village.dist": "200|40|10" },
+				"mod": {
+					"pillage_village.dist": "200|40|10"
+				},
 				"length": 50,
 				"encs": [
-					["village_militia", "village_hunter", "village_farmer"],
-					["village_militia", "village_militia"],
-					["village_farmer", "village_hunter"],
+					[
+						"village_militia",
+						"village_hunter",
+						"village_farmer"
+					],
+					[
+						"village_militia",
+						"village_militia"
+					],
+					[
+						"village_farmer",
+						"village_hunter"
+					],
 					"village_militia",
 					"village_militia",
 					"village_hunter",
@@ -1243,8 +1356,8 @@
 			{
 				"id": "reedburgh_city_sewer",
 				"name": "reedburgh city first ring sewer",
-				"desc": "Travel the underground waterways looking for lost treasure, hidden stashes or to clean up some troubling monsters.",
-				"extdesc": "You'll need to hold your breath while inside this dungeon.",
+				"desc": "ท่องเส้นทางน้ำใต้ดินเพื่อหาขุมทรัพย์ที่สูญหาย ที่ซ่อนเร้น หรือกวาดล้างมอนสเตอร์ที่น่ากังวล",
+				"extdesc": "คุณต้องกลั้นหายใจตลอดเวลาที่อยู่ในดันเจี้ยนนี้",
 				"difficulty": "💀",
 				"sortOrder": 25,
 				"tags": "t_underwater",
@@ -1255,7 +1368,9 @@
 					"stamina": 0.2,
 					"mana": 0.12
 				},
-				"effect": { "breath": -1.15 },
+				"effect": {
+					"breath": -1.15
+				},
 				"result": {
 					"gold": "50~100",
 					"gems": "5~10",
@@ -1263,10 +1378,22 @@
 					"debt": "-50~-100"
 				},
 				"length": 25,
-				"boss": { "25": ["reedburgh_water_massvines", "slime", "slime"] },
+				"boss": {
+					"25": [
+						"reedburgh_water_massvines",
+						"slime",
+						"slime"
+					]
+				},
 				"encs": [
-					["slime", "slime"],
-					["slime", "slime"],
+					[
+						"slime",
+						"slime"
+					],
+					[
+						"slime",
+						"slime"
+					],
 					"reedburgh_smuggler",
 					"reedburgh_quest_monster",
 					"reedburgh_water_vines",
