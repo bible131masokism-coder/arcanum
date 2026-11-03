@@ -110,12 +110,16 @@
 			{
 				"id": "eq_res_storage",
 				"name": "Material Chest",
-				"desc": "A big crate for magical bits and pieces you scavenge during your adventures.",
-				"flavor": "*Slaps roof of the crate* This could even fit an arm and a leg of mythical creature",
+				"desc": "ลังใหญ่สำหรับเก็บข้าวของเวทมนตร์ที่คุณเก็บกวาดระหว่างผจญภัย",
+				"flavor": "*ตบหลังคาลัง* อันนี้ใส่แขนและขาของสัตว์ในตำนานได้ด้วย",
 				"require": "g.runelore>=4",
 				"repeat": true,
-				"cost": { "gold": 400 },
-				"sell": { "gold": 400 },
+				"cost": {
+					"gold": 400
+				},
+				"sell": {
+					"gold": 400
+				},
 				"mod": {
 					"t_eq_resource.max": "20%",
 					"space": 5
