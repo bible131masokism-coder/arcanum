@@ -6,7 +6,7 @@
 			{
 				"id": "bladelore",
 				"name": "swordplay",
-				"desc": "Incorporate swordplay into your magic, and vice versa.",
+				"desc": "ผสมผสานวิชาดาบเข้ากับเวทมนตร์ของคุณ และในทางกลับกัน",
 				"require": "g.t_swordclass>0",
 				"need": "armssource",
 				"level": 5,
@@ -27,7 +27,7 @@
 				"id": "bladeweaver_upgrade",
 				"name": "sword weaving",
 				"require": "g.bladelore>=5&&g.bladeweaver>0",
-				"desc": "Weave slashes in combat like threads into fabric.",
+				"desc": "ทอการฟันในศึกดั่งเส้นด้ายเข้าสู่ผืนผ้า",
 				"max": 1,
 				"cost": {
 					"codices": 15,
@@ -38,14 +38,14 @@
 					"weaving.max": 2,
 					"weaving.mod.sworddmg": 0.5
 				},
-				"flavor": "The local weavers tell stories of war when spinning yarn.",
+				"flavor": "เหล่าช่างทอท้องถิ่นเล่าเรื่องสงครามขณะปั่นด้าย",
 				"group": "martial"
 			},
 			{
 				"id": "defensive_dance",
 				"name": "defensive dance",
 				"require": "g.bladelore>=7&&g.arcanedervish>0",
-				"desc": "Use your combat prowess to resist physical blows.",
+				"desc": "ใช้ความเก่งกาจในการต่อสู้ต้านทานการโจมตีกายภาพ",
 				"max": 1,
 				"cost": {
 					"tomes": 15,
@@ -56,14 +56,14 @@
 					"player.resist.pierce": 5,
 					"player.resist.slash": 5
 				},
-				"flavor": "A glancing blow is better than a solid hit.",
+				"flavor": "การฟันเฉียดดีกว่าการโดนเต็ม ๆ",
 				"group": "martial"
 			},
 			{
 				"id": "divine_wind",
 				"name": "divine wind",
 				"require": "g.bladelore>=9&&g.eldritchknight>0",
-				"desc": "Learn to negate entanglement with your speed",
+				"desc": "เรียนรู้การลบล้างการพันกักด้วยความเร็วของคุณ",
 				"max": 1,
 				"cost": {
 					"tomes": 15,
@@ -72,7 +72,7 @@
 				"mod": {
 					"player.negate.entangle": 15
 				},
-				"flavor": "Cut through anything tying you up.",
+				"flavor": "ตัดทุกสิ่งที่มัดรั้งคุณให้ขาด",
 				"group": "martial"
 			}
 		],
@@ -81,7 +81,7 @@
 				"id": "sword_basics",
 				"name": "training dummy practice",
 				"require": "g.bladelore>=1&&g.training_dummy>0",
-				"desc": "Refine your sword use against an immobile enemy. Costs more and takes longer with each session.",
+				"desc": "ฝึกฝนการใช้ดาบของคุณกับศัตรูที่หยุดนิ่ง แพงขึ้นและใช้เวลานานขึ้นในแต่ละครั้ง",
 				"max": 5,
 				"length": 15,
 				"cost": {
@@ -100,7 +100,7 @@
 					"sworddmg": 1,
 					"sword_basics.length": 5
 				},
-				"flavor": "Your sparring partner doesn't move much, do they?",
+				"flavor": "คู่ซ้อมของคุณไม่ค่อยขยับ ใช่ไหมล่ะ?",
 				"group": "martial"
 			},
 			{
@@ -108,7 +108,7 @@
 				"name": "swordplay lessons",
 				"require": "g.bladelore>=5",
 				"need": "armssource",
-				"desc": "Take additional lessons in striking with a sword. Costs more and takes longer with each session.",
+				"desc": "เรียนบทเรียนเพิ่มเติมในการฟันด้วยดาบ แพงขึ้นและใช้เวลานานขึ้นในแต่ละครั้ง",
 				"max": 2,
 				"length": 30,
 				"cost": {
@@ -128,14 +128,14 @@
 					"sword_lessons.length": 5,
 					"blade_endure.max": 0.2
 				},
-				"flavor": "Learning the way of the blade takes time and dedication.",
+				"flavor": "การเรียนรู้วิถีแห่งดาบต้องใช้เวลาและความทุ่มเท",
 				"group": "martial"
 			},
 			{
 				"id": "blade_spellbook",
 				"name": "spellbook of Striking",
 				"require": "g.bladelore>=5&&(g.spellblade+g.bladeweaver+g.arcanedervish+g.eldritchknight)>0",
-				"desc": "Compile methods of using a blade to cast and enhance spells.",
+				"desc": "รวบรวมวิธีใช้ดาบในการร่ายและเสริมคาถา",
 				"max": 0,
 				"length": 30,
 				"cost": {
@@ -152,7 +152,7 @@
 					"sworddmg": 2,
 					"spelldmg": 3.75
 				},
-				"flavor": "Your sword and spells become unified, and grow stronger together.",
+				"flavor": "ดาบและคาถาของคุณเป็นหนึ่งเดียวกัน และแข็งแกร่งขึ้นด้วยกัน",
 				"group": "martial"
 			},
 			{
@@ -160,7 +160,7 @@
 				"name": "strenuous training",
 				"require": "g.sword_lessons>=5",
 				"need": "armssource",
-				"desc": "Enhance your endurance through extensive training.",
+				"desc": "ยกระดับความอดทนผ่านการฝึกฝนอย่างเข้มข้น",
 				"max": 2,
 				"length": 300,
 				"cost": {
@@ -180,7 +180,7 @@
 					"vigor.max": "5%",
 					"vigor.rate": "2%"
 				},
-				"flavor": "Exhausting work has led to great results.",
+				"flavor": "การทำงานที่เหนื่อยล้าทำให้เกิดผลลัพธ์อันยิ่งใหญ่",
 				"group": "body"
 			}
 		],
@@ -189,7 +189,7 @@
 				"id": "spellblade",
 				"name": "spell blade",
 				"tags": "t_tier3,t_swordclass",
-				"desc": "A combat specialist, melding sorcery with traditional martial techniques.",
+				"desc": "ผู้เชี่ยวชาญการต่อสู้ ผู้หลอมเวทมนตร์เข้ากับเทคนิคการต่อสู้ดั้งเดิม",
 				"require": "g.t3unlocker>0&&g.enchanting>=7&&g.weaponlore>=8&&g.tier3==0",
 				"mod": {
 					"sworddmg": 3,
@@ -208,7 +208,7 @@
 			{
 				"id": "bladeweaver",
 				"tags": "t_tier4,t_swordclass",
-				"desc": "You have taken your training further, weaving magic and steel with a flourish of magical grace.",
+				"desc": "คุณได้ยกระดับการฝึกฝนของคุณ ทอเวทมนตร์และเหล็กกล้าด้วยความสง่างามแห่งเวท",
 				"require": "g.t4unlocker>0&&(g.bladelore+g.weaponlore)>=10&&g.tier4==0&&g.weaving>=5",
 				"cost": {
 					"airgem": 10,
@@ -234,7 +234,7 @@
 				"id": "arcanedervish",
 				"name": "arcane dervish",
 				"tags": "t_tier5,t_swordclass",
-				"desc": "Your skills with blade and magic blend together in a blur, each stroke seeming like a step in a dance.",
+				"desc": "ทักษะดาบและเวทมนตร์ของคุณหลอมรวมเป็นภาพเบลอ แต่ละจังหวะดูเหมือนก้าวหนึ่งในการเต้นรำ",
 				"require": "g.t5unlocker>0&&g.bladelore>=7&&g.tier5==0",
 				"cost": {
 					"airgem": 20,
@@ -261,7 +261,7 @@
 				"id": "eldritchknight",
 				"name": "eldritch knight",
 				"tags": "t_tier6,t_swordclass",
-				"desc": "You have reached the pinnacle of blending steel and sorcery, and your sword strokes seem to cleave the air itself.",
+				"desc": "คุณไปถึงจุดสูงสุดของการหลอมเหล็กกล้าและเวทมนตร์ และจังหวะดาบของคุณดูเหมือนผ่าอากาศเอง",
 				"require": "g.t6unlocker>0&&g.t_swordclass>0&&(g.bladelore+g.weaponlore)>=12&&g.tier6==0",
 				"cost": {
 					"airgem": 40,
@@ -281,7 +281,7 @@
 					"arcanebody2.max": 1,
 					"vivification.max": 2
 				},
-				"flavor": "Mithril parts with but a gesture. Flesh and bone, barely even a thought.",
+				"flavor": "มิธริลแยกออกด้วยเพียงการสางมือ เนื้อและกระดูกแทบไม่ต้องคิด",
 				"sortOrder": 357
 			}
 		],
@@ -296,15 +296,23 @@
 			{
 				"id": "mk_blade",
 				"name": "summon blade",
-				"desc": "In combat, summon a magical blade to fight for you.",
+				"desc": "ในศึก เรียกดาบเวทมนตร์มาสู้เพื่อคุณ",
 				"sortOrder": 1762,
 				"level": 7,
 				"school": "summoning",
 				"keywords": {
-					"type": ["summon"],
-					"target": ["ally"],
-					"targets": ["single"],
-					"delivery": ["instant"]
+					"type": [
+						"summon"
+					],
+					"target": [
+						"ally"
+					],
+					"targets": [
+						"single"
+					],
+					"delivery": [
+						"instant"
+					]
 				},
 				"require": "(g.bladelore>=7&&g.summoning>=5)||g.t_summonclass>=2",
 				"buy": {
@@ -336,10 +344,18 @@
 				"level": 5,
 				"school": "martial",
 				"keywords": {
-					"type": ["buff"],
-					"target": ["ally"],
-					"targets": ["multiple"],
-					"delivery": ["over time"]
+					"type": [
+						"buff"
+					],
+					"target": [
+						"ally"
+					],
+					"targets": [
+						"multiple"
+					],
+					"delivery": [
+						"over time"
+					]
 				},
 				"require": "g.enchanting>=6&&g.summoning>=5&&g.mk_blade.owned",
 				"buy": {
@@ -371,26 +387,44 @@
 			{
 				"id": "tide_blows",
 				"name": "tidal blows",
-				"desc": "Cut down a group of foes with the power of the ocean.",
+				"desc": "โค่นศัตรูทั้งกลุ่มด้วยพลังแห่งมหาสมุทร",
 				"sortOrder": 323,
 				"level": 7,
 				"school": "martial",
-				"tags": ["t_nospellcraft", "t_blade"],
+				"tags": [
+					"t_nospellcraft",
+					"t_blade"
+				],
 				"keywords": {
-					"type": ["damage", "debuff"],
-					"target": ["enemy"],
-					"targets": ["multiple"],
-					"delivery": ["instant", "over time"],
-					"special": ["weapon"]
+					"type": [
+						"damage",
+						"debuff"
+					],
+					"target": [
+						"enemy"
+					],
+					"targets": [
+						"multiple"
+					],
+					"delivery": [
+						"instant",
+						"over time"
+					],
+					"special": [
+						"weapon"
+					]
 				},
 				"require": "g.bladelore>=10&&g.waterlore>=8",
 				"buy": {
 					"tomes": 5,
 					"watergem": 10
 				},
-				"caststoppers": [1, 4],
+				"caststoppers": [
+					1,
+					4
+				],
 				"need": "g.player.getWeapon().hasTag('t_sword')",
-				"needtext": "Currently equipped weapon must be a sword",
+				"needtext": "อาวุธที่สวมอยู่ต้องเป็นดาบ",
 				"cost": {
 					"water": 7,
 					"vigor": 7
@@ -406,7 +440,11 @@
 					"kind": "water",
 					"tohit": 2,
 					"damage": "(a.getWeaponDamage()||0)*0.8",
-					"potencies": ["physdmg", "sworddmg", "waterdmg"],
+					"potencies": [
+						"physdmg",
+						"sworddmg",
+						"waterdmg"
+					],
 					"dot": {
 						"name": "riptide",
 						"kind": "water",
@@ -415,33 +453,52 @@
 						"mod": {
 							"self.speed": -3
 						},
-						"potencies": ["spelldmg", "waterdmg"]
+						"potencies": [
+							"spelldmg",
+							"waterdmg"
+						]
 					}
 				}
 			},
 			{
 				"id": "mana_slash",
 				"name": "arcane slash",
-				"desc": "Imbue your blade with mana to enhance your power.",
+				"desc": "อัดมานาลงในดาบของคุณเพื่อเสริมพลัง",
 				"sortOrder": 322,
 				"level": 4,
 				"school": "martial",
-				"tags": ["t_nospellcraft", "t_blade"],
+				"tags": [
+					"t_nospellcraft",
+					"t_blade"
+				],
 				"keywords": {
-					"type": ["damage"],
-					"target": ["enemy"],
-					"targets": ["single"],
-					"delivery": ["instant"],
-					"special": ["weapon"]
+					"type": [
+						"damage"
+					],
+					"target": [
+						"enemy"
+					],
+					"targets": [
+						"single"
+					],
+					"delivery": [
+						"instant"
+					],
+					"special": [
+						"weapon"
+					]
 				},
 				"require": "g.bladelore>=3&&g.lore>=8",
 				"buy": {
 					"codices": 5,
 					"managem": 7
 				},
-				"caststoppers": [1, 4],
+				"caststoppers": [
+					1,
+					4
+				],
 				"need": "g.player.getWeapon().hasTag('t_sword')",
-				"needtext": "Currently equipped weapon must be a sword",
+				"needtext": "อาวุธที่สวมอยู่ต้องเป็นดาบ",
 				"cost": {
 					"mana": 4,
 					"vigor": 3
@@ -455,23 +512,43 @@
 					"kind": "mana",
 					"tohit": 3,
 					"damage": "(a.getWeaponDamage()||0)*1.4",
-					"potencies": ["physdmg", "sworddmg", "manadmg"]
+					"potencies": [
+						"physdmg",
+						"sworddmg",
+						"manadmg"
+					]
 				}
 			},
 			{
 				"id": "whirl_slices",
 				"name": "whirlwind slices",
-				"desc": "Cleave the air to harm multiple foes.",
+				"desc": "ผ่าอากาศเพื่อทำความเสียหายแก่ศัตรูหลายตัว",
 				"sortOrder": 324,
 				"level": 6,
 				"school": "martial",
-				"tags": ["t_nospellcraft", "t_blade"],
+				"tags": [
+					"t_nospellcraft",
+					"t_blade"
+				],
 				"keywords": {
-					"type": ["damage", "buff"],
-					"target": ["self", "enemy"],
-					"targets": ["multiple"],
-					"delivery": ["instant", "over time"],
-					"special": ["weapon"]
+					"type": [
+						"damage",
+						"buff"
+					],
+					"target": [
+						"self",
+						"enemy"
+					],
+					"targets": [
+						"multiple"
+					],
+					"delivery": [
+						"instant",
+						"over time"
+					],
+					"special": [
+						"weapon"
+					]
 				},
 				"require": "g.bladelore>=8&&g.airlore>=8",
 				"cd": 2,
@@ -479,9 +556,12 @@
 					"tomes": 5,
 					"airgem": 10
 				},
-				"caststoppers": [1, 4],
+				"caststoppers": [
+					1,
+					4
+				],
 				"need": "g.player.getWeapon().hasTag('t_sword')",
-				"needtext": "Currently equipped weapon must be a sword",
+				"needtext": "อาวุธที่สวมอยู่ต้องเป็นดาบ",
 				"cost": {
 					"air": 6,
 					"vigor": 6
@@ -504,33 +584,55 @@
 					"kind": "air",
 					"tohit": 3,
 					"damage": "(a.getWeaponDamage()||0)*1.0",
-					"potencies": ["sworddmg", "spelldmg", "airdmg"]
+					"potencies": [
+						"sworddmg",
+						"spelldmg",
+						"airdmg"
+					]
 				},
-				"flavor": "Spinning is a good trick"
+				"flavor": "การหมุนเป็นกลอุบายที่ดี"
 			},
 			{
 				"id": "spirit_strike",
 				"name": "spirit strike",
-				"desc": "Lock on to your foes and attack them precisely.",
+				"desc": "ล็อกเป้าไปที่ศัตรูและโจมตีอย่างแม่นยำ",
 				"sortOrder": 327,
 				"level": 2,
 				"school": "martial",
-				"tags": ["t_nospellcraft", "t_blade"],
+				"tags": [
+					"t_nospellcraft",
+					"t_blade"
+				],
 				"keywords": {
-					"type": ["damage", "buff"],
-					"target": ["self", "enemy"],
-					"targets": ["single"],
-					"delivery": ["instant", "over time"],
-					"special": ["weapon"]
+					"type": [
+						"damage",
+						"buff"
+					],
+					"target": [
+						"self",
+						"enemy"
+					],
+					"targets": [
+						"single"
+					],
+					"delivery": [
+						"instant",
+						"over time"
+					],
+					"special": [
+						"weapon"
+					]
 				},
 				"require": "g.bladelore>=2&&g.scrying>=5&&g.spiritlore>=6",
 				"buy": {
 					"codices": 5,
 					"spiritgem": 7
 				},
-				"caststoppers": [1],
+				"caststoppers": [
+					1
+				],
 				"need": "g.player.getWeapon().hasTag('t_sword')",
-				"needtext": "Currently equipped weapon must be a sword",
+				"needtext": "อาวุธที่สวมอยู่ต้องเป็นดาบ",
 				"cost": {
 					"spirit": 3,
 					"vigor": 1
@@ -551,32 +653,54 @@
 					"kind": "spirit",
 					"tohit": 5,
 					"damage": "3+(a.getWeaponDamage()||0)*0.6",
-					"potencies": ["physdmg", "sworddmg", "spiritdmg"]
+					"potencies": [
+						"physdmg",
+						"sworddmg",
+						"spiritdmg"
+					]
 				}
 			},
 			{
 				"id": "blind_sword",
 				"name": "blinding blade",
-				"desc": "Reflect the sun off your blade to blind your foes.",
+				"desc": "สะท้อนแสงอาทิตย์จากดาบของคุณเพื่อทำให้ศัตรูบอด",
 				"sortOrder": 328,
 				"level": 5,
 				"school": "martial",
-				"tags": ["t_nospellcraft", "t_blade"],
+				"tags": [
+					"t_nospellcraft",
+					"t_blade"
+				],
 				"keywords": {
-					"type": ["damage", "debuff"],
-					"target": ["enemy"],
-					"targets": ["single"],
-					"delivery": ["instant", "over time"],
-					"special": ["weapon"]
+					"type": [
+						"damage",
+						"debuff"
+					],
+					"target": [
+						"enemy"
+					],
+					"targets": [
+						"single"
+					],
+					"delivery": [
+						"instant",
+						"over time"
+					],
+					"special": [
+						"weapon"
+					]
 				},
 				"require": "g.bladelore>=7&&g.lightlore>=8",
 				"buy": {
 					"tomes": 5,
 					"lightgem": 10
 				},
-				"caststoppers": [1, 4],
+				"caststoppers": [
+					1,
+					4
+				],
 				"need": "g.player.getWeapon().hasTag('t_sword')",
-				"needtext": "Currently equipped weapon must be a sword",
+				"needtext": "อาวุธที่สวมอยู่ต้องเป็นดาบ",
 				"cost": {
 					"light": 6,
 					"vigor": 4
@@ -590,7 +714,11 @@
 					"kind": "light",
 					"tohit": 2,
 					"damage": "(a.getWeaponDamage()||0)*1.2",
-					"potencies": ["spelldmg", "sworddmg", "lightdmg"],
+					"potencies": [
+						"spelldmg",
+						"sworddmg",
+						"lightdmg"
+					],
 					"dot": {
 						"name": "blind",
 						"tags": "t_tohitdown",
@@ -605,25 +733,39 @@
 			{
 				"id": "poison_blade",
 				"name": "poisoned blade",
-				"desc": "Leave your enemies something to remember your sword by.",
+				"desc": "ทิ้งบางสิ่งให้ศัตรูจดจำดาบของคุณไว้",
 				"sortOrder": 326,
 				"level": 8,
 				"school": "martial",
-				"tags": ["t_nospellcraft", "t_blade"],
+				"tags": [
+					"t_nospellcraft",
+					"t_blade"
+				],
 				"keywords": {
-					"type": ["damage"],
-					"target": ["enemy"],
-					"targets": ["single"],
-					"delivery": ["instant", "over time"]
+					"type": [
+						"damage"
+					],
+					"target": [
+						"enemy"
+					],
+					"targets": [
+						"single"
+					],
+					"delivery": [
+						"instant",
+						"over time"
+					]
 				},
 				"require": "g.bladelore>=9&&g.naturelore>=8",
 				"buy": {
 					"tomes": 5,
 					"naturegem": 10
 				},
-				"caststoppers": [1],
+				"caststoppers": [
+					1
+				],
 				"need": "g.player.getWeapon().hasTag('t_sword')",
-				"needtext": "Currently equipped weapon must be a sword",
+				"needtext": "อาวุธที่สวมอยู่ต้องเป็นดาบ",
 				"cost": {
 					"nature": 6,
 					"vigor": 5
@@ -637,38 +779,60 @@
 					"kind": "nature",
 					"tohit": 1,
 					"damage": "(a.getWeaponDamage()||0)*0.5",
-					"potencies": ["physdmg", "sworddmg", "naturedmg"],
+					"potencies": [
+						"physdmg",
+						"sworddmg",
+						"naturedmg"
+					],
 					"dot": {
 						"name": "poisoned wound",
 						"kind": "nature",
 						"duration": 20,
 						"damage": "4~6",
-						"potencies": ["sworddmg", "naturedmg"]
+						"potencies": [
+							"sworddmg",
+							"naturedmg"
+						]
 					}
 				}
 			},
 			{
 				"id": "drain_slash",
 				"name": "draining slash",
-				"desc": "Sap an enemy's life force through your blade.",
+				"desc": "ดูดพลังชีวิตของศัตรูผ่านดาบของคุณ",
 				"sortOrder": 329,
 				"level": 6,
 				"school": "martial",
-				"tags": ["t_nospellcraft", "t_blade"],
+				"tags": [
+					"t_nospellcraft",
+					"t_blade"
+				],
 				"keywords": {
-					"type": ["damage"],
-					"target": ["enemy"],
-					"targets": ["single"],
-					"delivery": ["instant", "over time"]
+					"type": [
+						"damage"
+					],
+					"target": [
+						"enemy"
+					],
+					"targets": [
+						"single"
+					],
+					"delivery": [
+						"instant",
+						"over time"
+					]
 				},
 				"require": "g.bladelore>=6&&g.shadowlore>=8",
 				"buy": {
 					"tomes": 5,
 					"shadowgem": 10
 				},
-				"caststoppers": [1, 4],
+				"caststoppers": [
+					1,
+					4
+				],
 				"need": "g.player.getWeapon().hasTag('t_sword')",
-				"needtext": "Currently equipped weapon must be a sword",
+				"needtext": "อาวุธที่สวมอยู่ต้องเป็นดาบ",
 				"cost": {
 					"shadow": 5,
 					"vigor": 4
@@ -682,37 +846,59 @@
 					"kind": "shadow",
 					"tohit": 2,
 					"damage": "(a.getWeaponDamage()||0)*0.8",
-					"potencies": ["physdmg", "sworddmg", "shadowdmg"],
+					"potencies": [
+						"physdmg",
+						"sworddmg",
+						"shadowdmg"
+					],
 					"dot": {
 						"kind": "shadow",
 						"duration": 40,
 						"damage": 3,
-						"potencies": ["shadowdmg", "spelldmg"]
+						"potencies": [
+							"shadowdmg",
+							"spelldmg"
+						]
 					}
 				}
 			},
 			{
 				"id": "flameslash",
 				"name": "flameslash",
-				"desc": "Send streams of fire at enemies with your sword.",
+				"desc": "ยิงสายเพลิงใส่ศัตรูด้วยดาบของคุณ",
 				"sortOrder": 325,
 				"level": 4,
 				"school": "martial",
-				"tags": ["t_nospellcraft", "t_blade"],
+				"tags": [
+					"t_nospellcraft",
+					"t_blade"
+				],
 				"keywords": {
-					"type": ["damage"],
-					"target": ["enemy"],
-					"targets": ["single"],
-					"delivery": ["instant", "over time"]
+					"type": [
+						"damage"
+					],
+					"target": [
+						"enemy"
+					],
+					"targets": [
+						"single"
+					],
+					"delivery": [
+						"instant",
+						"over time"
+					]
 				},
 				"require": "g.bladelore>=3&&g.firelore>=8",
 				"buy": {
 					"codices": 5,
 					"firegem": 10
 				},
-				"caststoppers": [1, 4],
+				"caststoppers": [
+					1,
+					4
+				],
 				"need": "g.player.getWeapon().hasTag('t_sword')",
-				"needtext": "Currently equipped weapon must be a sword",
+				"needtext": "อาวุธที่สวมอยู่ต้องเป็นดาบ",
 				"cost": {
 					"fire": 6,
 					"vigor": 4
@@ -726,29 +912,49 @@
 					"kind": "fire",
 					"tohit": 1,
 					"damage": "(a.getWeaponDamage()||0)*0.9",
-					"potencies": ["spelldmg", "sworddmg", "firedmg"],
+					"potencies": [
+						"spelldmg",
+						"sworddmg",
+						"firedmg"
+					],
 					"dot": {
 						"name": "burning",
 						"kind": "fire",
 						"duration": 5,
 						"damage": "5~7",
-						"potencies": ["spelldmg", "firedmg", "sworddmg"]
+						"potencies": [
+							"spelldmg",
+							"firedmg",
+							"sworddmg"
+						]
 					}
 				}
 			},
 			{
 				"id": "cut_time",
 				"name": "cut time",
-				"desc": "Take a break from the time stream.",
+				"desc": "พักจากสายธารเวลา",
 				"sortOrder": 384,
 				"level": 15,
 				"school": "martial",
-				"tags": ["t_nospellcraft", "t_blade"],
+				"tags": [
+					"t_nospellcraft",
+					"t_blade"
+				],
 				"keywords": {
-					"type": ["buff", "debuff"],
-					"target": ["self"],
-					"targets": ["single"],
-					"delivery": ["over time"]
+					"type": [
+						"buff",
+						"debuff"
+					],
+					"target": [
+						"self"
+					],
+					"targets": [
+						"single"
+					],
+					"delivery": [
+						"over time"
+					]
 				},
 				"require": "g.bladelore>=10&&g.chronomancy>=7",
 				"buy": {
@@ -756,9 +962,12 @@
 					"timegem": 3,
 					"clepsydra": 3
 				},
-				"caststoppers": [1, 4],
+				"caststoppers": [
+					1,
+					4
+				],
 				"need": "g.player.getWeapon().hasTag('t_sword')",
-				"needtext": "Currently equipped weapon must be a sword",
+				"needtext": "อาวุธที่สวมอยู่ต้องเป็นดาบ",
 				"cost": {
 					"tempus": 20
 				},
@@ -779,25 +988,38 @@
 			{
 				"id": "blood_slice",
 				"name": "slice of life",
-				"desc": "Use your blood to empower a strike.",
+				"desc": "ใช้เลือดของคุณเสริมพลังการฟัน",
 				"sortOrder": 321,
 				"level": 2,
 				"school": "martial",
-				"tags": ["t_nospellcraft", "t_blade"],
+				"tags": [
+					"t_nospellcraft",
+					"t_blade"
+				],
 				"keywords": {
-					"type": ["damage"],
-					"target": ["enemy"],
-					"targets": ["single"],
-					"delivery": ["instant"]
+					"type": [
+						"damage"
+					],
+					"target": [
+						"enemy"
+					],
+					"targets": [
+						"single"
+					],
+					"delivery": [
+						"instant"
+					]
 				},
 				"require": "g.bladelore>=2&&g.bloodlore>=5",
 				"buy": {
 					"codices": 5,
 					"bloodgem": 10
 				},
-				"caststoppers": [1],
+				"caststoppers": [
+					1
+				],
 				"need": "g.player.getWeapon().hasTag('t_sword')",
-				"needtext": "Currently equipped weapon must be a sword",
+				"needtext": "อาวุธที่สวมอยู่ต้องเป็นดาบ",
 				"cost": {
 					"hp": 20,
 					"vigor": 3
@@ -811,7 +1033,11 @@
 					"kind": "blood",
 					"tohit": 4,
 					"damage": "10+(a.getWeaponDamage()||0)*0.7",
-					"potencies": ["physdmg", "sworddmg", "blooddmg"]
+					"potencies": [
+						"physdmg",
+						"sworddmg",
+						"blooddmg"
+					]
 				}
 			}
 		]
