@@ -9,7 +9,7 @@
 				"id": "sublore",
 				"name": "sublimate lore",
 				"max": 10,
-				"desc": "Build a metaphysical array anchored to your very soul, reinforcing your magical aptitude.",
+				"desc": "สร้างชุดอภิปรัชญาที่ผูกยึดกับดวงวิญญาณของคุณเอง เสริมความถนัดทางเวทมนตร์",
 				"require": "g.codices.max>=10&&g.crafting>=3&&g.tier0>0",
 				"cost": {
 					"scrolls": 8,
@@ -81,10 +81,10 @@
 				"tags": "t_sublore",
 				"desc": [
 					"",
-					"An old tome found under piles of your Master's discarded projects. At some point, it boasted several locks holding it shut. The damp environment of the cellar and time have reduced the locks to dust.",
+					"ตำราโบราณที่พบใต้กองโครงการที่ถูกทิ้งของนายของคุณ เมื่อครั้งหนึ่งมันเคยอวดกุญแจหลายอันที่ล็อกไว้ ความชื้นของห้องใต้ดินและกาลเวลาได้ทำให้กุญแจกลายเป็นฝุ่น",
 					"",
-					"It describes some sort of self-empowering process a wizard may undertake to further bolster their powers.",
-					"Perhaps this warrants further investigation after graduation, when you can be away from your Master's prying eyes..."
+					"มันอธิบายกระบวนการเสริมพลังตนเองแบบหนึ่งที่จอมเวทอาจทำเพื่อหนุนพลังของตนให้ยิ่งขึ้น",
+					"บางทีนี่สมควรแก่การสืบสวนเพิ่มเติมหลังจบการศึกษา เมื่อคุณห่างจากสายตาจับผิดของนายได้..."
 				],
 				"require": "g.tier7>0"
 			}
@@ -94,10 +94,12 @@
 				"id": "crystallizedthoughts",
 				"name": "crystallized thoughts",
 				"tags": "t_sublore,t_sublore_t0",
-				"desc": "Crystallize your soul array, improving your ability to absorb arcane knowledge and energies.",
+				"desc": "ตกผลึกชุดวิญญาณของคุณ ยกระดับความสามารถในการดูดซับความรู้และพลังเวท",
 				"require": "g.sublore>=10&&g.tier7>0",
 				"warn": true,
-				"lock": ["t_sublore_t0"],
+				"lock": [
+					"t_sublore_t0"
+				],
 				"cost": {
 					"research": 750,
 					"mana": 10,
