@@ -7,7 +7,7 @@
 				"id": "nathanielshelter",
 				"name": "nathaniel's sanctuary",
 				"require": "g.tier3>0&&g.good1>0",
-				"desc": "A sanctuary for orphans and paupers.",
+				"desc": "สถานที่หลบภัยสำหรับเด็กกำพร้าและคนยากจน",
 				"tags": "patron",
 				"cost": {
 					"gold": 100
@@ -19,14 +19,14 @@
 					"light.rate": 0.1,
 					"fame.rate": 0.00005
 				},
-				"flavor": "Nathaniel insisted magic be used for the benefit of the unfortunate."
+				"flavor": "นาธาเนียลยืนกรานให้ใช้เวทมนตร์เพื่อประโยชน์ของผู้โชคร้าย"
 			},
 			{
 				"id": "baneanvil",
 				"name": "bloodbane's anvil",
 				"require": "g.crafting>=14",
 				"need": "workshop",
-				"desc": "Great spells are often forged on iron.",
+				"desc": "คาถาอันยิ่งใหญ่มักถูกหลอมขึ้นบนเหล็ก",
 				"tags": "patron",
 				"cost": {
 					"research": 10000,
@@ -38,14 +38,14 @@
 					"spellcraft.rate": 0.5,
 					"enchanting.mod.enchantslots.max": 0.5
 				},
-				"flavor": "Forsaking war and violence, Bloodbane devoted himself to crafting new forms of magic."
+				"flavor": "ทอดทิ้งสงครามและความรุนแรง บลัดเบนอุทิศตนแก่งานฝีมือเวทมนตร์รูปแบบใหม่"
 			}
 		],
 		"homes": [
 			{
 				"id": "wildcamp",
 				"name": "wild's encampment",
-				"desc": "Deep in Delkin Wood, Master Wild kept his fabled camp.",
+				"desc": "ลึกเข้าไปในป่าเดลคิน มาสเตอร์ไวล์ดเก็บค่ายในตำนานของเขาไว้",
 				"require": "g.t_natureclass>0&&g.tier2>0",
 				"tags": "outdoors,plantsource,t_pets,patron",
 				"buy": {
@@ -75,10 +75,19 @@
 				"school": "light",
 				"tags": "t_healspell",
 				"keywords": {
-					"type": ["recovery"],
-					"target": ["self", "ally"],
-					"targets": ["multiple"],
-					"delivery": ["instant"]
+					"type": [
+						"recovery"
+					],
+					"target": [
+						"self",
+						"ally"
+					],
+					"targets": [
+						"multiple"
+					],
+					"delivery": [
+						"instant"
+					]
 				},
 				"require": "g.lightlore>=7&&g.evil2==0",
 				"buy": {
@@ -86,18 +95,23 @@
 					"codices": 25
 				},
 				"need": "g.evil2==0",
-				"needtext": "Cannot be sinister.",
+				"needtext": "ต้องไม่ชั่วร้าย",
 				"cost": {
 					"light": 2
 				},
-				"result": { "lightlore.exp": 0.2 },
+				"result": {
+					"lightlore.exp": 0.2
+				},
 				"attack": {
 					"targets": "allies",
 					"maxTargets": 999,
 					"harmless": true,
 					"healing": 10,
 					"kind": "light",
-					"potencies": ["spellheal", "lightdmg"]
+					"potencies": [
+						"spellheal",
+						"lightdmg"
+					]
 				}
 			},
 			{
@@ -108,10 +122,19 @@
 				"school": "light",
 				"tags": "t_healspell",
 				"keywords": {
-					"type": ["recovery"],
-					"target": ["self", "ally"],
-					"targets": ["multiple"],
-					"delivery": ["instant"]
+					"type": [
+						"recovery"
+					],
+					"target": [
+						"self",
+						"ally"
+					],
+					"targets": [
+						"multiple"
+					],
+					"delivery": [
+						"instant"
+					]
 				},
 				"require": "g.lightlore>=20&&g.heallore>=5&&g.evil2==0",
 				"buy": {
@@ -119,7 +142,7 @@
 					"codices": 25
 				},
 				"need": "g.evil2==0",
-				"needtext": "Cannot be sinister.",
+				"needtext": "ต้องไม่ชั่วร้าย",
 				"cost": {
 					"light": 6
 				},
@@ -133,14 +156,17 @@
 					"harmless": true,
 					"healing": 45,
 					"kind": "light",
-					"potencies": ["spellheal", "lightdmg"]
+					"potencies": [
+						"spellheal",
+						"lightdmg"
+					]
 				}
 			},
 			{
 				"id": "cyrilsling",
 				"name": "cyril's celestial sling",
-				"desc": "Free a star and unleash the fury of the heavens on your foe. Hopefully your star won't turn on you...",
-				"flavor": "If you're already star-crossed, why not make a few stars cross as well?",
+				"desc": "ปลดปล่อยดวงดาวและทุ่มเทพีโรธแห่งสวรรค์ลงบนศัตรู หวังว่าดวงดาวของคุณจะไม่หันมาสู้คุณ...",
+				"flavor": "ถ้าคุณถูกโชคชะตากลั่นแกล้งอยู่แล้ว ทำไมไม่ทำให้ดาวดวงสองสามดวงถูกกลั่นแกล้งบ้างล่ะ?",
 				"level": 7,
 				"school": "chaos",
 				"keywords": {
@@ -168,17 +194,28 @@
 			{
 				"id": "kannadance",
 				"name": "kanna's dervish dance",
-				"desc": "Kanna's dance was a strenuous one for a mage, and a deadly one to her enemies.",
-				"flavor": "She danced with the devil in the pale moonlight, blades gleaming and blurring like a single streak of silver",
+				"desc": "การเต้นของคันนาเป็นเรื่องเหนื่อยล้าสำหรับจอมเวท และเป็นเรื่องมฤตยูสำหรับศัตรูของนาง",
+				"flavor": "นางเต้นรำกับปีศาจใต้แสงจันทร์สีซีด ใบมีดระยิบระยับและเบลอเป็นเส้นเงินเส้นเดียว",
 				"sortOrder": 390,
 				"level": 7,
 				"school": "martial",
 				"tags": "patron",
 				"keywords": {
-					"type": ["recovery", "buff", "debuff"],
-					"target": ["self"],
-					"targets": ["single"],
-					"delivery": ["instant", "over time"]
+					"type": [
+						"recovery",
+						"buff",
+						"debuff"
+					],
+					"target": [
+						"self"
+					],
+					"targets": [
+						"single"
+					],
+					"delivery": [
+						"instant",
+						"over time"
+					]
 				},
 				"require": "g.bladelore>=10",
 				"buy": {
@@ -216,15 +253,15 @@
 			{
 				"id": "agetablet1",
 				"name": "ancient tablet",
-				"desc": "A tablet on a dais displays a glowing list of names.",
-				"flavor": "Chazza, Jiopaba, Kamianya, Alyx, Man of Smoke",
+				"desc": "แผ่นจารึกบนแท่นแสดงรายชื่อที่เรืองแสง",
+				"flavor": "ชัซซา จิโอพาบา คาเมียนยา เอลิกซ์ บุรุษแห่งควัน",
 				"effect": {}
 			},
 			{
 				"id": "agetablet2",
 				"name": "weathered tablet",
-				"desc": "A weathered tablet with a faded list of names.",
-				"flavor": "Chazza, Jiopaba, Kamianya, Alyx, Man of Smoke",
+				"desc": "แผ่นจารึกที่ผุกร่อนพร้อมรายชื่อที่เลือนราง",
+				"flavor": "ชัซซา จิโอพาบา คาเมียนยา เอลิกซ์ บุรุษแห่งควัน",
 				"effect": {}
 			},
 			{
@@ -245,7 +282,7 @@
 			{
 				"id": "enc_kanna",
 				"name": "Study under Kanna",
-				"desc": "A fox-girl delightedly teaches you some practical ways to use your weapon more effectively",
+				"desc": "เด็กสาวจิ้งจอกสอนวิธีใช้งานอาวุธของคุณอย่างมีประสิทธิภาพมากขึ้นด้วยความยินดี",
 				"tags": "site_of_learning",
 				"effect": {
 					"bf": "0~2",
@@ -261,7 +298,7 @@
 			{
 				"id": "enc_jeremy",
 				"name": "jeremi",
-				"desc": "Nothing is known about this mage.",
+				"desc": "ไม่มีใครรู้เกี่ยวกับจอมเวทผู้นี้",
 				"tags": "site_of_learning",
 				"effect": {
 					"rage": "1~5",
@@ -275,7 +312,7 @@
 			{
 				"id": "enc_phrenesis",
 				"name": "phrenesis",
-				"desc": "Phrenesis was forever preoccupied with the cycles of death and rebirth.",
+				"desc": "ฟรีเนซิสหมกมุ่นอยู่กับวัฏจักรแห่งความตายและการเกิดใหม่ตลอดมา",
 				"tags": "site_of_learning",
 				"effect": {
 					"stress": -0.1,
@@ -288,7 +325,7 @@
 			{
 				"id": "enc_sinae",
 				"name": "sinae the puppeteer",
-				"desc": "A researcher, more machine than human",
+				"desc": "นักวิจัย ผู้เป็นเครื่องจักรมากกว่ามนุษย์",
 				"tags": "site_of_learning",
 				"effect": {
 					"unease": "1~5",
@@ -298,12 +335,12 @@
 				"mod": {
 					"puppetry.max": "4|100|30"
 				},
-				"flavor": "You can hear the clock mechanisms clicking within him"
+				"flavor": "คุณได้ยินกลไกนาฬิกาดังกุ๊ก ๆ ข้างในตัวเขา"
 			},
 			{
 				"id": "enc_stags",
 				"name": "stags",
-				"desc": "Nothing is known about the enigmatic mage.",
+				"desc": "ไม่มีใครรู้เกี่ยวกับจอมเวทปริศนาผู้นี้",
 				"tags": "site_of_learning",
 				"effect": {
 					"rage": "1~5",
@@ -317,7 +354,7 @@
 			{
 				"id": "enc_tainted",
 				"name": "Tainted, Archon of the Void",
-				"desc": "A violent echo still wanders the halls it never walked.",
+				"desc": "เสียงสะท้อนอันรุนแรงยังคงเร่ร่อนในโถงทางเดินที่ไม่เคยเดิน",
 				"tags": "site_of_learning",
 				"effect": {
 					"madness": "2~4",
@@ -332,12 +369,12 @@
 				"loot": {
 					"voidgem": "1%"
 				},
-				"flavor": "Did that actually happen?"
+				"flavor": "นั่นมันเกิดขึ้นจริงหรือ?"
 			},
 			{
 				"id": "enc_kaidi",
 				"name": "kaidi the mixer",
-				"desc": "A teacher and maker of the oddest concoctions.",
+				"desc": "ครูและผู้สร้างยาปรุงที่ประหลาดที่สุด",
 				"tags": "site_of_learning",
 				"effect": {
 					"bf": "2~5",
@@ -352,12 +389,12 @@
 					"pot_mana1": "5%",
 					"pot_stam1": "5%"
 				},
-				"flavor": "Fumes swirl around them from seemingly nowhere."
+				"flavor": "ควันหมุนวนรอบตัวเขาราวกับมาจากที่ไหนก็ไม่รู้"
 			},
 			{
 				"id": "enc_tjoker",
 				"name": "a joker",
-				"desc": "A crafty expression suggests trouble.",
+				"desc": "สีหน้าเจ้าเล่ห์บ่งบอกถึงปัญหา",
 				"tags": "site_of_learning",
 				"effect": {
 					"rage": "1~5",
@@ -372,7 +409,7 @@
 			{
 				"id": "enc_vondrey",
 				"name": "vondrey",
-				"desc": "The mage does not appear inclined to speak.",
+				"desc": "จอมเวทดูไม่เต็มใจที่จะพูด",
 				"tags": "site_of_learning",
 				"effect": {
 					"bf": "1~5",
@@ -388,7 +425,7 @@
 			{
 				"id": "enc_mrwild",
 				"name": "master wild",
-				"desc": "A mage of the wilds makes a perplexing teacher.",
+				"desc": "จอมเวทแห่งป่าทำหน้าที่ครูที่ชวนงุนงง",
 				"tags": "site_of_learning",
 				"effect": {
 					"madness": "1~5",
@@ -403,7 +440,7 @@
 			{
 				"id": "enc_mrreaper",
 				"name": "mister reaper",
-				"desc": "A grim name for an otherwise respectable mage.",
+				"desc": "ชื่ออันมืดมนสำหรับจอมเวทที่น่านับถือเป็นอย่างอื่น",
 				"tags": "site_of_learning",
 				"effect": {
 					"madness": "1~5",
@@ -420,8 +457,8 @@
 			{
 				"id": "loc_ageshall",
 				"name": "hall of ages",
-				"desc": "The lost Hall of Ages was a gathering place of great and powerful patron mages.",
-				"flavor": "The knowledge within may be beyond price.",
+				"desc": "ห้องโถงแห่งยุคสมัยที่สาบสูญคือสถานที่รวมตัวของเหล่าจอมเวทผู้อุปถัมภ์ผู้ยิ่งใหญ่และทรงพลัง",
+				"flavor": "ความรู้ภายในอาจมีค่าล้นเหลือเกินราคา",
 				"tags": "site_of_learning",
 				"require": "g.tier3>0",
 				"length": 100,
@@ -451,7 +488,7 @@
 			{
 				"id": "becomewild",
 				"name": "become the wilds",
-				"desc": "Transcend the imaginary barriers setting yourself apart from the heart of the wilderness.",
+				"desc": "ก้าวข้ามกำแพงจินตภาพที่แยกคุณจากหัวใจแห่งถิ่นทุรกันดาร",
 				"require": "(g.t_natureclass)>0&&g.tier2>0",
 				"cost": {
 					"herbs": 100
@@ -466,7 +503,7 @@
 				"name": "bloodbane's forging",
 				"require": "g.crafting>=14",
 				"need": "baneanvil",
-				"desc": "With Bloodbane's anvil at hand, replicate his methods for forging magic.",
+				"desc": "ด้วยทั่งของบลัดเบนในมือ จงลอกเลียนวิธีหลอมเวทมนตร์ของเขา",
 				"cost": {
 					"research": 1000,
 					"tomes": 1
