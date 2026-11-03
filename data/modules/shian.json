@@ -6,7 +6,7 @@
 			{
 				"id": "evt_breakthrough0",
 				"name": "breakthrough",
-				"desc": "A breakthrough in your understanding of spirits! It seems so clear now",
+				"desc": "ความก้าวหน้าในความเข้าใจเรื่องวิญญาณของคุณ! ตอนนี้มันดูชัดเจนขึ้นแล้ว",
 				"require": "g.spirit.max>=20&&g.shian>0",
 				"mod": {
 					"spiritlore.max": 1
@@ -15,7 +15,7 @@
 			{
 				"id": "evt_breakthrough1",
 				"name": "breakthrough",
-				"desc": "A breakthrough in your understanding of spirits! It seems so clear now",
+				"desc": "ความก้าวหน้าในความเข้าใจเรื่องวิญญาณของคุณ! ตอนนี้มันดูชัดเจนขึ้นแล้ว",
 				"require": "g.tier5>0&&g.evt_breakthrough0>0",
 				"mod": {
 					"breakthrough.max": 1
@@ -24,7 +24,7 @@
 			{
 				"id": "evt_breakthrough2",
 				"name": "breakthrough",
-				"desc": "A breakthrough in your understanding of spirits! It seems so clear now",
+				"desc": "ความก้าวหน้าในความเข้าใจเรื่องวิญญาณของคุณ! ตอนนี้มันดูชัดเจนขึ้นแล้ว",
 				"require": "g.tier6>0&&g.evt_breakthrough1>0",
 				"mod": {
 					"breakthrough.max": 1
@@ -33,7 +33,7 @@
 			{
 				"id": "evt_sworduse",
 				"name": "mysterious arts",
-				"desc": "Swords fly through the sky, your mastery has improved",
+				"desc": "ดาบพุ่งทะยานข้ามฟ้า ความชำนาญของคุณพัฒนาขึ้นแล้ว",
 				"require": "g.tier5>0&&g.sworduse>0",
 				"mod": {
 					"sworduse.max": 1
@@ -42,7 +42,7 @@
 			{
 				"id": "evt_sworduse2",
 				"name": "mysterious arts",
-				"desc": "Swords fly through the sky, your mastery has improved",
+				"desc": "ดาบพุ่งทะยานข้ามฟ้า ความชำนาญของคุณพัฒนาขึ้นแล้ว",
 				"require": "g.tier6>0&&g.evt_sworduse>0",
 				"mod": {
 					"sworduse.max": 1
@@ -51,19 +51,22 @@
 			{
 				"id": "evt_hole",
 				"name": "public commotion",
-				"desc": "A large spire has risen closeby, quite a few are testing their luck, you better hurry if you want to be ahead",
-				"require": ["mtgorborung", "tier3"]
+				"desc": "ยอดแหลมใหญ่ผุดขึ้นใกล้ ๆ หลายคนกำลังลองเสี่ยงดวง คุณควรรีบหน่อยถ้าอยากนำหน้า",
+				"require": [
+					"mtgorborung",
+					"tier3"
+				]
 			},
 			{
 				"id": "evt_hole2",
 				"name": "the first one",
-				"desc": "You're the first one to the top, you find some books unlike any you've seen",
+				"desc": "คุณเป็นคนแรกที่ถึงยอด คุณพบหนังสือบางเล่มที่ไม่เหมือนที่เคยเห็น",
 				"require": "g.tier3>0&&g.unstablespire>0&&g.tier4==0"
 			},
 			{
 				"id": "evt_hole3",
 				"name": "the top",
-				"desc": "You've reached the top, but it seems others have already taken what was here",
+				"desc": "คุณไปถึงยอดแล้ว แต่ดูเหมือนคนอื่นเอาของที่อยู่ตรงนี้ไปก่อนแล้ว",
 				"require": "g.tier4>0&&g.unstablespire>0&&g.evt_hole2<=0"
 			}
 		],
@@ -72,7 +75,7 @@
 				"id": "gathersouls",
 				"name": "ghost catcher",
 				"require": "g.shian>0",
-				"desc": "Bind the dead that haunt the world.",
+				"desc": "ผูกมัดคนตายที่หลอกหลอนโลก",
 				"length": 180,
 				"cost": {
 					"spiritgem": 5
@@ -87,7 +90,7 @@
 				"id": "mkcave",
 				"name": "Dig out a bigger cave",
 				"require": "(g.earthlore+g.spiritlore)>=20&&g.shian>0",
-				"desc": "Make a underground home where the magic is strong and spirits are plentiful",
+				"desc": "สร้างบ้านใต้ดินที่ซึ่งเวทมนตร์เข้มข้นและวิญญาณชุกชุม",
 				"length": 1800,
 				"max": 1,
 				"cost": {
@@ -106,14 +109,14 @@
 					"cave.mod.mana.rate": 0.2,
 					"cave.mod.spirit.rate": 0.5
 				},
-				"flavor": "This will take a while...",
+				"flavor": "เรื่องนี้ใช้เวลาสักพัก...",
 				"group": "housing"
 			},
 			{
 				"id": "mkpagoda",
 				"name": "Make a Beautiful Home",
 				"require": "g.mkcave>0&&g.tier6>0&&g.shian>0",
-				"desc": "Make a home where you can improve your mastery of the mysterious sword arts and spirits are plentiful",
+				"desc": "สร้างบ้านที่คุณจะพัฒนาความชำนาญวิชาดาบลึกลับและที่ซึ่งวิญญาณชุกชุม",
 				"length": 1800,
 				"max": 1,
 				"run": {
@@ -125,14 +128,14 @@
 					"air": 1,
 					"spirit": 1
 				},
-				"flavor": "This will take another while...",
+				"flavor": "เรื่องนี้ใช้เวลาอีกสักพัก...",
 				"group": "housing"
 			},
 			{
 				"id": "soulflag",
 				"name": "craft soulflag",
 				"require": "g.spiritlore>=13&&g.shian>0",
-				"desc": "So many souls around, there has to be a way to keep them out of your way",
+				"desc": "วิญญาณมากมายอยู่รอบด้าน ต้องมีวิธีกันมันออกจากทางของคุณบ้าง",
 				"length": 100,
 				"max": 1,
 				"run": {
@@ -149,7 +152,7 @@
 				"id": "soulflag2",
 				"name": "improve soulflag",
 				"require": "g.soulflag>0&&g.shian>0",
-				"desc": "There is room for more souls",
+				"desc": "ยังมีที่ว่างสำหรับวิญญาณอีก",
 				"length": 900,
 				"max": 1,
 				"run": {
@@ -170,8 +173,8 @@
 				"name": "complete soulflag",
 				"require": "g.soulflag2>0&&g.shian>0",
 				"need": "g.inv.max-g.inv._used>=1",
-				"needtext": "Must have at least 1 inventory space free.",
-				"desc": "Containing ten thousand souls, this is a powerful tool ",
+				"needtext": "ต้องมีช่องว่างในช่องเก็บของอย่างน้อย 1 ช่อง",
+				"desc": "ที่บรรจุวิญญาณหนึ่งหมื่นดวงนี้คือเครื่องมืออันทรงพลัง ",
 				"length": 9000,
 				"max": 1,
 				"run": {
@@ -192,8 +195,8 @@
 				"name": "re-weave soulflag",
 				"require": "g.soulflag3>0&&g.shian>0",
 				"need": "g.inv.max-g.inv._used>=1",
-				"needtext": "Must have at least 1 inventory space free.",
-				"desc": "Even if it's been reduced to scraps, it can be restored",
+				"needtext": "ต้องมีช่องว่างในช่องเก็บของอย่างน้อย 1 ช่อง",
+				"desc": "ถึงจะถูกย่อยยับจนเป็นเศษซาก มันก็ฟื้นคืนได้",
 				"length": 60,
 				"run": {
 					"stamina": 3,
@@ -209,7 +212,7 @@
 			{
 				"id": "shianpagoda",
 				"name": "elegant pagoda",
-				"desc": "A peaceful structure where you can devote yourself fully to your arts.",
+				"desc": "โครงสร้างอันสงบสุขที่คุณจะอุทิศตนเต็มที่แก่วิชาของคุณ",
 				"require": "g.mkpagoda>0",
 				"mod": {
 					"space.max": 550,
@@ -225,7 +228,7 @@
 			{
 				"id": "sworduse",
 				"name": "mysterious sword arts",
-				"desc": "The spire has yielded strange and interesting weapons; perhaps you can find a use for them.",
+				"desc": "ยอดแหลมให้อาวุธแปลก ๆ น่าสนใจมา บางทีคุณอาจหาประโยชน์จากมันได้",
 				"require": "shian",
 				"max": 1,
 				"cost": {
@@ -243,7 +246,7 @@
 			},
 			{
 				"id": "breakthrough",
-				"desc": "A breakthrough in your spiritual meditations.",
+				"desc": "ความก้าวหน้าในการทำสมาธิทางจิตวิญญาณของคุณ",
 				"require": "evt_breakthrough0",
 				"max": 1,
 				"cost": {
@@ -262,7 +265,7 @@
 			{
 				"id": "fastsoul",
 				"name": "refinement techniques",
-				"desc": "Methods for making flags among other things, won't make it cheaper though",
+				"desc": "วิธีทำธงรวมถึงสิ่งอื่น ๆ แต่ไม่ทำให้มันถูกลงหรอก",
 				"require": "g.tier5>0&&g.soulflag2>0",
 				"mod": {
 					"soulflag3.length": "-50%",
@@ -280,10 +283,20 @@
 				"school": "shian",
 				"tags": "swordart",
 				"keywords": {
-					"type": ["damage", "summon"],
-					"target": ["enemy", "ally"],
-					"targets": ["multiple"],
-					"delivery": ["instant"]
+					"type": [
+						"damage",
+						"summon"
+					],
+					"target": [
+						"enemy",
+						"ally"
+					],
+					"targets": [
+						"multiple"
+					],
+					"delivery": [
+						"instant"
+					]
 				},
 				"require": "sworduse",
 				"buy": {
@@ -305,7 +318,11 @@
 					"damage": "20~30",
 					"kind": "slash",
 					"tohit": 2,
-					"potencies": ["spelldmg", "slashdmg", "sworddmg"]
+					"potencies": [
+						"spelldmg",
+						"slashdmg",
+						"sworddmg"
+					]
 				},
 				"summon": [
 					{
@@ -327,10 +344,19 @@
 				"school": "shian",
 				"tags": "swordart",
 				"keywords": {
-					"type": ["damage", "debuff"],
-					"target": ["enemy"],
-					"targets": ["single"],
-					"delivery": ["instant"]
+					"type": [
+						"damage",
+						"debuff"
+					],
+					"target": [
+						"enemy"
+					],
+					"targets": [
+						"single"
+					],
+					"delivery": [
+						"instant"
+					]
 				},
 				"require": "g.sworduse>=2",
 				"buy": {
@@ -350,7 +376,11 @@
 				"attack": {
 					"damage": "35~65",
 					"kind": "slash",
-					"potencies": ["spelldmg", "slashdmg", "sworddmg"],
+					"potencies": [
+						"spelldmg",
+						"slashdmg",
+						"sworddmg"
+					],
 					"tohit": 2,
 					"dot": {
 						"duration": 10,
@@ -368,10 +398,18 @@
 				"school": "shian",
 				"tags": "spiritart",
 				"keywords": {
-					"type": ["damage"],
-					"target": ["enemy"],
-					"targets": ["single"],
-					"delivery": ["instant"]
+					"type": [
+						"damage"
+					],
+					"target": [
+						"enemy"
+					],
+					"targets": [
+						"single"
+					],
+					"delivery": [
+						"instant"
+					]
 				},
 				"require": "g.shian>0&&g.soulflag>0",
 				"buy": {
@@ -390,22 +428,33 @@
 					"damage": "20~29",
 					"kind": "spirit",
 					"tohit": 3,
-					"potencies": ["spelldmg", "spiritdmg"]
+					"potencies": [
+						"spelldmg",
+						"spiritdmg"
+					]
 				}
 			},
 			{
 				"id": "soullure",
 				"name": "soul card: soul lure",
-				"desc": "Lure the souls of enemies from out their mortal bodies",
+				"desc": "ล่อวิญญาณของศัตรูออกจากร่างมรรตัยของพวกมัน",
 				"sortOrder": 1002,
 				"level": 10,
 				"school": "shian",
 				"tags": "soulart",
 				"keywords": {
-					"type": ["damage"],
-					"target": ["enemy"],
-					"targets": ["multiple"],
-					"delivery": ["over time"]
+					"type": [
+						"damage"
+					],
+					"target": [
+						"enemy"
+					],
+					"targets": [
+						"multiple"
+					],
+					"delivery": [
+						"over time"
+					]
 				},
 				"require": "g.shian>0&&g.soulflag2>0",
 				"buy": {
@@ -428,7 +477,10 @@
 						"kind": "spirit",
 						"duration": 10,
 						"damage": "10~15",
-						"potencies": ["spelldmg", "spiritdmg"]
+						"potencies": [
+							"spelldmg",
+							"spiritdmg"
+						]
 					}
 				}
 			},
@@ -440,10 +492,18 @@
 				"school": "shian",
 				"tags": "spiritart",
 				"keywords": {
-					"type": ["damage"],
-					"target": ["enemy"],
-					"targets": ["single"],
-					"delivery": ["instant"]
+					"type": [
+						"damage"
+					],
+					"target": [
+						"enemy"
+					],
+					"targets": [
+						"single"
+					],
+					"delivery": [
+						"instant"
+					]
 				},
 				"require": "g.shian>0&&g.soulflag3>0",
 				"buy": {
@@ -462,7 +522,10 @@
 					"damage": "80~110",
 					"kind": "spirit",
 					"tohit": 5,
-					"potencies": ["spelldmg", "spiritdmg"]
+					"potencies": [
+						"spelldmg",
+						"spiritdmg"
+					]
 				}
 			}
 		],
@@ -470,7 +533,7 @@
 			{
 				"id": "shian",
 				"name": "shian anchorite",
-				"desc": "An ancient magic from beyond the sea, combining spirit and blade.",
+				"desc": "เวทมนตร์โบราณจากโพ้นทะเล ผสมผสานวิญญาณกับดาบ",
 				"secret": true,
 				"tags": "t_tier4,t_swordclass,t_spiritclass",
 				"require": "g.t4unlocker>0&&(g.unstablespire>0||g.up_shian>0)&&g.spiritlore>=15&&g.weaponlore>=8",
@@ -480,7 +543,7 @@
 				"mod": {
 					"spiritlore.max": 3
 				},
-				"flavor": "Contemplation of the small as well as great.",
+				"flavor": "การครุ่นคิดถึงทั้งสิ่งเล็กและสิ่งใหญ่",
 				"sortOrder": 259
 			}
 		],
@@ -488,7 +551,7 @@
 			{
 				"id": "itemsoulflag",
 				"name": "soulflag",
-				"desc": "Ten thousand souls muffled in its fabric.",
+				"desc": "วิญญาณหนึ่งหมื่นดวงถูกอุดอู้ไว้ในเส้นใยของมัน",
 				"type": "weapon",
 				"slot": "mainhand",
 				"unique": true,
@@ -518,14 +581,19 @@
 			{
 				"id": "unstablespire",
 				"name": "The unstable spire",
-				"flavor": "Some things are left to time.",
-				"desc": "A large spire which rose from the ground. It looks like it might collapse any day now.",
-				"biome": ["cave", "mountain"],
+				"flavor": "บางสิ่งต้องปล่อยให้เวลาเป็นผู้จัดการ",
+				"desc": "ยอดแหลมใหญ่ที่ผุดขึ้นจากพื้นดิน ดูเหมือนมันจะถล่มลงมาเมื่อใดก็ได้",
+				"biome": [
+					"cave",
+					"mountain"
+				],
 				"difficulty": "💀💀💀",
 				"sortOrder": 49,
 				"require": "evt_hole",
 				"dist": 50,
-				"run": { "stamina": 2 },
+				"run": {
+					"stamina": 2
+				},
 				"result": {
 					"fame": 1,
 					"gems": "10~20",
@@ -549,9 +617,9 @@
 						"name": "Treatise of Soul Arts",
 						"sym": "🏰",
 						"max": 1,
-						"desc": "A series of tomes obtained from atop the Unstable Spire, detailing methods of manipulating souls thought long lost to time.",
+						"desc": "ชุดตำราที่ได้มาจากยอดยอดแหลมอันไร้เสถียรภาพ รายละเอียดวิธีควบคุมวิญญาณที่เชื่อว่าสาบสูญไปนาน",
 						"tags": "spiritsource,hall",
-						"extdesc": "The 'Shian Anchorite' Tier 4 Class will no longer require defeating the Unstable Spire.",
+						"extdesc": "ชั้นเรียนไทเออร์ 4 'ชเซียนแองเคอไรต์' จะไม่ต้องปราบยอดแหลมอันไร้เสถียรภาพอีกต่อไป",
 						"require": "g.evt_hole2>0",
 						"mod": {
 							"spiritlore.buy.arcana": "-100%",
