@@ -8,7 +8,7 @@
 				"hide": true,
 				"level": 1,
 				"need": "g.lore>999",
-				"needtext": "Cannot be brewed out of season",
+				"needtext": "ไม่สามารถต้มได้นอกฤดูกาล",
 				"cost": {
 					"herbs": 1
 				},
@@ -20,7 +20,7 @@
 						}
 					}
 				},
-				"flavor": "Used to be a refreshing brew, now nothing more than a bottle of rot."
+				"flavor": "เคยเป็นเครื่องดื่มสดชื่น บัดนี้เป็นเพียงขวดแห่งการเน่าเปื่อย"
 			},
 			{
 				"id": "bubblebrew",
@@ -28,21 +28,21 @@
 				"hide": true,
 				"level": 1,
 				"need": "g.lore>999",
-				"needtext": "Cannot be brewed out of season",
+				"needtext": "ไม่สามารถต้มได้นอกฤดูกาล",
 				"cost": {
 					"herbs": 1
 				},
 				"use": {
 					"hp": -1
 				},
-				"flavor": "Flat and flavorless."
+				"flavor": "จืดจางไร้รสชาติ"
 			}
 		],
 		"encounters": [
 			{
 				"id": "enc_blackcat",
 				"name": "black cat",
-				"desc": "A black cat is an omen to be studied seriously",
+				"desc": "แมวดำคือลางที่ควรศึกษาอย่างจริงจัง",
 				"tags": "site_of_learning",
 				"effect": {
 					"unease": "1~4",
@@ -60,7 +60,7 @@
 			{
 				"id": "enc_hest_ward",
 				"name": "warding charm",
-				"desc": "A hanging charm wards away the borgles and grimstalks.",
+				"desc": "เครื่องรางแขวนไล่สิ่งมีชีวิตบอร์เกิลและกริมสตอล์ก",
 				"tags": "site_of_learning",
 				"effect": {
 					"unease": "1~5",
@@ -76,7 +76,7 @@
 			{
 				"id": "enc_cauldron",
 				"name": "bubbling cauldron",
-				"desc": "The cauldron bubbles and glows with a odorous brew.",
+				"desc": "หม้อใหญ่เดือดปุด ๆ เรืองแสงด้วยยาต้มที่มีกลิ่น",
 				"tags": "site_of_learning",
 				"effect": {
 					"unease": "0~2",
@@ -94,7 +94,7 @@
 			{
 				"id": "enc_hestia",
 				"name": "Hestia",
-				"desc": "Hestia has no interest in the world outside Thangmor, but will teach those who come to her.",
+				"desc": "เฮสเทียไม่สนใจโลกภายนอกทังมอร์ แต่ยินดีสอนผู้ที่มาหานาง",
 				"tags": "site_of_learning",
 				"effect": {
 					"unease": "2~4",
@@ -113,7 +113,7 @@
 			{
 				"id": "hal_resident",
 				"name": "Old Harold",
-				"desc": "It's unnatural I tells ya, why, back in my day a wolf near a village would just become a fine pelt in a moment, youngsters these days just have no use, no use at all, a whole wolf gets into the granary and nobody bats an eye I tells ya, what would a wolf even want with a grain anyway, y'know back in my day...",
+				"desc": "ฉันบอกเจ้าเลยว่ามันผิดธรรมชาติ ทำไมละ พอสมัยฉันหนุ่ม ๆ หมาป่าตัวไหนเข้าใกล้หมู่บ้านก็กลายเป็นหนังชั้นดีในชั่วพริบตา พวกเด็กรุ่นใหม่เดี๋ยวนี้ไร้ประโยชน์ ไร้ประโยชน์จริง ๆ หมาป่าทั้งตัวบุกเข้าโรงนาแต่ไม่มีใครแม้แต่จะหันมอง ฉันบอกเลย แล้วหมาป่ามันจะเอาธัญพืชไปทำไมกันนะ รู้ไหมสมัยฉัน...",
 				"tags": "site_of_learning",
 				"effect": {
 					"weary": "1~2"
@@ -125,7 +125,7 @@
 			{
 				"id": "hal_resident_doppel",
 				"name": "Old Harold",
-				"desc": "Hello there sonny, listen to this old man for a moment would you? This village's been awful, awful quiet lately, 'cept for the house of that one scoundrel we hung a few months ago and I could really use the company. Here's a little treat for you...",
+				"desc": "เอานี่ล่ะเด็กหนุ่ม ฟังคนแก่คนนี้หน่อยได้ไหม? หมู่บ้านนี้มันเงียบสงบมาก ๆ แสนเงียบสงบเลยแหละ ยกเว้นบ้านของเจ้าคนโกงคนนั้นที่พวกเราแขวนคอไปเมื่อไม่กี่เดือนก่อน และฉันอยากได้เพื่อนคุยจริง ๆ เอาของขวัญเล็ก ๆ น้อย ๆ ไปหน่อยนะ...",
 				"effect": {
 					"bf": "1~2"
 				},
@@ -136,7 +136,7 @@
 			{
 				"id": "hal_fox",
 				"name": "Fox",
-				"desc": "There is a minor commotion as a fox successfully claims a chicken from an unguarded coop.",
+				"desc": "เกิดความชุลมุนเล็กน้อยเมื่อสุนัขจิ้งจอกฉกไก่จากเล้าที่ไม่มีผู้ดูแลได้สำเร็จ",
 				"tags": "site_of_learning",
 				"effect": {
 					"unease": "1~2"
@@ -148,7 +148,7 @@
 			{
 				"id": "hal_fox_doppel",
 				"name": "Fox",
-				"desc": "You notice a fox furiously scratching at a house door.",
+				"desc": "คุณสังเกตเห็นสุนัขจิ้งจอกข่วนประตูบ้านอย่างบ้าคลั่ง",
 				"effect": {
 					"bf": "1~2"
 				}
@@ -156,7 +156,7 @@
 			{
 				"id": "hal_grumpy",
 				"name": "Grumpy Granny",
-				"desc": "It takes you half an hour after the fact, but you manage to figure out that ████ ███ ███ █████ █████ meant that she was attempting to dissuade you from stealing any more of her crops. You do not recall stealing any.",
+				"desc": "ใช้เวลาครึ่งชั่วโมงหลังเหตุการณ์ แต่คุณก็ตีความได้ว่า ████ ███ ███ █████ █████ หมายความว่านางพยายามห้ามปรามไม่ให้คุณขโมยพืชผลของนางอีกต่อไป ทั้งที่คุณไม่จำได้ว่าเคยขโมยเลย",
 				"tags": "site_of_learning",
 				"effect": {
 					"unease": "1~2"
@@ -168,7 +168,7 @@
 			{
 				"id": "hal_grumpy_doppel",
 				"name": "Grumpy Granny",
-				"desc": "█████████████ and I better not see you visiting that old house on the outskirts!!!",
+				"desc": "█████████████ และฉันไม่อยากเห็นเจ้าไปเยี่ยมบ้านเก่าหลังนั้นแถวชายหมู่บ้านอีก!!!",
 				"effect": {
 					"bf": "1~2"
 				},
@@ -179,7 +179,7 @@
 			{
 				"id": "hal_stranger",
 				"name": "Outsider",
-				"desc": "A man stands just outside the village, visibly shaken. As you approach him, he warns you that something strange is going on in Hallomar.",
+				"desc": "ชายคนหนึ่งยืนอยู่ชานหมู่บ้าน ดูสั่นกลัวอย่างชัดเจน ขณะคุณเข้าหา เขาเตือนคุณว่ามีบางอย่างผิดปกติเกิดขึ้นในฮัลโลมาร์",
 				"tags": "site_of_learning",
 				"effect": {
 					"madness": "0~2"
@@ -194,7 +194,7 @@
 			{
 				"id": "hal_missing",
 				"name": "Headcount",
-				"desc": "A headcount of all the residents reveals that nobody has seen Hank for a few days. He was last seen heading north out of the village.",
+				"desc": "การนับหัวชาวบ้านทั้งหมดเผยว่าไม่มีใครเห็นแฮงก์มาหลายวันแล้ว ครั้งสุดท้ายที่เห็นเขาคือมุ่งหน้าไปทางเหนือออกจากหมู่บ้าน",
 				"effect": {
 					"weary": "1~2"
 				}
@@ -202,7 +202,7 @@
 			{
 				"id": "hal_missing2",
 				"name": "Headcount",
-				"desc": "A headcount of all the residents reveals that the number of villagers is exactly as expected. Yet, you can't seem to shake the feeling that you made a mistake.",
+				"desc": "การนับหัวชาวบ้านทั้งหมดเผยว่าจำนวนชาวบ้านเท่ากับที่คาดไว้พอดี ทว่าคุณไม่อาจสลัดความรู้สึกที่ว่าคุณทำพลาดไปที่ไหนสักแห่ง",
 				"effect": {
 					"madness": "1~2"
 				}
@@ -210,7 +210,7 @@
 			{
 				"id": "hal_scratches",
 				"name": "Subtle scratches",
-				"desc": "A close inspection of the houses reveals that that different symbols have been carved into the wood. The symbols on the houses of loners are different",
+				"desc": "การตรวจสอบบ้านอย่างใกล้ชิดเผยว่ามีสัญลักษณ์ต่าง ๆ ถูกแกะลงบนไม้ สัญลักษณ์บนบ้านของผู้อยู่ตัวคนเดียวต่างจากที่อื่น",
 				"effect": {
 					"rage": "1~2"
 				}
@@ -218,7 +218,7 @@
 			{
 				"id": "hal_footprints",
 				"name": "Footprints",
-				"desc": "A series of muddy footprints points northwards, towards a long-abandoned windmill.",
+				"desc": "รอยเท้าเปื้อนโคลนเป็นชุดชี้ไปทางเหนือ สู่กังหันลมที่ถูกทิ้งร้างมานาน",
 				"effect": {
 					"weary": "1~2"
 				}
@@ -226,7 +226,7 @@
 			{
 				"id": "hal_age",
 				"name": "Berta",
-				"desc": "An old woman by the name of Berta tells you a story of how even after the miller died, the mill miracuously still works, even after several years of neglect.",
+				"desc": "หญิงชราชื่อเบอร์ตาเล่านิทานให้ฟังว่าแม้หลังจากนายโรงโม่ตาย โรงโม่ก็ยังทำงานได้อย่างน่าอัศจรรย์ แม้ถูกปล่อยทิ้งมานานหลายปี",
 				"tags": "site_of_learning",
 				"effect": {
 					"madness": "1~2"
@@ -238,7 +238,7 @@
 			{
 				"id": "hal_age_doppel",
 				"name": "Berta",
-				"desc": "A young woman by the name of Berta confides that she was visited by a ghost of a recently executed thief, who said that he will visit terrible vengeance on the village.",
+				"desc": "หญิงสาวชื่อเบอร์ตาเล่าความลับว่ามีผีของโจรที่เพิ่งถูกประหารมาเยี่ยมนาง ผีบอกว่าจะนำการแก้แค้นอันสาหัสมาสู่หมู่บ้าน",
 				"effect": {
 					"bf": "1~2"
 				}
@@ -246,7 +246,7 @@
 			{
 				"id": "enc_hal_hest_talk",
 				"name": "talk to hestia",
-				"desc": "Hestia is busy concocting a special pumpkin brew.",
+				"desc": "เฮสเทียกำลังยุ่งอยู่กับการปรุงยาฟักทองสูตรพิเศษ",
 				"tags": "site_of_learning",
 				"effect": {
 					"bf": "0~2",
@@ -263,7 +263,7 @@
 			{
 				"id": "en_pumppatch",
 				"name": "pumpkin patch",
-				"desc": "Hallomar's autumn fields grow some of the largest pumpkins to be found.",
+				"desc": "ทุ่งฤดูใบไม้ร่วงของฮัลโลมาร์ปลูกฟักทองที่ใหญ่ที่สุดเท่าที่จะหาได้",
 				"tags": "site_of_learning",
 				"effect": {
 					"weary": "1~2",
@@ -286,8 +286,8 @@
 				"id": "en_martial_midnight",
 				"name": "Midnight weapon",
 				"adj": "Midnight %i",
-				"desc": "Imbue your weapon with the power of the witching hour.",
-				"extdesc": "Adds a special attack to the weapon.",
+				"desc": "อัดพลังแห่งชั่วโมงเวทมนตร์ให้อาวุธของคุณ",
+				"extdesc": "เพิ่มการโจมตีพิเศษให้อาวุธ",
 				"require": "g.enchanting>=6&&(g.inv.find('midnightminute',true)!=null)",
 				"buy": {
 					"research": 20000,
@@ -296,7 +296,10 @@
 				"level": 2,
 				"only": "t_martial",
 				"length": 30,
-				"cost": { "midnightminute": 12, "arcana": 15 },
+				"cost": {
+					"midnightminute": 12,
+					"arcana": 15
+				},
 				"alter": {
 					"mod": {
 						"self.defense": 12,
@@ -311,7 +314,10 @@
 						"targets": "flunky",
 						"damagedesc": "Deals damage equal to 300% of base weapon damage to a non-primary enemy.",
 						"damage": "(i.damage||0)*3",
-						"potencies": ["physdmg", "sworddmg"]
+						"potencies": [
+							"physdmg",
+							"sworddmg"
+						]
 					}
 				}
 			},
@@ -319,7 +325,7 @@
 				"id": "en_armor_midnight",
 				"name": "Midnight armor",
 				"adj": "Midnight %i",
-				"desc": "Imbue your armor with the power of the witching hour.",
+				"desc": "อัดพลังแห่งชั่วโมงเวทมนตร์ให้เกราะของคุณ",
 				"require": "g.enchanting>=6&&(g.inv.find('midnightminute',true)!=null)",
 				"buy": {
 					"research": 20000,
@@ -328,7 +334,10 @@
 				"level": 2,
 				"only": "t_helm,t_chestplate,t_gloves,t_greaves,t_boots,t_back",
 				"length": 30,
-				"cost": { "midnightminute": 12, "arcana": 15 },
+				"cost": {
+					"midnightminute": 12,
+					"arcana": 15
+				},
 				"alter": {
 					"mod": {
 						"self.defense": "8%",
@@ -342,7 +351,7 @@
 			{
 				"id": "midnightminute",
 				"name": "Minute of midnight",
-				"desc": "A tiny slice of midnight, useful for unique enchantments",
+				"desc": "เวลาเที่ยงคืนเสี้ยวหนึ่ง มีประโยชน์สำหรับการเสริมเวทสุดพิเศษ",
 				"stack": true,
 				"repeat": true,
 				"consume": true,
@@ -365,7 +374,6 @@
 				}
 			}
 		],
-
 		"rares": [
 			{
 				"id": "vorpal_sword",
@@ -381,7 +389,11 @@
 					"kind": "slash",
 					"damage": "(i.damage||0)*1.2",
 					"nodefense": true,
-					"potencies": ["sworddmg", "slashdmg", "physdmg"]
+					"potencies": [
+						"sworddmg",
+						"slashdmg",
+						"physdmg"
+					]
 				}
 			},
 			{
@@ -413,7 +425,11 @@
 						"targets": "enemyleader",
 						"damage": "(i.damage||0)*1.5",
 						"nodefense": true,
-						"potencies": ["physdmg", "voiddmg", "sworddmg"]
+						"potencies": [
+							"physdmg",
+							"voiddmg",
+							"sworddmg"
+						]
 					},
 					{
 						"name": "behead",
@@ -421,7 +437,11 @@
 						"targets": "flunky",
 						"damage": "(i.damage||0)*3.5",
 						"nodefense": true,
-						"potencies": ["physdmg", "voiddmg", "sworddmg"]
+						"potencies": [
+							"physdmg",
+							"voiddmg",
+							"sworddmg"
+						]
 					}
 				]
 			},
@@ -439,13 +459,18 @@
 				"attack": {
 					"kind": "pierce",
 					"damage": "i.damage||0",
-					"potencies": ["physdmg", "piercedmg"],
+					"potencies": [
+						"physdmg",
+						"piercedmg"
+					],
 					"dot": {
 						"duration": 3,
 						"damage": "2~3",
 						"name": "necrosis",
 						"kind": "necrotic",
-						"potencies": ["physdmg"]
+						"potencies": [
+							"physdmg"
+						]
 					}
 				},
 				"cost": 20,
@@ -455,7 +480,7 @@
 				"id": "hal_amulet",
 				"sym": "🎃",
 				"name": "hestia's charm",
-				"desc": "Hestia's amulet throbs with a dull purple light.",
+				"desc": "เครื่องรางของเฮสเทียเต้นระรัวด้วยแสงสีม่วงหม่น",
 				"type": "armor",
 				"armor": 2,
 				"slot": "neck",
@@ -469,7 +494,7 @@
 				"id": "nymiescharm",
 				"sym": "🎃",
 				"name": "nymie's charm",
-				"desc": "A small figurine of a black cat.",
+				"desc": "รูปปั้นแมวดำเล็ก ๆ",
 				"unique": true,
 				"level": 20,
 				"type": "armor",
@@ -485,8 +510,8 @@
 						"name": "mischievous wisps",
 						"sym": "🏰🎃",
 						"tags": "hall",
-						"desc": "The heart of the horseman has finally dissipated. Only the faintest trace of mischief remains.",
-						"extdesc": "You always satisfy the Trickery skill's requirements.",
+						"desc": "หัวใจของนักขี่ม้าระดับตำนานสลายไปในที่สุด เหลือเพียงร่องรอยความซุกซนจาง ๆ",
+						"extdesc": "คุณตอบสนองข้อกำหนดทักษะเล่ห์เหลี่ยมได้เสมอ",
 						"require": "g.lore>999",
 						"mod": {
 							"trickery.buy.arcana": "-50%",
@@ -500,7 +525,7 @@
 						"sym": "🏰🎃",
 						"tags": "hall",
 						"require": "g.lore>999",
-						"desc": "Even if the gourds have long spoiled, the lessons still stick with you",
+						"desc": "ถึงผลน้ำเต้าจะเน่าเสียไปนานแล้ว บทเรียนก็ยังติดตัวคุณ",
 						"max": 1,
 						"mod": {
 							"herbalism.max": 1
@@ -513,9 +538,11 @@
 			{
 				"id": "trick_unlock",
 				"name": "Mischievous spirit",
-				"desc": "Peculiar energies permeate the hall, driving all to mischief.",
+				"desc": "พลังประหลาดซึมซ่านทั่วโถง ผลักดันทุกคนไปสู่ความซุกซน",
 				"require": "g.hal_trick_pumpkin>0&&g.apprentice>0&&g.trickery==0",
-				"enable": ["trickery"],
+				"enable": [
+					"trickery"
+				],
 				"result": {
 					"trickery": true
 				}
