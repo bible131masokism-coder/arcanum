@@ -6,7 +6,7 @@
 			{
 				"id": "trainingdagger",
 				"name": "dagger",
-				"desc": "A plain looking wooden dagger.",
+				"desc": "มีดไม้หน้าตาธรรมดา",
 				"unique": true,
 				"level": 1,
 				"tags": "t_slash,t_martial,t_dagger,t_training",
@@ -19,13 +19,16 @@
 					"kind": "slash",
 					"tohit": 1,
 					"damage": "1~2",
-					"potencies": ["slashdmg", "physdmg"]
+					"potencies": [
+						"slashdmg",
+						"physdmg"
+					]
 				}
 			},
 			{
 				"id": "trainingdart",
 				"name": "homing dart",
-				"desc": "This should hit anything.",
+				"desc": "อันนี้ควรฟันโดนอะไรก็ตาม",
 				"unique": true,
 				"level": 1,
 				"enchants": 1,
@@ -38,7 +41,10 @@
 					"kind": "pierce",
 					"harmless": true,
 					"damage": 1,
-					"potencies": ["piercedmg", "physdmg"]
+					"potencies": [
+						"piercedmg",
+						"physdmg"
+					]
 				}
 			},
 			{
@@ -56,7 +62,11 @@
 					"kind": "blunt",
 					"tohit": -2,
 					"damage": "2~3",
-					"potencies": ["bluntdmg", "physdmg", "hammerdmg"]
+					"potencies": [
+						"bluntdmg",
+						"physdmg",
+						"hammerdmg"
+					]
 				}
 			}
 		],
@@ -76,14 +86,16 @@
 					"5": "armorydummy",
 					"20": "instructor"
 				},
-				"spawns": ["dummy"]
+				"spawns": [
+					"dummy"
+				]
 			}
 		],
 		"monsters": [
 			{
 				"id": "stddummy",
 				"name": "dummy1",
-				"desc": "Even fists would do.",
+				"desc": "ต่อให้หมัดเปล่าก็ยังพอ",
 				"noproc": true,
 				"level": 0,
 				"speed": -10,
@@ -91,14 +103,14 @@
 				"attack": {
 					"log": {
 						"name": "hit me!",
-						"desc": "Harder, HARDER I said. Spells will help."
+						"desc": "แรงกว่านี้ ฉันบอกว่าแรงกว่านี้ คาถาจะช่วยได้"
 					}
 				}
 			},
 			{
 				"id": "noweapondummy",
 				"name": "hard dummy",
-				"desc": "Fists don't work against this guy.",
+				"desc": "หมัดไม่เวิร์กกับเจ้าตัวนี้",
 				"noproc": true,
 				"level": 0,
 				"speed": -10,
@@ -107,7 +119,7 @@
 				"attack": {
 					"log": {
 						"name": "Spells",
-						"desc": "Use your magic missile, from spellpage bind as quickslot or add to memorized"
+						"desc": "ใช้มิสไซล์เวทมนตร์ของคุณ จากหน้าคาถา ผูกเป็นควิกสล็อตหรือเพิ่มเป็นคาถาจดจำ"
 					}
 				},
 				"loot": {
@@ -117,7 +129,7 @@
 			{
 				"id": "weapondummy",
 				"name": "spellabsorber",
-				"desc": "Use a weapon for this guy.",
+				"desc": "ใช้อาวุธสู้กับเจ้าตัวนี้",
 				"noproc": true,
 				"level": 0,
 				"speed": -10,
@@ -126,7 +138,7 @@
 				"attack": {
 					"log": {
 						"name": "Use your weapon",
-						"desc": "Go to the tab Equip and find the wood dagger and equip it"
+						"desc": "ไปที่แท็บอุปกรณ์ หามีดไม้และสวมมัน"
 					}
 				},
 				"loot": {
@@ -136,7 +148,7 @@
 			{
 				"id": "dodgydummy",
 				"name": "dodging dummy",
-				"desc": "Any normal means of attack is useless.",
+				"desc": "การโจมตีปกติแบบไหนก็ไร้ประโยชน์",
 				"noproc": true,
 				"level": 0,
 				"hp": 1,
@@ -145,7 +157,7 @@
 				"attack": {
 					"log": {
 						"name": "Can't hit me",
-						"desc": "Use the homing dart to hit this obnoxious dummy."
+						"desc": "ใช้ลูกดอกนำวิถียิงหุ่นตัวน่ารำคาญนี้"
 					}
 				},
 				"loot": {
@@ -155,7 +167,7 @@
 			{
 				"id": "armorydummy",
 				"name": "armored dummy",
-				"desc": "Any normal attack leaves no mark.",
+				"desc": "การโจมตีปกติไม่ทิ้งรอยใด ๆ",
 				"noproc": true,
 				"dodge": -30,
 				"hp": 10,
@@ -167,13 +179,13 @@
 				"attack": {
 					"log": {
 						"name": "Use your hammer",
-						"desc": "Only the hammer could leave a dent at this iron chunk."
+						"desc": "มีเพียงค้อนเท่านั้นที่ทำรอยบุ๋มบนแท่งเหล็กนี้ได้"
 					}
 				}
 			},
 			{
 				"id": "instructor",
-				"desc": "Is he toying with you?",
+				"desc": "เขากำลังล้อเล่นกับคุณหรือเปล่า?",
 				"noproc": true,
 				"level": 1,
 				"dodge": 4,
@@ -186,22 +198,22 @@
 					"log": [
 						{
 							"%": "10%",
-							"desc": "Having a spell in memorized and a weapon in hand is most effective."
+							"desc": "การมีคาถาจดจำและอาวุธในมือมีประสิทธิภาพที่สุด"
 						},
 						{
 							"%": "10%",
-							"desc": "Casting spells manually makes for an easy combat"
+							"desc": "การร่ายคาถาด้วยตนเองช่วยให้การต่อสู้ง่ายขึ้น"
 						},
 						{
 							"%": "10%",
-							"desc": "Memorizing a good combination of buffs and attack spells increases survivability."
+							"desc": "การจดจำคาถาบัฟและคาถาโจมตีที่ลงตัวช่วยเพิ่มความอยู่รอด"
 						}
 					]
 				}
 			},
 			{
 				"id": "dummy",
-				"desc": "Can't even hit back.",
+				"desc": "ต่อยกลับยังไม่ได้เลย",
 				"noproc": true,
 				"level": 0,
 				"dodge": -10,
