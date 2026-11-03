@@ -9,7 +9,7 @@
 				"id": "ritualism",
 				"name": "rituals",
 				"require": "g.runner.max>=2&&g.ritualchamber>0",
-				"desc": "Practice in the various magic rituals and their dangers",
+				"desc": "ฝึกฝนพิธีกรรมเวทมนตร์นานาและอันตรายของมัน",
 				"level": 25,
 				"buy": {
 					"sp": 15,
@@ -33,7 +33,7 @@
 				"id": "ritual_arcane",
 				"name": "ritual of the arcane",
 				"tags": "t_ritual",
-				"desc": "A simple ritual, suitable for beginners.",
+				"desc": "พิธีกรรมง่าย ๆ เหมาะสำหรับมือใหม่",
 				"perpetual": true,
 				"verb": "arcane ritual",
 				"require": "g.ritualism>0",
@@ -54,7 +54,7 @@
 				"id": "ritual_lightbinding",
 				"name": "ritual of light binding",
 				"tags": "t_ritual",
-				"desc": "For those who have forsaken the light, the only option is force.",
+				"desc": "สำหรับผู้ที่ทอดทิ้งแสงสว่าง ทางเลือกเดียวคือกำลัง",
 				"perpetual": true,
 				"verb": "lightbinding ritual",
 				"require": "g.evil3>0&&g.ritualist>0",
@@ -76,7 +76,7 @@
 				"id": "ritual_curse",
 				"name": "ritual of cursing",
 				"tags": "t_ritual",
-				"desc": "Empower souls with malice to shield you from harm.",
+				"desc": "เสริมพลังวิญญาณด้วยความมุ่งร้ายเพื่อบังคุณจากอันตราย",
 				"perpetual": true,
 				"verb": "cursing ritual",
 				"require": "g.ritualism>=3&&g.evil1>0",
@@ -100,7 +100,7 @@
 				"id": "ritual_cultivation",
 				"name": "ritual of cultivation",
 				"tags": "t_ritual",
-				"desc": "Command the plants to grow and blossom",
+				"desc": "สั่งให้พืชเจริญเติบโตและผลิบาน",
 				"perpetual": true,
 				"verb": "cultivation ritual",
 				"require": "g.ritualism>=3&&(g.druid+g.kell)>0",
@@ -123,7 +123,7 @@
 				"id": "ritual_healing",
 				"name": "ritual of healing",
 				"tags": "t_ritual",
-				"desc": "Fortify your body with light",
+				"desc": "เสริมความแข็งแกร่งให้ร่างกายด้วยแสง",
 				"perpetual": true,
 				"verb": "healing ritual",
 				"need": "g.good2==1",
@@ -147,7 +147,7 @@
 				"id": "ritual_refresh",
 				"name": "ritual of refreshment",
 				"tags": "t_ritual",
-				"desc": "Drain vitality from living tissues to replenish your stamina.",
+				"desc": "ดูดพลังชีวิตจากเนื้อเยื่อมีชีวิตเพื่อเติมเต็มพลังของคุณ",
 				"perpetual": true,
 				"verb": "energy ritual",
 				"require": "g.ritualism>=6",
@@ -172,7 +172,7 @@
 				"id": "ritual_arcane_greater",
 				"name": "greater ritual of the arcane",
 				"tags": "t_ritual",
-				"desc": "An advanced ritual for those adept in ritual magic",
+				"desc": "พิธีกรรมขั้นสูงสำหรับผู้ช่ำชองในเวทมนตร์พิธีกรรม",
 				"perpetual": true,
 				"verb": "greater arcane ritual",
 				"require": "g.ritualism>=7",
@@ -194,7 +194,7 @@
 				"id": "ritual_curse_greater",
 				"name": "greater ritual of cursing",
 				"tags": "t_ritual",
-				"desc": "Empower legions of cursed souls to guard your mortal form",
+				"desc": "เสริมพลังวิญญาณต้องสาปเป็นกองทัพเพื่อพิทักษ์ร่างมรรตัยของคุณ",
 				"perpetual": true,
 				"verb": "greater cursing ritual",
 				"require": "g.ritualism>=9&&g.evil2>0",
@@ -220,7 +220,7 @@
 				"id": "ritual_cultivation_greater",
 				"name": "greater ritual of cultivation",
 				"tags": "t_ritual",
-				"desc": "Use the lifeforce of multiple bodies to create a field of herbs in a blink of an eye",
+				"desc": "ใช้พลังชีวิตของหลายร่างสร้างผืนสมุนไพรได้ในพริบตา",
 				"perpetual": true,
 				"verb": "greater cultivation ritual",
 				"require": "g.ritualism>=9&&(g.druid+g.kell)>0",
@@ -244,7 +244,7 @@
 				"id": "ritual_healing_greater",
 				"name": "greater ritual of healing",
 				"tags": "t_ritual",
-				"desc": "Infuse yourself with a healing radiance",
+				"desc": "หลั่งไหลพลังเยียวยาเข้าสู่ตัวคุณ",
 				"perpetual": true,
 				"verb": "greater healing ritual",
 				"require": "g.ritualism>=9&&g.good3==1",
@@ -268,7 +268,7 @@
 				"id": "ritual_refresh_greater",
 				"name": "greater ritual of energy",
 				"tags": "t_ritual",
-				"desc": "Pass on your exhaustion to others",
+				"desc": "ส่งต่อความเหนื่อยล้าของคุณให้ผู้อื่น",
 				"perpetual": true,
 				"verb": "greater energy ritual",
 				"require": "g.ritualism>=10",
@@ -294,7 +294,7 @@
 				"id": "ritual_time",
 				"name": "ritual of time",
 				"tags": "t_ritual",
-				"desc": "Control the ebb and flow of time to your benefit",
+				"desc": "ควบคุมการขึ้นลงของเวลาให้เป็นประโยชน์แก่คุณ",
 				"perpetual": true,
 				"verb": "time ritual",
 				"require": "g.ritualism>=15&&g.masterritualist>0",
@@ -317,7 +317,7 @@
 				"id": "ritual_void",
 				"name": "ritual of void",
 				"tags": "t_ritual",
-				"desc": "Null",
+				"desc": "ความสูญเปล่า",
 				"perpetual": true,
 				"verb": "void ritual",
 				"require": "g.ritualism>=15&&g.masterritualist>0",
@@ -341,7 +341,7 @@
 				"id": "ritual_dreams",
 				"name": "ritual of dreams",
 				"tags": "t_ritual",
-				"desc": "Don't let your dreams be dreams",
+				"desc": "อย่าปล่อยให้ความฝันเป็นเพียงความฝัน",
 				"perpetual": true,
 				"verb": "dream ritual",
 				"require": "g.ritualism>=15&&g.masterritualist>0",
@@ -373,7 +373,7 @@
 				"id": "ritual_fire",
 				"name": "ritual of fire",
 				"tags": "t_ritual",
-				"desc": "Blazing fire fills your soul",
+				"desc": "เปลวเพลิงลุกโชนเติมเต็มดวงวิญญาณของคุณ",
 				"perpetual": true,
 				"verb": "fire ritual",
 				"require": "g.ritual_elementalboosters>0",
@@ -396,7 +396,7 @@
 				"id": "ritual_water",
 				"name": "ritual of water",
 				"tags": "t_ritual",
-				"desc": "Flowing water fills your soul",
+				"desc": "สายน้ำที่หลั่งไหลเติมเต็มดวงวิญญาณของคุณ",
 				"perpetual": true,
 				"verb": "water ritual",
 				"require": "g.ritual_elementalboosters>0",
@@ -419,7 +419,7 @@
 				"id": "ritual_air",
 				"name": "ritual of air",
 				"tags": "t_ritual",
-				"desc": "Rushing wind fills your soul",
+				"desc": "สายลมที่โหมกระหน่ำเติมเต็มดวงวิญญาณของคุณ",
 				"perpetual": true,
 				"verb": "air ritual",
 				"require": "g.ritual_elementalboosters>0",
@@ -442,7 +442,7 @@
 				"id": "ritual_earth",
 				"name": "ritual of earth",
 				"tags": "t_ritual",
-				"desc": "Crushing earth fills your soul",
+				"desc": "ผืนดินที่ทับถมเติมเต็มดวงวิญญาณของคุณ",
 				"perpetual": true,
 				"verb": "earth ritual",
 				"require": "g.ritual_elementalboosters>0",
@@ -465,7 +465,7 @@
 				"id": "ritual_mana",
 				"name": "ritual of mana",
 				"tags": "t_ritual",
-				"desc": "Arcane power fills your soul",
+				"desc": "พลังเวทลี้ลับเติมเต็มดวงวิญญาณของคุณ",
 				"perpetual": true,
 				"verb": "mana ritual",
 				"require": "g.ritual_elementalboosters>0",
@@ -488,7 +488,7 @@
 				"id": "ritual_penance",
 				"name": "ritual of penance",
 				"tags": "t_ritual",
-				"desc": "Rapturous guilt fills your soul",
+				"desc": "ความสำนึกผิดอันปลื้มปีติเติมเต็มดวงวิญญาณของคุณ",
 				"perpetual": true,
 				"verb": "penance ritual",
 				"require": "g.ritual_elementalboosters>0",
@@ -514,7 +514,7 @@
 				"id": "ritual_dawn",
 				"name": "ritual of dawn",
 				"tags": "t_ritual",
-				"desc": "A part of one whole, useless by itself, yet powerful nonetheless",
+				"desc": "เศษเสี้ยวหนึ่งของสิ่งทั้งปวง ไร้ประโยชน์เมื่อเดี่ยว ๆ ทว่าทรงพลังนั่นแหละ",
 				"perpetual": true,
 				"verb": "dawn ritual",
 				"require": "g.masterritualist>0",
@@ -539,7 +539,7 @@
 				"id": "ritual_dusk",
 				"name": "ritual of dusk",
 				"tags": "t_ritual",
-				"desc": "A part of one whole, useless by itself, yet powerful nonetheless",
+				"desc": "เศษเสี้ยวหนึ่งของสิ่งทั้งปวง ไร้ประโยชน์เมื่อเดี่ยว ๆ ทว่าทรงพลังนั่นแหละ",
 				"perpetual": true,
 				"verb": "dusk ritual",
 				"require": "g.masterritualist>0",
@@ -562,7 +562,7 @@
 				"id": "ritual_mandala",
 				"name": "ritual of mandalas",
 				"tags": "t_ritual",
-				"desc": "The ultimate creation of a master ritualist, maintaining this ritual allows the user to perform any number of rituals within.",
+				"desc": "ผลงานชิ้นเอกของจอมพิธีกรรม การคงพิธีกรรมนี้ไว้ช่วยให้ผู้ใช้ประกอบพิธีกรรมได้ไม่จำกัดจำนวนภายในนั้น",
 				"perpetual": true,
 				"verb": "mandala ritual",
 				"require": "g.ritualist>0&&g.masterritualist>0&&g.ritualism>=20",
@@ -587,8 +587,10 @@
 				"verb": "inscribing",
 				"require": "g.ritualism>=5",
 				"need": "workspace",
-				"desc": "To sustain advanced rituals, special papers inscribed with magical sigils needs to be prepared",
-				"fill": ["ritualpaper"],
+				"desc": "เพื่อค้ำจุนพิธีกรรมขั้นสูง ต้องเตรียมกระดาษพิเศษที่จารึกลางเวทไว้",
+				"fill": [
+					"ritualpaper"
+				],
 				"length": 5,
 				"cost": {
 					"gold": 250,
@@ -609,8 +611,10 @@
 				"verb": "inscribing",
 				"require": "(g.ritualist+g.masterritualist)>0",
 				"need": "workspace",
-				"desc": "By using pre-infused paper, the creation of ritual paper can be vastly simplified",
-				"fill": ["ritualpaper"],
+				"desc": "การใช้กระดาษที่ชุบพลังไว้ล่วงหน้าทำให้การสร้างกระดาษพิธีกรรมง่ายขึ้นอย่างมาก",
+				"fill": [
+					"ritualpaper"
+				],
 				"length": 2,
 				"cost": {
 					"rawritualpaper": 1,
@@ -630,7 +634,7 @@
 			{
 				"id": "ritual_efficiency",
 				"name": "Efficient rituals",
-				"desc": "Skillful ritualists can save on materials by reducing the safety margins",
+				"desc": "จอมพิธีกรรมผู้เชี่ยวชาญประหยัดวัสดุได้ด้วยการลดขอบความปลอดภัย",
 				"require": "g.ritualist>0",
 				"max": 1,
 				"cost": {
@@ -645,12 +649,12 @@
 					"ritual_refresh.run.bloodgem": -0.015,
 					"ritual_healing.run.lightgem": -0.04
 				},
-				"flavor": "The chances of arcane collapse are negligible in the short run"
+				"flavor": "โอกาสการล่มสลายของพลังเวทเป็นเรื่องเล็กน้อยในระยะสั้น"
 			},
 			{
 				"id": "ritual_power",
 				"name": "Powerful rituals",
-				"desc": "Make greater rituals great again",
+				"desc": "ทำให้พิธีกรรมอันยิ่งใหญ่ยิ่งใหญ่อีกครั้ง",
 				"require": "g.ritualist>0",
 				"max": 1,
 				"cost": {
@@ -665,12 +669,12 @@
 					"ritual_refresh_greater.runmod.stamina.max": 20,
 					"ritual_healing_greater.runmod.hp.max": 50
 				},
-				"flavor": "We must build a ward"
+				"flavor": "เราต้องสร้างกำแพงป้องกัน"
 			},
 			{
 				"id": "ritual_elementalboosters",
 				"name": "Elemental rituals",
-				"desc": "Boost your elemental powers with specialized rituals",
+				"desc": "เพิ่มพลังธาตุของคุณด้วยพิธีกรรมเฉพาะทาง",
 				"require": "g.ritualist>0",
 				"max": 1,
 				"cost": {
@@ -684,7 +688,7 @@
 			{
 				"id": "ritual_paperproduction",
 				"name": "Spillthrough ink",
-				"desc": "Specialized ink allows for production of additional ritual paper per session",
+				"desc": "หมึกเฉพาะทางช่วยให้ผลิตกระดาษพิธีกรรมเพิ่มได้ต่อรอบ",
 				"require": "g.masterritualist>0",
 				"max": 1,
 				"cost": {
@@ -698,12 +702,12 @@
 					"ritualpaper_prepared.result.ritualpaper": 1,
 					"ritualpaper_prepared.cost.rawritualpaper": 1
 				},
-				"flavor": "'Do not process more than 2 sheets at a time' - common wisdom amongst one-handed ritualists."
+				"flavor": "'อย่าประมวลผลเกิน 2 แผ่นในคราวเดียว' - ภูมิปัญญาที่แพร่หลายในหมู่จอมพิธีกรรมมือเดียว"
 			},
 			{
 				"id": "ritual_papermakerenhancement",
 				"name": "Arcane isolation chamber",
-				"desc": "By putting your paper presses in specially isolated rooms, you can safely increase their production",
+				"desc": "การวางเครื่องอัดกระดาษในห้องที่แยกเสียงรถไฟโดยเฉพาะจะเพิ่มผลผลิตได้อย่างปลอดภัย",
 				"require": "g.masterritualist>0",
 				"max": 1,
 				"cost": {
@@ -715,12 +719,12 @@
 					"ritualpapermaker.mod.rawritualpaper.rate": 0.001,
 					"ritualpapermaker.mod.space": -5
 				},
-				"flavor": "Paper, please"
+				"flavor": "กระดาษด้วย ขอบคุณ"
 			},
 			{
 				"id": "ritual_cursedseals",
 				"name": "The five seals",
-				"desc": "An alternate use for your ritual paper.",
+				"desc": "การใช้กระดาษพิธีกรรมในอีกทาง",
 				"require": "g.masterritualist>0",
 				"max": 1,
 				"cost": {
@@ -731,12 +735,12 @@
 				"mod": {
 					"ritualpaper.max": 5
 				},
-				"flavor": "No sight, no sound, no taste, no feeling, no smell. That is the fate of those who oppose you."
+				"flavor": "ไร้ซึ่งภาพ เสียง รส สัมผัส และกลิ่น นั่นคือชะตากรรมของผู้ต่อต้านคุณ"
 			},
 			{
 				"id": "ritual_enhancedelementalboosters",
 				"name": "Enhanced elemental rituals",
-				"desc": "The elements can be further harmonized",
+				"desc": "ธาตุทั้งหลายสามารถประสานให้กลมกลืนยิ่งกว่าได้",
 				"require": "g.masterritualist>0&&ritual_elementalboosters>0",
 				"max": 1,
 				"cost": {
@@ -764,7 +768,7 @@
 			{
 				"id": "ritual_notestorage",
 				"name": "an accurate magical index",
-				"desc": "Cataloguing your notes reduces clutter.",
+				"desc": "การจัดหมวดหมู่บันทึกช่วยลดความรกรุงรัง",
 				"require": "g.ritualism>=10",
 				"max": 1,
 				"cost": {
@@ -775,12 +779,12 @@
 				"mod": {
 					"archive.mod.ritualnotes.max": 10
 				},
-				"flavor": "Certainly non-scientific."
+				"flavor": "ไม่เป็นวิทยาศาสตร์แน่นอน"
 			},
 			{
 				"id": "ritual_paperfolders",
 				"name": "reinforced folders",
-				"desc": "Specialized folders for unstable materials",
+				"desc": "แฟ้มเฉพาะทางสำหรับวัสดุไร้เสถียรภาพ",
 				"require": "g.ritualism>=6",
 				"max": 1,
 				"cost": {
@@ -791,12 +795,12 @@
 					"bookcase.mod.rawritualpaper.max": 1,
 					"bookcase.mod.ritualpaper.max": 1
 				},
-				"flavor": "Garalad developed those after purchasing his fourth dwelling"
+				"flavor": "การาลัดพัฒนาสิ่งเหล่านี้หลังจากซื้อที่พำนักหลังที่สี่"
 			},
 			{
 				"id": "ritual_furtherstudy",
 				"name": "study ritual notes",
-				"desc": "Acquire further understanding of ritualistic magic",
+				"desc": "แสวงหาความเข้าใจยิ่งขึ้นในเวทมนตร์พิธีกรรม",
 				"require": "g.ritualism>=6",
 				"max": 500,
 				"cost": {
@@ -807,12 +811,12 @@
 					"ritualnotes.max": 1,
 					"ritual_furtherstudy.cost.ritualnotes": 2
 				},
-				"flavor": "It gets only harder"
+				"flavor": "มันยากขึ้นเรื่อย ๆ ล่ะ"
 			},
 			{
 				"id": "ritual_warddispersal",
 				"name": "disperse wards",
-				"desc": "Use excess ritual wards to further your understanding of magic",
+				"desc": "ใช้กำแพงพิธีกรรมส่วนเกินเพื่อขยายความเข้าใจเวทมนตร์ของคุณ",
 				"require": "g.ritualward>=10",
 				"max": 5,
 				"cost": {
@@ -823,12 +827,12 @@
 					"planeslore.rate": "5+10%",
 					"lore.rate": "10+10%"
 				},
-				"flavor": "They say Garalad sometimes dispersed his wards in the middle of a ritual. The consequences were interesting to behold... from a distance"
+				"flavor": "เล่ากันว่าการาลัดบางครั้งสลายกำแพงของเขากลางพิธีกรรม ผลลัพธ์นั้นน่าดูชม...จากระยะไกล"
 			},
 			{
 				"id": "ritual_warddispersal2",
 				"name": "disperse wards",
-				"desc": "Use excess ritual wards to further your understanding of magic. It seems that only marginal gains are left to acquire",
+				"desc": "ใช้กำแพงพิธีกรรมส่วนเกินเพื่อขยายความเข้าใจเวทมนตร์ของคุณ ดูเหมือนเหลือเพียงกำไรส่วนเพิ่มเล็ก ๆ ให้ได้",
 				"require": "g.ritual_warddispersal>=5",
 				"max": 500,
 				"cost": {
@@ -837,7 +841,7 @@
 				"mod": {
 					"ritualism.rate": "5+2%"
 				},
-				"flavor": "Some claim that Garalad never died, but rather developed a ritual that grants immortality. Such a feat seems unlikely."
+				"flavor": "บางคนอ้างว่าการาลัดไม่เคยตาย แต่พัฒนาพิธีกรรมที่มอบความเป็นอมตะแทน ความสำเร็จเช่นนั้นดูเป็นไปได้ยาก"
 			}
 		],
 		"spells": [
@@ -847,7 +851,7 @@
 				"level": 10,
 				"school": "sealing",
 				"cd": 90,
-				"desc": "Stop the flow of energy in an enemy's limbs.",
+				"desc": "หยุดการไหลของพลังงานในแขนขาของศัตรู",
 				"require": "g.ritual_cursedseals>0",
 				"buy": {
 					"ritualnotes": 10
@@ -868,7 +872,7 @@
 				"level": 10,
 				"school": "sealing",
 				"cd": 90,
-				"desc": "Stop the flow of energy in an enemy's mind.",
+				"desc": "หยุดการไหลของพลังงานในจิตใจของศัตรู",
 				"require": "g.ritual_cursedseals>0",
 				"buy": {
 					"ritualnotes": 10
@@ -889,7 +893,7 @@
 				"level": 10,
 				"school": "sealing",
 				"cd": 90,
-				"desc": "Stop the flow of energy in an enemy's heart.",
+				"desc": "หยุดการไหลของพลังงานในหัวใจของศัตรู",
 				"require": "g.ritual_cursedseals>0",
 				"buy": {
 					"ritualnotes": 10
@@ -909,7 +913,7 @@
 				"level": 10,
 				"school": "sealing",
 				"cd": 90,
-				"desc": "Seal an adversary within his dreams.",
+				"desc": "ผนึกศัตรูไว้ภายในความฝันของเขา",
 				"require": "g.ritual_cursedseals>0",
 				"buy": {
 					"ritualnotes": 10
@@ -930,7 +934,7 @@
 				"level": 10,
 				"school": "sealing",
 				"cd": 90,
-				"desc": "Seal an adversary's reason.",
+				"desc": "ผนึกสติสัมปชัญญะของศัตรู",
 				"require": "g.ritual_cursedseals>0",
 				"buy": {
 					"ritualnotes": 10
@@ -950,7 +954,7 @@
 			{
 				"id": "ritualpapermaker",
 				"name": "paper press",
-				"desc": "Allows for easy preparation of paper layered with arcane energies",
+				"desc": "ช่วยให้เตรียมกระดาษที่ซ้อนชั้นด้วยพลังเวทได้ง่าย",
 				"require": "(g.ritualist+g.masterritualist)>0",
 				"max": 10,
 				"cost": {
@@ -970,39 +974,39 @@
 				"id": "ritualward",
 				"name": "ritual wards",
 				"group": "ritual",
-				"desc": "Specialized wards needed to prepare and improve various rituals",
+				"desc": "กำแพงเฉพาะทางที่จำเป็นสำหรับการเตรียมและปรับปรุงพิธีกรรมต่าง ๆ",
 				"max": 3,
-				"flavor": "The cautionary tale of Garalad the Foolish is passed down from ritualist to ritualist"
+				"flavor": "นิทานเตือนสติของการาลัดผู้โง่เขลาถูกเล่าสืบต่อจากจอมพิธีกรรมสู่จอมพิธีกรรม"
 			},
 			{
 				"id": "ritualnotes",
 				"name": "ritual notes",
 				"group": "ritual",
-				"desc": "Detailed notes on performed rituals. Can be studied to further improve one's prowess at ritualistic magic.",
+				"desc": "บันทึกรายละเอียดของพิธีกรรมที่ประกอบแล้ว ศึกษาสามารถยกระดับความชำนาญเวทมนตร์พิธีกรรมได้",
 				"max": 3,
-				"flavor": "If nothing else, your apprentices will appreciate finding those in the ruins."
+				"flavor": "อย่างน้อย เหล่าลูกศิษย์ของคุณก็คงซาบซึ้งที่พบสิ่งเหล่านี้ในซากปรักหักพัง"
 			},
 			{
 				"id": "rawritualpaper",
 				"name": "arcane paper",
 				"group": "ritual",
-				"desc": "Paper pressed with arcane energies, ready for conversion into ritual paper.",
+				"desc": "กระดาษอัดด้วยพลังเวท พร้อมแปรสภาพเป็นกระดาษพิธีกรรม",
 				"max": 5,
-				"flavor": "Garalad once put a stack of such paper on a shelf. The resulting explosion was seen from many miles away."
+				"flavor": "การาลัดเคยวางกระดาษแบบนี้ไว้กองหนึ่งบนชั้น ระเบิดที่ตามมามองเห็นได้จากไกลหลายไมล์"
 			},
 			{
 				"id": "ritualpaper",
 				"name": "ritual paper",
 				"group": "ritual",
-				"desc": "Specialized paper inscribed with sigils of power. Stabilizes advanced rituals.",
+				"desc": "กระดาษเฉพาะทางที่จารึกลวงแห่งอำนาจ ช่วยให้พิธีกรรมขั้นสูงมีเสถียรภาพ",
 				"max": 5,
-				"flavor": "The knowledge of the necessary preparations was earned with blood and toil. Mostly blood."
+				"flavor": "ความรู้เรื่องการเตรียมการอันจำเป็นนั้นได้มาด้วยเลือดและหยาดเหงื่อ ส่วนใหญ่เป็นเลือด"
 			}
 		],
 		"classes": [
 			{
 				"id": "ritualist",
-				"desc": "Perform arcane rituals to boost your powers.",
+				"desc": "ประกอบพิธีกรรมเวทมนตร์เพื่อเสริมพลังของคุณ",
 				"tags": "t_tier2",
 				"require": "g.tier1>0&&g.ritualism>=5&&g.tier2==0",
 				"cost": {
@@ -1015,12 +1019,12 @@
 					"ritualward.rate": 0.0002,
 					"rawritualpaper.rate": 0.001
 				},
-				"flavor": "The first rule of ritual magic is thus: 'Make sure you are prepared to contain the explosions.'"
+				"flavor": "กฎข้อแรกของเวทมนตร์พิธีกรรมคือ: 'จงแน่ใจว่าคุณพร้อมจะกักเก็บการระเบิด'"
 			},
 			{
 				"id": "masterritualist",
 				"name": "master ritualist",
-				"desc": "There is no ritual you fear to attempt.",
+				"desc": "ไม่มีพิธีกรรมใดที่คุณกลัวจะลอง",
 				"tags": "t_tier5",
 				"require": "g.tier4>0&&g.ritualism>=10&&g.tier5==0",
 				"cost": {
@@ -1035,7 +1039,7 @@
 					"ritualward.rate": 0.0003,
 					"rawritualpaper.rate": 0.002
 				},
-				"flavor": "The last rule of ritual magic is thus: 'No cost is too great if it guarantees success.'"
+				"flavor": "กฎข้อสุดท้ายของเวทมนตร์พิธีกรรมคือ: 'ไม่มีค่าใช้จ่ายใดยิ่งใหญ่เกินไป หากมันการันตีความสำเร็จ'"
 			}
 		],
 		"hall": {
@@ -1047,7 +1051,7 @@
 						"tags": "hall",
 						"sym": "🏰",
 						"require": "g.ritualist>0&&g.tier6>0",
-						"desc": "A warded room deep within the hall, dedicated to carrying out rituals in safety.",
+						"desc": "ห้องกำแพงป้องกันลึกเข้าไปในห้องโถง อุทิศให้ประกอบพิธีกรรมอย่างปลอดภัย",
 						"max": 1,
 						"cost": {
 							"prestige": 30
