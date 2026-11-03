@@ -6,7 +6,7 @@
 			{
 				"id": "consecrateshrine",
 				"name": "consecrate shrine",
-				"desc": "Consecrating your shrine, you gain insights into both body and spirit",
+				"desc": "การปลุกเสกศาลเจ้าของคุณทำให้คุณหยั่งรู้ทั้งกายและวิญญาณ",
 				"require": "g.good2>0",
 				"need": "shrine",
 				"cost": {
@@ -28,7 +28,7 @@
 			{
 				"id": "templerenovation",
 				"name": "temple renovations",
-				"desc": "Expand the grounds of the temple with room for like-minded individuals",
+				"desc": "ขยายบริเวณวัดให้มีที่ว่างสำหรับผู้มีแนวคิดเดียวกัน",
 				"cost": {
 					"gold": 1000,
 					"research": 400,
@@ -37,7 +37,7 @@
 				"max": 3,
 				"require": "g.t_lightclass>0",
 				"need": "(1+g.t_lightclass)>g.templerenovation",
-				"needtext": "You need to have taken classes tagged 'Master of Light' at least as many times as you've done this task. It still maxes at 3.",
+				"needtext": "คุณต้องเรียนชั้นเรียนที่ติดแท็ก 'เจ้าแห่งแสง' อย่างน้อยเท่าจำนวนครั้งที่ทำภารกิจนี้ และยังสูงสุดที่ 3",
 				"mod": {
 					"temple.mod.space.max": 80,
 					"temple.mod.virtue.rate": 0.001,
@@ -51,7 +51,7 @@
 			{
 				"id": "templealtar",
 				"name": "grand altar",
-				"desc": "Raise a grand altar in defiance of the fading age of darkness.",
+				"desc": "ตั้งแท่นบูชาอันยิ่งใหญ่เพื่อท้าทายยุคแห่งความมืดที่กำลังเลือนหาย",
 				"cost": {
 					"gold": 10000,
 					"research": 5000,
@@ -73,23 +73,31 @@
 						"lightlore.mod.light.max": 0.1
 					}
 				},
-				"flavor": "The greatest to stand since the Rending ushered in the Age of Silence.",
+				"flavor": "ผู้ยิ่งใหญ่ที่สุดที่ยืนหยัดนับแต่เหตุการณ์ฉีกขาดเปิดศักราชแห่งยุคแห่งความเงียบ",
 				"group": "housing"
 			}
 		],
 		"spells": [
 			{
 				"id": "resurrection",
-				"desc": "Reknit the body and recall the soul of a stronger humanoid or goblinoid minion.",
+				"desc": "เย็บประสานร่างและเรียกคืนวิญญาณของมินเนียนมนุษย์หรือก็อบลินอยด์ที่แข็งแกร่งกว่า",
 				"sortOrder": 1147,
 				"level": 5,
 				"school": "light",
 				"tags": "rez",
 				"keywords": {
-					"type": ["recovery"],
-					"target": ["ally"],
-					"targets": ["single"],
-					"delivery": ["instant"]
+					"type": [
+						"recovery"
+					],
+					"target": [
+						"ally"
+					],
+					"targets": [
+						"single"
+					],
+					"delivery": [
+						"instant"
+					]
 				},
 				"require": "g.t_healingclass>0",
 				"buy": {
@@ -103,7 +111,10 @@
 					"spiritgem": 1
 				},
 				"resurrect": {
-					"only": ["humanoid", "goblinoid"],
+					"only": [
+						"humanoid",
+						"goblinoid"
+					],
 					"maxlevel": 99,
 					"count": 1
 				}
@@ -111,17 +122,28 @@
 			{
 				"id": "mendinglight",
 				"name": "mending light",
-				"desc": "A cascade of light closes your wounds and those of your allies.",
-				"extdesc": "Healing gains twice the normal benefit from Light and Spell Healing potencies.",
+				"desc": "สายน้ำแสงหลั่งไหลปิดบาดแผลของคุณและพันธมิตร",
+				"extdesc": "การเยียวยาได้รับประโยชน์จากศักยภาพการเยียวยาด้วยแสงและคาถาเป็นสองเท่าปกติ",
 				"sortOrder": 1130,
 				"level": 15,
 				"school": "light",
-				"tags": ["t_healspell", "t_nospellcraft"],
+				"tags": [
+					"t_healspell",
+					"t_nospellcraft"
+				],
 				"keywords": {
-					"type": ["recovery"],
-					"target": ["ally"],
-					"targets": ["multiple"],
-					"delivery": ["instant"]
+					"type": [
+						"recovery"
+					],
+					"target": [
+						"ally"
+					],
+					"targets": [
+						"multiple"
+					],
+					"delivery": [
+						"instant"
+					]
 				},
 				"require": "g.lightlore>=20&&g.heallore>=7&&(g.t_healingclass+g.tier5)>=2&&g.evil2==0",
 				"buy": {
@@ -129,7 +151,10 @@
 					"tomes": 25,
 					"lightgem": 35
 				},
-				"need": ["g.evil2==0", "g.good2>0"],
+				"need": [
+					"g.evil2==0",
+					"g.good2>0"
+				],
 				"cost": {
 					"light": 7
 				},
@@ -144,7 +169,12 @@
 					"harmless": true,
 					"healing": 50,
 					"kind": "light",
-					"potencies": ["spellheal", "spellheal", "lightdmg", "lightdmg"]
+					"potencies": [
+						"spellheal",
+						"spellheal",
+						"lightdmg",
+						"lightdmg"
+					]
 				}
 			},
 			{
@@ -154,10 +184,18 @@
 				"level": 5,
 				"school": "light",
 				"keywords": {
-					"type": ["summon"],
-					"target": ["ally"],
-					"targets": ["single"],
-					"delivery": ["instant"]
+					"type": [
+						"summon"
+					],
+					"target": [
+						"ally"
+					],
+					"targets": [
+						"single"
+					],
+					"delivery": [
+						"instant"
+					]
 				},
 				"require": "g.t_lightclass>0",
 				"buy": {
@@ -189,10 +227,18 @@
 				"level": 7,
 				"school": "light",
 				"keywords": {
-					"type": ["summon"],
-					"target": ["ally"],
-					"targets": ["single"],
-					"delivery": ["instant"]
+					"type": [
+						"summon"
+					],
+					"target": [
+						"ally"
+					],
+					"targets": [
+						"single"
+					],
+					"delivery": [
+						"instant"
+					]
 				},
 				"require": "(g.t_lightclass+g.tier5+g.tier6)>=3",
 				"buy": {
@@ -225,10 +271,18 @@
 				"level": 6,
 				"school": "light",
 				"keywords": {
-					"type": ["summon"],
-					"target": ["ally"],
-					"targets": ["single"],
-					"delivery": ["instant"]
+					"type": [
+						"summon"
+					],
+					"target": [
+						"ally"
+					],
+					"targets": [
+						"single"
+					],
+					"delivery": [
+						"instant"
+					]
 				},
 				"require": "(g.t_lightclass+g.tier5)>=2",
 				"buy": {
@@ -373,7 +427,7 @@
 			{
 				"id": "hierarch",
 				"tags": "t_tier6,t_lightclass,t_healingclass",
-				"desc": "Your authority is unquestioned in matters of faith",
+				"desc": "อำนาจของคุณไร้ข้อกังขาในเรื่องความศรัทธา",
 				"require": "g.t6unlocker>0&&g.lightlore>=25&&g.t_lightclass>0&&g.tier6==0&&g.good3>0",
 				"cost": {
 					"sindel": 3,
@@ -394,7 +448,7 @@
 			{
 				"id": "hallowed",
 				"tags": "t_tier5,t_lightclass,t_healingclass",
-				"desc": "Other members of the faith defer to your wisdom and experience",
+				"desc": "สมาชิกคนอื่นของศาสนายอมตามปัญญาและประสบการณ์ของคุณ",
 				"require": "g.t5unlocker>0&&g.lightlore>=21&&g.spiritlore>=15&&g.tier5==0&&g.good3>0",
 				"cost": {
 					"lightgem": 20
@@ -412,7 +466,7 @@
 			{
 				"id": "lightbringer",
 				"tags": "t_tier4,t_lightclass,t_healingclass",
-				"desc": "The light blesses you on your mission to create a virtuous world.",
+				"desc": "แสงอวยพรคุณในภารกิจสร้างโลกอันมีคุณธรรม",
 				"require": "g.t4unlocker>0&&g.lightlore>=17&&g.spiritlore>=10&&g.tier4==0&&g.good2>0",
 				"cost": {
 					"lightgem": 20
@@ -429,7 +483,7 @@
 			{
 				"id": "priest",
 				"tags": "t_tier3,t_lightclass,t_healingclass",
-				"desc": "Join the assembly that recognizes the good inherent in the light.",
+				"desc": "เข้าร่วมที่ประชุมที่ตระหนักถึงความดีโดยเนื้อแท้ในแสงสว่าง",
 				"require": "g.t3unlocker>0&&g.lightlore>=13&&g.spiritlore>=10&&g.tier3==0&&g.good2>0",
 				"cost": {
 					"lightgem": 20
