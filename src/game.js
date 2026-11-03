@@ -375,14 +375,20 @@ export default {
 
 		const updateTime = Date.now();
 		this.updateTechTree();
+		// Advance by the full elapsed (real) time so the game keeps running even when the
+		// tab is minimized or switched away (browsers throttle timers there to ~1s). We
+		// process the delta in small per-tick steps so progress stays smooth and deterministic.
 		let dt = Math.max(updateTime - this.state.lastUpdate, 0);
-		const maxTick = TICK_TIME * 2; //we give a tick's worth of leeway to avoid a large time jump on the next frame.
-		if (dt > maxTick) {
-			// Offline overflow is no longer banked as stored time; the step is just capped so the game doesn't leap forward.
-			dt = maxTick;
-		}
 		this.state.lastUpdate = updateTime;
-		this.updateForDelta(dt);
+		// Cap a single catch-up so an extremely long absence (e.g. a device sleep) does not
+		// freeze the tab in one giant loop; any surplus is simply picked up on later frames.
+		const maxCatchUp = 60000; // 60 seconds of game time per frame, at most.
+		let remaining = Math.min(dt, maxCatchUp);
+		while (remaining > 0) {
+			const step = Math.min(remaining, TICK_TIME);
+			this.updateForDelta(step);
+			remaining -= step;
+		}
 	},
 
 	/// update the game state with a time step of dt milliseconds
