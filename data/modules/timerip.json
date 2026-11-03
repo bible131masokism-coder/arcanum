@@ -7,7 +7,7 @@
 				"name": "unknown timeline",
 				"unreturnable": true,
 				"sym": "⌛️⚔💀",
-				"desc": "The unmistakable ticking of a timepiece of your own making catches your attention. Who could possibly own one?",
+				"desc": "เสียงติ๊กต็อกอันไม่ผิดเพี้ยนของนาฬิกาที่คุณสร้างเองดึงความสนใจของคุณ ใครกันจะได้ครอบครองมัน?",
 				"require": "g.timerip_locale>=15",
 				"level": 1,
 				"run": {
@@ -25,7 +25,9 @@
 				},
 				"length": 1,
 				"boss": {
-					"1": ["timerip_unknown_wizard"]
+					"1": [
+						"timerip_unknown_wizard"
+					]
 				},
 				"runmod": {
 					"timeparadox.mod.instability.rate": 0.3,
@@ -39,7 +41,7 @@
 				"id": "timerip_locale",
 				"name": "rip in time",
 				"sym": "⌛️",
-				"desc": "This can't possibly be a bad idea.",
+				"desc": "นี่ไม่สามารถเป็นความคิดที่แย่ได้หรอก",
 				"level": 30,
 				"require": "evt_timerip",
 				"length": 150,
@@ -110,12 +112,16 @@
 			{
 				"id": "pot_stability",
 				"name": "draught of memory",
-				"desc": "Grants you precise and immutable memory, for a time.",
+				"desc": "มอบความทรงจำอันแม่นยำและคงที่แก่คุณ ชั่วระยะเวลาหนึ่ง",
 				"level": 5,
 				"school": "utility",
 				"keywords": {
-					"utility": ["explore"],
-					"delivery": ["over time"]
+					"utility": [
+						"explore"
+					],
+					"delivery": [
+						"over time"
+					]
 				},
 				"sortOrder": 202,
 				"require": "g.timerip_locale>=5&&g.potions>=5&&g.chronomancy>=5",
@@ -143,16 +149,16 @@
 			{
 				"id": "timeparadox",
 				"name": "time paradox",
-				"desc": "Hold on, the stables were demolished a century ago?",
+				"desc": "เดี๋ยวนะ คอกม้าถูกรื้อถอนไปตั้งแต่ร้อยปีก่อน?",
 				"group": "adversities",
 				"rate": -0.01,
 				"max": 20,
 				"sortOrder": 810,
-				"flavor": "No relation to usage of postmen to deliver volatile materials."
+				"flavor": "ไม่เกี่ยวกับการใช้บุรุษไปรษณีย์ขนส่งวัตถุระเบิดแต่อย่างใด"
 			},
 			{
 				"id": "instability",
-				"desc": "Time is a dangerous thing. Try not to wink out of existence",
+				"desc": "เวลาเป็นสิ่งอันตราย พยายามอย่ากระพริบตาหายไปจากการดำรงอยู่",
 				"max": 500,
 				"reverse": true,
 				"defeatstat": true,
@@ -168,7 +174,7 @@
 			{
 				"id": "clepsydra100",
 				"name": "clockwork cabinet",
-				"desc": "An enormous collection of clocks, all tuned to different times.",
+				"desc": "คอลเลกชันนาฬิกามหึมา ทั้งหมดตั้งเวลาไว้ต่างกัน",
 				"require": "tier6",
 				"tags": "timesource",
 				"max": 5,
@@ -182,14 +188,14 @@
 					"water.rate": 1,
 					"space": 80
 				},
-				"flavor": "It took a lot of time to make this, you are confident to about 80%"
+				"flavor": "ใช้เวลามากมายในการสร้างสิ่งนี้ คุณมั่นใจประมาณ 80 เปอร์เซ็นต์"
 			}
 		],
 		"rares": [
 			{
 				"id": "timeedge",
 				"name": "Time's Flowering Edge",
-				"desc": "Blossoming flows of time coalesce into a cutting edge right before your eyes.",
+				"desc": "สายธารเวลาแห่งการผลิบานหลอมรวมเป็นคมมีดต่อหน้าต่อตาคุณ",
 				"type": "weapon",
 				"slot": "mainhand",
 				"damage": "10~18",
@@ -201,14 +207,22 @@
 						"targets": "enemies",
 						"maxTargets": 999,
 						"damage": "(i.damage||0)*0.8",
-						"potencies": ["sworddmg", "slashdmg", "physdmg"]
+						"potencies": [
+							"sworddmg",
+							"slashdmg",
+							"physdmg"
+						]
 					},
 					{
 						"name": "culling",
 						"kind": "slash",
 						"targets": "enemy",
 						"damage": "(i.damage||0)*1.2",
-						"potencies": ["sworddmg", "slashdmg", "physdmg"]
+						"potencies": [
+							"sworddmg",
+							"slashdmg",
+							"physdmg"
+						]
 					},
 					{
 						"name": "bladework",
@@ -217,7 +231,11 @@
 						"damage": "(i.damage||0)",
 						"harmless": true,
 						"unreflectable": true,
-						"potencies": ["sworddmg", "slashdmg", "physdmg"]
+						"potencies": [
+							"sworddmg",
+							"slashdmg",
+							"physdmg"
+						]
 					}
 				],
 				"alter": {
@@ -248,7 +266,7 @@
 			{
 				"id": "up_stabilize",
 				"name": "stabilize",
-				"desc": "Untangle the paradoxes. Assert your existence.",
+				"desc": "คลี่คลายความขัดแย้ง จงยืนยันการดำรงอยู่ของตน",
 				"require": "g.timerip_locale.owned",
 				"max": 1,
 				"cost": {
@@ -258,13 +276,13 @@
 					"instability.rate": -1,
 					"timeparadox.rate": -0.01
 				},
-				"flavor": "It's as if you ever existed.",
+				"flavor": "ราวกับว่าคุณเคยดำรงอยู่มาก่อน",
 				"group": "rest"
 			},
 			{
 				"id": "timeledger",
 				"name": "ledger of time",
-				"desc": "A book of uncertain dimensions, containing exacting information about various states of the universe.",
+				"desc": "หนังสือที่มีมิติไม่แน่นอน บรรจุข้อมูลแม่นยำเกี่ยวกับสภาวะต่าง ๆ ของจักรวาล",
 				"require": "g.timerip_locale>=1&&g.chronomancy>=5",
 				"cost": {
 					"research": 33333,
@@ -280,7 +298,7 @@
 			{
 				"id": "paradoxmitigation",
 				"name": "paradox disentanglement",
-				"desc": "A paradox is nothing but a simple inconsistency in the universe. Nothing a little mathemagic cannot solve.",
+				"desc": "ความขัดแย้งก็เป็นเพียงความไม่สอดคล้องง่าย ๆ ในจักรวาล ไม่มีอะไรที่คณิตเวทเล็ก ๆ น้อย ๆ แก้ไม่ได้",
 				"require": "g.timerip_locale>=10&&g.chronomancy>=5",
 				"cost": {
 					"research": 33333,
@@ -296,7 +314,7 @@
 			{
 				"id": "instabilitymitigation",
 				"name": "instability mitigation",
-				"desc": "Time is merciless to those who abuse it. However, there may be ways to soften the blow.",
+				"desc": "เวลาไร้ปรานีต่อผู้ที่ใช้มันในทางที่ผิด อย่างไรก็ตาม อาจมีวิธีบรรเทาผลกระทบ",
 				"require": "g.timerip_locale>=10&&g.chronomancy>=5",
 				"cost": {
 					"research": 33333,
@@ -312,7 +330,7 @@
 			{
 				"id": "ripexploitation",
 				"name": "time-rip exploitation",
-				"desc": "Now that you have walked the timelines so many times, you can shorten the time needed to procure time gems significantly.",
+				"desc": "บัดนี้คุณได้เดินทางตามเส้นเวลามาหลายครั้งแล้ว คุณสามารถย่นเวลาที่ต้องใช้หาอัญมณีเวลาได้อย่างมาก",
 				"require": "g.timerip_locale>=15&&g.chronomancy>=5",
 				"cost": {
 					"research": 55555,
@@ -327,7 +345,7 @@
 			{
 				"id": "ripshortening",
 				"name": "rip concentration",
-				"desc": "With an expenditure of specially-prepared conduits, further improvements to time collection efficiency are possible.",
+				"desc": "ด้วยการจ่ายท่อนำพลังงานที่เตรียมไว้เป็นพิเศษ ยังสามารถปรับปรุงประสิทธิภาพการเก็บเวลาได้อีก",
 				"require": "g.ripexploitation>0",
 				"max": 5,
 				"cost": {
@@ -345,16 +363,26 @@
 			{
 				"id": "perfectstability",
 				"name": "perfect stability",
-				"desc": "Unleash the stored time to mask your own meddling.",
+				"desc": "ปลดปล่อยเวลาที่กักเก็บไว้เพื่อกลบเกลื่อนการแทรกแซงของคุณ",
 				"sortOrder": 1470,
 				"level": 25,
 				"school": "tempus",
 				"keywords": {
-					"type": ["recovery"],
-					"target": ["self"],
-					"targets": ["single"],
-					"delivery": ["over time"],
-					"special": ["explore"]
+					"type": [
+						"recovery"
+					],
+					"target": [
+						"self"
+					],
+					"targets": [
+						"single"
+					],
+					"delivery": [
+						"over time"
+					],
+					"special": [
+						"explore"
+					]
 				},
 				"require": "g.instability>=50&&g.chronomancy>=5",
 				"buy": {
@@ -376,16 +404,26 @@
 			{
 				"id": "temporalanchor",
 				"name": "temporal anchor",
-				"desc": "Utilize an anchor to achieve transient temporal stability.",
+				"desc": "ใช้สมอเวลาเพื่อบรรลุเสถียรภาพทางเวลาชั่วคราว",
 				"sortOrder": 1471,
 				"level": 15,
 				"school": "tempus",
 				"keywords": {
-					"type": ["recovery"],
-					"target": ["self"],
-					"targets": ["single"],
-					"delivery": ["over time"],
-					"special": ["explore"]
+					"type": [
+						"recovery"
+					],
+					"target": [
+						"self"
+					],
+					"targets": [
+						"single"
+					],
+					"delivery": [
+						"over time"
+					],
+					"special": [
+						"explore"
+					]
 				},
 				"require": "g.instability>=50&&g.chronomancy>=5",
 				"buy": {
@@ -407,16 +445,26 @@
 			{
 				"id": "temporalalignment",
 				"name": "temporal alignment",
-				"desc": "Re-align yourself with primary timeline.",
+				"desc": "ปรับแนวตัวเองกลับสู่เส้นเวลาหลัก",
 				"sortOrder": 1430,
 				"level": 15,
 				"school": "tempus",
 				"keywords": {
-					"type": ["recovery"],
-					"target": ["self"],
-					"targets": ["single"],
-					"delivery": ["instant"],
-					"special": ["explore"]
+					"type": [
+						"recovery"
+					],
+					"target": [
+						"self"
+					],
+					"targets": [
+						"single"
+					],
+					"delivery": [
+						"instant"
+					],
+					"special": [
+						"explore"
+					]
 				},
 				"require": "g.instability>=50&&g.chronomancy>=5",
 				"buy": {
@@ -437,16 +485,26 @@
 			{
 				"id": "timerip_stress",
 				"name": "mind resilience",
-				"desc": "Steel your mind against the ravages of time.",
+				"desc": "ทำให้จิตใจเข้มแข็งทนทานต่อการบั่นทอนของกาลเวลา",
 				"sortOrder": 1472,
 				"level": 15,
 				"school": "tempus",
 				"keywords": {
-					"type": ["recovery"],
-					"target": ["self"],
-					"targets": ["single"],
-					"delivery": ["over time"],
-					"special": ["explore"]
+					"type": [
+						"recovery"
+					],
+					"target": [
+						"self"
+					],
+					"targets": [
+						"single"
+					],
+					"delivery": [
+						"over time"
+					],
+					"special": [
+						"explore"
+					]
 				},
 				"require": "g.instability>=50&&g.chronomancy>=5",
 				"buy": {
@@ -471,15 +529,23 @@
 			{
 				"id": "timerip_aeon",
 				"name": "aeon blast",
-				"desc": "In time, all perish.",
+				"desc": "ตามกาลเวลา ทุกสิ่งย่อมเน่าเปื่อย",
 				"sortOrder": 1400,
 				"level": 25,
 				"school": "tempus",
 				"keywords": {
-					"type": ["damage"],
-					"target": ["enemy"],
-					"targets": ["multiple"],
-					"delivery": ["instant"]
+					"type": [
+						"damage"
+					],
+					"target": [
+						"enemy"
+					],
+					"targets": [
+						"multiple"
+					],
+					"delivery": [
+						"instant"
+					]
 				},
 				"require": "g.timerip_clash>0",
 				"buy": {
@@ -496,20 +562,31 @@
 					"damage": "125~250",
 					"kind": "tempus",
 					"tohit": 5,
-					"potencies": ["spelldmg", "timedmg"]
+					"potencies": [
+						"spelldmg",
+						"timedmg"
+					]
 				}
 			},
 			{
 				"id": "mon_aeon",
 				"name": "aeon blast",
-				"desc": "In time, all perish. How are you reading this?",
+				"desc": "ตามกาลเวลา ทุกสิ่งย่อมเน่าเปื่อย แล้วเจ้าได้อ่านนี่ได้อย่างไร?",
 				"level": 25,
 				"school": "tempus",
 				"keywords": {
-					"type": ["damage"],
-					"target": ["enemy"],
-					"targets": ["multiple"],
-					"delivery": ["instant"]
+					"type": [
+						"damage"
+					],
+					"target": [
+						"enemy"
+					],
+					"targets": [
+						"multiple"
+					],
+					"delivery": [
+						"instant"
+					]
 				},
 				"require": "g.chronomancy>=9999",
 				"cd": 5,
@@ -519,21 +596,32 @@
 					"damage": "80~110",
 					"kind": "tempus",
 					"tohit": 10,
-					"potencies": ["spelldmg", "timedmg"]
+					"potencies": [
+						"spelldmg",
+						"timedmg"
+					]
 				}
 			},
 			{
 				"id": "timerip_distort",
 				"name": "distortion",
-				"desc": "Change the flow of time within an opponent, causing them to desynchronize.",
+				"desc": "เปลี่ยนแปลงการไหลของเวลาภายในศัตรู ทำให้พวกมันสลับเฟส",
 				"sortOrder": 1402,
 				"level": 15,
 				"school": "tempus",
 				"keywords": {
-					"type": ["damage"],
-					"target": ["enemy"],
-					"targets": ["single"],
-					"delivery": ["over time"]
+					"type": [
+						"damage"
+					],
+					"target": [
+						"enemy"
+					],
+					"targets": [
+						"single"
+					],
+					"delivery": [
+						"over time"
+					]
 				},
 				"require": "g.timerip_locale>=7",
 				"buy": {
@@ -549,21 +637,32 @@
 					"dot": {
 						"duration": 15,
 						"damage": "25~50",
-						"potencies": ["spelldmg", "timedmg"]
+						"potencies": [
+							"spelldmg",
+							"timedmg"
+						]
 					}
 				}
 			},
 			{
 				"id": "mon_distort",
 				"name": "distortion",
-				"desc": "Change the flow of time within an opponent, causing them to desynchronize. How are you reading this?",
+				"desc": "เปลี่ยนแปลงการไหลของเวลาภายในศัตรู ทำให้พวกมันสลับเฟส แล้วเจ้าได้อ่านนี่ได้อย่างไร?",
 				"level": 25,
 				"school": "tempus",
 				"keywords": {
-					"type": ["damage"],
-					"target": ["enemy"],
-					"targets": ["single"],
-					"delivery": ["over time"]
+					"type": [
+						"damage"
+					],
+					"target": [
+						"enemy"
+					],
+					"targets": [
+						"single"
+					],
+					"delivery": [
+						"over time"
+					]
 				},
 				"require": "g.chronomancy>=9999",
 				"cd": 15,
@@ -596,14 +695,22 @@
 			{
 				"id": "timerip_dilate",
 				"name": "dilation",
-				"desc": "Alter the flow of time to create a localized time dilation zone.",
+				"desc": "ปรับเปลี่ยนการไหลของเวลาเพื่อสร้างเขตยืดเวลารอบเฉพาะที่",
 				"level": 15,
 				"school": "tempus",
 				"keywords": {
-					"type": ["debuff"],
-					"target": ["enemy"],
-					"targets": ["multiple"],
-					"delivery": ["over time"]
+					"type": [
+						"debuff"
+					],
+					"target": [
+						"enemy"
+					],
+					"targets": [
+						"multiple"
+					],
+					"delivery": [
+						"over time"
+					]
 				},
 				"require": "g.timerip_locale>=3",
 				"buy": {
@@ -628,14 +735,23 @@
 			{
 				"id": "mon_dilate",
 				"name": "dilation",
-				"desc": "Alter the flow of time to create a localized time dilation zone. How are you reading this?",
+				"desc": "ปรับเปลี่ยนการไหลของเวลาเพื่อสร้างเขตยืดเวลารอบเฉพาะที่ แล้วเจ้าได้อ่านนี่ได้อย่างไร?",
 				"level": 25,
 				"school": "tempus",
 				"keywords": {
-					"type": ["damage", "debuff"],
-					"target": ["enemy"],
-					"targets": ["multiple"],
-					"delivery": ["over time"]
+					"type": [
+						"damage",
+						"debuff"
+					],
+					"target": [
+						"enemy"
+					],
+					"targets": [
+						"multiple"
+					],
+					"delivery": [
+						"over time"
+					]
 				},
 				"require": "g.chronomancy>=9999",
 				"cd": 15,
@@ -672,14 +788,25 @@
 			{
 				"id": "mon_temporalrestoration",
 				"name": "acausal restoration",
-				"desc": "A regen spell for unknown wizard. How are you reading this?",
+				"desc": "คาถาฟื้นฟูสำหรับจอมเวทนิรนาม แล้วเจ้าได้อ่านนี่ได้อย่างไร?",
 				"level": 25,
 				"school": "tempus",
 				"keywords": {
-					"type": ["damage", "recovery"],
-					"target": ["self", "enemy"],
-					"targets": ["single"],
-					"delivery": ["instant", "over time"]
+					"type": [
+						"damage",
+						"recovery"
+					],
+					"target": [
+						"self",
+						"enemy"
+					],
+					"targets": [
+						"single"
+					],
+					"delivery": [
+						"instant",
+						"over time"
+					]
 				},
 				"require": "g.chronomancy>=9999",
 				"cd": 25,
@@ -710,14 +837,25 @@
 			{
 				"id": "mon_quicken",
 				"name": "acceleration",
-				"desc": "A buff spell for unknown wizard. How are you reading this?",
+				"desc": "คาถาบัฟสำหรับจอมเวทนิรนาม แล้วเจ้าได้อ่านนี่ได้อย่างไร?",
 				"level": 25,
 				"school": "tempus",
 				"keywords": {
-					"type": ["damage", "buff"],
-					"target": ["self", "enemy"],
-					"targets": ["single"],
-					"delivery": ["instant", "over time"]
+					"type": [
+						"damage",
+						"buff"
+					],
+					"target": [
+						"self",
+						"enemy"
+					],
+					"targets": [
+						"single"
+					],
+					"delivery": [
+						"instant",
+						"over time"
+					]
 				},
 				"require": "g.chronomancy>=9999",
 				"cd": 15,
@@ -755,7 +893,7 @@
 				"id": "enc_test",
 				"level": 2,
 				"name": "stablehand",
-				"desc": "You see someone feeding a horse. This is a test encounter, dumbass.",
+				"desc": "คุณเห็นใครสักคนกำลังให้อาหารม้า นี่คือเอ็นเคาน์เตอร์ทดสอบ ไอ้โง่",
 				"effect": {
 					"unease": 1,
 					"instability": 1
@@ -772,7 +910,7 @@
 			{
 				"id": "timerip_stablehorse",
 				"name": "stablehand",
-				"desc": "You see someone feeding a horse. Seems like an incredibly mundane job.",
+				"desc": "คุณเห็นใครสักคนกำลังให้อาหารม้า ดูเป็นงานที่แสนธรรมดาสุด ๆ",
 				"effect": {
 					"unease": "5~7",
 					"instability": 1.5,
@@ -782,7 +920,7 @@
 			{
 				"id": "timerip_stablehorse_paradox",
 				"name": "stablehand",
-				"desc": "You see someone feeding a horse. As you turn to leave, you knock a candle over.",
+				"desc": "คุณเห็นใครสักคนกำลังให้อาหารม้า ขณะหันหลังจะจากไป คุณทำเทียนล้ม",
 				"effect": {
 					"unease": "5~7",
 					"animals.exp": "g.animals.rate*2",
@@ -799,7 +937,7 @@
 			{
 				"id": "timerip_apprentice",
 				"name": "apprentice",
-				"desc": "An apprentice fumbles a simple errand for his master.",
+				"desc": "ศิษย์ฝึกหัดคนหนึ่งทำธุระง่าย ๆ ของนายพลาด",
 				"effect": {
 					"rage": "5~7",
 					"instability": 1.5,
@@ -812,7 +950,7 @@
 			{
 				"id": "timerip_neophyte_evil",
 				"name": "quiet night",
-				"desc": "No sound is heard, as a figure carrying a pillow approaches a bedroom.",
+				"desc": "ไม่มีเสียงใดได้ยิน ขณะเงาร่างหนึ่งถือหมอนเดินเข้าใกล้ห้องนอน",
 				"effect": {
 					"madness": "5~7",
 					"instability": 1.5,
@@ -825,7 +963,7 @@
 			{
 				"id": "timerip_neophyte_good",
 				"name": "graduation",
-				"desc": "An old miser takes an unfair fee from a young adept.",
+				"desc": "ชายขี้เหนียวชราคิดค่าธรรมเนียมไม่เป็นธรรมจากศิษย์หนุ่ม",
 				"effect": {
 					"rage": "5~7",
 					"instability": 1.5,
@@ -838,7 +976,7 @@
 			{
 				"id": "timerip_neophyte_savant",
 				"name": "unnatural insight",
-				"desc": "An apprentice leaves his master behind, having no need for formal instruction. Highly unusual...",
+				"desc": "ศิษย์ฝึกหัดละทิ้งนายของตน ไร้ความจำเป็นในการสั่งสอนเป็นทางการ แปลกประหลาดยิ่งนัก...",
 				"effect": {
 					"bf": "5~7",
 					"mysticism.exp": "g.mysticism.rate*2",
@@ -855,7 +993,7 @@
 			{
 				"id": "timerip_darkmagician",
 				"name": "dark pledge",
-				"desc": "Cursed words echo in the surrounding darkness, pledging themselves to the darker arts.",
+				"desc": "ถ้อยคำต้องสาปสะท้อนในความมืดโดยรอบ สาบานตนต่อศิลปะด้านมืด",
 				"effect": {
 					"madness": "5~7",
 					"instability": 1.5,
@@ -868,7 +1006,7 @@
 			{
 				"id": "timerip_reanimator",
 				"name": "squelch",
-				"desc": "You see a collection of organs, neatly preserved in jars. The sounds of dissection can be heard in the next room.",
+				"desc": "คุณเห็นคอลเลกชันอวัยวะ ถูกเก็บรักษาไว้อย่างเป็นระเบียบในขวดโหล เสียงผ่าชำแหละลอดมาจากห้องถัดไป",
 				"effect": {
 					"madness": "5~7",
 					"instability": 1.5,
@@ -881,7 +1019,7 @@
 			{
 				"id": "timerip_reanimator_paradox",
 				"name": "squelch",
-				"desc": "You see a collection of organs, neatly preserved in jars. A bone crunches underfoot.",
+				"desc": "คุณเห็นคอลเลกชันอวัยวะ ถูกเก็บรักษาไว้อย่างเป็นระเบียบในขวดโหล กระดูกกรุบใต้ฝ่าเท้า",
 				"effect": {
 					"madness": "5~7",
 					"instability": 1.5,
@@ -898,7 +1036,7 @@
 			{
 				"id": "timerip_unattended_gems",
 				"name": "treasury",
-				"desc": "Piles of gold and gems surround you. You take a gem along.",
+				"desc": "กองทองคำและอัญมณีรายล้อมคุณ คุณหยิบอัญมณีไปหนึ่งเม็ด",
 				"effect": {
 					"bf": "5~7",
 					"instability": 3
@@ -915,7 +1053,7 @@
 			{
 				"id": "timerip_witch",
 				"name": "steaming cauldron",
-				"desc": "Some sort of soup is boiling in a large pot. The stock seems to be extremely rich in life force.",
+				"desc": "น้ำซุปอะไรบางอย่างกำลังเดือดในหม้อใหญ่ น้ำซุปดูเข้มข้นด้วยพลังชีวิตอย่างยิ่ง",
 				"effect": {
 					"unease": "5~7",
 					"instability": 1.5,
@@ -928,7 +1066,7 @@
 			{
 				"id": "timerip_holdup",
 				"name": "A ⚔👗♨️⚗️✒️♾️",
-				"desc": "A blacksmith is hammering his needle into the soft silk. With every stitch, the potion's hue changes slightly, as the engraving spreads across the surface of the clock.",
+				"desc": "ช่างตีเหล็กกำลังตอกเข็มของเขาลงบนเส้นไหมนุ่ม ทุกฝีเข็ม สีของยาหยดเปลี่ยนเล็กน้อย ขณะลายสลักแผ่ขยายทั่วผิวของนาฬิกา",
 				"tags": "loot_equip_gen",
 				"effect": {
 					"unease": 7,
@@ -950,7 +1088,7 @@
 			{
 				"id": "timerip_trickster",
 				"name": "busy street",
-				"desc": "As you walk down the street your pocket suddenly feels lighter.",
+				"desc": "ขณะเดินไปตามถนน กระเป๋าของคุณรู้สึกเบาลงในทันใด",
 				"effect": {
 					"bf": "5~7",
 					"instability": 2,
@@ -968,7 +1106,7 @@
 			{
 				"id": "timerip_thanophage",
 				"name": "odor",
-				"desc": "A chamber of rotten meat lies in front of you. You suddenly feel peckish",
+				"desc": "ห้องแห่งเนื้อเน่าเปื่อยปรากฏอยู่ตรงหน้าคุณ คุณรู้สึกหิวโหยขึ้นมาทันใด",
 				"effect": {
 					"madness": "5~7",
 					"instability": 1.5,
@@ -981,7 +1119,7 @@
 			{
 				"id": "timerip_battlemage",
 				"name": "spells flashing",
-				"desc": "A spellslinger is fighting off a horde of monsters with his trusty blade and a veritable arsenal of spells",
+				"desc": "นักยิงคาถากำลังต่อสู้กับมอนสเตอร์ฝูงหนึ่งด้วยดาบคู่ใจและคลังคาถาอันมากมาย",
 				"effect": {
 					"weary": "5~7",
 					"instability": 1.5,
@@ -994,7 +1132,7 @@
 			{
 				"id": "timerip_dragon",
 				"name": "fiery chamber",
-				"desc": "An odd wizard gulps down a potion and collapses, his body twisting into a grotesque, scaly form.",
+				"desc": "จอมเวทประหลาดกระดกยาลงคอแล้วทรุดลง ร่างกายบิดเบี้ยวเป็นรูปร่างเกล็ดอันประหลาด",
 				"effect": {
 					"bf": "5~7",
 					"instability": 1.5,
@@ -1007,7 +1145,7 @@
 			{
 				"id": "timerip_bladeweaver",
 				"name": "sharp air",
-				"desc": "A blade stops an inch from your face as a confused swordsman looks on.",
+				"desc": "ใบมีดหยุดอยู่ห่างใบหน้าคุณหนึ่งนิ้ว ขณะนักดาบผู้สับสนยืนมอง",
 				"effect": {
 					"rage": "5~7",
 					"instability": 2,
@@ -1024,7 +1162,7 @@
 			{
 				"id": "timerip_eldritchknight",
 				"name": "weave of death",
-				"desc": "Cleft cleanly in twain, the monster collapses, revealing an armored figure.",
+				"desc": "ถูกผ่าขาดกลางลำตัว มอนสเตอร์ล้มลง เผยร่างผู้สวมเกราะ",
 				"effect": {
 					"rage": "5~7",
 					"instability": 1.5,
@@ -1037,7 +1175,7 @@
 			{
 				"id": "timerip_warlock",
 				"name": "otherwordly portal",
-				"desc": "Staff raised high, a distant figure opens a portal for a demonic horde to pass through.",
+				"desc": "ยกไม้เท้าขึ้นสูง เงาร่างที่อยู่ไกลเปิดประตูมิติให้ปีศาจฝูงหนึ่งทะลุผ่าน",
 				"effect": {
 					"madness": "5~7",
 					"instability": 1.5,
@@ -1050,7 +1188,7 @@
 			{
 				"id": "timerip_mechamancer",
 				"name": "ghastly sight",
-				"desc": "A row of automata passes before you, searching for the one that managed to escape.",
+				"desc": "หุ่นยนต์จักรกลแถวหนึ่งเดินผ่านหน้าคุณ ตามหาคนที่หลบหนีไปได้",
 				"effect": {
 					"weary": "5~7",
 					"instability": 1.5,
@@ -1063,7 +1201,7 @@
 			{
 				"id": "timerip_mechamancer_paradox",
 				"name": "ghastly sight",
-				"desc": "A row of automata passes before you, brought here by an unusual magical aura.",
+				"desc": "หุ่นยนต์จักรกลแถวหนึ่งเดินผ่านหน้าคุณ ถูกนำมายังที่นี้ด้วยออร่าเวทมนตร์อันผิดปกติ",
 				"effect": {
 					"weary": "5~7",
 					"instability": 2,
@@ -1080,7 +1218,7 @@
 			{
 				"id": "timerip_summoner",
 				"name": "dimensional rift",
-				"desc": "Multiple creatures congregate on this site, summoned by a friendly wizard.",
+				"desc": "สิ่งมีชีวิตมากมายชุมนุม ณ ที่แห่งนี้ ถูกเรียกมาด้วยจอมเวทผู้เป็นมิตร",
 				"effect": {
 					"bf": "5~7",
 					"instability": 1.5,
@@ -1093,7 +1231,7 @@
 			{
 				"id": "timerip_alchemist",
 				"name": "busy lab",
-				"desc": "Retorts, alembics and vials of all shapes and sizes occupy this space.",
+				"desc": "ขวดกลั่น ขวดแยกไอ และขวดทดลองสารพัดรูปทรงขนาดเต็มพื้นที่นี้",
 				"effect": {
 					"bf": "5~7",
 					"instability": 1.5,
@@ -1106,7 +1244,7 @@
 			{
 				"id": "timerip_titan",
 				"name": "deep cavern",
-				"desc": "You shout, but the echo doesn't come back.",
+				"desc": "คุณตะโกน แต่เสียงสะท้อนไม่ย้อนกลับมา",
 				"effect": {
 					"bf": "5~7",
 					"instability": 1.5,
@@ -1119,7 +1257,7 @@
 			{
 				"id": "timerip_elementalist",
 				"name": "heart of the storm",
-				"desc": "It's calm here, even as the elements tear the world apart.",
+				"desc": "ที่นี่เงียบสงบ ถึงแม้ธาตุทั้งหลายกำลังฉีกโลกให้แตกสลาย",
 				"effect": {
 					"madness": "5~7",
 					"instability": 1.5,
@@ -1132,7 +1270,7 @@
 			{
 				"id": "timerip_druid",
 				"name": "tender seedling",
-				"desc": "In an unusually large garden, a single seedling is planted.",
+				"desc": "ในสวนอันกว้างใหญ่ผิดปกติ มีต้นกล้าเพียงต้นเดียวถูกปลูกไว้",
 				"effect": {
 					"weary": "5~7",
 					"instability": 1.5,
@@ -1145,7 +1283,7 @@
 			{
 				"id": "timerip_druid_paradox",
 				"name": "tender seedling",
-				"desc": "In an unusually large garden, a single seedling was planted.",
+				"desc": "ในสวนอันกว้างใหญ่ผิดปกติ มีต้นกล้าเพียงต้นเดียวเคยถูกปลูกไว้",
 				"effect": {
 					"weary": "5~7",
 					"instability": 2,
@@ -1162,7 +1300,7 @@
 			{
 				"id": "timerip_oracle",
 				"name": "the seer",
-				"desc": "There is no point in hiding. He knew you would come, after all.",
+				"desc": "ไม่มีประโยชน์ที่จะซ่อน เขารู้ว่าคุณจะมา อยู่ดี",
 				"effect": {
 					"weary": "5~7",
 					"instability": 2,
@@ -1179,7 +1317,7 @@
 			{
 				"id": "timerip_mage",
 				"name": "high tower",
-				"desc": "Secluded in a room above the clouds, the loremaster performs his research.",
+				"desc": "สันโดษในห้องเหนือเมฆ ผู้รู้ตำนานกำลังทำวิจัยของเขา",
 				"effect": {
 					"bf": "5~7",
 					"instability": 1.5,
@@ -1192,7 +1330,7 @@
 			{
 				"id": "timerip_doomsayer",
 				"name": "end",
-				"desc": "Nothing. Just as he foretold",
+				"desc": "ไม่มีอะไร ตรงตามที่เขาทำนายไว้",
 				"effect": {
 					"madness": "5~7",
 					"instability": 1.5,
@@ -1205,7 +1343,7 @@
 			{
 				"id": "timerip_necromancer",
 				"name": "bone plains",
-				"desc": "A wasteland where no one living dares to tread.",
+				"desc": "ทุ่งร้างที่ไม่มีผู้มีชีวิตกล้าเหยียบย่าง",
 				"effect": {
 					"weary": "5~7",
 					"instability": 1.5,
@@ -1218,7 +1356,7 @@
 			{
 				"id": "timerip_mirror",
 				"name": "a mirror",
-				"desc": "An enormous pane stands before you, reflecting everything perfectly. You wink.",
+				"desc": "แผ่นกระจกบานมหึมายืนตระหง่านต่อหน้าคุณ สะท้อนทุกสิ่งอย่างสมบูรณ์ คุณกระพริบตา",
 				"effect": {
 					"bf": "5~7",
 					"instability": 2,
@@ -1235,7 +1373,7 @@
 			{
 				"id": "timerip_mirror2",
 				"name": "a mirror",
-				"desc": "An enormous pane stands before you, reflecting everything perfectly. Your reflection winks.",
+				"desc": "แผ่นกระจกบานมหึมายืนตระหง่านต่อหน้าคุณ สะท้อนทุกสิ่งอย่างสมบูรณ์ เงาสะท้อนของคุณกระพริบตา",
 				"effect": {
 					"bf": "5~7",
 					"instability": 2,
@@ -1252,7 +1390,7 @@
 			{
 				"id": "timerip_mirror3",
 				"name": "a plateau",
-				"desc": "Two wizards stand opposite, on a symmetrical featureless plane. They wink.",
+				"desc": "จอมเวทสองคนยืนประจันหน้ากัน บนพื้นราบไร้ลักษณะอันสมมาตร พวกเขากระพริบตา",
 				"effect": {
 					"bf": "5~7",
 					"instability": 1.5,
@@ -1265,7 +1403,7 @@
 			{
 				"id": "timerip_workshop",
 				"name": "a workshop",
-				"desc": "Tools are scattered about, seemingly without rhyme or reason.",
+				"desc": "เครื่องมือกระจัดกระจายไปทั่ว ดูเหมือนไร้เหตุผลใด ๆ",
 				"effect": {
 					"weary": "5~7",
 					"instability": 1.5,
@@ -1280,7 +1418,7 @@
 			{
 				"id": "evt_timerip",
 				"name": "odd feeling",
-				"desc": "Errant memories tug at the edges of your conciousness.",
+				"desc": "ความทรงจำเร่าร่อนดึงรั้งที่ขอบจิตสำนึกของคุณ",
 				"require": "g.tier6>0&&g.hall_time_1>0"
 			}
 		],
@@ -1292,7 +1430,7 @@
 				"spells": "mon_aeon,mon_distort,mon_dilate,mon_temporalrestoration,prismaticmissile,mon_quicken",
 				"chaincast": 0.7,
 				"kind": "unknown",
-				"desc": "You know you will win this battle. This knowledge offers little comfort.",
+				"desc": "คุณรู้ว่าคุณจะชนะสมรภูมินี้ ความรู้นี้ให้ความปลอบใจเพียงเล็กน้อย",
 				"noproc": true,
 				"hp": 2500,
 				"regen": 5,
@@ -1394,7 +1532,7 @@
 						"name": "unknown robes",
 						"sym": "🏰",
 						"tags": "hall",
-						"desc": "Robes that, at one time, adorned an unknown wizard. Their mere presence instills a sense of timelessness to all present, past and future.",
+						"desc": "จีวรที่ครั้งหนึ่งเคยประดับจอมเวทนิรนาม เพียงการปรากฏของมันก็ปลูกฝังความรู้สึกเหนือกาลเวลาแก่ทุกคนทั้งปัจจุบัน อดีต และอนาคต",
 						"require": "g.timerip_clash>0",
 						"max": 1,
 						"mod": {
