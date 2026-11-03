@@ -19,7 +19,10 @@
 				},
 				"require": "g.craftinglearn1>0",
 				"alter": {
-					"sell": { "gold": 500, "iron": 2 },
+					"sell": {
+						"gold": 500,
+						"iron": 2
+					},
 					"mod.self.speed": 4
 				}
 			},
@@ -38,7 +41,10 @@
 				},
 				"require": "g.craftinglearn2>0",
 				"alter": {
-					"sell": { "rubies": 8, "quicksteel": 2 },
+					"sell": {
+						"rubies": 8,
+						"quicksteel": 2
+					},
 					"enchants.max": 1
 				}
 			},
@@ -57,7 +63,10 @@
 				},
 				"require": "g.craftinglearn4>0",
 				"alter": {
-					"sell": { "diamonds": 8, "adamant": 2 },
+					"sell": {
+						"diamonds": 8,
+						"adamant": 2
+					},
 					"enchants.max": 2
 				}
 			}
@@ -78,7 +87,9 @@
 				"sell": {},
 				"only": "caster",
 				"enchants": 1,
-				"alter": { "mod.spelldmg": 20 }
+				"alter": {
+					"mod.spelldmg": 20
+				}
 			},
 			{
 				"id": "c_mirror",
@@ -95,7 +106,10 @@
 				"sell": {},
 				"only": "caster",
 				"enchants": 1,
-				"alter": { "mod.self.dodge": 25, "mod.self.negate.silence": 50 }
+				"alter": {
+					"mod.self.dodge": 25,
+					"mod.self.negate.silence": 50
+				}
 			},
 			{
 				"id": "c_twinstaff",
@@ -112,7 +126,10 @@
 				"sell": {},
 				"only": "caster",
 				"enchants": 1,
-				"alter": { "mod.self.chaincast": 1, "mod.spelldmg": -70 }
+				"alter": {
+					"mod.self.chaincast": 1,
+					"mod.spelldmg": -70
+				}
 			},
 			{
 				"id": "c_wand",
@@ -153,7 +170,14 @@
 					"name": "Elemental Bonk",
 					"kind": "pure",
 					"damage": 2,
-					"potencies": ["spelldmg", "manadmg", "waterdmg", "airdmg", "firedmg", "earthdmg"]
+					"potencies": [
+						"spelldmg",
+						"manadmg",
+						"waterdmg",
+						"airdmg",
+						"firedmg",
+						"earthdmg"
+					]
 				}
 			},
 			{
@@ -171,7 +195,10 @@
 				"sell": {},
 				"only": "caster",
 				"enchants": 1,
-				"alter": { "mod.spelldmg": 50, "mod.self.speed": -5 }
+				"alter": {
+					"mod.spelldmg": 50,
+					"mod.self.speed": -5
+				}
 			},
 			{
 				"id": "c_orb",
@@ -188,7 +215,9 @@
 				"sell": {},
 				"only": "caster",
 				"enchants": 1,
-				"alter": { "mod.barrier.max": 50 }
+				"alter": {
+					"mod.barrier.max": 50
+				}
 			},
 			{
 				"id": "c_caduceus",
@@ -211,7 +240,9 @@
 					"harmless": true,
 					"healing": 10,
 					"kind": "pure",
-					"potencies": ["spellheal"]
+					"potencies": [
+						"spellheal"
+					]
 				}
 			},
 			{
@@ -221,7 +252,7 @@
 				"slot": "mainhand",
 				"tags": "t_caster",
 				"require": "g.craftinglearn5>0",
-				"extdesc": "Creates a taunting summon which inflicts undefendable mana type damage to you on its death equal to its max Life (1000).",
+				"extdesc": "สร้างซัมมอนยั่วยุที่เมื่อตายจะสร้างความเสียหายชนิดมานาที่ป้องกันไม่ได้เท่ากับพลังชีวิตสูงสุดของมัน (1000)",
 				"cost": {
 					"gold": 500,
 					"research": 500
@@ -233,9 +264,17 @@
 				"attack": {
 					"targets": "self",
 					"harmless": true,
-					"summon": [{ "id": "sum_effigy_shield", "count": 1, "max": 1 }]
+					"summon": [
+						{
+							"id": "sum_effigy_shield",
+							"count": 1,
+							"max": 1
+						}
+					]
 				},
-				"alter": { "mod.self.resist.mana": "-20%" }
+				"alter": {
+					"mod.self.resist.mana": "-20%"
+				}
 			}
 		],
 		"monsters": [
@@ -271,7 +310,7 @@
 				"id": "en_caster_spelldmg",
 				"name": "Channelling Core",
 				"adj": "Channelling",
-				"desc": "Increases spell damage",
+				"desc": "เพิ่มความเสียหายคาถา",
 				"require": "g.enchanting>0",
 				"buy": {
 					"arcana": 1,
@@ -280,14 +319,18 @@
 				"level": 1,
 				"only": "t_caster",
 				"length": 30,
-				"cost": { "arcana": 1 },
-				"alter": { "mod.spelldmg": 20 }
+				"cost": {
+					"arcana": 1
+				},
+				"alter": {
+					"mod.spelldmg": 20
+				}
 			},
 			{
 				"id": "en_caster_spelldmg_bargain",
 				"name": "Lifebane's Seal",
 				"adj": "Lifebane",
-				"desc": "Increases spell damage",
+				"desc": "เพิ่มความเสียหายคาถา",
 				"require": "g.enchanting>0",
 				"buy": {
 					"arcana": 1,
@@ -296,14 +339,19 @@
 				"level": 2,
 				"only": "t_caster",
 				"length": 30,
-				"cost": { "arcana": 1 },
-				"alter": { "mod.spelldmg": 40, "mod.spellheal": -80 }
+				"cost": {
+					"arcana": 1
+				},
+				"alter": {
+					"mod.spelldmg": 40,
+					"mod.spellheal": -80
+				}
 			},
 			{
 				"id": "en_caster_spellheal",
 				"name": "Mending Core",
 				"adj": "Mending",
-				"desc": "Increases spell damage",
+				"desc": "เพิ่มความเสียหายคาถา",
 				"require": "g.enchanting>0",
 				"buy": {
 					"arcana": 1,
@@ -312,14 +360,18 @@
 				"level": 1,
 				"only": "t_caster",
 				"length": 30,
-				"cost": { "arcana": 1 },
-				"alter": { "mod.spellheal": 10 }
+				"cost": {
+					"arcana": 1
+				},
+				"alter": {
+					"mod.spellheal": 10
+				}
 			},
 			{
 				"id": "en_caster_chaincast",
 				"name": "Splintering Cap",
 				"adj": "Splintering",
-				"desc": "Grants a chance to cast two spells at once",
+				"desc": "มอบโอกาสร่ายคาถาสองครั้งพร้อมกัน",
 				"require": "g.enchanting>0",
 				"buy": {
 					"arcana": 1,
@@ -328,14 +380,18 @@
 				"level": 1,
 				"only": "t_caster",
 				"length": 30,
-				"cost": { "arcana": 1 },
-				"alter": { "mod.self.chaincast": 0.1 }
+				"cost": {
+					"arcana": 1
+				},
+				"alter": {
+					"mod.self.chaincast": 0.1
+				}
 			},
 			{
 				"id": "en_caster_prismatic",
 				"name": "Empowering Channels",
 				"adj": "Empowering",
-				"desc": "Improves accumulation of prismatic energies.",
+				"desc": "ปรับปรุงการสะสมพลังงานปริซึม",
 				"require": "g.enchanting>0",
 				"buy": {
 					"arcana": 1,
@@ -344,14 +400,18 @@
 				"level": 1,
 				"only": "t_caster",
 				"length": 30,
-				"cost": { "arcana": 1 },
-				"alter": { "mod.prismatic.rate": 0.3 }
+				"cost": {
+					"arcana": 1
+				},
+				"alter": {
+					"mod.prismatic.rate": 0.3
+				}
 			},
 			{
 				"id": "en_caster_speed",
 				"name": "Hare's Speed",
 				"adj": "%i of the Hare",
-				"desc": "Increases speed",
+				"desc": "เพิ่มความเร็ว",
 				"require": "g.enchanting>0",
 				"buy": {
 					"arcana": 1,
@@ -360,14 +420,18 @@
 				"level": 1,
 				"only": "t_caster",
 				"length": 30,
-				"cost": { "arcana": 1 },
-				"alter": { "mod.self.speed": 3 }
+				"cost": {
+					"arcana": 1
+				},
+				"alter": {
+					"mod.self.speed": 3
+				}
 			},
 			{
 				"id": "en_caster_tohit",
 				"name": "Falcon's Accuracy",
 				"adj": "%i of the Falcon",
-				"desc": "Increases chance to hit",
+				"desc": "เพิ่มโอกาสโจมตีโดน",
 				"require": "g.enchanting>0",
 				"buy": {
 					"arcana": 1,
@@ -376,14 +440,18 @@
 				"level": 1,
 				"only": "t_caster",
 				"length": 30,
-				"cost": { "arcana": 1 },
-				"alter": { "mod.self.tohit": 30 }
+				"cost": {
+					"arcana": 1
+				},
+				"alter": {
+					"mod.self.tohit": 30
+				}
 			},
 			{
 				"id": "en_caster_resist_silence",
 				"name": "Silence Nullification",
 				"adj": "%i of Freedom",
-				"desc": "Greatly improves chance of negating silence.",
+				"desc": "ปรับปรุงโอกาสต้านทานความเงียบอย่างมาก",
 				"require": "g.enchanting>0",
 				"buy": {
 					"arcana": 1,
@@ -392,8 +460,12 @@
 				"level": 1,
 				"only": "t_caster",
 				"length": 30,
-				"cost": { "arcana": 1 },
-				"alter": { "mod.self.negate.silence": 75 }
+				"cost": {
+					"arcana": 1
+				},
+				"alter": {
+					"mod.self.negate.silence": 75
+				}
 			}
 		]
 	}
