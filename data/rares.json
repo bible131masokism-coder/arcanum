@@ -1,9 +1,9 @@
 [
 	{
 		"id": "karnivexcrown",
-		"name": "crown of karnivex",
+		"name": "มงกุฎแห่งคาร์นีเว็กซ์",
 		"type": "armor",
-		"desc": "The conceits of Karnivex were without bounds.",
+		"desc": "ความทะนงตนของคาร์นีเว็กซ์ไร้ขอบเขต",
 		"slot": "head",
 		"tags": "t_crown,t_helm",
 		"unique": true,
@@ -22,9 +22,9 @@
 	},
 	{
 		"id": "veldranearring",
-		"name": "veldran's earring",
+		"name": "ต่างหูของเวลดราน",
 		"type": "armor",
-		"desc": "A small blue stone with swirls of white.",
+		"desc": "หินสีน้ำเงินเล็ก ๆ มีเกลียวสีขาว",
 		"tags": "t_earring,t_trinket",
 		"unique": true,
 		"level": 5,
@@ -41,7 +41,7 @@
 	},
 	{
 		"id": "ecdysiastwrap",
-		"name": "wraps of the ecdysiast",
+		"name": "ผ้าพันแห่งนักเปลื้องผ้า",
 		"type": "armor",
 		"slot": "shins",
 		"tags": "t_ankleguard,t_greaves",
@@ -49,7 +49,7 @@
 		"material": "mat_armor_runecloth",
 		"level": 7,
 		"enchants": 1,
-		"desc": "Desilla awarded her servants with articles of apparel.",
+		"desc": "เดซิลลามอบเครื่องแต่งกายให้แก่เหล่าคนรับใช้ของนาง",
 		"alter": {
 			"mod": {
 				"self.negate.paralysis": 10,
@@ -57,11 +57,11 @@
 				"charms.rate": 0.3
 			}
 		},
-		"flavor": "The awards however, were given sparingly."
+		"flavor": "อย่างไรก็ตาม รางวัลเหล่านั้นถูกมอบอย่างหวงแหน"
 	},
 	{
 		"id": "lillitscord",
-		"name": "lillit's cord",
+		"name": "สายคาดของลิลลิต",
 		"type": "armor",
 		"slot": "waist",
 		"tags": "t_cord,t_accessory,t_belt",
@@ -69,7 +69,7 @@
 		"unique": true,
 		"level": 5,
 		"enchants": 1,
-		"desc": "Lillit was known for her soothing presence.",
+		"desc": "ลิลลิตโด่งดังเรื่องการปรากฏตัวที่ปลอบโยนจิตใจ",
 		"alter": {
 			"mod": {
 				"rage.rate": -0.25
@@ -78,7 +78,7 @@
 	},
 	{
 		"id": "botanistgloves",
-		"name": "gloves of the botanist",
+		"name": "ถุงมือของนักพฤกษศาสตร์",
 		"tags": "t_gloves",
 		"unique": true,
 		"type": "armor",
@@ -94,11 +94,11 @@
 	},
 	{
 		"id": "jazidscompass",
-		"name": "jazid's compass",
+		"name": "เข็มทิศของจาซิด",
 		"unique": true,
 		"level": 10,
 		"enchants": 0,
-		"desc": "What leads your way can lead to you.",
+		"desc": "สิ่งที่นำทางคุณก็สามารถนำมาถึงตัวคุณได้เช่นกัน",
 		"type": "armor",
 		"slot": "trinket",
 		"tags": "t_trinket",
@@ -108,15 +108,15 @@
 				"bf.rate": -0.5
 			}
 		},
-		"flavor": "Jazid always finds his compass."
+		"flavor": "จาซิดหาทางของเขาพบเสมอ"
 	},
 	{
 		"id": "patronring1",
-		"name": "ring of the patron",
+		"name": "แหวนของผู้มีอุปการคุณ",
 		"unique": true,
 		"material": "mat_armor_adamant",
 		"tags": "t_ring",
-		"desc": "A trinket bestowed on mages embroiled in the world's affairs.",
+		"desc": "เครื่องรางที่มอบให้จอมเวทที่พัวพันกับกิจการของโลก",
 		"alter": {
 			"mod": {
 				"space.max": "1%"
@@ -125,7 +125,7 @@
 	},
 	{
 		"id": "icedagg",
-		"name": "icy dagger",
+		"name": "มีดสั้นเย็นเฉียบ",
 		"material": "ice",
 		"enchants": 3,
 		"type": "weapon",
@@ -150,10 +150,12 @@
 	},
 	{
 		"id": "tenwickstick",
-		"name": "tenwick's walking stick",
+		"name": "ไม้เท้าของเทนวิก",
 		"level": 5,
 		"enchants": 3,
-		"sell": { "gold": 100 },
+		"sell": {
+			"gold": 100
+		},
 		"unique": true,
 		"type": "weapon",
 		"slot": "mainhand",
@@ -173,8 +175,8 @@
 	},
 	{
 		"id": "titanhammer",
-		"name": "titan's hammer",
-		"desc": "Wrought from unyielding adamant, it hums with the energies of the earth.",
+		"name": "ค้อนของไททัน",
+		"desc": "หลอมจากเพชรที่ไม่อาจดัดได้ มันครางกระหึ่มด้วยพลังงานแห่งผืนดิน",
 		"type": "weapon",
 		"slot": "mainhand",
 		"damage": "15~20",
@@ -184,7 +186,11 @@
 				"kind": "blunt",
 				"targets": "enemy",
 				"damage": "(i.damage||0)*1.5",
-				"potencies": ["physdmg", "bluntdmg", "hammerdmg"]
+				"potencies": [
+					"physdmg",
+					"bluntdmg",
+					"hammerdmg"
+				]
 			},
 			{
 				"name": "earthbreaker",
@@ -192,12 +198,22 @@
 				"maxTargets": 999,
 				"damage": "(i.damage||0)*0.33",
 				"kind": "blunt",
-				"potencies": ["physdmg", "bluntdmg", "hammerdmg"],
+				"potencies": [
+					"physdmg",
+					"bluntdmg",
+					"hammerdmg"
+				],
 				"dot": {
 					"duration": 6,
 					"damage": "3~6",
-					"mod": { "self.speed": -5 },
-					"potencies": ["physdmg", "bluntdmg", "hammerdmg"]
+					"mod": {
+						"self.speed": -5
+					},
+					"potencies": [
+						"physdmg",
+						"bluntdmg",
+						"hammerdmg"
+					]
 				}
 			},
 			{
@@ -211,7 +227,9 @@
 					"name": "earth barrier",
 					"tags": "toughskin",
 					"duration": 15,
-					"mod": { "self.defense": 50 }
+					"mod": {
+						"self.defense": 50
+					}
 				}
 			}
 		],
@@ -238,16 +256,18 @@
 	},
 	{
 		"id": "jesterhat",
-		"name": "jester's cap",
+		"name": "หมวกตัวตลก",
 		"tags": "t_helm",
 		"type": "armor",
 		"enchants": 3,
 		"slot": "head",
-		"desc": "A brightly-colored cap jingling cheerfully as you go.",
+		"desc": "หมวกสีสันสดใสที่ส่งเสียงกรุ๊งกริ๊งอย่างร่าเริงตามก้าวเดิน",
 		"unique": true,
 		"level": 1,
 		"evasion": 15,
-		"sell": { "gold": 2 },
+		"sell": {
+			"gold": 2
+		},
 		"alter": {
 			"mod": {
 				"chaosdmg": 5,
@@ -257,16 +277,18 @@
 	},
 	{
 		"id": "jestershirt",
-		"name": "jester's tunic",
+		"name": "เสื้อคลุมตัวตลก",
 		"tags": "t_chestplate",
 		"type": "armor",
 		"enchants": 3,
 		"slot": "chest",
-		"desc": "A brightly-colored tunic in an eyetwisting pattern.",
+		"desc": "เสื้อคลุมสีสันสดใสในลวดลายที่บิดตา",
 		"unique": true,
 		"level": 1,
 		"evasion": 15,
-		"sell": { "gold": 2 },
+		"sell": {
+			"gold": 2
+		},
 		"alter": {
 			"mod": {
 				"chaosdmg": 5,
@@ -276,16 +298,18 @@
 	},
 	{
 		"id": "jesterpants",
-		"name": "jester's trousers",
+		"name": "กางเกงตัวตลก",
 		"tags": "t_greaves",
 		"type": "armor",
 		"enchants": 3,
 		"slot": "shins",
-		"desc": "A brightly-colored pair of trousers to fool the eye.",
+		"desc": "กางเกงสีสันสดใสเพื่อหลอกตา",
 		"unique": true,
 		"level": 1,
 		"evasion": 15,
-		"sell": { "gold": 2 },
+		"sell": {
+			"gold": 2
+		},
 		"alter": {
 			"mod": {
 				"chaosdmg": 5,
@@ -295,16 +319,18 @@
 	},
 	{
 		"id": "jestershoes",
-		"name": "jester's boots",
+		"name": "รองเท้าตัวตลก",
 		"tags": "t_boots",
 		"type": "armor",
 		"enchants": 3,
 		"slot": "feet",
-		"desc": "A brightly-colored pair of poulaines to obscure your steps.",
+		"desc": "รองเท้าหัวแหลมสีสันสดใสเพื่อกลบฝีเท้าของคุณ",
 		"unique": true,
 		"level": 1,
 		"evasion": 15,
-		"sell": { "gold": 2 },
+		"sell": {
+			"gold": 2
+		},
 		"alter": {
 			"mod": {
 				"chaosdmg": 5,
@@ -314,8 +340,8 @@
 	},
 	{
 		"id": "fishysword",
-		"name": "swordfish",
-		"desc": "A weapon far too unexpected to guard against.",
+		"name": "ปลาดาบ",
+		"desc": "อาวุธที่คาดไม่ถึงเกินกว่าจะป้องกันได้",
 		"type": "weapon",
 		"slot": "mainhand",
 		"material": "mat_martial_fish",
@@ -325,18 +351,24 @@
 			"kind": "slash",
 			"damage": "i.damage||0",
 			"harmless": true,
-			"potencies": ["sworddmg", "physdmg", "slashdmg", "waterdmg", "chaosdmg"]
+			"potencies": [
+				"sworddmg",
+				"physdmg",
+				"slashdmg",
+				"waterdmg",
+				"chaosdmg"
+			]
 		},
 		"tags": "t_martial,t_slash,t_sword",
 		"unique": true,
 		"cost": 30,
 		"level": 1,
-		"flavor": "It's always swordfish."
+		"flavor": "ปลาดาบตลอดเลย"
 	},
 	{
 		"id": "fishyspear",
-		"name": "pike",
-		"desc": "A weapon far too unexpected to guard against.",
+		"name": "ปลาไพก์",
+		"desc": "อาวุธที่คาดไม่ถึงเกินกว่าจะป้องกันได้",
 		"type": "weapon",
 		"slot": "mainhand",
 		"material": "mat_martial_fish",
@@ -346,18 +378,23 @@
 			"kind": "pierce",
 			"damage": "i.damage||0",
 			"harmless": true,
-			"potencies": ["physdmg", "piercedmg", "waterdmg", "chaosdmg"]
+			"potencies": [
+				"physdmg",
+				"piercedmg",
+				"waterdmg",
+				"chaosdmg"
+			]
 		},
 		"tags": "t_martial,t_pierce,t_spear",
 		"unique": true,
 		"cost": 30,
 		"level": 1,
-		"flavor": "Ah? Some likes 'em, but they are too muddy for my taste."
+		"flavor": "ห๊ะ? บางคนก็ชอบ แต่เลนมันเยอะเกินไปสำหรับรสนิยมฉัน"
 	},
 	{
 		"id": "fishyhammer",
-		"name": "hammerhead shark",
-		"desc": "A weapon far too unexpected to guard against.",
+		"name": "ปลาฉลามหัวค้อน",
+		"desc": "อาวุธที่คาดไม่ถึงเกินกว่าจะป้องกันได้",
 		"type": "weapon",
 		"slot": "mainhand",
 		"material": "mat_martial_fish",
@@ -367,18 +404,24 @@
 			"kind": "blunt",
 			"damage": "i.damage||0",
 			"harmless": true,
-			"potencies": ["hammerdmg", "physdmg", "bluntdmg", "waterdmg", "chaosdmg"]
+			"potencies": [
+				"hammerdmg",
+				"physdmg",
+				"bluntdmg",
+				"waterdmg",
+				"chaosdmg"
+			]
 		},
 		"tags": "t_martial,t_blunt,t_hammer",
 		"unique": true,
 		"cost": 30,
 		"level": 1,
-		"flavor": "For when you're having trouble nailing down your enemies."
+		"flavor": "สำหรับตอนที่เจ้าตีตรึงศัตรูได้ยากลำบาก"
 	},
 	{
 		"id": "fishyrapier",
-		"name": "en gar",
-		"desc": "A weapon far too unexpected to guard against.",
+		"name": "อองกา",
+		"desc": "อาวุธที่คาดไม่ถึงเกินกว่าจะป้องกันได้",
 		"type": "weapon",
 		"slot": "mainhand",
 		"material": "mat_martial_fish",
@@ -390,17 +433,25 @@
 			"harmless": true,
 			"targetspec": {
 				"affectedby": {
-					"condition": ["enemy_engagement"],
+					"condition": [
+						"enemy_engagement"
+					],
 					"conditiontext": "engagement"
 				}
 			},
 			"targets": "enemy",
-			"potencies": ["physdmg", "piercedmg", "duelingdmg", "waterdmg", "chaosdmg"]
+			"potencies": [
+				"physdmg",
+				"piercedmg",
+				"duelingdmg",
+				"waterdmg",
+				"chaosdmg"
+			]
 		},
 		"tags": "t_martial,t_pierce,t_rapier",
 		"unique": true,
 		"cost": 30,
 		"level": 1,
-		"flavor": "You mean en garde? No."
+		"flavor": "เจ้าหมายถึงการตั้งท่ารับใช่ไหม? ไม่ใช่"
 	}
 ]
