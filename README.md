@@ -75,6 +75,17 @@ Vite จะแสดง URL ของเซิร์ฟเวอร์พัฒ�
 
 เกมบันทึกข้อมูลในเบราว์เซอร์ผ่าน IndexedDB และมี localStorage เป็น fallback การล้างข้อมูลเว็บไซต์หรือเปลี่ยนเบราว์เซอร์อาจทำให้เซฟในเครื่องหายได้ ควรส่งออกไฟล์เซฟ JSON เก็บไว้เป็นระยะ โดยเกมรองรับทั้งการนำเข้า/ส่งออกเซฟตัวละครและ Wizard Hall
 
+### สถานะการแปลภาษาไทย (Localization Status)
+
+เกมฉบับนี้ได้รับการแปลเป็นภาษาไทยโดยไม่กระทบตรรกะการเล่น (เฉพาะข้อความแสดงผล `desc/flavor/text/name` ที่เป็นชื่อแสดงผล ฯลฯ — ไม่แตะ `id/require/cost/mod/result` อันเป็นกุญแจตรรกะ)
+
+**แปลแล้วครบ:**
+- **ส่วนติดต่อผู้ใช้ (UI)** — ปุ่ม เมนู หัวข้อ ทูลทิป ใน `src/ui/**/*.vue` ครบทั้งหมด
+- **ข้อมูลเกมหลัก** — `events, quests, classes, dungeons, locales, homes, encounters, potions, furniture, resources, hall, tasks, upgrades, monsters, spells, potencies, reagents, rares, titles, stressors, player`
+- **โมดูล (data/modules)** — แปลเนื้อเรื่อง/คำอธิบายของโมดูลครบทุกไฟล์: questing, sackmakers, patrons, shian, spring, companions, combattutorial, priest, debitoomancy, ritualist, reedburgh, timerip, swordplay, duelist, martial, learning, beltane (+legacy), cthulhu, sublimation, extraaction, shopkeeping, contributors, familiars, furniture_upgrades, equipment/*, fool (+legacy), legacy_winter, halloween_shapeshifting, legacy_halloween เป็นต้น
+
+**อยู่ระหว่างดำเนินการ (ไฟล์ใหญ่):** `puppeteer, shadow, winter, halloween, hallgloss, pyromancer`
+
 ## Highlights
 
 - Level up characters through classes, skills, and magical progression
