@@ -1,19 +1,19 @@
 [
 	{
 		"id": "nettle",
-		"name": "stinging nettle",
+		"name": "ต้นตำแยพิษ",
 		"tags": "herb,reagent",
 		"desc": "",
 		"flavor": ""
 	},
 	{
 		"id": "sulphur",
-		"desc": "Principle of fire.",
+		"desc": "หลักการแห่งไฟ",
 		"max": 10
 	},
 	{
 		"id": "mercury",
-		"desc": "Principle of metal.",
+		"desc": "หลักการแห่งโลหะ",
 		"max": 10
 	},
 	{
@@ -36,7 +36,7 @@
 	},
 	{
 		"id": "kingsfoil",
-		"name": "king's foil",
+		"name": "ฟอยล์ราชา",
 		"desc": "",
 		"flavor": ""
 	},
@@ -48,17 +48,17 @@
 	},
 	{
 		"id": "grimwort",
-		"desc": "A morbid plant that only blooms in crypts and graveyards.",
+		"desc": "พืชจำพวกผี ๆ ที่เบ่งบานเฉพาะในห้องใต้ดินสุสานและป่าช้า",
 		"flavor": ""
 	},
 	{
 		"id": "manabell",
-		"desc": "Mages search the ponds by ley-lines for its faintly glowing bulbs.",
+		"desc": "เหล่าจอมเวทค้นหาในสระริมเส้นเลย์ไลน์เพื่อหาหัวเรืองแสงจาง ๆ ของมัน",
 		"flavor": ""
 	},
 	{
 		"id": "foxfire",
-		"desc": "Found at night in deep forests, glowing on the roots and trunks of trees.",
+		"desc": "พบในเวลากลางคืนในป่าลึก เรืองแสงบนรากและลำต้นของต้นไม้",
 		"flavor": ""
 	},
 	{
@@ -68,25 +68,25 @@
 	},
 	{
 		"id": "vikaroot",
-		"name": "vika root",
-		"desc": "Its roots drive so deep that none have found their source.",
-		"flavor": "Druids claim all vika root are a single great plant, rooted at the world's center."
+		"name": "รากวิกา",
+		"desc": "รากของมันหยั่งลึกจนไม่มีใครพบที่มาของมัน",
+		"flavor": "เหล่าดรูอิดอ้างว่ารากวิกาทั้งหมดเป็นพืชใหญ่ต้นเดียว หยั่งรากอยู่กลางโลก"
 	},
 	{
 		"id": "bloodgrass",
-		"name": "blood grass",
-		"desc": "Blood drawn from its sharp blades are all the sustenance it requires."
+		"name": "หญ้าเลือด",
+		"desc": "เลือดที่ถูกดูดจากใบคมของมันคือสารอาหารทั้งหมดที่มันต้องการ"
 	},
 	{
 		"id": "firethistle",
-		"name": "fire thistle",
+		"name": "หนามไฟ",
 		"tags": "herb,reagent",
 		"desc": "",
-		"flavor": "It burns."
+		"flavor": "มันไหม้"
 	},
 	{
 		"id": "goldfel",
-		"name": "goldfel",
+		"name": "โกลด์เฟล",
 		"tags": "herb,reagent",
 		"desc": "",
 		"flavor": ""
@@ -94,29 +94,29 @@
 	{
 		"id": "marigold",
 		"tags": "herb,reagent",
-		"desc": "A bright and cheerful spring bloom."
+		"desc": "ดอกไม้ฤดูใบไม้ผลิอันสดใสและร่าเริง"
 	},
 	{
 		"id": "lavender",
 		"tags": "herb,reagent",
 		"desc": "",
-		"flavor": "No one actually knows what lavender does."
+		"flavor": "ไม่มีใครรู้จริง ๆ ว่าลาเวนเดอร์ทำอะไร"
 	},
 	{
 		"id": "oleander",
 		"tags": "herb,reagent,poison",
-		"desc": "Such a delicate bloom for such deadly poison.",
+		"desc": "ดอกไม้ที่บอบบางเช่นนี้กับพิษอันร้ายแรงเช่นนั้น",
 		"flavor": ""
 	},
 	{
 		"id": "crocodiletears",
-		"name": "crocodile tears",
+		"name": "น้ำตาจระเข้",
 		"tags": "reagent",
-		"desc": "Tears without remorse."
+		"desc": "น้ำตาที่ไร้ความสำนึกผิด"
 	},
 	{
 		"id": "eyeofnewt",
 		"tags": "reagent",
-		"name": "eye of newt"
+		"name": "ตานิวต์"
 	}
 ]
