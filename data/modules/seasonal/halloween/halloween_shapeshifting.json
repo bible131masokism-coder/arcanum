@@ -20,7 +20,7 @@
 			{
 				"id": "hal_horns",
 				"name": "Horns",
-				"desc": "armor.",
+				"desc": "เกราะ.",
 				"slotgroup": "equip",
 				"max": 0,
 				"sortOrder": 301
@@ -28,7 +28,7 @@
 			{
 				"id": "hal_hooves",
 				"name": "Hooves",
-				"desc": "armor.",
+				"desc": "เกราะ.",
 				"slotgroup": "equip",
 				"max": 0,
 				"sortOrder": 1201
@@ -80,7 +80,9 @@
 					"targets": "enemy",
 					"targetspec": {
 						"notaffectedby": {
-							"condition": ["t_hal_infected"],
+							"condition": [
+								"t_hal_infected"
+							],
 							"conditiontext": "infection"
 						}
 					},
@@ -136,7 +138,9 @@
 					"targets": "enemy",
 					"targetspec": {
 						"notaffectedby": {
-							"condition": ["t_hal_infected"],
+							"condition": [
+								"t_hal_infected"
+							],
 							"conditiontext": "infection"
 						}
 					},
@@ -192,7 +196,9 @@
 					"targets": "enemy",
 					"targetspec": {
 						"notaffectedby": {
-							"condition": ["t_hal_infected"],
+							"condition": [
+								"t_hal_infected"
+							],
 							"conditiontext": "infection"
 						}
 					},
@@ -255,7 +261,9 @@
 					"targets": "enemy",
 					"targetspec": {
 						"notaffectedby": {
-							"condition": ["t_hal_infected"],
+							"condition": [
+								"t_hal_infected"
+							],
 							"conditiontext": "infection"
 						}
 					},
@@ -302,15 +310,24 @@
 				"level": 1,
 				"require": "g.asp_zombie>0",
 				"need": "g.asp_zombie>0",
-				"needtext": "Only usable by zombies",
-				"desc": "Bite a target of your choice, priming them to join your horde upon their demise.",
-				"extdesc": "Zombies produced that way will decay naturally, but are capable of carrying on the infection on their own",
+				"needtext": "ใช้ได้เฉพาะซอมบี้",
+				"desc": "กัดเป้าหมายตามที่เลือก เพื่อเตรียมให้พวกมันเข้าร่วมฝูงของคุณเมื่อสิ้นชีพ",
+				"extdesc": "ซอมบี้ที่เกิดแบบนั้นจะเน่าเปื่อยตามธรรมชาติ แต่สามารถแพร่เชื้อต่อไปได้ด้วยตัวเอง",
 				"school": "halloween",
 				"keywords": {
-					"type": ["summon", "damage"],
-					"target": ["enemy"],
-					"targets": ["single"],
-					"delivery": ["over time"]
+					"type": [
+						"summon",
+						"damage"
+					],
+					"target": [
+						"enemy"
+					],
+					"targets": [
+						"single"
+					],
+					"delivery": [
+						"over time"
+					]
 				},
 				"buy": {
 					"chaosgem": 20
@@ -323,7 +340,9 @@
 					"targets": "enemy",
 					"targetspec": {
 						"notaffectedby": {
-							"condition": ["t_hal_infected"],
+							"condition": [
+								"t_hal_infected"
+							],
 							"conditiontext": "infection"
 						}
 					},
@@ -382,8 +401,8 @@
 				"name": "Develop shapeshifting",
 				"tags": "t_halloween_aspect",
 				"id": "asp_unlock",
-				"desc": "The remains of the creature churn and throb with volatile energies. What if you could... harness them?",
-				"extdesc": "Unlocks an ability to radically shapeshift for the duration of the season. Also allows you to find chaos gems in halloween locations.",
+				"desc": "ซากของสิ่งมีชีวิตปั่นป่วนและเต้นระรัวด้วยพลังไร้เสถียรภาพ ถ้าคุณสามารถ...ยึดครองมันได้ล่ะ?",
+				"extdesc": "ปลดล็อกความสามารถแปรเปลี่ยนร่างอย่างสิ้นเชิงตลอดฤดูกาล อีกทั้งยังให้คุณพบอัญมณีความโกลาหลในสถานที่ฮัลโลวีน",
 				"require": "(g.hal_mill_intime>0||g.hal_mill_late>0)",
 				"cost": {
 					"chaosgem": 20
@@ -398,8 +417,8 @@
 				"name": "Zombie Aspect",
 				"tags": "t_halloween_aspect,t_bodyplan",
 				"id": "asp_zombie",
-				"desc": "The restless souls wander around, wrecking havoc wherever they are.",
-				"extdesc": "A zombie has no arms, but possesses a terribly infectious bite and a natural ability to shrug off potentially lethal damage.",
+				"desc": "วิญญาณเร่าร้อนเร่ร่อนไปทั่ว ก่อความพินาศไม่ว่าที่ใด",
+				"extdesc": "ซอมบี้ไม่มีแขน แต่มีพิษกัดที่ติดเชื้อร้ายแรงและความสามารถตามธรรมชาติในการสลัดความเสียหายร้ายแรง",
 				"require": "g.asp_unlock>0&&g.anatomy>=5",
 				"buy": {
 					"chaosgem": 5
@@ -429,8 +448,8 @@
 				"id": "asp_satyr",
 				"name": "Satyr Aspect",
 				"tags": "t_halloween_aspect,t_bodyplan",
-				"desc": "Dancing under the moonlight, and misleading wanderers.",
-				"extdesc": "Satyrs dispense with lower body accoutrements as well as all forms of headwear in favor of horns and horseshoes. They are much luckier than normal",
+				"desc": "เต้นรำใต้แสงจันทร์ และนำนักเดินทางหลงทาง",
+				"extdesc": "แซเทอร์ปลดเปลื้องเครื่องแต่งกายท่อนล่างและเครื่องสวมศีรษะทุกชนิดเพื่อแลกกับเขาและเกือกม้า พวกมันโชคดีกว่าปกติมาก",
 				"require": "g.asp_unlock>0&&g.trickery>5&&g.nature>10",
 				"buy": {
 					"chaosgem": 5
@@ -458,10 +477,10 @@
 				"id": "asp_drake",
 				"name": "Drake Aspect",
 				"tags": "t_halloween_aspect,t_bodyplan",
-				"desc": "Ancient flying monstrosities.",
+				"desc": "สัตว์ประหลาดบินโบราณ",
 				"require": "g.asp_unlock>0",
 				"need": "g.tier4>0&&g.alchemylearn2>0&&g.mtgorborung>0",
-				"needtext": "You need to be tier 4 and posess expertise in alchemy to be able to control this kind of body. You also must investigate Mount Gorborung.",
+				"needtext": "คุณต้องเป็นไทเออร์ 4 และมีเชี่ยวชาญการเล่นแร่แปรธาตุจึงจะควบคุมร่างประเภทนี้ได้ อีกทั้งต้องสืบสวนเขากอร์โบรุง",
 				"slot": "bodyplan",
 				"max": 1,
 				"buy": {
@@ -497,7 +516,10 @@
 				},
 				"require": "g.craftinglearn1>0&&g.asp_satyr>0",
 				"alter": {
-					"sell": { "iron": 10, "leather": 2 }
+					"sell": {
+						"iron": 10,
+						"leather": 2
+					}
 				}
 			},
 			{
@@ -516,7 +538,10 @@
 				},
 				"require": "g.craftinglearn2>0&&g.asp_satyr>0",
 				"alter": {
-					"sell": { "quicksteel": 10, "serpentskin": 2 },
+					"sell": {
+						"quicksteel": 10,
+						"serpentskin": 2
+					},
 					"enchants.max": 1,
 					"damage.min": "100%",
 					"damage.max": "100%",
@@ -541,7 +566,10 @@
 				},
 				"require": "g.craftinglearn4>0&&g.asp_satyr>0",
 				"alter": {
-					"sell": { "adamant": 10, "aetherhide": 2 },
+					"sell": {
+						"adamant": 10,
+						"aetherhide": 2
+					},
 					"enchants.max": 2,
 					"damage.min": "300%",
 					"damage.max": "300%",
@@ -562,7 +590,9 @@
 				},
 				"require": "g.craftinglearn1>0&&g.asp_satyr>0",
 				"alter": {
-					"sell": { "iron": 10 }
+					"sell": {
+						"iron": 10
+					}
 				}
 			},
 			{
@@ -577,7 +607,9 @@
 				},
 				"require": "g.craftinglearn2>0&&g.asp_satyr>0",
 				"alter": {
-					"sell": { "quicksteel": 10 },
+					"sell": {
+						"quicksteel": 10
+					},
 					"enchants.max": 1,
 					"mod.luck": 2
 				}
@@ -594,7 +626,9 @@
 				},
 				"require": "g.craftinglearn4>0&&g.asp_satyr>0",
 				"alter": {
-					"sell": { "adamant": 10 },
+					"sell": {
+						"adamant": 10
+					},
 					"enchants.max": 2,
 					"mod.luck": 5
 				}
@@ -625,7 +659,10 @@
 						"maxTargets": 999,
 						"damagedesc": "Breathes fire in a wide cone, dealing 200% base damage to all enemies.",
 						"damage": "(i.damage||0)*2",
-						"potencies": ["physdmg", "spelldmg"]
+						"potencies": [
+							"physdmg",
+							"spelldmg"
+						]
 					}
 				}
 			},
@@ -655,7 +692,10 @@
 						"repeathits": 2,
 						"damagedesc": "Breathes fire in a narrow cone, dealing 150% base damage twice.",
 						"damage": "(i.damage||0)*1.5",
-						"potencies": ["physdmg", "spelldmg"]
+						"potencies": [
+							"physdmg",
+							"spelldmg"
+						]
 					}
 				}
 			},
@@ -685,12 +725,18 @@
 						"maxTargets": 3,
 						"damagedesc": "Breathes sticky fire in a cone, dealing 100% base damage to up to 3 enemies and burning them.",
 						"damage": "(i.damage||0)",
-						"potencies": ["physdmg", "spelldmg"],
+						"potencies": [
+							"physdmg",
+							"spelldmg"
+						],
 						"dot": {
 							"name": "Burning",
 							"duration": 4,
 							"kind": "dragonfire",
-							"potencies": ["physdmg", "spelldmg"],
+							"potencies": [
+								"physdmg",
+								"spelldmg"
+							],
 							"damage": 10,
 							"mod": {
 								"self.speed": -7
@@ -721,7 +767,10 @@
 						"maxTargets": 999,
 						"damagedesc": "Releases flames from within in a wide cone, dealing 100% base damage, modified by your blazing heat.",
 						"damage": "(i.damage||0) + Math.pow((a.context.getData('blazingheat')||0)*0.15,0.9)",
-						"potencies": ["physdmg", "spelldmg"],
+						"potencies": [
+							"physdmg",
+							"spelldmg"
+						],
 						"acquire": {
 							"blazingheat": "1+(Math.pow(g.soulember,1.2))",
 							"consumingflames": "-1+-1*(Math.pow(g.soulember/3,1.1))"
@@ -745,13 +794,18 @@
 				},
 				"require": "g.asp_drake>0&&g.alchemylearn2>0",
 				"alter": {
-					"sell": { "adamant": 2, "aetherhide": 2 },
+					"sell": {
+						"adamant": 2,
+						"aetherhide": 2
+					},
 					"shield": 120,
 					"mod.self.chainhit": 1.25,
 					"attack": {
 						"name": "Shimmer",
 						"targets": "self",
-						"acquire": { "barrier": "t.barrier.max * 0.02" }
+						"acquire": {
+							"barrier": "t.barrier.max * 0.02"
+						}
 					}
 				}
 			},
@@ -771,7 +825,10 @@
 				},
 				"require": "g.asp_drake>0&&g.alchemylearn2>0",
 				"alter": {
-					"sell": { "adamant": 2, "aetherhide": 2 },
+					"sell": {
+						"adamant": 2,
+						"aetherhide": 2
+					},
 					"armor": 75,
 					"mod.self.thorns": 5
 				}
@@ -792,7 +849,10 @@
 				},
 				"require": "g.asp_drake>0&&g.alchemylearn2>0",
 				"alter": {
-					"sell": { "adamant": 2, "aetherhide": 2 },
+					"sell": {
+						"adamant": 2,
+						"aetherhide": 2
+					},
 					"mod.self.resist.blunt": 50,
 					"mod.self.resist.pierce": 50,
 					"mod.self.resist.slash": 50,
@@ -831,9 +891,14 @@
 					"name": "Headbutt",
 					"kind": "blunt",
 					"damage": "(i.damage||0)*1",
-					"potencies": ["physdmg", "bluntdmg"]
+					"potencies": [
+						"physdmg",
+						"bluntdmg"
+					]
 				},
-				"alter": { "mod.self.chainhit": 1 }
+				"alter": {
+					"mod.self.chainhit": 1
+				}
 			},
 			{
 				"id": "hal_piercehorns",
@@ -856,9 +921,14 @@
 					"name": "Gore",
 					"kind": "pierce",
 					"damage": "(i.damage||0)*1",
-					"potencies": ["physdmg", "piercedmg"]
+					"potencies": [
+						"physdmg",
+						"piercedmg"
+					]
 				},
-				"alter": { "mod.self.chainhit": 1 }
+				"alter": {
+					"mod.self.chainhit": 1
+				}
 			},
 			{
 				"id": "hal_dragonbreath",
@@ -892,7 +962,9 @@
 					"chaosgem": 5
 				},
 				"craftcostmult": 2,
-				"alter": { "mod.luck": 7 }
+				"alter": {
+					"mod.luck": 7
+				}
 			},
 			{
 				"id": "hal_dragonscale",
@@ -915,8 +987,8 @@
 				"id": "en_hal_horns_evasion",
 				"name": "Mirage",
 				"adj": "Mirage",
-				"desc": "Focus your horns on evasion",
-				"extdesc": "Effect scales with item's base stats",
+				"desc": "โฟกัสเขาของคุณไปที่การหลบหลีก",
+				"extdesc": "เอฟเฟกต์ขยายตามค่าสถานะพื้นฐานของไอเทม",
 				"require": "g.enchanting>0&&g.asp_satyr>0",
 				"buy": {
 					"chaosgem": 5,
@@ -926,15 +998,21 @@
 				"level": 2,
 				"only": "t_hal_horns",
 				"length": 30,
-				"cost": { "arcana": 1 },
-				"alter": { "evasion": "100%", "armor": "50%", "shield": "50%" }
+				"cost": {
+					"arcana": 1
+				},
+				"alter": {
+					"evasion": "100%",
+					"armor": "50%",
+					"shield": "50%"
+				}
 			},
 			{
 				"id": "en_hal_horns_armor",
 				"name": "Bulwark",
 				"adj": "Bulwark",
-				"desc": "Focus your horns on defense",
-				"extdesc": "Effect scales with item's base stats",
+				"desc": "โฟกัสเขาของคุณไปที่การป้องกัน",
+				"extdesc": "เอฟเฟกต์ขยายตามค่าสถานะพื้นฐานของไอเทม",
 				"require": "g.enchanting>0&&g.asp_satyr>0",
 				"buy": {
 					"chaosgem": 5,
@@ -944,15 +1022,21 @@
 				"level": 2,
 				"only": "t_hal_horns",
 				"length": 30,
-				"cost": { "arcana": 1 },
-				"alter": { "evasion": "50%", "armor": "100%", "shield": "50%" }
+				"cost": {
+					"arcana": 1
+				},
+				"alter": {
+					"evasion": "50%",
+					"armor": "100%",
+					"shield": "50%"
+				}
 			},
 			{
 				"id": "en_hal_horns_barrier",
 				"name": "Shimmering",
 				"adj": "Shimmering",
-				"desc": "Focus your horns on barrier",
-				"extdesc": "Effect scales with item's base stats",
+				"desc": "โฟกัสเขาของคุณไปที่บาเรีย",
+				"extdesc": "เอฟเฟกต์ขยายตามค่าสถานะพื้นฐานของไอเทม",
 				"require": "g.enchanting>0&&g.asp_satyr>0",
 				"buy": {
 					"chaosgem": 5,
@@ -962,14 +1046,20 @@
 				"level": 2,
 				"only": "t_hal_horns",
 				"length": 30,
-				"cost": { "arcana": 1 },
-				"alter": { "evasion": "50%", "armor": "50%", "shield": "100%" }
+				"cost": {
+					"arcana": 1
+				},
+				"alter": {
+					"evasion": "50%",
+					"armor": "50%",
+					"shield": "100%"
+				}
 			},
 			{
 				"id": "en_hal_horns_phys",
 				"name": "Ram's tenacity",
 				"adj": "%i of ramming",
-				"desc": "Focus your horns on the physical world.",
+				"desc": "โฟกัสเขาของคุณไปที่โลกกายภาพ",
 				"require": "g.enchanting>0&&g.asp_satyr>0",
 				"buy": {
 					"chaosgem": 5,
@@ -979,7 +1069,9 @@
 				"level": 1,
 				"only": "t_hal_horns",
 				"length": 30,
-				"cost": { "arcana": 1 },
+				"cost": {
+					"arcana": 1
+				},
 				"alter": {
 					"mod.self.resist.blunt": 20,
 					"mod.self.resist.pierce": 20,
@@ -993,7 +1085,7 @@
 				"id": "en_hal_horns_mag",
 				"name": "Satyr's ingenuity",
 				"adj": "%i of channeling",
-				"desc": "Focus your horns on the mythical world.",
+				"desc": "โฟกัสเขาของคุณไปที่โลกในตำนาน",
 				"require": "g.enchanting>0&&g.asp_satyr>0",
 				"buy": {
 					"chaosgem": 5,
@@ -1003,7 +1095,9 @@
 				"level": 1,
 				"only": "t_hal_horns",
 				"length": 30,
-				"cost": { "arcana": 1 },
+				"cost": {
+					"arcana": 1
+				},
 				"alter": {
 					"mod.self.resist.mana": 20,
 					"mod.self.resist.water": 20,
@@ -1023,7 +1117,7 @@
 				"id": "en_hal_horns_luck",
 				"name": "Wolpertinger's luck",
 				"adj": "Rabbit's %i",
-				"desc": "Align your horns towards luck",
+				"desc": "วางแนวเขาของคุณสู่โชคลาภ",
 				"require": "g.enchanting>0&&g.asp_satyr>0",
 				"buy": {
 					"chaosgem": 5,
@@ -1033,14 +1127,20 @@
 				"level": 1,
 				"only": "t_hal_horns",
 				"length": 30,
-				"cost": { "arcana": 1 },
-				"alter": { "mod.luck": "25+10%", "mod.self.chaincast": 0.15, "mod.self.chainhit": 0.15 }
+				"cost": {
+					"arcana": 1
+				},
+				"alter": {
+					"mod.luck": "25+10%",
+					"mod.self.chaincast": 0.15,
+					"mod.self.chainhit": 0.15
+				}
 			},
 			{
 				"id": "en_hal_horseshoes_disable",
 				"name": "Disable Negation",
 				"adj": "%i of Freedom",
-				"desc": "Improves chance of negating binding effects.",
+				"desc": "ปรับปรุงโอกาสต้านทานเอฟเฟกต์พันธนาการ",
 				"require": "g.enchanting>0&&g.asp_satyr>0",
 				"buy": {
 					"chaosgem": 5,
@@ -1050,7 +1150,9 @@
 				"level": 1,
 				"only": "t_hal_horseshoes",
 				"length": 30,
-				"cost": { "arcana": 1 },
+				"cost": {
+					"arcana": 1
+				},
 				"alter": {
 					"mod.self.negate.silence": 100,
 					"mod.self.negate.paralysis": 100,
@@ -1061,7 +1163,7 @@
 				"id": "en_hal_horseshoes_agility",
 				"name": "Agile horseshoes",
 				"adj": "%i of Agility",
-				"desc": "Improves evasion and accuracy.",
+				"desc": "ปรับปรุงการหลบหลีกและความแม่นยำ",
 				"require": "g.enchanting>0&&g.asp_satyr>0",
 				"buy": {
 					"chaosgem": 5,
@@ -1071,7 +1173,9 @@
 				"level": 2,
 				"only": "t_hal_horseshoes",
 				"length": 30,
-				"cost": { "arcana": 1 },
+				"cost": {
+					"arcana": 1
+				},
 				"alter": {
 					"mod.self.dodge": "20%",
 					"mod.self.tohit": "20%"
@@ -1081,7 +1185,7 @@
 				"id": "en_hal_horseshoes_celerity",
 				"name": "Celerity",
 				"adj": "%i of Celerity",
-				"desc": "Improves speed.",
+				"desc": "ปรับปรุงความเร็ว",
 				"require": "g.enchanting>0&&g.asp_satyr>0",
 				"buy": {
 					"chaosgem": 5,
@@ -1091,7 +1195,9 @@
 				"level": 1,
 				"only": "t_hal_horseshoes",
 				"length": 30,
-				"cost": { "arcana": 1 },
+				"cost": {
+					"arcana": 1
+				},
 				"alter": {
 					"mod.self.speed": "2+10%"
 				}
@@ -1100,7 +1206,7 @@
 				"id": "en_hal_horseshoes_stampede",
 				"name": "Stampede",
 				"adj": "%i of Stampede",
-				"desc": "Allows your horseshoes to imbue you and your allies with speed.",
+				"desc": "ทำให้เกือกม้าของคุณชุบพลังความเร็วให้คุณและพันธมิตร",
 				"require": "g.enchanting>0&&g.asp_satyr>0",
 				"buy": {
 					"chaosgem": 5,
@@ -1110,7 +1216,9 @@
 				"level": 2,
 				"only": "t_hal_horseshoes",
 				"length": 30,
-				"cost": { "arcana": 1 },
+				"cost": {
+					"arcana": 1
+				},
 				"alter": {
 					"mod": {
 						"self.speed": 3
@@ -1121,8 +1229,12 @@
 						"dot": {
 							"name": "Stampede",
 							"duration": 25,
-							"mod": { "self.speed": 3 },
-							"effect": { "self.timer": -0.1 }
+							"mod": {
+								"self.speed": 3
+							},
+							"effect": {
+								"self.timer": -0.1
+							}
 						}
 					}
 				}
