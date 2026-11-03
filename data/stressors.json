@@ -2,15 +2,15 @@
 	{
 		"id": "bf",
 		"tags": "stress",
-		"name": "befuddlement",
-		"desc": "Outright confusion in your studies.",
+		"name": "ความงุนงง",
+		"desc": "ความสับสนเต็มขั้นในการศึกษาของคุณ",
 		"reverse": true,
 		"max": 10,
 		"defeatstat": true
 	},
 	{
 		"id": "unease",
-		"desc": "A general feeling of unwell.",
+		"desc": "ความรู้สึกไม่สบายโดยรวม",
 		"tags": "stress",
 		"reverse": true,
 		"max": 10,
@@ -18,8 +18,8 @@
 	},
 	{
 		"id": "weary",
-		"name": "weariness",
-		"desc": "The fatigue of mental strain.",
+		"name": "ความเหนื่อยล้า",
+		"desc": "ความเหน็ดเหนื่อยจากความตึงเครียดทางจิตใจ",
 		"tags": "stress",
 		"reverse": true,
 		"max": 10,
@@ -27,8 +27,8 @@
 	},
 	{
 		"id": "rage",
-		"name": "frustration",
-		"desc": "Rising book-throwing urges.",
+		"name": "ความหงุดหงิด",
+		"desc": "แรงกระตุ้นอยากขว้างหนังสือที่พุ่งสูงขึ้น",
 		"tags": "stress",
 		"reverse": true,
 		"max": 10,
@@ -36,7 +36,7 @@
 	},
 	{
 		"id": "madness",
-		"desc": "Warping of your mind under magical influences.",
+		"desc": "การบิดเบี้ยวของจิตใจภายใต้อิทธิพลเวทมนตร์",
 		"tags": "stress",
 		"reverse": true,
 		"max": 10,
