@@ -15,7 +15,9 @@
 				},
 				"require": "g.craftinglearn1>0",
 				"alter": {
-					"sell": { "iron": 4 }
+					"sell": {
+						"iron": 4
+					}
 				}
 			},
 			{
@@ -31,7 +33,9 @@
 				},
 				"require": "g.craftinglearn2>0",
 				"alter": {
-					"sell": { "quicksteel": 4 },
+					"sell": {
+						"quicksteel": 4
+					},
 					"armor": 2,
 					"enchants.max": 1
 				}
@@ -50,7 +54,9 @@
 				},
 				"require": "g.craftinglearn4>0",
 				"alter": {
-					"sell": { "adamant": 4 },
+					"sell": {
+						"adamant": 4
+					},
 					"armor": 5,
 					"enchants.max": 2
 				}
@@ -82,7 +88,9 @@
 				},
 				"require": "g.craftinglearn1>0",
 				"alter": {
-					"sell": { "leather": 4 }
+					"sell": {
+						"leather": 4
+					}
 				}
 			},
 			{
@@ -98,7 +106,9 @@
 				},
 				"require": "g.craftinglearn2>0",
 				"alter": {
-					"sell": { "serpentskin": 4 },
+					"sell": {
+						"serpentskin": 4
+					},
 					"enchants.max": 1,
 					"evasion": 2
 				}
@@ -116,7 +126,9 @@
 				},
 				"require": "g.craftinglearn4>0",
 				"alter": {
-					"sell": { "aetherhide": 4 },
+					"sell": {
+						"aetherhide": 4
+					},
 					"enchants.max": 2,
 					"evasion": 5
 				}
@@ -132,7 +144,9 @@
 				},
 				"require": "g.craftinglearn1>0",
 				"alter": {
-					"sell": { "cotton": 4 }
+					"sell": {
+						"cotton": 4
+					}
 				}
 			},
 			{
@@ -148,7 +162,9 @@
 				},
 				"require": "g.craftinglearn2>0",
 				"alter": {
-					"sell": { "spidersilk": 4 },
+					"sell": {
+						"spidersilk": 4
+					},
 					"enchants.max": 1,
 					"shield": 10
 				}
@@ -166,7 +182,9 @@
 				},
 				"require": "g.craftinglearn4>0",
 				"alter": {
-					"sell": { "amberroot": 4 },
+					"sell": {
+						"amberroot": 4
+					},
 					"enchants.max": 2,
 					"shield": 25
 				}
@@ -184,9 +202,13 @@
 				},
 				"require": "g.craftinglearn4>0",
 				"alter": {
-					"sell": { "basiliskhide": 4 },
+					"sell": {
+						"basiliskhide": 4
+					},
 					"enchants.max": 2,
-					"mod": { "self.negate.paralysis": 10 }
+					"mod": {
+						"self.negate.paralysis": 10
+					}
 				}
 			},
 			{
@@ -203,10 +225,15 @@
 				},
 				"require": "g.craftinglearn4>0",
 				"alter": {
-					"sell": { "dragonscale": 40, "adamant": 1 },
+					"sell": {
+						"dragonscale": 40,
+						"adamant": 1
+					},
 					"armor": 2,
 					"enchants.max": 2,
-					"mod": { "self.resist.fire": 10 }
+					"mod": {
+						"self.resist.fire": 10
+					}
 				}
 			}
 		],
@@ -227,7 +254,9 @@
 				"only": "metal",
 				"enchants": 1,
 				"armor": 5,
-				"alter": { "mod.hp.max": 5 }
+				"alter": {
+					"mod.hp.max": 5
+				}
 			},
 			{
 				"id": "bascinet",
@@ -262,7 +291,9 @@
 				"only": "metal",
 				"enchants": 1,
 				"armor": 15,
-				"alter": { "mod.self.dodge": "-10%" }
+				"alter": {
+					"mod.self.dodge": "-10%"
+				}
 			},
 			{
 				"id": "hood",
@@ -280,7 +311,9 @@
 				"only": "leather",
 				"enchants": 1,
 				"evasion": 5,
-				"alter": { "mod.hp.max": 5 }
+				"alter": {
+					"mod.hp.max": 5
+				}
 			},
 			{
 				"id": "gamblerhat",
@@ -315,7 +348,9 @@
 				"only": "leather",
 				"enchants": 1,
 				"evasion": 15,
-				"alter": { "mod.self.defense": "-10%" }
+				"alter": {
+					"mod.self.defense": "-10%"
+				}
 			},
 			{
 				"id": "cap",
@@ -333,7 +368,9 @@
 				"only": "cloth",
 				"enchants": 1,
 				"shield": 25,
-				"alter": { "mod.hp.max": 5 }
+				"alter": {
+					"mod.hp.max": 5
+				}
 			},
 			{
 				"id": "turban",
@@ -368,7 +405,13 @@
 				"only": "cloth",
 				"enchants": 1,
 				"shield": 75,
-				"alter": { "mod": { "self.resist.blunt": -5, "self.resist.slash": -5, "self.resist.pierce": -5 } }
+				"alter": {
+					"mod": {
+						"self.resist.blunt": -5,
+						"self.resist.slash": -5,
+						"self.resist.pierce": -5
+					}
+				}
 			},
 			{
 				"id": "chainmail",
@@ -386,7 +429,9 @@
 				"only": "metal",
 				"enchants": 1,
 				"armor": 5,
-				"alter": { "mod.hp.max": 5 }
+				"alter": {
+					"mod.hp.max": 5
+				}
 			},
 			{
 				"id": "lamellar",
@@ -421,7 +466,9 @@
 				"only": "metal",
 				"enchants": 1,
 				"armor": 15,
-				"alter": { "mod.self.dodge": "-10%" }
+				"alter": {
+					"mod.self.dodge": "-10%"
+				}
 			},
 			{
 				"id": "tunic",
@@ -439,7 +486,9 @@
 				"only": "leather",
 				"enchants": 1,
 				"evasion": 5,
-				"alter": { "mod.hp.max": 5 }
+				"alter": {
+					"mod.hp.max": 5
+				}
 			},
 			{
 				"id": "jerkin",
@@ -474,7 +523,9 @@
 				"only": "leather",
 				"enchants": 1,
 				"evasion": 15,
-				"alter": { "mod.self.defense": "-10%" }
+				"alter": {
+					"mod.self.defense": "-10%"
+				}
 			},
 			{
 				"id": "shirt",
@@ -492,7 +543,9 @@
 				"only": "cloth",
 				"enchants": 1,
 				"shield": 25,
-				"alter": { "mod.hp.max": 5 }
+				"alter": {
+					"mod.hp.max": 5
+				}
 			},
 			{
 				"id": "vestment",
@@ -527,7 +580,13 @@
 				"only": "cloth",
 				"enchants": 1,
 				"shield": 75,
-				"alter": { "mod": { "self.resist.blunt": -5, "self.resist.slash": -5, "self.resist.pierce": -5 } }
+				"alter": {
+					"mod": {
+						"self.resist.blunt": -5,
+						"self.resist.slash": -5,
+						"self.resist.pierce": -5
+					}
+				}
 			},
 			{
 				"id": "bracers",
@@ -545,7 +604,9 @@
 				"only": "metal",
 				"enchants": 1,
 				"armor": 5,
-				"alter": { "mod.hp.max": 5 }
+				"alter": {
+					"mod.hp.max": 5
+				}
 			},
 			{
 				"id": "vambraces",
@@ -580,7 +641,9 @@
 				"only": "metal",
 				"enchants": 1,
 				"armor": 15,
-				"alter": { "mod.self.dodge": "-10%" }
+				"alter": {
+					"mod.self.dodge": "-10%"
+				}
 			},
 			{
 				"id": "grips",
@@ -598,7 +661,9 @@
 				"only": "leather",
 				"enchants": 1,
 				"evasion": 5,
-				"alter": { "mod.hp.max": 5 }
+				"alter": {
+					"mod.hp.max": 5
+				}
 			},
 			{
 				"id": "wristcuffs",
@@ -633,7 +698,9 @@
 				"only": "leather",
 				"enchants": 1,
 				"evasion": 15,
-				"alter": { "mod.self.defense": "-10%" }
+				"alter": {
+					"mod.self.defense": "-10%"
+				}
 			},
 			{
 				"id": "wraps",
@@ -651,7 +718,9 @@
 				"only": "cloth",
 				"enchants": 1,
 				"shield": 25,
-				"alter": { "mod.hp.max": 5 }
+				"alter": {
+					"mod.hp.max": 5
+				}
 			},
 			{
 				"id": "mitts",
@@ -686,7 +755,13 @@
 				"only": "cloth",
 				"enchants": 1,
 				"shield": 75,
-				"alter": { "mod": { "self.resist.blunt": -5, "self.resist.slash": -5, "self.resist.pierce": -5 } }
+				"alter": {
+					"mod": {
+						"self.resist.blunt": -5,
+						"self.resist.slash": -5,
+						"self.resist.pierce": -5
+					}
+				}
 			},
 			{
 				"id": "shinguards",
@@ -704,7 +779,9 @@
 				"only": "metal",
 				"enchants": 1,
 				"armor": 5,
-				"alter": { "mod.hp.max": 5 }
+				"alter": {
+					"mod.hp.max": 5
+				}
 			},
 			{
 				"id": "greaves",
@@ -739,7 +816,9 @@
 				"only": "metal",
 				"enchants": 1,
 				"armor": 15,
-				"alter": { "mod.self.dodge": "-10%" }
+				"alter": {
+					"mod.self.dodge": "-10%"
+				}
 			},
 			{
 				"id": "leggings",
@@ -757,7 +836,9 @@
 				"only": "leather",
 				"enchants": 1,
 				"evasion": 5,
-				"alter": { "mod.hp.max": 5 }
+				"alter": {
+					"mod.hp.max": 5
+				}
 			},
 			{
 				"id": "trousers",
@@ -792,7 +873,9 @@
 				"only": "leather",
 				"enchants": 1,
 				"evasion": 15,
-				"alter": { "mod.self.defense": "-10%" }
+				"alter": {
+					"mod.self.defense": "-10%"
+				}
 			},
 			{
 				"id": "legwraps",
@@ -810,7 +893,9 @@
 				"only": "cloth",
 				"enchants": 1,
 				"shield": 25,
-				"alter": { "mod.hp.max": 5 }
+				"alter": {
+					"mod.hp.max": 5
+				}
 			},
 			{
 				"id": "pantalons",
@@ -845,7 +930,13 @@
 				"only": "cloth",
 				"enchants": 1,
 				"shield": 75,
-				"alter": { "mod": { "self.resist.blunt": -5, "self.resist.slash": -5, "self.resist.pierce": -5 } }
+				"alter": {
+					"mod": {
+						"self.resist.blunt": -5,
+						"self.resist.slash": -5,
+						"self.resist.pierce": -5
+					}
+				}
 			},
 			{
 				"id": "boots",
@@ -863,7 +954,9 @@
 				"only": "metal",
 				"enchants": 1,
 				"armor": 5,
-				"alter": { "mod.hp.max": 5 }
+				"alter": {
+					"mod.hp.max": 5
+				}
 			},
 			{
 				"id": "treads",
@@ -898,7 +991,9 @@
 				"only": "metal",
 				"enchants": 1,
 				"armor": 15,
-				"alter": { "mod.self.dodge": "-10%" }
+				"alter": {
+					"mod.self.dodge": "-10%"
+				}
 			},
 			{
 				"id": "moccasins",
@@ -916,7 +1011,9 @@
 				"only": "leather",
 				"enchants": 1,
 				"evasion": 5,
-				"alter": { "mod.hp.max": 5 }
+				"alter": {
+					"mod.hp.max": 5
+				}
 			},
 			{
 				"id": "shoes",
@@ -951,7 +1048,9 @@
 				"only": "leather",
 				"enchants": 1,
 				"evasion": 15,
-				"alter": { "mod.self.defense": "-10%" }
+				"alter": {
+					"mod.self.defense": "-10%"
+				}
 			},
 			{
 				"id": "sandals",
@@ -969,7 +1068,9 @@
 				"only": "cloth",
 				"enchants": 1,
 				"shield": 25,
-				"alter": { "mod.hp.max": 5 }
+				"alter": {
+					"mod.hp.max": 5
+				}
 			},
 			{
 				"id": "walkers",
@@ -1004,7 +1105,13 @@
 				"only": "cloth",
 				"enchants": 1,
 				"shield": 75,
-				"alter": { "mod": { "self.resist.blunt": -5, "self.resist.slash": -5, "self.resist.pierce": -5 } }
+				"alter": {
+					"mod": {
+						"self.resist.blunt": -5,
+						"self.resist.slash": -5,
+						"self.resist.pierce": -5
+					}
+				}
 			},
 			{
 				"id": "aegismantle",
@@ -1020,7 +1127,9 @@
 					"adamant": 3
 				},
 				"craftcostmult": 20,
-				"sell": { "arcana": 5 },
+				"sell": {
+					"arcana": 5
+				},
 				"only": "artifact",
 				"enchants": 3,
 				"armor": 15
@@ -1039,7 +1148,9 @@
 					"aetherhide": 3
 				},
 				"craftcostmult": 20,
-				"sell": { "arcana": 5 },
+				"sell": {
+					"arcana": 5
+				},
 				"only": "artifact",
 				"enchants": 3,
 				"evasion": 15
@@ -1058,7 +1169,9 @@
 					"amberroot": 3
 				},
 				"craftcostmult": 20,
-				"sell": { "arcana": 5 },
+				"sell": {
+					"arcana": 5
+				},
 				"only": "artifact",
 				"enchants": 3,
 				"shield": 75
@@ -1070,8 +1183,8 @@
 				"id": "en_armor_evasion",
 				"name": "Elusive Dodge",
 				"adj": "Elusive",
-				"desc": "Makes you harder to hit",
-				"extdesc": "Effect scales with item's base evasion",
+				"desc": "ทำให้โจมตีคุณยากขึ้น",
+				"extdesc": "เอฟเฟกต์ขยายตามค่าการหลบหลีกพื้นฐานของไอเทม",
 				"require": "g.enchanting>0",
 				"buy": {
 					"arcana": 1,
@@ -1080,15 +1193,19 @@
 				"level": 1,
 				"only": "t_helm,t_chestplate,t_gloves,t_greaves,t_boots,t_back",
 				"length": 30,
-				"cost": { "arcana": 1 },
-				"alter": { "evasion": "100%" }
+				"cost": {
+					"arcana": 1
+				},
+				"alter": {
+					"evasion": "100%"
+				}
 			},
 			{
 				"id": "en_armor_armor",
 				"name": "Reinforced Defense",
 				"adj": "Reinforced",
-				"desc": "Makes you more durable against incoming assault",
-				"extdesc": "Effect scales with item's base armor",
+				"desc": "ทำให้คุณทนทานขึ้นต่อการโจมตีที่เข้ามา",
+				"extdesc": "เอฟเฟกต์ขยายตามค่าเกราะพื้นฐานของไอเทม",
 				"require": "g.enchanting>0",
 				"buy": {
 					"arcana": 1,
@@ -1097,14 +1214,18 @@
 				"level": 1,
 				"only": "t_helm,t_chestplate,t_gloves,t_greaves,t_boots,t_back",
 				"length": 30,
-				"cost": { "arcana": 1 },
-				"alter": { "armor": "100%" }
+				"cost": {
+					"arcana": 1
+				},
+				"alter": {
+					"armor": "100%"
+				}
 			},
 			{
 				"id": "en_armor_barrier_pct",
 				"name": "Radiating",
-				"desc": "Reinforces your arcane barriers with additional layers",
-				"extdesc": "Effect scales with item's base shield",
+				"desc": "เสริมบาเรียเวทมนตร์ของคุณด้วยชั้นเพิ่มเติม",
+				"extdesc": "เอฟเฟกต์ขยายตามค่าโล่พื้นฐานของไอเทม",
 				"require": "g.enchanting>0",
 				"buy": {
 					"arcana": 1,
@@ -1113,13 +1234,17 @@
 				"level": 1,
 				"only": "t_helm,t_chestplate,t_gloves,t_greaves,t_boots,t_back",
 				"length": 30,
-				"cost": { "arcana": 1 },
-				"alter": { "shield": "100%" }
+				"cost": {
+					"arcana": 1
+				},
+				"alter": {
+					"shield": "100%"
+				}
 			},
 			{
 				"id": "en_armor_barrier_flat",
 				"name": "Glimmering",
-				"desc": "Create channels for your arcane barrier energies",
+				"desc": "สร้างช่องทางนำพลังงานบาเรียเวทมนตร์ของคุณ",
 				"require": "g.enchanting>0",
 				"buy": {
 					"arcana": 1,
@@ -1128,13 +1253,17 @@
 				"level": 1,
 				"only": "t_helm,t_chestplate,t_gloves,t_greaves,t_boots,t_back",
 				"length": 30,
-				"cost": { "arcana": 1 },
-				"alter": { "shield": 15 }
+				"cost": {
+					"arcana": 1
+				},
+				"alter": {
+					"shield": 15
+				}
 			},
 			{
 				"id": "en_armor_speed",
 				"name": "Swift",
-				"desc": "Controls air around the garment, quickening all movements",
+				"desc": "ควบคุมอากาศรอบเครื่องแต่งกาย เร่งทุกการเคลื่อนไหว",
 				"require": "g.enchanting>0",
 				"buy": {
 					"arcana": 1,
@@ -1143,14 +1272,18 @@
 				"level": 1,
 				"only": "t_helm,t_chestplate,t_gloves,t_greaves,t_boots,t_back",
 				"length": 30,
-				"cost": { "arcana": 1 },
-				"alter": { "mod.self.speed": 1 }
+				"cost": {
+					"arcana": 1
+				},
+				"alter": {
+					"mod.self.speed": 1
+				}
 			},
 			{
 				"id": "en_armor_dist",
 				"name": "Weightless",
-				"desc": "Makes garment more comfortable and lighter, allowing you to tire less while travelling.",
-				"flavor": "Get all the loot AND fast travel?",
+				"desc": "ทำให้เครื่องแต่งกายสบายและเบาขึ้น ให้คุณเหนื่อยน้อยลงขณะเดินทาง",
+				"flavor": "เอาของรางวัลทั้งหมดแล้วยังเดินทางเร็วอีกด้วย?",
 				"require": "g.enchanting>0",
 				"buy": {
 					"arcana": 1,
@@ -1159,14 +1292,18 @@
 				"level": 1,
 				"only": "t_helm,t_chestplate,t_gloves,t_greaves,t_boots,t_back",
 				"length": 30,
-				"cost": { "arcana": 1 },
-				"alter": { "mod.dist": 10 }
+				"cost": {
+					"arcana": 1
+				},
+				"alter": {
+					"mod.dist": 10
+				}
 			},
 			{
 				"id": "en_armor_resist_physical",
 				"name": "Armadillo's Resistance",
 				"adj": "%i of the Armadillo",
-				"desc": "Disperses portion of incoming physical damage.",
+				"desc": "สลายความเสียหายกายภาพที่เข้ามาบางส่วน",
 				"require": "g.enchanting>0",
 				"buy": {
 					"arcana": 1,
@@ -1175,7 +1312,9 @@
 				"level": 1,
 				"only": "t_helm,t_chestplate,t_gloves,t_greaves,t_boots,t_back",
 				"length": 30,
-				"cost": { "arcana": 1 },
+				"cost": {
+					"arcana": 1
+				},
 				"alter": {
 					"mod.self.resist.blunt": 10,
 					"mod.self.resist.pierce": 10,
@@ -1186,7 +1325,7 @@
 				"id": "en_armor_resist_mana",
 				"name": "Djinn's Resistance",
 				"adj": "%i of the Djinn",
-				"desc": "Disperses portion of incoming prismatic damage.",
+				"desc": "สลายความเสียหายปริซึมที่เข้ามาบางส่วน",
 				"require": "g.enchanting>0",
 				"buy": {
 					"arcana": 1,
@@ -1195,7 +1334,9 @@
 				"level": 1,
 				"only": "t_helm,t_chestplate,t_gloves,t_greaves,t_boots,t_back",
 				"length": 30,
-				"cost": { "arcana": 1 },
+				"cost": {
+					"arcana": 1
+				},
 				"alter": {
 					"mod.self.resist.mana": 10,
 					"mod.self.resist.water": 10,
