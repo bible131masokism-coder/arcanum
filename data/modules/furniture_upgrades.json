@@ -5,7 +5,7 @@
 			{
 				"id": "better_arcanestudy",
 				"name": "magically soundproofed study",
-				"desc": "Magically refine your enchanted study into an ideal location for researching topics without any distractions.",
+				"desc": "ใช้เวทมนตร์ชำระห้องศึกษาอาคมของคุณให้เป็นสถานที่เหมาะสำหรับวิจัยหัวข้อเรื่องโดยไร้สิ่งรบกวน",
 				"require": "g.enchanted_study>0&&g.airlore2>=1",
 				"cost": {
 					"codices": 15,
@@ -22,7 +22,7 @@
 			{
 				"id": "better_study",
 				"name": "soundproof study",
-				"desc": "Refine your study into an ideal location for researching topics without any distractions.",
+				"desc": "ชำระห้องศึกษาของคุณให้เป็นสถานที่เหมาะสำหรับวิจัยหัวข้อเรื่องโดยไร้สิ่งรบกวน",
 				"require": "g.studyroom>0&&g.airlore>=5",
 				"cost": {
 					"scrolls": 12,
@@ -39,7 +39,7 @@
 			{
 				"id": "better_pedestal",
 				"name": "utility pedestal",
-				"desc": "A pedestal with added grooves to keep the reading material in place, small compartments holding spare bookmarks and even a light gem holder for night reading.",
+				"desc": "แท่นวางที่มีร่องช่วยยึดวัสดุอ่านให้อยู่กับที่ ช่องเล็ก ๆ เก็บที่คั่นหนังสือสำรอง และที่ใส่แสงอัญมณีสำหรับอ่านยามค่ำคืน",
 				"require": "g.pedestal>0&&g.crafting>=7",
 				"cost": {
 					"scrolls": 3,
@@ -56,7 +56,7 @@
 			{
 				"id": "packmule",
 				"name": "pack mule",
-				"desc": "A clever design from the sack-maker's guild.",
+				"desc": "การออกแบบอันชาญฉลาดจากสมาคมช่างถุง",
 				"require": "g.mule>=1",
 				"cost": {
 					"gold": 500,
@@ -72,7 +72,7 @@
 			{
 				"id": "rejuvenation_feed",
 				"name": "rejuvenation feed",
-				"desc": "A new concoction of herbs, carrots, and exotic fruits to invigorate the weary steed.",
+				"desc": "ยาปรุงสูตรใหม่จากสมุนไพร แครอท และผลไม้ต่างแดน เพื่อปลุกกำลังม้าที่เหน็ดเหนื่อย",
 				"require": "(g.mule+g.oldnag)>=1&&g.potions>=3",
 				"cost": {
 					"gold": 800,
