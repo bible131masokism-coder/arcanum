@@ -5,7 +5,7 @@
 			{
 				"id": "timespiral",
 				"name": "time spiral",
-				"desc": "Take a step back and do it again.",
+				"desc": "ถอยหลังหนึ่งก้าวแล้วทำมันอีกครั้ง",
 				"require": "g.tier5>0&&g.runner.max>=3&&g.evt_timerip>0",
 				"lock": "t_actionexpansion",
 				"tags": "t_actionexpansion",
@@ -24,28 +24,28 @@
 				"id": "stillroom",
 				"name": "still room",
 				"group": "materials",
-				"desc": "Nothing occurs within this room.",
+				"desc": "ไม่มีอะไรเกิดขึ้นในห้องนี้",
 				"max": 1,
 				"sortOrder": 542,
-				"flavor": "Perfect for extremely specialized experiments."
+				"flavor": "เหมาะสำหรับการทดลองเฉพาะทางสุดขั้ว"
 			},
 			{
 				"id": "chargedtimepiece",
 				"name": "charged timepiece",
 				"group": "materials",
-				"desc": "Imbued with time energies, this timepiece shows the current time no matter when you are.",
+				"desc": "อัดแน่นด้วยพลังเวลา นาฬิกาเรือนนี้บอกเวลาปัจจุบันไม่ว่าคุณจะอยู่ที่ใด",
 				"max": 6,
 				"sortOrder": 541,
-				"flavor": "How many of you have one?"
+				"flavor": "พวกคุณกี่คนกันที่มีมัน?"
 			},
 			{
 				"id": "emptytimepiece",
 				"name": "intricate timepiece",
 				"group": "materials",
-				"desc": "An ordinary timepiece, crafted with remarkable materials.",
+				"desc": "นาฬิกาธรรมดา ที่สร้างจากวัสดุอันน่าทึ่ง",
 				"max": 6,
 				"sortOrder": 540,
-				"flavor": "The time is L1:69."
+				"flavor": "เวลาคือ L1:69"
 			}
 		],
 		"tasks": [
@@ -54,10 +54,15 @@
 				"name": "craft timepiece",
 				"verb": "clockmaking",
 				"require": "g.tier5>0&&g.runner.max>=3&&g.evt_timerip>0",
-				"need": ["workspace", "timesource"],
-				"desc": "Create an intricate timepiece.",
+				"need": [
+					"workspace",
+					"timesource"
+				],
+				"desc": "สร้างนาฬิกาอันประณีต",
 				"length": 120,
-				"fill": ["emptytimepiece"],
+				"fill": [
+					"emptytimepiece"
+				],
 				"cost": {
 					"gold": 1000,
 					"research": 750,
@@ -81,10 +86,15 @@
 				"name": "imbue timepiece",
 				"verb": "weaving time",
 				"require": "g.emptytimepiece>0",
-				"need": ["workspace", "timesource"],
-				"desc": "Weave time energies into the empty timepiece.",
+				"need": [
+					"workspace",
+					"timesource"
+				],
+				"desc": "ทอพลังเวลาเข้าสู่นาฬิกาที่ว่างเปล่า",
 				"length": 60,
-				"fill": ["chargedtimepiece"],
+				"fill": [
+					"chargedtimepiece"
+				],
 				"cost": {
 					"gold": 1500,
 					"research": 100,
@@ -115,10 +125,15 @@
 				"name": "create still room",
 				"verb": "stilling",
 				"require": "g.tier5>0&&g.runner.max>=3&&g.evt_timerip>0",
-				"need": ["workspace", "timesource"],
-				"desc": "Stop.",
+				"need": [
+					"workspace",
+					"timesource"
+				],
+				"desc": "หยุด",
 				"length": 720,
-				"fill": ["stillroom"],
+				"fill": [
+					"stillroom"
+				],
 				"cost": {
 					"timegem": 100,
 					"timerune": 3,
