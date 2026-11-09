@@ -9,7 +9,7 @@
 				"id": "flamesculpting",
 				"name": "soulflames",
 				"require": "g.fulmination>0",
-				"desc": "Let the world see your radiance",
+				"desc": "ให้โลกได้เห็นความเปล่งประกายของคุณ",
 				"level": 10,
 				"max": 1,
 				"buy": {
@@ -35,7 +35,7 @@
 			{
 				"id": "addember",
 				"name": "Ignite ember",
-				"desc": "Ignite a soul ember",
+				"desc": "จุดกองถ่านวิญญาณ",
 				"group": "pyromancy",
 				"require": "g.flamesculpting>0",
 				"fill": ["soulember"],
@@ -49,7 +49,7 @@
 			{
 				"id": "removeember",
 				"name": "Quench ember",
-				"desc": "Quench a soul ember",
+				"desc": "ดับกองถ่านวิญญาณ",
 				"group": "pyromancy",
 				"require": "g.flamesculpting>0",
 				"cost": {
@@ -63,7 +63,7 @@
 				"id": "dissipateheat",
 				"name": "Disperse heat",
 				"cd": 60,
-				"desc": "Desperately release excess heat.",
+				"desc": "ปลดปล่อยความร้อนส่วนเกินออกมาอย่างสิ้นหวัง",
 				"group": "pyromancy",
 				"require": "g.consumingflames>=30",
 				"dot": {
@@ -78,7 +78,7 @@
 				"id": "heatup",
 				"name": "Fan the flames",
 				"cd": 60,
-				"desc": "Quickly generate a large amount of heat.",
+				"desc": "สร้างความร้อนปริมาณมากอย่างรวดเร็ว",
 				"group": "pyromancy",
 				"require": "g.soulember>0",
 				"cost": {
@@ -94,7 +94,7 @@
 			{
 				"id": "craftpureembers",
 				"name": "produce pure embers",
-				"desc": "Crystallize new pure embers, using your soul embers as catalysts.",
+				"desc": "ตกผลึกกองถ่านบริสุทธิ์ใหม่ โดยใช้กองถ่านวิญญาณของคุณเป็นตัวเร่งปฏิกิริยา",
 				"group": "materials",
 				"verb": "refining embers",
 				"require": "g.soulember>0",
@@ -110,10 +110,10 @@
 			{
 				"id": "remakeclaws",
 				"name": "call efreet's claws",
-				"desc": "The flames never die, the merely dissipate.",
+				"desc": "เปลวไฟไม่เคยดับ มันเพียงสลายกระจายไปเท่านั้น",
 				"group": "weapon",
 				"need": "g.inv.max-g.inv._used>=1",
-				"needtext": "Must have at least 1 inventory space free.",
+				"needtext": "ต้องมีพื้นที่ว่างในคลังอย่างน้อย 1 ช่อง",
 				"verb": "Recalling",
 				"require": "g.makeclaws>0",
 				"length": 10,
@@ -134,10 +134,10 @@
 			{
 				"id": "makeclaws",
 				"name": "efreet's claws",
-				"desc": "Biting flames, shaped to rend and tear those who oppose you. Surrender to the destruction.",
+				"desc": "เปลวไฟที่แผดเผา ถูกหล่อหลอมให้ฉีกกระชากผู้ขวางทางคุณ ยอมจำนนต่อความพินาศเถิด",
 				"group": "weapon",
 				"need": "g.inv.max-g.inv._used>=1",
-				"needtext": "Must have at least 1 inventory space free.",
+				"needtext": "ต้องมีพื้นที่ว่างในคลังอย่างน้อย 1 ช่อง",
 				"max": 1,
 				"verb": "Creating Masterpiece",
 				"require": "g.firelord>0&&g.flameofcreation>0",
@@ -160,11 +160,11 @@
 			{
 				"id": "lavafishing",
 				"name": "Lava fishing",
-				"desc": "Fish for obsidianfish, flarefin koi and various other lava creatures. Leave valuable parts for your own use, sell the rest.",
+				"desc": "ตกปลาออบซิเดียนฟิช ปลาคราฟลาวา และสัตว์ลาวาอื่น ๆ เก็บชิ้นส่วนมีค่าไว้ใช้เอง ที่เหลือขายทิ้ง",
 				"group": "affluence",
-				"flavor": "There is a surprisingly big market for salamander steaks, who knew....",
+				"flavor": "มีตลาดใหญ่เกินคาดสำหรับสเต็กซาลาแมนเดอร์ ใครจะเชื่อ...",
 				"need": "g.volcano>0",
-				"needtext": "Must live in the volcano.",
+				"needtext": "ต้องอาศัยอยู่ในภูเขาไฟ",
 				"verb": "lava dredging",
 				"require": "g.t_fireclass>0&&g.tier4>0",
 				"length": 60,
@@ -189,7 +189,7 @@
 			{
 				"id": "restingpoint",
 				"name": "equilibrium",
-				"desc": "Given enough time, any system tends toward equilibrium",
+				"desc": "เมื่อให้เวลามากพอ ระบบใดก็ตามล้วนมีแนวโน้มเข้าสู่สมดุล",
 				"group": "pyromancy",
 				"require": "g.flamesculpting>0",
 				"max": 1,
@@ -204,12 +204,12 @@
 			{
 				"id": "fulmination",
 				"name": "fulmination",
-				"desc": "Unlock the fiery potential within yourself",
-				"extdesc": "It is recommended that you read the relevant glossary entries first",
+				"desc": "ปลดล็อกศักยภาพแห่งอัคนีในตัวคุณ",
+				"extdesc": "แนะนำให้อ่านรายการอภิธานศัพท์ที่เกี่ยวข้องก่อน",
 				"group": "pyromancy",
 				"require": "g.t_fireclass>0",
 				"need": "g.decipherpyronotes>0",
-				"needtext": "Find and decipher the notes on pyromancy. They can be found in a charred shack.",
+				"needtext": "ค้นหาและถอดรหัสบันทึกเกี่ยวกับไพโรแมนซี พบได้ในเพิงที่ถูกไฟไหม้ดำ",
 				"max": 1,
 				"cost": {
 					"fire": 10,
@@ -219,7 +219,7 @@
 			{
 				"id": "thermalstudies",
 				"name": "thermal studies",
-				"desc": "A true adept of the flame must be well versed in the mysteries of thermodynamics",
+				"desc": "ผู้เชี่ยวชาญไฟที่แท้จริงต้องรอบรู้ความลึกลับของอุณหพลศาสตร์",
 				"group": "magic",
 				"require": "g.flamesculpting>0&&g.t_fireclass>0",
 				"max": 1,
@@ -236,7 +236,7 @@
 			{
 				"id": "thermalbranding",
 				"name": "thermal branding",
-				"desc": "Application of arcane brands allows for significantly faster heat transfer",
+				"desc": "การประยุกต์เครื่องหมายเวทช่วยให้ถ่ายเทความร้อนได้เร็วขึ้นอย่างมาก",
 				"group": "magic",
 				"require": "g.flamesculpting>0&&g.t_fireclass>=2",
 				"max": 1,
@@ -253,7 +253,7 @@
 			{
 				"id": "thermaldomination",
 				"name": "thermal dominion",
-				"desc": "Almost as if an invisible demon is at your disposal",
+				"desc": "ราวกับปีศาจล่องหนคอยรับใช้อยู่เคียงข้าง",
 				"group": "magic",
 				"require": "g.flamesculpting>0&&g.t_fireclass>=3",
 				"max": 1,
@@ -269,12 +269,12 @@
 					"restingpoint.mod.consumingflames.rate": -0.5,
 					"blazingheat.mod.fire.rate": 0.005
 				},
-				"flavor": "You would probably name him Maxwell, if he existed"
+				"flavor": "คุณคงจะตั้งชื่อเขาว่าแมกซ์เวลล์ หากเขามีตัวตนจริง"
 			},
 			{
 				"id": "flamedomain",
 				"name": "flame's domain",
-				"desc": "Harness the power of the volcano to amplify your magics",
+				"desc": "ใช้พลังของภูเขาไฟเพื่อขยายเวทมนตร์ของคุณ",
 				"group": "housing",
 				"require": "g.flamesculpting>0&&g.t_fireclass>0",
 				"max": 1,
@@ -292,7 +292,7 @@
 			{
 				"id": "cremation",
 				"name": "cremation",
-				"desc": "Add a little extra to your repertoire of funerary services",
+				"desc": "เพิ่มบริการงานศพพิเศษอีกเล็กน้อยให้กับคลังทักษะของคุณ",
 				"group": "affluence",
 				"require": "g.pyromancer>0&&g.embalm>0",
 				"max": 1,
@@ -305,12 +305,12 @@
 					"embalm.effect.gold": 0.75,
 					"embalm.run.fire": 1
 				},
-				"flavor": "Few are capable of reducing a body to ashes. You are amongst them"
+				"flavor": "มีเพียงไม่กี่คนที่เผาร่างให้เป็นเถ้าถ่านได้ คุณคือหนึ่งในนั้น"
 			},
 			{
 				"id": "wordsoffire",
 				"name": "words of fire",
-				"desc": "They say the flames hold the secrets of every book ever burned. Perhaps there is truth to that",
+				"desc": "เขาว่ากันว่าเปลวไฟกักเก็บความลับของหนังสือทุกเล่มที่เคยถูกเผา บางทีมันอาจมีส่วนจริง",
 				"group": "magic",
 				"require": "g.flamesculpting>=3",
 				"max": 1,
@@ -323,12 +323,12 @@
 					"sublore.mod.research.max": 3,
 					"sublore.cost.codices": -2
 				},
-				"flavor": "Best not think about all the books burned for being 'indecent'"
+				"flavor": "ไม่ควรคิดถึงหนังสือทั้งหมดที่ถูกเผาเพราะ 'ลามกอนาจาร' เลย"
 			},
 			{
 				"id": "flowingflames",
 				"name": "flowing flames",
-				"desc": "The flames flicker and dance, and so do you",
+				"desc": "เปลวไฟริบหรี่และเริงระบำ คุณก็เช่นกัน",
 				"group": "body",
 				"require": "g.firebrand>0",
 				"max": 1,
@@ -345,7 +345,7 @@
 			{
 				"id": "firebranding",
 				"name": "brand of fire",
-				"desc": "Brand yourself with sigils of fire",
+				"desc": "ประทับตราสัญลักษณ์แห่งไฟลงบนตัวคุณ",
 				"group": "magic",
 				"require": "g.firebrand>0",
 				"max": 1,
@@ -358,12 +358,12 @@
 					"firedmg": 5,
 					"restingpoint.mod.consumingflames.rate": -0.05
 				},
-				"flavor": "Those in the know will recognize it"
+				"flavor": "ผู้ที่รู้เรื่องจะจำมันได้"
 			},
 			{
 				"id": "exoticfuels",
 				"name": "exotic fuels",
-				"desc": "A collection of arcane materials that facilitate production and imbuement of fire into objects",
+				"desc": "ชุดวัสดุเวทที่อำนวยความสะดวกในการผลิตและชุบพลังไฟลงบนวัตถุ",
 				"group": "materials",
 				"require": "g.pyromancer>0",
 				"max": 1,
@@ -376,16 +376,16 @@
 					"imbuefiregem.cost.fire": -3,
 					"craftfirerune.cost.firegem": -5
 				},
-				"flavor": "A lot of things burn. Some of them burn in ways most haven't seen before"
+				"flavor": "หลายสิ่งหลายอย่างติดไฟ บางอย่างติดไฟในแบบที่คนส่วนใหญ่ไม่เคยเห็นมาก่อน"
 			},
 			{
 				"id": "hellfiretinctures",
 				"name": "hellfire tinctures",
-				"desc": "Most alchemists would advise running upon encountering the concoctions you can produce",
+				"desc": "นักแปรธาตุส่วนใหญ่คงแนะนำให้วิ่งหนีเมื่อเจอยาผสมที่คุณสามารถผลิตได้",
 				"group": "potions",
 				"require": "g.firelord>0",
 				"max": 1,
-				"extdesc": "Replaces Flame Potion and Volatile Concoction with superior potions.",
+				"extdesc": "แทนที่ยาน้ำไฟและยาผสมระเบิดด้วยยาที่เหนือกว่า",
 				"cost": {
 					"firerune": 15,
 					"pureember": 8,
@@ -393,12 +393,12 @@
 					"pot_explodium": 1
 				},
 				"disable": ["pot_ignition", "pot_explodium"],
-				"flavor": "...it is also hypergolic with such things as cloth, wood, and hapless apprentices, not to mention asbestos, sand, and water-with which it reacts explosively"
+				"flavor": "...มันยังติดไฟเองได้เมื่อสัมผัสกับผ้า ไม้ และเด็กฝึกหัดผู้เคราะห์ร้าย ไม่ต้องพูดถึงแร่ใยหิน ทราย และน้ำ ที่มันทำปฏิกิริยาระเบิดอย่างรุนแรง"
 			},
 			{
 				"id": "volcanostabilization",
 				"name": "volcano stabilization",
-				"desc": "Control the flow of magma to allow more space to be effectively used.",
+				"desc": "ควบคุมการไหลของหินหนืดเพื่อให้ใช้พื้นที่ได้อย่างมีประสิทธิภาพมากขึ้น",
 				"group": "housing",
 				"require": "g.firelord>0&&g.volcano>0",
 				"max": 10,
@@ -411,12 +411,12 @@
 					"pureember.max": 2,
 					"firerune.max": 2
 				},
-				"flavor": "Convection schmonvection"
+				"flavor": "การพาความร้อน ช่างไร้สาระ"
 			},
 			{
 				"id": "hightempsmelting",
 				"name": "high-temperature smelting",
-				"desc": "Use your mastery of fire to extract additional materials from mined ore.",
+				"desc": "ใช้ความเชี่ยวชาญด้านไฟสกัดวัสดุเพิ่มเติมจากแร่ที่ขุดได้",
 				"group": "materials",
 				"require": "g.flamesculpting>=3&&g.act_mine>0",
 				"max": 2,
@@ -435,7 +435,7 @@
 			{
 				"id": "flameofcreation",
 				"name": "flame of creation",
-				"desc": "Capture an ember of primordial flames for your own use.",
+				"desc": "จับกองถ่านแห่งเปลวไฟดึกดำบรรพ์มาไว้ใช้เอง",
 				"group": "pyromancy",
 				"require": "g.firelord>0&&g.flamesculpting>=3",
 				"max": 1,
@@ -454,7 +454,7 @@
 					"pureember.max": 5,
 					"soulember.mod.blazingheat.max": 3
 				},
-				"flavor": "With this, the possibilities seem endless"
+				"flavor": "ด้วยสิ่งนี้ ความเป็นไปได้ดูไร้ที่สิ้นสุด"
 			},
 			{
 				"id": "quenchingrest",
@@ -462,7 +462,7 @@
 				"name": "Cooling immersion",
 				"slot": "leisure",
 				"max": 1,
-				"desc": "Jump into a vat of freezing water as part of your relaxation routine.",
+				"desc": "กระโดดลงถังน้ำเย็นจัดเป็นส่วนหนึ่งของกิจวัตรการผ่อนคลาย",
 				"require": "g.fulmination>0",
 				"buy": {
 					"watergem": 25,
@@ -525,7 +525,7 @@
 			{
 				"id": "firebolt",
 				"name": "fire bolt",
-				"desc": "A small bolt of flame.",
+				"desc": "สายฟ้าไฟเล็ก ๆ",
 				"sortOrder": 704,
 				"level": 2,
 				"school": "fire",
@@ -572,7 +572,7 @@
 			{
 				"id": "searingbolt",
 				"name": "searing bolt",
-				"desc": "A bolt of fire with lingering flames",
+				"desc": "สายฟ้าไฟที่ตามด้วยเปลวไฟที่หลงเหลือ",
 				"sortOrder": 703,
 				"level": 3,
 				"school": "fire",
@@ -625,7 +625,7 @@
 			{
 				"id": "magmabolt",
 				"name": "magma bolt",
-				"desc": "A bolt of liquid-hot magma",
+				"desc": "สายฟ้าหินหนืดร้อนจัดเป็นของเหลว",
 				"sortOrder": 702,
 				"level": 5,
 				"school": "fire",
@@ -677,7 +677,7 @@
 			},
 			{
 				"id": "flamestrike",
-				"desc": "Imbue your weapon with flame before striking.",
+				"desc": "ชุบเปลวไฟให้อาวุธก่อนโจมตี",
 				"sortOrder": 313,
 				"level": 3,
 				"school": "martial",
@@ -697,7 +697,7 @@
 				},
 				"caststoppers": [1],
 				"need": "g.player.getWeapon().hasTag('t_martial')",
-				"needtext": "Currently equipped weapon must be martial",
+				"needtext": "อาวุธที่สวมอยู่ต้องเป็นประเภทประชิด",
 				"cost": {
 					"fire": 4,
 					"vigor": 3
@@ -718,7 +718,7 @@
 			},
 			{
 				"id": "firestorm",
-				"desc": "Rain hell from above",
+				"desc": "เทนรกจากเบื้องบน",
 				"sortOrder": 700,
 				"level": 6,
 				"school": "fire",
@@ -772,7 +772,7 @@
 			{
 				"id": "conflagration",
 				"name": "conflagration",
-				"desc": "Incinerate all who stand before you",
+				"desc": "เผาไหม้ทุกคนที่ยืนขวางหน้าคุณ",
 				"sortOrder": 710,
 				"level": 8,
 				"school": "fire",
@@ -810,8 +810,8 @@
 			{
 				"id": "searingradiance",
 				"name": "searing radiance",
-				"desc": "All shall perish in flames",
-				"flavor": "Let them face the inferno",
+				"desc": "ทุกคนจักพินาศในเปลวไฟ",
+				"flavor": "ให้พวกมันเผชิญนรกอัคคี",
 				"sortOrder": 715,
 				"level": 5,
 				"school": "fire",
@@ -850,7 +850,7 @@
 			{
 				"id": "starfire",
 				"name": "starfire",
-				"desc": "Like the power of the sun",
+				"desc": "เหมือนพลังแห่งดวงอาทิตย์",
 				"sortOrder": 716,
 				"level": 5,
 				"school": "fire",
@@ -890,8 +890,8 @@
 			{
 				"id": "water_heatdown",
 				"name": "scalding steam",
-				"desc": "Release a stream of extremely hot steam at an enemy",
-				"flavor": "hissssssssssssss",
+				"desc": "ปล่อยสายไอน้ำร้อนจัดใส่ศัตรู",
+				"flavor": "ฟู่uuuuuuuuuuu",
 				"sortOrder": 504,
 				"level": 3,
 				"school": "water",
@@ -926,8 +926,8 @@
 			{
 				"id": "air_heatdown",
 				"name": "searing wind",
-				"desc": "Buffet a foe with scorching gusts of wind",
-				"flavor": "It's like a brief visit to hell",
+				"desc": "กระหน่ำศัตรูด้วยลมกรดอันแผดเผา",
+				"flavor": "เหมือนได้ไปเยือนนรกแป๊บหนึ่ง",
 				"sortOrder": 604,
 				"level": 3,
 				"school": "air",
@@ -962,8 +962,8 @@
 			{
 				"id": "earth_heatdown",
 				"name": "molten earth",
-				"desc": "Melt the ground under your foe's feet",
-				"flavor": "Better wear some thick-soled boots",
+				"desc": "ละลายพื้นใต้เท้าศัตรูของคุณ",
+				"flavor": "ควรสวมรองเท้าพื้นหนาไว้ดีกว่า",
 				"sortOrder": 807,
 				"level": 3,
 				"school": "earth",
@@ -998,7 +998,7 @@
 			{
 				"id": "soulember_up",
 				"name": "Inflame",
-				"desc": "Explosively ignite a soul ember",
+				"desc": "จุดกองถ่านวิญญาณอย่างระเบิดแรง",
 				"sortOrder": 718,
 				"level": 2,
 				"school": "fire",
@@ -1010,7 +1010,7 @@
 				},
 				"require": "g.fulmination>0&&g.soulember.max>=4",
 				"need": "g.consumingflames<=1",
-				"needtext": "Cannot be performed when suffering from consuming flames",
+				"needtext": "ไม่สามารถกระทำได้ในขณะที่ทุกข์ทรมานจากเปลวเพลิงเผาผลาญ",
 				"buy": {
 					"research": 5000,
 					"firegem": 25,
@@ -1035,7 +1035,7 @@
 			{
 				"id": "soulember_down",
 				"name": "Soul blaze",
-				"desc": "Expend a soul ember, enveloping the surroundings in released energies",
+				"desc": "ใช้กองถ่านวิญญาณหนึ่งก้อน ห่อหุ้มบริเวณโดยรอบด้วยพลังงานที่ปลดปล่อยออกมา",
 				"sortOrder": 717,
 				"level": 2,
 				"school": "fire",
@@ -1047,7 +1047,7 @@
 				},
 				"require": "g.fulmination>0&&g.soulember.max>=4",
 				"need": "g.consumingflames>=Math.max(g.consumingflames.max/2,50)",
-				"needtext": "Blazing flames must be at least half of max (but not less than 50)",
+				"needtext": "เปลวเพลิงต้องมีอย่างน้อยครึ่งหนึ่งของค่าสูงสุด (แต่ไม่ต่ำกว่า 50)",
 				"buy": {
 					"research": 5000,
 					"firegem": 25,
@@ -1073,7 +1073,7 @@
 			{
 				"id": "searingflash",
 				"name": "flashfire",
-				"desc": "Release a gem's worth of fire in an instant",
+				"desc": "ปลดปล่อยพลังไฟเทียบเท่าอัญมณีหนึ่งเม็ดในชั่วพริบตา",
 				"sortOrder": 719,
 				"level": 1,
 				"school": "fire",
@@ -1105,7 +1105,7 @@
 			{
 				"id": "combust",
 				"name": "combustion",
-				"desc": "Use a fire gem to stoke the fire within.",
+				"desc": "ใช้อัญมณีไฟเพื่อเติมเชื้อไฟในตัว",
 				"sortOrder": 770,
 				"level": 1,
 				"school": "fire",
@@ -1134,7 +1134,7 @@
 			{
 				"id": "volcano",
 				"name": "volcanic lair",
-				"desc": "Stark lair carved into a mountain of fire",
+				"desc": "ถ้ำโล่งเปล่าที่สลักในภูเขาเพลิง",
 				"require": "g.fire>=20&&g.t_fireclass>0",
 				"buy": {
 					"research": 2000,
@@ -1157,7 +1157,7 @@
 			{
 				"id": "lakeoffire",
 				"name": "lake of fire",
-				"desc": "A lake of burning fire.",
+				"desc": "ทะเลสาบแห่งเปลวเพลิงที่ลุกไหม้",
 				"tags": "firesource",
 				"max": 1,
 				"require": "(g.fire.max>=10&&g.space.max>=100)||g.volcano>0",
@@ -1177,7 +1177,7 @@
 			{
 				"id": "embercapacitor",
 				"name": "ember pedestal",
-				"desc": "Holds your soul embers safely.",
+				"desc": "เก็บกองถ่านวิญญาณของคุณไว้อย่างปลอดภัย",
 				"max": 3,
 				"require": "g.flamesculpting>0",
 				"cost": {
@@ -1194,7 +1194,7 @@
 			{
 				"id": "heatcapacitor",
 				"name": "heat capacitor",
-				"desc": "A large tank of enchanted water, capable of transmitting heat to and from you instantly.",
+				"desc": "ถังน้ำอาคมขนาดใหญ่ ที่สามารถถ่ายเทความร้อนเข้าออกจากตัวคุณได้ทันที",
 				"max": 5,
 				"require": "g.blazingheat>=50&&g.enchanting>=5",
 				"cost": {
@@ -1213,7 +1213,7 @@
 			{
 				"id": "heatconductor",
 				"name": "heat conductor",
-				"desc": "A number of enchantments designed for cooling your heat capacitors.",
+				"desc": "ชุดเวทมนตร์ที่ออกแบบมาเพื่อหล่อเย็นตัวเก็บความร้อนของคุณ",
 				"max": 5,
 				"require": "g.blazingheat>=50&&g.enchanting>=5",
 				"cost": {
@@ -1226,14 +1226,14 @@
 					"heatcapacitor.mod.restingpoint.mod.consumingflames.rate": -0.02,
 					"space": 5
 				},
-				"flavor": "Enchanted ice-makers, specially calculated airflow, barbeque sauce..."
+				"flavor": "เครื่องทำน้ำแข็งอาคม กระแสลมที่คำนวณอย่างพิถีพิถัน ซอสบาร์บีคิว..."
 			}
 		],
 		"resources": [
 			{
 				"id": "soulember",
 				"name": "soul ember",
-				"desc": "The rising flames in your soul.",
+				"desc": "เปลวไฟที่ลุกโชนขึ้นในวิญญาณของคุณ",
 				"group": "esoteric",
 				"max": 2,
 				"sortOrder": 560,
@@ -1247,13 +1247,13 @@
 					"blazingheat.mod.fire.rate": 0.001,
 					"blazingheat.mod.consumingflames.rate": 0.005
 				},
-				"flavor": "Take care, lest it turns into a wildfire."
+				"flavor": "ระวังไว้ เกรงว่ามันจะกลายเป็นไฟป่า"
 			},
 			{
 				"id": "blazingheat",
 				"name": "blazing heat",
 				"alias": "soulheat",
-				"desc": "Your accumulated heat, ready to burn your enemies to cinders",
+				"desc": "ความร้อนที่สะสมของคุณ พร้อมเผาศัตรูให้เป็นเถ้าถ่าน",
 				"tags": "specialty",
 				"rate": -1,
 				"max": 100,
@@ -1268,34 +1268,34 @@
 					"searingradiance.attack.dot.damage.max": 0.04,
 					"consumingflames.rate": 0.01
 				},
-				"flavor": "The sight of a pyromancer, red-hot with radiant energies, is quite a spectacle to behold"
+				"flavor": "ภาพของไพโรแมนเซอร์ที่ร้อนแดงด้วยพลังงานเจิดจ้า ช่างเป็นภาพที่งดงามน่าชม"
 			},
 			{
 				"id": "consumingflames",
 				"name": "consuming flames",
 				"alias": "blazingsoul",
-				"desc": "Your lack of control resulted in the fire within breaking free.",
+				"desc": "การขาดการควบคุมของคุณส่งผลให้ไฟภายในหลุดเป็นอิสระ",
 				"tags": "menace",
 				"max": 100,
 				"defeatstat": true,
 				"reverse": true,
 				"restrate": "g.consumingflames.max*(-0.1)",
-				"flavor": "By fire be purged!"
+				"flavor": "จงชำระล้างด้วยไฟ!"
 			},
 			{
 				"id": "pureember",
 				"name": "pure ember",
-				"desc": "Crystallized soulflame, tempered with annihilating energies.",
+				"desc": "เปลววิญญาณที่ตกผลึก ถูกหลอมกล่อด้วยพลังงานทำลายล้าง",
 				"group": "materials",
 				"max": 25,
 				"sortOrder": 585,
-				"flavor": "Too precious to ever entrust to anyone."
+				"flavor": "ล้ำค่าเกินกว่าจะมอบให้ใครครอบครอง"
 			}
 		],
 		"classes": [
 			{
 				"id": "pyromancer",
-				"desc": "Shaper of fire",
+				"desc": "ผู้หล่อหลอมไฟ",
 				"tags": "t_tier2,t_fireclass",
 				"require": "g.t2unlocker>0&&g.firelore>=10",
 				"cost": {
@@ -1306,12 +1306,12 @@
 					"firedmg": 3,
 					"firelore2.max": 1
 				},
-				"flavor": "The flames within swell, yearning for release",
+				"flavor": "เปลวไฟภายในพองโต ปรารถนาการปลดปล่อย",
 				"sortOrder": 161
 			},
 			{
 				"id": "firebrand",
-				"desc": "Wielder of fire",
+				"desc": "ผู้ถือครองไฟ",
 				"tags": "t_tier4,t_fireclass",
 				"require": "g.t4unlocker>0&&g.firelore>=10",
 				"cost": {
@@ -1322,12 +1322,12 @@
 					"firedmg": 3,
 					"firelore2.max": 1
 				},
-				"flavor": "Burn away the taint on the world",
+				"flavor": "เผาผลาญสิ่งมัวหมองบนโลกให้หมดสิ้น",
 				"sortOrder": 258
 			},
 			{
 				"id": "firelord",
-				"desc": "Ruler of fire",
+				"desc": "เจ้าแห่งไฟ",
 				"tags": "t_tier6,t_fireclass",
 				"require": "g.t6unlocker>0&&g.flamesculpting>=2&&(g.pyromancer+g.firebrand)>0",
 				"cost": {
@@ -1340,7 +1340,7 @@
 					"flamesculpting.max": 1,
 					"firelore2.max": 2
 				},
-				"flavor": "Unquenchable flames, burning everbright for you",
+				"flavor": "เปลวไฟที่ดับไม่ได้ ลุกโชนสว่างไสวเสมอเพื่อคุณ",
 				"sortOrder": 356
 			}
 		],
@@ -1348,7 +1348,7 @@
 			{
 				"id": "ifritclaws",
 				"name": "efreet's claws",
-				"desc": "Made from frozen flames, their power raises and falls in tandem with their master's",
+				"desc": "สร้างจากเปลวไฟแช่แข็ง พลังของมันขึ้นลงพร้อมกับนายของมัน",
 				"type": "weapon",
 				"slot": "mainhand",
 				"damage": "15~20",
@@ -1385,7 +1385,7 @@
 			{
 				"id": "charredchain",
 				"name": "charred chain",
-				"desc": "Covered in soot and partially melted, it's still holding strong after all this time",
+				"desc": "เปื้อนเขม่าควันและละลายบางส่วน แต่มันยังแข็งแรงอยู่แม้เวลาจะผ่านไป",
 				"type": "armor",
 				"slot": "neck",
 				"alter": {
@@ -1408,7 +1408,7 @@
 				"id": "consumedshack",
 				"name": "fire-cursed shack",
 				"unreturnable": true,
-				"desc": "Rumors say that deep in the woods, there is a shack once inhabited by a wizard obsessed with fire. He has not been seen for years and terrible heat can be felt emanating from the place",
+				"desc": "ข่าวลือกล่าวว่าในป่าลึกมีเพิงที่ครั้งหนึ่งเคยเป็นที่อยู่ของพ่อมดผู้หมกมุ่นกับไฟ เขาไม่เป็นที่พบเห็นมาหลายปีแล้ว และสัมผัสได้ถึงความร้อนร้ายที่แผ่ออกจากสถานที่แห่งนั้น",
 				"level": 8,
 				"length": 1,
 				"require": "g.tier1>0&&g.firelore>=10",
@@ -1427,7 +1427,7 @@
 			{
 				"id": "consumedshade",
 				"name": "consumed shade",
-				"desc": "What must have once been a man, it has been consumed by flames from inside out",
+				"desc": "สิ่งที่ครั้งหนึ่งเคยเป็นมนุษย์ มันถูกเปลวไฟเผาผลาญจากภายในสู่ภายนอก",
 				"level": 16,
 				"noproc": true,
 				"kind": "consumed",
@@ -1500,7 +1500,7 @@
 				"id": "pot_inferno",
 				"name": "Infernal Cocktail",
 				"tags": "t_combatpot,t_explodypot",
-				"desc": "A dangerous blend of flammable alcohols which smokelessly burns at a luminosity far too low to see in a dungeon.",
+				"desc": "ส่วนผสมอันตรายของแอลกอฮอล์ไวไฟที่เผาไหม้ไร้ควันด้วยความสว่างต่ำเกินกว่าจะมองเห็นในดันเจี้ยน",
 				"school": "battle",
 				"keywords": {
 					"battle": ["attack"],
@@ -1534,7 +1534,7 @@
 				"id": "pot_dragonfire",
 				"name": "Dragonfire Phial",
 				"tags": "t_combatpot,t_explodypot",
-				"desc": "An imminent chain-reaction kept in delicate suspension. Its flames stick to the target until no flesh remains.",
+				"desc": "ปฏิกิริยาลูกโซ่ที่กำลังจะเกิดถูกเก็บไว้ในความสมดุลอันเปราะบาง เปลวไฟของมันติดกับเป้าหมายจนกระทั่งเนื้อหนังไม่เหลือ",
 				"require": "g.hellfiretinctures>0",
 				"level": 5,
 				"school": "battle",
@@ -1575,16 +1575,16 @@
 						"tags": "t_gloss_game_mechanic,t_pyromancy",
 						"sym": "🛠️🔥",
 						"desc": [
-							"➢ Soul embers are the fuel for your Pyromancer's flames. They increase your Blazing Heat production at the expense of worsening Consuming Flames.",
+							"➢ กองถ่านวิญญาณคือเชื้อเพลิงของเปลวไฟของไพโรแมนเซอร์ของคุณ มันเพิ่มการผลิตความร้อนเจิดจ้าโดยแลกกับเปลวเพลิงเผาผลาญที่เลวร้ายลง",
 							"",
-							"➢ You can obtain Soul embers by performing the 'Ignite Ember' task once you have purchased the 'Soulflames' skill.",
+							"➢ คุณสามารถหามากองถ่านวิญญาณได้โดยทำภารกิจ 'จุดกองถ่าน' เมื่อซื้อสกิล 'เปลววิญญาณ' แล้ว",
 							"",
-							"➢ Balancing Soul embers with your spelllist to achieve thermal equilibrium is paramount to ensuring your wizard's survival in combat.",
+							"➢ การถ่วงดุลกองถ่านวิญญาณกับรายชื่อคาถาของคุณเพื่อให้เกิดสมดุลความร้อนเป็นสิ่งสำคัญสูงสุดต่อความอยู่รอดของพ่อมดของคุณในสนามรบ",
 							"",
-							"➢ A combination of the 'Inflame' and 'Soul Blaze' spells can tune your Soul ember to a generally sustainable range, by reducing if too hot or increasing if too cold.",
+							"➢ การผสมคาถา 'ลุกโชน' และ 'เปลววิญญาณ' ช่วยปรับกองถ่านวิญญาณให้อยู่ในช่วงที่ยั่งยืนได้ โดยลดลงหากร้อนเกินไป หรือเพิ่มขึ้นหากเย็นเกินไป",
 							"",
-							"➢ Pure embers are a resource used to purchase various upgrades for your Pyromancer. They can be produced by using your Blazing Heat as cost for the 'Produce Pure Embers' task.",
-							"The amount of Pure embers generated will equal your Soul ember count."
+							"➢ กองถ่านบริสุทธิ์เป็นทรัพยากรที่ใช้ซื้ออัปเกรดต่าง ๆ สำหรับไพโรแมนเซอร์ของคุณ มันสามารถผลิตได้โดยใช้ความร้อนเจิดจ้าเป็นค่าใช้จ่ายของภารกิจ 'ผลิตกองถ่านบริสุทธิ์'",
+							"ปริมาณกองถ่านบริสุทธิ์ที่ผลิตได้จะเท่ากับจำนวนกองถ่านวิญญาณของคุณ"
 						],
 						"require": "g.decipherpyronotes>0"
 					},
@@ -1595,21 +1595,21 @@
 						"tags": "t_gloss_game_mechanic,t_pyromancy",
 						"sym": "🛠️🔥",
 						"desc": [
-							"➢ Upon casting fire spells, igniting enough soul embers or utilizing specialized techniques, your Pyromancer will begin to accumulate 'Blazing heat'.",
+							"➢ เมื่อร่ายคาถาไฟ จุดกองถ่านวิญญาณให้เพียงพอ หรือใช้เทคนิคเฉพาะทาง ไพโรแมนเซอร์ของคุณจะเริ่มสะสม 'ความร้อนเจิดจ้า'",
 							"",
-							"➢ This empowers most fire spells and increases your Fire mana rate. However, there is a limit to how much Blazing Heat your wizard can sustain.",
+							"➢ สิ่งนี้เสริมพลังให้คาถาไฟส่วนใหญ่และเพิ่มอัตรามานาไฟของคุณ อย่างไรก็ตาม มีขีดจำกัดว่าพ่อมดของคุณจะทนความร้อนเจิดจ้าได้มากแค่ไหน",
 							"",
-							"➢ The downside to accruing large amounts of Blazing Heat, is a negative Menace called Consuming Flames.",
+							"➢ ข้อเสียของการสะสมความร้อนเจิดจ้าจำนวนมาก คือภัยคุกคามเชิงลบที่เรียกว่าเปลวเพลิงเผาผลาญ",
 							"",
-							"➢ Consuming Flames have no immediate effect on your wizard's well-being, however letting them accumulate to your maximum will cause a forced retreat and a loss of any ongoing exploration or combat.",
-							"Therefore, ensuring that your flames are controlled is of paramount priority.",
+							"➢ เปลวเพลิงเผาผลาญไม่มีผลกระทบต่อความอยู่ดีของพ่อมดของคุณในทันที แต่ปล่อยให้สะสมจนถึงขีดสูงสุดจะทำให้ต้องล่าถอยอย่างบังคับและสูญเสียการสำรวจหรือการต่อสู้ที่กำลังดำเนินอยู่",
+							"ดังนั้น การทำให้แน่ใจว่าควบคุมเปลวไฟของคุณได้จึงเป็นสิ่งสำคัญสูงสุด",
 							"",
-							"➢ There are several equilibrium upgrades which help in maintaining this delicate balance. You can also use the 'Disperse Heat' and 'Fan the Flames' actions to quickly manipulate it.",
+							"➢ มีอัปเกรดสมดุลหลายอันที่ช่วยรักษาสมดุลอันเปราะบางนี้ คุณยังสามารถใช้การกระทำ 'สลายความร้อน' และ 'เป่าเปลวไฟ' เพื่อปรับเปลี่ยนได้อย่างรวดเร็ว",
 							"",
-							"➢ Some general tips to manage heat are as follows:",
-							"• Memorize the vent spells of different elements your Pyromancer will unlock. These include Scalding Steam, Molten Earth and Searing Wind. Adding enough of these will eventually counterbalance your fire spells' heat.",
-							"• Switching to the 'Cooling Immersion' Leisure in the Player Tab.",
-							"• Purchasing the Heat Capacitor and Heat Conductor furnitures."
+							"➢ เคล็ดลับทั่วไปในการจัดการความร้อนมีดังนี้:",
+							"• จดจำคาถาระบายความร้อนของธาตุต่าง ๆ ที่ไพโรแมนเซอร์ของคุณจะปลดล็อก ได้แก่ ไอน้ำเดือด แผ่นดินหลอมเหลว และลมแผดเผา การเพิ่มคาถาเหล่านี้ให้เพียงพอจะช่วยถ่วงดุลความร้อนของคาถาไฟของคุณได้ในที่สุด",
+							"• สลับไปใช้ 'การแช่น้ำหล่อเย็น' ในแท็บผู้เล่น",
+							"• ซื้อเฟอร์นิเจอร์ตัวเก็บความร้อนและตัวนำความร้อน"
 						],
 						"require": "g.decipherpyronotes>0"
 					}
@@ -1620,7 +1620,7 @@
 						"name": "ageless pyre",
 						"tags": "hall",
 						"sym": "🏰",
-						"desc": "Ever-bright, it acts as a stark reminder of the inevitable end.",
+						"desc": "สว่างไสวตลอดกาล ทำหน้าที่เป็นเครื่องเตือนใจอันเฉียบคมถึงจุดจบที่เลี่ยงไม่ได้",
 						"require": "g.firelord>0",
 						"max": 3,
 						"cost": {
@@ -1638,7 +1638,7 @@
 						"name": "charred notes",
 						"tags": "hall",
 						"sym": "🏰",
-						"desc": "Found at a site of a failed experiment, only skilled pyromancers have any chance of deciphering them.",
+						"desc": "พบในสถานที่การทดลองที่ล้มเหลว มีเพียงไพโรแมนเซอร์ผู้ชำนาญเท่านั้นที่มีโอกาสถอดรหัสมัน",
 						"require": "g.consumedshack>0",
 						"max": 1,
 						"mod": {
@@ -1653,8 +1653,8 @@
 					{
 						"id": "decipherpyronotes",
 						"name": "decipher pyromancer's notes",
-						"desc": "The notes you found in that shack are finally starting to make sense.",
-						"extdesc": "Permanently unlocks Pyromancy glossary entries. You will not need to perform this action on following playthroughs once completed.",
+						"desc": "บันทึกที่คุณพบในเพิงนั้นเริ่มเข้าใจความหมายในที่สุด",
+						"extdesc": "ปลดล็อกช่องรายการอภิธานศัพท์ไพโรแมนซีอย่างถาวร เมื่อทำสำเร็จแล้วคุณไม่จำเป็นต้องทำเช่นนี้อีกในการเล่นรอบต่อ ๆ ไป",
 						"group": "pyromancy",
 						"verb": "deciphering",
 						"require": "(g.pyromancer+g.firebrand+g.firelord)>0&&(g.charred_trophy>0||g.consumedshack>0)",

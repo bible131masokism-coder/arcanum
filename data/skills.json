@@ -2,7 +2,7 @@
 	{
 		"id": "crafting",
 		"need": "workspace",
-		"desc": "An absolutely vital skill for a wizard to craft arcane items.",
+		"desc": "ทักษะสำคัญที่สุดสำหรับพ่อมดในการประดิษฐ์ไอเทมเวทมนตร์",
 		"buy": {
 			"research": 20
 		},
@@ -19,7 +19,7 @@
 		"school": "arcane",
 		"tags": "t_school",
 		"verb": "reading lore",
-		"desc": "Nothing is more important to a wizard than the depth of their lore.",
+		"desc": "ไม่มีสิ่งใดสำคัญต่อพ่อมดเท่ากับความลึกซึ้งของความรู้เวทของพวกเขา",
 		"require": "g.apprentice>0",
 		"buy": {
 			"research": 20
@@ -40,7 +40,7 @@
 		"id": "spellcraft",
 		"school": "arcane",
 		"verb": "studying spells",
-		"desc": "The ability to build greater spells from lesser is what separates a practitioner from a master.",
+		"desc": "ความสามารถในการสร้างคาถาที่ทรงพลังยิ่งขึ้นจากคาถาที่อ่อนแอกว่าคือสิ่งที่แยกผู้ฝึกหัดออกจากผู้เชี่ยวชาญ",
 		"require": "g.tier3>0&&g.lore>=15",
 		"level": 10,
 		"buy": {
@@ -60,7 +60,7 @@
 		"id": "concentrate",
 		"name": "concentration",
 		"verb": "concentrating",
-		"desc": "Keep your mind and nerves sharp under pressure.",
+		"desc": "รักษาจิตใจและเส้นประสาทให้แจ่มใสท่ามกลางความกดดัน",
 		"level": 5,
 		"buy": {
 			"arcana": 8
@@ -75,7 +75,7 @@
 	},
 	{
 		"id": "composure",
-		"desc": "Remain unfazed under strain.",
+		"desc": "คงความสุขุมไม่หวั่นไหวภายใต้ความตึงเครียด",
 		"level": 5,
 		"buy": {
 			"arcana": 12
@@ -91,12 +91,12 @@
 	{
 		"id": "trickery",
 		"verb": "scheming",
-		"flavor": "Sufficiently advanced sleight of hand is indistinguishable from magic.",
+		"flavor": "กลเม็ดมืออันแยบยลระดับสูงย่อมแยกไม่ออกจากเวทมนตร์",
 		"level": 5,
 		"school": "arcane",
 		"require": "spellbook",
 		"need": "g.prestidigitation>=10||g.tier1>0||g.hal_trick_pumpkin>0",
-		"needtext": "Perform the Prestidigitation task a total of 10 times or attain Tier 1 - Professional Magick.",
+		"needtext": "ทำภารกิจ Prestidigitation ทั้งหมด 10 ครั้ง หรือบรรลุ Tier 1 - Professional Magick",
 		"buy": {
 			"arcana": 13
 		},
@@ -130,7 +130,7 @@
 		"mod": {
 			"research.max": 1
 		},
-		"flavor": "Who knows where things come from? They just appear."
+		"flavor": "ใครจะรู้ว่าสิ่งต่าง ๆ มาจากไหน? พวกมันก็แค่ปรากฏขึ้น"
 	},
 	{
 		"id": "runelore",
@@ -138,8 +138,8 @@
 		"name": "runic lore",
 		"school": "arcane",
 		"verb": "translating",
-		"desc": "Study ancient Dhrunic runes.",
-		"extdesc": "Rumour has it, such ancient runestones still lay hidden on Eryl Eyot.",
+		"desc": "ศึกษาอักษรรูนธรุนิกโบราณ",
+		"extdesc": "มีข่าวลือว่าหินรูนโบราณเช่นนี้ยังคงซ่อนอยู่บนเกาะเอริลอายอต",
 		"require": "g.tier2>0&&g.dwarfbook>0",
 		"level": 10,
 		"buy": {
@@ -174,7 +174,7 @@
 			"research.max": 1,
 			"steed.mod.dist": 1
 		},
-		"flavor": "Tend the rabbits. Or horses."
+		"flavor": "ดูแลกระต่าย หรือไม่ก็ม้า"
 	},
 	{
 		"id": "magicbeasts",
@@ -248,7 +248,7 @@
 		"id": "languages",
 		"school": "lore",
 		"require": "lore",
-		"desc": "Books and scrolls are written in many obscure languages. Learn as many as possible.",
+		"desc": "หนังสือและม้วนคัมภีร์ถูกเขียนด้วยภาษาลึกลับมากมาย จงเรียนรู้ไว้ให้มากที่สุดเท่าที่จะทำได้",
 		"verb": "linguisticizing",
 		"buy": {
 			"research": 10
@@ -266,7 +266,7 @@
 		"id": "history",
 		"name": "world lore",
 		"require": "g.languages>=6",
-		"desc": "The knowledge of what has come before reveals what is yet possible.",
+		"desc": "ความรู้ในอดีตที่ผ่านมาเผยให้เห็นสิ่งที่เป็นไปได้ในภายหน้า",
 		"verb": "historicizing",
 		"level": 5,
 		"buy": {
@@ -290,7 +290,7 @@
 		"id": "anatomy",
 		"require": "g.neophyte>0&&g.lore>=6",
 		"school": ["nature", "shadow", "light"],
-		"desc": "The study of physical form.",
+		"desc": "การศึกษารูปแบบทางกายภาพ",
 		"buy": {
 			"arcana": 5
 		},
@@ -359,7 +359,7 @@
 	},
 	{
 		"id": "divination",
-		"desc": "The art of foretelling.",
+		"desc": "ศิลปะแห่งการทำนาย",
 		"require": "g.spiritlore>=6||g.mysticism>=5",
 		"need": "spiritsource",
 		"school": "spirit",
@@ -381,7 +381,7 @@
 		"tags": "t_school",
 		"name": "lumenology",
 		"school": "light",
-		"desc": "Study of pure light.",
+		"desc": "การศึกษาแสงบริสุทธิ์",
 		"need": "g.lore>=3&&g.lightsource>0",
 		"buy": {
 			"arcana": 12
@@ -396,7 +396,7 @@
 				"rate": 0.01
 			}
 		},
-		"flavor": "The light fantastic."
+		"flavor": "แสงอันอัศจรรย์"
 	},
 	{
 		"id": "shadowlore",
@@ -420,7 +420,7 @@
 		"id": "spiritlore",
 		"tags": "t_school",
 		"name": "spirit communion",
-		"desc": "Seeing the unseen.",
+		"desc": "การมองเห็นสิ่งที่มองไม่เห็น",
 		"need": "g.lore>=3&&g.spiritsource>0",
 		"school": "spirit",
 		"buy": {
@@ -441,7 +441,7 @@
 		"id": "firelore",
 		"tags": "t_school,elemental",
 		"name": "pyromancy",
-		"desc": "The investigation of fire.",
+		"desc": "การสืบเสาะศึกษาไฟ",
 		"need": "g.lore>=3&&g.firesource>0",
 		"buy": {
 			"arcana": 10
@@ -457,7 +457,7 @@
 				"rate": 0.01
 			}
 		},
-		"flavor": "Dry is good and wind is better."
+		"flavor": "ความแห้งดี และลมยิ่งดีกว่า"
 	},
 	{
 		"id": "earthlore",
@@ -481,7 +481,7 @@
 	{
 		"id": "waterlore",
 		"name": "aquamancy",
-		"desc": "The study of water.",
+		"desc": "การศึกษาน้ำ",
 		"verb": "studying water",
 		"tags": "elemental,t_school",
 		"buy": {
@@ -502,7 +502,7 @@
 	{
 		"id": "airlore",
 		"name": "aeromancy",
-		"desc": "The study of air.",
+		"desc": "การศึกษาลม",
 		"verb": "studying air",
 		"tags": "elemental,t_school",
 		"buy": {
@@ -545,7 +545,7 @@
 		"name": "wizard Lore",
 		"require": "(g.t_knowledgeclass+g.tier5)>=2",
 		"school": "arcane",
-		"desc": "Many ask 'how?' Few think to ask, 'why?'",
+		"desc": "หลายคนถามว่า 'ทำอย่างไร?' แต่มีน้อยคนที่คิดจะถามว่า 'ทำไม?'",
 		"level": 15,
 		"buy": {
 			"arcana": 75
@@ -565,7 +565,7 @@
 	{
 		"id": "firelore2",
 		"name": "fire mastery",
-		"desc": "A mastery of fire.",
+		"desc": "ความเชี่ยวชาญระดับสูงสุดแห่งไฟ",
 		"level": 15,
 		"require": "g.firelore>=10&&g.t_fireclass>0&&g.tier2>0",
 		"buy": {
@@ -581,12 +581,12 @@
 			"fire.rate": "1%",
 			"firedmg": 3
 		},
-		"flavor": "Dry is good and wind is better."
+		"flavor": "ความแห้งดี และลมยิ่งดีกว่า"
 	},
 	{
 		"id": "waterlore2",
 		"name": "water mastery",
-		"desc": "A mastery of water.",
+		"desc": "ความเชี่ยวชาญระดับสูงสุดแห่งน้ำ",
 		"require": "g.waterlore>=10&&g.t_waterclass>0&&g.tier2>0",
 		"level": 15,
 		"buy": {
@@ -606,7 +606,7 @@
 	{
 		"id": "airlore2",
 		"name": "air mastery",
-		"desc": "A mastery of air.",
+		"desc": "ความเชี่ยวชาญระดับสูงสุดแห่งลม",
 		"require": "g.airlore>=10&&g.t_airclass>0&&g.tier2>0",
 		"level": 15,
 		"buy": {
@@ -626,7 +626,7 @@
 	{
 		"id": "hammerlore",
 		"name": "hammer proficiency",
-		"desc": "The anvil or the skull, it makes no difference.",
+		"desc": "ทั่งตีเหล็กหรือกะโหลกศีรษะก็ไม่ต่างกัน",
 		"require": "g.t_hammerclass>0",
 		"need": "armssource",
 		"level": 5,
@@ -642,7 +642,7 @@
 	},
 	{
 		"id": "geosculpting",
-		"desc": "Bend the earth to your will.",
+		"desc": "ดัดแปลงแผ่นดินให้เป็นไปตามเจตจำนงของคุณ",
 		"require": "g.t_earthclass>0",
 		"level": 5,
 		"buy": {
@@ -660,7 +660,7 @@
 	{
 		"id": "earthlore2",
 		"name": "earth mastery",
-		"desc": "A mastery of earth.",
+		"desc": "ความเชี่ยวชาญระดับสูงสุดแห่งดิน",
 		"require": "g.earthlore>=10&&g.t_earthclass>0&&g.tier2>0",
 		"level": 15,
 		"buy": {
@@ -680,7 +680,7 @@
 	{
 		"id": "lightlore2",
 		"name": "light mastery",
-		"desc": "A mastery of light.",
+		"desc": "ความเชี่ยวชาญระดับสูงสุดแห่งแสง",
 		"require": "g.lightlore>=10&&g.t_lightclass>0&&g.tier2>0",
 		"level": 15,
 		"buy": {
@@ -699,7 +699,7 @@
 	{
 		"id": "spiritlore2",
 		"name": "spirit mastery",
-		"desc": "A mastery of spirit.",
+		"desc": "ความเชี่ยวชาญระดับสูงสุดแห่งวิญญาณ",
 		"require": "g.spiritlore>=10&&g.t_spiritclass>0&&g.tier2>0",
 		"level": 15,
 		"buy": {
@@ -718,7 +718,7 @@
 	{
 		"id": "manalore2",
 		"name": "arcane mastery",
-		"desc": "A mastery of pure magic.",
+		"desc": "ความเชี่ยวชาญระดับสูงสุดแห่งเวทมนตร์บริสุทธิ์",
 		"require": "g.lore>=20&&g.t_knowledgeclass>0&&g.tier2>0",
 		"level": 15,
 		"buy": {
@@ -737,7 +737,7 @@
 	{
 		"id": "naturelore2",
 		"name": "viriditas",
-		"desc": "Become one with nature.",
+		"desc": "เป็นหนึ่งเดียวกับธรรมชาติ",
 		"require": "g.naturelore>=10&&g.t_natureclass>0&&g.tier2>0",
 		"level": 15,
 		"buy": {
@@ -756,7 +756,7 @@
 			"t_summon_beast.defense": "5+5%",
 			"t_summon_beast.speed": 1
 		},
-		"flavor": "Embrace what it means to flourish."
+		"flavor": "โอบรับความหมายของการเบ่งบานเฟื่องฟู"
 	},
 	{
 		"id": "potions",
@@ -776,7 +776,7 @@
 	{
 		"id": "enchanting",
 		"require": "g.tier1>0&&g.lore>=11",
-		"desc": "Imbue mundane gems and items with magical properties.",
+		"desc": "ผสานคุณสมบัติเวทมนตร์ลงในอัญมณีและไอเทมธรรมดา",
 		"level": 10,
 		"run": {
 			"stamina": 0.4,
@@ -786,7 +786,7 @@
 			"research": 300
 		},
 		"need": "((g.managem>=1)+(g.firegem>=1)+(g.watergem>=1)+(g.naturegem>=1)+(g.earthgem>=1)+(g.airgem>=1)+(g.shadowgem>=1)+(g.lightgem>=1)+(g.spiritgem>=1))>=3",
-		"needtext": "Must own at least 3 types of magical gems. Perhaps they can be found while exploring some nearby locales.",
+		"needtext": "ต้องครอบครองอัญมณีเวทอย่างน้อย 3 ชนิด บางทีอาจพบได้ระหว่างสำรวจสถานที่ใกล้เคียง",
 		"mod": {
 			"enchantslots.max": 1
 		},
@@ -825,7 +825,7 @@
 	{
 		"id": "mysticism",
 		"require": "g.lore>=8",
-		"desc": "The ability to sense the flow and flux of arcane energies.",
+		"desc": "ความสามารถในการสัมผัสการไหลเวียนและความผันผวนของพลังงานเวท",
 		"buy": {
 			"arcana": 10
 		},
@@ -846,7 +846,7 @@
 			"arcana": 14
 		},
 		"require": "(g.languages+g.history)>=12",
-		"desc": "Travel offers a growing wizard new avenues of research and new sources of research.",
+		"desc": "การเดินทางมอบหนทางวิจัยใหม่และแหล่งวิจัยใหม่แก่พ่อมดที่กำลังเติบโต",
 		"run": {
 			"stamina": 1
 		},
@@ -857,8 +857,8 @@
 	{
 		"id": "planeslore",
 		"name": "planes lore",
-		"desc": "Farther than the stars and closer than your fingertips.",
-		"flavor": "There is no safe distance.",
+		"desc": "ไกลยิ่งกว่าดวงดาว และใกล้ยิ่งกว่าปลายนิ้วมือของคุณ",
+		"flavor": "ไม่มีระยะไหนปลอดภัย",
 		"require": "g.astronomy>=5&&g.tier1>0",
 		"level": 5,
 		"buy": {
@@ -878,7 +878,7 @@
 		"id": "astrallore",
 		"name": "astral communion",
 		"require": "g.planeslore>=10&&g.tier5>0",
-		"desc": "Anyone can see the stars. Few can read them.",
+		"desc": "ใครก็มองเห็นดวงดาว แต่มีเพียงไม่กี่คนที่อ่านมันได้",
 		"level": 15,
 		"buy": {
 			"arcana": 150
@@ -897,7 +897,7 @@
 		"id": "voidlore",
 		"name": "abyss gazing",
 		"require": "g.planeslore>=10&&g.tier5>0",
-		"desc": "The absence of all things.",
+		"desc": "ความว่างเปล่าของสรรพสิ่ง",
 		"level": 15,
 		"buy": {
 			"arcana": 150
@@ -912,12 +912,12 @@
 			"dist": "1%",
 			"research.max": 1
 		},
-		"flavor": "What could go wrong?"
+		"flavor": "จะมีอะไรผิดพลาดได้ล่ะ?"
 	},
 	{
 		"id": "chronomancy",
-		"desc": "There must be a way...",
-		"flavor": "Too much to do, so little time.",
+		"desc": "มันต้องมีทางออกบางอย่าง...",
+		"flavor": "มีอะไรให้ทำมากเกินไป แต่เวลาน้อยเหลือเกิน",
 		"level": 15,
 		"tags": "t_school",
 		"require": "tier3",
@@ -959,9 +959,9 @@
 		"name": "rejuvenation",
 		"require": "g.t_healspell.owned&&g.tier1>0",
 		"need": "g.t_healspell>=200",
-		"needtext": "Cast healing spells a total of 200 times.",
+		"needtext": "ร่ายคาถารักษาทั้งหมด 200 ครั้ง",
 		"school": ["light", "water", "nature"],
-		"desc": "A revelation of life magic.",
+		"desc": "การเปิดเผยแห่งเวทมนตร์ชีวิต",
 		"level": 5,
 		"buy": {
 			"arcana": 60
@@ -979,7 +979,7 @@
 		"require": "g.tier4>0&&g.trickery>=12",
 		"school": "chaos",
 		"level": 15,
-		"desc": "Manipulate the underlying principles of reality with varying degrees of subtlety.",
+		"desc": "บงการหลักการพื้นฐานของความเป็นจริงด้วยความละเอียดอ่อนในระดับต่าง ๆ",
 		"buy": {
 			"arcana": 80
 		},
@@ -995,6 +995,6 @@
 			"lore.rate": 0.05,
 			"research.rate": "1%"
 		},
-		"flavor": "Wizards do parlor tricks. I throttle the heavens."
+		"flavor": "พ่อมดเล่นกลเล็ก ๆ น้อย ๆ ส่วนข้าบีบคั้นสรวงสวรรค์"
 	}
 ]

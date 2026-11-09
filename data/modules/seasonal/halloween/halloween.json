@@ -6,7 +6,7 @@
 			{
 				"id": "hal_charger",
 				"name": "hallow charger",
-				"desc": "A pitch dark horse in fumes of smoke.",
+				"desc": "ม้าดำสนิทที่ห้อมล้อมด้วยควัน",
 				"tags": "steed",
 				"slot": "mount",
 				"require": "g.headless_ride>0",
@@ -22,8 +22,8 @@
 			{
 				"id": "hal_carriage",
 				"name": "pumpkin carriage",
-				"desc": "A spacious and relaxing way to travel.",
-				"flavor": "Arrive at the ball in style.",
+				"desc": "วิถีการเดินทางอันกว้างขวางและผ่อนคลาย",
+				"flavor": "ไปถึงงานบอลอย่างสง่างาม",
 				"require": "g.pumpkins.max>=50",
 				"slot": "mount",
 				"buy": {
@@ -45,8 +45,8 @@
 			{
 				"id": "hal_broomstick",
 				"name": "hallow broomstick",
-				"desc": "Touching the broom, you hear the sound of cackling in the distance.",
-				"flavor": "Hestia doesn't use this one... probably.",
+				"desc": "เมื่อสัมผัสไม้กวาด คุณได้ยินเสียงหัวเราะเย้ยในระยะไกล",
+				"flavor": "เฮสเทียไม่ได้ใช้ไม้กวาดอันนี้... น่าจะ",
 				"slot": "mount",
 				"buy": {},
 				"mod": {
@@ -68,18 +68,18 @@
 				"mod": {
 					"pumpseeds.max": 10
 				},
-				"flavor": "You need to have a word with the sack-maker's guild.",
+				"flavor": "คุณต้องพูดคุยกับสมาคมช่างทำถุงสักหน่อย",
 				"group": "halloween 🎃"
 			},
 			{
 				"id": "hal_ritual",
 				"name": "midnight ritual notes",
 				"require": "g.hal_rite>0&&g.tier6>0",
-				"desc": "In your vast library you come across a most intriguing tome, detailing the ritual for summoning a headless horseman into the realm. It seems like the apparition you fought that day was not the true form of the fiend. You could... challenge it to a rematch if you wanted.",
+				"desc": "ในห้องสมุดอันกว้างใหญ่ของคุณ คุณพบตำราเล่มหนึ่งที่น่าสนใจยิ่ง รายละเอียดพิธีกรรมสำหรับอัญเชิญนักขี่ม้าไร้หัวเข้าสู่อาณาจักร ดูเหมือนว่าผีที่คุณต่อสู้เมื่อวันนั้นไม่ใช่ร่างที่แท้จริงของปีศาจ คุณอาจ... ท้าทายมันแก้มือได้หากต้องการ",
 				"cost": {
 					"research": 25000
 				},
-				"flavor": "You have a bad feeling about this.",
+				"flavor": "คุณมีลางสังหรณ์ไม่ดีเกี่ยวกับเรื่องนี้",
 				"group": "halloween 🎃"
 			}
 		],
@@ -88,7 +88,7 @@
 				"id": "hal_rite",
 				"name": "reveler's rite",
 				"require": "g.hal_bloodbaroness>0",
-				"desc": "Once a year, under the harvest moon, devotees of Queen Nymie split their souls to doubly enjoy her dark revels.",
+				"desc": "ปีละครั้ง ภายใต้จันทร์เก็บเกี่ยว เหล่าศรัทธาแห่งราชินีไนมีแบ่งวิญญาณของตนเพื่อเพลิดเพลินกับงานฉลองอันมืดมิดของนางเป็นสองเท่า",
 				"length": 30,
 				"repeat": false,
 				"cost": {
@@ -106,7 +106,7 @@
 				"id": "applebob",
 				"name": "apple bobbing",
 				"require": "evt_hal_imp",
-				"desc": "The imp at the barrel promises that some of the apples are really magic gems.",
+				"desc": "อิมป์ที่ถังน้ำรับประกันว่าแอปเปิลบางลูกเป็นอัญมณีเวทจริง ๆ",
 				"cost": {
 					"gold": 1
 				},
@@ -123,7 +123,7 @@
 				"require": "apprentice",
 				"length": 10,
 				"fill": "pumpkins",
-				"desc": "Steal pumpkins from nearby homes.",
+				"desc": "ขโมยฟักทองจากบ้านใกล้เคียง",
 				"run": {
 					"stamina": 0.5
 				},
@@ -173,8 +173,8 @@
 				"id": "tricktreat",
 				"name": "trick & treat",
 				"require": "trickery",
-				"desc": "Threaten homes with magical trickery if they don't give you loot.",
-				"extdesc": "Provides a random assortment of goodies",
+				"desc": "ข่มขู่บ้านเรือนด้วยกลลวงเวทมนตร์หากพวกเขาไม่มอบของขวัญให้",
+				"extdesc": "มอบของดีหลากหลายแบบสุ่ม",
 				"length": 20,
 				"perpetual": true,
 				"run": {
@@ -196,8 +196,8 @@
 				"id": "trickthreat",
 				"name": "trick & threat",
 				"require": "g.trickery>0&&g.evil1>0",
-				"desc": "Nothing gets the candy flowing quite like a few well-advertised arsons.",
-				"extdesc": "Provides a random assortment of goodies",
+				"desc": "ไม่มีสิ่งใดทำให้ลูกกวาดไหลทะลักเท่ากับการวางเพลิงที่โฆษณาไว้สองสามครั้ง",
+				"extdesc": "มอบของดีหลากหลายแบบสุ่ม",
 				"length": 20,
 				"perpetual": true,
 				"run": {
@@ -220,24 +220,24 @@
 			{
 				"id": "headless_ride",
 				"name": "Headless riders ride",
-				"desc": "A dark horse clad in smoke, now yours for the taking. Just feed it some apples."
+				"desc": "ม้าสีดำที่ห่อหุ้มด้วยควัน ตอนนี้เป็นของคุณแล้ว แค่ให้แอปเปิลมันบ้าง"
 			},
 			{
 				"id": "hal_suspicion",
 				"name": "Strange Village",
-				"desc": "The outsider has a point. Something's wrong here."
+				"desc": "คนนอกแถวนี้พูดถูก บางอย่างผิดปกติที่นี่"
 			},
 			{
 				"id": "hal_timewaste",
 				"name": "Waste of time",
-				"desc": "The house was indeed haunted, but it is clear that the thief story was a fabrication. If you have no other leads, additional investigation in the village might be in order.",
+				"desc": "บ้านนั้นมีผีจริง แต่ชัดเจนว่าเรื่องขโมยเป็นเรื่องแต่งขึ้น หากคุณไม่มีเบาะแสอื่น การสืบสวนเพิ่มเติมในหมู่บ้านอาจเป็นสิ่งที่ควรทำ",
 				"require": "g.hal_fakehouse>0",
 				"lock": ["hal_fakehouse", "hal_mill_intime"]
 			},
 			{
 				"id": "hal_faceless_failed",
 				"name": "Faceless corpse",
-				"desc": "Searching the rest of the mill, you find a corpse of a man with his face removed. That... probably was Hank.",
+				"desc": "เมื่อค้นหาในโรงโม่ที่เหลือ คุณพบศพชายคนหนึ่งที่ใบหน้าถูกถอดออก นั่น... น่าจะเป็นแฮงค์",
 				"require": "g.hal_mill_late>0",
 				"lock": [
 					"hal_age_doppel",
@@ -252,7 +252,7 @@
 			{
 				"id": "hal_faceless_success",
 				"name": "Hank",
-				"desc": "You find Hank tied up in the cellar of the mill. He thanks you profusely for the rescue and laments that he was unable to best the fiend in combat.",
+				"desc": "คุณพบแฮงค์ถูกมัดไว้ในห้องใต้ดินของโรงโม่ เขาขอบคุณคุณอย่างล้นหลามสำหรับการช่วยเหลือ และคร่ำครวญว่าเขาไม่สามารถเอาชนะปีศาจในการต่อสู้ได้",
 				"require": "g.hal_mill_intime>0",
 				"lock": [
 					"hal_age_doppel",
@@ -270,29 +270,29 @@
 				"id": "evt_hallomar",
 				"require": "evt_helper",
 				"name": "hallomar festivities",
-				"desc": "As the harvest ends and the days go dark, the Hallomar hosts its autumnal festivities. A visit may prove fruitful in your research."
+				"desc": "เมื่อการเก็บเกี่ยวสิ้นสุดและวันเวลามืดลง ฮาลโลมาร์จัดงานเฉลิมฉลองฤดูใบไม้ร่วง การไปเยือนอาจเป็นประโยชน์ต่องานวิจัยของคุณ"
 			},
 			{
 				"id": "evt_hoofs",
 				"name": "hoofprints",
-				"desc": "Hoofprints in the muddy ground lead from the graveyard to Hollow bridge in the far distance."
+				"desc": "รอยกีบในพื้นดินโคลนนำจากสุสานไปยังสะพานฮอลโลว์ในระยะไกล"
 			},
 			{
 				"id": "evt_hal_imp",
 				"name": "a strange imp",
-				"desc": "Just past the fields, an imp at a water barrel offers you a chance at magic riches, for a small fee."
+				"desc": "เลยทุ่งนามาเล็กน้อย อิมป์ที่ถังน้ำเสนอโอกาสสู่ความร่ำรวยทางเวทมนตร์ให้คุณ ในค่าธรรมเนียมเล็กน้อย"
 			},
 			{
 				"id": "evt_hal_hestia_done",
 				"name": "purple amulet",
-				"desc": "As you leave her cottage, Hestia presses a small amulet into your hand."
+				"desc": "เมื่อคุณกำลังจะออกจากกระท่อมของเธอ เฮสเทียสอดเครื่องรางเล็ก ๆ ให้ในมือคุณ"
 			}
 		],
 		"locales": [
 			{
 				"id": "hal_aspect",
 				"name": "Investigate Hallomar",
-				"desc": "There are rumors of recent disappearances and unusually fortuitous reappearances in the nearby village. This bears investigation.",
+				"desc": "มีข่าวลือเรื่องการหายตัวไปเมื่อเร็ว ๆ นี้และการปรากฏตัวกลับมาอย่างดวงดีผิดปกติในหมู่บ้านใกล้เคียง นี่สมควรแก่การสืบสวน",
 				"tags": "site_of_learning",
 				"require": "hal_suspicion",
 				"length": 20,
@@ -325,7 +325,7 @@
 			{
 				"id": "loc_hal_hestia",
 				"name": "hestia's cottage",
-				"desc": "Deep in Thangmor Forest, the great witch Hestia keeps a small, secluded cabin. On rare occasions, she even takes visitors.",
+				"desc": "ลึกลงไปในป่าธังมอร์ แม่มดผู้ยิ่งใหญ่เฮสเทียมีกระท่อมเล็ก ๆ โดดเดี่ยว บางครั้งเธอก็ยอมรับผู้มาเยือน",
 				"level": 13,
 				"dist": 50,
 				"length": 50,
@@ -355,7 +355,7 @@
 				"name": "hallomar",
 				"level": 0,
 				"length": 100,
-				"desc": "Nestled in the fog of the midlands, the village of Hallomar holds a yearly celebration in its pumpkin patch.",
+				"desc": "โอบด้วยหมอกกลางแผ่นดิน หมู่บ้านฮาลโลมาร์จัดงานเฉลิมฉลองประจำปีในแปลงฟักทองของมัน",
 				"require": "evt_hallomar",
 				"run": {
 					"stamina": 0.2
@@ -383,7 +383,7 @@
 					"hiddencache",
 					"starrysky1"
 				],
-				"flavor": "Just don't wander too far from the village."
+				"flavor": "แค่อย่าเดินไปไกลจากหมู่บ้านเกินไป"
 			}
 		],
 		"encounters": [],
@@ -407,7 +407,7 @@
 			{
 				"id": "halloporch",
 				"name": "lighted porch",
-				"desc": "A porch lit by candles in the gloom.",
+				"desc": "ระเบียงที่สว่างด้วยแสงเทียนในความมืดมัว",
 				"require": "g.tier0>0",
 				"max": 1,
 				"cost": {
@@ -422,13 +422,13 @@
 					"jacklantern.max": "100%",
 					"cobwebs.max": "100%"
 				},
-				"flavor": "Clear a porch for seasonal activities."
+				"flavor": "เคลียร์ระเบียงเพื่อกิจกรรมตามฤดูกาล"
 			},
 			{
 				"id": "f_pumppatch",
 				"name": "pumpkin patch",
 				"tags": "plantsource,naturesource,spiritsource",
-				"desc": "A furrowed plot for growing pumpkins.",
+				"desc": "แปลงร่องดินสำหรับปลูกฟักทอง",
 				"require": "tier0",
 				"max": 5,
 				"cost": {
@@ -456,13 +456,13 @@
 			{
 				"id": "res_treat",
 				"name": "treat",
-				"desc": "Local confections may have unpredictable effects.",
+				"desc": "ลูกกวาดท้องถิ่นอาจมีผลกระทบที่คาดเดาไม่ได้",
 				"max": 100,
 				"group": "halloween 🎃"
 			},
 			{
 				"id": "pumpkins",
-				"desc": "Plump round gourds of the season.",
+				"desc": "ฟักทองกลมป้อมแห่งฤดูกาล",
 				"max": 5,
 				"mod": {
 					"nature.rate": 0.01,
@@ -501,7 +501,7 @@
 			{
 				"id": "hal_bloodmanor",
 				"name": "blood manor",
-				"desc": "Asleep for a century, the orange lights of the Blood Manor glow once more on Grimpen Hill.",
+				"desc": "หลับใหลมาร้อยปี แสงสีส้มของคฤหาสน์โลหิตเปล่งประกายอีกครั้งบนเขากริมเพน",
 				"note": "Not balanced after combat rework",
 				"difficulty": "💀💀💀",
 				"sortOrder": 55,
@@ -532,10 +532,10 @@
 			{
 				"id": "hal_graveyard",
 				"name": "graveyard",
-				"desc": "The graveyard beside Hallomar is nearly abandoned now. Low murmurs and eerie croakings haunt the autumn nights.",
+				"desc": "สุสานข้างฮาลโลมาร์เกือบถูกทิ้งร้างแล้ว เสียงพึมพำแผ่วเบาและเสียงกบร้องชวนขนลุกหลอกหลอนค่ำคืนฤดูใบไม้ร่วง",
 				"log": {
 					"name": "graves silenced",
-					"desc": "The graveyard is once more at rest. For now."
+					"desc": "สุสานกลับสู่ความสงบอีกครั้ง ในตอนนี้"
 				},
 				"difficulty": "🦴",
 				"sortOrder": 6,
@@ -594,7 +594,7 @@
 						}
 					}
 				},
-				"flavor": "What are the cobwebs for?!"
+				"flavor": "ใยแมงมุมไว้ทำอะไรกัน?!"
 			},
 			{
 				"id": "bubblebrew",
@@ -621,14 +621,14 @@
 					"hp": 50,
 					"stamina": 20
 				},
-				"flavor": "Looks terrible. Tastes worse."
+				"flavor": "ดูแย่ รสชาติแย่กว่า"
 			}
 		],
 		"spells": [
 			{
 				"id": "hal_mischief",
 				"name": "mischief",
-				"desc": "Call upon the season's powers to do a little mischief.",
+				"desc": "ร้องเรียกพลังแห่งฤดูกาลเพื่อก่อความแกล้งเล็กน้อย",
 				"sortOrder": 1311,
 				"level": 1,
 				"school": "halloween",
@@ -667,7 +667,7 @@
 			{
 				"id": "hal_havoc",
 				"name": "havoc",
-				"desc": "Call upon the season's powers to wreak havoc upon your foes.",
+				"desc": "ร้องเรียกพลังแห่งฤดูกาลเพื่อทำลายล้างศัตรูของคุณ",
 				"sortOrder": 1312,
 				"level": 2,
 				"school": "halloween",
@@ -729,7 +729,7 @@
 			{
 				"id": "eat_apple",
 				"name": "eating an apple",
-				"desc": "Healthy, are you?",
+				"desc": "แข็งแรงดีใช่ไหม?",
 				"level": 1,
 				"school": "halloween",
 				"keywords": {
@@ -766,7 +766,7 @@
 			{
 				"id": "eat_treat",
 				"name": "eating a treat",
-				"desc": "Local confections may have unpredictable effects.",
+				"desc": "ลูกกวาดท้องถิ่นอาจมีผลกระทบที่คาดเดาไม่ได้",
 				"level": 1,
 				"school": "halloween",
 				"keywords": {
@@ -808,7 +808,7 @@
 			{
 				"id": "mon_mk_wight2",
 				"name": "command wight",
-				"desc": "summons a midnight wight",
+				"desc": "อัญเชิญแวนพ์เที่ยงคืน",
 				"level": 4,
 				"school": "animation",
 				"keywords": {
@@ -829,7 +829,7 @@
 			{
 				"id": "mon_mk_ghost2",
 				"name": "command ghost",
-				"desc": "summons a midnight ghost",
+				"desc": "อัญเชิญผีเที่ยงคืน",
 				"level": 4,
 				"school": "animation",
 				"keywords": {
@@ -850,7 +850,7 @@
 			{
 				"id": "mon_mk_plaything",
 				"name": "call reveler",
-				"desc": "summons a blood bank",
+				"desc": "อัญเชิญธนาคารเลือด",
 				"cd": 5,
 				"level": 4,
 				"school": "animation",
@@ -874,8 +874,8 @@
 			{
 				"id": "undeadcrow",
 				"name": "undead crow",
-				"desc": "Little more than tatters and bones.",
-				"flavor": "How does it fly?",
+				"desc": "แทบไม่เหลืออะไรนอกจากเศษผ้าและกระดูก",
+				"flavor": "มันบินได้ยังไง?",
 				"kind": "undead",
 				"level": 2,
 				"hp": 3,
@@ -888,8 +888,8 @@
 			{
 				"id": "undeadcrow2",
 				"name": "undead crow",
-				"desc": "Little more than tatters and bones.",
-				"flavor": "How does it fly?",
+				"desc": "แทบไม่เหลืออะไรนอกจากเศษผ้าและกระดูก",
+				"flavor": "มันบินได้ยังไง?",
 				"kind": "undead",
 				"level": 2,
 				"hp": 8,
@@ -906,7 +906,7 @@
 				"kind": "human",
 				"spells": "mon_mk_plaything,lifedrain",
 				"chaincast": 0.8,
-				"desc": "A devotee of the immortal Night Queen, the Bloody Baroness extends her own life with harvests of blood.",
+				"desc": "ผู้ศรัทธาแห่งราชินีราตรีผู้เป็นอมตะ บารอนเนสเลือดแดงยืดอายุของตนเองด้วยการเก็บเกี่ยวเลือด",
 				"hp": 1000,
 				"noproc": true,
 				"defense": 20,
@@ -964,7 +964,7 @@
 				"name": "headless rider",
 				"level": 28,
 				"kind": "undead",
-				"desc": "He rides across the Hollow bridge at night, claiming the heads of the living.",
+				"desc": "เขาขี่ม้าข้ามสะพานฮอลโลว์ในยามค่ำคืน อ้างสิทธิ์เหนือศีรษะของผู้ยังมีชีวิต",
 				"hp": 500,
 				"noproc": true,
 				"defense": 40,
@@ -996,7 +996,7 @@
 				"kind": "undead",
 				"spells": "mon_mk_wight2,mon_mk_ghost2",
 				"chaincast": 0.2,
-				"desc": "The true manifestation of the headless rider.",
+				"desc": "ร่างที่แท้จริงของนักขี่ม้าไร้หัว",
 				"hp": 5000,
 				"noproc": true,
 				"defense": 100,
@@ -1048,14 +1048,14 @@
 					}
 				],
 				"loot": ["vorpal_sword2", "jacklantern"],
-				"flavor": "Don't lose your head"
+				"flavor": "อย่าให้หัวของคุณหาย"
 			},
 			{
 				"id": "hal_ratminion",
 				"name": "ratman minion",
 				"level": 16,
 				"kind": "beast",
-				"desc": "It is unclear if this was once a rat that was reshaped into a human, or a human twisted into a ratlike abomination. Either way, it bars your way forward",
+				"desc": "ไม่ชัดเจนว่าสิ่งนี้เคยเป็นหนูที่ถูกเปลี่ยนร่างเป็นมนุษย์ หรือมนุษย์ที่ถูกบิดเบือนเป็นสิ่งชั่วร้ายคล้ายหนู ไม่ว่าทางไหน มันขวางทางข้างหน้าคุณอยู่",
 				"hp": 500,
 				"noproc": true,
 				"defense": 50,
@@ -1078,7 +1078,7 @@
 						"targets": "enemies",
 						"log": {
 							"%": "10%",
-							"desc": "He can't stop rattling out the details on the experiments performed on him."
+							"desc": "เขาหยุดเล่ารายละเอียดการทดลองที่ทำกับตัวเขาไม่ได้เลย"
 						}
 					},
 					{
@@ -1094,7 +1094,7 @@
 						},
 						"log": {
 							"%": "10%",
-							"desc": "With a wicked squeak, he lunges at you."
+							"desc": "พร้อมเสียงร้องอันชั่วร้าย เขาพุ่งใส่คุณ"
 						}
 					},
 					{
@@ -1104,7 +1104,7 @@
 						"targets": "enemyleader",
 						"log": {
 							"%": "10%",
-							"desc": "His body twists as he delivers a brutal left hook. Reluctance flashes in his eyes."
+							"desc": "ร่างกายของเขาบิดเบี้ยวขณะที่ปล่อยหมัดซ้ายอันโหดร้าย ความลังเลฉายแวบในดวงตาของเขา"
 						}
 					}
 				]
@@ -1116,7 +1116,7 @@
 				"kind": "human",
 				"noproc": true,
 				"spells": "newfaceheal,chaosconfuse,chaoswave",
-				"desc": "The man turns to face you, except instead of a face he simply has a patch of smooth, featureless skin.",
+				"desc": "ชายผู้นั้นหันมาหาคุณ แต่แทนที่ใบหน้า เขากลับมีเพียงผืนผิวเรียบไร้ลักษณะ",
 				"hp": 800,
 				"defense": 50,
 				"tohit": 12,
@@ -1138,7 +1138,7 @@
 						"targets": "enemyleader",
 						"log": {
 							"%": "10%",
-							"desc": "No sound except for the parting air is heard"
+							"desc": "ไม่มีเสียงใดนอกจากอากาศที่ถูกแหวก"
 						}
 					},
 					{
@@ -1148,7 +1148,7 @@
 						"targets": "enemyleader",
 						"log": {
 							"%": "10%",
-							"desc": "There is a distinct lack of barking, howling or other normal intimidation tactics you'd expect."
+							"desc": "เห็นได้ชัดว่าไม่มีเสียงเห่า เสียงหอน หรือกลยุทธ์ข่มขู่ตามปกติที่คุณคาดหวัง"
 						},
 						"dot": {
 							"name": "bleed",
@@ -1164,7 +1164,7 @@
 						"damage": 30,
 						"log": {
 							"%": "10%",
-							"desc": "You don't get to learn what sounds a fox would make."
+							"desc": "คุณไม่ได้เรียนรู้ว่าสุนัขจิ้งจอกจะส่งเสียงอย่างไร"
 						}
 					}
 				],
@@ -1225,7 +1225,7 @@
 				"kind": "human",
 				"spells": "newfaceheal,chaosconfuse,chaoswave",
 				"noproc": true,
-				"desc": "The man turns to face you. It's Hank! Only the axe in his hands serves to alert you to what happens next.",
+				"desc": "ชายผู้นั้นหันมาหาคุณ มันคือแฮงค์! มีเพียงขวานในมือของเขาที่เตือนคุณถึงสิ่งที่จะเกิดตามมา",
 				"hp": 800,
 				"defense": 50,
 				"tohit": 12,
@@ -1246,7 +1246,7 @@
 						"damage": "20~25",
 						"log": {
 							"%": "10%",
-							"desc": "You know, your face would be even more useful than this one!"
+							"desc": "รู้ไหม ใบหน้าของคุณน่าจะมีประโยชน์ยิ่งกว่าใบหน้านี้เสียอีก!"
 						}
 					},
 					{
@@ -1255,7 +1255,7 @@
 						"damage": "15~20",
 						"log": {
 							"%": "10%",
-							"desc": "Low, guttural growls punctuate the attempts at exsanguinating you."
+							"desc": "เสียงคำรามก้องต่ำขัดจังหวะความพยายามดูดเลือดคุณ"
 						},
 						"dot": {
 							"name": "bleed",
@@ -1270,7 +1270,7 @@
 						"damage": 30,
 						"log": {
 							"%": "10%",
-							"desc": "The screeching sounds buzz in your ears for a few seconds."
+							"desc": "เสียงกรีดร้องดังก้องในหูคุณสองสามวินาที"
 						}
 					}
 				],
@@ -1330,7 +1330,7 @@
 				"noproc": true,
 				"level": 10,
 				"kind": "undead",
-				"desc": "The unwholesome creature leaves a trail of frost along the grass.",
+				"desc": "สิ่งมีชีวิตอันไม่บริสุทธิ์ทิ้งร่องรอยน้ำค้างแข็งไว้ตามหญ้า",
 				"hp": 25,
 				"defense": 10,
 				"tohit": 6,
@@ -1350,7 +1350,7 @@
 				"level": 40,
 				"kind": "undead",
 				"noproc": true,
-				"desc": "Empowered by the hour's energies, its mere presence is enough to freeze a hapless human in moments.",
+				"desc": "เสริมพลังด้วยพลังงานแห่งช่วงเวลา เพียงแค่การปรากฏตัวของมันก็เพียงพอจะแช่แข็งมนุษย์ผู้เคราะห์ร้ายได้ในพริบตา",
 				"hp": 300,
 				"defense": 50,
 				"tohit": 30,
@@ -1367,8 +1367,8 @@
 			{
 				"id": "nec_zombie",
 				"name": "necrotic zombie",
-				"desc": "A vicious zombie in a tattered dress.",
-				"flavor": "Elena looking better than ever.",
+				"desc": "ซอมบี้ดุร้ายในชุดขาดรุ่งริ่ง",
+				"flavor": "เอเลน่าดูดีกว่าที่เคย",
 				"kind": "undead",
 				"level": 8,
 				"hp": 25,
@@ -1383,8 +1383,8 @@
 			{
 				"id": "nec_zombie2",
 				"name": "necrotic zombie",
-				"desc": "A vicious zombie, dressed in faded finery.",
-				"flavor": "Maria is just as fashionable as she was in life.",
+				"desc": "ซอมบี้ดุร้าย ในชุดหรูที่ซีดจาง",
+				"flavor": "มาเรียยังคงทันสมัยเหมือนตอนที่ยังมีชีวิต",
 				"kind": "undead",
 				"level": 12,
 				"hp": 40,
@@ -1399,8 +1399,8 @@
 			{
 				"id": "nec_ghost",
 				"name": "necrotic ghost",
-				"desc": "No one's seen the Miller since he died last year...",
-				"flavor": "They looked through him in life, they look through him in death.",
+				"desc": "ไม่มีใครเห็นนายโรงโม่อีกเลยตั้งแต่เขาตายเมื่อปีก่อน...",
+				"flavor": "ตอนมีชีวิตพวกเขามองทะลุเขา ตอนตายพวกเขาก็มองทะลุเขา",
 				"kind": "undead",
 				"level": 4,
 				"hp": 20,
@@ -1419,8 +1419,8 @@
 			{
 				"id": "nec_ghost2",
 				"name": "midnight necrotic ghost",
-				"desc": "At this hour, the ghostly apparitions seem to acquire a semblance of flesh and an unrelenting desire to kill.",
-				"flavor": "The sole desire of a restless spirit is to acquire company for its undeath.",
+				"desc": "ในเวลานี้ เหล่าผีปรากฏดูเหมือนได้รับรูปลักษณ์ของเนื้อหนังและความปรารถนาอันไม่ย่อท้อที่จะฆ่า",
+				"flavor": "ความปรารถนาเพียงอย่างเดียวของวิญญาณกระสับกระส่ายคือการหาผู้ร่วมทางสำหรับความไม่ตายของมัน",
 				"kind": "undead",
 				"level": 40,
 				"hp": 350,
@@ -1482,7 +1482,7 @@
 			{
 				"id": "nec_ghast",
 				"name": "necrotic ghast",
-				"desc": "Farmer John looks angry.",
+				"desc": "ชาวจอห์นดูโกรธ",
 				"kind": "undead",
 				"level": 9,
 				"hp": 12,
@@ -1502,7 +1502,7 @@
 			{
 				"id": "nec_ghast2",
 				"name": "necrotic ghast",
-				"desc": "Farmer John looks EXTRA angry.",
+				"desc": "ชาวจอห์นดูโกรธสุด ๆ",
 				"kind": "undead",
 				"level": 9,
 				"hp": 22,
@@ -1522,7 +1522,7 @@
 			{
 				"id": "m_pumpkin",
 				"name": "ravenous pumpkin",
-				"desc": "A monstrous red jack o' lantern with evil glowing eyes.",
+				"desc": "โคมฟักทองสีแดงปีศาจพร้อมดวงตาที่เรืองแสงชั่วร้าย",
 				"unique": true,
 				"kind": "undead",
 				"level": 10,
@@ -1544,7 +1544,7 @@
 			{
 				"id": "nec_skeleton",
 				"name": "necrotic skeleton",
-				"desc": "The bones are mostly clean.",
+				"desc": "กระดูกสะอาดเป็นส่วนใหญ่",
 				"kind": "undead",
 				"level": 5,
 				"hp": 8,
@@ -1558,7 +1558,7 @@
 			{
 				"id": "nec_skeleton2",
 				"name": "necrotic skeleton",
-				"desc": "The bones are completely clean.",
+				"desc": "กระดูกสะอาดหมดจด",
 				"kind": "undead",
 				"level": 12,
 				"hp": 20,
@@ -1574,7 +1574,7 @@
 				"name": "mindless reveler",
 				"level": 2,
 				"kind": "human",
-				"desc": "This clearly used to be a human, but the influence of this place's vile rites has removed all trace of thought or reason from them. Put them out of their misery.",
+				"desc": "สิ่งนี้เคยเป็นมนุษย์อย่างชัดเจน แต่อิทธิพลของพิธีกรรมชั่วร้ายแห่งสถานที่นี้ได้ลบร่องรอยความคิดและเหตุผลทั้งหมดจากพวกมัน จงปลดปล่อยพวกมันจากความทุกข์ทรมาน",
 				"noproc": true,
 				"hp": 80,
 				"attack": {
@@ -1597,7 +1597,7 @@
 			{
 				"id": "hal_bridge1",
 				"name": "hallow bridge",
-				"desc": "The bridge from Hallomar to the Grimpen Wood isn't safe this time of year.",
+				"desc": "สะพานจากฮาลโลมาร์สู่ป่ากริมเพนไม่ปลอดภัยในฤดูนี้",
 				"level": 14,
 				"dist": 10,
 				"length": 3,
@@ -1617,7 +1617,7 @@
 			{
 				"id": "hal_bridge2",
 				"name": "midnight hallow bridge",
-				"desc": "With the ritual notes in hand, you head out to the bridge once again.",
+				"desc": "ถือบันทึกพิธีกรรมในมือ คุณมุ่งหน้าไปยังสะพานอีกครั้ง",
 				"level": 14,
 				"dist": 10,
 				"length": 3,
@@ -1642,7 +1642,7 @@
 			{
 				"id": "hal_bloodbaroness",
 				"name": "blood manor ballroom",
-				"desc": "The revels are in full swing as you arrive to the manor's grand ballroom. The gruesome sight before you, makes your stomach lurch, as you resolve to put a stop to the mistress of this place.",
+				"desc": "งานฉลองดำเนินไปอย่างเต็มที่เมื่อคุณมาถึงห้องบอลรูมอันยิ่งใหญ่ของคฤหาสน์ ภาพอันน่าสยดสยองเบื้องหน้าทำให้คุณคลื่นไส้ ขณะที่คุณตั้งใจจะหยุดนายหญิงของสถานที่แห่งนี้",
 				"level": 17,
 				"unreturnable": true,
 				"length": 1,
@@ -1660,7 +1660,7 @@
 			{
 				"id": "hal_mill_intime",
 				"name": "Abandoned windmill",
-				"desc": "You have reason to suspect Hank is here. Why would he go that way though?",
+				"desc": "คุณมีเหตุผลให้สงสัยว่าแฮงค์อยู่ที่นี่ แต่ทำไมเขาต้องไปทางนั้นล่ะ?",
 				"level": 10,
 				"unreturnable": true,
 				"length": 3,
@@ -1668,7 +1668,7 @@
 				"sym": "🎃⚔💀",
 				"log": {
 					"name": "Laboratory",
-					"desc": "The shapeshifter's laboratory yields a clue as to how he managed to perform his transformations. You could make use of it yourself, if you so desire."
+					"desc": "ห้องแล็บของนักแปลงร่างให้เบาะแสว่าเขาทำการแปลงร่างได้อย่างไร คุณอาจใช้ประโยชน์จากมันเองได้ หากต้องการ"
 				},
 				"require": "(g.hal_resident+g.hal_grumpy+g.hal_missing+g.hal_footprints+g.hal_age)>=50",
 				"run": {
@@ -1683,7 +1683,7 @@
 			{
 				"id": "hal_fakehouse",
 				"name": "Abandoned house",
-				"desc": "You have reason to suspect Hank is here. The ghost of the thief must have stolen him away to enact revenge.",
+				"desc": "คุณมีเหตุผลให้สงสัยว่าแฮงค์อยู่ที่นี่ ผีของขโมยคงขโมยตัวเขาไปเพื่อแก้แค้น",
 				"level": 10,
 				"unreturnable": true,
 				"length": 3,
@@ -1702,7 +1702,7 @@
 			{
 				"id": "hal_mill_late",
 				"name": "Abandoned windmill",
-				"desc": "You are sure that this is where Hank must be.",
+				"desc": "คุณมั่นใจว่านี่คือที่ที่แฮงค์ต้องอยู่",
 				"level": 10,
 				"unreturnable": true,
 				"length": 3,
@@ -1710,7 +1710,7 @@
 				"sym": "🎃⚔💀",
 				"log": {
 					"name": "Laboratory",
-					"desc": "The shapeshifter's laboratory yields a clue as to how he managed to perform his transformations. You could make use of it yourself, if you so desire."
+					"desc": "ห้องแล็บของนักแปลงร่างให้เบาะแสว่าเขาทำการแปลงร่างได้อย่างไร คุณอาจใช้ประโยชน์จากมันเองได้ หากต้องการ"
 				},
 				"require": "(g.hal_resident+g.hal_grumpy+g.hal_missing+g.hal_footprints+g.hal_age)>=50&&g.hal_timewaste>0",
 				"run": {
@@ -1731,7 +1731,7 @@
 						"name": "Headless rider's heart",
 						"sym": "🏰",
 						"tags": "hall",
-						"desc": "The only thing left behind after your clash on the midnight bridge. It feels ethereal, as if it would dissipate at any moment.",
+						"desc": "สิ่งเดียวที่หลงเหลือหลังการปะทะบนสะพานเที่ยงคืน มันให้ความรู้สึกจับต้องไม่ได้ ราวกับจะสลายไปเมื่อใดก็ได้",
 						"require": "g.hal_bridge2>0",
 						"max": 1,
 						"mod": {
@@ -1741,7 +1741,7 @@
 							"trickery.buy.arcana": "-50%",
 							"trickery.mod.dodge": 0.5
 						},
-						"extdesc": "You always satisfy the Trickery skill's requirements.",
+						"extdesc": "คุณผ่านข้อกำหนดของสกิลกลโกงเสมอ",
 						"result": {
 							"fame": 10
 						}
@@ -1752,7 +1752,7 @@
 						"sym": "🏰🎃",
 						"tags": "hall",
 						"require": "g.tier0>0",
-						"desc": "All these pumpkins... what other possibilities do gourds hold?",
+						"desc": "ฟักทองทั้งหมดนี้... ฟักทองยังมีความเป็นไปได้อะไรอีกไหม?",
 						"max": 1,
 						"cost": {
 							"research": 100

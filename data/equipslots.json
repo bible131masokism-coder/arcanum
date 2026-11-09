@@ -2,7 +2,7 @@
 	{
 		"id": "mainhand",
 		"name": "Main hand",
-		"desc": "For main hand weapons.",
+		"desc": "สำหรับอาวุธมือหลัก",
 		"slotgroup": "equip",
 		"max": 1,
 		"sortOrder": 100
@@ -10,7 +10,7 @@
 	{
 		"id": "offhand",
 		"name": "Offhand",
-		"desc": "For offhand tools.",
+		"desc": "สำหรับเครื่องมือมือรอง",
 		"slotgroup": "equip",
 		"max": 0,
 		"sortOrder": 200
@@ -18,7 +18,7 @@
 	{
 		"id": "head",
 		"name": "Head",
-		"desc": "armor.",
+		"desc": "เกราะ",
 		"slotgroup": "equip",
 		"max": 0,
 		"sortOrder": 300
@@ -26,7 +26,7 @@
 	{
 		"id": "hands",
 		"name": "Hands",
-		"desc": "armor.",
+		"desc": "เกราะ",
 		"slotgroup": "equip",
 		"max": 0,
 		"sortOrder": 400
@@ -34,7 +34,7 @@
 	{
 		"id": "back",
 		"name": "Back",
-		"desc": "armor.",
+		"desc": "เกราะ",
 		"slotgroup": "equip",
 		"max": 0,
 		"sortOrder": 500
@@ -42,7 +42,7 @@
 	{
 		"id": "waist",
 		"name": "Waist",
-		"desc": "armor.",
+		"desc": "เกราะ",
 		"slotgroup": "equip",
 		"max": 0,
 		"sortOrder": 600
@@ -50,7 +50,7 @@
 	{
 		"id": "neck",
 		"name": "Amulet",
-		"desc": "armor.",
+		"desc": "เกราะ",
 		"slotgroup": "equip",
 		"max": 0,
 		"sortOrder": 700
@@ -58,7 +58,7 @@
 	{
 		"id": "trinket",
 		"name": "Trinket",
-		"desc": "armor.",
+		"desc": "เกราะ",
 		"slotgroup": "equip",
 		"max": 0,
 		"sortOrder": 800
@@ -66,7 +66,7 @@
 	{
 		"id": "fingers",
 		"name": "Ring",
-		"desc": "armor.",
+		"desc": "เกราะ",
 		"slotgroup": "equip",
 		"max": 0,
 		"sortOrder": 900
@@ -74,7 +74,7 @@
 	{
 		"id": "chest",
 		"name": "Chest",
-		"desc": "armor.",
+		"desc": "เกราะ",
 		"slotgroup": "equip",
 		"max": 0,
 		"sortOrder": 1000
@@ -82,7 +82,7 @@
 	{
 		"id": "shins",
 		"name": "Shins",
-		"desc": "armor.",
+		"desc": "เกราะ",
 		"slotgroup": "equip",
 		"max": 0,
 		"sortOrder": 1100
@@ -90,7 +90,7 @@
 	{
 		"id": "feet",
 		"name": "Feet",
-		"desc": "armor.",
+		"desc": "เกราะ",
 		"slotgroup": "equip",
 		"max": 0,
 		"sortOrder": 1200

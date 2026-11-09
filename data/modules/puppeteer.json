@@ -13,7 +13,7 @@
 		"skills": [
 			{
 				"id": "puppetry",
-				"desc": "Create and animate magical puppets",
+				"desc": "สร้างและขยับตุ๊กตาหุ่นเวทมนตร์",
 				"tags": "t_skill_animation",
 				"require": "g.crafting>=8&&g.spiritlore>=5",
 				"run": {
@@ -31,7 +31,7 @@
 			{
 				"id": "magicalanimation",
 				"name": "animation",
-				"desc": "Imbue objects with the power of motion",
+				"desc": "ผสานพลังแห่งการเคลื่อนไหวให้แก่วัตถุ",
 				"tags": "t_skill_animation",
 				"require": "g.puppetry>=5&&g.spiritlore>=10",
 				"level": 5,
@@ -49,7 +49,7 @@
 			{
 				"id": "machinacreation",
 				"name": "mechanical magic",
-				"desc": "Assemble magic constructs",
+				"desc": "ประกอบสิ่งก่อสร้างเวทมนตร์",
 				"tags": "t_skill_animation",
 				"require": "g.crafting>=12&&g.puppetry>=6&&g.magicalanimation>=5&&g.tier2>0",
 				"level": 5,
@@ -70,7 +70,7 @@
 			{
 				"id": "magiphysics",
 				"name": "magiphysics",
-				"desc": "The study of magic in motion.",
+				"desc": "การศึกษาเวทมนตร์ที่เคลื่อนไหว",
 				"require": "g.lore>=25&&g.planeslore>=10&&g.tier4>0",
 				"level": 10,
 				"buy": {
@@ -88,7 +88,7 @@
 			{
 				"id": "automatasculpting",
 				"name": "automata sculpting",
-				"desc": "They think, therefore they are.",
+				"desc": "พวกมันคิด จึงดำรงอยู่",
 				"tags": "t_skill_animation",
 				"require": "g.crafting>=18&&g.puppetry>=8&&g.magicalanimation>=6&&g.magiphysics>=5&&(g.mechanist+g.mechamancer)>0",
 				"level": 10,
@@ -114,7 +114,7 @@
 			{
 				"id": "puppetshow",
 				"name": "puppet show",
-				"desc": "Put on a show with animated puppets",
+				"desc": "แสดงโชว์ด้วยตุ๊กตาหุ่นที่ขยับได้",
 				"verb": "puppeteering",
 				"require": "g.puppeteer>0",
 				"length": 15,
@@ -152,7 +152,7 @@
 				"id": "assemblepuppet",
 				"name": "assemble puppet",
 				"verb": "assembling puppets",
-				"desc": "Assemble a puppet.",
+				"desc": "ประกอบตุ๊กตาหุ่น",
 				"tags": "t_craftwork",
 				"require": "g.puppetry>=1",
 				"need": "workspace",
@@ -175,7 +175,7 @@
 			{
 				"id": "machinalabor",
 				"name": "lease labor",
-				"desc": "Lend some of your machinae to perform menial tasks",
+				"desc": "ยืมมาจินาของคุณไปทำงานบ้านเล็ก ๆ น้อย ๆ",
 				"verb": "leasing",
 				"require": "g.mechanist>0",
 				"length": 50,
@@ -209,7 +209,7 @@
 				"id": "assemblemachina",
 				"name": "assemble machina",
 				"verb": "assembling machinae",
-				"desc": "Assemble a machina.",
+				"desc": "ประกอบมาจินา",
 				"tags": "t_craftwork",
 				"require": "g.machinacreation>=1",
 				"need": "workspace",
@@ -232,7 +232,7 @@
 				"id": "futurecouncil",
 				"name": "plan future",
 				"verb": "Counseling",
-				"desc": "Counsel with your automata to plan the future.",
+				"desc": "ปรึกษากับออโตมาตาของคุณเพื่อวางแผนอนาคต",
 				"require": "g.mechamancer>0",
 				"length": 100,
 				"max": 160,
@@ -256,7 +256,7 @@
 				"id": "assembleautomata",
 				"name": "shape automata",
 				"verb": "shaping automata",
-				"desc": "Create an automata.",
+				"desc": "สร้างออโตมาตา",
 				"tags": "t_craftwork",
 				"require": "g.automatasculpting>=1",
 				"need": "workspace",
@@ -282,7 +282,7 @@
 				"name": "create fine-tuned parts",
 				"verb": "engineering",
 				"tags": "t_craftwork",
-				"desc": "Create a fine-tuned part.",
+				"desc": "สร้างชิ้นส่วนที่ปรับแต่งอย่างละเอียด",
 				"require": "g.automatasculpting>=5",
 				"need": "workspace",
 				"fill": ["fineparts"],
@@ -310,7 +310,7 @@
 			{
 				"id": "gearponder",
 				"name": "machinery appreciation",
-				"desc": "Take a moment to ponder the newfound beauty of gears and levers.",
+				"desc": "ใช้เวลาครู่หนึ่งครุ่นคิดถึงความงามอันเพิ่งค้นพบของเฟืองและคันโยก",
 				"require": "(g.puppeteer+g.mechanist+g.mechamancer)>0",
 				"max": 1,
 				"cost": {
@@ -326,23 +326,23 @@
 					"automatasculpting.max": 1,
 					"automatasculpting.rate": 0.3
 				},
-				"flavor": "How smoothly they move, how much more understandable they are than people...",
+				"flavor": "พวกมันเคลื่อนไหวลื่นไหลเพียงใด เข้าใจง่ายกว่ามนุษย์เพียงใด...",
 				"group": "knowledge"
 			},
 			{
 				"id": "finesorting",
 				"name": "refined sorting",
-				"desc": "Allows use of fine-tuned parts to improve sorting capacity",
+				"desc": "อนุญาตให้ใช้ชิ้นส่วนที่ปรับแต่งอย่างละเอียดเพื่อเพิ่มความสามารถในการคัดแยก",
 				"require": "g.automatasculpting>=5&&g.autoappraiser>0",
 				"max": 1,
 				"need": "g.fineparts>0",
-				"needtext": "Craft at least one fine-tuned part to get started.",
+				"needtext": "ประดิษฐ์ชิ้นส่วนที่ปรับแต่งอย่างละเอียดอย่างน้อยหนึ่งชิ้นเพื่อเริ่มต้น",
 				"group": "crafting"
 			},
 			{
 				"id": "clockworkexpansion",
 				"name": "clockwork expansion",
-				"desc": "Expand the clockwork home with additional materials",
+				"desc": "ขยายบ้านจักรกลด้วยวัสดุเพิ่มเติม",
 				"require": "g.puppetry>=5&&(g.puppeteer+g.mechanist+g.mechamancer)>0",
 				"max": 2,
 				"cost": {
@@ -352,13 +352,13 @@
 					"clockworkhome.mod.space.max": 5,
 					"clockworkhome.mod.puppetry.rate": 1
 				},
-				"flavor": "The jutting limbs are very helpful for household maintenance",
+				"flavor": "แขนขาที่ยื่นออกมามีประโยชน์มากต่องานดูแลบ้าน",
 				"group": "housing"
 			},
 			{
 				"id": "clockworkexpansion2",
 				"name": "clockwork expansion",
-				"desc": "Expand the clockwork home with additional materials",
+				"desc": "ขยายบ้านจักรกลด้วยวัสดุเพิ่มเติม",
 				"require": "g.machinacreation>=5&&g.clockworkexpansion>=2",
 				"max": 2,
 				"cost": {
@@ -368,13 +368,13 @@
 					"clockworkhome.mod.space.max": 10,
 					"clockworkhome.mod.machinacreation.rate": 1
 				},
-				"flavor": "The moving floors really cut down on foot traffic",
+				"flavor": "พื้นเคลื่อนที่ช่วยลดการเดินไปมาได้จริง",
 				"group": "housing"
 			},
 			{
 				"id": "clockworkexpansion3",
 				"name": "clockwork expansion",
-				"desc": "Expand the clockwork home with additional materials",
+				"desc": "ขยายบ้านจักรกลด้วยวัสดุเพิ่มเติม",
 				"require": "g.automatasculpting>=5&&g.clockworkexpansion2>=2",
 				"max": 2,
 				"cost": {
@@ -384,13 +384,13 @@
 					"clockworkhome.mod.space.max": 15,
 					"clockworkhome.mod.automatasculpting.rate": 1
 				},
-				"flavor": "The home anticipates your wants and needs",
+				"flavor": "บ้านนี้คาดเดาความต้องการและความจำเป็นของคุณได้",
 				"group": "housing"
 			},
 			{
 				"id": "clockworkexpansione",
 				"name": "endless expansion",
-				"desc": "More...",
+				"desc": "เพิ่มอีก...",
 				"require": "g.clockworkexpansion3>=2",
 				"max": 500,
 				"cost": {
@@ -404,13 +404,13 @@
 					"puppets.max": 1,
 					"machinae.max": 1
 				},
-				"flavor": "Why stop?",
+				"flavor": "จะหยุดทำไม?",
 				"group": "housing"
 			},
 			{
 				"id": "strongstrings",
 				"name": "puppet strings",
-				"desc": "Buy some extra-strength strings for your puppetry needs",
+				"desc": "ซื้อเชือกเส้นแข็งพิเศษสำหรับความต้องการทำหุ่นของคุณ",
 				"require": "g.puppetry>=5",
 				"max": 2,
 				"cost": {
@@ -421,13 +421,13 @@
 					"puppetry.max": 1,
 					"puppetry.rate": 0.3
 				},
-				"flavor": "You are the one in control",
+				"flavor": "คุณคือผู้ควบคุม",
 				"group": "knowledge"
 			},
 			{
 				"id": "ebonwoodsupply",
 				"name": "ebonwood supply",
-				"desc": "Procure a supply of ebonwood to strengthen your puppets",
+				"desc": "จัดหาวัสดุไม้ดำรงเพื่อเสริมความแข็งแกร่งให้ตุ๊กตาหุ่นของคุณ",
 				"require": "g.puppetry>=9",
 				"max": 1,
 				"cost": {
@@ -439,14 +439,14 @@
 					"puppetry.rate": 0.3,
 					"minions.puppet.hp.max": 5
 				},
-				"flavor": "The dark coloring is handy for assasinations",
+				"flavor": "สีเข้ม ๆ มีประโยชน์สำหรับงานลอบสังหาร",
 				"group": "minions"
 			},
 			{
 				"id": "runicanimation",
 				"alias": "runicreinforcement",
 				"name": "runic animation",
-				"desc": "Carve the runes of strength and protection into your puppets",
+				"desc": "สลักรูนแห่งความแข็งแกร่งและการปกป้องลงบนตุ๊กตาหุ่นของคุณ",
 				"require": "g.puppeteer>0&&g.runelore>=3",
 				"max": 1,
 				"cost": {
@@ -458,13 +458,13 @@
 					"puppetry.rate": 0.3,
 					"minions.puppet.hp.max": "20%"
 				},
-				"flavor": "The faint glow of the runes looks quite striking",
+				"flavor": "แสงเรืองรองจาง ๆ ของรูนดูโดดเด่นทีเดียว",
 				"group": "minions"
 			},
 			{
 				"id": "proxies",
 				"name": "puppet proxies",
-				"desc": "Throw your voice and will through specially-made puppets",
+				"desc": "ถ่ายทอดเสียงและเจตจำนงของคุณผ่านตุ๊กตาหุ่นที่สร้างขึ้นเป็นพิเศษ",
 				"require": "g.puppetry>=5",
 				"max": 1,
 				"cost": {
@@ -475,13 +475,13 @@
 					"stamina.rate": 0.1,
 					"vigor.rate": 0.01
 				},
-				"flavor": "Walking around is for fools",
+				"flavor": "การเดินไปมาเหมาะสำหรับคนโง่",
 				"group": "body"
 			},
 			{
 				"id": "proxies2",
 				"name": "proxy amplification",
-				"desc": "Use your puppet proxies to amplify your memory",
+				"desc": "ใช้ตัวแทนตุ๊กตาหุ่นของคุณเพื่อขยายความทรงจำ",
 				"require": "g.puppetry>=8",
 				"max": 1,
 				"cost": {
@@ -497,7 +497,7 @@
 			{
 				"id": "puppetspies",
 				"name": "puppet spies",
-				"desc": "Nobody would notice",
+				"desc": "ไม่มีใครสังเกตเห็น",
 				"require": "g.puppeteer>0",
 				"max": 1,
 				"cost": {
@@ -513,7 +513,7 @@
 			{
 				"id": "clockworkbutler",
 				"name": "clockwork butler",
-				"desc": "Serves you tea, scones and books.",
+				"desc": "เสิร์ฟชา สโคน และหนังสือให้คุณ",
 				"require": "g.machinacreation>=5",
 				"max": 1,
 				"cost": {
@@ -524,13 +524,13 @@
 					"stamina.rate": 0.1,
 					"vigor.rate": 0.01
 				},
-				"flavor": "A remarkably efficient servant",
+				"flavor": "ผู้รับใช้ที่เก่งกาจอย่างน่าทึ่ง",
 				"group": "body"
 			},
 			{
 				"id": "precisionengineering",
 				"name": "precision engineering",
-				"desc": "Precision to the millimeter.",
+				"desc": "ความแม่นยำถึงระดับมิลลิเมตร",
 				"require": "g.machinacreation>=5",
 				"max": 1,
 				"cost": {
@@ -542,13 +542,13 @@
 					"machinacreation.rate": 0.6,
 					"minions.machina.hp.max": 5
 				},
-				"flavor": "A layer of polish",
+				"flavor": "ชั้นเคลือบเงา",
 				"group": "minions"
 			},
 			{
 				"id": "lubricant",
 				"name": "oil of slipping",
-				"desc": "Adapt a common magical item as a lubricant for your machinae.",
+				"desc": "ดัดแปลงไอเทมเวทมนตร์ธรรมดาให้เป็นน้ำมันหล่อลื่นสำหรับมาจินาของคุณ",
 				"require": "g.machinacreation>=7",
 				"max": 1,
 				"cost": {
@@ -561,13 +561,13 @@
 					"assemblemachina.length": -5,
 					"minions.machina.speed": 3
 				},
-				"flavor": "Comes in handy in multiple situations",
+				"flavor": "มีประโยชน์ในหลายสถานการณ์",
 				"group": "minions"
 			},
 			{
 				"id": "autoappraiser",
 				"name": "automated appraiser",
-				"desc": "Some gems are more than what they look like",
+				"desc": "อัญมณีบางชนิดมีค่ามากกว่ารูปลักษณ์ภายนอก",
 				"require": "g.mechanist>0",
 				"max": 1,
 				"cost": {
@@ -597,7 +597,7 @@
 			{
 				"id": "autominer",
 				"name": "automated miner",
-				"desc": "Greedily delve deeper",
+				"desc": "ขุดเจาะลึกลงไปอย่างละโมบ",
 				"require": "g.machinacreation>=9",
 				"max": 2,
 				"cost": {
@@ -613,7 +613,7 @@
 			{
 				"id": "algorithms",
 				"name": "efficient algorithms",
-				"desc": "Efficient instructions for best performance",
+				"desc": "คำสั่งที่มีประสิทธิภาพเพื่อผลงานที่ดีที่สุด",
 				"require": "g.mechanist>0",
 				"max": 1,
 				"cost": {
@@ -632,7 +632,7 @@
 			{
 				"id": "automatalab",
 				"name": "automated laboratory",
-				"desc": "A thinking, living place of research",
+				"desc": "สถานที่วิจัยที่คิดและมีชีวิตชีวา",
 				"require": "g.automatasculpting>=5",
 				"max": 1,
 				"cost": {
@@ -648,13 +648,13 @@
 					"languages.rate": "50%",
 					"charms.rate": "50%"
 				},
-				"flavor": "A most singular enterprise",
+				"flavor": "กิจการที่พิเศษไม่เหมือนใคร",
 				"group": "education"
 			},
 			{
 				"id": "automatastudy",
 				"name": "automata studies",
-				"desc": "Spend time researching the secrets of the mind",
+				"desc": "ใช้เวลาค้นคว้าความลับของจิตใจ",
 				"require": "g.automatasculpting>=5",
 				"max": 5,
 				"cost": {
@@ -666,13 +666,13 @@
 					"automatasculpting.max": 1,
 					"automatasculpting.rate": 0.3
 				},
-				"flavor": "Hard work hardly pays",
+				"flavor": "ทำงานหนักก็แทบไม่คุ้ม",
 				"group": "knowledge"
 			},
 			{
 				"id": "autoagents",
 				"name": "automata agents",
-				"desc": "Agents capable of independent completion of any desired task",
+				"desc": "ตัวแทนที่สามารถทำภารกิจใด ๆ ให้สำเร็จได้ด้วยตนเอง",
 				"require": "g.automatasculpting>=10",
 				"lock": "t_actionexpansion",
 				"tags": "t_actionexpansion",
@@ -695,7 +695,7 @@
 			{
 				"id": "automatamastery",
 				"name": "automata mastery",
-				"desc": "A complete mastery over all things mechanical",
+				"desc": "ความเชี่ยวชาญอย่างสมบูรณ์เหนือสรรพสิ่งที่เกี่ยวกับกลไก",
 				"require": "g.mechamancer>0",
 				"max": 1,
 				"cost": {
@@ -715,7 +715,7 @@
 			{
 				"id": "sculptingmastery",
 				"name": "mastery of form",
-				"desc": "Learn the deepest secrets of shaping",
+				"desc": "เรียนรู้ความลับสุดลึกของการปั้นรูป",
 				"require": "g.mechamancer>0",
 				"max": 1,
 				"cost": {
@@ -736,7 +736,7 @@
 			{
 				"id": "puppetrepair",
 				"name": "mend wood",
-				"desc": "Mend a broken puppet.",
+				"desc": "ซ่อมตุ๊กตาหุ่นที่แตกหัก",
 				"sortOrder": 1838,
 				"level": 10,
 				"school": "animation",
@@ -764,7 +764,7 @@
 			{
 				"id": "machinarepair",
 				"name": "repair machina",
-				"desc": "Repair a wrecked machina.",
+				"desc": "ซ่อมแซมมาจินาที่พังเสียหาย",
 				"sortOrder": 1837,
 				"level": 2,
 				"school": "animation",
@@ -792,7 +792,7 @@
 			{
 				"id": "automatarepair",
 				"name": "tune automata",
-				"desc": "Re-tune a discordant automata.",
+				"desc": "ปรับแต่งออโตมาตาที่เพี้ยนให้กลับมาดี",
 				"sortOrder": 1836,
 				"level": 3,
 				"school": "animation",
@@ -820,8 +820,8 @@
 			{
 				"id": "prismaticmissile",
 				"name": "prismatic missile",
-				"desc": "A burst of chaotic magic inflicting damage to enemies.",
-				"extdesc": "The effect and cost of this spell raises with every multiple of 12 your max mana reaches, up to 60.",
+				"desc": "การระเบิดของเวทมนตร์แห่งความโกลาหลสร้างความเสียหายแก่ศัตรู",
+				"extdesc": "เอฟเฟกต์และค่าใช้จ่ายของคาถานี้เพิ่มขึ้นทุกครั้งที่ค่ามานาสูงสุดของคุณถึงพหุคูณของ 12 ไปจนถึง 60",
 				"sortOrder": 408,
 				"level": 10,
 				"school": "mana",
@@ -855,7 +855,7 @@
 			{
 				"id": "mk_puppet",
 				"name": "construct puppet attacker",
-				"desc": "Summon a temporary puppet to assist you in a fight",
+				"desc": "อัญเชิญตุ๊กตาหุ่นชั่วคราวมาช่วยคุณในการต่อสู้",
 				"sortOrder": 1882,
 				"level": 1,
 				"school": "animation",
@@ -885,7 +885,7 @@
 			{
 				"id": "mk_puppet_perm",
 				"name": "animate puppet attacker",
-				"desc": "Create a stable puppet attacker",
+				"desc": "สร้างตุ๊กตาหุ่นผู้โจมตีที่คงทน",
 				"tags": "t_nospellcraft,t_nomemorize",
 				"sortOrder": 1881,
 				"level": 1,
@@ -916,7 +916,7 @@
 			{
 				"id": "mk_charger",
 				"name": "construct mecha-charger",
-				"desc": "Summon a temporary machina to assist you in a fight",
+				"desc": "อัญเชิญมาจินาชั่วคราวมาช่วยคุณในการต่อสู้",
 				"sortOrder": 1872,
 				"level": 1,
 				"school": "animation",
@@ -970,7 +970,7 @@
 			{
 				"id": "mk_autoslayer",
 				"name": "construct autoslayer",
-				"desc": "Summon a temporary automata to assist you in a fight",
+				"desc": "อัญเชิญออโตมาตาชั่วคราวมาช่วยคุณในการต่อสู้",
 				"sortOrder": 1862,
 				"level": 1,
 				"school": "animation",
@@ -1024,7 +1024,7 @@
 			{
 				"id": "mk_puppetdef",
 				"name": "animate bulwark",
-				"desc": "A sturdy puppet lurches between you and danger.",
+				"desc": "ตุ๊กตาหุ่นที่แข็งแรงย่างก้าวขวางระหว่างคุณกับอันตราย",
 				"tags": "t_nospellcraft,t_nomemorize",
 				"sortOrder": 1883,
 				"level": 5,
@@ -1262,7 +1262,7 @@
 			{
 				"id": "clockworkhome",
 				"name": "clockwork home",
-				"desc": "A house of gears and levers, constantly adjusting to the requirements of its occupant.",
+				"desc": "บ้านแห่งเฟืองและคันโยกที่ปรับเปลี่ยนอยู่ตลอดเพื่อตอบสนองความต้องการของผู้อยู่อาศัย",
 				"buy": {
 					"research": 500,
 					"gold": 3000,
@@ -1285,7 +1285,7 @@
 			{
 				"id": "puppetworkshop",
 				"name": "puppet-making workshop",
-				"desc": "A specialized workshop for efficiently producing puppets.",
+				"desc": "เวิร์กช็อปเฉพาะทางสำหรับผลิตตุ๊กตาหุ่นอย่างมีประสิทธิภาพ",
 				"require": "g.puppetry>=7",
 				"max": 2,
 				"cost": {
@@ -1306,7 +1306,7 @@
 			{
 				"id": "puppetautomation",
 				"name": "puppet assembly line",
-				"desc": "A dedicated assembly line for automated production of puppets.",
+				"desc": "สายการประกอบโดยเฉพาะเพื่อผลิตตุ๊กตาหุ่นแบบอัตโนมัติ",
 				"require": "g.puppetry>=9",
 				"max": 2,
 				"cost": {
@@ -1333,7 +1333,7 @@
 			{
 				"id": "machinagarage",
 				"name": "machina workshop",
-				"desc": "A place to tinker with your machinae.",
+				"desc": "สถานที่สำหรับซ่อมดัดแปลงมาจินาของคุณ",
 				"require": "g.machinacreation>=7",
 				"tags": "workspace",
 				"max": 2,
@@ -1356,7 +1356,7 @@
 			{
 				"id": "machinaautomation",
 				"name": "machina assembly",
-				"desc": "A complex mechanism for automating the production of machinae.",
+				"desc": "กลไกซับซ้อนสำหรับทำให้การผลิตมาจินาเป็นอัตโนมัติ",
 				"require": "g.machinacreation>=9",
 				"max": 2,
 				"cost": {
@@ -1384,7 +1384,7 @@
 			{
 				"id": "shapinglab",
 				"name": "shaping laboratory",
-				"desc": "A facility for efficiently growing mind-crystals and pre-formed automata bodies.",
+				"desc": "สถานที่สำหรับเพาะคริสตัลจิตและร่างกายออโตมาตาที่ขึ้นรูปแล้วอย่างมีประสิทธิภาพ",
 				"tags": "workspace",
 				"require": "mechamancer",
 				"max": 2,
@@ -1404,12 +1404,12 @@
 					"automataautomation.convert.input.runestones": -0.025,
 					"space": 10
 				},
-				"flavor": "This was a triumph. I'm making a note here, 'Huge Success.'"
+				"flavor": "นี่คือชัยชนะ ฉันจะจดบันทึกไว้ตรงนี้ว่า 'ความสำเร็จอันยิ่งใหญ่'"
 			},
 			{
 				"id": "automataautomation",
 				"name": "automata vats",
-				"desc": "Rows upon rows of crystal-growing vats, shaping automata according to your parameters.",
+				"desc": "แถวแล้วแถวเล่าของถังเพาะคริสตัล หล่อหลอมออโตมาตาตามพารามิเตอร์ของคุณ",
 				"require": "g.automatasculpting>=7",
 				"max": 2,
 				"cost": {
@@ -1438,7 +1438,7 @@
 			{
 				"id": "finesorting_elements",
 				"name": "refined elemental sorting station",
-				"desc": "Allows automatic appraiser to produce elemental gems more efficiently.",
+				"desc": "อนุญาตให้เครื่องประเมินอัตโนมัติผลิตอัญมณีธาตุได้อย่างมีประสิทธิภาพมากขึ้น",
 				"require": "g.finesorting>0",
 				"max": 5,
 				"cost": {
@@ -1457,7 +1457,7 @@
 			{
 				"id": "finesorting_esoteric",
 				"name": "refined esoteric sorting station",
-				"desc": "Allows automatic appraiser to produce certain primal gems.",
+				"desc": "อนุญาตให้เครื่องประเมินอัตโนมัติผลิตอัญมณีดึกดำบรรพ์บางชนิด",
 				"require": "g.finesorting>0",
 				"max": 5,
 				"cost": {
@@ -1478,7 +1478,7 @@
 			{
 				"id": "finesorting_recycling",
 				"name": "refined sorting recycling station",
-				"desc": "Allows automatic appraiser to produce elemental gems more efficiently.",
+				"desc": "อนุญาตให้เครื่องประเมินอัตโนมัติผลิตอัญมณีธาตุได้อย่างมีประสิทธิภาพมากขึ้น",
 				"require": "g.finesorting>0",
 				"max": 5,
 				"cost": {
@@ -1499,29 +1499,29 @@
 		"resources": [
 			{
 				"id": "puppets",
-				"desc": "Easily controlled, yet fundamentally inert.",
+				"desc": "ควบคุมง่าย ทว่าพื้นฐานแล้วเฉื่อยชา",
 				"group": "constructs",
 				"max": 20,
 				"sortOrder": 605,
-				"flavor": "A skilled user could put on a marvellous show."
+				"flavor": "ผู้ใช้ที่มีฝีมือสามารถจัดโชว์อันน่าอัศจรรย์ได้"
 			},
 			{
 				"id": "machinae",
 				"name": "machinae",
-				"desc": "Towering hulks of metal, ready to do their master's bidding.",
+				"desc": "ก้อนเหล็กมโหฬาร พร้อมทำตามคำสั่งของนายของมัน",
 				"group": "constructs",
 				"max": 20,
 				"sortOrder": 610,
-				"flavor": "B33P B00P."
+				"flavor": "บี๊บ บู๊บ"
 			},
 			{
 				"id": "automatas",
 				"name": "automata",
-				"desc": "Constructs of translucent crystal; they possess a pristine intellect for learning.",
+				"desc": "สิ่งก่อสร้างจากคริสตัลโปร่งแสง พวกมันมีสติปัญญาบริสุทธิ์สำหรับการเรียนรู้",
 				"group": "constructs",
 				"max": 20,
 				"sortOrder": 615,
-				"flavor": "It's not smarter than you, surely."
+				"flavor": "มันคงไม่ฉลาดไปกว่าคุณ ใช่ไหม?"
 			}
 		],
 		"monsters": [
@@ -1834,7 +1834,7 @@
 				"id": "sum_clockservant",
 				"tags": "t_automata,clockwork",
 				"name": "automata servant",
-				"desc": "A shining servant of the castle.",
+				"desc": "ผู้รับใช้ผู้เปล่งประกายของปราสาท",
 				"level": 9,
 				"kind": "automata",
 				"noproc": true,
@@ -1903,7 +1903,7 @@
 				"id": "sum_clockknight",
 				"tags": "t_automata,clockwork",
 				"name": "brass knight",
-				"desc": "A shining knight in brass armor.",
+				"desc": "อัศวินผู้เปล่งประกายในชุดเกราะทองเหลือง",
 				"level": 11,
 				"kind": "automata",
 				"noproc": true,
@@ -1960,7 +1960,7 @@
 				"id": "mon_clockdicer",
 				"tags": "t_automata,clockwork",
 				"name": "automata chef",
-				"desc": "An automated cook with sharp knives and a hardened brass shell, looking to make you the next meal.",
+				"desc": "พ่อครัวอัตโนมัติมีดคมและเปลือกทองเหลืองแข็ง พร้อมจะทำให้คุณเป็นมื้อต่อไป",
 				"level": 26,
 				"kind": "automata",
 				"spells": "whirl3,perfectstrike",
@@ -2035,7 +2035,7 @@
 				"id": "sum_clockcrow",
 				"tags": "t_puppet,clockwork",
 				"name": "mechanical crow",
-				"desc": "A mechanical crow-like contraption, it watches with gemstone eyes.",
+				"desc": "กลไกรูปร่างคล้ายอีกาคอยเฝ้าดูด้วยดวงตาอัญมณี",
 				"level": 9,
 				"kind": "puppet",
 				"noproc": true,
@@ -2074,7 +2074,7 @@
 				"id": "mon_clockmage_elite",
 				"tags": "t_automata,clockwork",
 				"name": "pristine automated mage",
-				"desc": "A collection of runes, gems and brass capable of dangerous spellcasting.",
+				"desc": "ชุดรูน อัญมณี และทองเหลืองที่สามารถร่ายคาถาอันตรายได้",
 				"level": 24,
 				"kind": "automata",
 				"noproc": true,
@@ -2097,7 +2097,7 @@
 				"id": "mon_clockknight_elite",
 				"tags": "t_automata,clockwork",
 				"name": "pristine brass knight",
-				"desc": "A shining knight in brass armor. Not a mark spoils its features",
+				"desc": "อัศวินผู้เปล่งประกายในชุดเกราะทองเหลือง ไร้รอยเปื้อนใดบดบังรูปลักษณ์ของมัน",
 				"level": 22,
 				"kind": "automata",
 				"noproc": true,
@@ -2166,7 +2166,7 @@
 				"id": "mon_clockwork_core_elite",
 				"tags": "t_automata,clockwork",
 				"name": "pristine castle core",
-				"desc": "A supporting unit for the replica, capable of summoning and maintaining masses of reinforcements.",
+				"desc": "หน่วยสนับสนุนของหุ่นจำลองที่สามารถอัญเชิญและคงกำลังเสริมจำนวนมากไว้ได้",
 				"level": 44,
 				"kind": "automata",
 				"noproc": true,
@@ -2213,7 +2213,7 @@
 				"spells": "mon_mk_clockknight_elite,mon_mk_clockmage,mon_mk_clockknight,mon_mk_clockservant",
 				"chaincast": 0.25,
 				"kind": "automata",
-				"desc": "What stands before you is a result of hubris unimaginable, borne out of desire to achieve immortality. It thinks it's Corivar. It most certainly is not.",
+				"desc": "สิ่งที่ยืนอยู่ตรงหน้าคุณคือผลลัพธ์ของความทะนงตนเกินจินตนาการ เกิดจากความปรารถนาจะเป็นอมตะ มันคิดว่ามันคือโคริวาร์ แต่มันไม่ใช่แน่นอน",
 				"noproc": true,
 				"hp": 4000,
 				"defense": 60,
@@ -2255,7 +2255,7 @@
 				"id": "mon_clockwork_core",
 				"tags": "clockwork",
 				"name": "corivar's castle core",
-				"desc": "A large mobile core that darts around the castle reshaping and remaking its subjects.",
+				"desc": "แกนกลางเคลื่อนที่ขนาดใหญ่ที่พุ่งไปมาทั่วปราสาทเพื่อปรับโฉมและสร้างบริวารของมันใหม่",
 				"kind": "automata",
 				"unique": true,
 				"level": 55,
@@ -2275,7 +2275,7 @@
 			{
 				"id": "mon_clockcrow",
 				"name": "mechanical crow",
-				"desc": "A mechanical crow-like contraption, it watches with gemstone eyes.",
+				"desc": "กลไกรูปร่างคล้ายอีกาคอยเฝ้าดูด้วยดวงตาอัญมณี",
 				"kind": "puppet",
 				"tags": "clockwork",
 				"noproc": true,
@@ -2292,7 +2292,7 @@
 			{
 				"id": "mon_clockservant",
 				"name": "automata servant",
-				"desc": "A shining servant of the castle.",
+				"desc": "ผู้รับใช้ผู้เปล่งประกายของปราสาท",
 				"kind": "automata",
 				"tags": "clockwork",
 				"noproc": true,
@@ -2337,7 +2337,7 @@
 			{
 				"id": "mon_clockknight",
 				"name": "brass knight",
-				"desc": "A shining knight in brass armor.",
+				"desc": "อัศวินผู้เปล่งประกายในชุดเกราะทองเหลือง",
 				"kind": "automata",
 				"tags": "clockwork",
 				"noproc": true,
@@ -2375,7 +2375,7 @@
 			{
 				"id": "mon_clocksentry",
 				"name": "crossbow sentry",
-				"desc": "A ranged guard firing brass arrows.",
+				"desc": "ผู้คุมระยะไกลที่ยิงลูกธนูทองเหลือง",
 				"kind": "automata",
 				"tags": "clockwork",
 				"noproc": true,
@@ -2395,7 +2395,7 @@
 			{
 				"id": "mon_clockmage",
 				"name": "automated mage",
-				"desc": "A collection of runes, gems and brass able to cast a few spells.",
+				"desc": "ชุดรูน อัญมณี และทองเหลืองที่สามารถร่ายคาถาได้สองสามชนิด",
 				"kind": "automata",
 				"tags": "clockwork",
 				"noproc": true,
@@ -2414,7 +2414,7 @@
 			{
 				"id": "mon_clockscout",
 				"name": "copper scout",
-				"desc": "A fast moving, green cloaked rogue, looking to call out your every movement.",
+				"desc": "จอมโจรสวมเสื้อคลุมเขียวเคลื่อนไหวรวดเร็ว จ้องจะเปิดเผยการเคลื่อนไหวทุกท่าของคุณ",
 				"kind": "automata",
 				"tags": "clockwork",
 				"level": 28,
@@ -2430,7 +2430,7 @@
 		"classes": [
 			{
 				"id": "puppeteer",
-				"desc": "Assemble and control mechanical minions.",
+				"desc": "ประกอบและควบคุมมินเนียนกลไก",
 				"tags": "t_tier1,t_craftingclass,t_minionclass,t_mechaclass",
 				"require": "g.t1unlocker>0&&g.puppetry>=5",
 				"mod": {
@@ -2442,13 +2442,13 @@
 					"puppetworkshop.max": 2,
 					"puppetautomation.max": 2
 				},
-				"flavor": "No matter what, the strings would not break.",
+				"flavor": "ไม่ว่าจะเกิดอะไรขึ้น เชือกก็ไม่มีวันขาด",
 				"sortOrder": 109
 			},
 			{
 				"id": "mechanist",
 				"name": "mechanist",
-				"desc": "Steel and magic",
+				"desc": "เหล็กและเวทมนตร์",
 				"tags": "t_tier3,t_craftingclass,t_minionclass,t_mechaclass",
 				"require": "g.t3unlocker>0&&g.machinacreation>=5&&g.tier3==0",
 				"cost": {
@@ -2465,13 +2465,13 @@
 					"machinagarage.max": 2,
 					"machinaautomation.max": 2
 				},
-				"flavor": "What is a man? An inefficient form of labor.",
+				"flavor": "มนุษย์คืออะไร? แรงงานรูปแบบหนึ่งที่ไร้ประสิทธิภาพ",
 				"sortOrder": 211
 			},
 			{
 				"id": "mechamancer",
 				"name": "mechamancer",
-				"desc": "Master of magical constructs",
+				"desc": "ผู้เชี่ยวชาญแห่งสิ่งก่อสร้างเวทมนตร์",
 				"tags": "t_tier5,t_craftingclass,t_minionclass,t_mechaclass",
 				"require": "g.t5unlocker>0&&g.magiphysics>=5&&g.machinacreation>=9&&g.t_mechaclass>0&&g.tier5==0",
 				"mod": {
@@ -2485,7 +2485,7 @@
 					"shapinglab.max": 2,
 					"automataautomation.max": 2
 				},
-				"flavor": "If you want a better future, make better people.",
+				"flavor": "หากคุณต้องการอนาคตที่ดีกว่า ก็ต้องสร้างคนให้ดีกว่า",
 				"sortOrder": 306
 			}
 		],
@@ -2493,7 +2493,7 @@
 			{
 				"id": "puppet_strawman",
 				"name": "scarecrow",
-				"desc": "A scarecrow winks at you.",
+				"desc": "หุ่นฟางขยิบตาให้คุณ",
 				"effect": {
 					"unease": "1~2",
 					"puppetry.exp": 1
@@ -2502,7 +2502,7 @@
 			{
 				"id": "puppet_rustedsickle",
 				"name": "rusted sickle",
-				"desc": "A rusted sickle lays abandoned. Curiously, it seems to have never had a handle.",
+				"desc": "เคียวสนิมวางทิ้งไว้ น่าแปลกที่ดูเหมือนมันไม่เคยมีด้ามจับมาก่อน",
 				"effect": {
 					"unease": "0~2",
 					"bf": "0~2",
@@ -2513,7 +2513,7 @@
 			{
 				"id": "puppet_farmer",
 				"name": "chatty farmer",
-				"desc": "You barely manage to escape his endless complaints about his rich neighbor.",
+				"desc": "คุณแทบหนีไม่พ้นเสียงบ่นไม่รู้จบของเขาเกี่ยวกับเพื่อนบ้านรวย",
 				"effect": {
 					"weary": "1~2",
 					"rage": "1~2",
@@ -2524,7 +2524,7 @@
 			{
 				"id": "puppet_remains",
 				"name": "blood",
-				"desc": "A crushed, mangled corpse of a critter lies in the fields, cut apart by an uncaring plow.",
+				"desc": "ซากสัตว์ตัวเล็กที่ถูกทับแหลกยับเยินนอนอยู่ในทุ่ง ถูกไถผ่านอย่างไม่ใยดี",
 				"effect": {
 					"unease": "1~2",
 					"rage": 2,
@@ -2535,7 +2535,7 @@
 			{
 				"id": "puppet_broken",
 				"name": "pile of wood?",
-				"desc": "Upon closer inspection it appears to be an old, discarded puppet.",
+				"desc": "เมื่อตรวจดูใกล้ ๆ ปรากฏว่ามันคือตุ๊กตาหุ่นเก่าที่ถูกทิ้ง",
 				"effect": {
 					"rage": "1~3",
 					"puppetry.exp": 1
@@ -2548,7 +2548,7 @@
 			{
 				"id": "puppet_plow",
 				"name": "automated plower",
-				"desc": "A lone mechanism plows the fields for its rich master.",
+				"desc": "กลไกเดียวดายกำลังไถนาประจำให้กับนายผู้ร่ำรวย",
 				"effect": {
 					"weary": "1~3",
 					"machinacreation.exp": 1
@@ -2560,7 +2560,7 @@
 			{
 				"id": "puppet_soil",
 				"name": "upturned soil",
-				"desc": "A patch of uneven ground with the soil exposed to the elements, likely to become barren. What kind of farmer misses something like this?",
+				"desc": "พื้นดินขรุขระผืนหนึ่งที่ดินถูกเปิดเปลือยกลางแจ้ง มีแนวโน้มจะกลายเป็นที่แห้งแล้ง คนทำนาประเภทไหนถึงมองไม่เห็นอะไรแบบนี้?",
 				"effect": {
 					"unease": "1~3",
 					"bf": "1~3",
@@ -2574,7 +2574,7 @@
 			{
 				"id": "puppet_scrapmachina",
 				"name": "scrap pile",
-				"desc": "A pile of scrap metal sits on the floor, once a useful mechanical servant",
+				"desc": "กองเศษเหล็กวางอยู่บนพื้น เคยเป็นผู้รับใช้กลไกที่มีประโยชน์",
 				"effect": {
 					"weary": "2~3",
 					"machinacreation.exp": 1
@@ -2586,7 +2586,7 @@
 			{
 				"id": "puppet_scout_eyeing",
 				"name": "darting figures",
-				"desc": "Someone's gaze is fixed on you from a distance, from time to time they move with inhuman speed.",
+				"desc": "สายตาของใครบางคนจับจ้องมาที่คุณจากระยะไกล บางครั้งพวกมันเคลื่อนไหวด้วยความเร็วเหนือมนุษย์",
 				"effect": {
 					"weary": "2~3",
 					"madness": "1~2",
@@ -2599,7 +2599,7 @@
 			{
 				"id": "puppet_mechanical_locks",
 				"name": "complex locks",
-				"desc": "A formerly-locked gate, the rusted and broken remains of the locks on the ground. Laid open for all to see, they reveal mechanisms that were once brilliantly complex.",
+				"desc": "ประตูที่เคยถูกล็อก เศษกุญแจขึ้นสนิมแตกหักเกลื่อนพื้น เมื่อเปิดเผยให้เห็น พวกมันเผยกลไกที่ครั้งหนึ่งเคยซับซ้อนอย่างชาญฉลาด",
 				"effect": {
 					"weary": "2~3"
 				},
@@ -2610,7 +2610,7 @@
 			{
 				"id": "puppet_mechanical_house",
 				"name": "far-off castle",
-				"desc": "A large castle in the distance, is it a trick of the eye or are the windows themselves moving?",
+				"desc": "ปราสาทขนาดใหญ่ในระยะไกล มันเป็นภาพลวงตาหรือหน้าต่างกำลังเคลื่อนไหวเองกันแน่?",
 				"level": 2,
 				"effect": {
 					"weary": "1~2",
@@ -2623,7 +2623,7 @@
 			{
 				"id": "puppet_roads",
 				"name": "clear pathing",
-				"desc": "Small roads even out here are clear of any growth. Good for getting some reading done while you travel.",
+				"desc": "ถนนเล็ก ๆ แม้แต่ตรงนี้ก็สะอาดไร้พืชขึ้น เหมาะที่จะอ่านหนังสือระหว่างเดินทาง",
 				"level": 2,
 				"effect": {
 					"bf": "1~2",
@@ -2633,7 +2633,7 @@
 			{
 				"id": "puppet_fallen_scout",
 				"name": "rusted scrap pile",
-				"desc": "A corroded green pile of scrap with a gemstone in the wreck. Did it just try and move?",
+				"desc": "กองเศษซากสีเขียวผุกร่อนพร้อมอัญมณีกลางซาก มันเพิ่งพยายามขยับหรือเปล่าน่ะ?",
 				"effect": {
 					"weary": "2~3",
 					"unease": "1~3"
@@ -2645,7 +2645,7 @@
 			{
 				"id": "puppet_deadanimal",
 				"name": "rotten corpse",
-				"desc": "A brutally butchered animal, left to rot. Who would do this in the middle of nowhere?",
+				"desc": "ซากสัตว์ที่ถูกชำแหละอย่างโหดเหี้ยมทิ้งให้เน่าเปื่อย ใครกันที่ทำแบบนี้ในที่เปลี่ยวแบบนี้?",
 				"effect": {
 					"rage": "2~3",
 					"unease": "1~3"
@@ -2658,7 +2658,7 @@
 			{
 				"id": "puppet_unmaintainedgrowth",
 				"name": "overrun gardens",
-				"desc": "Large patches of plants tangle around rusted scrap halting its movement.",
+				"desc": "ต้นไม้ขึ้นหนาเป็นหย่อมใหญ่พัวพันรอบเศษเหล็กสนิมทำให้มันหยุดนิ่ง",
 				"level": 2,
 				"effect": {
 					"weary": "2~3",
@@ -2673,7 +2673,7 @@
 			{
 				"id": "puppet_roamingtender",
 				"name": "landscapers",
-				"desc": "Automated laborers seen at a distance still maintain the closest grounds of the castle.",
+				"desc": "คนงานอัตโนมัติที่มองเห็นแต่ไกลยังคงดูแลพื้นที่ใกล้เคียงปราสาท",
 				"effect": {
 					"bf": "2~3",
 					"naturelore.exp": 1
@@ -2685,7 +2685,7 @@
 			{
 				"id": "puppet_fazbitservants",
 				"name": "fazbit's helpers",
-				"desc": "Still maintaining the workshop after centuries... as much as they can",
+				"desc": "ยังคงดูแลเวิร์กช็อปต่อไปแม้ผ่านไปหลายศตวรรษ... เท่าที่พวกมันจะทำได้",
 				"effect": {
 					"weary": "1~3",
 					"machinacreation.exp": 1,
@@ -2701,7 +2701,7 @@
 			{
 				"id": "loosecog",
 				"name": "loose cog",
-				"desc": "Large enough to accomodate a finger.",
+				"desc": "ใหญ่พอที่จะสอดนิ้วเข้าไปได้",
 				"unique": true,
 				"level": 1,
 				"armor": 2,
@@ -2720,7 +2720,7 @@
 				"id": "brassbauble",
 				"name": "brass bauble",
 				"type": "armor",
-				"desc": "A small piece of brass, resembling a good luck charm. It makes your skin shine like metal.",
+				"desc": "ทองเหลืองชิ้นเล็ก ๆ รูปทรงคล้ายเครื่องรางนำโชค มันทำให้ผิวของคุณเปล่งประกายเหมือนโลหะ",
 				"tags": "t_bauble",
 				"unique": true,
 				"level": 5,
@@ -2739,7 +2739,7 @@
 			{
 				"id": "localfields",
 				"name": "Village fields",
-				"desc": "The nearby village's fields are vast and full of opportunity for an aspiring mage.",
+				"desc": "ทุ่งนาของหมู่บ้านใกล้เคียงกว้างใหญ่และเต็มไปด้วยโอกาสสำหรับพ่อมดผู้ใฝ่ฝัน",
 				"tags": "site_of_learning",
 				"level": 1,
 				"require": "evt_helper",
@@ -2773,7 +2773,7 @@
 				"id": "clockcastle_grounds",
 				"name": "Corivar's Castle Courtyard",
 				"tags": "site_of_learning",
-				"desc": "The large grounds before the locked away estate once owned by Corivar.",
+				"desc": "พื้นที่กว้างใหญ่เบื้องหน้าคฤหาสน์ที่ถูกปิดตายซึ่งครั้งหนึ่งเคยเป็นของโคริวาร์",
 				"level": 17,
 				"dist": 800,
 				"require": "evt_puppet_locallord",
@@ -2811,7 +2811,7 @@
 			{
 				"id": "clockwork_castle",
 				"name": "Corivar's Castle",
-				"desc": "A large castle moving and shaping itself endlessly.",
+				"desc": "ปราสาทขนาดใหญ่ที่เคลื่อนไหวและปรับเปลี่ยนรูปร่างของตัวเองไม่รู้จบ",
 				"difficulty": "💀💀💀💀",
 				"sortOrder": 55,
 				"require": "g.magiphysics>=5&&g.clockcastle_grounds>=1",
@@ -2849,7 +2849,7 @@
 				"name": "Clockwork sanctum",
 				"unreturnable": true,
 				"sym": "⚔💀",
-				"desc": "In the innermost part of a castle you find a chamber, guarded by unusually well-armed automata. it's clear that whatever's controlling the castle is here.",
+				"desc": "ในส่วนในสุดของปราสาทคุณพบห้องหนึ่ง มีออโตมาตาติดอาวุธหนักหน่วงผิดปกติคอยเฝ้า เห็นได้ชัดว่าสิ่งที่คุมปราสาทอยู่ตรงนี้",
 				"require": "g.clockwork_castle>0",
 				"level": 17,
 				"dist": 800,
@@ -2878,13 +2878,13 @@
 			{
 				"id": "evt_puppet_locallord",
 				"name": "Faraway Estate",
-				"desc": "A quick visit to the village's headsman confirms rumors of a castle, which, despite being abandoned for as long as anyone can remember, still appears to be in pristine condition.",
+				"desc": "การแวะเยี่ยมหัวหน้าหมู่บ้านโดยเร็วยืนยันข่าวลือเรื่องปราสาทซึ่งแม้จะถูกทิ้งร้างตราบเท่าที่ใครจะจำได้ แต่ยังคงอยู่ในสภาพสมบูรณ์",
 				"require": "g.localfields>0&&g.fazbitshop>0"
 			},
 			{
 				"id": "evt_clockwork_core",
 				"name": "Clockwork core",
-				"desc": "In the remains of Corivar's replica you find an odd brass orb, serving as it's core. It must certainly be worth studying.",
+				"desc": "ในซากหุ่นจำลองของโคริวาร์คุณพบทรงกลมทองเหลืองประหลาดซึ่งทำหน้าที่เป็นแกนกลาง มันต้องคุ้มค่าที่จะศึกษาอย่างแน่นอน",
 				"require": "g.clockwork_castle_core>0"
 			}
 		],
@@ -2896,7 +2896,7 @@
 						"name": "runed brass orb",
 						"sym": "🏰",
 						"tags": "hall",
-						"desc": "An orb consisting of multiple layers of brass, each covered in runes too tiny to have been engraved by human hand. It appears to contain memories belonging to Corivar, but so far no method has succeeded in retrieving them.",
+						"desc": "ทรงกลมที่ประกอบด้วยทองเหลืองหลายชั้น แต่ละชั้นปกคลุมด้วยรูนเล็กเกินกว่ามือมนุษย์จะสลักได้ ดูเหมือนมันบรรจุความทรงจำของโคริวาร์ไว้ แต่จนถึงตอนนี้ยังไม่มีวิธีใดดึงมันออกมาได้",
 						"require": "g.evt_clockwork_core>0",
 						"max": 1,
 						"mod": {
