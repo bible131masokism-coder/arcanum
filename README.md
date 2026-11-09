@@ -82,9 +82,9 @@ Vite จะแสดง URL ของเซิร์ฟเวอร์พัฒ�
 **แปลแล้วครบ:**
 - **ส่วนติดต่อผู้ใช้ (UI)** — ปุ่ม เมนู หัวข้อ ทูลทิป ใน `src/ui/**/*.vue` ครบทั้งหมด
 - **ข้อมูลเกมหลัก** — `events, quests, classes, skills, dungeons, locales, homes, encounters, potions, furniture, resources, hall, tasks, upgrades, monsters, spells, potencies, reagents, rares, titles, stressors, player`
-- **โมดูล (data/modules)** — แปลเนื้อเรื่อง/คำอธิบายของโมดูลครบทุกไฟล์: questing, sackmakers, patrons, shian, spring, companions, combattutorial, priest, debitoomancy, ritualist, reedburgh, timerip, swordplay, duelist, martial, learning, beltane (+legacy), cthulhu, sublimation, extraaction, shopkeeping, contributors, familiars, furniture_upgrades, equipment/*, fool (+legacy), legacy_winter, halloween_shapeshifting, legacy_halloween, puppeteer, pyromancer, shadow เป็นต้น
+- **โมดูล (data/modules)** — แปลเนื้อเรื่อง/คำอธิบายของโมดูลครบทุกไฟล์: questing, sackmakers, patrons, shian, spring, companions, combattutorial, priest, debitoomancy, ritualist, reedburgh, timerip, swordplay, duelist, martial, learning, beltane (+legacy), cthulhu, sublimation, extraaction, shopkeeping, contributors, familiars, furniture_upgrades, equipment/*, fool (+legacy), legacy_winter, halloween_shapeshifting, legacy_halloween, puppeteer, pyromancer, shadow, winter, halloween, hallgloss เป็นต้น
 
-**อยู่ระหว่างดำเนินการ (ไฟล์ใหญ่):** `hallgloss`
+**อยู่ระหว่างดำเนินการ (ไฟล์ใหญ่):** — (เสร็จครบทุกไฟล์แล้ว ✅)
 
 ## Highlights
 

@@ -11,26 +11,26 @@
 						"group": "player",
 						"tags": "t_gloss_game_mechanic",
 						"desc": [
-							"'Dark and selfish deeds follow you, leaving a stain on your soul.'",
+							"'การกระทำอันมืดดำและเห็นแก่ตัวตามติดตัวคุณ ทิ้งรอยมลทินไว้บนวิญญาณ'",
 							"",
-							"➢ Evil amount is generally granted by actions tagged as either 'Evil Acts' or 'Vile Acts', with you being able to check your evil score in the Player Tab.",
-							"Some of the best ways to earn evil in the early game is through Arcane Thievery, unlocked via the Trickery skill, and Murder, unlocked via the Anatomy and Umbramancy skills.",
+							"➢ ระดับความชั่วร้ายโดยทั่วไปได้มาจากการกระทำที่ติดป้ายว่า 'การกระทำชั่วร้าย' หรือ 'การกระทำเลวทราม' โดยคุณสามารถตรวจสอบคะแนนความชั่วร้ายได้ในแท็บผู้เล่น",
+							"วิธีหาความชั่วร้ายที่ดีที่สุดบางวิธีในช่วงต้นเกมคือการขโมยเวท ที่ปลดล็อกผ่านสกิลกลโกง และการฆาตกรรม ที่ปลดล็อกผ่านสกิลกายวิภาคและอัมบราแมนซี",
 							"",
-							"➢ Sufficient amounts of evil will either automatically grant or unlock the ability to select evil moralities which boost your shadow magic at the expense of light magic.",
-							"These evil moralities are necessary for unlocking many of the evil classes.",
+							"➢ ระดับความชั่วร้ายที่เพียงพอจะมอบหรือปลดล็อกความสามารถในการเลือกศีลธรรมชั่วร้ายซึ่งเสริมเวทมนตร์เงาของคุณโดยแลกกับเวทมนตร์แสง",
+							"ศีลธรรมชั่วร้ายเหล่านี้จำเป็นต่อการปลดล็อกคลาสชั่วร้ายหลายคลาส",
 							"",
-							"➢ With high enough evil, you will be prevented from performing 'Good Acts' and 'Virtuous Acts' altogether and unable to cast the stronger light healing spells.",
-							"Such restrictions generally begin from the 'Sinister' level of evil morality.",
+							"➢ ด้วยความชั่วร้ายสูงพอ คุณจะถูกกันไม่ให้กระทำ 'การกระทำดี' และ 'การกระทำมีคุณธรรม' โดยสิ้นเชิง และไม่สามารถร่ายคาถารักษาแสงอันทรงพลังได้",
+							"ข้อจำกัดดังกล่าวโดยทั่วไปเริ่มจากระดับ 'ร้ายกาจ' ของศีลธรรมชั่วร้าย",
 							"",
-							"➢ The progression of evil moralities are as follows:",
-							"• Immoral - Automatically granted - Have an evil score of 5.",
-							"• Wicked - Automatically granted - Have an evil score of 250.",
-							"• Vile - Automatically granted - Have an evil score of 500 or Graduate via Slaying your Master. Requires Tier 0.",
-							"• Sinister - Have an evil score of 1000. Requires Tier 1.",
-							"• Irredeemable - Have an evil score of 2000. Requires Tier 3.",
-							"• Malevolence - Requires Tier 4. Never earned the 'Respectable' morality trait. (Check the 'Virtue' glossary to see how to avoid it.)",
+							"➢ ลำดับขั้นของศีลธรรมชั่วร้ายมีดังนี้:",
+							"• ไร้ศีลธรรม - ได้รับโดยอัตโนมัติ - มีคะแนนความชั่วร้าย 5",
+							"• ชั่วร้าย - ได้รับโดยอัตโนมัติ - มีคะแนนความชั่วร้าย 250",
+							"• เลวทราม - ได้รับโดยอัตโนมัติ - มีคะแนนความชั่วร้าย 500 หรือสำเร็จการศึกษาด้วยการสังหารนายของตน ต้องมี Tier 0",
+							"• ร้ายกาจ - มีคะแนนความชั่วร้าย 1000 ต้องมี Tier 1",
+							"• ไม่อาจไถ่บาปได้ - มีคะแนนความชั่วร้าย 2000 ต้องมี Tier 3",
+							"• จิตใจมุ่งร้าย - ต้องมี Tier 4 ไม่เคยได้รับศีลธรรม 'น่านับถือ' (ดูอภิธานศัพท์ 'คุณธรรม' เพื่อดูวิธีหลีกเลี่ยง)",
 							"",
-							"➢ It is possible to back out of evil and become virtuous as long as you are not Irredeemable."
+							"➢ เป็นไปได้ที่จะถอนตัวจากความชั่วร้ายและกลายเป็นผู้มีคุณธรรม ตราบใดที่คุณยังไม่ใช่ผู้ไม่อาจไถ่บาปได้"
 						],
 						"require": "g.evilamt>0||g.virtue>0"
 					},
@@ -41,27 +41,27 @@
 						"group": "player",
 						"tags": "t_gloss_game_mechanic",
 						"desc": [
-							"'Kind and selfless acts can shine a light in the darkest of places.'",
+							"'การกระทำอันเมตตาและไม่เห็นแก่ตัวสามารถส่องแสงในที่มืดมิดที่สุด'",
 							"",
-							"➢ Virtue amount is generally granted by actions tagged as either 'Good Acts' or 'Virtuous Acts', with you being able to check your virtue score in the Player Tab.",
-							"Some of the best ways to earn virtue in the early game is through Tend Animals, unlocked after Graduation, and Treat Ailments, unlocked via the Anatomy skill as a Neophyte.",
-							"As an apprentice, simply performing errands and doing chores for your master will provide some virtue however, this source is finite as after their final improvement they will only provide gold.",
+							"➢ ระดับคุณธรรมโดยทั่วไปได้มาจากการกระทำที่ติดป้ายว่า 'การกระทำดี' หรือ 'การกระทำมีคุณธรรม' โดยคุณสามารถตรวจสอบคะแนนคุณธรรมได้ในแท็บผู้เล่น",
+							"วิธีหาคุณธรรมที่ดีที่สุดบางวิธีในช่วงต้นเกมคือการดูแลสัตว์ ที่ปลดล็อกหลังสำเร็จการศึกษา และการรักษาโรค ที่ปลดล็อกผ่านสกิลกายวิภาคเมื่อเป็นศิษย์ใหม่",
+							"ในฐานะเด็กฝึกหัด การทำงานธุระและงานบ้านให้อาจารย์จะให้คุณธรรมบางส่วน อย่างไรก็ตาม แหล่งนี้มีจำกัด เพราะหลังการปรับปรุงครั้งสุดท้ายของมันจะให้เพียงทองคำ",
 							"",
-							"➢ Sufficient amounts of virtue will either automatically grant or unlock the ability to select good moralities which boost your light magic at the expense of shadow magic.",
-							"These good moralities are necessary for unlocking all the good classes.",
+							"➢ ระดับคุณธรรมที่เพียงพอจะมอบหรือปลดล็อกความสามารถในการเลือกศีลธรรมดีซึ่งเสริมเวทมนตร์แสงของคุณโดยแลกกับเวทมนตร์เงา",
+							"ศีลธรรมดีเหล่านี้จำเป็นต่อการปลดล็อกคลาสดีทั้งหมด",
 							"",
-							"➢ With high enough virtue, you will be prevented from performing 'Evil Acts' and 'Vile Acts' altogether and unable to cast the strongest draining shadow spells.",
-							"Such restrictions generally begin from the 'Scrupulous' level of good morality.",
+							"➢ ด้วยคุณธรรมสูงพอ คุณจะถูกกันไม่ให้กระทำ 'การกระทำชั่วร้าย' และ 'การกระทำเลวทราม' โดยสิ้นเชิง และไม่สามารถร่ายคาถาเงาที่ดูดพลังอันทรงพลังที่สุดได้",
+							"ข้อจำกัดดังกล่าวโดยทั่วไปเริ่มจากระดับ 'เคร่งครัด' ของศีลธรรมดี",
 							"",
-							"➢ The progression of good moralities are as follows:",
-							"• Decent - Automatically granted - Have a virtue score of 90 while having less than 200 evil. Your virtue must exceed your evil by 90.",
-							"• Respectable - Automatically granted - Have a virtue score of 375 while having less than 100 evil. Your virtue must exceed your evil by 250.",
-							"• Virtuous - Automatically granted - Have a virtue score of 750 while having less than 50 evil. Your virtue must exceed your evil by 750. Requires Tier 0.",
-							"• Scrupulous - Have a virtue score of 1500 while having no evil. Requires Tier 1.",
-							"• Incorruptible - Have a virtue score of 3000 while having no evil. Requires Tier 3.",
-							"• Benevolent - Requires Tier 4. Never earned the 'Wicked' morality trait. (Check the 'Evil' glossary to see how to avoid it.)",
+							"➢ ลำดับขั้นของศีลธรรมดีมีดังนี้:",
+							"• เหมาะสม - ได้รับโดยอัตโนมัติ - มีคะแนนคุณธรรม 90 โดยมีความชั่วร้ายน้อยกว่า 200 คุณธรรมของคุณต้องมากกว่าความชั่วร้าย 90",
+							"• น่านับถือ - ได้รับโดยอัตโนมัติ - มีคะแนนคุณธรรม 375 โดยมีความชั่วร้ายน้อยกว่า 100 คุณธรรมของคุณต้องมากกว่าความชั่วร้าย 250",
+							"• มีคุณธรรม - ได้รับโดยอัตโนมัติ - มีคะแนนคุณธรรม 750 โดยมีความชั่วร้ายน้อยกว่า 50 คุณธรรมของคุณต้องมากกว่าความชั่วร้าย 750 ต้องมี Tier 0",
+							"• เคร่งครัด - มีคะแนนคุณธรรม 1500 โดยไร้ความชั่วร้าย ต้องมี Tier 1",
+							"• ไร้ที่ติ - มีคะแนนคุณธรรม 3000 โดยไร้ความชั่วร้าย ต้องมี Tier 3",
+							"• ใจบุญ - ต้องมี Tier 4 ไม่เคยได้รับศีลธรรม 'ชั่วร้าย' (ดูอภิธานศัพท์ 'ความชั่วร้าย' เพื่อดูวิธีหลีกเลี่ยง)",
 							"",
-							"➢ It is possible to abandon virtue and become evil as long as you are not Incorruptible."
+							"➢ เป็นไปได้ที่จะละทิ้งคุณธรรมและกลายเป็นคนชั่วร้าย ตราบใดที่คุณยังไม่ไร้ที่ติ"
 						],
 						"require": "g.evilamt>0||g.virtue>0"
 					},
@@ -72,29 +72,29 @@
 						"group": "player",
 						"tags": "t_gloss_game_mechanic",
 						"desc": [
-							"'You're above this illusion of choice.'",
+							"'คุณอยู่เหนือภาพลวงตาแห่งการเลือกนี้'",
 							"",
-							"➢ Neutrality is represented by various morality options that require you to strike a balance between Virtue and Evil.",
+							"➢ ความเป็นกลางแสดงด้วยตัวเลือกศีลธรรมต่าง ๆ ที่กำหนดให้คุณสร้างสมดุลระหว่างคุณธรรมและความชั่วร้าย",
 							"",
-							"➢ The first shared step in this path is the Vow of Neutrality, which requires you to be :",
-							"• Either Decent and Immoral, or neither.",
-							"• Either Respectable and Wicked, or neither.",
-							"• Either Virtuous and Vile, or neither.",
-							"• Have graduated from Apprenticeship",
-							"You can learn more about the mentioned moralities in the 'Good' and 'Evil' glossary entries.",
+							"➢ ขั้นร่วมแรกในเส้นทางนี้คือคำปฏิญาณความเป็นกลาง ซึ่งกำหนดให้คุณเป็น:",
+							"• มีทั้งเหมาะสมและไร้ศีลธรรม หรือไม่มีทั้งสองอย่าง",
+							"• มีทั้งน่านับถือและชั่วร้าย หรือไม่มีทั้งสองอย่าง",
+							"• มีทั้งมีคุณธรรมและเลวทราม หรือไม่มีทั้งสองอย่าง",
+							"• สำเร็จการศึกษาจากการฝึกหัด",
+							"คุณสามารถเรียนรู้เพิ่มเติมเกี่ยวกับศีลธรรมที่กล่าวถึงได้ในรายการอภิธานศัพท์ 'ดี' และ 'ความชั่วร้าย'",
 							"",
-							"➢ It then splits into: 1) The Detached path - which weakens both Light and Shadow to specialize in Nature and Spirit, eventually losing access to all Good, Virtuous, Evil and Sinister Acts, and 2) The Equilibrium path - which excels at both Light and Shadow, maintaining the full spectrum of actions.",
-							"The progression of the Detached path is as follows:",
-							"• Detached - Be Neutral. Be neither Vile nor Virtuous. Have 200 or less Virtue. Have 200 or less Evil. Requires Tier 1.",
-							"• Amoral - Be neither Wicked nor Respectable. Have 200 or less Virtue. Have 200 or less Evil. Requires Tier 3.",
+							"➢ จากนั้นมันแยกเป็น: 1) เส้นทางไม่ผูกพัน - ซึ่งทำให้ทั้งแสงและเงาอ่อนลงเพื่อเชี่ยวชาญธรรมชาติและวิญญาณ ในที่สุดเสียการเข้าถึงการกระทำดี มีคุณธรรม ชั่วร้าย และร้ายกาจทั้งหมด และ 2) เส้นทางสมดุล - ซึ่งเก่งทั้งแสงและเงา รักษาสเปกตรัมการกระทำทั้งหมด",
+							"ลำดับขั้นของเส้นทางไม่ผูกพันมีดังนี้:",
+							"• ไม่ผูกพัน - เป็นกลาง อย่าเป็นทั้งเลวทรามและมีคุณธรรม มีคุณธรรมไม่เกิน 200 มีความชั่วร้ายไม่เกิน 200 ต้องมี Tier 1",
+							"• ไร้ศีลธรรม - อย่าเป็นทั้งชั่วร้ายและน่านับถือ มีคุณธรรมไม่เกิน 200 มีความชั่วร้ายไม่เกิน 200 ต้องมี Tier 3",
 							"",
-							"The progression of the Equilibrium path is as follows:",
-							"• Balanced - Be Neutral. Be both Wicked and Respectable. Have 350 Virtue. Have 350 Evil. Requires Tier 1.",
-							"• In Equilibrium - Be both Vile and Virtuous. Have 750 Virtue. Have 750 Evil. Requires Tier 3.",
+							"ลำดับขั้นของเส้นทางสมดุลมีดังนี้:",
+							"• สมดุล - เป็นกลาง เป็นทั้งชั่วร้ายและน่านับถือ มีคุณธรรม 350 มีความชั่วร้าย 350 ต้องมี Tier 1",
+							"• อยู่ในสมดุล - เป็นทั้งเลวทรามและมีคุณธรรม มีคุณธรรม 750 มีความชั่วร้าย 750 ต้องมี Tier 3",
 							"",
-							"After becoming either Amoral or In Equilibrium, you will get to specialize in either Spirit or Nature at Tier 4.",
+							"หลังจากเป็นไร้ศีลธรรมหรืออยู่ในสมดุลแล้ว คุณจะได้เชี่ยวชาญวิญญาณหรือธรรมชาติใน Tier 4",
 							"",
-							"➢ It is possible to abandon the Vow of Neutrality, but only if you are Neutral. Gaining another morality in either branch of Neutrality will no longer allow abandonment."
+							"➢ เป็นไปได้ที่จะละทิ้งคำปฏิญาณความเป็นกลาง แต่เฉพาะเมื่อคุณเป็นกลางเท่านั้น การได้ศีลธรรมอื่นในสาขาใดก็ตามของความเป็นกลางจะไม่อนุญาตให้ละทิ้งอีกต่อไป"
 						],
 						"require": "g.evilamt>0||g.virtue>0"
 					},
@@ -105,25 +105,25 @@
 						"group": "skills",
 						"tags": "t_gloss_game_mechanic,t_gloss_skill",
 						"desc": [
-							"➢ Skills are the principal requirement for most unlocks in Arcanum and typically cost research or arcana to purchase.",
-							"It is always beneficial to purchase skills and there is no advantage in delaying or skipping any of them.",
+							"➢ สกิลคือข้อกำหนดหลักสำหรับการปลดล็อกส่วนใหญ่ในอาคานัม และโดยทั่วไปต้องใช้การวิจัยหรืออาคานาในการซื้อ",
+							"การซื้อสกิลมีประโยชน์เสมอ และไม่มีข้อดีในการเลื่อนหรือข้ามสกิลใดเลย",
 							"",
-							"➢ Almost all skills start with a max of 5 and have many specific ways to increase their max such as through upgrades, tasks or encounters tagged as 'Sites of Learning'.",
+							"➢ สกิลเกือบทั้งหมดเริ่มต้นที่สูงสุด 5 และมีวิธีเฉพาะหลายวิธีในการเพิ่มค่าสูงสุด เช่น ผ่านอัปเกรด ภารกิจ หรือการเผชิญหน้าที่ติดป้าย 'สถานที่เรียนรู้'",
 							"",
-							"➢ You can train a skill using up an action slot, which will increase the skill's experience each second by its rate, while simultaneously using focus for the fastest speed.",
-							"A skill can only level up if an action slot is dedicated to it. Any overflow experience is lost when a skill levels up.",
+							"➢ คุณสามารถฝึกสกิลโดยใช้ช่องการกระทำหนึ่งช่อง ซึ่งจะเพิ่มประสบการณ์ของสกิลทุกวินาทีตามอัตราของมัน ขณะเดียวกันก็ใช้โฟกัสเพื่อความเร็วสูงสุด",
+							"สกิลจะเลเวลอัปได้ก็ต่อเมื่อมีช่องการกระทำอุทิศให้มัน ประสบการณ์ที่เกินจะสูญหายไปเมื่อสกิลเลเวลอัป",
 							"",
-							"➢ You can also gain experience through some alternative means such as certain tasks, encounters in Locales and casting spells. However, training skills is the main method.",
+							"➢ คุณยังได้รับประสบการณ์ผ่านวิธีอื่น เช่น ภารกิจบางอย่าง การเผชิญหน้าในสถานที่ และการร่ายคาถา อย่างไรก็ตาม การฝึกสกิลคือวิธีหลัก",
 							"",
-							"➢ Most skills provide all their unlocks by level 25, with mage lore being the main exception having its final unlock at level 35.",
+							"➢ สกิลส่วนใหญ่ให้การปลดล็อกทั้งหมดที่เลเวล 25 โดยความรู้เวทเป็นข้อยกเว้นหลักที่มีการปลดล็อกสุดท้ายที่เลเวล 35",
 							"",
-							"➢ Arcana is the primary cost of skills with the strongest skills costing over a hundred.",
-							"You passively generate arcana due to skills, with Mage Lore and Mysticism being amongst the earliest.",
-							"Early on, Mage Lore will be the primary source of max arcana, however later in the game, tomes will also greatly assist with this resource.",
+							"➢ อาคานาคือค่าใช้จ่ายหลักของสกิล โดยสกิลที่ทรงพลังที่สุดมีราคาเกินหนึ่งร้อย",
+							"คุณสร้างอาคานาแบบไม่ต้องลงมือเนื่องจากสกิล โดยความรู้เวทและเวทเวทย์เป็นหนึ่งในแหล่งแรกสุด",
+							"ในช่วงต้น ความรู้เวทจะเป็นแหล่งหลักของอาคานาสูงสุด แต่ในเกมช่วงหลัง ตำราจะช่วยทรัพยากรนี้ได้อย่างมากเช่นกัน",
 							"",
-							"➢ You can also gain an appreciable lump sum of arcana for completing Locales (Non-Combat Adventures).",
-							"This can be further boosted by the 'Spirit Communion' skill, which unlocks a spell which increases your arcana generation while in Locales.",
-							"Certain Locales are also necessary for obtaining upgrades which help with Arcana."
+							"➢ คุณยังได้รับอาคานาจำนวนมากที่เห็นได้ชัดจากการสำเร็จสถานที่ (การผจญภัยที่ไม่ใช่การต่อสู้)",
+							"สิ่งนี้สามารถเพิ่มขึ้นอีกด้วยสกิล 'การสื่อสารวิญญาณ' ซึ่งปลดล็อกคาถาที่เพิ่มการสร้างอาคานาของคุณขณะอยู่ในสถานที่",
+							"สถานที่บางแห่งยังจำเป็นต่อการได้รับอัปเกรดที่ช่วยเรื่องอาคานา"
 						],
 						"require": "apprentice",
 						"suppressUnlock": true
@@ -135,11 +135,11 @@
 						"group": "skills",
 						"tags": "t_gloss_game_mechanic,t_gloss_skill",
 						"desc": [
-							"➢ Focus consumes mana to grant skill experience. If a skill has no other skill rate boosts specific to itself, focus increases the speed of training it by ~40% if it is permanently active.",
+							"➢ โฟกัสใช้มานาเพื่อให้ประสบการณ์สกิล หากสกิลไม่มีอัตราเพิ่มเฉพาะของตัวเอง โฟกัสจะเพิ่มความเร็วในการฝึกมันราว 40% หากเปิดใช้งานถาวร",
 							"",
-							"➢ If you have multiple action slots and use them to train multiple skills simultaneously, only the topmost skill in your action list will be affected by Focus.",
+							"➢ หากคุณมีช่องการกระทำหลายช่องและใช้ฝึกหลายสกิลพร้อมกัน มีเพียงสกิลบนสุดในรายการการกระทำของคุณเท่านั้นที่จะได้รับผลจากโฟกัส",
 							"",
-							"➢ It's recommended to toggle on Autofocus by clicking it above your actions, for the sake of your wrist and as its mana cost quickly becomes negligible."
+							"➢ แนะนำให้เปิดโฟกัสอัตโนมัติโดยคลิกที่มันเหนือการกระทำของคุณ เพื่อดูแลข้อมือของคุณ และเพราะค่ามานาของมันกลายเป็นเรื่องเล็กน้อยอย่างรวดเร็ว"
 						],
 						"require": "mana"
 					},
@@ -150,26 +150,26 @@
 						"group": "equipment",
 						"tags": "t_gloss_game_mechanic,t_gloss_enchant",
 						"desc": [
-							"➢ Enchants are applied to a piece of equipment to permanently modify it and improve its effectiveness in combat.",
-							"There is a wide variety in how an enchant can modify an item, from granting entirely new attacks to weapons to increasing defense to granting resistance to various damage or status types.",
-							"It is necessary to stack these resistances to reasonably clear some of the hardest dungeons.",
+							"➢ เอนแชนต์ถูกใช้กับอุปกรณ์หนึ่งชิ้นเพื่อปรับเปลี่ยนอย่างถาวรและเพิ่มประสิทธิภาพของมันในการต่อสู้",
+							"มีหลากหลายวิธีที่เอนแชนต์สามารถปรับเปลี่ยนไอเทมได้ ตั้งแต่การให้การโจมตีใหม่ทั้งหมดแก่อาวุธ ไปจนถึงการเพิ่มการป้องกัน หรือการให้ความต้านทานต่อความเสียหายหรือสถานะประเภทต่าง ๆ",
+							"จำเป็นต้องสะสมความต้านทานเหล่านี้เพื่อเคลียร์ดันเจี้ยนที่ยากที่สุดบางแห่งได้อย่างสมเหตุสมผล",
 							"",
-							"➢ The Enchanting skill is unlocked at 11 Mage Lore once you've reached Tier 1.",
-							"The magic gems required for its purchase can be obtained by exploring the various Locales you have unlocked by this point.",
+							"➢ สกิลเอนแชนต์ติ้งถูกปลดล็อกที่ความรู้เวท 11 เมื่อคุณถึง Tier 1",
+							"อัญมณีเวทที่ต้องใช้ในการซื้อมันหาได้จากการสำรวจสถานที่ต่าง ๆ ที่คุณปลดล็อกถึงจุดนี้",
 							"",
-							"➢ Unlocking enchants has an upfront cost, and another smaller cost each time you wish to apply it.",
+							"➢ การปลดล็อกเอนแชนต์มีค่าใช้จ่ายล่วงหน้า และมีค่าใช้จ่ายเล็กกว่าทุกครั้งที่คุณต้องการใช้มัน",
 							"",
-							"➢ Each enchant is restricted to equipment which go in specific equip slots.",
-							"Besides that, to enchant an item it needs a number of unoccupied enchant levels equal or greater to that enchant's level.",
+							"➢ เอนแชนต์แต่ละชนิดถูกจำกัดไว้กับอุปกรณ์ที่ใส่ในช่องอุปกรณ์เฉพาะ",
+							"นอกเหนือจากนั้น ในการเอนแชนต์ไอเทม ต้องใช้จำนวนเลเวลเอนแชนต์ที่ว่างเท่ากับหรือมากกว่าเลเวลของเอนแชนต์นั้น",
 							"",
-							"➢ Equipment have enchant levels ranging from 1 on those crafted with basic materials to a max of 3 on the best material.",
-							"Most enchants have a level of 1 and thus only occupy one of the item's enchant levels, but there are certain higher level exceptions.",
+							"➢ อุปกรณ์มีเลเวลเอนแชนต์ตั้งแต่ 1 สำหรับที่ประดิษฐ์ด้วยวัสดุพื้นฐาน จนถึงสูงสุด 3 สำหรับวัสดุที่ดีที่สุด",
+							"เอนแชนต์ส่วนใหญ่มีเลเวล 1 จึงใช้เพียงหนึ่งในเลเวลเอนแชนต์ของไอเทม แต่มีข้อยกเว้นระดับสูงบางอย่าง",
 							"",
-							"➢ The Enchanting skill grants Enchanting Power as you level it which controls how much you can enchant at a time.",
+							"➢ สกิลเอนแชนต์ติ้งมอบพลังเอนแชนต์เมื่อคุณเพิ่มเลเวล ซึ่งควบคุมว่าคุณสามารถเอนแชนต์ได้ครั้งละเท่าไหร่",
 							"",
-							"➢ To perform an enchant, you need : An enchantsource furniture, a free action, and unused Enchanting Power equal to or greater than the enchant's level.",
-							"If you have sufficient Enchanting Power, you can enchant multiple items at once. Enchanting any number of items still only counts as one action.",
-							"For example, if you had an enchanting level of 5, you would have 5 Enchanting Power and could put a level 3 enchant on one item and a level 2 enchant on another item at the same time."
+							"➢ ในการทำเอนแชนต์ คุณต้องมี: เฟอร์นิเจอร์แหล่งเอนแชนต์ การกระทำที่ว่างหนึ่งช่อง และพลังเอนแชนต์ที่ยังไม่ได้ใช้เท่ากับหรือมากกว่าเลเวลของเอนแชนต์",
+							"หากคุณมีพลังเอนแชนต์เพียงพอ คุณสามารถเอนแชนต์หลายไอเทมพร้อมกันได้ การเอนแชนต์ไอเทมไม่ว่าจะกี่ชิ้นยังคงนับเป็นการกระทำเพียงหนึ่งครั้ง",
+							"ตัวอย่างเช่น หากคุณมีเลเวลเอนแชนต์ติ้ง 5 คุณจะมีพลังเอนแชนต์ 5 และสามารถใส่เอนแชนต์เลเวล 3 ลงบนไอเทมหนึ่งชิ้นและเอนแชนต์เลเวล 2 ลงบนอีกชิ้นพร้อมกันได้"
 						],
 						"require": "g.tier0>0"
 					},
@@ -180,22 +180,22 @@
 						"group": "combat",
 						"tags": "t_gloss_game_mechanic,t_gloss_combat",
 						"desc": [
-							"➢ Dying in combat has no penalty besides time lost in recuperation. Fights can be endlessly retried any number of times.",
+							"➢ การตายในการต่อสู้ไม่มีบทลงโทษ นอกเสียจากเวลาที่เสียไปกับการพักฟื้น การต่อสู้สามารถลองใหม่ได้ไม่จำกัดจำนวนครั้ง",
 							"",
-							"➢ Combat tends to give experience faster than exploration does, for the various benefits of levelling.",
-							"Monsters often drop loot, which can be used to craft equipment.",
+							"➢ การต่อสู้มักให้ประสบการณ์เร็วกว่าการสำรวจ เพื่อประโยชน์ต่าง ๆ ของการเลเวล",
+							"มอนสเตอร์มักดรอปของรางวัล ซึ่งใช้ประดิษฐ์อุปกรณ์ได้",
 							"",
-							"➢ Each combat turn (depends on your speed, 3.8 s at the start) you make one weapon attack and cast one spell from your memorized spelllist, going cyclically from top to bottom.",
-							"Therefore, it is optimal to keep all of your buffing spells at the top of your spelllist to ensure you are always benefitting from them.",
+							"➢ ในแต่ละเทิร์นการต่อสู้ (ขึ้นกับความเร็วของคุณ 3.8 วินาทีตอนเริ่ม) คุณโจมตีด้วยอาวุธหนึ่งครั้งและร่ายคาถาหนึ่งคาถาจากรายชื่อคาถาที่จดจำไว้ โดยวนจากบนลงล่าง",
+							"ดังนั้น จึงเหมาะสมที่สุดที่จะวางคาถาเสริมพลังทั้งหมดไว้บนสุดของรายชื่อคาถาเพื่อให้แน่ใจว่าคุณได้รับประโยชน์จากมันเสมอ",
 							"",
-							"➢ If a monster's life is reduced to 0, it dies and you obtain its loot. If no other monsters remain, you move to the next floor or clear the dungeon if it was the final floor.",
+							"➢ หากพลังชีวิตของมอนสเตอร์ลดถึง 0 มันก็ตายและคุณได้ของรางวัล หากไม่มีมอนสเตอร์เหลือแล้ว คุณก็ไปยังชั้นถัดไปหรือเคลียร์ดันเจี้ยนหากเป็นชั้นสุดท้าย",
 							"",
-							"➢ Monsters follow the same rules of speed and attacking, and if it reduces your life to 0, you have to try again, although your progress won't be lost unless you enter a different adventure before clearing it.",
-							"You can hover over a monster to see its attacks and other additional information pertaining to it.",
+							"➢ มอนสเตอร์เป็นไปตามกฎความเร็วและการโจมตีเดียวกัน และหากมันลดพลังชีวิตคุณถึง 0 คุณต้องลองใหม่ แม้ความคืบหน้าของคุณจะไม่สูญหายเว้นแต่คุณเข้าสู่การผจญภัยอื่นก่อนเคลียร์มัน",
+							"คุณสามารถเลื่อนเมาส์เหนือมอนสเตอร์เพื่อดูการโจมตีและข้อมูลเพิ่มเติมอื่น ๆ ที่เกี่ยวกับมัน",
 							"",
-							"➢ Experiment with a variety of offensive spells, buffs, debuffs, and heals to see what works for you and master the art of combat.",
+							"➢ ทดลองกับคาถาโจมตี การเสริมพลัง การลดพลัง และการรักษาหลากหลายเพื่อดูว่าอะไรเหมาะกับคุณ และเชี่ยวชาญศิลปะการต่อสู้",
 							"",
-							"➢ General advice - Memorize anything where you care about an effect with a duration, quickslot anything that has an instant effect."
+							"➢ คำแนะนำทั่วไป - จดจำทุกอย่างที่คุณต้องการเอฟเฟกต์แบบมีระยะเวลา และใส่ควิกสล็อตทุกอย่างที่มีเอฟเฟกต์ทันที"
 						],
 						"require": "g.evt_helper>0"
 					},
@@ -206,19 +206,19 @@
 						"group": "player",
 						"tags": "t_gloss_game_mechanic,t_gloss_player",
 						"desc": [
-							"➢ Levels are a measure of your wizard's experience. You can view your current Level and progress to the next Level in the Player Tab.",
+							"➢ เลเวลคือการวัดประสบการณ์ของพ่อมดของคุณ คุณสามารถดูเลเวลปัจจุบันและความคืบหน้าไปยังเลเวลถัดไปได้ในแท็บผู้เล่น",
 							"",
-							"➢ The benefits of Leveling Up are as follows: ",
-							"• 1 Max Spelllist Level",
-							"• 1 Max Stamina",
-							"• 1 Max Vigor",
-							"• 2 Max Life",
-							"• 1 Max Active Minions Levels every 5 Levels",
-							"• 1 Speed every 3 Levels",
+							"➢ ประโยชน์ของการเลเวลอัปมีดังนี้: ",
+							"• สูงสุดรายชื่อคาถา 1",
+							"• สูงสุดความกระปรี้กระเปร่า 1",
+							"• สูงสุดพลังกาย 1",
+							"• สูงสุดพลังชีวิต 2",
+							"• สูงสุดระดับมินเนียนที่ใช้งาน 1 ทุก 5 เลเวล",
+							"• ความเร็ว 1 ทุก 3 เลเวล",
 							"",
-							"➢ You gain Levels by accumulating experience. The amount of experience needed per level increases as your level does.",
+							"➢ คุณได้รับเลเวลโดยการสะสมประสบการณ์ ปริมาณประสบการณ์ที่ต้องใช้ต่อเลเวลเพิ่มขึ้นตามเลเวลของคุณ",
 							"",
-							"➢ Experience is a measure of your wizard's prowess. It's independent of skill experience. You mostly earn experience from killing monsters in dungeons and clearing encounters in locales."
+							"➢ ประสบการณ์คือการวัดความเก่งกาจของพ่อมดของคุณ มันแยกจากการประสบการณ์ของสกิล คุณส่วนใหญ่ได้ประสบการณ์จากการฆ่ามอนสเตอร์ในดันเจี้ยนและการเคลียร์การเผชิญหน้าในสถานที่"
 						],
 						"require": "g.evt_helper>0"
 					},
@@ -229,17 +229,17 @@
 						"group": "exploration",
 						"tags": "t_gloss_game_mechanic,t_gloss_exploration",
 						"desc": [
-							"➢ Adventures are pivotal for progression in Arcanum and often unlock content like upgrades on first completion.",
-							"Clearing an adventure is often a prerequisite for unlocking further adventures.",
+							"➢ การผจญภัยสำคัญยิ่งต่อความก้าวหน้าในอาคานัม และมักปลดล็อกเนื้อหาเช่นอัปเกรดเมื่อสำเร็จครั้งแรก",
+							"การเคลียร์การผจญภัยมักเป็นข้อกำหนดเบื้องต้นสำหรับการปลดล็อกการผจญภัยถัดไป",
 							"",
-							"➢ An adventure is divided into floors containing monsters or encounters, and sometimes even both.",
-							"The number of floors in an adventure can vary wildly from just 1 floor to 1000 floors.",
+							"➢ การผจญภัยแบ่งเป็นชั้นที่มีมอนสเตอร์หรือการเผชิญหน้า และบางครั้งก็มีทั้งสองอย่าง",
+							"จำนวนชั้นในการผจญภัยอาจต่างกันอย่างมาก ตั้งแต่เพียง 1 ชั้นจนถึง 1000 ชั้น",
 							"",
-							"➢ Each adventure has a distance stat which the player must at least match to embark on it. Distance is granted by a plethora of sources with mounts being the largest contributor.",
+							"➢ การผจญภัยแต่ละครั้งมีค่าสถานะระยะทางซึ่งผู้เล่นต้องมีอย่างน้อยตามที่กำหนดจึงจะเริ่มได้ ระยะทางได้มาจากแหล่งมากมาย โดยพาหนะเป็นผู้ให้มากที่สุด",
 							"",
-							"➢ Progress is not lost when leaving an adventure either manually or due to a loss, unless you enter another different adventure before completing the first.",
+							"➢ ความคืบหน้าจะไม่สูญหายเมื่อออกจากการผจญภัยไม่ว่าจะด้วยมือหรือเพราะพ่ายแพ้ เว้นแต่คุณเข้าสู่การผจญภัยอื่นก่อนทำอันแรกสำเร็จ",
 							"",
-							"➢ Adventures are useful for granting rare resources such as Rune Stones and Magic Gems from Locales or crafting materials from Dungeons."
+							"➢ การผจญภัยมีประโยชน์ในการมอบทรัพยากรหายาก เช่น หินรูนและอัญมณีเวทจากสถานที่ หรือวัสดุประดิษฐ์จากดันเจี้ยน"
 						],
 						"require": "g.evt_helper>0"
 					},
@@ -250,17 +250,17 @@
 						"group": "exploration",
 						"tags": "t_gloss_game_mechanic,t_gloss_exploration,t_gloss_combat",
 						"desc": [
-							"➢ Dungeons are the primary type of combat adventures. For more information on combat, see the glossary entry for combat.",
-							"Make sure to keep your life above 0.",
+							"➢ ดันเจี้ยนคือการผจญภัยต่อสู้ประเภทหลัก สำหรับข้อมูลเพิ่มเติมเกี่ยวกับการต่อสู้ ดูรายการอภิธานศัพท์การต่อสู้",
+							"ต้องแน่ใจว่ารักษาพลังชีวิตของคุณให้สูงกว่า 0",
 							"",
-							"➢ Dungeons are assigned difficulty rankings in the Level portion of their tooltip. The early game dungeons are marked with 1~3 🦴 symbols, while the later dungeons are marked with 1~6 💀 symbols.",
-							"The greater is the number of symbols, the greater the difficulty a dungeon is deemed to possess. The number of skulls roughly correlate to the Tier at which you are expected to attempt that Dungeon. All dungeons share the ⚔ symbol in common.",
+							"➢ ดันเจี้ยนถูกกำหนดระดับความยากในส่วนเลเวลของทูลทิป ดันเจี้ยนช่วงต้นเกมถูกทำเครื่องหมายด้วยสัญลักษณ์ 🦴 1~3 ตัว ขณะที่ดันเจี้ยนช่วงหลังถูกทำเครื่องหมายด้วยสัญลักษณ์ 💀 1~6 ตัว",
+							"ยิ่งจำนวนสัญลักษณ์มากเท่าไหร่ ดันเจี้ยนก็ยิ่งถูกมองว่ายากมากขึ้นเท่านั้น จำนวนกะโหลกคร่าว ๆ สัมพันธ์กับชั้น (Tier) ที่คุณควรลองดันเจี้ยนนั้น ดันเจี้ยนทั้งหมดใช้สัญลักษณ์ ⚔ ร่วมกัน",
 							"",
-							"➢ Monsters in a Dungeon will frequently drop gold and gemstones as loot. The chances for such loot dropping can be increased through your 'Luck' stat.",
-							"Monsters will also drop crafting materials to create superior quality gear. If a dungeon rewards crafting materials for its completion, the monsters within that dungeon will typically drop the same crafting materials.",
-							"You can search for a monster's specific loot in the Bestiary Tab once you have unlocked it. It requires either 3 Animal Handling or 11 Mage Lore to obtain.",
+							"➢ มอนสเตอร์ในดันเจี้ยนมักดรอปทองคำและอัญมณีเป็นของรางวัล โอกาสการดรอปของรางวัลดังกล่าวเพิ่มได้ผ่านค่าสถานะ 'โชค' ของคุณ",
+							"มอนสเตอร์ยังดรอปวัสดุประดิษฐ์เพื่อสร้างอุปกรณ์คุณภาพสูง หากดันเจี้ยนให้รางวัลวัสดุประดิษฐ์เมื่อสำเร็จ มอนสเตอร์ภายในดันเจี้ยนนั้นมักดรอปวัสดุประดิษฐ์ชนิดเดียวกัน",
+							"คุณสามารถค้นหาของรางวัลเฉพาะของมอนสเตอร์ได้ในแท็บสมุดรวมสัตว์เมื่อปลดล็อกมันแล้ว ต้องใช้การดูแลสัตว์ 3 หรือความรู้เวท 11 ในการได้รับ",
 							"",
-							"Dungeons which grant skill maxes are tagged as 'Sites of Learning'."
+							"ดันเจี้ยนที่ให้ค่าสูงสุดของสกิลถูกติดป้าย 'สถานที่เรียนรู้'"
 						],
 						"require": "g.evt_helper>0"
 					},
@@ -271,21 +271,21 @@
 						"group": "exploration",
 						"tags": "t_gloss_game_mechanic,t_gloss_exploration",
 						"desc": [
-							"➢ Locales are a type of adventure focused on noncombat encounters, though some, particularly the ones in Reedburgh, can contain monsters.",
+							"➢ สถานที่คือการผจญภัยประเภทหนึ่งที่มุ่งเน้นการเผชิญหน้าแบบไม่สู้ แม้บางแห่ง โดยเฉพาะในรีดเบิร์ก อาจมีมอนสเตอร์",
 							"",
-							"➢ Locales are generally marked with the 🌳 or 📖 symbols.",
+							"➢ สถานที่โดยทั่วไปถูกทำเครื่องหมายด้วยสัญลักษณ์ 🌳 หรือ 📖",
 							"",
-							"➢ Encounters inflict any combination of the 5 stresses: 1) Beffudlement 2) Unease 3) Weariness 4) Frustration 5) Madness.",
-							"If a stress bar fills up, you shall leave the Locale to rest until they're all empty.",
-							"You can hover an encounter to see its tooltip.",
+							"➢ การเผชิญหน้าทำให้เกิดความกดดัน 5 ชนิดรวมกันในแบบใดก็ได้: 1) ความงุนงง 2) ความไม่สบายใจ 3) ความเหนื่อยล้า 4) ความหงุดหงิด 5) ความคลั่ง",
+							"หากแถบความกดดันเต็ม คุณต้องออกจากสถานที่ไปพักผ่อนจนกว่าทั้งหมดจะหมด",
+							"คุณสามารถเลื่อนเมาส์เหนือการเผชิญหน้าเพื่อดูทูลทิปของมัน",
 							"",
-							"➢ Like dungeons, many locales will unlock things and have rewards on their first clear, with smaller rewards for subsequent clears.",
+							"➢ เหมือนดันเจี้ยน สถานที่หลายแห่งจะปลดล็อกสิ่งต่าง ๆ และให้รางวัลในการเคลียร์ครั้งแรก พร้อมรางวัลเล็กกว่าในการเคลียร์ครั้งถัด ๆ ไป",
 							"",
-							"➢ Unlike combat, encounters take a fixed amount of time, although some upgrades associated with the Travel skill can speed it up.",
+							"➢ ต่างจากการต่อสู้ การเผชิญหน้าใช้เวลาคงที่ แม้อัปเกรดบางอย่างที่เกี่ยวข้องกับสกิลการเดินทางจะเร่งมันได้",
 							"",
-							"➢ Some encounters are beneficial in their own right, with loot or experience or skill maxes as a reward for the encounter.",
-							"For more information on encounters in each Locale, you can refer to the Travelogue which is unlocked with 1 Level in the Travel skill.",
-							"Encounters which grant skill maxes or other permanent benefits are tagged as 'Sites of Learning' and can be filtered to be seen in the Travelogue Tab."
+							"➢ การเผชิญหน้าบางอย่างมีประโยชน์ในตัวของมันเอง โดยให้ของรางวัลหรือประสบการณ์หรือค่าสูงสุดของสกิลเป็นรางวัลของการเผชิญหน้า",
+							"สำหรับข้อมูลเพิ่มเติมเกี่ยวกับการเผชิญหน้าในแต่ละสถานที่ คุณสามารถอ้างอิงบันทึกการเดินทางซึ่งปลดล็อกด้วย 1 เลเวลในสกิลการเดินทาง",
+							"การเผชิญหน้าที่ให้ค่าสูงสุดของสกิลหรือประโยชน์ถาวรอื่น ๆ ถูกติดป้าย 'สถานที่เรียนรู้' และสามารถกรองเพื่อดูในแท็บบันทึกการเดินทางได้"
 						],
 						"require": "g.evt_helper>0"
 					},
@@ -296,18 +296,18 @@
 						"group": "exploration",
 						"tags": "t_gloss_game_mechanic,t_gloss_exploration,t_gloss_combat",
 						"desc": [
-							"➢ Clashes are the type of combat adventure focused on actively fighting a small number of powerful monsters.",
+							"➢ คลัชคือการผจญภัยต่อสู้ประเภทที่มุ่งเน้นการสู้กับมอนสเตอร์ทรงพลังจำนวนน้อยอย่างกระตือรือร้น",
 							"",
-							"➢ Clashes are all marked with the symbols ⚔💀.",
+							"➢ คลัชทั้งหมดถูกทำเครื่องหมายด้วยสัญลักษณ์ ⚔💀",
 							"",
-							"➢ Clashes are unreturnable. This means that if you leave a clash for any reason, your progress will reset, unlike other types of adventures which keep your progress towards completion if you don't visit a different location.",
+							"➢ คลัชไม่สามารถกลับมาได้ หมายความว่าหากคุณออกจากคลัชไม่ว่าด้วยเหตุใด ความคืบหน้าของคุณจะรีเซ็ต ต่างจากการผจญภัยประเภทอื่นที่รักษาความคืบหน้าไปสู่ความสำเร็จไว้หากคุณไม่ไปยังสถานที่อื่น",
 							"",
-							"➢ They can be thought of as the challenge bosses of Arcanum and encourage active play instead of idling.",
+							"➢ พวกมันถือได้ว่าเป็นบอสท้าทายของอาคานัม และสนับสนุนการเล่นเชิงรุกแทนการรอเฉย ๆ",
 							"",
-							"➢ They have significant rewards and unlocks on first completion, with less focus on repeat clears.",
+							"➢ พวกมันให้รางวัลและการปลดล็อกอย่างมีนัยสำคัญในการเคลียร์ครั้งแรก โดยให้ความสำคัญกับการเคลียร์ซ้ำน้อยลง",
 							"",
-							"➢ Typically, a clash's boss will challenge you with at least one unique mechanic, in addition to having good survivability and offense at the tier they're intended for.",
-							"To defeat a clash, you'll often have to strategize and figure out specific counters, since brute force usually only works when you outgrow the earlier clashes."
+							"➢ โดยทั่วไป บอสของคลัชจะท้าทายคุณด้วยกลไกเฉพาะอย่างน้อยหนึ่งอย่าง นอกเหนือจากการมีความอยู่รอดและการโจมตีที่ดีในชั้น (Tier) ที่มันออกแบบไว้",
+							"เพื่อเอาชนะคลัช คุณมักต้องวางแผนและหาตัวตอบโต้เฉพาะ เนื่องจากแรงบุกเพียงอย่างเดียวมักใช้ได้ก็ต่อเมื่อคุณเหนือชั้นกว่าคลัชช่วงแรก ๆ แล้ว"
 						],
 						"require": "g.evt_helper>0"
 					},
@@ -318,17 +318,17 @@
 						"group": "combat",
 						"tags": "t_gloss_game_mechanic,t_gloss_combat,t_gloss_minions",
 						"desc": [
-							"➢ Summons are temporary monsters which assist you in combat, both in terms of dealing damage and reducing attacks targeting your wizard.",
-							"If a summon is present on your side, half of all attacks without specific targetting will target your wizard while the other half will target your summons and any other allies you may have.",
+							"➢ ซัมมอนคือมอนสเตอร์ชั่วคราวที่ช่วยคุณในการต่อสู้ ทั้งในแง่การสร้างความเสียหายและลดการโจมตีที่มุ่งไปที่พ่อมดของคุณ",
+							"หากมีซัมมอนอยู่ฝั่งคุณ ครึ่งหนึ่งของการโจมตีทั้งหมดที่ไม่ได้ระบุเป้าหมายจะมุ่งไปที่พ่อมดของคุณ ส่วนอีกครึ่งจะมุ่งไปที่ซัมมอนของคุณและพันธมิตรอื่นใดที่คุณอาจมี",
 							"",
-							"➢ Summons are created by the summoning school of spells and vanish once you leave an adventure.",
+							"➢ ซัมมอนถูกสร้างด้วยคาถาสายการอัญเชิญและจะหายไปเมื่อคุณออกจากการผจญภัย",
 							"",
-							"➢ Each source of summons will have a 'Max:' property to describe how many of that summon you can have at once, with the weaker ones being unlimited and the stronger ones having caps.",
-							"For example, Call Spirit permits unlimited wisps that do little more than take a hit in your place, but a mightier spell could limit you to 2 especially potent summons that play a larger role in combat.",
+							"➢ แหล่งกำเนิดของซัมมอนแต่ละแหล่งจะมีคุณสมบัติ 'สูงสุด:' เพื่อระบุจำนวนซัมมอนที่คุณมีได้พร้อมกัน โดยชนิดที่อ่อนกว่ามีไม่จำกัดและชนิดที่แข็งกว่ามีเพดาน",
+							"ตัวอย่างเช่น เรียกวิญญาณอนุญาตให้มีแสงวิญญาณไม่จำกัดที่รับการโจมตีแทนคุณเท่านั้น แต่คาถาที่ทรงพลังกว่าอาจจำกัดคุณไว้ที่ 2 ซัมมอนที่ทรงพลังเป็นพิเศษซึ่งมีบทบาทใหญ่ในการต่อสู้",
 							"",
-							"➢ The 'Count:' property describes how many of that summon it will create each time.",
+							"➢ คุณสมบัติ 'จำนวน:' ระบุว่ามันจะสร้างซัมมอนนั้นกี่ตัวในแต่ละครั้ง",
 							"",
-							"➢ WARNING: Memorizing a Summoning spell with an unlimited max and embarking on an overly long Locale or Dungeon is a known cause of save data corruption. This will usually require several hundred floors so it is not a concern for most adventures."
+							"➢ คำเตือน: การจดจำคาถาอัญเชิญที่สูงสุดไม่จำกัดและออกเดินทางไปยังสถานที่หรือดันเจี้ยนที่ยาวเกินไปเป็นสาเหตุที่ทราบกันว่าทำให้ข้อมูลเซฟเสียหาย โดยปกติต้องหลายร้อยชั้นจึงจะเกิดขึ้น จึงไม่ใช่เรื่องน่ากังวลสำหรับการผจญภัยส่วนใหญ่"
 						],
 						"require": "g.evt_helper>0"
 					},
@@ -339,17 +339,17 @@
 						"group": "combat",
 						"tags": "t_gloss_game_mechanic,t_gloss_combat,t_gloss_minions",
 						"desc": [
-							"➢ Unlike summons, minions persist between explorations and last as long as they have life.",
+							"➢ ต่างจากซัมมอน มินเนียนคงอยู่ระหว่างการสำรวจและอยู่ได้ตราบที่ยังมีพลังชีวิต",
 							"",
-							"➢ Minions are created using summoning spells which state 'Instead of summoning, creates a permanent minion.' within their tooltip.",
+							"➢ มินเนียนถูกสร้างด้วยคาถาอัญเชิญที่ระบุ 'แทนการอัญเชิญ สร้างมินเนียนถาวร' ในทูลทิปของมัน",
 							"",
-							"➢ Minions created this way go into your Minions Tab and must be manually activated while you are not in an Adventure to join you.",
+							"➢ มินเนียนที่สร้างด้วยวิธีนี้จะเข้าสู่แท็บมินเนียนของคุณ และต้องเปิดใช้งานด้วยมือขณะที่คุณไม่อยู่ในการผจญภัยเพื่อให้มาร่วมทีม",
 							"",
-							"➢ If a minion dies, you can cast the revival spell for that minion's 'kind' to resurrect them at half their max life however, they will not rejoin you if you are inside a dungeon.",
+							"➢ หากมินเนียนตาย คุณสามารถร่ายคาถาชุบชีวิตสำหรับ 'ชนิด' ของมินเนียนนั้นเพื่อชุบพวกมันที่ครึ่งหนึ่งของพลังชีวิตสูงสุด อย่างไรก็ตาม พวกมันจะไม่กลับมาร่วมทีมหากคุณอยู่ภายในดันเจี้ยน",
 							"",
-							"➢ Owned Minions states how many total minions you can possess both inside and outside of combat. You can see its max in the Minion Tab, along with how much you are using up.",
-							"You're also constrained by Active Minions Levels - the total level of your minions can't exceed your maximum Minions Levels, listed to the right of Owned Minions.",
-							"Both of these caps can be increased by a variety of upgrades, furnitures, classes, homes, and skills, with the Charms and Summoning skills being reliable generic options."
+							"➢ มินเนียนที่ถือครองระบุจำนวนมินเนียนทั้งหมดที่คุณมีได้ทั้งในและนอกการต่อสู้ คุณสามารถดูค่าสูงสุดของมันในแท็บมินเนียน พร้อมกับจำนวนที่คุณใช้ไป",
+							"คุณยังถูกจำกัดด้วยระดับมินเนียนที่ใช้งาน - ระดับรวมของมินเนียนต้องไม่เกินระดับมินเนียนสูงสุดของคุณ ซึ่งแสดงอยู่ทางขวาของมินเนียนที่ถือครอง",
+							"เพดานทั้งสองนี้เพิ่มได้ด้วยอัปเกรด เฟอร์นิเจอร์ คลาส บ้าน และสกิลหลากหลาย โดยสกิลเสน่ห์และการอัญเชิญเป็นตัวเลือกทั่วไปที่เชื่อถือได้"
 						],
 						"require": "g.minions>0"
 					},
@@ -360,11 +360,11 @@
 						"group": "combat",
 						"tags": "t_gloss_game_mechanic,t_gloss_combat,t_gloss_minions",
 						"desc": [
-							"➢ Companions are a unique type of ally which are automatically generated when you enter combat with no cost attached.",
+							"➢ คอมแพเนียนคือพันธมิตรประเภทพิเศษที่ถูกสร้างโดยอัตโนมัติเมื่อคุณเข้าสู่การต่อสู้โดยไม่มีค่าใช้จ่าย",
 							"",
-							"➢ You can select which Companion you wish to use in the Player Tab.",
+							"➢ คุณสามารถเลือกคอมแพเนียนที่ต้องการใช้ในแท็บผู้เล่น",
 							"",
-							"➢ If a companion dies in combat, it will not be regenerated unless you exit and return to that Dungeon."
+							"➢ หากคอมแพเนียนตายในการต่อสู้ มันจะไม่ถูกสร้างใหม่เว้นแต่คุณออกและกลับมาที่ดันเจี้ยนนั้น"
 						],
 						"require": "g.t_lightclass>0||g.animalfriend>0||g.rabbittrick>0"
 					},
@@ -375,13 +375,13 @@
 						"group": "progression",
 						"tags": "t_gloss_game_mechanic",
 						"desc": [
-							"➢ Classes are Arcanum's primary progression milestones. At a certain point, you will be offered to pick a class.",
+							"➢ คลาสคือจุดก้าวหน้าหลักของอาคานัม ณ จุดหนึ่ง คุณจะได้รับข้อเสนอให้เลือกคลาส",
 							"",
-							"➢ Picking a class will increase your tier and with it unlock new progression fields.",
+							"➢ การเลือกคลาสจะเพิ่มชั้น (Tier) ของคุณและปลดล็อกสาขาความก้าวหน้าใหม่",
 							"",
-							"➢ Additionally, selecting a class will cause all other classes at the same tier to become unavailable, including any classses you might have unlocked later.",
+							"➢ นอกจากนี้ การเลือกคลาสจะทำให้คลาสอื่นทั้งหมดในชั้นเดียวกันใช้ไม่ได้ รวมถึงคลาสใดก็ตามที่คุณอาจปลดล็อกทีหลัง",
 							"",
-							"➢ During apprenticeship, your first few class choices, those being at the Job and Tier 0 levels, are of minor importance. However, once you have graduated, they will become the primary distinguishing factor between different wizards."
+							"➢ ระหว่างฝึกหัด การเลือกคลาสสองสามครั้งแรกของคุณ ซึ่งอยู่ในระดับอาชีพและ Tier 0 มีความสำคัญเล็กน้อย อย่างไรก็ตาม เมื่อคุณสำเร็จการศึกษาแล้ว พวกมันจะกลายเป็นปัจจัยหลักที่แยกความแตกต่างระหว่างพ่อมดแต่ละคน"
 						],
 						"require": "g.animals>0||g.scribescroll>0||g.herbalism>0||g.crafting>=5"
 					},
@@ -392,20 +392,20 @@
 						"group": "progression",
 						"tags": "t_gloss_game_mechanic",
 						"desc": [
-							"➢ Having learned the fundamentals of magic, it is time to finish your apprenticeship.",
+							"➢ เมื่อเรียนรู้พื้นฐานของเวทมนตร์แล้ว ถึงเวลาจบการฝึกหัดของคุณ",
 							"",
-							"➢ To do so you need to leave your master after paying your tuition fee, or by finding a way to circumvent said fee.",
+							"➢ การทำเช่นนั้นคุณต้องลาออกจากอาจารย์หลังจากจ่ายค่าเล่าเรียน หรือหาทางเลี่ยงค่าใช้จ่ายดังกล่าว",
 							"",
-							"➢ After doing so you will be free to discover the ways of magic on your own, no longer bound by the spatial limitations of that lousy Attic room.",
+							"➢ หลังจากนั้นคุณจะเป็นอิสระในการค้นพบวิถีเวทมนตร์ด้วยตัวเอง ไม่ถูกผูกมัดด้วยข้อจำกัดพื้นที่ของห้องใต้หลังคาอันน่าอึดอัดนั้นอีกต่อไป",
 							"",
-							"➢ All graduation methods have a common requirement of possessing the 'Aided Thoughts' upgrade, along with a max research of 100 and 4 Mage Lore.",
+							"➢ วิธีการสำเร็จการศึกษาทั้งหมดมีข้อกำหนดร่วมคือมีอัปเกรด 'ความคิดช่วยเหลือ' พร้อมกับการวิจัยสูงสุด 100 และความรู้เวท 4",
 							"",
-							"➢ The various graduation methods are as follows:",
-							"• Adept (End Apprenticeship) - The standard option.",
-							"• Dark Adept (Slay Master) - Additionally grants the 'Vile' evil morality and a body. This body can be used for unlocking Transfusions.",
-							"• Blue Adept - Requires 200 Virtue score.",
-							"• Red Adept - Requires 'The Commoner's Limit' event, which is triggered by completing the 'Treffil Woods Edges' Dungeon without doing the 'Bind Spellbook' task. The Martial school of spells with 'Stab Wound' in particular will serve you well in performing such a feat.",
-							"• Mystic Savant (Forgo Studies) - Never perform the 'Study' task. It is recommended to hide Study with the gear icon to prevent any misclicks."
+							"➢ วิธีการสำเร็จการศึกษาต่าง ๆ มีดังนี้:",
+							"• ผู้ชำนาญ (จบการฝึกหัด) - ตัวเลือกมาตรฐาน",
+							"• ผู้ชำนาญมืด (สังหารอาจารย์) - เพิ่มเติมให้ศีลธรรมชั่วร้าย 'เลวทราม' และศพหนึ่งศพ ศพนี้ใช้ปลดล็อกการถ่ายเลือดได้",
+							"• ผู้ชำนาญน้ำเงิน - ต้องมีคะแนนคุณธรรม 200",
+							"• ผู้ชำนาญแดง - ต้องใช้อีเวนต์ 'ขีดจำกัดของสามัญชน' ซึ่งถูกกระตุ้นด้วยการสำเร็จดันเจี้ยน 'ขอบป่าเทรฟฟิล' โดยไม่ทำภารกิจ 'ผูกหนังสือคาถา' คาถาสายต่อสู้โดยเฉพาะอย่างยิ่ง 'แทงแผล' จะช่วยคุณในการทำความสำเร็จนี้ได้ดี",
+							"• นักปราชญ์อาถรรพ์ (งดการศึกษา) - ห้ามทำภารกิจ 'ศึกษา' แนะนำให้ซ่อนสกิลศึกษาด้วยไอคอนเกียร์เพื่อกันการคลิกพลาด"
 						],
 						"require": "g.neophyte>0&&g.research.max>=100&&g.lore>=4"
 					},
@@ -416,17 +416,17 @@
 						"group": "progression",
 						"tags": "t_gloss_game_mechanic",
 						"desc": [
-							"➢ The progression of your wizard's tier of magic can be classified as follows, increasing every time they take a class, starting from Graduation:",
+							"➢ ลำดับขั้นของชั้นเวทมนตร์ของพ่อมดคุณจำแนกได้ดังนี้ โดยเพิ่มขึ้นทุกครั้งที่เลือกคลาส เริ่มจากการสำเร็จการศึกษา:",
 							"",
-							"• Tier 0 - Solitary Magic - Somebody that ended their apprenticeship.",
-							"• Tier 1 - Professional Magick - A mastery of magic that allows for a stable income.",
-							"• Tier 2 - Arcane Ascendant - An accomplished mage, qualified to take on apprentices.",
-							"• Tier 3 - Magical Mastery - A complete mastery and understanding of ones chosen field of magic.",
-							"• Tier 4 - Supreme Sorcery - Unlikely to ever meet an equal, these beings transcend the rules and mechanism of society.",
-							"• Tier 5 - Dhrunic Magic - Rediscovering magic from before the rending, manipulating the powers that shaped the form of dhrune.",
-							"• Tier 6 - Ageless Magic - Powerful enough to resist the inevitability of Death.",
+							"• Tier 0 - เวทเดี่ยว - ผู้ที่จบการฝึกหัดแล้ว",
+							"• Tier 1 - เวทอาชีพ - ความเชี่ยวชาญเวทมนตร์ที่ทำให้มีรายได้มั่นคง",
+							"• Tier 2 - นักเวทอาคม - พ่อมดที่ประสบความสำเร็จ มีคุณสมบัติรับเด็กฝึกหัด",
+							"• Tier 3 - ความเชี่ยวชาญเวท - ความเชี่ยวชาญและความเข้าใจอย่างสมบูรณ์ในสาขาเวทมนตร์ที่เลือก",
+							"• Tier 4 - เวทสูงสุด - ไม่น่าจะพบผู้เทียบเท่า สิ่งมีชีวิตเหล่านี้อยู่เหนือกฎและกลไกของสังคม",
+							"• Tier 5 - เวทดรุน - ค้นพบเวทมนตร์จากยุคก่อนการฉีกขาดอีกครั้ง บงการพลังที่หล่อหลอมรูปร่างของดรุน",
+							"• Tier 6 - เวทอมตะ - ทรงพลังพอที่จะต้านสิ่งเลี่ยงไม่ได้ของความตาย",
 							"",
-							"➢ Increasing your tier will grant some notoriety and also unlock skills or upgrades independent of your class choice."
+							"➢ การเพิ่มชั้นของคุณจะให้ชื่อเสียงบางส่วนและปลดล็อกสกิลหรืออัปเกรดโดยไม่ขึ้นกับการเลือกคลาสของคุณ"
 						],
 						"require": "tier0"
 					},
@@ -437,9 +437,9 @@
 						"group": "journal",
 						"tags": "t_gloss_school,t_gloss_chaos",
 						"desc": [
-							"Sleight of hand, mundane attention manipulation, and other common practices of charlatans and stage performers alike.",
-							"Enables a sufficiently-greedy wizard to rob unsuspecting passers-by, potentially even without them noticing.  Trickery is also a pathway to some upgrades.",
-							"Tricksters can make further use of this skill, utilizing the sort of long-term planning traditional for a wizard to plot a theft and unlock other upgrades."
+							"กลเม็ดมือ การดึงความสนใจแบบธรรมดา และวิธีปฏิบัติอื่น ๆ ทั่วไปของนักต้มตุ๋นและนักแสดงละครเวที",
+							"ช่วยให้พ่อมดผู้ละโมบพอสามารถปล้นผู้สัญจรที่ไม่ทันระวังได้ แม้โดยที่พวกเขาไม่รู้ตัว กลโกงยังเป็นหนทางสู่อัปเกรดบางอย่างด้วย",
+							"นักเล่นกลสามารถใช้สกิลนี้ต่อไป โดยใช้การวางแผนระยะยาวแบบที่พ่อมดคุ้นเคยเพื่อวางแผนการขโมยและปลดล็อกอัปเกรดอื่น ๆ"
 						],
 						"require": "g.trickery>0"
 					},
@@ -450,9 +450,9 @@
 						"group": "journal",
 						"tags": "t_gloss_school,t_gloss_chaos",
 						"desc": [
-							"A school of magic focused on altering reality to the whims of the wizard.",
-							"While trickery allows a wizard to make subtle changes with effects far outweighing their causes, chaos magic alters reality in ways that make causality irrelevant.",
-							"Whether it be positional changes, physiological changes, or the reimagination of a world operating on order, Chaos Magic is a force to be reckoned with."
+							"สายเวทมนตร์ที่มุ่งเน้นการเปลี่ยนแปลงความเป็นจริงตามความต้องการของพ่อมด",
+							"ในขณะที่กลโกงช่วยให้พ่อมดเปลี่ยนแปลงอย่างละเอียดอ่อนซึ่งผลลัพธ์มีมากกว่าสาเหตุมาก เวทมนตร์ความโกลาหลกลับเปลี่ยนแปลงความเป็นจริงในแบบที่ทำให้เหตุและผลไม่เกี่ยวข้องกัน",
+							"ไม่ว่าจะเป็นการเปลี่ยนแปลงตำแหน่ง การเปลี่ยนแปลงทางสรีรวิทยา หรือการจินตนาการโลกที่ทำงานอย่างเป็นระบบขึ้นมาใหม่ เวทมนตร์ความโกลาหลคือพลังที่ต้องให้ความเคารพ"
 						],
 						"require": "g.chaoslore>0"
 					},
@@ -463,9 +463,9 @@
 						"group": "journal",
 						"tags": "t_gloss_school,t_gloss_animation,t_gloss_minions",
 						"desc": [
-							"A school of magic focused on making normally inanimate objects, animate, for the benefit of the wizard.",
-							"Fundamental to a variety of magic branches, with the most well-known one being puppetry, an adept of this school will find himself not lacking for stalwart, if somewhat silent allies.",
-							"Required for development of any advanced artificial constructs."
+							"สายเวทมนตร์ที่มุ่งเน้นทำให้วัตถุที่โดยปกติไร้ชีวิตเคลื่อนไหว เพื่อประโยชน์ของพ่อมด",
+							"พื้นฐานของสาขาเวทมนตร์หลากหลาย โดยสาขาที่รู้จักกันดีที่สุดคือการทำหุ่น ผู้เชี่ยวชาญสายนี้จะไม่ขาดแคลนพันธมิตรที่ทรหด หากค่อนข้างเงียบ",
+							"จำเป็นต่อการพัฒนาสิ่งก่อสร้างสังเคราะห์ขั้นสูงใด ๆ"
 						],
 						"require": "g.puppetry>0"
 					},
@@ -476,9 +476,9 @@
 						"group": "journal",
 						"tags": "t_gloss_skill,t_gloss_animation,t_gloss_crafting,t_gloss_minions",
 						"desc": [
-							"A fusion of animation and crafting, this entry-level skill is a prerequisite for advancement in the mechanical arts.",
-							"Provides the wizard with the ability to create puppets, summonable in combat. Puppets can also be used to create several upgrades.",
-							"Puppeteers can make further use of this skill, making the puppets permanent minions and unlocking additional upgrades and a way to use them to produce gold."
+							"การผสานระหว่างการทำให้เคลื่อนไหวและการประดิษฐ์ สกิลระดับเริ่มต้นนี้เป็นข้อกำหนดเบื้องต้นสำหรับความก้าวหน้าในศิลปะเครื่องกล",
+							"มอบความสามารถให้พ่อมดสร้างหุ่น ซึ่งสามารถอัญเชิญได้ในการต่อสู้ หุ่นยังใช้สร้างอัปเกรดหลายอย่างได้อีกด้วย",
+							"นักทำหุ่นสามารถใช้สกิลนี้ต่อไปได้อีก ทำให้หุ่นเป็นมินเนียนถาวรและปลดล็อกอัปเกรดเพิ่มเติม รวมถึงวิธีใช้มันผลิตทองคำ"
 						],
 						"require": "g.crafting>=8&&g.spiritlore>=5"
 					},
@@ -489,10 +489,10 @@
 						"group": "journal",
 						"tags": "t_gloss_skill,t_gloss_animation,t_gloss_crafting,t_gloss_minions",
 						"desc": [
-							"An advanced fusion of animation and crafting, this skill represents an advanced understanding of construct creation.",
-							"Provides the wizard with ability to construct machinae, a more powerful combat summon, and unlocks a number of related upgrades",
-							"Machinists can field machinae as permanent minions, create additional machina types and utilize machina to create elemental gems passively.",
-							"This is the highest skill a wizard without a speciality in mechanical magic can attain."
+							"การผสานขั้นสูงระหว่างการทำให้เคลื่อนไหวและการประดิษฐ์ สกิลนี้แสดงถึงความเข้าใจขั้นสูงในการสร้างสิ่งก่อสร้าง",
+							"มอบความสามารถให้พ่อมดสร้างมาจินา ซัมมอนต่อสู้ที่ทรงพลังกว่า และปลดล็อกอัปเกรดที่เกี่ยวข้องจำนวนหนึ่ง",
+							"นักใช้กลไกสามารถนำมาจินาเข้าประจำการเป็นมินเนียนถาวร สร้างมาจินาประเภทเพิ่มเติม และใช้มาจินาสร้างอัญมณีธาตุแบบไม่ต้องทำอะไร",
+							"นี่คือสกิลสูงสุดที่พ่อมดที่ไม่มีสาขาเฉพาะในเวทกลไกจะไปถึงได้"
 						],
 						"require": "g.crafting>=12&&g.puppetry>=6&&g.magicalanimation>=5&&g.tier2>0"
 					},
@@ -503,9 +503,9 @@
 						"group": "journal",
 						"tags": "t_gloss_skill,t_gloss_animation,t_gloss_crafting,t_gloss_minions",
 						"desc": [
-							"The pinnacle of the crafting/animation arts, this skill represents the capacity to create artificial life.",
-							"Automatas are extremely powerful combat summons, although the costs to creating and maintaining them are prohibitive",
-							"Allows the wizard to create powerful upgrades, including an ability to have an additional action slot, albeit mutually exclusive with the creation of a time spiral."
+							"จุดสูงสุดของศิลปะการประดิษฐ์/การทำให้เคลื่อนไหว สกิลนี้แสดงถึงความสามารถในการสร้างชีวิตเทียม",
+							"ออโตมาตาคือซัมมอนต่อสู้ที่มีพลังมหาศาล แม้ค่าใช้จ่ายในการสร้างและบำรุงรักษามันจะสูงเกินจะรับได้",
+							"ให้พ่อมดสร้างอัปเกรดทรงพลัง รวมถึงความสามารถในการมีช่องการกระทำเพิ่มเติม ถึงแม้จะแยกกันไม่ลงกับการสร้างกังหันเวลา"
 						],
 						"require": "g.crafting>=18&&g.puppetry>=8&&g.magicalanimation>=6&&g.magiphysics>=5&&(g.mechanist+g.mechamancer)>0"
 					},
@@ -516,9 +516,9 @@
 						"group": "journal",
 						"tags": "t_gloss_resource,t_gloss_animation,t_gloss_crafting,t_gloss_minions",
 						"desc": [
-							"Puppets are simple constructs that lack any source of internal motive force and therefore must be controlled by a wizard at all times. As the animation is done directly by the wizard, puppets tend to be made out of low-weight, easily replaced materials, such as wood.",
-							"Commonly, amplifiers for easier communication with the puppet are used, with spirit gems being a popular choice. For finer control, direct connection via enchanted strings might need to be established.",
-							"Because exerting constant control is taxing, most non-dedicated practitioners find themselves unable to control a significant number of puppets in combat, much less give them any kind of advanced commands."
+							"หุ่นคือสิ่งก่อสร้างเรียบง่ายที่ไม่มีแหล่งแรงขับเคลื่อนภายใน จึงต้องถูกควบคุมโดยพ่อมดตลอดเวลา เนื่องจากการทำให้เคลื่อนไหวทำโดยพ่อมดโดยตรง หุ่นจึงมักทำจากวัสดุน้ำหนักเบาและเปลี่ยนได้ง่าย เช่น ไม้",
+							"โดยทั่วไปมักใช้ตัวขยายสัญญาณเพื่อการสื่อสารกับหุ่นที่ง่ายขึ้น โดยอัญมณีวิญญาณเป็นตัวเลือกยอดนิยม เพื่อการควบคุมที่ละเอียดขึ้น อาจต้องตั้งการเชื่อมต่อโดยตรงผ่านเชือกที่ชุบเวท",
+							"เนื่องจากควบคุมอย่างต่อเนื่องเป็นเรื่องเหนื่อยล้า ผู้ฝึกหัดที่ไม่ทุ่มเทส่วนใหญ่จึงไม่สามารถควบคุมหุ่นจำนวนมากในการต่อสู้ได้ และยากยิ่งกว่าที่จะสั่งคำสั่งขั้นสูงใด ๆ ให้พวกมัน"
 						],
 						"require": "g.puppetry>=1"
 					},
@@ -529,10 +529,10 @@
 						"group": "journal",
 						"tags": "t_gloss_resource,t_gloss_animation,t_gloss_crafting,t_gloss_minions",
 						"desc": [
-							"Machinae are automatons capable of performing tasks without direct control. They require a source of mana and precise, pre-made instructions on how to operate, in order to do anything.",
-							"As machinae are useful even to non-mages, it is common to make them out of sturdier, if more expensive materials, most commonly steel.",
-							"The lack of adaptability is a general shortcoming of this type of construct, meaning that unless the wizard specializes in this kind of magic, they would only be able to issue the most rudimentary of instructions, not accounting for changing environment, or allowing for things like self-preservation.",
-							"Specialists have been known to lease specialized machina for specific tasks, earning a significant amount of coin in the process, although undesirable long-term effects have been known to emerge."
+							"มาจินาคือออโตเมตันที่สามารถทำงานโดยไม่ต้องควบคุมโดยตรง พวกมันต้องการแหล่งมานาและคำสั่งที่ประดิษฐ์ไว้ล่วงหน้าอย่างแม่นยำว่าต้องทำงานอย่างไร เพื่อจะทำสิ่งใด ๆ ได้",
+							"เนื่องจากมาจินามีประโยชน์แม้แต่กับผู้ที่ไม่ใช่นักเวท จึงพบได้ทั่วไปว่าทำมาจากวัสดุที่แข็งแรงกว่า แม้จะแพงกว่า โดยมากมักเป็นเหล็กกล้า",
+							"การขาดความยืดหยุ่นเป็นข้อบกพร่องทั่วไปของสิ่งก่อสร้างชนิดนี้ หมายความว่าหากพ่อมดไม่เชี่ยวชาญเวทชนิดนี้โดยเฉพาะ พวกเขาจะสั่งได้เพียงคำสั่งพื้นฐานที่สุด โดยไม่คำนึงถึงสภาพแวดล้อมที่เปลี่ยนไป หรือไม่ให้ความสำคัญกับสิ่งเช่นการรักษาตัวเอง",
+							"เป็นที่ทราบกันว่าผู้เชี่ยวชาญให้เช่ามาจินาเฉพาะทางสำหรับงานเฉพาะ ได้ค่าตอบแทนเป็นจำนวนมากในกระบวนการนี้ แม้เป็นที่รู้กันว่าผลกระทบระยะยาวที่ไม่พึงประสงค์อาจเกิดขึ้น"
 						],
 						"require": "g.machinacreation>=1"
 					},
@@ -543,11 +543,11 @@
 						"group": "journal",
 						"tags": "t_gloss_resource,t_gloss_animation,t_gloss_crafting,t_gloss_minions",
 						"desc": [
-							"Automatas are fully sentient artificial constructs, with the cognitive capacity commonly exceeding that of an average human. As each automata is usually a hand-crafted work of art, the choice of the material is largely the prerogative of the creator. Some people claim to have once encountered some automata made out of brass, but the ones more commonly known are made out of crystal.",
-							"Automatas are capable of artificial learning and direct knowledge transfer, allowing one to create a skilled fighter in an incredibly short amount of time.",
-							"True masters of this art, have been known to teach automata how to perform magic, despite the fact that their nature prevents them from absorbing and generating mana in conventional ways. Direct mana transfers and magical gem supplies have been employed to remedy this.",
-							"As automatas tend to have outstanding intellect, they are commonly employed in management roles, such as becoming advisors or overseers.",
-							"There have been no known cases of any automata imprisoning their creator and impersonating them with the use of disguises and glamour charms, to pursue their own agenda."
+							"ออโตมาตาคือสิ่งก่อสร้างเทียมที่รับรู้ได้อย่างสมบูรณ์ ด้วยความสามารถทางปัญญาที่มักเกินมนุษย์ทั่วไป เนื่องจากออโตมาตาแต่ละตัวมักเป็นงานศิลปะที่ทำด้วยมือ การเลือกวัสดุจึงเป็นสิทธิ์ของช่างซึ่งส่วนใหญ่ บางคนอ้างว่าเคยเจอออโตมาตาที่ทำจากทองเหลือง แต่ชนิดที่รู้จักกันทั่วไปกว่าคือทำจากคริสตัล",
+							"ออโตมาตาสามารถเรียนรู้เทียมและการถ่ายโอนความรู้โดยตรง ทำให้สามารถสร้างนักสู้ที่ชำนาญได้ในเวลาอันสั้นอย่างเหลือเชื่อ",
+							"เป็นที่รู้กันว่าเจ้าแม่กาลแห่งศิลปะนี้สอนออโตมาตาให้ใช้เวทมนตร์ แม้ธรรมชาติของมันจะกันไม่ให้ดูดซับและสร้างมานาในวิธีทั่วไปก็ตาม มีการใช้การถ่ายโอนมานาโดยตรงและการจัดหาอัญมณีเวทเพื่อแก้ไขเรื่องนี้",
+							"เนื่องจากออโตมาตามีแนวโน้มมีสติปัญญาโดดเด่น พวกมันจึงมักถูกใช้ในบทบาทการบริหาร เช่น เป็นที่ปรึกษาหรือผู้คุมงาน",
+							"ไม่เคยมีกรณีที่ทราบกันว่าออโตมาตาตัวใดคุมขังผู้สร้างของมันและแอบอ้างเป็นพวกเขาด้วยการใช้เครื่องปลอมตัวและเวทเสน่ห์ เพื่อดำเนินวาระของตัวเอง"
 						],
 						"require": "g.automatasculpting>=1"
 					},
@@ -558,14 +558,14 @@
 						"group": "tasks",
 						"tags": "t_gloss_game_mechanic,t_gloss_tasks",
 						"desc": [
-							"➢ Tasks refer to any non-upgrade action which your wizard can perform in the Main Tab.",
+							"➢ ภารกิจหมายถึงการกระทำใดก็ตามที่ไม่ใช่อัปเกรดที่พ่อมดของคุณสามารถทำได้ในแท็บหลัก",
 							"",
-							"➢ Tasks can either be instant or have a defined length. Tasks with a defined length take up an action slot and are coloured yellow.",
+							"➢ ภารกิจอาจเป็นแบบทันทีหรือมีระยะเวลาที่กำหนด ภารกิจที่มีระยะเวลากำหนดกินช่องการกระทำหนึ่งช่องและเป็นสีเหลือง",
 							"",
-							"➢ For the sake of your wrist, you can massively reduce the number of times you need to click instant tasks by holding Enter after performing it once to do it twenty times a second.",
+							"➢ เพื่อดูแลข้อมือของคุณ คุณสามารถลดจำนวนครั้งที่ต้องคลิกภารกิจทันทีลงได้มากโดยกด Enter ค้างหลังทำมันหนึ่งครั้ง เพื่อทำมันยี่สิบครั้งต่อวินาที",
 							"",
-							"➢ The main limiting factor for tasks is your wizard's stamina.",
-							"For this reason, it is highly recommended to make 'Aquamancy' and 'Aeromancy' some of your first skill purchases, as their combination unlocks stamina generating upgrades."
+							"➢ ปัจจัยจำกัดหลักของภารกิจคือความกระปรี้กระเปร่าของพ่อมดของคุณ",
+							"ด้วยเหตุนี้ จึงแนะนำอย่างยิ่งให้ซื้อ 'วิชาน้ำ' และ 'วิชาลม' เป็นสกิลแรก ๆ ของคุณ เพราะการผสานของทั้งสองปลดล็อกอัปเกรดที่สร้างความกระปรี้กระเปร่า"
 						],
 						"require": "g.apprentice>0",
 						"suppressUnlock": true
@@ -577,13 +577,13 @@
 						"group": "tasks",
 						"tags": "t_gloss_game_mechanic,t_gloss_tasks",
 						"desc": [
-							"➢ Tasks which consume an action slot will attempt to perpetually perform themselves ad infinitum however, what happens when one such task can no longer be sustained?",
+							"➢ ภารกิจที่กินช่องการกระทำจะพยายามทำตัวเองอย่างไม่รู้จบ อย่างไรก็ตาม จะเกิดอะไรขึ้นเมื่อภารกิจเช่นนั้นไม่สามารถดำรงต่อไปได้อีก?",
 							"",
-							"➢ Waiting Tasks refer to those tasks which were forced out of your action slot. They will attempt to take up your action whenever a vacancy is created.",
+							"➢ ภารกิจรอหมายถึงภารกิจที่ถูกบังคับให้ออกจากช่องการกระทำของคุณ พวกมันจะพยายามเข้าครอบครองการกระทำของคุณเมื่อใดก็ตามที่มีที่ว่างเกิดขึ้น",
 							"",
-							"➢ The total number of Waiting Tasks you can have is defined by your total number of action slots + 5. Any further additions to the list will cause an older waiting task to be pushed out.",
+							"➢ จำนวนภารกิจรอทั้งหมดที่คุณมีได้ถูกกำหนดโดยจำนวนช่องการกระทำทั้งหมดของคุณ + 5 การเพิ่มเพิ่มเติมในรายการจะทำให้ภารกิจรอที่เก่ากว่าถูกผลักออก",
 							"",
-							"➢ You can see your Waiting Tasks in the Activities popup menu which is the rightmost button above your actions."
+							"➢ คุณสามารถดูภารกิจรอของคุณได้ในเมนูป๊อปอัปกิจกรรม ซึ่งเป็นปุ่มขวาสุดเหนือการกระทำของคุณ"
 						],
 						"require": "g.apprentice>0",
 						"suppressUnlock": true
@@ -595,17 +595,17 @@
 						"group": "tasks",
 						"tags": "t_gloss_game_mechanic,t_gloss_tasks",
 						"desc": [
-							"➢ Running tasks priority can be further modified by assigining them as (G)oals or (H)obbies.",
+							"➢ ลำดับความสำคัญของภารกิจที่กำลังทำสามารถปรับเพิ่มเติมได้โดยกำหนดเป็นเป้า(G)หมายหรืองานอดิเรก (H)",
 							"",
-							"➢ You can do that by clicking the relevant button to the right of the task name in task list. A task may only have one of these properties at a time and you can only have a limited number of goals and hobbies assigned.",
+							"➢ คุณทำได้โดยคลิกปุ่มที่เกี่ยวข้องทางขวาของชื่อภารกิจในรายการภารกิจ ภารกิจหนึ่งอาจมีคุณสมบัติเหล่านี้ได้เพียงอย่างเดียวในเวลาใดเวลาหนึ่ง และคุณสามารถกำหนดเป้าหมายและงานอดิเรกได้ในจำนวนจำกัดเท่านั้น",
 							"",
-							"➢ When a task is set as a goal, it will attempt to perform itself whenever another action is completed. Assuming it can be performed or resumed it will take the slot of the completed action or an empty slot if available.",
-							"Use goals to set high-priority tasks that need to be performed above all else.",
+							"➢ เมื่อภารกิจถูกตั้งเป็นเป้าหมาย มันจะพยายามทำตัวเองเมื่อใดก็ตามที่มีการกระทำอื่นสำเร็จ หากสามารถทำหรือดำเนินต่อได้ มันจะเข้าครอบครองช่องของการกระทำที่สำเร็จ หรือช่องว่างหากมี",
+							"ใช้เป้าหมายเพื่อตั้งภารกิจลำดับความสำคัญสูงที่ต้องทำเหนือสิ่งอื่นใด",
 							"",
-							"➢ When a task is set as a hobby, it is essentially marked as desirable, but low-priority. Hobbies will attempt to trigger when you have an empty slot, but will yield to waiting tasks and goals if any of those try to resume themselves.",
-							"Use hobbies to set background activities that you want your wizard to perform when they have run out of other things to do.",
+							"➢ เมื่อภารกิจถูกตั้งเป็นงานอดิเรก มันจะถูกทำเครื่องหมายว่าน่าทำแต่สำคัญต่ำ งานอดิเรกจะพยายามเริ่มเมื่อคุณมีช่องว่าง แต่จะยอมให้ภารกิจรอและเป้าหมาย หากสิ่งใดสิ่งหนึ่งพยายามดำเนินต่อ",
+							"ใช้งานอดิเรกเพื่อตั้งกิจกรรมเบื้องหลังที่คุณต้องการให้พ่อมดของคุณทำเมื่อหมดสิ่งอื่นให้ทำ",
 							"",
-							"➢ You can open the Activities popup menu to assign waiting tasks as goals or hobbies, and to unassign any waiting tasks marked with these properties."
+							"➢ คุณสามารถเปิดเมนูป๊อปอัปกิจกรรมเพื่อกำหนดภารกิจรอเป็นเป้าหมายหรืองานอดิเรก และยกเลิกการกำหนดภารกิจรอใดก็ตามที่ทำเครื่องหมายด้วยคุณสมบัติเหล่านี้"
 						],
 						"require": "g.goals1>0||g.hobby1>0"
 					},
@@ -616,15 +616,15 @@
 						"group": "stats",
 						"tags": "t_gloss_game_mechanic,t_gloss_stats",
 						"desc": [
-							"➢ Luck is a stat that causes monsters to drop loot more frequently than normal.",
+							"➢ โชคคือค่าสถานะที่ทำให้มอนสเตอร์ดรอปของรางวัลบ่อยกว่าปกติ",
 							"",
-							"➢ Each point of luck grants 1% increased chance to drop loot. This applies to base chance. The increased chance is displayed in brackets on the monster's tooltip.",
+							"➢ โชคแต่ละจุดเพิ่มโอกาสดรอปของรางวัล 1% สิ่งนี้ใช้กับโอกาสพื้นฐาน โอกาสที่เพิ่มขึ้นจะแสดงในวงเล็บบนทูลทิปของมอนสเตอร์",
 							"",
-							"➢ Some examples to illustrate the effects of luck are as follows:",
-							"• For a baseline drop rate of 50% and luck of 50, the drop chance will be 75%.",
-							"• For a baseline drop rate of 20% and luck of 20, the drop chance will be 24%.",
-							"• For a baseline drop rate of 20% and luck of 40, the drop chance will be 28%.",
-							"• For a baseline drop rate of 1% and luck of 20, the drop chance will be 1.2%."
+							"➢ ตัวอย่างบางประการเพื่ออธิบายผลของโชคมีดังนี้:",
+							"• สำหรับอัตราดรอปพื้นฐาน 50% และโชค 50 โอกาสดรอปจะเป็น 75%",
+							"• สำหรับอัตราดรอปพื้นฐาน 20% และโชค 20 โอกาสดรอปจะเป็น 24%",
+							"• สำหรับอัตราดรอปพื้นฐาน 20% และโชค 40 โอกาสดรอปจะเป็น 28%",
+							"• สำหรับอัตราดรอปพื้นฐาน 1% และโชค 20 โอกาสดรอปจะเป็น 1.2%"
 						],
 						"require": "g.luck>=3"
 					},
@@ -635,19 +635,19 @@
 						"group": "stats",
 						"tags": "t_gloss_game_mechanic,t_gloss_stats",
 						"desc": [
-							"➢ Almost all forms of inflicting damage available to the player scale with one or more potencies, whether they be weapons or spells.",
-							"This is displayed in the 'Potencies:' section of an attack's tooltip.",
+							"➢ รูปแบบการสร้างความเสียหายเกือบทั้งหมดที่ผู้เล่นใช้ได้ปรับขนาดตามศักยภาพ (โพเทนซี) หนึ่งชนิดหรือมากกว่า ไม่ว่าจะเป็นอาวุธหรือคาถา",
+							"สิ่งนี้แสดงในส่วน 'ศักยภาพ:' ของทูลทิปการโจมตี",
 							"",
-							"➢ Potencies provide a percentage based increase to damage with a default value of 100%. A reduction in this potency below 100%, would therefore decrease effectiveness. Some spells and weapons have secondary potencies, which have a much smaller effect than primary potencies.",
+							"➢ ศักยภาพให้การเพิ่มความเสียหายแบบเปอร์เซ็นต์โดยมีค่าเริ่มต้น 100% การลดศักยภาพนี้ต่ำกว่า 100% จึงลดประสิทธิภาพลง คาถาและอาวุธบางชนิดมีศักยภาพรองซึ่งให้ผลเล็กกว่าศักยภาพหลักมาก",
 							"",
-							"➢ You can check your potencies in the Player Tab.",
+							"➢ คุณสามารถตรวจสอบศักยภาพของคุณได้ในแท็บผู้เล่น",
 							"",
-							"➢ There are potencies for spells, physical attacks and healing which globally affect all sources of their type.",
+							"➢ มีศักยภาพสำหรับคาถา การโจมตีกายภาพ และการรักษา ซึ่งส่งผลต่อแหล่งทั้งหมดของประเภทนั้น ๆ อย่างทั่วถึง",
 							"",
-							"➢ Potencies are multiplicative with each other.",
-							"For example, Magic Missile scales with both Spell and Mana Potencies. If you had 150% potency in both then it would deal 2.25 (1.5*1.5) times its base damage.",
+							"➢ ศักยภาพคูณกันเอง",
+							"ตัวอย่างเช่น จรวดเวทปรับขนาดตามศักยภาพคาถาและมานาทั้งสอง หากคุณมีศักยภาพ 150% ในทั้งสอง มันจะสร้างความเสียหาย 2.25 (1.5*1.5) เท่าของความเสียหายพื้นฐาน",
 							"",
-							"➢ Potencies can be granted from a variety of sources including buffing spells, upgrades, skills and enchants."
+							"➢ ศักยภาพสามารถได้รับจากแหล่งหลากหลาย รวมถึงคาถาเสริมพลัง อัปเกรด สกิล และเอนแชนต์"
 						],
 						"require": "g.evt_helper>0"
 					},
@@ -658,21 +658,21 @@
 						"group": "stats",
 						"tags": "t_gloss_game_mechanic,t_gloss_stats",
 						"desc": [
-							"➢ Most sources of damage are assigned a damage type as can be seen in their tooltip.",
+							"➢ แหล่งความเสียหายส่วนใหญ่ถูกกำหนดชนิดความเสียหาย ตามที่เห็นได้ในทูลทิปของมัน",
 							"",
-							"➢ It is based on this property that a resistance decides where it applies.",
+							"➢ อยู่บนพื้นฐานของคุณสมบัตินี้ที่ความต้านทานตัดสินว่ามันใช้กับจุดใด",
 							"",
-							"➢ Resistances provide a percentage based reduction to damage taken. The values seen in brackets in the Player Tab for resistances describe what percentage of total damage you will be taking.",
+							"➢ ความต้านทานให้การลดความเสียหายที่ได้รับแบบเปอร์เซ็นต์ ค่าที่เห็นในวงเล็บในแท็บผู้เล่นสำหรับความต้านทานอธิบายว่าคุณจะได้รับความเสียหายรวมเป็นกี่เปอร์เซ็นต์",
 							"",
-							"➢ Both the player and monsters possess resistances but only monsters can be completely immune to a damage type.",
+							"➢ ทั้งผู้เล่นและมอนสเตอร์มีความต้านทาน แต่มีเพียงมอนสเตอร์เท่านั้นที่สามารถต้านทานชนิดความเสียหายได้อย่างสมบูรณ์",
 							"",
-							"➢ Similarly, DOTs associated with status are flagged with that status' property. It is based on this flag that Status Negation is applied.",
+							"➢ เช่นกัน โอเวอร์ไทม์แดเมจ (DOT) ที่เกี่ยวข้องกับสถานะถูกติดธงด้วยคุณสมบัติของสถานะนั้น อยู่บนพื้นฐานของธงนี้ที่การปฏิเสธสถานะถูกใช้",
 							"",
-							"➢ Status Negations provide a percentage chance to ignore their specific status when it would be applied. It does not weaken such DOTs if they bypass your defenses.",
+							"➢ การปฏิเสธสถานะให้โอกาสเป็นเปอร์เซ็นต์ที่จะเพิกเฉยต่อสถานะเฉพาะของมันเมื่อมันถูกใช้ มันไม่ลดทอน DOT เหล่านั้นหากมันเลี่ยงการป้องกันของคุณ",
 							"",
-							"➢ Having a Status Negation of 100 will provide complete immunity to that status. There is no benefit in obtaining more than 100 Status Negation.",
+							"➢ การมีการปฏิเสธสถานะ 100 จะให้ความต้านทานอย่างสมบูรณ์ต่อสถานะนั้น ไม่มีประโยชน์ในการได้รับปฏิเสธสถานะเกิน 100",
 							"",
-							"➢ The primary sources of resistances and status negation are enchants and upgrades. It is necessary to stack these to reasonably complete some of the harder dungeons."
+							"➢ แหล่งหลักของความต้านทานและการปฏิเสธสถานะคือเอนแชนต์และอัปเกรด จำเป็นต้องสะสมสิ่งเหล่านี้เพื่อเคลียร์ดันเจี้ยนที่ยากบางแห่งได้อย่างสมเหตุสมผล"
 						],
 						"require": "g.evt_helper>0"
 					},
@@ -683,22 +683,22 @@
 						"group": "stats",
 						"tags": "t_gloss_game_mechanic,t_gloss_stats",
 						"desc": [
-							"➢ Each combat turn, your wizard performs a weapon attack along with casting one spell in his spelllist, right?",
-							"Not anymore.",
+							"➢ ในแต่ละเทิร์นการต่อสู้ พ่อมดของคุณโจมตีด้วยอาวุธหนึ่งครั้งพร้อมกับร่ายคาถาหนึ่งคาถาในรายชื่อคาถาของเขา ใช่ไหม?",
+							"ไม่ใช่แล้ว",
 							"",
-							"➢ Extra Attacks increase the number of attacks your wizard performs each turn over the normal amount of 1.",
-							"Each whole number increase will cause your wizard to perform an additional attack each turn, while fractional amounts translate to a percentage chance.",
-							"➢ Additional attacks will cycle through all of your attack sources as usual.",
+							"➢ การโจมตีพิเศษเพิ่มจำนวนการโจมตีที่พ่อมดของคุณทำในแต่ละเทิร์นเหนือปริมาณปกติที่ 1",
+							"การเพิ่มเป็นจำนวนเต็มแต่ละครั้งจะทำให้พ่อมดของคุณโจมตีเพิ่มอีกหนึ่งครั้งในแต่ละเทิร์น ขณะที่จำนวนที่เป็นเศษส่วนจะแปรเป็นโอกาสเป็นเปอร์เซ็นต์",
+							"➢ การโจมตีเพิ่มเติมจะวนผ่านแหล่งโจมตีทั้งหมดของคุณตามปกติ",
 							"",
-							"➢ Extra Spell Casts increase the number of different spells your wizard casts each turn over the normal amount of 1.",
-							"Each whole number increase will cause your wizard to cast an additional spell each turn, while fractional amounts translate to a percentage chance.",
+							"➢ การร่ายคาถาพิเศษเพิ่มจำนวนคาถาต่าง ๆ ที่พ่อมดของคุณร่ายในแต่ละเทิร์นเหนือปริมาณปกติที่ 1",
+							"การเพิ่มเป็นจำนวนเต็มแต่ละครั้งจะทำให้พ่อมดของคุณร่ายคาถาเพิ่มอีกหนึ่งครั้งในแต่ละเทิร์น ขณะที่จำนวนที่เป็นเศษส่วนจะแปรเป็นโอกาสเป็นเปอร์เซ็นต์",
 							"",
-							"➢ Some examples to illustrate the effects of Extra Spell Casts are as follows:",
-							"• For a value of 0.2, you will always cast the usual 1 spell each turn, but have an additional 20% chance to cast a second spell.",
-							"• For a value of 1, you will always cast 2 spells each turn.",
-							"• For a value of 1.5, you will always cast 2 spells each turn and have an additional 50% chance to cast a third spell.",
+							"➢ ตัวอย่างบางประการเพื่ออธิบายผลของการร่ายคาถาพิเศษมีดังนี้:",
+							"• สำหรับค่า 0.2 คุณจะร่ายคาถาปกติ 1 คาถาในแต่ละเทิร์นเสมอ แต่มีโอกาสเพิ่ม 20% ในการร่ายคาถาที่สอง",
+							"• สำหรับค่า 1 คุณจะร่าย 2 คาถาในแต่ละเทิร์นเสมอ",
+							"• สำหรับค่า 1.5 คุณจะร่าย 2 คาถาในแต่ละเทิร์นเสมอและมีโอกาสเพิ่ม 50% ในการร่ายคาถาที่สาม",
 							"",
-							"➢ Additional spells cast due to this stat still abide by the cyclical nature of your memorized spelllist, going from top to bottom."
+							"➢ คาถาเพิ่มเติมที่ร่ายเนื่องจากค่าสถานะนี้ยังคงเป็นไปตามธรรมชาติที่วนรอบของรายชื่อคาถาที่จดจำของคุณ โดยวนจากบนลงล่าง"
 						],
 						"require": "g.chaincast>1||g.chainhit>1"
 					},
@@ -709,33 +709,33 @@
 						"group": "spells",
 						"tags": "t_gloss_game_mechanic,t_gloss_spells",
 						"desc": [
-							"'A truly great mage makes his own spells'.",
+							"'พ่อมดที่ยิ่งใหญ่อย่างแท้จริงสร้างคาถาของตัวเอง'",
 							"",
-							"➢ The Spellcrafting system in Arcanum allows you to staple together various spells into a spellcrafted spell. This spell's level is equal to the sum total of its components.",
+							"➢ ระบบการสร้างคาถาในอาคานัมช่วยให้คุณเย็บคาถาต่าง ๆ รวมกันเป็นคาถาที่สร้างขึ้น คาถานี้มีเลเวลเท่ากับผลรวมของส่วนประกอบทั้งหมด",
 							"",
-							"➢ The Spellcrafting skill grants Spellcraft Power along with Max Crafted Spells as you level it.",
+							"➢ สกิลการสร้างคาถามอบพลังสร้างคาถาพร้อมกับคาถาที่สร้างสูงสุดเมื่อคุณเพิ่มเลเวล",
 							"",
-							"➢ Spellcraft Power is used in the Spellcraft Tab and is equal to the highest level a spellcrafted spell is allowed to be.",
+							"➢ พลังสร้างคาถาใช้ในแท็บสร้างคาถาและเท่ากับเลเวลสูงสุดที่คาถาที่สร้างขึ้นได้รับอนุญาตให้เป็น",
 							"",
-							"➢ The cost to craft such spells is typically magic gems of the same type as the components along with codices, or tomes at a sufficiently high level.",
-							"The formula for the cost each individual component adds to a spellcrafted spell is as follows:",
-							"• (4*Level) Magic Gems, if it belongs to a school with magic gems",
-							"• (1*Level) Codices if the component's Level is 5 or lower",
-							"• 5 Tomes if the component's Level is greater than 5",
-							"You can see the total cost by hovering over the 'Craft' button.",
+							"➢ ค่าใช้จ่ายในการสร้างคาถาดังกล่าวโดยทั่วไปคืออัญมณีเวทชนิดเดียวกับส่วนประกอบพร้อมกับตำรา หรือหนังสือเวทเมื่อระดับสูงพอ",
+							"สูตรสำหรับค่าใช้จ่ายที่ส่วนประกอบแต่ละชิ้นเพิ่มให้กับคาถาที่สร้างขึ้นมีดังนี้:",
+							"• (4*เลเวล) อัญมณีเวท หากมันอยู่ในสายที่มีอัญมณีเวท",
+							"• (1*เลเวล) ตำรา หากเลเวลของส่วนประกอบเป็น 5 หรือต่ำกว่า",
+							"• 5 เล่มเวท หากเลเวลของส่วนประกอบมากกว่า 5",
+							"คุณสามารถดูค่าใช้จ่ายทั้งหมดได้โดยเลื่อนเมาส์เหนือปุ่ม 'สร้าง'",
 							"",
-							"➢ A spellcrafted spell inherits the cooldown of its component which had the longest cooldown. Adding the same spell with a cooldown multiple times to a spellcrafted spell will cause it to only be casted once.",
+							"➢ คาถาที่สร้างขึ้นสืบทอดคูลดาวน์ของส่วนประกอบที่มีคูลดาวน์ยาวที่สุด การเพิ่มคาถาเดียวกันที่มีคูลดาวน์หลายครั้งลงในคาถาที่สร้างขึ้นจะทำให้มันถูกร่ายเพียงครั้งเดียว",
 							"",
-							"➢ You can rename spellcrafted spells for easier identification. If a spellcrafted spell's level is too high to fit in your spelllist you may quickslot it to cast it manually as you please.",
+							"➢ คุณสามารถเปลี่ยนชื่อคาถาที่สร้างขึ้นเพื่อการระบุที่ง่ายขึ้น หากเลเวลของคาถาที่สร้างขึ้นสูงเกินกว่าจะใส่ในรายชื่อคาถาได้ คุณอาจใส่ควิกสล็อตเพื่อร่ายด้วยมือตามต้องการ",
 							"",
-							"➢ Certain spells have an explicit 'Cannot Spellcraft' tag on them and cannot be used as components. Particularly, all martial spells share this property, with the sole exception of Invigorate.",
+							"➢ คาถาบางอย่างมีแท็ก 'ไม่สามารถสร้างคาถาได้' อย่างชัดเจนและไม่สามารถใช้เป็นส่วนประกอบได้ โดยเฉพาะอย่างยิ่ง คาถาสายต่อสู้ทั้งหมดใช้คุณสมบัติร่วมกันนี้ ยกเว้นเพียงคาถากระตุ้นพลัง",
 							"",
-							"➢ Some common strategies for Spellcrafting include:",
-							"• Combining several summoning spells to create your swarm at once, preventing any individual member from sustaining too much damage.",
-							"• Combining several buffing spells with the same or similar cooldowns to minimize the amount of turns wasted in casting them.",
-							"• Combining a Nature spell called 'Life's Bloom' with a spell which has a longer cooldown than Life's Bloom's duration to always gain its healing.",
-							"• Combining several damaging spells with a DOT for an extremely powerful spell.",
-							"• Multiple copies of a damaging spell with no cooldown stapled together, creating a 'shotgun' for burst damage."
+							"➢ กลยุทธ์ทั่วไปบางอย่างสำหรับการสร้างคาถารวมถึง:",
+							"• ผสานคาถาอัญเชิญหลายคาถาเพื่อสร้างฝูงของคุณในครั้งเดียว ป้องกันสมาชิกแต่ละตัวจากการรับความเสียหายมากเกินไป",
+							"• ผสานคาถาเสริมพลังหลายคาถาที่มีคูลดาวน์เดียวกันหรือใกล้เคียงกันเพื่อลดจำนวนเทิร์นที่เสียไปในการร่ายมัน",
+							"• ผสานคาถาธรรมชาติที่เรียกว่า 'การเบ่งบานแห่งชีวิต' กับคาถาที่มีคูลดาวน์ยาวกว่าระยะเวลาของการเบ่งบานแห่งชีวิตเพื่อให้ได้รับการรักษามันเสมอ",
+							"• ผสานคาถาสร้างความเสียหายหลายคาถากับ DOT เพื่อคาถาที่ทรงพลังยิ่ง",
+							"• สำเนาหลายชุดของคาถาสร้างความเสียหายที่ไม่มีคูลดาวน์เย็บรวมกัน สร้าง 'ปืนลูกซอง' สำหรับความเสียหายระเบิด"
 						],
 						"require": "g.spellcraft.locked==0"
 					},
@@ -746,24 +746,24 @@
 						"sym": "🛠️",
 						"tags": "t_gloss_game_mechanic,t_gloss_equipment",
 						"desc": [
-							"➢ The 'Crafting: Arms of Iron' unlocks the Crafting Tab. This requires at least 3 trained levels of Crafting and a max of 6 levels of Crafting.",
+							"➢ 'การประดิษฐ์: อาวุธเหล็ก' ปลดล็อกแท็บการประดิษฐ์ สิ่งนี้ต้องมีการฝึกงานฝีมืออย่างน้อย 3 เลเวลและสูงสุด 6 เลเวลของงานฝีมือ",
 							"",
-							"➢ Crafting materials are dropped as loot from monsters along with completing dungeons. The harder a dungeon is, the better will be its loot.",
-							"If a dungeon rewards crafting materials for its completion, the monsters within that dungeon will typically drop the same crafting materials.",
+							"➢ วัสดุประดิษฐ์ถูกดรอปเป็นของรางวัลจากมอนสเตอร์พร้อมกับการสำเร็จดันเจี้ยน ยิ่งดันเจี้ยนยากเท่าไหร่ ของรางวัลก็ยิ่งดีเท่านั้น",
+							"หากดันเจี้ยนให้รางวัลวัสดุประดิษฐ์เมื่อสำเร็จ มอนสเตอร์ภายในดันเจี้ยนนั้นมักดรอปวัสดุประดิษฐ์ชนิดเดียวกัน",
 							"",
-							"➢ The steps of the crafting process are as follows:",
-							"• Select the Equip Slot you wish to make an item for.",
-							"• Select the Item Type you wish to craft.",
-							"• Select the material to be used to craft that item.",
-							"• Craft the finalized item by pressing the Craft button.",
-							"You can preview the item, as well as its cost, by hovering over the 'Craft' button.",
+							"➢ ขั้นตอนของกระบวนการประดิษฐ์มีดังนี้:",
+							"• เลือกช่องอุปกรณ์ที่คุณต้องการสร้างไอเทม",
+							"• เลือกประเภทไอเทมที่คุณต้องการประดิษฐ์",
+							"• เลือกวัสดุที่จะใช้ประดิษฐ์ไอเทมนั้น",
+							"• ประดิษฐ์ไอเทมที่เสร็จสมบูรณ์โดยกดปุ่มสร้าง",
+							"คุณสามารถดูตัวอย่างไอเทม รวมถึงค่าใช้จ่ายของมัน โดยเลื่อนเมาส์เหนือปุ่ม 'สร้าง'",
 							"",
-							"➢ Different items possess different baseline stats and abilities, while the material acts as a modifier to the final stats of an item.",
+							"➢ ไอเทมต่างกันมีค่าสถานะและความสามารถพื้นฐานต่างกัน ขณะที่วัสดุทำหน้าที่เป็นตัวปรับค่าสถานะสุดท้ายของไอเทม",
 							"",
-							"➢ Both the Item Type and material selected contribute to the cost of the crafted item.",
+							"➢ ทั้งประเภทไอเทมและวัสดุที่เลือกมีส่วนในค่าใช้จ่ายของไอเทมที่ประดิษฐ์",
 							"",
-							"➢ You will unlock more items and materials as you increase your crafting skill and purchase further 'Crafting: Arms of' upgrades.",
-							"The final crafting upgrade will be unlocked once you reach 22 Crafting and have a max of 25 levels of Crafting."
+							"➢ คุณจะปลดล็อกไอเทมและวัสดุมากขึ้นเมื่อเพิ่มสกิลงานฝีมือและซื้ออัปเกรด 'การประดิษฐ์: อาวุธของ' เพิ่มเติม",
+							"อัปเกรดการประดิษฐ์สุดท้ายจะถูกปลดล็อกเมื่อคุณถึงงานฝีมือ 22 และมีงานฝีมือสูงสุด 25 เลเวล"
 						],
 						"require": "g.crafting>0"
 					},
@@ -774,10 +774,10 @@
 						"sym": "🛠️",
 						"tags": "t_gloss_game_mechanic",
 						"desc": [
-							"➢ You've managed to reduce your maximum life to zero through penalties!",
-							"➢ Most likely, you stacked percentage penalties from equipment and upgrades until they reached -100%.",
-							"➢ You won't be able to adventure like this.",
-							"➢ Consider removing some of the offending equipment and perhaps choosing different enchantment or crafting options."
+							"➢ คุณจัดการลดพลังชีวิตสูงสุดของคุณเป็นศูนย์ได้ด้วยบทลงโทษ!",
+							"➢ เป็นไปได้มากที่สุดว่าคุณสะสมบทลงโทษแบบเปอร์เซ็นต์จากอุปกรณ์และอัปเกรดจนถึง -100%",
+							"➢ คุณจะไม่สามารถผจญภัยในสภาพแบบนี้ได้",
+							"➢ พิจารณาถอดอุปกรณ์ที่ก่อปัญหาและบางทีเลือกตัวเลือกเอนแชนต์หรือการประดิษฐ์ที่ต่างออกไป"
 						],
 						"require": "g.hp.max<=0"
 					}
@@ -787,19 +787,19 @@
 		"tags": [
 			{
 				"id": "t_gloss_game_mechanic",
-				"name": "Game Mechanic",
+				"name": "กลไกเกม",
 				"bundleUnlocks": true,
-				"bundleName": "Glossary Entries on Mechanics"
+				"bundleName": "รายการอภิธานศัพท์เกี่ยวกับกลไก"
 			},
 			{
 				"id": "t_gloss_journal_entry",
-				"name": "Journal Entry",
+				"name": "รายการบันทึกประจำวัน",
 				"bundleUnlocks": true,
-				"bundleName": "Journal Entries"
+				"bundleName": "รายการบันทึกประจำวัน"
 			},
 			{
 				"id": "t_gloss_spells",
-				"name": "Spells"
+				"name": "คาถา"
 			}
 		]
 	}
