@@ -61,14 +61,11 @@ export const Persist = {
 	 * @returns {Promise.<object>}
 	 */
 	async saveChar(data, charid) {
-		let saved = false;
 		for (let i = 0; i < this.loaders.length; i++) {
 			const ldr = this.loaders[i];
-			//if ( saved && ldr.fallback ) continue;
-
 			try {
 				await ldr.saveChar(data, charid);
-				saved = true;
+				this.setMeta("char", charid, ldr.id || i);
 			} catch (err) {
 				console.warn(err);
 			}
@@ -79,15 +76,12 @@ export const Persist = {
 	 * @param {string} data
 	 * @param {?string} [hid=HALL_FILE]
 	 */
-	async saveHall(data) {
-		let saved = false;
-
+	async saveHall(data, hid = HALL_FILE) {
 		for (let i = 0; i < this.loaders.length; i++) {
 			const ldr = this.loaders[i];
-			//if ( saved && ldr.fallback ) continue;
 			try {
-				await ldr.saveHall(data, HALL_FILE);
-				saved = true;
+				await ldr.saveHall(data, hid);
+				this.setMeta("hall", hid, ldr.id || i);
 			} catch (err) {
 				console.warn(err);
 			}
@@ -95,24 +89,86 @@ export const Persist = {
 	},
 
 	/**
-	 *
 	 * @param {string} charid
 	 * @returns {Promise<object>}
 	 */
 	async loadChar(charid) {
+		let best = null;
+		let bestTime = -1;
+
 		for (let i = 0; i < this.loaders.length; i++) {
-			const res = await this.loaders[i].loadChar(charid);
-			if (res) return res;
+			const ldr = this.loaders[i];
+			if (!ldr.loadChar) continue;
+
+			let res = null;
+			try {
+				res = await ldr.loadChar(charid);
+			} catch (err) {
+				console.warn(err);
+			}
+			if (!res) continue;
+
+			const t = this.getMeta("char", charid, ldr.id || i);
+			if (t > bestTime) {
+				best = res;
+				bestTime = t;
+			}
 		}
+
+		return best;
 	},
 
 	/**
 	 * @returns {Promise.<object>}
 	 */
 	async loadHall(hid = HALL_FILE) {
+		let best = null;
+		let bestTime = -1;
+
 		for (let i = 0; i < this.loaders.length; i++) {
-			const res = await this.loaders[i].loadHall(hid);
-			if (res) return res;
+			const ldr = this.loaders[i];
+			if (!ldr.loadHall) continue;
+
+			let res = null;
+			try {
+				res = await ldr.loadHall(hid);
+			} catch (err) {
+				console.warn(err);
+			}
+			if (!res) continue;
+
+			const t = this.getMeta("hall", hid, ldr.id || i);
+			if (t > bestTime) {
+				best = res;
+				bestTime = t;
+			}
+		}
+
+		return best;
+	},
+
+	/**
+	 * Timestamp of the last successful save to a given loader & key.
+	 * Kept in localStorage so it survives even if IndexedDB is unavailable.
+	 */
+	metaKey(kind, key, id) {
+		return `save/meta/${kind}/${key}/${id}`;
+	},
+
+	setMeta(kind, key, id) {
+		try {
+			window.localStorage.setItem(this.metaKey(kind, key, id), String(Date.now()));
+		} catch (err) {
+			console.warn(err);
+		}
+	},
+
+	getMeta(kind, key, id) {
+		try {
+			const v = window.localStorage.getItem(this.metaKey(kind, key, id));
+			return v ? Number(v) : 0;
+		} catch (err) {
+			return 0;
 		}
 	},
 

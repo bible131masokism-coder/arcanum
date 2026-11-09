@@ -10,6 +10,7 @@ export const useLocalStorage = persist => {
 
 	return persist.addLoader({
 		fallback: true,
+		id: "local",
 
 		/**
 		 * Clear all stored data.

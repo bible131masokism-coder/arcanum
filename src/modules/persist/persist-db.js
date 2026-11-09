@@ -104,6 +104,7 @@ export async function useDB(persist) {
 
 	return persist.addLoader(
 		{
+			id: "db",
 			db,
 			clearAll,
 			deleteChar,
